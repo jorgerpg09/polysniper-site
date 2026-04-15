@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PolySniper — AI-Powered Polymarket Signals</title>
+    <meta name="description" content="Free real-time UP/DOWN signals for Polymarket 5-minute BTC/ETH binary options. 70.5% WR backtested on 136K trades over 4 years.">
+    <meta property="og:title" content="PolySniper — AI-Powered Polymarket Signals">
+    <meta property="og:description" content="Free real-time signals. 70.5% WR backtested on 136K trades.">
+    <meta property="og:type" content="website">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Hero -->
+    <header class="hero">
+        <div class="container">
+            <div class="hero-badge">FREE SIGNALS</div>
+            <h1>Poly<span class="accent">Sniper</span></h1>
+            <p class="tagline">AI-Powered Polymarket 5-Minute Binary Options Signals</p>
+            <p class="sub-tagline">Backtested: <strong>70.5% WR</strong> on 136,520 trades over 4 years</p>
+            <div class="cta-buttons">
+                <a href="https://t.me/+VfcyKlhCFRw0MjIx" class="btn btn-primary" target="_blank">Join Free Signals</a>
+                <a href="https://x.com/PolySniper5m" class="btn btn-secondary" target="_blank">Follow on X</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Live Stats -->
+    <section class="stats-section">
+        <div class="container">
+            <h2>Live Performance</h2>
+            <div class="stats-grid" id="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-value" id="stat-bets">--</div>
+                    <div class="stat-label">Total Bets</div>
+                </div>
+                <div class="stat-card highlight">
+                    <div class="stat-value" id="stat-wr">--%</div>
+                    <div class="stat-label">Win Rate</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-value" id="stat-pnl">--</div>
+                    <div class="stat-label">P&L ($1/trade)</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-value" id="stat-streak">--</div>
+                    <div class="stat-label">Current Streak</div>
+                </div>
+            </div>
+            <p class="stats-updated" id="stats-updated">Loading...</p>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section class="how-section">
+        <div class="container">
+            <h2>How It Works</h2>
+            <div class="steps-grid">
+                <div class="step">
+                    <div class="step-num">1</div>
+                    <h3>Bot Detects Signal</h3>
+                    <p>Our algorithm monitors Binance price movements in real-time. When volatility is high and the price has moved significantly from the window's opening price, a signal fires.</p>
+                </div>
+                <div class="step">
+                    <div class="step-num">2</div>
+                    <h3>Telegram Alert</h3>
+                    <p>You receive an instant notification with the coin, direction (UP/DOWN), entry price, and confidence level. Signals fire in the first 90 seconds of each 5-minute window.</p>
+                </div>
+                <div class="step">
+                    <div class="step-num">3</div>
+                    <h3>You Trade on PM</h3>
+                    <p>Open Polymarket, buy the indicated token (UP or DOWN) at the signal price. If correct, you receive $1.00 per token. If wrong, you lose your stake.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Track Record -->
+    <section class="record-section">
+        <div class="container">
+            <h2>Track Record</h2>
+            <div class="record-grid">
+                <div class="record-card">
+                    <h3>4-Year Backtest</h3>
+                    <div class="record-stat">70.5%</div>
+                    <p>Win rate on 136,520 trades<br>Jan 2022 - Mar 2026<br>Binance BTCUSDT data</p>
+                </div>
+                <div class="record-card">
+                    <h3>Yearly Breakdown</h3>
+                    <table class="record-table">
+                        <tr><td>2022 (Bear)</td><td>69.6%</td><td>54K trades</td></tr>
+                        <tr><td>2023 (Recovery)</td><td>71.4%</td><td>32K trades</td></tr>
+                        <tr><td>2024 (Bull)</td><td>71.0%</td><td>50K trades</td></tr>
+                    </table>
+                </div>
+                <div class="record-card">
+                    <h3>Strategy</h3>
+                    <p>Delta-based signal detection during high-volatility periods. When BTC/ETH moves >0.03% from the window opening price within 90 seconds, we bet in the direction of the move while tokens are still cheap.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Recent Signals -->
+    <section class="signals-section">
+        <div class="container">
+            <h2>Recent Signals</h2>
+            <div class="signals-table-wrap">
+                <table class="signals-table" id="signals-table">
+                    <thead>
+                        <tr>
+                            <th>Time</th>
+                            <th>Coin</th>
+                            <th>Direction</th>
+                            <th>Entry</th>
+                            <th>Result</th>
+                        </tr>
+                    </thead>
+                    <tbody id="signals-body">
+                        <tr><td colspan="5">Loading...</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-section">
+        <div class="container">
+            <h2>Join PolySniper — Free</h2>
+            <p>Real-time signals delivered to Telegram. No payment required.</p>
+            <div class="cta-buttons">
+                <a href="https://t.me/+VfcyKlhCFRw0MjIx" class="btn btn-primary btn-large" target="_blank">Join Telegram Channel</a>
+            </div>
+            <p class="cta-sub">
+                <a href="https://polymarket.com/?r=jimmyjimmy9" target="_blank">Trade on Polymarket</a> |
+                <a href="https://x.com/PolySniper5m" target="_blank">Follow @PolySniper5m</a>
+            </p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p class="disclaimer">This is not financial advice. Past performance does not guarantee future results. Trading binary options involves risk of loss. Always do your own research.</p>
+            <p>&copy; 2026 PolySniper. Built with data, not hype.</p>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
