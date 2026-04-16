@@ -1,13 +1,13 @@
 {
-  "updated_at": "2026-04-16T19:02:16.723396+00:00",
+  "updated_at": "2026-04-16T19:07:13.739494+00:00",
   "total_bets": 8,
   "wins": 2,
   "losses": 2,
   "pending": 4,
   "win_rate": 50.0,
-  "pnl": -0.52,
+  "pnl": -0.41,
   "current_streak": 2,
-  "streak_type": "L",
+  "streak_type": "W",
   "daily": [
     {
       "date": "2026-04-16",
@@ -19,8 +19,26 @@
   ],
   "recent_signals": [
     {
-      "timestamp": "2026-04-16T19:00:15.331253+00:00",
-      "coin": "ETH_MMFV2",
+      "timestamp": "2026-04-16T19:05:06.745600+00:00",
+      "coin": "BTC_MMF",
+      "direction": "DOWN",
+      "entry_price": 0.6,
+      "secs": 6.7,
+      "outcome": "PENDING",
+      "slug": "btc-updown-5m-1776366300"
+    },
+    {
+      "timestamp": "2026-04-16T19:05:01.533395+00:00",
+      "coin": "ETH_MMF",
+      "direction": "DOWN",
+      "entry_price": 0.59,
+      "secs": 1.5,
+      "outcome": "PENDING",
+      "slug": "eth-updown-5m-1776366300"
+    },
+    {
+      "timestamp": "2026-04-16T19:00:15.348549+00:00",
+      "coin": "ETH_MMF",
       "direction": "UP",
       "entry_price": 0.59,
       "secs": 15.3,
@@ -28,67 +46,49 @@
       "slug": "eth-updown-5m-1776366000"
     },
     {
-      "timestamp": "2026-04-16T19:00:11.259119+00:00",
-      "coin": "BTC_MMFV2",
+      "timestamp": "2026-04-16T19:00:00.810509+00:00",
+      "coin": "BTC_MMF",
       "direction": "DOWN",
       "entry_price": 0.58,
-      "secs": 11.3,
+      "secs": 0.8,
       "outcome": "PENDING",
       "slug": "btc-updown-5m-1776366000"
     },
     {
-      "timestamp": "2026-04-16T18:55:16.095355+00:00",
-      "coin": "ETH_MMFV2",
+      "timestamp": "2026-04-16T18:55:11.404974+00:00",
+      "coin": "ETH_MMF",
       "direction": "UP",
-      "entry_price": 0.63,
-      "secs": 16.1,
-      "outcome": "PENDING",
+      "entry_price": 0.61,
+      "secs": 11.4,
+      "outcome": "WIN",
       "slug": "eth-updown-5m-1776365700"
     },
     {
-      "timestamp": "2026-04-16T18:55:10.666642+00:00",
-      "coin": "BTC_MMFV2",
+      "timestamp": "2026-04-16T18:55:11.190701+00:00",
+      "coin": "BTC_MMF",
       "direction": "UP",
       "entry_price": 0.58,
-      "secs": 10.7,
-      "outcome": "PENDING",
+      "secs": 11.2,
+      "outcome": "WIN",
       "slug": "btc-updown-5m-1776365700"
     },
     {
-      "timestamp": "2026-04-16T18:50:05.823865+00:00",
-      "coin": "ETH_MMFV2",
+      "timestamp": "2026-04-16T18:50:06.779493+00:00",
+      "coin": "ETH_MMF",
       "direction": "DOWN",
       "entry_price": 0.59,
-      "secs": 5.8,
+      "secs": 6.8,
       "outcome": "LOSS",
       "slug": "eth-updown-5m-1776365400"
     },
     {
-      "timestamp": "2026-04-16T18:50:05.610845+00:00",
-      "coin": "BTC_MMFV2",
+      "timestamp": "2026-04-16T18:50:02.381038+00:00",
+      "coin": "BTC_MMF",
       "direction": "DOWN",
       "entry_price": 0.56,
-      "secs": 5.6,
+      "secs": 2.4,
       "outcome": "LOSS",
       "slug": "btc-updown-5m-1776365400"
-    },
-    {
-      "timestamp": "2026-04-16T18:45:10.660157+00:00",
-      "coin": "ETH_MMFV2",
-      "direction": "UP",
-      "entry_price": 0.63,
-      "secs": 10.7,
-      "outcome": "WIN",
-      "slug": "eth-updown-5m-1776365100"
-    },
-    {
-      "timestamp": "2026-04-16T18:45:07.540516+00:00",
-      "coin": "BTC_MMFV2",
-      "direction": "UP",
-      "entry_price": 0.67,
-      "secs": 7.5,
-      "outcome": "WIN",
-      "slug": "btc-updown-5m-1776365100"
     }
   ],
   "backtest": {
