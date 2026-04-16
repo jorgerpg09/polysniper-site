@@ -49,9 +49,13 @@ function renderSignals(signals) {
         const resultClass = s.outcome === 'WIN' ? 'result-win' : (s.outcome === 'LOSS' ? 'result-loss' : 'result-pending');
         const resultText = s.outcome || 'PENDING';
 
+        const coinCell = s.slug
+            ? `<a href="https://polymarket.com/event/${s.slug}" target="_blank" rel="noopener">${s.coin}</a>`
+            : s.coin;
+
         return `<tr>
             <td>${time}</td>
-            <td>${s.coin}</td>
+            <td>${coinCell}</td>
             <td>${arrow} ${s.direction}</td>
             <td>$${(s.entry_price || 0).toFixed(2)}</td>
             <td class="${resultClass}">${resultText}</td>
