@@ -1,23 +1,32 @@
 {
-  "updated_at": "2026-04-16T15:43:14.711065+00:00",
-  "total_bets": 34,
-  "wins": 12,
+  "updated_at": "2026-04-16T15:48:16.178902+00:00",
+  "total_bets": 35,
+  "wins": 13,
   "losses": 19,
   "pending": 3,
-  "win_rate": 38.7,
-  "pnl": -5.47,
+  "win_rate": 40.6,
+  "pnl": -5.04,
   "current_streak": 1,
-  "streak_type": "L",
+  "streak_type": "W",
   "daily": [
     {
       "date": "2026-04-16",
-      "bets": 31,
-      "wins": 12,
+      "bets": 32,
+      "wins": 13,
       "losses": 19,
-      "wr": 38.7
+      "wr": 40.6
     }
   ],
   "recent_signals": [
+    {
+      "timestamp": "2026-04-16T15:45:35.986880+00:00",
+      "coin": "BTC",
+      "direction": "UP",
+      "entry_price": 0.51,
+      "secs": 36.0,
+      "outcome": "PENDING",
+      "slug": "btc-updown-5m-1776354300"
+    },
     {
       "timestamp": "2026-04-16T15:40:09.746160+00:00",
       "coin": "BTC",
@@ -42,7 +51,7 @@
       "direction": "UP",
       "entry_price": 0.55,
       "secs": 17.2,
-      "outcome": "PENDING",
+      "outcome": "WIN",
       "slug": "eth-updown-5m-1776353700"
     },
     {
@@ -188,15 +197,6 @@
       "secs": 12.0,
       "outcome": "WIN",
       "slug": "btc-updown-5m-1776350100"
-    },
-    {
-      "timestamp": "2026-04-16T14:30:20.396216+00:00",
-      "coin": "ETH",
-      "direction": "DOWN",
-      "entry_price": 0.58,
-      "secs": 20.4,
-      "outcome": "LOSS",
-      "slug": "eth-updown-5m-1776349800"
     }
   ],
   "backtest": {
