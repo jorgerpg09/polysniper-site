@@ -1,30 +1,48 @@
 {
-  "updated_at": "2026-04-16T17:49:14.624877+00:00",
-  "total_bets": 25,
-  "wins": 14,
-  "losses": 9,
+  "updated_at": "2026-04-16T17:54:16.124940+00:00",
+  "total_bets": 27,
+  "wins": 15,
+  "losses": 10,
   "pending": 2,
-  "win_rate": 60.9,
-  "pnl": -0.02,
-  "current_streak": 2,
-  "streak_type": "W",
+  "win_rate": 60.0,
+  "pnl": -0.23,
+  "current_streak": 1,
+  "streak_type": "L",
   "daily": [
     {
       "date": "2026-04-16",
-      "bets": 23,
-      "wins": 14,
-      "losses": 9,
-      "wr": 60.9
+      "bets": 25,
+      "wins": 15,
+      "losses": 10,
+      "wr": 60.0
     }
   ],
   "recent_signals": [
+    {
+      "timestamp": "2026-04-16T17:50:16.492311+00:00",
+      "coin": "BTC_MMF",
+      "direction": "DOWN",
+      "entry_price": 0.63,
+      "secs": 16.5,
+      "outcome": "PENDING",
+      "slug": "btc-updown-5m-1776361800"
+    },
+    {
+      "timestamp": "2026-04-16T17:50:12.900709+00:00",
+      "coin": "ETH_MMF",
+      "direction": "DOWN",
+      "entry_price": 0.62,
+      "secs": 12.9,
+      "outcome": "PENDING",
+      "slug": "eth-updown-5m-1776361800"
+    },
     {
       "timestamp": "2026-04-16T17:45:22.252072+00:00",
       "coin": "ETH_MMF",
       "direction": "DOWN",
       "entry_price": 0.59,
       "secs": 22.3,
-      "outcome": "PENDING",
+      "outcome": "LOSS",
       "slug": "eth-updown-5m-1776361500"
     },
     {
@@ -33,7 +51,7 @@
       "direction": "UP",
       "entry_price": 0.59,
       "secs": 8.3,
-      "outcome": "PENDING",
+      "outcome": "WIN",
       "slug": "eth-updown-5m-1776361200"
     },
     {
@@ -179,24 +197,6 @@
       "secs": 7.0,
       "outcome": "WIN",
       "slug": "btc-updown-5m-1776358500"
-    },
-    {
-      "timestamp": "2026-04-16T16:55:04.086583+00:00",
-      "coin": "ETH_MMF",
-      "direction": "UP",
-      "entry_price": 0.59,
-      "secs": 4.1,
-      "outcome": "WIN",
-      "slug": "eth-updown-5m-1776358500"
-    },
-    {
-      "timestamp": "2026-04-16T16:50:25.858565+00:00",
-      "coin": "ETH_MMF",
-      "direction": "DOWN",
-      "entry_price": 0.56,
-      "secs": 25.9,
-      "outcome": "WIN",
-      "slug": "eth-updown-5m-1776358200"
     }
   ],
   "backtest": {
