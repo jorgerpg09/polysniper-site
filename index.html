@@ -124,6 +124,56 @@
         </div>
     </section>
 
+    <!-- PolyWeather Stats (Phase 4) -->
+    <section class="stats-section" id="polyweather-section">
+        <div class="container">
+            <h2>PolyWeather &mdash; Dry-Run Validation</h2>
+            <p class="tagline" style="text-align:center;margin-bottom:1.5em;">
+                Weather ensemble probabilities vs Polymarket temperature markets.
+                Paper-trading until the go-live gate (&gt;55% hit rate &amp; positive P&amp;L).
+            </p>
+            <div class="stats-grid">
+                <div class="stat-card highlight">
+                    <div class="stat-value" id="pw-hit-rate">--%</div>
+                    <div class="stat-label">Hit Rate</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-value" id="pw-pnl">--</div>
+                    <div class="stat-label">Theoretical P&amp;L</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-value" id="pw-trades">--</div>
+                    <div class="stat-label">Paper Trades</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-value" id="pw-cities">--</div>
+                    <div class="stat-label">Active Cities</div>
+                </div>
+            </div>
+            <div style="max-width:800px;margin:2em auto 1em;">
+                <canvas id="pw-pnl-chart" height="120"></canvas>
+            </div>
+            <div class="signals-table-wrap">
+                <table class="signals-table">
+                    <thead>
+                        <tr>
+                            <th>Time</th>
+                            <th>City</th>
+                            <th>Bracket</th>
+                            <th>Edge</th>
+                            <th>Size</th>
+                            <th>Result</th>
+                        </tr>
+                    </thead>
+                    <tbody id="pw-trades-body">
+                        <tr><td colspan="6" style="text-align:center;color:var(--text-dim)">Loading...</td></tr>
+                    </tbody>
+                </table>
+            </div>
+            <p class="stats-updated" id="pw-updated">Loading...</p>
+        </div>
+    </section>
+
     <!-- CTA -->
     <section class="cta-section">
         <div class="container">
@@ -147,6 +197,7 @@
         </div>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.7"></script>
     <script src="app.js"></script>
 </body>
 </html>
