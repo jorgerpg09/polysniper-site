@@ -1,52 +1,52 @@
 {
-  "updated_at": "2026-04-17T19:42:05.749736+00:00",
-  "total_bets": 6,
-  "wins": 3,
+  "updated_at": "2026-04-17T19:47:07.032975+00:00",
+  "total_bets": 5,
+  "wins": 2,
   "losses": 2,
   "pending": 1,
-  "win_rate": 60.0,
-  "pnl": 0.06,
+  "win_rate": 50.0,
+  "pnl": -0.35,
   "current_streak": 1,
   "streak_type": "W",
   "daily": [
     {
       "date": "2026-04-17",
-      "bets": 5,
-      "wins": 3,
+      "bets": 4,
+      "wins": 2,
       "losses": 2,
-      "wr": 60.0
+      "wr": 50.0
     }
   ],
   "recent_signals": [
     {
-      "timestamp": "2026-04-17T19:40:07.007937+00:00",
+      "timestamp": "2026-04-17T19:40:06.801371+00:00",
       "coin": "ETH",
       "direction": "DOWN",
       "entry_price": 0.58,
-      "secs": 7.0,
+      "secs": 6.8,
       "outcome": "PENDING",
       "slug": "eth-updown-5m-1776454800"
     },
     {
-      "timestamp": "2026-04-17T19:25:14.194257+00:00",
+      "timestamp": "2026-04-17T19:25:14.447847+00:00",
       "coin": "BTC",
       "direction": "DOWN",
       "entry_price": 0.57,
-      "secs": 14.2,
+      "secs": 14.4,
       "outcome": "WIN",
       "slug": "btc-updown-5m-1776453900"
     },
     {
-      "timestamp": "2026-04-17T19:10:30.386013+00:00",
+      "timestamp": "2026-04-17T19:10:30.326178+00:00",
       "coin": "BTC",
       "direction": "DOWN",
-      "entry_price": 0.55,
-      "secs": 30.4,
+      "entry_price": 0.57,
+      "secs": 30.3,
       "outcome": "LOSS",
       "slug": "btc-updown-5m-1776453000"
     },
     {
-      "timestamp": "2026-04-17T18:55:04.658659+00:00",
+      "timestamp": "2026-04-17T18:55:04.710527+00:00",
       "coin": "ETH",
       "direction": "DOWN",
       "entry_price": 0.57,
@@ -55,21 +55,22 @@
       "slug": "eth-updown-5m-1776452100"
     },
     {
-      "timestamp": "2026-04-17T18:45:07.411002+00:00",
+      "timestamp": "2026-04-17T18:35:06.812086+00:00",
       "coin": "ETH",
       "direction": "DOWN",
-      "entry_price": 0.58,
-      "secs": 7.4,
-      "outcome": "WIN",
-      "slug": "eth-updown-5m-1776451500"
-    },
-    {
-      "timestamp": "2026-04-17T18:35:07.293691+00:00",
-      "coin": "ETH",
-      "direction": "DOWN",
-      "entry_price": 0.58,
-      "secs": 7.3,
+      "entry_price": 0.57,
+      "secs": 6.8,
       "outcome": "LOSS",
+      "slug": "eth-updown-5m-1776450900"
+    }
+  ],
+  "backtest": {
+    "total_trades": 136520,
+    "win_rate": 70.5,
+    "period": "4 years (Jan 2022 - Mar 2026)",
+    "dataset": "Binance BTCUSDT 1m + 5m candles"
+  }
+}SS",
       "slug": "eth-updown-5m-1776450900"
     }
   ],
