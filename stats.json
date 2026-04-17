@@ -1,79 +1,97 @@
 {
-  "updated_at": "2026-04-17T20:22:16.196226+00:00",
-  "total_bets": 8,
-  "wins": 2,
+  "updated_at": "2026-04-17T20:27:17.528013+00:00",
+  "total_bets": 11,
+  "wins": 5,
   "losses": 4,
   "pending": 2,
-  "win_rate": 33.3,
-  "pnl": -1.54,
+  "win_rate": 55.6,
+  "pnl": -0.32,
   "current_streak": 2,
-  "streak_type": "L",
+  "streak_type": "W",
   "daily": [
     {
       "date": "2026-04-17",
-      "bets": 6,
-      "wins": 2,
+      "bets": 9,
+      "wins": 5,
       "losses": 4,
-      "wr": 33.3
+      "wr": 55.6
     }
   ],
   "recent_signals": [
     {
-      "timestamp": "2026-04-17T20:20:15.722662+00:00",
+      "timestamp": "2026-04-17T20:25:25.419072+00:00",
+      "coin": "ETH",
+      "direction": "DOWN",
+      "entry_price": 0.57,
+      "secs": 25.4,
+      "outcome": "PENDING",
+      "slug": "eth-updown-5m-1776457500"
+    },
+    {
+      "timestamp": "2026-04-17T20:25:18.185265+00:00",
+      "coin": "BTC",
+      "direction": "DOWN",
+      "entry_price": 0.57,
+      "secs": 18.2,
+      "outcome": "PENDING",
+      "slug": "btc-updown-5m-1776457500"
+    },
+    {
+      "timestamp": "2026-04-17T20:20:16.918035+00:00",
       "coin": "ETH",
       "direction": "DOWN",
       "entry_price": 0.58,
-      "secs": 15.7,
-      "outcome": "PENDING",
+      "secs": 16.9,
+      "outcome": "WIN",
       "slug": "eth-updown-5m-1776457200"
     },
     {
-      "timestamp": "2026-04-17T20:15:25.630702+00:00",
+      "timestamp": "2026-04-17T20:15:25.851514+00:00",
       "coin": "BTC",
       "direction": "DOWN",
       "entry_price": 0.57,
-      "secs": 25.6,
-      "outcome": "PENDING",
+      "secs": 25.9,
+      "outcome": "WIN",
       "slug": "btc-updown-5m-1776456900"
     },
     {
-      "timestamp": "2026-04-17T20:05:26.627404+00:00",
+      "timestamp": "2026-04-17T20:00:12.168014+00:00",
       "coin": "BTC",
       "direction": "DOWN",
-      "entry_price": 0.57,
-      "secs": 26.6,
+      "entry_price": 0.58,
+      "secs": 12.2,
       "outcome": "LOSS",
-      "slug": "btc-updown-5m-1776456300"
+      "slug": "btc-updown-5m-1776456000"
     },
     {
-      "timestamp": "2026-04-17T19:40:06.801371+00:00",
+      "timestamp": "2026-04-17T19:40:07.007937+00:00",
       "coin": "ETH",
       "direction": "DOWN",
       "entry_price": 0.58,
-      "secs": 6.8,
+      "secs": 7.0,
       "outcome": "LOSS",
       "slug": "eth-updown-5m-1776454800"
     },
     {
-      "timestamp": "2026-04-17T19:25:14.447847+00:00",
+      "timestamp": "2026-04-17T19:25:14.194257+00:00",
       "coin": "BTC",
       "direction": "DOWN",
       "entry_price": 0.57,
-      "secs": 14.4,
+      "secs": 14.2,
       "outcome": "WIN",
       "slug": "btc-updown-5m-1776453900"
     },
     {
-      "timestamp": "2026-04-17T19:10:30.326178+00:00",
+      "timestamp": "2026-04-17T19:10:30.386013+00:00",
       "coin": "BTC",
       "direction": "DOWN",
-      "entry_price": 0.57,
-      "secs": 30.3,
+      "entry_price": 0.55,
+      "secs": 30.4,
       "outcome": "LOSS",
       "slug": "btc-updown-5m-1776453000"
     },
     {
-      "timestamp": "2026-04-17T18:55:04.710527+00:00",
+      "timestamp": "2026-04-17T18:55:04.658659+00:00",
       "coin": "ETH",
       "direction": "DOWN",
       "entry_price": 0.57,
@@ -82,22 +100,21 @@
       "slug": "eth-updown-5m-1776452100"
     },
     {
-      "timestamp": "2026-04-17T18:35:06.812086+00:00",
+      "timestamp": "2026-04-17T18:45:07.411002+00:00",
       "coin": "ETH",
       "direction": "DOWN",
-      "entry_price": 0.57,
-      "secs": 6.8,
+      "entry_price": 0.58,
+      "secs": 7.4,
+      "outcome": "WIN",
+      "slug": "eth-updown-5m-1776451500"
+    },
+    {
+      "timestamp": "2026-04-17T18:35:07.293691+00:00",
+      "coin": "ETH",
+      "direction": "DOWN",
+      "entry_price": 0.58,
+      "secs": 7.3,
       "outcome": "LOSS",
-      "slug": "eth-updown-5m-1776450900"
-    }
-  ],
-  "backtest": {
-    "total_trades": 136520,
-    "win_rate": 70.5,
-    "period": "4 years (Jan 2022 - Mar 2026)",
-    "dataset": "Binance BTCUSDT 1m + 5m candles"
-  }
-}S",
       "slug": "eth-updown-5m-1776450900"
     }
   ],
