@@ -30,6 +30,12 @@ function renderStats(stats) {
         kellyEl.textContent = (kellyPnl >= 0 ? '+' : '') + '$' + kellyPnl.toFixed(2);
         kellyEl.style.color = kellyPnl >= 0 ? 'var(--win)' : 'var(--loss)';
     }
+    // Color the PnL card border based on overall
+    const pnlCard = pnlEl && pnlEl.closest('.stat-card');
+    if (pnlCard) {
+        const overall = pnl + kellyPnl;
+        pnlCard.style.borderColor = overall >= 0 ? 'var(--win)' : 'var(--loss)';
+    }
 
     const streak = stats.current_streak || 0;
     const streakType = stats.streak_type || '';

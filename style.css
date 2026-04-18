@@ -147,6 +147,28 @@ body {
     font-size: 2.2rem;
     font-weight: 800;
     color: var(--accent);
+}
+
+.stat-value-dual {
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    gap: 6px;
+}
+
+.pnl-primary {
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+
+.pnl-sep {
+    font-size: 0.9rem;
+    color: var(--text-dim);
+}
+
+.pnl-secondary {
+    font-size: 1.5rem;
+    font-weight: 800;
     margin-bottom: 4px;
 }
 
