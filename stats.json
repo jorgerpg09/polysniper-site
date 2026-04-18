@@ -1,19 +1,19 @@
 {
-  "updated_at": "2026-04-18T02:28:24.064980+00:00",
-  "total_bets": 23,
-  "wins": 14,
+  "updated_at": "2026-04-18T02:33:25.707506+00:00",
+  "total_bets": 25,
+  "wins": 16,
   "losses": 7,
   "pending": 2,
-  "win_rate": 66.7,
-  "pnl": 1.58,
-  "kelly_pnl": 2.73,
-  "current_streak": 6,
+  "win_rate": 69.6,
+  "pnl": 2.38,
+  "kelly_pnl": 3.81,
+  "current_streak": 8,
   "streak_type": "W",
   "daily": [
     {
       "date": "2026-04-18",
-      "bets": 5,
-      "wins": 5,
+      "bets": 7,
+      "wins": 7,
       "losses": 0,
       "wr": 100.0
     },
@@ -27,12 +27,30 @@
   ],
   "recent_signals": [
     {
+      "timestamp": "2026-04-18T02:30:27.522485+00:00",
+      "coin": "BTC",
+      "direction": "DOWN",
+      "entry_price": 0.58,
+      "secs": 26.5,
+      "outcome": "PENDING",
+      "slug": "btc-updown-5m-1776479400"
+    },
+    {
+      "timestamp": "2026-04-18T02:30:23.544339+00:00",
+      "coin": "ETH",
+      "direction": "DOWN",
+      "entry_price": 0.59,
+      "secs": 22.5,
+      "outcome": "PENDING",
+      "slug": "eth-updown-5m-1776479400"
+    },
+    {
       "timestamp": "2026-04-18T02:25:28.550956+00:00",
       "coin": "BTC",
       "direction": "DOWN",
       "entry_price": 0.59,
       "secs": 27.8,
-      "outcome": "PENDING",
+      "outcome": "WIN",
       "slug": "btc-updown-5m-1776479100"
     },
     {
@@ -41,7 +59,7 @@
       "direction": "DOWN",
       "entry_price": 0.58,
       "secs": 3.5,
-      "outcome": "PENDING",
+      "outcome": "WIN",
       "slug": "eth-updown-5m-1776479100"
     },
     {
@@ -187,24 +205,6 @@
       "secs": 7.0,
       "outcome": "LOSS",
       "slug": "eth-updown-5m-1776454800"
-    },
-    {
-      "timestamp": "2026-04-17T19:25:14.194257+00:00",
-      "coin": "BTC",
-      "direction": "DOWN",
-      "entry_price": 0.57,
-      "secs": 14.2,
-      "outcome": "WIN",
-      "slug": "btc-updown-5m-1776453900"
-    },
-    {
-      "timestamp": "2026-04-17T19:10:30.386013+00:00",
-      "coin": "BTC",
-      "direction": "DOWN",
-      "entry_price": 0.55,
-      "secs": 30.4,
-      "outcome": "LOSS",
-      "slug": "btc-updown-5m-1776453000"
     }
   ],
   "backtest": {
