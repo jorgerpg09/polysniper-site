@@ -24,6 +24,13 @@ function renderStats(stats) {
     pnlEl.textContent = (pnl >= 0 ? '+' : '') + '$' + pnl.toFixed(2);
     pnlEl.style.color = pnl >= 0 ? 'var(--win)' : 'var(--loss)';
 
+    const kellyPnl = stats.kelly_pnl || 0;
+    const kellyEl = document.getElementById('stat-kelly-pnl');
+    if (kellyEl) {
+        kellyEl.textContent = (kellyPnl >= 0 ? '+' : '') + '$' + kellyPnl.toFixed(2);
+        kellyEl.style.color = kellyPnl >= 0 ? 'var(--win)' : 'var(--loss)';
+    }
+
     const streak = stats.current_streak || 0;
     const streakType = stats.streak_type || '';
     document.getElementById('stat-streak').textContent = streak + streakType;
