@@ -184,3 +184,247 @@ function renderPolyWeatherTrades(trades) {
 // Extend the existing cadence: load on init and refresh every 60s alongside PolySniper.
 loadPolyWeather();
 setInterval(loadPolyWeather, 60000);
+
+// ---------- PolyWeather Lifecycle Timeline ----------
+
+const PW_LIFECYCLE_URL = 'polyweather-lifecycle.json';
+const PW_LC_REFRESH_MS = 60_000;
+let _pwLifecycleData = null;
+
+async function loadPolyWeatherLifecycle() {
+    try {
+        const resp = await fetch(PW_LIFECYCLE_URL, { cache: 'no-cache' });
+        if (!resp.ok) throw new Error('HTTP ' + resp.status);
+        const data = await resp.json();
+        _pwLifecycleData = data;
+        populateCityFilter(data.markets);
+        renderLifecycle();
+    } catch (err) {
+        console.warn('Failed to load polyweather lifecycle:', err);
+        const el = document.getElementById('pw-lc-updated');
+        if (el) el.textContent = 'Lifecycle unavailable -- check back soon';
+    }
+}
+
+function populateCityFilter(markets) {
+    const sel = document.getElementById('pw-lc-city');
+    const current = sel.value;
+    const cities = [...new Set(markets.map(m => m.city))].sort();
+    sel.innerHTML = '<option value="">All</option>' +
+        cities.map(c => `<option value="${c}">${c}</option>`).join('');
+    sel.value = current;
+}
+
+function renderLifecycle() {
+    if (!_pwLifecycleData) return;
+    const { markets, now, updated_at } = _pwLifecycleData;
+    const nowMs = Date.parse(now);
+
+    const cityFilter = document.getElementById('pw-lc-city').value;
+    const typeFilter = document.getElementById('pw-lc-type').value;
+    const stateFilter = document.getElementById('pw-lc-state').value;
+
+    const visible = markets.filter(m => {
+        if (cityFilter && m.city !== cityFilter) return false;
+        if (typeFilter && m.market_type !== typeFilter) return false;
+        if (stateFilter && m.state !== stateFilter) return false;
+        return true;
+    });
+
+    // Cluster by city, sorted by soonest pending close. Cities with any
+    // pending market come first (ordered by earliest pending effective_close);
+    // fully-resolved cities sink to the bottom (ordered by their overall
+    // earliest close). Within a city: HIGH before LOW, then bracket numeric.
+    const cityKey = {};
+    for (const m of visible) {
+        const k = m.effective_close_time || m.market_end_date || '';
+        const isPending = !(m.outcome);
+        if (!cityKey[m.city]) cityKey[m.city] = { pendingKey: null, anyKey: k };
+        const ck = cityKey[m.city];
+        if (isPending && (ck.pendingKey === null || k < ck.pendingKey)) ck.pendingKey = k;
+        if (!ck.anyKey || k < ck.anyKey) ck.anyKey = k;
+    }
+    visible.sort((a, b) => {
+        const aCk = cityKey[a.city], bCk = cityKey[b.city];
+        // 1. Cities with any pending markets come before fully-resolved cities
+        const aPend = aCk.pendingKey !== null, bPend = bCk.pendingKey !== null;
+        if (aPend !== bPend) return aPend ? -1 : 1;
+        // 2. Sort cities by their key (soonest first)
+        const aSortKey = aPend ? aCk.pendingKey : aCk.anyKey;
+        const bSortKey = bPend ? bCk.pendingKey : bCk.anyKey;
+        const keyCmp = aSortKey.localeCompare(bSortKey);
+        if (keyCmp !== 0) return keyCmp;
+        // 3. Same key, different city → alphabetical tiebreak
+        if (a.city !== b.city) return a.city.localeCompare(b.city);
+        // 4. Same city → HIGH before LOW
+        if (a.market_type !== b.market_type) return a.market_type === 'high' ? -1 : 1;
+        // 5. Same city+type → bracket numeric (exact 14 < exact 15)
+        const aNum = parseFloat((a.bracket || '').replace(/[^\d.\-]/g, ''));
+        const bNum = parseFloat((b.bracket || '').replace(/[^\d.\-]/g, ''));
+        if (!isNaN(aNum) && !isNaN(bNum) && aNum !== bNum) return aNum - bNum;
+        // 6. Final tiebreak: effective_close
+        const aKey = a.effective_close_time || a.market_end_date || '';
+        const bKey = b.effective_close_time || b.market_end_date || '';
+        return aKey.localeCompare(bKey);
+    });
+
+    const betCount = visible.reduce((s, m) => s + m.bets.length, 0);
+    document.getElementById('pw-lc-summary').textContent =
+        visible.length + ' markets • ' + betCount + ' bets';
+    document.getElementById('pw-lc-updated').textContent =
+        'Updated ' + new Date(updated_at).toLocaleTimeString() + ' • auto-refresh 60s';
+
+    drawLifecycleSvg(visible, nowMs);
+}
+
+function drawLifecycleSvg(markets, nowMs) {
+    const svg = document.getElementById('pw-lc-svg');
+    const MARGIN_LEFT = 210;
+    const MARGIN_RIGHT = 20;
+    const MARGIN_TOP = 30;
+    const ROW_H = 22;
+    const CITY_HEADER_H = 8;  // extra vertical gap between city groups
+    // Precompute per-row y offset accounting for city-group spacing.
+    const rowYOffsets = [];
+    let cumExtra = 0;
+    markets.forEach((m, i) => {
+        if (i > 0 && markets[i].city !== markets[i - 1].city) cumExtra += CITY_HEADER_H;
+        rowYOffsets.push(MARGIN_TOP + i * ROW_H + cumExtra);
+    });
+    const rowCount = Math.max(markets.length, 1);
+    const height = MARGIN_TOP + rowCount * ROW_H + cumExtra + 30;
+    svg.setAttribute('height', height);
+
+    const totalWidth = svg.getBoundingClientRect().width || svg.clientWidth || 900;
+    const chartW = totalWidth - MARGIN_LEFT - MARGIN_RIGHT;
+
+    const times = [];
+    for (const m of markets) {
+        if (m.game_start_time) times.push(Date.parse(m.game_start_time));
+        if (m.effective_close_time) times.push(Date.parse(m.effective_close_time));
+        if (m.resolved_at) times.push(Date.parse(m.resolved_at));
+        for (const b of m.bets) if (b.placed_at) times.push(Date.parse(b.placed_at));
+    }
+    if (times.length === 0) { svg.innerHTML = ''; return; }
+
+    const tMin = Math.min(...times);
+    const tMax = Math.max(...times, nowMs);
+    const tSpan = tMax - tMin || 1;
+    const xOf = (ts) => MARGIN_LEFT + ((ts - tMin) / tSpan) * chartW;
+
+    const parts = [];
+
+    // Time axis (4 ticks)
+    for (let i = 0; i <= 4; i++) {
+        const t = tMin + (tSpan * i / 4);
+        const x = xOf(t).toFixed(1);
+        const lbl = new Date(t).toISOString().replace('T', ' ').substring(5, 16) + 'Z';
+        parts.push(`<line x1="${x}" y1="${MARGIN_TOP - 10}" x2="${x}" y2="${height - 20}" stroke="#2a2a3a" stroke-dasharray="2,4"/>`);
+        parts.push(`<text x="${x}" y="${height - 4}" text-anchor="middle" font-size="9" fill="#666">${lbl}</text>`);
+    }
+
+    // Now line
+    const nowX = xOf(nowMs);
+    if (nowX >= MARGIN_LEFT && nowX <= totalWidth - MARGIN_RIGHT) {
+        parts.push(`<line x1="${nowX.toFixed(1)}" y1="${MARGIN_TOP - 15}" x2="${nowX.toFixed(1)}" y2="${height - 20}" stroke="var(--accent)" stroke-width="2"/>`);
+        parts.push(`<text x="${nowX.toFixed(1)}" y="${MARGIN_TOP - 18}" text-anchor="middle" font-size="9" fill="var(--accent)">NOW</text>`);
+    }
+
+    // Per-market rows
+    markets.forEach((m, i) => {
+        const y = rowYOffsets[i];
+        const rowMid = y + ROW_H / 2;
+
+        // City-group separator line above first row of each city
+        const isFirstOfCity = i === 0 || markets[i - 1].city !== m.city;
+        if (isFirstOfCity && i > 0) {
+            const sepY = y - CITY_HEADER_H / 2;
+            parts.push(`<line x1="0" y1="${sepY.toFixed(1)}" x2="${totalWidth}" y2="${sepY.toFixed(1)}" stroke="#2a2a3a" stroke-width="1"/>`);
+        }
+
+        // Label format: "City ↑/↓ bracket · Apr DD"
+        const typeSymbol = m.market_type === 'low' ? '↓' : '↑';
+        const resDate = (m.resolution_date || '').substring(5);  // "04-23" from "2026-04-23"
+        const cityAbbrev = {
+            'New York City': 'NYC',
+            'Hong Kong': 'HK',
+            'Sao Paulo': 'SP',
+        };
+        const cityShort = cityAbbrev[m.city]
+            || (m.city.length > 12 ? m.city.substring(0, 11) + '…' : m.city);
+        const label = `${cityShort} ${typeSymbol} ${m.bracket} · ${resDate}`;
+        if (m.market_slug) {
+            const url = 'https://polymarket.com/market/' + encodeURIComponent(m.market_slug);
+            parts.push(`<a href="${url}" target="_blank" rel="noopener"><text x="${MARGIN_LEFT - 6}" y="${(rowMid + 4).toFixed(1)}" text-anchor="end" font-size="10" fill="var(--accent)" style="cursor:pointer;text-decoration:underline">${escapeXml(label)}</text></a>`);
+        } else {
+            parts.push(`<text x="${MARGIN_LEFT - 6}" y="${(rowMid + 4).toFixed(1)}" text-anchor="end" font-size="10" fill="#bbb">${escapeXml(label)}</text>`);
+        }
+
+        // "Legacy" state indicator: if game_start_time missing, dashed outline on full row
+        if (m.state === 'legacy') {
+            parts.push(`<rect x="${MARGIN_LEFT}" y="${(y + 4).toFixed(1)}" width="${(totalWidth - MARGIN_LEFT - MARGIN_RIGHT).toFixed(1)}" height="${ROW_H - 8}" fill="none" stroke="#555" stroke-dasharray="3,3" opacity="0.4"/>`);
+        }
+
+        const gst = m.game_start_time ? Date.parse(m.game_start_time) : null;
+        const lpt = m.last_placement_time ? Date.parse(m.last_placement_time) : null;
+        const efc = m.effective_close_time ? Date.parse(m.effective_close_time) : null;
+        const resolvedAt = m.resolved_at ? Date.parse(m.resolved_at) : null;
+
+        // Trading segment: game_start → last_placement
+        if (gst !== null && lpt !== null) {
+            const x0 = xOf(gst), x1 = xOf(lpt);
+            if (x1 > x0) parts.push(`<rect x="${x0.toFixed(1)}" y="${y + 6}" width="${(x1 - x0).toFixed(1)}" height="${ROW_H - 12}" fill="var(--legend-trading)" opacity="0.65" rx="2"/>`);
+        }
+        // Post-placement segment: last_placement → effective_close
+        if (lpt !== null && efc !== null) {
+            const x0 = xOf(lpt), x1 = xOf(efc);
+            if (x1 > x0) parts.push(`<rect x="${x0.toFixed(1)}" y="${y + 6}" width="${(x1 - x0).toFixed(1)}" height="${ROW_H - 12}" fill="var(--legend-post)" opacity="0.65" rx="2"/>`);
+        }
+        // Closed/awaiting segment: effective_close → resolved_at (or now)
+        if (efc !== null) {
+            const closedEnd = resolvedAt !== null ? resolvedAt : nowMs;
+            if (closedEnd > efc) {
+                const x0 = xOf(efc), x1 = xOf(closedEnd);
+                if (x1 > x0) parts.push(`<rect x="${x0.toFixed(1)}" y="${y + 6}" width="${(x1 - x0).toFixed(1)}" height="${ROW_H - 12}" fill="var(--legend-closed)" opacity="0.65" rx="2"/>`);
+            }
+        }
+
+        // Resolution dot (circle at resolved_at)
+        if (resolvedAt !== null) {
+            const cx = xOf(resolvedAt).toFixed(1);
+            const fill = m.outcome === 'win' ? 'var(--legend-won)' : 'var(--legend-lost)';
+            parts.push(`<circle cx="${cx}" cy="${rowMid}" r="5" fill="${fill}" stroke="#0a0a0f" stroke-width="1.5"/>`);
+        }
+
+        // Bet markers
+        for (const b of m.bets) {
+            if (!b.placed_at) continue;
+            const bx = xOf(Date.parse(b.placed_at)).toFixed(1);
+            const fill = b.outcome === 'win' ? 'var(--legend-won)' :
+                b.outcome === 'loss' ? 'var(--legend-lost)' : 'var(--legend-bet)';
+            const pnlStr = b.realized_pnl_usd != null
+                ? ' pnl=$' + b.realized_pnl_usd.toFixed(2) : '';
+            const tip = m.city + ' ' + m.bracket + ' | ' +
+                b.placed_at.substring(0, 16) + ' | $' +
+                (b.size_usd || 0).toFixed(2) + ' | p=' +
+                (b.model_prob || 0).toFixed(3) + ' | ' +
+                (b.outcome || 'pending') + pnlStr;
+            parts.push(`<circle cx="${bx}" cy="${rowMid}" r="3.5" fill="${fill}" stroke="#0a0a0f" stroke-width="0.5"><title>${escapeXml(tip)}</title></circle>`);
+        }
+    });
+
+    svg.innerHTML = parts.join('\n');
+}
+
+function escapeXml(s) {
+    return String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+}
+
+// Mirror top-level loadStats() / loadPolyWeather() pattern (script runs after DOM)
+loadPolyWeatherLifecycle();
+setInterval(loadPolyWeatherLifecycle, PW_LC_REFRESH_MS);
+window.addEventListener('resize', renderLifecycle);
+['pw-lc-city', 'pw-lc-type', 'pw-lc-state'].forEach(id => {
+    document.getElementById(id).addEventListener('change', renderLifecycle);
+});

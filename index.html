@@ -178,6 +178,56 @@
         </div>
     </section>
 
+    <!-- PolyWeather Lifecycle Timeline -->
+    <section class="stats-section" id="pw-lifecycle-section">
+        <div class="container">
+            <h2>PolyWeather &mdash; Market Lifecycle</h2>
+            <p class="tagline" style="text-align:center;margin-bottom:1.2em;">
+                Per-market timeline: trading windows, placement windows, and our bets on each.
+            </p>
+
+            <div class="pw-lifecycle-controls">
+                <label>City:
+                    <select id="pw-lc-city"><option value="">All</option></select>
+                </label>
+                <label>Type:
+                    <select id="pw-lc-type">
+                        <option value="">All</option>
+                        <option value="high">HIGH</option>
+                        <option value="low">LOW</option>
+                    </select>
+                </label>
+                <label>State:
+                    <select id="pw-lc-state">
+                        <option value="">All</option>
+                        <option value="trading">Trading</option>
+                        <option value="after_last_placement">Post-placement</option>
+                        <option value="closed">Awaiting UMA</option>
+                        <option value="resolved">Resolved</option>
+                        <option value="before_start">Future</option>
+                    </select>
+                </label>
+                <span class="pw-lc-stats" id="pw-lc-summary">Loading&hellip;</span>
+            </div>
+
+            <div class="pw-lifecycle-legend">
+                <span class="legend-swatch legend-trading"></span>Trading
+                <span class="legend-swatch legend-post"></span>Post-placement
+                <span class="legend-swatch legend-closed"></span>Awaiting UMA
+                <span class="legend-swatch legend-won"></span>Won
+                <span class="legend-swatch legend-lost"></span>Lost
+                <span class="legend-swatch legend-bet"></span>Bet marker
+                <span class="legend-swatch legend-now"></span>Now
+            </div>
+
+            <div id="pw-lc-svg-wrap">
+                <svg id="pw-lc-svg" width="100%" height="600"></svg>
+            </div>
+
+            <p class="stats-updated" id="pw-lc-updated">Loading&hellip;</p>
+        </div>
+    </section>
+
     <!-- CTA -->
     <section class="cta-section">
         <div class="container">

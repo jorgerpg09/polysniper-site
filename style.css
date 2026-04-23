@@ -377,3 +377,77 @@ footer {
     .steps-grid { grid-template-columns: 1fr; }
     .record-grid { grid-template-columns: 1fr; }
 }
+
+/* ------- PolyWeather Lifecycle ------- */
+:root {
+    --legend-before: #4a4a4a;
+    --legend-trading: #3ddc97;
+    --legend-post: #f4c15d;
+    --legend-closed: #9a4444;
+    --legend-won: #3ddc97;
+    --legend-lost: #e85a6d;
+    --legend-bet: #5aa7e8;
+}
+
+.pw-lifecycle-controls {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    align-items: center;
+    margin: 12px 0 6px;
+    font-size: 13px;
+}
+.pw-lifecycle-controls label {
+    color: var(--text-dim);
+    display: flex;
+    gap: 6px;
+    align-items: center;
+}
+.pw-lifecycle-controls select {
+    background: var(--bg-card);
+    color: var(--text);
+    border: 1px solid var(--border);
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 13px;
+}
+.pw-lc-stats {
+    margin-left: auto;
+    color: var(--text-dim);
+    font-size: 12px;
+}
+
+.pw-lifecycle-legend {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    align-items: center;
+    margin: 8px 0 16px;
+    font-size: 11px;
+    color: var(--text-dim);
+}
+.legend-swatch {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border-radius: 2px;
+    margin-right: 4px;
+    vertical-align: middle;
+}
+.legend-swatch.legend-before  { background: var(--legend-before); }
+.legend-swatch.legend-trading { background: var(--legend-trading); }
+.legend-swatch.legend-post    { background: var(--legend-post); }
+.legend-swatch.legend-closed  { background: var(--legend-closed); }
+.legend-swatch.legend-won     { background: var(--legend-won); border-radius: 50%; }
+.legend-swatch.legend-lost    { background: var(--legend-lost); border-radius: 50%; }
+.legend-swatch.legend-bet     { background: var(--legend-bet); border-radius: 50%; }
+.legend-swatch.legend-now     { background: var(--accent); width: 2px; border-radius: 0; }
+
+#pw-lc-svg-wrap {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 8px 0;
+    overflow-x: auto;
+}
+#pw-lc-svg { display: block; }
