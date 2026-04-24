@@ -269,10 +269,24 @@ function renderPolyWeatherTrades(trades) {
                   : 'result-pending';
         const edgePct = ((t.edge || 0) * 100).toFixed(1) + '%';
         const size = '$' + (t.kelly_size_usdc || 0).toFixed(2);
+
+        // If the row has a market_slug, wrap the time + bracket cells in a
+        // link to the Polymarket market. Matches the lifecycle timeline's
+        // row-label linking pattern.
+        const url = t.market_slug
+            ? `https://polymarket.com/market/${encodeURIComponent(t.market_slug)}`
+            : null;
+        const timeCell = url
+            ? `<td><a href="${url}" target="_blank" rel="noopener">${time}</a></td>`
+            : `<td>${time}</td>`;
+        const bracketCell = url
+            ? `<td><a href="${url}" target="_blank" rel="noopener"><code>${t.bracket}</code></a></td>`
+            : `<td><code>${t.bracket}</code></td>`;
+
         return `<tr>
-            <td>${time}</td>
+            ${timeCell}
             <td>${t.city}</td>
-            <td><code>${t.bracket}</code></td>
+            ${bracketCell}
             <td>${edgePct}</td>
             <td>${size}</td>
             <td class="${cls}">${outcome}</td>

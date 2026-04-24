@@ -528,3 +528,18 @@ body.strategy-mode #pw-cities-card { display: none; }
 }
 .bankroll-bar-fill.is-warn { background: #f0b050; }
 .bankroll-bar-fill.is-danger { background: var(--loss); }
+
+/* Inline links inside the recent-trades / signals tables — subtle
+   accent color, no underline by default, underline on hover. */
+.signals-table td a {
+    color: var(--accent);
+    text-decoration: none;
+    transition: opacity 0.15s ease;
+}
+.signals-table td a:hover {
+    text-decoration: underline;
+    opacity: 0.85;
+}
+.signals-table td a code {
+    color: inherit;  /* inherit accent color from the link, not default code color */
+}
