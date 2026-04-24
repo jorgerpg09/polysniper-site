@@ -274,27 +274,40 @@ function renderPolyWeatherTrades(trades) {
         const cls = outcome === 'WIN'  ? 'result-win'
                   : outcome === 'LOSS' ? 'result-loss'
                   : 'result-pending';
-        const edgePct = ((t.edge || 0) * 100).toFixed(1) + '%';
         const size = '$' + (t.kelly_size_usdc || 0).toFixed(2);
 
-        // If the row has a market_slug, wrap the time + bracket cells in a
-        // link to the Polymarket market. Matches the lifecycle timeline's
-        // row-label linking pattern.
+        // Model vs Market probabilities at bet time.
+        // Fallback: if new fields missing (pre-exporter-update JSON),
+        // derive from edge where possible — otherwise show "—".
+        const hasProbs = t.model_prob != null && t.market_ask != null;
+        const modelPct = hasProbs ? (t.model_prob * 100).toFixed(0) + '%'  : '—';
+        const marketPct = hasProbs ? (t.market_ask * 100).toFixed(0) + '%' : '—';
+        const edgePP = hasProbs
+            ? ((t.model_prob - t.market_ask) * 100).toFixed(1)
+            : ((t.edge || 0) * 100).toFixed(1);
+        const edgeBadge = hasProbs
+            ? ` <span class="edge-pp">(+${edgePP}pp)</span>`
+            : ` <span class="edge-pp">${edgePP}pp</span>`;
+
+        // If the row has a market_slug, link the CITY cell (was TIME before —
+        // time isn't market-identifying, city+bracket is). Bracket stays
+        // linked too because our own bracket semantics (e.g. "exact 21")
+        // are the second piece of market identity.
         const url = t.market_slug
             ? `https://polymarket.com/market/${encodeURIComponent(t.market_slug)}`
             : null;
-        const timeCell = url
-            ? `<td><a href="${url}" target="_blank" rel="noopener">${time}</a></td>`
-            : `<td>${time}</td>`;
+        const cityCell = url
+            ? `<td><a href="${url}" target="_blank" rel="noopener">${t.city}</a></td>`
+            : `<td>${t.city}</td>`;
         const bracketCell = url
             ? `<td><a href="${url}" target="_blank" rel="noopener"><code>${t.bracket}</code></a></td>`
             : `<td><code>${t.bracket}</code></td>`;
 
         return `<tr>
-            ${timeCell}
-            <td>${t.city}</td>
+            <td>${time}</td>
+            ${cityCell}
             ${bracketCell}
-            <td>${edgePct}</td>
+            <td class="prob-cell">${modelPct} / ${marketPct}${edgeBadge}</td>
             <td>${size}</td>
             <td class="${cls}">${outcome}</td>
         </tr>`;

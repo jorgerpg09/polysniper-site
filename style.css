@@ -543,3 +543,14 @@ body.strategy-mode #pw-cities-card { display: none; }
 .signals-table td a code {
     color: inherit;  /* inherit accent color from the link, not default code color */
 }
+
+/* Recent-trades: Model / Market column — edge badge in accent, slightly smaller */
+.signals-table td.prob-cell {
+    font-variant-numeric: tabular-nums;
+    white-space: nowrap;
+}
+.signals-table td.prob-cell .edge-pp {
+    color: var(--text-dim);
+    font-size: 0.85em;
+    margin-left: 4px;
+}
