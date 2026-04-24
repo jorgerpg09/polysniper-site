@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-04-24T18:59:24.577113+00:00",
-  "now": "2026-04-24T18:59:24.577113+00:00",
+  "updated_at": "2026-04-24T19:09:24.551617+00:00",
+  "now": "2026-04-24T19:09:24.551617+00:00",
   "markets": [
     {
       "condition_id": "0x4276f86bfa6d55d31ee884308c67fc221e71f30db6c7ba228d11e14b6e79ea09",
@@ -663,7 +663,7 @@
       "resolved_at": null,
       "outcome": null,
       "resolution_source": null,
-      "state": "after_last_placement",
+      "state": "closed",
       "bets": [
         {
           "id": 162,
@@ -697,7 +697,7 @@
       "resolved_at": null,
       "outcome": null,
       "resolution_source": null,
-      "state": "after_last_placement",
+      "state": "closed",
       "bets": [
         {
           "id": 129,
@@ -731,7 +731,7 @@
       "resolved_at": null,
       "outcome": null,
       "resolution_source": null,
-      "state": "after_last_placement",
+      "state": "closed",
       "bets": [
         {
           "id": 130,
@@ -765,7 +765,7 @@
       "resolved_at": null,
       "outcome": null,
       "resolution_source": null,
-      "state": "after_last_placement",
+      "state": "closed",
       "bets": [
         {
           "id": 123,
@@ -799,7 +799,7 @@
       "resolved_at": null,
       "outcome": null,
       "resolution_source": null,
-      "state": "after_last_placement",
+      "state": "closed",
       "bets": [
         {
           "id": 150,
@@ -1037,7 +1037,7 @@
       "resolved_at": null,
       "outcome": null,
       "resolution_source": null,
-      "state": "trading",
+      "state": "after_last_placement",
       "bets": [
         {
           "id": 203,
@@ -1559,6 +1559,74 @@
           "fee_usd": null,
           "fill_quality": null,
           "strategy": "modal_early"
+        }
+      ]
+    },
+    {
+      "condition_id": "0x5003e8460dafd34817e03dfe5c5f836d56dca23001ccd56b541019773c7bbded",
+      "city": "Seoul",
+      "market_type": "low",
+      "bracket": "exact 10",
+      "bracket_type": "exact",
+      "resolution_date": "2026-04-25",
+      "game_start_time": "2026-04-24T15:00:00+00:00",
+      "last_placement_time": "2026-04-25T03:00:00+00:00",
+      "effective_close_time": "2026-04-25T11:00:00+00:00",
+      "market_end_date": "2026-04-25T12:00:00+00:00",
+      "market_slug": "lowest-temperature-in-seoul-on-april-25-2026-10c",
+      "resolved_at": null,
+      "outcome": null,
+      "resolution_source": null,
+      "state": "trading",
+      "bets": [
+        {
+          "id": 219,
+          "placed_at": "2026-04-24T19:02:56.883793+00:00",
+          "size_usd": 1.0,
+          "filled_shares": 500.0,
+          "filled_vwap": 0.001,
+          "model_prob": 0.18194828061005042,
+          "best_ask_at_placement": 0.001,
+          "limit_price": 0.002,
+          "outcome": null,
+          "realized_pnl_usd": null,
+          "fee_usd": null,
+          "fill_quality": null,
+          "strategy": "tail_longshot"
+        }
+      ]
+    },
+    {
+      "condition_id": "0x5c7f9dea71010959ed7f2cf6c00b2a9c287313ddc5f2987792202b8171b3ec2c",
+      "city": "Seoul",
+      "market_type": "low",
+      "bracket": "exact 11",
+      "bracket_type": "exact",
+      "resolution_date": "2026-04-25",
+      "game_start_time": "2026-04-24T15:00:00+00:00",
+      "last_placement_time": "2026-04-25T03:00:00+00:00",
+      "effective_close_time": "2026-04-25T11:00:00+00:00",
+      "market_end_date": "2026-04-25T12:00:00+00:00",
+      "market_slug": "lowest-temperature-in-seoul-on-april-25-2026-11c",
+      "resolved_at": null,
+      "outcome": null,
+      "resolution_source": null,
+      "state": "trading",
+      "bets": [
+        {
+          "id": 218,
+          "placed_at": "2026-04-24T19:00:56.363386+00:00",
+          "size_usd": 1.0,
+          "filled_shares": 500.0,
+          "filled_vwap": 0.001,
+          "model_prob": 0.11197187789073137,
+          "best_ask_at_placement": 0.001,
+          "limit_price": 0.002,
+          "outcome": null,
+          "realized_pnl_usd": null,
+          "fee_usd": null,
+          "fill_quality": null,
+          "strategy": "tail_longshot"
         }
       ]
     },
