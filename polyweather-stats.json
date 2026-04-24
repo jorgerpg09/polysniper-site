@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-04-24T15:55:58.911460+00:00",
+  "updated_at": "2026-04-24T16:05:58.952751+00:00",
   "hit_rate": 0.0,
-  "theoretical_pnl": -9.6856,
-  "trade_count": 45,
+  "theoretical_pnl": -11.7766,
+  "trade_count": 46,
   "active_cities": 8,
   "daily_pnl": [
     {
@@ -11,10 +11,21 @@
     },
     {
       "date": "2026-04-24",
-      "cumulative_pnl": -9.6856
+      "cumulative_pnl": -11.7766
     }
   ],
   "recent_trades": [
+    {
+      "logged_at": "2026-04-24T16:00:32.134256+00:00",
+      "city": "London",
+      "bracket": "exact 19",
+      "edge": 0.2792003711558513,
+      "kelly_size_usdc": 1.0,
+      "outcome": "PENDING",
+      "resolution_date": "2026-04-24",
+      "strategy": "tail_longshot",
+      "market_slug": "highest-temperature-in-london-on-april-24-2026-19c"
+    },
     {
       "logged_at": "2026-04-24T15:36:34.842942+00:00",
       "city": "Paris",
@@ -142,7 +153,7 @@
       "bracket": "exact 21",
       "edge": 0.2405636588701393,
       "kelly_size_usdc": 2.0,
-      "outcome": "PENDING",
+      "outcome": "LOSS",
       "resolution_date": "2026-04-24",
       "strategy": "modal_early",
       "market_slug": "highest-temperature-in-paris-on-april-24-2026-21c"
@@ -223,43 +234,32 @@
       "resolution_date": "2026-04-24",
       "strategy": "tail_longshot",
       "market_slug": "lowest-temperature-in-hong-kong-on-april-24-2026-20c"
-    },
-    {
-      "logged_at": "2026-04-24T10:00:19.296667+00:00",
-      "city": "New York City",
-      "bracket": "between 56 and 57",
-      "edge": 0.17209220852947027,
-      "kelly_size_usdc": 1.0,
-      "outcome": "LOSS",
-      "resolution_date": "2026-04-24",
-      "strategy": "tail_longshot",
-      "market_slug": "lowest-temperature-in-nyc-on-april-24-2026-56-57f"
     }
   ],
   "strategies": {
     "modal_early": {
       "bets": 6,
-      "resolved": 0,
+      "resolved": 1,
       "wins": 0,
-      "pnl_usd": 0.0,
+      "pnl_usd": -2.091,
       "bankroll": {
         "start": 100.0,
-        "current": 100.0,
-        "open_stake": 12.0,
-        "available": 88.0,
-        "daily_loss": 0.0
+        "current": 97.909,
+        "open_stake": 10.0,
+        "available": 87.909,
+        "daily_loss": 2.091
       }
     },
     "tail_longshot": {
-      "bets": 39,
+      "bets": 40,
       "resolved": 23,
       "wins": 0,
       "pnl_usd": -13.8856,
       "bankroll": {
         "start": 100.0,
         "current": 86.6398,
-        "open_stake": 19.0,
-        "available": 67.6398,
+        "open_stake": 20.0,
+        "available": 66.6398,
         "daily_loss": 13.3602
       }
     }
