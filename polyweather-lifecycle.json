@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-04-24T15:56:01.010822+00:00",
-  "now": "2026-04-24T15:56:01.010822+00:00",
+  "updated_at": "2026-04-24T16:06:00.945017+00:00",
+  "now": "2026-04-24T16:06:00.945017+00:00",
   "markets": [
     {
       "condition_id": "0x4276f86bfa6d55d31ee884308c67fc221e71f30db6c7ba228d11e14b6e79ea09",
@@ -1136,10 +1136,10 @@
       "effective_close_time": "2026-04-25T01:00:00+00:00",
       "market_end_date": "2026-04-24T12:00:00+00:00",
       "market_slug": "highest-temperature-in-paris-on-april-24-2026-21c",
-      "resolved_at": null,
-      "outcome": null,
-      "resolution_source": null,
-      "state": "trading",
+      "resolved_at": "2026-04-24T11:25:47.794391+00:00",
+      "outcome": "loss",
+      "resolution_source": "uma_resolved",
+      "state": "resolved",
       "bets": [
         {
           "id": 157,
@@ -1150,9 +1150,9 @@
           "model_prob": 0.3205636588701393,
           "best_ask_at_placement": 0.08,
           "limit_price": 0.09,
-          "outcome": null,
-          "realized_pnl_usd": null,
-          "fee_usd": null,
+          "outcome": "loss",
+          "realized_pnl_usd": -2.091,
+          "fee_usd": 0.091,
           "fill_quality": null,
           "strategy": "modal_early"
         }
@@ -1476,6 +1476,40 @@
           "fee_usd": null,
           "fill_quality": null,
           "strategy": "modal_early"
+        }
+      ]
+    },
+    {
+      "condition_id": "0xb122844268ca3e1eba23b6234fd46e3761054b166e15172452d081501cfd5d6a",
+      "city": "London",
+      "market_type": "high",
+      "bracket": "exact 19",
+      "bracket_type": "exact",
+      "resolution_date": "2026-04-24",
+      "game_start_time": null,
+      "last_placement_time": "2026-04-25T08:00:00+00:00",
+      "effective_close_time": "2026-04-25T12:00:00+00:00",
+      "market_end_date": "2026-04-24T12:00:00+00:00",
+      "market_slug": "highest-temperature-in-london-on-april-24-2026-19c",
+      "resolved_at": null,
+      "outcome": null,
+      "resolution_source": null,
+      "state": "legacy",
+      "bets": [
+        {
+          "id": 207,
+          "placed_at": "2026-04-24T16:00:32.134256+00:00",
+          "size_usd": 1.0,
+          "filled_shares": 142.85714285714286,
+          "filled_vwap": 0.006,
+          "model_prob": 0.2852003711558513,
+          "best_ask_at_placement": 0.006,
+          "limit_price": 0.007,
+          "outcome": null,
+          "realized_pnl_usd": null,
+          "fee_usd": null,
+          "fill_quality": null,
+          "strategy": "tail_longshot"
         }
       ]
     },
