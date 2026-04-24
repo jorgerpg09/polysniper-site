@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-04-24T18:49:24.572813+00:00",
-  "now": "2026-04-24T18:49:24.572813+00:00",
+  "updated_at": "2026-04-24T18:59:24.577113+00:00",
+  "now": "2026-04-24T18:59:24.577113+00:00",
   "markets": [
     {
       "condition_id": "0x4276f86bfa6d55d31ee884308c67fc221e71f30db6c7ba228d11e14b6e79ea09",
@@ -1238,10 +1238,10 @@
       "effective_close_time": "2026-04-25T01:00:00+00:00",
       "market_end_date": "2026-04-24T12:00:00+00:00",
       "market_slug": "highest-temperature-in-paris-on-april-24-2026-22c",
-      "resolved_at": null,
-      "outcome": null,
-      "resolution_source": null,
-      "state": "trading",
+      "resolved_at": "2026-04-24T15:37:59.811051+00:00",
+      "outcome": "loss",
+      "resolution_source": "uma_resolved",
+      "state": "resolved",
       "bets": [
         {
           "id": 206,
@@ -1252,9 +1252,9 @@
           "model_prob": 0.3255792894416874,
           "best_ask_at_placement": 0.001,
           "limit_price": 0.002,
-          "outcome": null,
-          "realized_pnl_usd": null,
-          "fee_usd": null,
+          "outcome": "loss",
+          "realized_pnl_usd": -0.525,
+          "fee_usd": 0.025,
           "fill_quality": null,
           "strategy": "tail_longshot"
         }
@@ -1724,6 +1724,40 @@
           "model_prob": 0.13905642733387844,
           "best_ask_at_placement": 0.006,
           "limit_price": 0.007,
+          "outcome": null,
+          "realized_pnl_usd": null,
+          "fee_usd": null,
+          "fill_quality": null,
+          "strategy": "tail_longshot"
+        }
+      ]
+    },
+    {
+      "condition_id": "0x045514807ddd7217654b85d3c1fb57755ef0208573dead989ef6769f9e2b12c0",
+      "city": "New York City",
+      "market_type": "high",
+      "bracket": "between 62 and 63",
+      "bracket_type": "between",
+      "resolution_date": "2026-04-24",
+      "game_start_time": null,
+      "last_placement_time": "2026-04-25T08:00:00+00:00",
+      "effective_close_time": "2026-04-25T12:00:00+00:00",
+      "market_end_date": "2026-04-24T12:00:00+00:00",
+      "market_slug": "highest-temperature-in-nyc-on-april-24-2026-62-63f",
+      "resolved_at": null,
+      "outcome": null,
+      "resolution_source": null,
+      "state": "legacy",
+      "bets": [
+        {
+          "id": 217,
+          "placed_at": "2026-04-24T18:57:56.151549+00:00",
+          "size_usd": 1.0,
+          "filled_shares": 500.0,
+          "filled_vwap": 0.001,
+          "model_prob": 0.34646275088732775,
+          "best_ask_at_placement": 0.001,
+          "limit_price": 0.002,
           "outcome": null,
           "realized_pnl_usd": null,
           "fee_usd": null,
