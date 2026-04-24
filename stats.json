@@ -1,21 +1,21 @@
 {
-  "updated_at": "2026-04-24T14:30:14.112745+00:00",
-  "total_bets": 513,
+  "updated_at": "2026-04-24T14:31:17.622321+00:00",
+  "total_bets": 515,
   "wins": 277,
-  "losses": 234,
-  "pending": 2,
-  "win_rate": 54.2,
-  "pnl": -52.62,
-  "kelly_pnl": -80.65,
-  "current_streak": 1,
+  "losses": 235,
+  "pending": 3,
+  "win_rate": 54.1,
+  "pnl": -53.65,
+  "kelly_pnl": -81.91,
+  "current_streak": 2,
   "streak_type": "L",
   "daily": [
     {
       "date": "2026-04-24",
-      "bets": 69,
+      "bets": 70,
       "wins": 32,
-      "losses": 37,
-      "wr": 46.4
+      "losses": 38,
+      "wr": 45.7
     },
     {
       "date": "2026-04-23",
@@ -48,6 +48,24 @@
   ],
   "recent_signals": [
     {
+      "timestamp": "2026-04-24T14:30:26.306336+00:00",
+      "coin": "ETH",
+      "direction": "DOWN",
+      "entry_price": 0.58,
+      "secs": 26.0,
+      "outcome": "PENDING",
+      "slug": "eth-updown-5m-1777041000"
+    },
+    {
+      "timestamp": "2026-04-24T14:30:25.997436+00:00",
+      "coin": "BTC",
+      "direction": "DOWN",
+      "entry_price": 0.59,
+      "secs": 25.7,
+      "outcome": "PENDING",
+      "slug": "btc-updown-5m-1777041000"
+    },
+    {
       "timestamp": "2026-04-24T14:25:09.836196+00:00",
       "coin": "BTC",
       "direction": "DOWN",
@@ -62,7 +80,7 @@
       "direction": "UP",
       "entry_price": 0.6,
       "secs": 11.3,
-      "outcome": "PENDING",
+      "outcome": "LOSS",
       "slug": "eth-updown-5m-1777040400"
     },
     {
@@ -208,24 +226,6 @@
       "secs": 13.4,
       "outcome": "LOSS",
       "slug": "btc-updown-5m-1777025100"
-    },
-    {
-      "timestamp": "2026-04-24T09:50:07.781487+00:00",
-      "coin": "BTC",
-      "direction": "DOWN",
-      "entry_price": 0.59,
-      "secs": 7.6,
-      "outcome": "LOSS",
-      "slug": "btc-updown-5m-1777024200"
-    },
-    {
-      "timestamp": "2026-04-24T09:30:24.388999+00:00",
-      "coin": "ETH",
-      "direction": "UP",
-      "entry_price": 0.6,
-      "secs": 24.2,
-      "outcome": "WIN",
-      "slug": "eth-updown-5m-1777023000"
     }
   ],
   "backtest": {
