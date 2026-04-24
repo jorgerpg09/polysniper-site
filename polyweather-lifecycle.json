@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-04-24T10:03:48.572647+00:00",
-  "now": "2026-04-24T10:03:48.572647+00:00",
+  "updated_at": "2026-04-24T10:13:48.633850+00:00",
+  "now": "2026-04-24T10:13:48.633850+00:00",
   "markets": [
     {
       "condition_id": "0x4276f86bfa6d55d31ee884308c67fc221e71f30db6c7ba228d11e14b6e79ea09",
@@ -864,10 +864,10 @@
       "effective_close_time": "2026-04-25T00:00:00+00:00",
       "market_end_date": "2026-04-24T12:00:00+00:00",
       "market_slug": null,
-      "resolved_at": null,
-      "outcome": null,
-      "resolution_source": null,
-      "state": "trading",
+      "resolved_at": "2026-04-24T07:51:47.857562+00:00",
+      "outcome": "loss",
+      "resolution_source": "uma_resolved",
+      "state": "resolved",
       "bets": [
         {
           "id": 141,
@@ -878,9 +878,9 @@
           "model_prob": 0.11922254346814037,
           "best_ask_at_placement": 0.004,
           "limit_price": 0.005,
-          "outcome": null,
-          "realized_pnl_usd": null,
-          "fee_usd": null,
+          "outcome": "loss",
+          "realized_pnl_usd": -0.3495,
+          "fee_usd": 0.0166,
           "fill_quality": null,
           "strategy": "tail_longshot"
         }
@@ -941,8 +941,8 @@
           "id": 139,
           "placed_at": "2026-04-24T07:00:19.484773+00:00",
           "size_usd": 1.0,
-          "filled_shares": 100.0,
-          "filled_vwap": 0.0048000000000000004,
+          "filled_shares": 200.0,
+          "filled_vwap": 0.004900000000000001,
           "model_prob": 0.27110816760628714,
           "best_ask_at_placement": 0.004,
           "limit_price": 0.005,
