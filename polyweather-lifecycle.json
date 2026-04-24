@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-04-24T19:57:49.515888+00:00",
-  "now": "2026-04-24T19:57:49.515888+00:00",
+  "updated_at": "2026-04-24T20:07:49.585989+00:00",
+  "now": "2026-04-24T20:07:49.585989+00:00",
   "markets": [
     {
       "condition_id": "0x4276f86bfa6d55d31ee884308c67fc221e71f30db6c7ba228d11e14b6e79ea09",
@@ -1309,7 +1309,7 @@
       "resolved_at": null,
       "outcome": null,
       "resolution_source": null,
-      "state": "trading",
+      "state": "after_last_placement",
       "bets": [
         {
           "id": 215,
@@ -1962,6 +1962,40 @@
           "model_prob": 0.10683499007140929,
           "best_ask_at_placement": 0.005,
           "limit_price": 0.006,
+          "outcome": null,
+          "realized_pnl_usd": null,
+          "fee_usd": null,
+          "fill_quality": null,
+          "strategy": "tail_longshot"
+        }
+      ]
+    },
+    {
+      "condition_id": "0x05bbd6e0f9b4e89260255435b884934a2a918db234cc7678d3f60295cfc667dc",
+      "city": "Hong Kong",
+      "market_type": "high",
+      "bracket": "above 29",
+      "bracket_type": "above",
+      "resolution_date": "2026-04-25",
+      "game_start_time": "2026-04-24T16:00:00+00:00",
+      "last_placement_time": "2026-04-25T14:00:00+00:00",
+      "effective_close_time": "2026-04-25T19:00:00+00:00",
+      "market_end_date": "2026-04-25T12:00:00+00:00",
+      "market_slug": "highest-temperature-in-hong-kong-on-april-25-2026-29corhigher",
+      "resolved_at": null,
+      "outcome": null,
+      "resolution_source": null,
+      "state": "trading",
+      "bets": [
+        {
+          "id": 221,
+          "placed_at": "2026-04-24T20:00:21.022242+00:00",
+          "size_usd": 1.0,
+          "filled_shares": 142.85714285714286,
+          "filled_vwap": 0.00644,
+          "model_prob": 0.4312864241195442,
+          "best_ask_at_placement": 0.006,
+          "limit_price": 0.007,
           "outcome": null,
           "realized_pnl_usd": null,
           "fee_usd": null,
