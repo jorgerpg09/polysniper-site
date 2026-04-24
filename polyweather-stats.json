@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-04-24T13:12:04.259879+00:00",
+  "updated_at": "2026-04-24T13:22:04.332449+00:00",
   "hit_rate": 0.0,
   "theoretical_pnl": -5.887,
   "trade_count": 41,
@@ -24,7 +24,7 @@
       "outcome": "PENDING",
       "resolution_date": "2026-04-24",
       "strategy": "tail_longshot",
-      "market_slug": null
+      "market_slug": "highest-temperature-in-hong-kong-on-april-24-2026-20c"
     },
     {
       "logged_at": "2026-04-24T13:00:28.893447+00:00",
@@ -35,7 +35,7 @@
       "outcome": "PENDING",
       "resolution_date": "2026-04-24",
       "strategy": "tail_longshot",
-      "market_slug": null
+      "market_slug": "highest-temperature-in-london-on-april-24-2026-16c"
     },
     {
       "logged_at": "2026-04-24T12:41:03.998386+00:00",
@@ -109,10 +109,10 @@
       "bracket": "between 50 and 51",
       "edge": 0.1418650572366111,
       "kelly_size_usdc": 1.0,
-      "outcome": "PENDING",
+      "outcome": "LOSS",
       "resolution_date": "2026-04-24",
       "strategy": "tail_longshot",
-      "market_slug": null
+      "market_slug": "lowest-temperature-in-nyc-on-april-24-2026-50-51f"
     },
     {
       "logged_at": "2026-04-24T10:40:21.291624+00:00",
@@ -123,7 +123,7 @@
       "outcome": "PENDING",
       "resolution_date": "2026-04-24",
       "strategy": "tail_longshot",
-      "market_slug": null
+      "market_slug": "lowest-temperature-in-paris-on-april-24-2026-6c"
     },
     {
       "logged_at": "2026-04-24T10:30:20.656952+00:00",
@@ -134,7 +134,7 @@
       "outcome": "PENDING",
       "resolution_date": "2026-04-24",
       "strategy": "tail_longshot",
-      "market_slug": null
+      "market_slug": "highest-temperature-in-helsinki-on-april-24-2026-11c"
     },
     {
       "logged_at": "2026-04-24T10:01:20.932803+00:00",
@@ -145,7 +145,7 @@
       "outcome": "LOSS",
       "resolution_date": "2026-04-24",
       "strategy": "tail_longshot",
-      "market_slug": null
+      "market_slug": "highest-temperature-in-helsinki-on-april-24-2026-9c"
     },
     {
       "logged_at": "2026-04-24T10:01:20.577161+00:00",
@@ -156,7 +156,7 @@
       "outcome": "PENDING",
       "resolution_date": "2026-04-24",
       "strategy": "tail_longshot",
-      "market_slug": null
+      "market_slug": "highest-temperature-in-hong-kong-on-april-24-2026-21c"
     },
     {
       "logged_at": "2026-04-24T10:01:20.273702+00:00",
@@ -167,7 +167,7 @@
       "outcome": "LOSS",
       "resolution_date": "2026-04-24",
       "strategy": "tail_longshot",
-      "market_slug": null
+      "market_slug": "highest-temperature-in-helsinki-on-april-24-2026-10c"
     },
     {
       "logged_at": "2026-04-24T10:01:19.606343+00:00",
@@ -178,7 +178,7 @@
       "outcome": "PENDING",
       "resolution_date": "2026-04-24",
       "strategy": "tail_longshot",
-      "market_slug": null
+      "market_slug": "lowest-temperature-in-hong-kong-on-april-24-2026-20c"
     },
     {
       "logged_at": "2026-04-24T10:00:19.296667+00:00",
@@ -189,7 +189,7 @@
       "outcome": "LOSS",
       "resolution_date": "2026-04-24",
       "strategy": "tail_longshot",
-      "market_slug": null
+      "market_slug": "lowest-temperature-in-nyc-on-april-24-2026-56-57f"
     },
     {
       "logged_at": "2026-04-24T09:30:21.215143+00:00",
@@ -200,7 +200,7 @@
       "outcome": "PENDING",
       "resolution_date": "2026-04-24",
       "strategy": "tail_longshot",
-      "market_slug": null
+      "market_slug": "lowest-temperature-in-paris-on-april-24-2026-5c"
     },
     {
       "logged_at": "2026-04-24T09:20:20.395302+00:00",
@@ -211,7 +211,7 @@
       "outcome": "LOSS",
       "resolution_date": "2026-04-24",
       "strategy": "tail_longshot",
-      "market_slug": null
+      "market_slug": "lowest-temperature-in-nyc-on-april-24-2026-52-53f"
     },
     {
       "logged_at": "2026-04-24T09:00:20.273737+00:00",
@@ -222,7 +222,7 @@
       "outcome": "LOSS",
       "resolution_date": "2026-04-24",
       "strategy": "tail_longshot",
-      "market_slug": null
+      "market_slug": "lowest-temperature-in-nyc-on-april-24-2026-54-55f"
     },
     {
       "logged_at": "2026-04-24T08:56:19.833708+00:00",
@@ -233,7 +233,7 @@
       "outcome": "PENDING",
       "resolution_date": "2026-04-24",
       "strategy": "tail_longshot",
-      "market_slug": null
+      "market_slug": "highest-temperature-in-london-on-april-24-2026-15c"
     }
   ],
   "strategies": {
@@ -252,15 +252,15 @@
     },
     "tail_longshot": {
       "bets": 35,
-      "resolved": 17,
+      "resolved": 18,
       "wins": 0,
-      "pnl_usd": -9.562,
+      "pnl_usd": -10.087,
       "bankroll": {
         "start": 100.0,
-        "current": 90.9633,
-        "open_stake": 21.0,
-        "available": 69.9633,
-        "daily_loss": 9.0367
+        "current": 90.4383,
+        "open_stake": 20.0,
+        "available": 70.4383,
+        "daily_loss": 9.5617
       }
     }
   }
