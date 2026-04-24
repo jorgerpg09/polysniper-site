@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-04-24T23:00:00.227145+00:00",
+  "updated_at": "2026-04-24T23:07:47.468140+00:00",
   "hit_rate": 0.0,
   "theoretical_pnl": -15.4494,
-  "trade_count": 64,
+  "trade_count": 65,
   "active_cities": 10,
   "daily_pnl": [
     {
@@ -15,6 +15,19 @@
     }
   ],
   "recent_trades": [
+    {
+      "logged_at": "2026-04-24T23:02:21.581554+00:00",
+      "city": "Seoul",
+      "bracket": "exact 13",
+      "model_prob": 0.17979676989591764,
+      "market_ask": 0.001,
+      "edge": 0.17879676989591764,
+      "kelly_size_usdc": 1.0,
+      "outcome": "PENDING",
+      "resolution_date": "2026-04-25",
+      "strategy": "tail_longshot",
+      "market_slug": "highest-temperature-in-seoul-on-april-25-2026-13c"
+    },
     {
       "logged_at": "2026-04-24T22:31:21.641315+00:00",
       "city": "Seoul",
@@ -289,19 +302,6 @@
       "market_slug": "lowest-temperature-in-seoul-on-april-24-2026-7corbelow"
     },
     {
-      "logged_at": "2026-04-24T14:59:32.734564+00:00",
-      "city": "London",
-      "bracket": "exact 20",
-      "model_prob": 0.10683499007140929,
-      "market_ask": 0.005,
-      "edge": 0.10183499007140928,
-      "kelly_size_usdc": 1.0,
-      "outcome": "PENDING",
-      "resolution_date": "2026-04-24",
-      "strategy": "tail_longshot",
-      "market_slug": "highest-temperature-in-london-on-april-24-2026-20c"
-    },
-    {
       "logged_at": "2026-04-24T12:41:03.998386+00:00",
       "city": "New York City",
       "bracket": "above 66",
@@ -395,15 +395,15 @@
       }
     },
     "tail_longshot": {
-      "bets": 56,
+      "bets": 57,
       "resolved": 30,
       "wins": 0,
       "pnl_usd": -18.4064,
       "bankroll": {
         "start": 100.0,
         "current": 82.1191,
-        "open_stake": 28.0,
-        "available": 54.1191,
+        "open_stake": 29.0,
+        "available": 53.1191,
         "daily_loss": 17.8809
       }
     }
