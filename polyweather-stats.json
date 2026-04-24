@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-04-24T06:53:46.729045+00:00",
+  "updated_at": "2026-04-24T07:03:46.834211+00:00",
   "hit_rate": 0.0,
   "theoretical_pnl": -4.4875,
-  "trade_count": 17,
+  "trade_count": 18,
   "active_cities": 5,
   "daily_pnl": [
     {
@@ -15,6 +15,17 @@
     }
   ],
   "recent_trades": [
+    {
+      "logged_at": "2026-04-24T07:00:19.484773+00:00",
+      "city": "Paris",
+      "bracket": "exact 20",
+      "edge": 0.26710816760628714,
+      "kelly_size_usdc": 1.0,
+      "outcome": "PENDING",
+      "resolution_date": "2026-04-24",
+      "strategy": "tail_longshot",
+      "market_slug": null
+    },
     {
       "logged_at": "2026-04-24T04:08:26.508479+00:00",
       "city": "Paris",
@@ -216,7 +227,7 @@
       }
     },
     "tail_longshot": {
-      "bets": 10,
+      "bets": 11,
       "resolved": 7,
       "wins": 0,
       "pnl_usd": -4.4875,
