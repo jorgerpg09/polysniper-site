@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-04-24T07:43:48.587020+00:00",
-  "now": "2026-04-24T07:43:48.587020+00:00",
+  "updated_at": "2026-04-24T07:53:48.913301+00:00",
+  "now": "2026-04-24T07:53:48.913301+00:00",
   "markets": [
     {
       "condition_id": "0x4276f86bfa6d55d31ee884308c67fc221e71f30db6c7ba228d11e14b6e79ea09",
@@ -581,6 +581,40 @@
       ]
     },
     {
+      "condition_id": "0x814e4630bb1c6d11ef3f32f35722aaf6a736ceed3cca10483289d969011e56a3",
+      "city": "Helsinki",
+      "market_type": "high",
+      "bracket": "exact 8",
+      "bracket_type": "exact",
+      "resolution_date": "2026-04-24",
+      "game_start_time": "2026-04-23T21:00:00+00:00",
+      "last_placement_time": "2026-04-24T19:00:00+00:00",
+      "effective_close_time": "2026-04-25T00:00:00+00:00",
+      "market_end_date": "2026-04-24T12:00:00+00:00",
+      "market_slug": null,
+      "resolved_at": null,
+      "outcome": null,
+      "resolution_source": null,
+      "state": "trading",
+      "bets": [
+        {
+          "id": 141,
+          "placed_at": "2026-04-24T07:44:19.121838+00:00",
+          "size_usd": 1.0,
+          "filled_shares": 200.0,
+          "filled_vwap": 0.00166465,
+          "model_prob": 0.11922254346814037,
+          "best_ask_at_placement": 0.004,
+          "limit_price": 0.005,
+          "outcome": null,
+          "realized_pnl_usd": null,
+          "fee_usd": null,
+          "fill_quality": null,
+          "strategy": "tail_longshot"
+        }
+      ]
+    },
+    {
       "condition_id": "0x50579ca8b7052f3bd5c440be14f9665f97cfeda7e3c4b4bc5a8bbb4bf86572b0",
       "city": "Paris",
       "market_type": "high",
@@ -635,7 +669,7 @@
           "id": 140,
           "placed_at": "2026-04-24T07:39:19.369795+00:00",
           "size_usd": 1.0,
-          "filled_shares": 331.29,
+          "filled_shares": 333.3333333333333,
           "filled_vwap": 0.002,
           "model_prob": 0.1320201842843664,
           "best_ask_at_placement": 0.002,
