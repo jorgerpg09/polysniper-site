@@ -136,6 +136,23 @@
                 Our weather model identifies mispriced temperature markets on Polymarket.
                 Paper-trading to validate the edge before deploying real capital.
             </p>
+
+            <!-- Strategy selector — filters all PolyWeather panels below -->
+            <div class="strategy-tabs" role="tablist" aria-label="Trading strategy filter">
+                <button class="strategy-tab is-active" data-strategy="all" role="tab" aria-selected="true">
+                    <span class="tab-label">All strategies</span>
+                    <span class="tab-meta" data-role="bets">—</span>
+                </button>
+                <button class="strategy-tab" data-strategy="tail_longshot" role="tab" aria-selected="false">
+                    <span class="tab-label">Tail longshot</span>
+                    <span class="tab-meta" data-role="bets">—</span>
+                </button>
+                <button class="strategy-tab" data-strategy="modal_early" role="tab" aria-selected="false">
+                    <span class="tab-label">Modal early</span>
+                    <span class="tab-meta" data-role="bets">—</span>
+                </button>
+            </div>
+
             <div class="stats-grid">
                 <div class="stat-card highlight">
                     <div class="stat-value" id="pw-hit-rate">--%</div>
@@ -147,9 +164,16 @@
                 </div>
                 <div class="stat-card">
                     <div class="stat-value" id="pw-trades">--</div>
-                    <div class="stat-label">Paper Trades</div>
+                    <div class="stat-label">Resolved / Total</div>
                 </div>
-                <div class="stat-card">
+                <div class="stat-card" id="pw-bankroll-card" data-show-when="strategy">
+                    <div class="stat-value" id="pw-bankroll-value">--</div>
+                    <div class="stat-label" id="pw-bankroll-label">Bankroll</div>
+                    <div class="bankroll-bar" aria-hidden="true">
+                        <div class="bankroll-bar-fill" id="pw-bankroll-fill" style="width:100%"></div>
+                    </div>
+                </div>
+                <div class="stat-card" id="pw-cities-card" data-show-when="all">
                     <div class="stat-value" id="pw-cities">--</div>
                     <div class="stat-label">Active Cities</div>
                 </div>

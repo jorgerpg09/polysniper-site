@@ -451,3 +451,80 @@ footer {
     overflow-x: auto;
 }
 #pw-lc-svg { display: block; }
+
+/* ============================================================= */
+/* Strategy tabs — per-strategy filter for PolyWeather panels     */
+/* ============================================================= */
+.strategy-tabs {
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+    margin: 0 auto 28px;
+    flex-wrap: wrap;
+    padding: 6px;
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    width: fit-content;
+    max-width: 100%;
+}
+.strategy-tab {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background: transparent;
+    border: none;
+    color: var(--text-dim);
+    font: inherit;
+    font-size: 13px;
+    font-weight: 500;
+    padding: 10px 18px;
+    border-radius: 999px;
+    cursor: pointer;
+    transition: color 0.18s ease, background-color 0.18s ease;
+    white-space: nowrap;
+}
+.strategy-tab:hover:not(.is-active) {
+    color: var(--text);
+    background: var(--bg-card-hover);
+}
+.strategy-tab.is-active {
+    background: var(--accent);
+    color: #0a0a0f;
+    font-weight: 600;
+}
+.strategy-tab .tab-meta {
+    font-size: 11px;
+    font-weight: 500;
+    padding: 2px 8px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.08);
+    color: inherit;
+    opacity: 0.85;
+    font-variant-numeric: tabular-nums;
+}
+.strategy-tab.is-active .tab-meta {
+    background: rgba(0, 0, 0, 0.18);
+    opacity: 1;
+}
+
+/* Bankroll card — appears when a specific strategy is selected */
+#pw-bankroll-card { display: none; }
+body.strategy-mode #pw-bankroll-card { display: block; }
+body.strategy-mode #pw-cities-card { display: none; }
+
+.bankroll-bar {
+    margin-top: 10px;
+    height: 4px;
+    background: var(--border);
+    border-radius: 2px;
+    overflow: hidden;
+}
+.bankroll-bar-fill {
+    height: 100%;
+    background: var(--accent);
+    border-radius: 2px;
+    transition: width 0.3s ease, background-color 0.3s ease;
+}
+.bankroll-bar-fill.is-warn { background: #f0b050; }
+.bankroll-bar-fill.is-danger { background: var(--loss); }

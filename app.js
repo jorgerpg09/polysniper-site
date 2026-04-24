@@ -85,13 +85,41 @@ setInterval(loadStats, 60000);
 // ==========================================================================
 
 const PW_STATS_URL = 'polyweather-stats.json';
+const PW_STRATEGY_KEY = 'pw_strategy_filter';  // localStorage key
 let pwChart = null;
+let _pwStatsData = null;  // last loaded stats, kept for re-renders on tab switch
+
+// Returns the currently selected strategy filter: 'all' | 'tail_longshot' | 'modal_early'
+function currentStrategy() {
+    return localStorage.getItem(PW_STRATEGY_KEY) || 'all';
+}
+
+function setStrategy(strategy) {
+    localStorage.setItem(PW_STRATEGY_KEY, strategy);
+    // Update tab UI
+    document.querySelectorAll('.strategy-tab').forEach(btn => {
+        const isActive = btn.dataset.strategy === strategy;
+        btn.classList.toggle('is-active', isActive);
+        btn.setAttribute('aria-selected', isActive ? 'true' : 'false');
+    });
+    // Toggle bankroll-mode on body so CSS swaps the bankroll <-> cities card
+    document.body.classList.toggle('strategy-mode', strategy !== 'all');
+    // Re-render everything that depends on strategy filter
+    if (_pwStatsData) {
+        renderPolyWeatherStats(_pwStatsData);
+        renderPolyWeatherChart(_pwStatsData.daily_pnl || []);
+        renderPolyWeatherTrades(_pwStatsData.recent_trades || []);
+    }
+    if (_pwLifecycleData) renderLifecycle();
+}
 
 async function loadPolyWeather() {
     try {
         const resp = await fetch(PW_STATS_URL, { cache: 'no-cache' });
         if (!resp.ok) throw new Error('HTTP ' + resp.status);
         const stats = await resp.json();
+        _pwStatsData = stats;
+        updateTabCounts(stats);
         renderPolyWeatherStats(stats);
         renderPolyWeatherChart(stats.daily_pnl || []);
         renderPolyWeatherTrades(stats.recent_trades || []);
@@ -102,17 +130,77 @@ async function loadPolyWeather() {
     }
 }
 
+// Paints the bet-count badges inside each tab.
+// "All strategies" sums the per-strategy bets (NOT stats.trade_count) so the
+// "All" badge equals Tail + Modal — otherwise FANTASY-filtered fills cause
+// the All badge to exceed the sum of strategy badges, which is confusing.
+function updateTabCounts(stats) {
+    const strat = stats.strategies || {};
+    const tailBets = (strat.tail_longshot && strat.tail_longshot.bets) || 0;
+    const modalBets = (strat.modal_early && strat.modal_early.bets) || 0;
+    const counts = {
+        all: tailBets + modalBets,
+        tail_longshot: tailBets,
+        modal_early: modalBets,
+    };
+    document.querySelectorAll('.strategy-tab').forEach(btn => {
+        const key = btn.dataset.strategy;
+        const metaEl = btn.querySelector('[data-role="bets"]');
+        if (metaEl) metaEl.textContent = counts[key] != null ? counts[key] : '—';
+    });
+}
+
 function renderPolyWeatherStats(stats) {
-    const hitRate = (stats.hit_rate || 0) * 100;
+    const strat = currentStrategy();
+    const isAll = strat === 'all';
+    const s = (stats.strategies || {})[strat] || null;
+
+    // "Paper trades" shows TOTAL bets (pending + resolved) so the count here
+    // matches the tab badge. Hit rate uses only RESOLVED bets as denominator
+    // since pending bets don't have an outcome yet. Summed from the strategies
+    // block (NOT stats.trade_count) so aggregate matches Tail + Modal exactly.
+    const allStrats = Object.values(stats.strategies || {});
+    const totalBets = isAll
+        ? allStrats.reduce((n, v) => n + (v.bets || 0), 0)
+        : (s ? s.bets : 0);
+    const resolvedBets = isAll
+        ? allStrats.reduce((n, v) => n + (v.resolved || 0), 0)
+        : (s ? (s.resolved || 0) : 0);
+    const wins = isAll
+        ? allStrats.reduce((n, v) => n + (v.wins || 0), 0)
+        : (s ? s.wins : 0);
+    const hitRate = resolvedBets > 0 ? (wins / resolvedBets) * 100 : 0;
+    const pnl = isAll
+        ? allStrats.reduce((n, v) => n + (v.pnl_usd || 0), 0)
+        : (s ? s.pnl_usd : 0);
+
     document.getElementById('pw-hit-rate').textContent = hitRate.toFixed(1) + '%';
 
-    const pnl = stats.theoretical_pnl || 0;
     const pnlEl = document.getElementById('pw-pnl');
     pnlEl.textContent = (pnl >= 0 ? '+' : '') + '$' + pnl.toFixed(2);
     pnlEl.style.color = pnl >= 0 ? 'var(--win)' : 'var(--loss)';
 
-    document.getElementById('pw-trades').textContent = stats.trade_count || 0;
-    document.getElementById('pw-cities').textContent = stats.active_cities || 0;
+    // Show "resolved / total" — e.g. "1 / 14" — so we know how much of the
+    // sample is decided vs still open.
+    document.getElementById('pw-trades').textContent =
+        totalBets > 0 ? `${resolvedBets} / ${totalBets}` : '0';
+
+    if (isAll) {
+        document.getElementById('pw-cities').textContent = stats.active_cities || 0;
+    } else if (s && s.bankroll) {
+        const br = s.bankroll;
+        const valEl  = document.getElementById('pw-bankroll-value');
+        const lblEl  = document.getElementById('pw-bankroll-label');
+        const fillEl = document.getElementById('pw-bankroll-fill');
+        const pct = br.start > 0 ? Math.max(0, Math.min(1, br.current / br.start)) : 0;
+        valEl.textContent = '$' + (br.current || 0).toFixed(2);
+        valEl.style.color = pct > 0.5 ? 'var(--win)' : (pct > 0.2 ? '#f0b050' : 'var(--loss)');
+        lblEl.textContent = 'Bankroll (of $' + (br.start || 0).toFixed(0) +
+            (br.daily_loss > 0 ? ' · today −$' + br.daily_loss.toFixed(2) : '') + ')';
+        fillEl.style.width = (pct * 100).toFixed(1) + '%';
+        fillEl.classList.toggle('is-warn',   pct <= 0.5 && pct > 0.2);
+        fillEl.classList.toggle('is-danger', pct <= 0.2);
+    }
 
     if (stats.updated_at) {
         const d = new Date(stats.updated_at);
@@ -155,10 +243,21 @@ function renderPolyWeatherChart(dailyPnl) {
 function renderPolyWeatherTrades(trades) {
     const tbody = document.getElementById('pw-trades-body');
     if (!tbody) return;
-    if (!trades.length) {
-        tbody.innerHTML = '<tr><td colspan="6" style="text-align:center;color:var(--text-dim)">No paper trades yet -- bot is warming up</td></tr>';
+
+    // Filter by current strategy tab (trades without strategy field fall through as tail_longshot)
+    const strat = currentStrategy();
+    const filtered = strat === 'all'
+        ? trades
+        : trades.filter(t => (t.strategy || 'tail_longshot') === strat);
+
+    if (!filtered.length) {
+        const msg = strat === 'all'
+            ? 'No paper trades yet -- bot is warming up'
+            : `No ${strat.replace('_', ' ')} trades yet`;
+        tbody.innerHTML = `<tr><td colspan="6" style="text-align:center;color:var(--text-dim)">${msg}</td></tr>`;
         return;
     }
+    trades = filtered;
     tbody.innerHTML = trades.map(t => {
         const time = new Date(t.logged_at).toLocaleString([], {
             month: 'short', day: 'numeric',
@@ -223,13 +322,24 @@ function renderLifecycle() {
     const cityFilter = document.getElementById('pw-lc-city').value;
     const typeFilter = document.getElementById('pw-lc-type').value;
     const stateFilter = document.getElementById('pw-lc-state').value;
+    const strat = currentStrategy();
 
-    const visible = markets.filter(m => {
-        if (cityFilter && m.city !== cityFilter) return false;
-        if (typeFilter && m.market_type !== typeFilter) return false;
-        if (stateFilter && m.state !== stateFilter) return false;
-        return true;
-    });
+    // First filter markets by city/type/state, then filter their bets by strategy.
+    // A market is kept only if (a) it still matches the market-level filters AND
+    // (b) at least one bet matches the strategy filter (or strategy is 'all').
+    const visible = markets.map(m => {
+        if (cityFilter && m.city !== cityFilter) return null;
+        if (typeFilter && m.market_type !== typeFilter) return null;
+        if (stateFilter && m.state !== stateFilter) return null;
+
+        if (strat === 'all') return m;
+
+        // Strategy filter: only keep bets matching the selected strategy.
+        // If the market has no matching bets, still show it (so the timeline
+        // context is preserved), but with an empty bet list.
+        const filteredBets = (m.bets || []).filter(b => (b.strategy || 'tail_longshot') === strat);
+        return { ...m, bets: filteredBets };
+    }).filter(m => m !== null);
 
     // Cluster by city, sorted by soonest pending close. Cities with any
     // pending market come first (ordered by earliest pending effective_close);
@@ -428,3 +538,12 @@ window.addEventListener('resize', renderLifecycle);
 ['pw-lc-city', 'pw-lc-type', 'pw-lc-state'].forEach(id => {
     document.getElementById(id).addEventListener('change', renderLifecycle);
 });
+
+// Restore strategy tab from localStorage and wire click handlers
+(function initStrategyTabs() {
+    const saved = currentStrategy();
+    setStrategy(saved);  // paint initial UI state
+    document.querySelectorAll('.strategy-tab').forEach(btn => {
+        btn.addEventListener('click', () => setStrategy(btn.dataset.strategy));
+    });
+})();
