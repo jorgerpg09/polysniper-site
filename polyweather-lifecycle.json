@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-04-24T04:09:54.601801+00:00",
-  "now": "2026-04-24T04:09:54.601801+00:00",
+  "updated_at": "2026-04-24T04:19:54.871092+00:00",
+  "now": "2026-04-24T04:19:54.871092+00:00",
   "markets": [
     {
       "condition_id": "0x4276f86bfa6d55d31ee884308c67fc221e71f30db6c7ba228d11e14b6e79ea09",
@@ -227,8 +227,8 @@
           "id": 138,
           "placed_at": "2026-04-24T04:08:26.508479+00:00",
           "size_usd": 1.0,
-          "filled_shares": null,
-          "filled_vwap": null,
+          "filled_shares": 500.0,
+          "filled_vwap": 0.001,
           "model_prob": 0.2936232061235352,
           "best_ask_at_placement": 0.001,
           "limit_price": 0.002,
@@ -388,10 +388,10 @@
       "effective_close_time": "2026-04-24T18:00:00+00:00",
       "market_end_date": "2026-04-24T12:00:00+00:00",
       "market_slug": "highest-temperature-in-seoul-on-april-24-2026-16c",
-      "resolved_at": null,
-      "outcome": null,
-      "resolution_source": null,
-      "state": "trading",
+      "resolved_at": "2026-04-24T01:16:39.332757+00:00",
+      "outcome": "loss",
+      "resolution_source": "uma_resolved",
+      "state": "resolved",
       "bets": [
         {
           "id": 128,
@@ -402,9 +402,9 @@
           "model_prob": 0.21100832799983626,
           "best_ask_at_placement": 0.001,
           "limit_price": 0.002,
-          "outcome": null,
-          "realized_pnl_usd": null,
-          "fee_usd": null,
+          "outcome": "loss",
+          "realized_pnl_usd": -0.525,
+          "fee_usd": 0.025,
           "fill_quality": null,
           "strategy": "tail_longshot"
         }
