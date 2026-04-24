@@ -1,9 +1,9 @@
 {
-  "updated_at": "2026-04-24T12:37:54.373018+00:00",
+  "updated_at": "2026-04-24T12:47:54.364965+00:00",
   "hit_rate": 0.0,
   "theoretical_pnl": -5.362,
-  "trade_count": 36,
-  "active_cities": 7,
+  "trade_count": 39,
+  "active_cities": 8,
   "daily_pnl": [
     {
       "date": "2026-04-23",
@@ -15,6 +15,39 @@
     }
   ],
   "recent_trades": [
+    {
+      "logged_at": "2026-04-24T12:41:03.998386+00:00",
+      "city": "New York City",
+      "bracket": "above 66",
+      "edge": 0.36909831222498773,
+      "kelly_size_usdc": 2.0,
+      "outcome": "PENDING",
+      "resolution_date": "2026-04-24",
+      "strategy": "modal_early",
+      "market_slug": "highest-temperature-in-nyc-on-april-24-2026-66forhigher"
+    },
+    {
+      "logged_at": "2026-04-24T12:41:03.998386+00:00",
+      "city": "Sao Paulo",
+      "bracket": "exact 30",
+      "edge": 0.25638052536645256,
+      "kelly_size_usdc": 2.0,
+      "outcome": "PENDING",
+      "resolution_date": "2026-04-24",
+      "strategy": "modal_early",
+      "market_slug": "highest-temperature-in-sao-paulo-on-april-24-2026-30c"
+    },
+    {
+      "logged_at": "2026-04-24T12:41:03.998386+00:00",
+      "city": "Seoul",
+      "bracket": "below 8",
+      "edge": 0.730690989242848,
+      "kelly_size_usdc": 2.0,
+      "outcome": "PENDING",
+      "resolution_date": "2026-04-25",
+      "strategy": "modal_early",
+      "market_slug": "lowest-temperature-in-seoul-on-april-25-2026-8corbelow"
+    },
     {
       "logged_at": "2026-04-24T11:25:10.336218+00:00",
       "city": "London",
@@ -201,44 +234,11 @@
       "resolution_date": "2026-04-24",
       "strategy": "tail_longshot",
       "market_slug": null
-    },
-    {
-      "logged_at": "2026-04-24T07:39:19.369795+00:00",
-      "city": "Paris",
-      "bracket": "exact 19",
-      "edge": 0.1300201842843664,
-      "kelly_size_usdc": 1.0,
-      "outcome": "PENDING",
-      "resolution_date": "2026-04-24",
-      "strategy": "tail_longshot",
-      "market_slug": null
-    },
-    {
-      "logged_at": "2026-04-24T07:00:19.484773+00:00",
-      "city": "Paris",
-      "bracket": "exact 20",
-      "edge": 0.26710816760628714,
-      "kelly_size_usdc": 1.0,
-      "outcome": "PENDING",
-      "resolution_date": "2026-04-24",
-      "strategy": "tail_longshot",
-      "market_slug": null
-    },
-    {
-      "logged_at": "2026-04-24T04:08:26.508479+00:00",
-      "city": "Paris",
-      "bracket": "exact 8",
-      "edge": 0.2926232061235352,
-      "kelly_size_usdc": 1.0,
-      "outcome": "LOSS",
-      "resolution_date": "2026-04-24",
-      "strategy": "tail_longshot",
-      "market_slug": null
     }
   ],
   "strategies": {
     "modal_early": {
-      "bets": 3,
+      "bets": 5,
       "resolved": 0,
       "wins": 0,
       "pnl_usd": 0.0,
