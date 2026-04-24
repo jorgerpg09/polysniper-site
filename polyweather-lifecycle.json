@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-04-24T10:53:48.610209+00:00",
-  "now": "2026-04-24T10:53:48.610209+00:00",
+  "updated_at": "2026-04-24T11:03:48.830665+00:00",
+  "now": "2026-04-24T11:03:48.830665+00:00",
   "markets": [
     {
       "condition_id": "0x4276f86bfa6d55d31ee884308c67fc221e71f30db6c7ba228d11e14b6e79ea09",
@@ -17,7 +17,7 @@
       "resolved_at": null,
       "outcome": null,
       "resolution_source": null,
-      "state": "after_last_placement",
+      "state": "closed",
       "bets": [
         {
           "id": 127,
@@ -329,7 +329,7 @@
           "id": 153,
           "placed_at": "2026-04-24T10:40:21.291624+00:00",
           "size_usd": 1.0,
-          "filled_shares": 281.96000000000004,
+          "filled_shares": 333.3333333333333,
           "filled_vwap": 0.0019999999999999996,
           "model_prob": 0.08134334313074756,
           "best_ask_at_placement": 0.002,
@@ -819,6 +819,40 @@
       ]
     },
     {
+      "condition_id": "0xe175e3509481d2afff9768cba49ed0628ac1dc065f14c2c7c329f5408c953b2c",
+      "city": "New York City",
+      "market_type": "low",
+      "bracket": "between 50 and 51",
+      "bracket_type": "between",
+      "resolution_date": "2026-04-24",
+      "game_start_time": "2026-04-24T04:00:00+00:00",
+      "last_placement_time": "2026-04-24T16:00:00+00:00",
+      "effective_close_time": "2026-04-25T00:00:00+00:00",
+      "market_end_date": "2026-04-24T12:00:00+00:00",
+      "market_slug": null,
+      "resolved_at": null,
+      "outcome": null,
+      "resolution_source": null,
+      "state": "trading",
+      "bets": [
+        {
+          "id": 154,
+          "placed_at": "2026-04-24T11:00:21.585664+00:00",
+          "size_usd": 1.0,
+          "filled_shares": 500.0,
+          "filled_vwap": 0.001,
+          "model_prob": 0.1428650572366111,
+          "best_ask_at_placement": 0.001,
+          "limit_price": 0.002,
+          "outcome": null,
+          "realized_pnl_usd": null,
+          "fee_usd": null,
+          "fill_quality": null,
+          "strategy": "tail_longshot"
+        }
+      ]
+    },
+    {
       "condition_id": "0xf5c793599f7f7a645fc6798dc83c4719ecec172aa12cf873c288385fb0596cfb",
       "city": "New York City",
       "market_type": "low",
@@ -864,10 +898,10 @@
       "effective_close_time": "2026-04-25T00:00:00+00:00",
       "market_end_date": "2026-04-24T12:00:00+00:00",
       "market_slug": null,
-      "resolved_at": null,
-      "outcome": null,
-      "resolution_source": null,
-      "state": "trading",
+      "resolved_at": "2026-04-24T10:01:49.088259+00:00",
+      "outcome": "loss",
+      "resolution_source": "uma_resolved",
+      "state": "resolved",
       "bets": [
         {
           "id": 151,
@@ -878,9 +912,9 @@
           "model_prob": 0.18244064148697148,
           "best_ask_at_placement": 0.001,
           "limit_price": 0.002,
-          "outcome": null,
-          "realized_pnl_usd": null,
-          "fee_usd": null,
+          "outcome": "loss",
+          "realized_pnl_usd": -0.525,
+          "fee_usd": 0.025,
           "fill_quality": null,
           "strategy": "tail_longshot"
         }
