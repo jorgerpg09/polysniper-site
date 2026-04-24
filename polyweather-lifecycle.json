@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-04-24T20:57:49.375806+00:00",
-  "now": "2026-04-24T20:57:49.375806+00:00",
+  "updated_at": "2026-04-24T21:07:49.690587+00:00",
+  "now": "2026-04-24T21:07:49.690587+00:00",
   "markets": [
     {
       "condition_id": "0x4276f86bfa6d55d31ee884308c67fc221e71f30db6c7ba228d11e14b6e79ea09",
@@ -1465,6 +1465,40 @@
       ]
     },
     {
+      "condition_id": "0x458997c344dd2085e602963e8a8b00efb73e4efe57084191b151fef9c1218d0c",
+      "city": "Atlanta",
+      "market_type": "high",
+      "bracket": "between 82 and 83",
+      "bracket_type": "between",
+      "resolution_date": "2026-04-24",
+      "game_start_time": "2026-04-24T04:00:00+00:00",
+      "last_placement_time": "2026-04-25T02:00:00+00:00",
+      "effective_close_time": "2026-04-25T07:00:00+00:00",
+      "market_end_date": "2026-04-24T12:00:00+00:00",
+      "market_slug": "highest-temperature-in-atlanta-on-april-24-2026-82-83f",
+      "resolved_at": null,
+      "outcome": null,
+      "resolution_source": null,
+      "state": "trading",
+      "bets": [
+        {
+          "id": 222,
+          "placed_at": "2026-04-24T20:58:21.316121+00:00",
+          "size_usd": 1.0,
+          "filled_shares": 500.0,
+          "filled_vwap": 0.001,
+          "model_prob": 0.287177418257231,
+          "best_ask_at_placement": 0.001,
+          "limit_price": 0.002,
+          "outcome": null,
+          "realized_pnl_usd": null,
+          "fee_usd": null,
+          "fill_quality": null,
+          "strategy": "tail_longshot"
+        }
+      ]
+    },
+    {
       "condition_id": "0xa25f1b257981b2bb20d020fcd9b299afd8c9372b0ecbddd03f42e89f9941721f",
       "city": "New York City",
       "market_type": "high",
@@ -1846,10 +1880,10 @@
       "effective_close_time": "2026-04-25T12:00:00+00:00",
       "market_end_date": "2026-04-24T12:00:00+00:00",
       "market_slug": "highest-temperature-in-nyc-on-april-24-2026-62-63f",
-      "resolved_at": null,
-      "outcome": null,
-      "resolution_source": null,
-      "state": "legacy",
+      "resolved_at": "2026-04-24T18:59:23.553734+00:00",
+      "outcome": "loss",
+      "resolution_source": "uma_resolved",
+      "state": "resolved",
       "bets": [
         {
           "id": 217,
@@ -1860,9 +1894,9 @@
           "model_prob": 0.34646275088732775,
           "best_ask_at_placement": 0.001,
           "limit_price": 0.002,
-          "outcome": null,
-          "realized_pnl_usd": null,
-          "fee_usd": null,
+          "outcome": "loss",
+          "realized_pnl_usd": -0.525,
+          "fee_usd": 0.025,
           "fill_quality": null,
           "strategy": "tail_longshot"
         }
