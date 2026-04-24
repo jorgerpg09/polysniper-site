@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-04-24T16:06:00.945017+00:00",
-  "now": "2026-04-24T16:06:00.945017+00:00",
+  "updated_at": "2026-04-24T16:16:01.007677+00:00",
+  "now": "2026-04-24T16:16:01.007677+00:00",
   "markets": [
     {
       "condition_id": "0x4276f86bfa6d55d31ee884308c67fc221e71f30db6c7ba228d11e14b6e79ea09",
@@ -1476,6 +1476,40 @@
           "fee_usd": null,
           "fill_quality": null,
           "strategy": "modal_early"
+        }
+      ]
+    },
+    {
+      "condition_id": "0x668a1cb6ebfe926cd4ae9aaf48634914b17a4bb87c4521dca62cc24fce3f4dcc",
+      "city": "Hong Kong",
+      "market_type": "low",
+      "bracket": "exact 18",
+      "bracket_type": "exact",
+      "resolution_date": "2026-04-24",
+      "game_start_time": null,
+      "last_placement_time": "2026-04-25T08:00:00+00:00",
+      "effective_close_time": "2026-04-25T12:00:00+00:00",
+      "market_end_date": "2026-04-24T12:00:00+00:00",
+      "market_slug": "lowest-temperature-in-hong-kong-on-april-24-2026-18c",
+      "resolved_at": null,
+      "outcome": null,
+      "resolution_source": null,
+      "state": "legacy",
+      "bets": [
+        {
+          "id": 208,
+          "placed_at": "2026-04-24T16:06:32.348672+00:00",
+          "size_usd": 1.0,
+          "filled_shares": 125.0,
+          "filled_vwap": 0.0077599999999999995,
+          "model_prob": 0.10955047364504453,
+          "best_ask_at_placement": 0.007,
+          "limit_price": 0.008,
+          "outcome": null,
+          "realized_pnl_usd": null,
+          "fee_usd": null,
+          "fill_quality": null,
+          "strategy": "tail_longshot"
         }
       ]
     },
