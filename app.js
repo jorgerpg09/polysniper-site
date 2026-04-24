@@ -192,11 +192,18 @@ function renderPolyWeatherStats(stats) {
         const valEl  = document.getElementById('pw-bankroll-value');
         const lblEl  = document.getElementById('pw-bankroll-label');
         const fillEl = document.getElementById('pw-bankroll-fill');
-        const pct = br.start > 0 ? Math.max(0, Math.min(1, br.current / br.start)) : 0;
-        valEl.textContent = '$' + (br.current || 0).toFixed(2);
+        // Headline: AVAILABLE (current - open_stake) so you can see exposure.
+        // Fall back to current if available is missing (pre-update exporter).
+        const available = (br.available != null) ? br.available : (br.current || 0);
+        const openStake = br.open_stake || 0;
+        const pct = br.start > 0 ? Math.max(0, Math.min(1, available / br.start)) : 0;
+        valEl.textContent = '$' + available.toFixed(2);
         valEl.style.color = pct > 0.5 ? 'var(--win)' : (pct > 0.2 ? '#f0b050' : 'var(--loss)');
-        lblEl.textContent = 'Bankroll (of $' + (br.start || 0).toFixed(0) +
-            (br.daily_loss > 0 ? ' · today −$' + br.daily_loss.toFixed(2) : '') + ')';
+        // Label shows: "of $X · open $Y · today -$Z" (omit zero parts)
+        const parts = ['of $' + (br.start || 0).toFixed(0)];
+        if (openStake > 0) parts.push('open $' + openStake.toFixed(2));
+        if (br.daily_loss > 0) parts.push('today −$' + br.daily_loss.toFixed(2));
+        lblEl.textContent = 'Bankroll (' + parts.join(' · ') + ')';
         fillEl.style.width = (pct * 100).toFixed(1) + '%';
         fillEl.classList.toggle('is-warn',   pct <= 0.5 && pct > 0.2);
         fillEl.classList.toggle('is-danger', pct <= 0.2);
