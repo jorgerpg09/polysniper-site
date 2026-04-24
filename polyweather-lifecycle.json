@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-04-24T14:26:01.035608+00:00",
-  "now": "2026-04-24T14:26:01.035608+00:00",
+  "updated_at": "2026-04-24T14:36:01.485100+00:00",
+  "now": "2026-04-24T14:36:01.485100+00:00",
   "markets": [
     {
       "condition_id": "0x4276f86bfa6d55d31ee884308c67fc221e71f30db6c7ba228d11e14b6e79ea09",
@@ -983,6 +983,40 @@
           "outcome": "loss",
           "realized_pnl_usd": -0.3495,
           "fee_usd": 0.0166,
+          "fill_quality": null,
+          "strategy": "tail_longshot"
+        }
+      ]
+    },
+    {
+      "condition_id": "0x81845bb3e28a6e80072a4b83758122b335667c2db29f3e1b2bf807efff35f75a",
+      "city": "Helsinki",
+      "market_type": "high",
+      "bracket": "exact 13",
+      "bracket_type": "exact",
+      "resolution_date": "2026-04-24",
+      "game_start_time": "2026-04-23T21:00:00+00:00",
+      "last_placement_time": "2026-04-24T19:00:00+00:00",
+      "effective_close_time": "2026-04-25T00:00:00+00:00",
+      "market_end_date": "2026-04-24T12:00:00+00:00",
+      "market_slug": "highest-temperature-in-helsinki-on-april-24-2026-13c",
+      "resolved_at": null,
+      "outcome": null,
+      "resolution_source": null,
+      "state": "trading",
+      "bets": [
+        {
+          "id": 203,
+          "placed_at": "2026-04-24T14:31:32.258733+00:00",
+          "size_usd": 1.0,
+          "filled_shares": 111.11111111111111,
+          "filled_vwap": 0.008835119999999998,
+          "model_prob": 0.09318691172005611,
+          "best_ask_at_placement": 0.008,
+          "limit_price": 0.009,
+          "outcome": null,
+          "realized_pnl_usd": null,
+          "fee_usd": null,
           "fill_quality": null,
           "strategy": "tail_longshot"
         }
