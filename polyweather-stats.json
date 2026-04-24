@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-04-24T18:25:58.989835+00:00",
+  "updated_at": "2026-04-24T18:35:58.944799+00:00",
   "hit_rate": 0.0,
   "theoretical_pnl": -13.7244,
-  "trade_count": 53,
+  "trade_count": 54,
   "active_cities": 9,
   "daily_pnl": [
     {
@@ -15,6 +15,17 @@
     }
   ],
   "recent_trades": [
+    {
+      "logged_at": "2026-04-24T18:35:32.346083+00:00",
+      "city": "Paris",
+      "bracket": "exact 24",
+      "edge": 0.04185662755473685,
+      "kelly_size_usdc": 1.0,
+      "outcome": "PENDING",
+      "resolution_date": "2026-04-24",
+      "strategy": "tail_longshot",
+      "market_slug": "highest-temperature-in-paris-on-april-24-2026-24c"
+    },
     {
       "logged_at": "2026-04-24T17:57:32.423784+00:00",
       "city": "Atlanta",
@@ -120,7 +131,7 @@
       "bracket": "below 7",
       "edge": 0.6671542143414025,
       "kelly_size_usdc": 1.0,
-      "outcome": "PENDING",
+      "outcome": "LOSS",
       "resolution_date": "2026-04-24",
       "strategy": "tail_longshot",
       "market_slug": "lowest-temperature-in-seoul-on-april-24-2026-7corbelow"
@@ -223,17 +234,6 @@
       "resolution_date": "2026-04-24",
       "strategy": "modal_early",
       "market_slug": "highest-temperature-in-nyc-on-april-24-2026-66forhigher"
-    },
-    {
-      "logged_at": "2026-04-24T11:25:10.336218+00:00",
-      "city": "Paris",
-      "bracket": "exact 21",
-      "edge": 0.2405636588701393,
-      "kelly_size_usdc": 2.0,
-      "outcome": "LOSS",
-      "resolution_date": "2026-04-24",
-      "strategy": "modal_early",
-      "market_slug": "highest-temperature-in-paris-on-april-24-2026-21c"
     }
   ],
   "strategies": {
@@ -251,16 +251,16 @@
       }
     },
     "tail_longshot": {
-      "bets": 46,
-      "resolved": 23,
+      "bets": 47,
+      "resolved": 25,
       "wins": 0,
-      "pnl_usd": -13.8856,
+      "pnl_usd": -16.1564,
       "bankroll": {
         "start": 100.0,
-        "current": 86.6398,
-        "open_stake": 26.0,
-        "available": 60.6398,
-        "daily_loss": 13.3602
+        "current": 84.369,
+        "open_stake": 24.0,
+        "available": 60.369,
+        "daily_loss": 15.631
       }
     }
   }
