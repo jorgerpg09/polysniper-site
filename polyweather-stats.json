@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-04-24T02:26:36.806235+00:00",
+  "updated_at": "2026-04-24T02:37:34.363756+00:00",
   "hit_rate": 0.0,
   "theoretical_pnl": -0.525,
   "trade_count": 14,
@@ -137,5 +137,27 @@
       "outcome": "LOSS",
       "resolution_date": "2026-04-23"
     }
-  ]
+  ],
+  "strategies": {
+    "modal_early": {
+      "bets": 0,
+      "wins": 0,
+      "pnl_usd": 0.0,
+      "bankroll": {
+        "start": 100.0,
+        "current": 100.0,
+        "daily_loss": 0.0
+      }
+    },
+    "tail_longshot": {
+      "bets": 1,
+      "wins": 0,
+      "pnl_usd": -0.525,
+      "bankroll": {
+        "start": 100.0,
+        "current": 100.0,
+        "daily_loss": 0.0
+      }
+    }
+  }
 }
