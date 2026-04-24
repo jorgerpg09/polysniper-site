@@ -1,9 +1,9 @@
 {
-  "updated_at": "2026-04-24T08:53:46.730335+00:00",
+  "updated_at": "2026-04-24T09:03:46.753180+00:00",
   "hit_rate": 0.0,
   "theoretical_pnl": -4.4875,
-  "trade_count": 21,
-  "active_cities": 6,
+  "trade_count": 23,
+  "active_cities": 7,
   "daily_pnl": [
     {
       "date": "2026-04-23",
@@ -15,6 +15,28 @@
     }
   ],
   "recent_trades": [
+    {
+      "logged_at": "2026-04-24T09:00:20.273737+00:00",
+      "city": "New York City",
+      "bracket": "between 54 and 55",
+      "edge": 0.1533721215645074,
+      "kelly_size_usdc": 1.0,
+      "outcome": "PENDING",
+      "resolution_date": "2026-04-24",
+      "strategy": "tail_longshot",
+      "market_slug": null
+    },
+    {
+      "logged_at": "2026-04-24T08:56:19.833708+00:00",
+      "city": "London",
+      "bracket": "exact 15",
+      "edge": 0.12025147331706965,
+      "kelly_size_usdc": 1.0,
+      "outcome": "PENDING",
+      "resolution_date": "2026-04-24",
+      "strategy": "tail_longshot",
+      "market_slug": null
+    },
     {
       "logged_at": "2026-04-24T08:24:20.336761+00:00",
       "city": "Hong Kong",
@@ -212,28 +234,6 @@
       "resolution_date": "2026-04-24",
       "strategy": "tail_longshot",
       "market_slug": "highest-temperature-in-seoul-on-april-24-2026-15c"
-    },
-    {
-      "logged_at": "2026-04-24T01:16:08.985526+00:00",
-      "city": "Hong Kong",
-      "bracket": "exact 22",
-      "edge": 0.1977973124085315,
-      "kelly_size_usdc": 2.0,
-      "outcome": "PENDING",
-      "resolution_date": "2026-04-24",
-      "strategy": "tail_longshot",
-      "market_slug": "lowest-temperature-in-hong-kong-on-april-24-2026-22c"
-    },
-    {
-      "logged_at": "2026-04-24T01:16:08.686557+00:00",
-      "city": "Hong Kong",
-      "bracket": "exact 24",
-      "edge": 0.2071957884917744,
-      "kelly_size_usdc": 2.0,
-      "outcome": "PENDING",
-      "resolution_date": "2026-04-24",
-      "strategy": "tail_longshot",
-      "market_slug": "highest-temperature-in-hong-kong-on-april-24-2026-24c"
     }
   ],
   "strategies": {
@@ -249,7 +249,7 @@
       }
     },
     "tail_longshot": {
-      "bets": 13,
+      "bets": 14,
       "resolved": 7,
       "wins": 0,
       "pnl_usd": -4.4875,
