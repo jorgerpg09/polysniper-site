@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-04-24T17:55:58.858530+00:00",
+  "updated_at": "2026-04-24T18:05:58.954677+00:00",
   "hit_rate": 0.0,
   "theoretical_pnl": -13.7244,
-  "trade_count": 52,
+  "trade_count": 53,
   "active_cities": 9,
   "daily_pnl": [
     {
@@ -15,6 +15,17 @@
     }
   ],
   "recent_trades": [
+    {
+      "logged_at": "2026-04-24T17:57:32.423784+00:00",
+      "city": "Atlanta",
+      "bracket": "between 80 and 81",
+      "edge": 0.5254175459232938,
+      "kelly_size_usdc": 1.0,
+      "outcome": "PENDING",
+      "resolution_date": "2026-04-24",
+      "strategy": "tail_longshot",
+      "market_slug": "highest-temperature-in-atlanta-on-april-24-2026-80-81f"
+    },
     {
       "logged_at": "2026-04-24T17:50:32.483212+00:00",
       "city": "Atlanta",
@@ -223,17 +234,6 @@
       "resolution_date": "2026-04-24",
       "strategy": "modal_early",
       "market_slug": "highest-temperature-in-paris-on-april-24-2026-21c"
-    },
-    {
-      "logged_at": "2026-04-24T11:00:21.585664+00:00",
-      "city": "New York City",
-      "bracket": "between 50 and 51",
-      "edge": 0.1418650572366111,
-      "kelly_size_usdc": 1.0,
-      "outcome": "LOSS",
-      "resolution_date": "2026-04-24",
-      "strategy": "tail_longshot",
-      "market_slug": "lowest-temperature-in-nyc-on-april-24-2026-50-51f"
     }
   ],
   "strategies": {
@@ -251,15 +251,15 @@
       }
     },
     "tail_longshot": {
-      "bets": 45,
+      "bets": 46,
       "resolved": 23,
       "wins": 0,
       "pnl_usd": -13.8856,
       "bankroll": {
         "start": 100.0,
         "current": 86.6398,
-        "open_stake": 25.0,
-        "available": 61.6398,
+        "open_stake": 26.0,
+        "available": 60.6398,
         "daily_loss": 13.3602
       }
     }
