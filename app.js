@@ -324,9 +324,10 @@ function renderLifecycle() {
     const stateFilter = document.getElementById('pw-lc-state').value;
     const strat = currentStrategy();
 
-    // First filter markets by city/type/state, then filter their bets by strategy.
-    // A market is kept only if (a) it still matches the market-level filters AND
-    // (b) at least one bet matches the strategy filter (or strategy is 'all').
+    // Market-level filters first (city/type/state), then strategy filter on bets.
+    // When a specific strategy is selected, markets with zero matching bets are
+    // hidden — otherwise the timeline looks identical across tabs, which makes
+    // the filter feel broken.
     const visible = markets.map(m => {
         if (cityFilter && m.city !== cityFilter) return null;
         if (typeFilter && m.market_type !== typeFilter) return null;
@@ -334,10 +335,8 @@ function renderLifecycle() {
 
         if (strat === 'all') return m;
 
-        // Strategy filter: only keep bets matching the selected strategy.
-        // If the market has no matching bets, still show it (so the timeline
-        // context is preserved), but with an empty bet list.
         const filteredBets = (m.bets || []).filter(b => (b.strategy || 'tail_longshot') === strat);
+        if (filteredBets.length === 0) return null;  // strict: only markets with matching bets
         return { ...m, bets: filteredBets };
     }).filter(m => m !== null);
 
