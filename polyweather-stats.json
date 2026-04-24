@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-04-24T09:13:46.728675+00:00",
+  "updated_at": "2026-04-24T09:23:46.763119+00:00",
   "hit_rate": 0.0,
   "theoretical_pnl": -4.4875,
-  "trade_count": 23,
+  "trade_count": 24,
   "active_cities": 7,
   "daily_pnl": [
     {
@@ -15,6 +15,17 @@
     }
   ],
   "recent_trades": [
+    {
+      "logged_at": "2026-04-24T09:20:20.395302+00:00",
+      "city": "New York City",
+      "bracket": "between 52 and 53",
+      "edge": 0.26303582396541736,
+      "kelly_size_usdc": 1.0,
+      "outcome": "PENDING",
+      "resolution_date": "2026-04-24",
+      "strategy": "tail_longshot",
+      "market_slug": null
+    },
     {
       "logged_at": "2026-04-24T09:00:20.273737+00:00",
       "city": "New York City",
@@ -223,17 +234,6 @@
       "resolution_date": "2026-04-24",
       "strategy": "tail_longshot",
       "market_slug": "highest-temperature-in-seoul-on-april-24-2026-17c"
-    },
-    {
-      "logged_at": "2026-04-24T01:16:09.316673+00:00",
-      "city": "Seoul",
-      "bracket": "exact 15",
-      "edge": 0.20973824521275453,
-      "kelly_size_usdc": 1.0,
-      "outcome": "LOSS",
-      "resolution_date": "2026-04-24",
-      "strategy": "tail_longshot",
-      "market_slug": "highest-temperature-in-seoul-on-april-24-2026-15c"
     }
   ],
   "strategies": {
