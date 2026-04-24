@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-04-24T18:36:01.373069+00:00",
-  "now": "2026-04-24T18:36:01.373069+00:00",
+  "updated_at": "2026-04-24T18:49:24.572813+00:00",
+  "now": "2026-04-24T18:49:24.572813+00:00",
   "markets": [
     {
       "condition_id": "0x4276f86bfa6d55d31ee884308c67fc221e71f30db6c7ba228d11e14b6e79ea09",
@@ -1281,7 +1281,7 @@
           "id": 215,
           "placed_at": "2026-04-24T18:35:32.346083+00:00",
           "size_usd": 1.0,
-          "filled_shares": 260.15,
+          "filled_shares": 500.0,
           "filled_vwap": 0.001,
           "model_prob": 0.04285662755473685,
           "best_ask_at_placement": 0.001,
@@ -1554,6 +1554,40 @@
           "model_prob": 0.4500767558193493,
           "best_ask_at_placement": 0.11,
           "limit_price": 0.12,
+          "outcome": null,
+          "realized_pnl_usd": null,
+          "fee_usd": null,
+          "fill_quality": null,
+          "strategy": "modal_early"
+        }
+      ]
+    },
+    {
+      "condition_id": "0x7b28cd23a6a2c21b7314fb6b5bce281c276964ba89cb98ae068fd6fbed1f5ad7",
+      "city": "Chicago",
+      "market_type": "high",
+      "bracket": "between 72 and 73",
+      "bracket_type": "between",
+      "resolution_date": "2026-04-24",
+      "game_start_time": "2026-04-24T05:00:00+00:00",
+      "last_placement_time": "2026-04-25T03:00:00+00:00",
+      "effective_close_time": "2026-04-25T08:00:00+00:00",
+      "market_end_date": "2026-04-24T12:00:00+00:00",
+      "market_slug": "highest-temperature-in-chicago-on-april-24-2026-72-73f",
+      "resolved_at": null,
+      "outcome": null,
+      "resolution_source": null,
+      "state": "trading",
+      "bets": [
+        {
+          "id": 216,
+          "placed_at": "2026-04-24T18:41:04.322521+00:00",
+          "size_usd": 2.0,
+          "filled_shares": 10.0,
+          "filled_vwap": 0.16,
+          "model_prob": 0.2872765040434979,
+          "best_ask_at_placement": 0.19,
+          "limit_price": 0.2,
           "outcome": null,
           "realized_pnl_usd": null,
           "fee_usd": null,
