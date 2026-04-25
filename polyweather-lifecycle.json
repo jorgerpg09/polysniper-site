@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-04-25T09:36:28.825491+00:00",
-  "now": "2026-04-25T09:36:28.825491+00:00",
+  "updated_at": "2026-04-25T09:46:29.012055+00:00",
+  "now": "2026-04-25T09:46:29.012055+00:00",
   "markets": [
     {
       "condition_id": "0x4276f86bfa6d55d31ee884308c67fc221e71f30db6c7ba228d11e14b6e79ea09",
@@ -2305,6 +2305,40 @@
           "outcome": "loss",
           "realized_pnl_usd": -0.525,
           "fee_usd": 0.025,
+          "fill_quality": null,
+          "strategy": "tail_longshot"
+        }
+      ]
+    },
+    {
+      "condition_id": "0x9b1725f1870f860cd9ba3d8434ef8b3074c1f774716a45b268fa8cc697ba7e5e",
+      "city": "London",
+      "market_type": "low",
+      "bracket": "exact 4",
+      "bracket_type": "exact",
+      "resolution_date": "2026-04-25",
+      "game_start_time": "2026-04-24T23:00:00+00:00",
+      "last_placement_time": "2026-04-25T11:00:00+00:00",
+      "effective_close_time": "2026-04-25T19:00:00+00:00",
+      "market_end_date": "2026-04-25T12:00:00+00:00",
+      "market_slug": "lowest-temperature-in-london-on-april-25-2026-4c",
+      "resolved_at": null,
+      "outcome": null,
+      "resolution_source": null,
+      "state": "trading",
+      "bets": [
+        {
+          "id": 246,
+          "placed_at": "2026-04-25T09:40:02.397984+00:00",
+          "size_usd": 1.0,
+          "filled_shares": 200.0,
+          "filled_vwap": 0.004,
+          "model_prob": 0.044410937510043165,
+          "best_ask_at_placement": 0.004,
+          "limit_price": 0.005,
+          "outcome": null,
+          "realized_pnl_usd": null,
+          "fee_usd": null,
           "fill_quality": null,
           "strategy": "tail_longshot"
         }
