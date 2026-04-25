@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-04-25T12:36:29.103714+00:00",
-  "now": "2026-04-25T12:36:29.103714+00:00",
+  "updated_at": "2026-04-25T12:46:28.896318+00:00",
+  "now": "2026-04-25T12:46:28.896318+00:00",
   "markets": [
     {
       "condition_id": "0x4276f86bfa6d55d31ee884308c67fc221e71f30db6c7ba228d11e14b6e79ea09",
@@ -2851,6 +2851,40 @@
       ]
     },
     {
+      "condition_id": "0x20294fc0f8d0830cd9ef09a8aa04bd5c8ff613632033b982b2c832c5974242e4",
+      "city": "Madrid",
+      "market_type": "high",
+      "bracket": "exact 24",
+      "bracket_type": "exact",
+      "resolution_date": "2026-04-25",
+      "game_start_time": "2026-04-24T22:00:00+00:00",
+      "last_placement_time": "2026-04-25T20:00:00+00:00",
+      "effective_close_time": "2026-04-26T01:00:00+00:00",
+      "market_end_date": "2026-04-25T12:00:00+00:00",
+      "market_slug": "highest-temperature-in-madrid-on-april-25-2026-24c",
+      "resolved_at": null,
+      "outcome": null,
+      "resolution_source": null,
+      "state": "trading",
+      "bets": [
+        {
+          "id": 252,
+          "placed_at": "2026-04-25T12:41:00.459484+00:00",
+          "size_usd": 2.0,
+          "filled_shares": 9.523809523809524,
+          "filled_vwap": 0.21,
+          "model_prob": 0.2663735789999738,
+          "best_ask_at_placement": 0.2,
+          "limit_price": 0.21,
+          "outcome": null,
+          "realized_pnl_usd": null,
+          "fee_usd": null,
+          "fill_quality": null,
+          "strategy": "modal_early"
+        }
+      ]
+    },
+    {
       "condition_id": "0xa4555fe837bab61de81a037632237d46402a1e75111d006f4927c7502f7b5878",
       "city": "Paris",
       "market_type": "high",
@@ -2944,6 +2978,21 @@
           "model_prob": 0.9216125798500963,
           "best_ask_at_placement": 0.1,
           "limit_price": 0.101,
+          "outcome": null,
+          "realized_pnl_usd": null,
+          "fee_usd": null,
+          "fill_quality": null,
+          "strategy": "modal_early"
+        },
+        {
+          "id": 251,
+          "placed_at": "2026-04-25T12:41:00.459484+00:00",
+          "size_usd": 2.0,
+          "filled_shares": 40.0,
+          "filled_vwap": 0.049,
+          "model_prob": 0.9223948052184119,
+          "best_ask_at_placement": 0.049,
+          "limit_price": 0.05,
           "outcome": null,
           "realized_pnl_usd": null,
           "fee_usd": null,
