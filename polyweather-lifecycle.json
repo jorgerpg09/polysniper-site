@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-04-25T16:06:29.296595+00:00",
-  "now": "2026-04-25T16:06:29.296595+00:00",
+  "updated_at": "2026-04-25T16:50:43.549876+00:00",
+  "now": "2026-04-25T16:50:43.549876+00:00",
   "markets": [
     {
       "condition_id": "0x4276f86bfa6d55d31ee884308c67fc221e71f30db6c7ba228d11e14b6e79ea09",
@@ -2851,6 +2851,40 @@
       ]
     },
     {
+      "condition_id": "0x111efba0324d48a8db943ec3b06635969194c1d8b866c548be5f3c6925130c8f",
+      "city": "Helsinki",
+      "market_type": "high",
+      "bracket": "exact 10",
+      "bracket_type": "exact",
+      "resolution_date": "2026-04-25",
+      "game_start_time": "2026-04-24T21:00:00+00:00",
+      "last_placement_time": "2026-04-25T19:00:00+00:00",
+      "effective_close_time": "2026-04-26T00:00:00+00:00",
+      "market_end_date": "2026-04-25T12:00:00+00:00",
+      "market_slug": "highest-temperature-in-helsinki-on-april-25-2026-10c",
+      "resolved_at": null,
+      "outcome": null,
+      "resolution_source": null,
+      "state": "trading",
+      "bets": [
+        {
+          "id": 261,
+          "placed_at": "2026-04-25T16:47:18.360779+00:00",
+          "size_usd": 1.0,
+          "filled_shares": 200.0,
+          "filled_vwap": 0.004,
+          "model_prob": 0.05849807313979871,
+          "best_ask_at_placement": 0.004,
+          "limit_price": 0.005,
+          "outcome": null,
+          "realized_pnl_usd": null,
+          "fee_usd": null,
+          "fill_quality": null,
+          "strategy": "tail_longshot"
+        }
+      ]
+    },
+    {
       "condition_id": "0x3f562b0f71718010b8f645f1e76dd4e21f354865bfc7b45ec9cf8902135e64e2",
       "city": "Helsinki",
       "market_type": "high",
@@ -3195,6 +3229,40 @@
           "filled_shares": 500.0,
           "filled_vwap": 0.001,
           "model_prob": 0.214111427112594,
+          "best_ask_at_placement": 0.001,
+          "limit_price": 0.002,
+          "outcome": null,
+          "realized_pnl_usd": null,
+          "fee_usd": null,
+          "fill_quality": null,
+          "strategy": "tail_longshot"
+        }
+      ]
+    },
+    {
+      "condition_id": "0x95920db75b4a7b5c89cd2afe9c3c7ac206491fea25800c3e4e6d31ea74eda65f",
+      "city": "London",
+      "market_type": "high",
+      "bracket": "exact 20",
+      "bracket_type": "exact",
+      "resolution_date": "2026-04-25",
+      "game_start_time": null,
+      "last_placement_time": "2026-04-26T08:00:00+00:00",
+      "effective_close_time": "2026-04-26T12:00:00+00:00",
+      "market_end_date": "2026-04-25T12:00:00+00:00",
+      "market_slug": "highest-temperature-in-london-on-april-25-2026-20c",
+      "resolved_at": null,
+      "outcome": null,
+      "resolution_source": null,
+      "state": "legacy",
+      "bets": [
+        {
+          "id": 260,
+          "placed_at": "2026-04-25T16:47:17.939155+00:00",
+          "size_usd": 1.0,
+          "filled_shares": 500.0,
+          "filled_vwap": 0.001,
+          "model_prob": 0.2813384997396883,
           "best_ask_at_placement": 0.001,
           "limit_price": 0.002,
           "outcome": null,
