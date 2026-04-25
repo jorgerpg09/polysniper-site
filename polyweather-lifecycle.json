@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-04-25T06:36:28.808361+00:00",
-  "now": "2026-04-25T06:36:28.808361+00:00",
+  "updated_at": "2026-04-25T06:46:28.851647+00:00",
+  "now": "2026-04-25T06:46:28.851647+00:00",
   "markets": [
     {
       "condition_id": "0x4276f86bfa6d55d31ee884308c67fc221e71f30db6c7ba228d11e14b6e79ea09",
@@ -2152,10 +2152,10 @@
       "effective_close_time": "2026-04-25T18:00:00+00:00",
       "market_end_date": "2026-04-25T12:00:00+00:00",
       "market_slug": "lowest-temperature-in-paris-on-april-25-2026-7c",
-      "resolved_at": null,
-      "outcome": null,
-      "resolution_source": null,
-      "state": "trading",
+      "resolved_at": "2026-04-25T04:11:48.422757+00:00",
+      "outcome": "loss",
+      "resolution_source": "uma_resolved",
+      "state": "resolved",
       "bets": [
         {
           "id": 237,
@@ -2166,9 +2166,9 @@
           "model_prob": 0.35274120251684604,
           "best_ask_at_placement": 0.001,
           "limit_price": 0.002,
-          "outcome": null,
-          "realized_pnl_usd": null,
-          "fee_usd": null,
+          "outcome": "loss",
+          "realized_pnl_usd": -0.525,
+          "fee_usd": 0.025,
           "fill_quality": null,
           "strategy": "tail_longshot"
         }
@@ -2583,6 +2583,40 @@
       ]
     },
     {
+      "condition_id": "0xe27c85b6f5a5e276d8d2d34f779d322557953c351268a027b03cf721cd680b5a",
+      "city": "Hong Kong",
+      "market_type": "high",
+      "bracket": "exact 28",
+      "bracket_type": "exact",
+      "resolution_date": "2026-04-25",
+      "game_start_time": "2026-04-24T16:00:00+00:00",
+      "last_placement_time": "2026-04-25T14:00:00+00:00",
+      "effective_close_time": "2026-04-25T19:00:00+00:00",
+      "market_end_date": "2026-04-25T12:00:00+00:00",
+      "market_slug": "highest-temperature-in-hong-kong-on-april-25-2026-28c",
+      "resolved_at": null,
+      "outcome": null,
+      "resolution_source": null,
+      "state": "trading",
+      "bets": [
+        {
+          "id": 241,
+          "placed_at": "2026-04-25T06:41:00.475394+00:00",
+          "size_usd": 2.0,
+          "filled_shares": 55.55555555555556,
+          "filled_vwap": 0.02017216,
+          "model_prob": 0.5598838849324427,
+          "best_ask_at_placement": 0.035,
+          "limit_price": 0.036,
+          "outcome": null,
+          "realized_pnl_usd": null,
+          "fee_usd": null,
+          "fill_quality": null,
+          "strategy": "modal_early"
+        }
+      ]
+    },
+    {
       "condition_id": "0x01c824d2ad7f62dadc4c49f6f5d93244dad2c98f0f71f34e504c03fc736e84f0",
       "city": "New York City",
       "market_type": "low",
@@ -2623,6 +2657,55 @@
           "model_prob": 0.37122997321370044,
           "best_ask_at_placement": 0.12,
           "limit_price": 0.13,
+          "outcome": null,
+          "realized_pnl_usd": null,
+          "fee_usd": null,
+          "fill_quality": null,
+          "strategy": "modal_early"
+        },
+        {
+          "id": 242,
+          "placed_at": "2026-04-25T06:41:00.475394+00:00",
+          "size_usd": 2.0,
+          "filled_shares": 16.666666666666668,
+          "filled_vwap": 0.11199200000000001,
+          "model_prob": 0.42141213618641765,
+          "best_ask_at_placement": 0.11,
+          "limit_price": 0.12,
+          "outcome": null,
+          "realized_pnl_usd": null,
+          "fee_usd": null,
+          "fill_quality": null,
+          "strategy": "modal_early"
+        }
+      ]
+    },
+    {
+      "condition_id": "0xbf64b7f60786f86af962f4b771a4e6587d84676284bd1fe2d3a002736d6f0af8",
+      "city": "Paris",
+      "market_type": "high",
+      "bracket": "exact 23",
+      "bracket_type": "exact",
+      "resolution_date": "2026-04-25",
+      "game_start_time": "2026-04-24T22:00:00+00:00",
+      "last_placement_time": "2026-04-25T20:00:00+00:00",
+      "effective_close_time": "2026-04-26T01:00:00+00:00",
+      "market_end_date": "2026-04-25T12:00:00+00:00",
+      "market_slug": "highest-temperature-in-paris-on-april-25-2026-23c",
+      "resolved_at": null,
+      "outcome": null,
+      "resolution_source": null,
+      "state": "trading",
+      "bets": [
+        {
+          "id": 243,
+          "placed_at": "2026-04-25T06:41:00.475394+00:00",
+          "size_usd": 2.0,
+          "filled_shares": 5.2631578947368425,
+          "filled_vwap": 0.36,
+          "model_prob": 0.5749837996700724,
+          "best_ask_at_placement": 0.37,
+          "limit_price": 0.38,
           "outcome": null,
           "realized_pnl_usd": null,
           "fee_usd": null,
