@@ -1,9 +1,9 @@
 {
-  "updated_at": "2026-04-25T12:36:27.124782+00:00",
+  "updated_at": "2026-04-25T12:46:27.105482+00:00",
   "hit_rate": 0.0,
   "theoretical_pnl": -34.3357,
-  "trade_count": 89,
-  "active_cities": 10,
+  "trade_count": 91,
+  "active_cities": 11,
   "daily_pnl": [
     {
       "date": "2026-04-23",
@@ -19,6 +19,32 @@
     }
   ],
   "recent_trades": [
+    {
+      "logged_at": "2026-04-25T12:41:00.459484+00:00",
+      "city": "Chicago",
+      "bracket": "above 62",
+      "model_prob": 0.9223948052184119,
+      "market_ask": 0.049,
+      "edge": 0.8733948052184118,
+      "kelly_size_usdc": 2.0,
+      "outcome": "PENDING",
+      "resolution_date": "2026-04-25",
+      "strategy": "modal_early",
+      "market_slug": "highest-temperature-in-chicago-on-april-25-2026-62forhigher"
+    },
+    {
+      "logged_at": "2026-04-25T12:41:00.459484+00:00",
+      "city": "Madrid",
+      "bracket": "exact 24",
+      "model_prob": 0.2663735789999738,
+      "market_ask": 0.2,
+      "edge": 0.06637357899997381,
+      "kelly_size_usdc": 2.0,
+      "outcome": "PENDING",
+      "resolution_date": "2026-04-25",
+      "strategy": "modal_early",
+      "market_slug": "highest-temperature-in-madrid-on-april-25-2026-24c"
+    },
     {
       "logged_at": "2026-04-25T11:09:00.504029+00:00",
       "city": "Chicago",
@@ -477,15 +503,15 @@
   ],
   "strategies": {
     "modal_early": {
-      "bets": 15,
+      "bets": 17,
       "resolved": 7,
       "wins": 0,
       "pnl_usd": -13.3387,
       "bankroll": {
         "start": 100.0,
         "current": 86.6613,
-        "open_stake": 16.0,
-        "available": 70.6613,
+        "open_stake": 20.0,
+        "available": 66.6613,
         "daily_loss": 9.2999
       }
     },
