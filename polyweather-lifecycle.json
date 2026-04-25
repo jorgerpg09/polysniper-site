@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-04-25T01:57:49.313394+00:00",
-  "now": "2026-04-25T01:57:49.313394+00:00",
+  "updated_at": "2026-04-25T02:07:49.645413+00:00",
+  "now": "2026-04-25T02:07:49.645413+00:00",
   "markets": [
     {
       "condition_id": "0x4276f86bfa6d55d31ee884308c67fc221e71f30db6c7ba228d11e14b6e79ea09",
@@ -1547,7 +1547,7 @@
       "resolved_at": null,
       "outcome": null,
       "resolution_source": null,
-      "state": "trading",
+      "state": "after_last_placement",
       "bets": [
         {
           "id": 156,
@@ -2016,10 +2016,10 @@
       "effective_close_time": "2026-04-25T12:00:00+00:00",
       "market_end_date": "2026-04-24T12:00:00+00:00",
       "market_slug": "highest-temperature-in-london-on-april-24-2026-19c",
-      "resolved_at": null,
-      "outcome": null,
-      "resolution_source": null,
-      "state": "legacy",
+      "resolved_at": "2026-04-24T16:01:59.804769+00:00",
+      "outcome": "loss",
+      "resolution_source": "uma_resolved",
+      "state": "resolved",
       "bets": [
         {
           "id": 207,
@@ -2030,9 +2030,9 @@
           "model_prob": 0.2852003711558513,
           "best_ask_at_placement": 0.006,
           "limit_price": 0.007,
-          "outcome": null,
-          "realized_pnl_usd": null,
-          "fee_usd": null,
+          "outcome": "loss",
+          "realized_pnl_usd": -0.8997,
+          "fee_usd": 0.0426,
           "fill_quality": null,
           "strategy": "tail_longshot"
         }
@@ -2209,6 +2209,74 @@
       ]
     },
     {
+      "condition_id": "0x0d6228469c519a721696ac2a1ab2a16b390df7812a70c9d88f9cf384503c077e",
+      "city": "Seoul",
+      "market_type": "high",
+      "bracket": "exact 17",
+      "bracket_type": "exact",
+      "resolution_date": "2026-04-25",
+      "game_start_time": "2026-04-24T15:00:00+00:00",
+      "last_placement_time": "2026-04-25T13:00:00+00:00",
+      "effective_close_time": "2026-04-25T18:00:00+00:00",
+      "market_end_date": "2026-04-25T12:00:00+00:00",
+      "market_slug": "highest-temperature-in-seoul-on-april-25-2026-17c",
+      "resolved_at": null,
+      "outcome": null,
+      "resolution_source": null,
+      "state": "trading",
+      "bets": [
+        {
+          "id": 235,
+          "placed_at": "2026-04-25T02:01:22.866864+00:00",
+          "size_usd": 1.0,
+          "filled_shares": 500.0,
+          "filled_vwap": 0.001,
+          "model_prob": 0.19256088139374017,
+          "best_ask_at_placement": 0.001,
+          "limit_price": 0.002,
+          "outcome": null,
+          "realized_pnl_usd": null,
+          "fee_usd": null,
+          "fill_quality": null,
+          "strategy": "tail_longshot"
+        }
+      ]
+    },
+    {
+      "condition_id": "0x3caf9086d4b62f755d7a5064f127a4e3c1d819632fb9b54ba3bb93c124fbf299",
+      "city": "Seoul",
+      "market_type": "high",
+      "bracket": "exact 18",
+      "bracket_type": "exact",
+      "resolution_date": "2026-04-25",
+      "game_start_time": "2026-04-24T15:00:00+00:00",
+      "last_placement_time": "2026-04-25T13:00:00+00:00",
+      "effective_close_time": "2026-04-25T18:00:00+00:00",
+      "market_end_date": "2026-04-25T12:00:00+00:00",
+      "market_slug": "highest-temperature-in-seoul-on-april-25-2026-18c",
+      "resolved_at": null,
+      "outcome": null,
+      "resolution_source": null,
+      "state": "trading",
+      "bets": [
+        {
+          "id": 234,
+          "placed_at": "2026-04-25T02:01:21.781429+00:00",
+          "size_usd": 1.0,
+          "filled_shares": 333.3333333333333,
+          "filled_vwap": 0.002,
+          "model_prob": 0.21889812506383055,
+          "best_ask_at_placement": 0.002,
+          "limit_price": 0.003,
+          "outcome": null,
+          "realized_pnl_usd": null,
+          "fee_usd": null,
+          "fill_quality": null,
+          "strategy": "tail_longshot"
+        }
+      ]
+    },
+    {
       "condition_id": "0x50646bd7fa0552e2cb61b47b654bb428ca8443ed2bbaadbaadf8ad19631aaab7",
       "city": "Seoul",
       "market_type": "high",
@@ -2220,10 +2288,10 @@
       "effective_close_time": "2026-04-25T18:00:00+00:00",
       "market_end_date": "2026-04-25T12:00:00+00:00",
       "market_slug": "highest-temperature-in-seoul-on-april-25-2026-13c",
-      "resolved_at": null,
-      "outcome": null,
-      "resolution_source": null,
-      "state": "trading",
+      "resolved_at": "2026-04-24T23:03:48.262032+00:00",
+      "outcome": "loss",
+      "resolution_source": "uma_resolved",
+      "state": "resolved",
       "bets": [
         {
           "id": 226,
@@ -2234,9 +2302,9 @@
           "model_prob": 0.17979676989591764,
           "best_ask_at_placement": 0.001,
           "limit_price": 0.002,
-          "outcome": null,
-          "realized_pnl_usd": null,
-          "fee_usd": null,
+          "outcome": "loss",
+          "realized_pnl_usd": -0.525,
+          "fee_usd": 0.025,
           "fill_quality": null,
           "strategy": "tail_longshot"
         }
