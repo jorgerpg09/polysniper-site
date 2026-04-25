@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-04-25T08:26:27.049245+00:00",
+  "updated_at": "2026-04-25T08:36:27.155221+00:00",
   "hit_rate": 0.0,
-  "theoretical_pnl": -28.8516,
+  "theoretical_pnl": -32.3266,
   "trade_count": 83,
   "active_cities": 10,
   "daily_pnl": [
@@ -11,11 +11,11 @@
     },
     {
       "date": "2026-04-24",
-      "cumulative_pnl": -25.0894
+      "cumulative_pnl": -28.5644
     },
     {
       "date": "2026-04-25",
-      "cumulative_pnl": -28.8516
+      "cumulative_pnl": -32.3266
     }
   ],
   "recent_trades": [
@@ -235,7 +235,7 @@
       "market_ask": 0.005,
       "edge": 0.27705646422550145,
       "kelly_size_usdc": 1.0,
-      "outcome": "PENDING",
+      "outcome": "LOSS",
       "resolution_date": "2026-04-24",
       "strategy": "tail_longshot",
       "market_slug": "highest-temperature-in-chicago-on-april-24-2026-74-75f"
@@ -300,7 +300,7 @@
       "market_ask": 0.008,
       "edge": 0.4675402752715173,
       "kelly_size_usdc": 1.0,
-      "outcome": "PENDING",
+      "outcome": "LOSS",
       "resolution_date": "2026-04-24",
       "strategy": "tail_longshot",
       "market_slug": "highest-temperature-in-chicago-on-april-24-2026-76forhigher"
@@ -365,7 +365,7 @@
       "market_ask": 0.19,
       "edge": 0.09727650404349791,
       "kelly_size_usdc": 2.0,
-      "outcome": "PENDING",
+      "outcome": "LOSS",
       "resolution_date": "2026-04-24",
       "strategy": "modal_early",
       "market_slug": "highest-temperature-in-chicago-on-april-24-2026-72-73f"
@@ -465,28 +465,28 @@
   "strategies": {
     "modal_early": {
       "bets": 14,
-      "resolved": 6,
+      "resolved": 7,
       "wins": 0,
-      "pnl_usd": -11.6715,
+      "pnl_usd": -13.3387,
       "bankroll": {
         "start": 100.0,
-        "current": 88.3285,
-        "open_stake": 16.0,
-        "available": 72.3285,
-        "daily_loss": 7.6327
+        "current": 86.6613,
+        "open_stake": 14.0,
+        "available": 72.6613,
+        "daily_loss": 9.2999
       }
     },
     "tail_longshot": {
       "bets": 69,
-      "resolved": 52,
+      "resolved": 54,
       "wins": 0,
-      "pnl_usd": -32.9533,
+      "pnl_usd": -34.7611,
       "bankroll": {
         "start": 100.0,
-        "current": 67.5723,
-        "open_stake": 19.0,
-        "available": 48.5723,
-        "daily_loss": 14.0218
+        "current": 65.7646,
+        "open_stake": 17.0,
+        "available": 48.7646,
+        "daily_loss": 15.8296
       }
     }
   }
