@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-04-25T07:16:27.114733+00:00",
+  "updated_at": "2026-04-25T07:26:27.125164+00:00",
   "hit_rate": 0.0,
-  "theoretical_pnl": -25.0692,
+  "theoretical_pnl": -28.8516,
   "trade_count": 83,
   "active_cities": 10,
   "daily_pnl": [
@@ -11,11 +11,11 @@
     },
     {
       "date": "2026-04-24",
-      "cumulative_pnl": -21.307
+      "cumulative_pnl": -25.0894
     },
     {
       "date": "2026-04-25",
-      "cumulative_pnl": -25.0692
+      "cumulative_pnl": -28.8516
     }
   ],
   "recent_trades": [
@@ -391,7 +391,7 @@
       "market_ask": 0.18,
       "edge": 0.36909831222498773,
       "kelly_size_usdc": 2.0,
-      "outcome": "PENDING",
+      "outcome": "LOSS",
       "resolution_date": "2026-04-24",
       "strategy": "modal_early",
       "market_slug": "highest-temperature-in-nyc-on-april-24-2026-66forhigher"
@@ -443,7 +443,7 @@
       "market_ask": 0.18,
       "edge": 0.3009529471224415,
       "kelly_size_usdc": 2.0,
-      "outcome": "PENDING",
+      "outcome": "LOSS",
       "resolution_date": "2026-04-24",
       "strategy": "modal_early",
       "market_slug": "highest-temperature-in-nyc-on-april-24-2026-66forhigher"
@@ -465,15 +465,15 @@
   "strategies": {
     "modal_early": {
       "bets": 14,
-      "resolved": 4,
+      "resolved": 6,
       "wins": 0,
-      "pnl_usd": -7.8891,
+      "pnl_usd": -11.6715,
       "bankroll": {
         "start": 100.0,
-        "current": 92.111,
-        "open_stake": 20.0,
-        "available": 72.111,
-        "daily_loss": 3.8503
+        "current": 88.3285,
+        "open_stake": 16.0,
+        "available": 72.3285,
+        "daily_loss": 7.6327
       }
     },
     "tail_longshot": {
