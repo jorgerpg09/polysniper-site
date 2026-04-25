@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-04-25T18:40:41.112770+00:00",
+  "updated_at": "2026-04-25T18:50:41.110295+00:00",
   "hit_rate": 0.0,
   "theoretical_pnl": -36.8382,
-  "trade_count": 105,
+  "trade_count": 107,
   "active_cities": 11,
   "daily_pnl": [
     {
@@ -19,6 +19,32 @@
     }
   ],
   "recent_trades": [
+    {
+      "logged_at": "2026-04-25T18:41:03.948989+00:00",
+      "city": "Paris",
+      "bracket": "exact 9",
+      "model_prob": 0.30922529634533624,
+      "market_ask": 0.1,
+      "edge": 0.20922529634533624,
+      "kelly_size_usdc": 2.0,
+      "outcome": "PENDING",
+      "resolution_date": "2026-04-26",
+      "strategy": "modal_early",
+      "market_slug": "lowest-temperature-in-paris-on-april-26-2026-9c"
+    },
+    {
+      "logged_at": "2026-04-25T18:41:03.948989+00:00",
+      "city": "Seoul",
+      "bracket": "below 8",
+      "model_prob": 0.5906542570323265,
+      "market_ask": 0.261,
+      "edge": 0.32965425703232654,
+      "kelly_size_usdc": 2.0,
+      "outcome": "PENDING",
+      "resolution_date": "2026-04-26",
+      "strategy": "modal_early",
+      "market_slug": "lowest-temperature-in-seoul-on-april-26-2026-8corbelow"
+    },
     {
       "logged_at": "2026-04-25T18:14:24.562853+00:00",
       "city": "Paris",
@@ -503,15 +529,15 @@
   ],
   "strategies": {
     "modal_early": {
-      "bets": 17,
+      "bets": 19,
       "resolved": 9,
       "wins": 0,
       "pnl_usd": -17.2274,
       "bankroll": {
         "start": 100.0,
         "current": 82.7726,
-        "open_stake": 16.0,
-        "available": 66.7726,
+        "open_stake": 20.0,
+        "available": 62.7726,
         "daily_loss": 13.1886
       }
     },
