@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-04-25T18:50:41.110295+00:00",
+  "updated_at": "2026-04-25T19:10:01.688808+00:00",
   "hit_rate": 0.0,
-  "theoretical_pnl": -36.8382,
+  "theoretical_pnl": -40.4446,
   "trade_count": 107,
   "active_cities": 11,
   "daily_pnl": [
@@ -15,7 +15,7 @@
     },
     {
       "date": "2026-04-25",
-      "cumulative_pnl": -36.8382
+      "cumulative_pnl": -40.4446
     }
   ],
   "recent_trades": [
@@ -183,7 +183,7 @@
       "market_ask": 0.001,
       "edge": 0.213111427112594,
       "kelly_size_usdc": 1.0,
-      "outcome": "PENDING",
+      "outcome": "LOSS",
       "resolution_date": "2026-04-25",
       "strategy": "tail_longshot",
       "market_slug": "highest-temperature-in-london-on-april-25-2026-19c"
@@ -209,7 +209,7 @@
       "market_ask": 0.007,
       "edge": 0.09081799398317703,
       "kelly_size_usdc": 1.0,
-      "outcome": "PENDING",
+      "outcome": "LOSS",
       "resolution_date": "2026-04-25",
       "strategy": "tail_longshot",
       "market_slug": "highest-temperature-in-london-on-april-25-2026-18c"
@@ -248,7 +248,7 @@
       "market_ask": 0.2,
       "edge": 0.06637357899997381,
       "kelly_size_usdc": 2.0,
-      "outcome": "PENDING",
+      "outcome": "LOSS",
       "resolution_date": "2026-04-25",
       "strategy": "modal_early",
       "market_slug": "highest-temperature-in-madrid-on-april-25-2026-24c"
@@ -530,28 +530,28 @@
   "strategies": {
     "modal_early": {
       "bets": 19,
-      "resolved": 9,
+      "resolved": 10,
       "wins": 0,
-      "pnl_usd": -17.2274,
+      "pnl_usd": -19.3064,
       "bankroll": {
         "start": 100.0,
-        "current": 82.7726,
-        "open_stake": 20.0,
-        "available": 62.7726,
-        "daily_loss": 13.1886
+        "current": 80.6936,
+        "open_stake": 18.0,
+        "available": 62.6936,
+        "daily_loss": 15.2676
       }
     },
     "tail_longshot": {
       "bets": 88,
-      "resolved": 61,
+      "resolved": 63,
       "wins": 0,
-      "pnl_usd": -39.2727,
+      "pnl_usd": -40.8001,
       "bankroll": {
         "start": 100.0,
-        "current": 61.2531,
-        "open_stake": 29.0,
-        "available": 32.2531,
-        "daily_loss": 20.3411
+        "current": 59.7257,
+        "open_stake": 27.0,
+        "available": 32.7257,
+        "daily_loss": 21.8684
       }
     }
   }
