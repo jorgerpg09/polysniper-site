@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-04-25T01:27:47.486059+00:00",
+  "updated_at": "2026-04-25T01:37:47.506651+00:00",
   "hit_rate": 0.0,
   "theoretical_pnl": -15.9744,
-  "trade_count": 71,
+  "trade_count": 72,
   "active_cities": 10,
   "daily_pnl": [
     {
@@ -15,6 +15,19 @@
     }
   ],
   "recent_trades": [
+    {
+      "logged_at": "2026-04-25T01:29:21.597737+00:00",
+      "city": "London",
+      "bracket": "exact 7",
+      "model_prob": 0.30728035279093757,
+      "market_ask": 0.001,
+      "edge": 0.30628035279093757,
+      "kelly_size_usdc": 1.0,
+      "outcome": "PENDING",
+      "resolution_date": "2026-04-25",
+      "strategy": "tail_longshot",
+      "market_slug": "lowest-temperature-in-london-on-april-25-2026-7c"
+    },
     {
       "logged_at": "2026-04-25T00:59:27.923691+00:00",
       "city": "London",
@@ -315,19 +328,6 @@
       "market_slug": "lowest-temperature-in-hong-kong-on-april-25-2026-23c"
     },
     {
-      "logged_at": "2026-04-24T17:02:32.470601+00:00",
-      "city": "Hong Kong",
-      "bracket": "exact 21",
-      "model_prob": 0.12620162324797185,
-      "market_ask": 0.004,
-      "edge": 0.12220162324797185,
-      "kelly_size_usdc": 1.0,
-      "outcome": "PENDING",
-      "resolution_date": "2026-04-25",
-      "strategy": "tail_longshot",
-      "market_slug": "lowest-temperature-in-hong-kong-on-april-25-2026-21c"
-    },
-    {
       "logged_at": "2026-04-24T12:41:03.998386+00:00",
       "city": "New York City",
       "bracket": "above 66",
@@ -421,15 +421,15 @@
       }
     },
     "tail_longshot": {
-      "bets": 61,
+      "bets": 62,
       "resolved": 34,
       "wins": 0,
       "pnl_usd": -21.0398,
       "bankroll": {
         "start": 100.0,
         "current": 79.4857,
-        "open_stake": 29.0,
-        "available": 50.4857,
+        "open_stake": 30.0,
+        "available": 49.4857,
         "daily_loss": 2.1084
       }
     }
