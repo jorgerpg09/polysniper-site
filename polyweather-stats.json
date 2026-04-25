@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-04-25T20:45:42.914696+00:00",
+  "updated_at": "2026-04-25T20:55:42.952685+00:00",
   "hit_rate": 0.0,
-  "theoretical_pnl": -40.4446,
+  "theoretical_pnl": -40.9696,
   "trade_count": 107,
   "active_cities": 11,
   "daily_pnl": [
@@ -15,7 +15,7 @@
     },
     {
       "date": "2026-04-25",
-      "cumulative_pnl": -40.4446
+      "cumulative_pnl": -40.9696
     }
   ],
   "recent_trades": [
@@ -139,7 +139,7 @@
       "market_ask": 0.001,
       "edge": 0.2803384997396883,
       "kelly_size_usdc": 1.0,
-      "outcome": "PENDING",
+      "outcome": "LOSS",
       "resolution_date": "2026-04-25",
       "strategy": "tail_longshot",
       "market_slug": "highest-temperature-in-london-on-april-25-2026-20c",
@@ -596,22 +596,22 @@
     },
     "tail_longshot": {
       "bets": 88,
-      "resolved": 63,
+      "resolved": 64,
       "wins": 0,
-      "pnl_usd": -40.8001,
+      "pnl_usd": -41.3251,
       "bankroll": {
         "start": 100.0,
-        "current": 59.7257,
-        "open_stake": 27.0,
-        "available": 32.7257,
-        "daily_loss": 21.8684
+        "current": 59.2007,
+        "open_stake": 26.0,
+        "available": 33.2007,
+        "daily_loss": 22.3934
       },
       "by_boundary": {
         "floor": {
           "bets": 88,
-          "resolved": 63,
+          "resolved": 64,
           "wins": 0,
-          "pnl_usd": -40.8001
+          "pnl_usd": -41.3251
         },
         "round": {
           "bets": 0,
