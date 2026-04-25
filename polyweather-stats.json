@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-04-25T23:08:18.920310+00:00",
+  "updated_at": "2026-04-25T23:18:18.957908+00:00",
   "hit_rate": 0.0,
   "theoretical_pnl": -40.9696,
-  "trade_count": 107,
+  "trade_count": 109,
   "active_cities": 11,
   "daily_pnl": [
     {
@@ -19,6 +19,34 @@
     }
   ],
   "recent_trades": [
+    {
+      "logged_at": "2026-04-25T23:12:05.288265+00:00",
+      "city": "New York City",
+      "bracket": "between 38 and 39",
+      "model_prob": 0.23652717820835223,
+      "market_ask": 0.039,
+      "edge": 0.19752717820835222,
+      "kelly_size_usdc": 2.0,
+      "outcome": "PENDING",
+      "resolution_date": "2026-04-26",
+      "strategy": "modal_early",
+      "market_slug": "lowest-temperature-in-nyc-on-april-26-2026-38-39f",
+      "boundary_convention": "round"
+    },
+    {
+      "logged_at": "2026-04-25T23:12:05.288265+00:00",
+      "city": "Paris",
+      "bracket": "exact 9",
+      "model_prob": 0.2760979971658888,
+      "market_ask": 0.1,
+      "edge": 0.17609799716588878,
+      "kelly_size_usdc": 2.0,
+      "outcome": "PENDING",
+      "resolution_date": "2026-04-26",
+      "strategy": "modal_early",
+      "market_slug": "lowest-temperature-in-paris-on-april-26-2026-9c",
+      "boundary_convention": "round"
+    },
     {
       "logged_at": "2026-04-25T18:41:03.948989+00:00",
       "city": "Paris",
@@ -550,33 +578,19 @@
       "strategy": "modal_early",
       "market_slug": "highest-temperature-in-nyc-on-april-24-2026-66forhigher",
       "boundary_convention": "floor"
-    },
-    {
-      "logged_at": "2026-04-24T11:25:10.336218+00:00",
-      "city": "Paris",
-      "bracket": "exact 21",
-      "model_prob": 0.3205636588701393,
-      "market_ask": 0.08,
-      "edge": 0.2405636588701393,
-      "kelly_size_usdc": 2.0,
-      "outcome": "LOSS",
-      "resolution_date": "2026-04-24",
-      "strategy": "modal_early",
-      "market_slug": "highest-temperature-in-paris-on-april-24-2026-21c",
-      "boundary_convention": "floor"
     }
   ],
   "strategies": {
     "modal_early": {
-      "bets": 19,
+      "bets": 21,
       "resolved": 11,
       "wins": 1,
       "pnl_usd": -13.1819,
       "bankroll": {
         "start": 100.0,
         "current": 86.818,
-        "open_stake": 16.0,
-        "available": 70.818,
+        "open_stake": 20.0,
+        "available": 66.818,
         "daily_loss": 15.2676
       },
       "by_boundary": {
@@ -587,7 +601,7 @@
           "pnl_usd": -13.1819
         },
         "round": {
-          "bets": 0,
+          "bets": 2,
           "resolved": 0,
           "wins": 0,
           "pnl_usd": 0.0
