@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-04-25T00:57:49.495092+00:00",
-  "now": "2026-04-25T00:57:49.495092+00:00",
+  "updated_at": "2026-04-25T01:07:49.818712+00:00",
+  "now": "2026-04-25T01:07:49.818712+00:00",
   "markets": [
     {
       "condition_id": "0x4276f86bfa6d55d31ee884308c67fc221e71f30db6c7ba228d11e14b6e79ea09",
@@ -1479,7 +1479,7 @@
       "resolved_at": null,
       "outcome": null,
       "resolution_source": null,
-      "state": "trading",
+      "state": "after_last_placement",
       "bets": [
         {
           "id": 159,
@@ -2141,6 +2141,40 @@
       ]
     },
     {
+      "condition_id": "0x195ae89eb434a3ebad2b3f63e7e4a9306bda490672e9b9f20e534e95b65ed31d",
+      "city": "London",
+      "market_type": "low",
+      "bracket": "exact 8",
+      "bracket_type": "exact",
+      "resolution_date": "2026-04-25",
+      "game_start_time": "2026-04-24T23:00:00+00:00",
+      "last_placement_time": "2026-04-25T11:00:00+00:00",
+      "effective_close_time": "2026-04-25T19:00:00+00:00",
+      "market_end_date": "2026-04-25T12:00:00+00:00",
+      "market_slug": "lowest-temperature-in-london-on-april-25-2026-8c",
+      "resolved_at": null,
+      "outcome": null,
+      "resolution_source": null,
+      "state": "trading",
+      "bets": [
+        {
+          "id": 232,
+          "placed_at": "2026-04-25T00:59:27.923691+00:00",
+          "size_usd": 1.0,
+          "filled_shares": 500.0,
+          "filled_vwap": 0.001,
+          "model_prob": 0.11337974766794923,
+          "best_ask_at_placement": 0.001,
+          "limit_price": 0.002,
+          "outcome": null,
+          "realized_pnl_usd": null,
+          "fee_usd": null,
+          "fill_quality": null,
+          "strategy": "tail_longshot"
+        }
+      ]
+    },
+    {
       "condition_id": "0x50646bd7fa0552e2cb61b47b654bb428ca8443ed2bbaadbaadf8ad19631aaab7",
       "city": "Seoul",
       "market_type": "high",
@@ -2331,8 +2365,8 @@
           "id": 230,
           "placed_at": "2026-04-25T00:41:01.246489+00:00",
           "size_usd": 2.0,
-          "filled_shares": 14.94,
-          "filled_vwap": 0.12000000000000001,
+          "filled_shares": 15.384615384615383,
+          "filled_vwap": 0.12000000000000002,
           "model_prob": 0.4374125816688668,
           "best_ask_at_placement": 0.12,
           "limit_price": 0.13,
