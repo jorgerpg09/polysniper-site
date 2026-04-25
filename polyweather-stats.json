@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-04-25T16:50:41.064103+00:00",
+  "updated_at": "2026-04-25T18:20:41.071154+00:00",
   "hit_rate": 0.0,
-  "theoretical_pnl": -36.3132,
-  "trade_count": 100,
+  "theoretical_pnl": -36.8382,
+  "trade_count": 105,
   "active_cities": 11,
   "daily_pnl": [
     {
@@ -15,10 +15,75 @@
     },
     {
       "date": "2026-04-25",
-      "cumulative_pnl": -36.3132
+      "cumulative_pnl": -36.8382
     }
   ],
   "recent_trades": [
+    {
+      "logged_at": "2026-04-25T18:14:24.562853+00:00",
+      "city": "Paris",
+      "bracket": "exact 24",
+      "model_prob": 0.26832720683685984,
+      "market_ask": 0.007,
+      "edge": 0.26132720683685984,
+      "kelly_size_usdc": 1.0,
+      "outcome": "PENDING",
+      "resolution_date": "2026-04-25",
+      "strategy": "tail_longshot",
+      "market_slug": "highest-temperature-in-paris-on-april-25-2026-24c"
+    },
+    {
+      "logged_at": "2026-04-25T18:14:24.151413+00:00",
+      "city": "Seoul",
+      "bracket": "exact 10",
+      "model_prob": 0.10565078387424909,
+      "market_ask": 0.001,
+      "edge": 0.10465078387424909,
+      "kelly_size_usdc": 1.0,
+      "outcome": "PENDING",
+      "resolution_date": "2026-04-26",
+      "strategy": "tail_longshot",
+      "market_slug": "lowest-temperature-in-seoul-on-april-26-2026-10c"
+    },
+    {
+      "logged_at": "2026-04-25T18:14:23.693296+00:00",
+      "city": "Hong Kong",
+      "bracket": "exact 24",
+      "model_prob": 0.2593708565064308,
+      "market_ask": 0.004,
+      "edge": 0.2553708565064308,
+      "kelly_size_usdc": 1.0,
+      "outcome": "PENDING",
+      "resolution_date": "2026-04-26",
+      "strategy": "tail_longshot",
+      "market_slug": "lowest-temperature-in-hong-kong-on-april-26-2026-24c"
+    },
+    {
+      "logged_at": "2026-04-25T18:14:23.082749+00:00",
+      "city": "London",
+      "bracket": "exact 22",
+      "model_prob": 0.19438637598748987,
+      "market_ask": 0.002,
+      "edge": 0.19238637598748987,
+      "kelly_size_usdc": 1.0,
+      "outcome": "PENDING",
+      "resolution_date": "2026-04-25",
+      "strategy": "tail_longshot",
+      "market_slug": "highest-temperature-in-london-on-april-25-2026-22c"
+    },
+    {
+      "logged_at": "2026-04-25T18:14:22.305987+00:00",
+      "city": "Atlanta",
+      "bracket": "between 80 and 81",
+      "model_prob": 0.17031524712332224,
+      "market_ask": 0.007,
+      "edge": 0.16331524712332224,
+      "kelly_size_usdc": 1.0,
+      "outcome": "PENDING",
+      "resolution_date": "2026-04-25",
+      "strategy": "tail_longshot",
+      "market_slug": "highest-temperature-in-atlanta-on-april-25-2026-80-81f"
+    },
     {
       "logged_at": "2026-04-25T16:47:18.360779+00:00",
       "city": "Helsinki",
@@ -53,7 +118,7 @@
       "market_ask": 0.001,
       "edge": 0.058654395195541054,
       "kelly_size_usdc": 1.0,
-      "outcome": "PENDING",
+      "outcome": "LOSS",
       "resolution_date": "2026-04-25",
       "strategy": "tail_longshot",
       "market_slug": "highest-temperature-in-seoul-on-april-25-2026-21corhigher"
@@ -306,71 +371,6 @@
       "market_slug": "lowest-temperature-in-nyc-on-april-25-2026-40-41f"
     },
     {
-      "logged_at": "2026-04-25T05:10:01.770671+00:00",
-      "city": "Paris",
-      "bracket": "exact 6",
-      "model_prob": 0.16823396367128157,
-      "market_ask": 0.001,
-      "edge": 0.16723396367128157,
-      "kelly_size_usdc": 1.0,
-      "outcome": "LOSS",
-      "resolution_date": "2026-04-25",
-      "strategy": "tail_longshot",
-      "market_slug": "lowest-temperature-in-paris-on-april-25-2026-6c"
-    },
-    {
-      "logged_at": "2026-04-25T04:30:02.148776+00:00",
-      "city": "London",
-      "bracket": "exact 6",
-      "model_prob": 0.17491087696449492,
-      "market_ask": 0.001,
-      "edge": 0.17391087696449492,
-      "kelly_size_usdc": 1.0,
-      "outcome": "LOSS",
-      "resolution_date": "2026-04-25",
-      "strategy": "tail_longshot",
-      "market_slug": "lowest-temperature-in-london-on-april-25-2026-6c"
-    },
-    {
-      "logged_at": "2026-04-25T04:10:22.127385+00:00",
-      "city": "Paris",
-      "bracket": "exact 7",
-      "model_prob": 0.35274120251684604,
-      "market_ask": 0.001,
-      "edge": 0.35174120251684604,
-      "kelly_size_usdc": 1.0,
-      "outcome": "LOSS",
-      "resolution_date": "2026-04-25",
-      "strategy": "tail_longshot",
-      "market_slug": "lowest-temperature-in-paris-on-april-25-2026-7c"
-    },
-    {
-      "logged_at": "2026-04-25T03:09:22.996774+00:00",
-      "city": "Paris",
-      "bracket": "exact 9",
-      "model_prob": 0.114090412488843,
-      "market_ask": 0.001,
-      "edge": 0.113090412488843,
-      "kelly_size_usdc": 1.0,
-      "outcome": "LOSS",
-      "resolution_date": "2026-04-25",
-      "strategy": "tail_longshot",
-      "market_slug": "lowest-temperature-in-paris-on-april-25-2026-9c"
-    },
-    {
-      "logged_at": "2026-04-25T02:01:22.866864+00:00",
-      "city": "Seoul",
-      "bracket": "exact 17",
-      "model_prob": 0.19256088139374017,
-      "market_ask": 0.001,
-      "edge": 0.19156088139374017,
-      "kelly_size_usdc": 1.0,
-      "outcome": "LOSS",
-      "resolution_date": "2026-04-25",
-      "strategy": "tail_longshot",
-      "market_slug": "highest-temperature-in-seoul-on-april-25-2026-17c"
-    },
-    {
       "logged_at": "2026-04-25T00:41:01.246489+00:00",
       "city": "New York City",
       "bracket": "between 40 and 41",
@@ -417,7 +417,7 @@
       "market_ask": 0.11,
       "edge": 0.3400767558193493,
       "kelly_size_usdc": 2.0,
-      "outcome": "PENDING",
+      "outcome": "LOSS",
       "resolution_date": "2026-04-25",
       "strategy": "modal_early",
       "market_slug": "lowest-temperature-in-seoul-on-april-25-2026-8corbelow"
@@ -456,7 +456,7 @@
       "market_ask": 0.11,
       "edge": 0.730690989242848,
       "kelly_size_usdc": 2.0,
-      "outcome": "PENDING",
+      "outcome": "LOSS",
       "resolution_date": "2026-04-25",
       "strategy": "modal_early",
       "market_slug": "lowest-temperature-in-seoul-on-april-25-2026-8corbelow"
@@ -504,28 +504,28 @@
   "strategies": {
     "modal_early": {
       "bets": 17,
-      "resolved": 7,
+      "resolved": 9,
       "wins": 0,
-      "pnl_usd": -13.3387,
+      "pnl_usd": -17.2274,
       "bankroll": {
         "start": 100.0,
-        "current": 86.6613,
-        "open_stake": 20.0,
-        "available": 66.6613,
-        "daily_loss": 9.2999
+        "current": 82.7726,
+        "open_stake": 16.0,
+        "available": 66.7726,
+        "daily_loss": 13.1886
       }
     },
     "tail_longshot": {
-      "bets": 83,
-      "resolved": 60,
+      "bets": 88,
+      "resolved": 61,
       "wins": 0,
-      "pnl_usd": -38.7477,
+      "pnl_usd": -39.2727,
       "bankroll": {
         "start": 100.0,
-        "current": 61.7781,
-        "open_stake": 25.0,
-        "available": 36.7781,
-        "daily_loss": 19.8161
+        "current": 61.2531,
+        "open_stake": 29.0,
+        "available": 32.2531,
+        "daily_loss": 20.3411
       }
     }
   }
