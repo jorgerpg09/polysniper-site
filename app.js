@@ -86,12 +86,30 @@ setInterval(loadStats, 60000);
 
 const PW_STATS_URL = 'polyweather-stats.json';
 const PW_STRATEGY_KEY = 'pw_strategy_filter';  // localStorage key
+const PW_POSTFIX_ONLY_KEY = 'pw_postfix_only';  // localStorage key for boundary toggle
 let pwChart = null;
 let _pwStatsData = null;  // last loaded stats, kept for re-renders on tab switch
 
 // Returns the currently selected strategy filter: 'all' | 'tail_longshot' | 'modal_early'
 function currentStrategy() {
     return localStorage.getItem(PW_STRATEGY_KEY) || 'all';
+}
+
+// Returns whether the "post-fix only" toggle is on (default ON — hide pre-fix
+// legacy bets so go/no-go reads aren't dragged down by zombie 'floor'-era °C
+// positions). Persisted in localStorage. Set 2026-04-25 with the boundary fix.
+function postfixOnly() {
+    const v = localStorage.getItem(PW_POSTFIX_ONLY_KEY);
+    return v === null ? true : v === 'true';
+}
+function setPostfixOnly(on) {
+    localStorage.setItem(PW_POSTFIX_ONLY_KEY, on ? 'true' : 'false');
+    if (_pwStatsData) {
+        renderPolyWeatherStats(_pwStatsData);
+        renderPolyWeatherChart(_pwStatsData.daily_pnl || []);
+        renderPolyWeatherTrades(_pwStatsData.recent_trades || []);
+        updateTabCounts(_pwStatsData);
+    }
 }
 
 function setStrategy(strategy) {
@@ -130,14 +148,26 @@ async function loadPolyWeather() {
     }
 }
 
+// Pulls bet count for a strategy honoring the post-fix-only toggle.
+// When the exporter has a `by_boundary` block, prefers that for accurate
+// pre/post split. Falls back to flat `bets` if exporter is older.
+function _pwStrategyBets(strat, postOnly) {
+    if (!strat) return 0;
+    if (postOnly && strat.by_boundary && strat.by_boundary.round) {
+        return strat.by_boundary.round.bets || 0;
+    }
+    return strat.bets || 0;
+}
+
 // Paints the bet-count badges inside each tab.
 // "All strategies" sums the per-strategy bets (NOT stats.trade_count) so the
 // "All" badge equals Tail + Modal — otherwise FANTASY-filtered fills cause
 // the All badge to exceed the sum of strategy badges, which is confusing.
 function updateTabCounts(stats) {
     const strat = stats.strategies || {};
-    const tailBets = (strat.tail_longshot && strat.tail_longshot.bets) || 0;
-    const modalBets = (strat.modal_early && strat.modal_early.bets) || 0;
+    const postOnly = postfixOnly();
+    const tailBets = _pwStrategyBets(strat.tail_longshot, postOnly);
+    const modalBets = _pwStrategyBets(strat.modal_early, postOnly);
     const counts = {
         all: tailBets + modalBets,
         tail_longshot: tailBets,
@@ -148,31 +178,63 @@ function updateTabCounts(stats) {
         const metaEl = btn.querySelector('[data-role="bets"]');
         if (metaEl) metaEl.textContent = counts[key] != null ? counts[key] : '—';
     });
+
+    // Update boundary-filter meta: "(N legacy bets hidden)" when toggle is on
+    const metaEl = document.getElementById('pw-postfix-meta');
+    if (metaEl) {
+        let totalFloor = 0;
+        for (const k of ['tail_longshot', 'modal_early']) {
+            const s = strat[k];
+            if (s && s.by_boundary && s.by_boundary.floor) {
+                totalFloor += s.by_boundary.floor.bets || 0;
+            }
+        }
+        if (postOnly && totalFloor > 0) {
+            metaEl.textContent = `(${totalFloor} legacy hidden)`;
+        } else if (!postOnly && totalFloor > 0) {
+            metaEl.textContent = `(${totalFloor} legacy shown)`;
+        } else {
+            metaEl.textContent = '';
+        }
+    }
 }
 
 function renderPolyWeatherStats(stats) {
     const strat = currentStrategy();
     const isAll = strat === 'all';
     const s = (stats.strategies || {})[strat] || null;
+    const postOnly = postfixOnly();
+
+    // Resolve metrics for one strategy entry, honoring the post-fix-only toggle.
+    // Falls back to flat fields when by_boundary block isn't present (older
+    // exporter JSON before 2026-04-25).
+    function pick(entry) {
+        if (!entry) return { bets: 0, resolved: 0, wins: 0, pnl_usd: 0 };
+        if (postOnly && entry.by_boundary && entry.by_boundary.round) {
+            return entry.by_boundary.round;
+        }
+        return entry;
+    }
 
     // "Paper trades" shows TOTAL bets (pending + resolved) so the count here
     // matches the tab badge. Hit rate uses only RESOLVED bets as denominator
     // since pending bets don't have an outcome yet. Summed from the strategies
     // block (NOT stats.trade_count) so aggregate matches Tail + Modal exactly.
-    const allStrats = Object.values(stats.strategies || {});
+    const allStrats = Object.values(stats.strategies || {}).map(pick);
+    const sPick = pick(s);
     const totalBets = isAll
         ? allStrats.reduce((n, v) => n + (v.bets || 0), 0)
-        : (s ? s.bets : 0);
+        : (sPick.bets || 0);
     const resolvedBets = isAll
         ? allStrats.reduce((n, v) => n + (v.resolved || 0), 0)
-        : (s ? (s.resolved || 0) : 0);
+        : (sPick.resolved || 0);
     const wins = isAll
         ? allStrats.reduce((n, v) => n + (v.wins || 0), 0)
-        : (s ? s.wins : 0);
+        : (sPick.wins || 0);
     const hitRate = resolvedBets > 0 ? (wins / resolvedBets) * 100 : 0;
     const pnl = isAll
         ? allStrats.reduce((n, v) => n + (v.pnl_usd || 0), 0)
-        : (s ? s.pnl_usd : 0);
+        : (sPick.pnl_usd || 0);
 
     document.getElementById('pw-hit-rate').textContent = hitRate.toFixed(1) + '%';
 
@@ -253,13 +315,22 @@ function renderPolyWeatherTrades(trades) {
 
     // Filter by current strategy tab (trades without strategy field fall through as tail_longshot)
     const strat = currentStrategy();
-    const filtered = strat === 'all'
+    let filtered = strat === 'all'
         ? trades
         : trades.filter(t => (t.strategy || 'tail_longshot') === strat);
 
+    // Boundary-convention filter: when post-fix-only is on, hide legacy 'floor'
+    // rows. Rows without the field (older exporter JSON) treated as 'floor'
+    // → hidden when toggle on. Conservative: better to under-show than over-show.
+    const postOnly = postfixOnly();
+    if (postOnly) {
+        filtered = filtered.filter(t => (t.boundary_convention || 'floor') === 'round');
+    }
+
     if (!filtered.length) {
         const msg = strat === 'all'
-            ? 'No paper trades yet -- bot is warming up'
+            ? (postOnly ? 'No post-fix paper trades yet — first ones land after the next forecast cron'
+                        : 'No paper trades yet -- bot is warming up')
             : `No ${strat.replace('_', ' ')} trades yet`;
         tbody.innerHTML = `<tr><td colspan="6" style="text-align:center;color:var(--text-dim)">${msg}</td></tr>`;
         return;
@@ -303,11 +374,17 @@ function renderPolyWeatherTrades(trades) {
             ? `<td><a href="${url}" target="_blank" rel="noopener"><code>${t.bracket}</code></a></td>`
             : `<td><code>${t.bracket}</code></td>`;
 
+        // Legacy badge: pre-fix bets keep showing when toggle is OFF; mark them.
+        const isLegacy = (t.boundary_convention || 'floor') === 'floor';
+        const legacyBadge = isLegacy
+            ? ' <span class="row-prefix-badge" title="Placed before the 2026-04-25 boundary fix. Bracket likely 0.5°C off PM truth — most are zombie bets that will lose.">pre-fix</span>'
+            : '';
+
         return `<tr>
             <td>${time}</td>
             ${cityCell}
             ${bracketCell}
-            <td class="prob-cell">${modelPct} / ${marketPct}${edgeBadge}</td>
+            <td class="prob-cell">${modelPct} / ${marketPct}${edgeBadge}${legacyBadge}</td>
             <td>${size}</td>
             <td class="${cls}">${outcome}</td>
         </tr>`;
@@ -579,4 +656,12 @@ window.addEventListener('resize', renderLifecycle);
     document.querySelectorAll('.strategy-tab').forEach(btn => {
         btn.addEventListener('click', () => setStrategy(btn.dataset.strategy));
     });
+})();
+
+// Restore + wire the post-fix-only toggle. Default ON (boundary_fix 2026-04-25).
+(function initPostfixToggle() {
+    const cb = document.getElementById('pw-postfix-only');
+    if (!cb) return;
+    cb.checked = postfixOnly();
+    cb.addEventListener('change', () => setPostfixOnly(cb.checked));
 })();

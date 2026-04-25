@@ -508,6 +508,87 @@ footer {
     opacity: 1;
 }
 
+/* Archived tab styling — strategy is killed but historical bets remain viewable */
+.strategy-tab.is-archived:not(.is-active) {
+    opacity: 0.55;
+    text-decoration: line-through;
+    text-decoration-color: var(--text-dim);
+    text-decoration-thickness: 1px;
+}
+.strategy-tab.is-archived:not(.is-active):hover {
+    opacity: 0.85;
+}
+.tab-archived-badge {
+    display: inline-block;
+    margin-left: 6px;
+    padding: 1px 6px;
+    border-radius: 8px;
+    background: rgba(255, 100, 100, 0.18);
+    color: #ff8888;
+    font-size: 9px;
+    font-weight: 600;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    vertical-align: middle;
+}
+.strategy-tab.is-active .tab-archived-badge {
+    background: rgba(0, 0, 0, 0.25);
+    color: #fff;
+}
+
+/* Boundary-convention filter (added 2026-04-25 after the floor→round fix) */
+.boundary-filter {
+    display: flex;
+    justify-content: flex-start;
+    margin: 8px 0 14px 0;
+}
+.boundary-toggle {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 6px 12px;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.04);
+    color: var(--text-dim);
+    font-size: 12px;
+    cursor: pointer;
+    user-select: none;
+    border: 1px solid transparent;
+}
+.boundary-toggle:hover {
+    background: rgba(255, 255, 255, 0.07);
+    color: var(--text);
+}
+.boundary-toggle input[type="checkbox"] {
+    margin: 0;
+    cursor: pointer;
+    accent-color: var(--accent);
+}
+.boundary-toggle-label {
+    font-weight: 600;
+}
+.boundary-toggle-meta {
+    color: var(--text-dim);
+    font-size: 11px;
+    font-variant-numeric: tabular-nums;
+}
+
+/* Pre-fix (legacy) row badge — appears in bets table when post-fix-only is OFF */
+.row-prefix-badge {
+    display: inline-block;
+    margin-left: 6px;
+    padding: 1px 6px;
+    border-radius: 6px;
+    background: rgba(255, 180, 100, 0.15);
+    color: #ffb060;
+    font-size: 9px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.4px;
+    vertical-align: middle;
+}
+
 /* Bankroll card — appears when a specific strategy is selected */
 #pw-bankroll-card { display: none; }
 body.strategy-mode #pw-bankroll-card { display: block; }

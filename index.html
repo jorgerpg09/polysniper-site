@@ -40,14 +40,26 @@
                     <span class="tab-label">All strategies</span>
                     <span class="tab-meta" data-role="bets">—</span>
                 </button>
-                <button class="strategy-tab" data-strategy="tail_longshot" role="tab" aria-selected="false">
-                    <span class="tab-label">Tail longshot</span>
+                <button class="strategy-tab is-archived" data-strategy="tail_longshot" role="tab" aria-selected="false" title="Archived 2026-04-25 after 0/59 wins. See docs/STRATEGY_AUDIT_2026-04-25.md">
+                    <span class="tab-label">Tail longshot <span class="tab-archived-badge">archived</span></span>
                     <span class="tab-meta" data-role="bets">—</span>
                 </button>
                 <button class="strategy-tab" data-strategy="modal_early" role="tab" aria-selected="false">
                     <span class="tab-label">Modal early</span>
                     <span class="tab-meta" data-role="bets">—</span>
                 </button>
+            </div>
+
+            <!-- Boundary-convention filter (added 2026-04-25). Default ON =
+                 hide pre-fix legacy bets so go/no-go reads aren't dragged
+                 down by zombie 'floor'-era °C positions. Toggle off to
+                 include them. See docs/STRATEGY_AUDIT_2026-04-25.md. -->
+            <div class="boundary-filter">
+                <label class="boundary-toggle" title="Hide pre-fix bets placed under the floor convention (before commit 5e8aa51 on 2026-04-25). They're mostly °C zombies on the wrong bracket and bias WR/P&L downward.">
+                    <input type="checkbox" id="pw-postfix-only" checked>
+                    <span class="boundary-toggle-label">Post-fix only</span>
+                    <span class="boundary-toggle-meta" id="pw-postfix-meta">—</span>
+                </label>
             </div>
 
             <div class="stats-grid">
