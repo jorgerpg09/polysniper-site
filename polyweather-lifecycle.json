@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-04-25T11:06:29.059815+00:00",
-  "now": "2026-04-25T11:06:29.059815+00:00",
+  "updated_at": "2026-04-25T11:16:28.801768+00:00",
+  "now": "2026-04-25T11:16:28.801768+00:00",
   "markets": [
     {
       "condition_id": "0x4276f86bfa6d55d31ee884308c67fc221e71f30db6c7ba228d11e14b6e79ea09",
@@ -2828,10 +2828,10 @@
       "effective_close_time": "2026-04-26T00:00:00+00:00",
       "market_end_date": "2026-04-25T12:00:00+00:00",
       "market_slug": "highest-temperature-in-helsinki-on-april-25-2026-8c",
-      "resolved_at": null,
-      "outcome": null,
-      "resolution_source": null,
-      "state": "trading",
+      "resolved_at": "2026-04-25T09:02:28.125485+00:00",
+      "outcome": "loss",
+      "resolution_source": "uma_resolved",
+      "state": "resolved",
       "bets": [
         {
           "id": 245,
@@ -2842,9 +2842,9 @@
           "model_prob": 0.3228065185225087,
           "best_ask_at_placement": 0.001,
           "limit_price": 0.002,
-          "outcome": null,
-          "realized_pnl_usd": null,
-          "fee_usd": null,
+          "outcome": "loss",
+          "realized_pnl_usd": -0.525,
+          "fee_usd": 0.025,
           "fill_quality": null,
           "strategy": "tail_longshot"
         }
@@ -2910,6 +2910,40 @@
           "model_prob": 0.5749837996700724,
           "best_ask_at_placement": 0.37,
           "limit_price": 0.38,
+          "outcome": null,
+          "realized_pnl_usd": null,
+          "fee_usd": null,
+          "fill_quality": null,
+          "strategy": "modal_early"
+        }
+      ]
+    },
+    {
+      "condition_id": "0xe95fe5e1f6339da4261dc7b5d7bf62f2992a04089f86b0dff1ee03078f34a59d",
+      "city": "Chicago",
+      "market_type": "high",
+      "bracket": "above 62",
+      "bracket_type": "above",
+      "resolution_date": "2026-04-25",
+      "game_start_time": "2026-04-25T05:00:00+00:00",
+      "last_placement_time": "2026-04-26T03:00:00+00:00",
+      "effective_close_time": "2026-04-26T08:00:00+00:00",
+      "market_end_date": "2026-04-25T12:00:00+00:00",
+      "market_slug": "highest-temperature-in-chicago-on-april-25-2026-62forhigher",
+      "resolved_at": null,
+      "outcome": null,
+      "resolution_source": null,
+      "state": "trading",
+      "bets": [
+        {
+          "id": 250,
+          "placed_at": "2026-04-25T11:09:00.504029+00:00",
+          "size_usd": 2.0,
+          "filled_shares": 19.801980198019802,
+          "filled_vwap": 0.09498,
+          "model_prob": 0.9216125798500963,
+          "best_ask_at_placement": 0.1,
+          "limit_price": 0.101,
           "outcome": null,
           "realized_pnl_usd": null,
           "fee_usd": null,
