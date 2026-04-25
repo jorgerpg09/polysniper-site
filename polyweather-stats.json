@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-04-25T23:18:18.957908+00:00",
+  "updated_at": "2026-04-25T23:28:18.978927+00:00",
   "hit_rate": 0.0,
   "theoretical_pnl": -40.9696,
   "trade_count": 109,
@@ -59,7 +59,7 @@
       "resolution_date": "2026-04-26",
       "strategy": "modal_early",
       "market_slug": "lowest-temperature-in-paris-on-april-26-2026-9c",
-      "boundary_convention": "floor"
+      "boundary_convention": "round"
     },
     {
       "logged_at": "2026-04-25T18:41:03.948989+00:00",
@@ -73,7 +73,7 @@
       "resolution_date": "2026-04-26",
       "strategy": "modal_early",
       "market_slug": "lowest-temperature-in-seoul-on-april-26-2026-8corbelow",
-      "boundary_convention": "floor"
+      "boundary_convention": "round"
     },
     {
       "logged_at": "2026-04-25T18:14:24.562853+00:00",
@@ -595,16 +595,16 @@
       },
       "by_boundary": {
         "floor": {
-          "bets": 19,
-          "resolved": 11,
-          "wins": 1,
-          "pnl_usd": -13.1819
+          "bets": 17,
+          "resolved": 10,
+          "wins": 0,
+          "pnl_usd": -19.3064
         },
         "round": {
-          "bets": 2,
-          "resolved": 0,
-          "wins": 0,
-          "pnl_usd": 0.0
+          "bets": 4,
+          "resolved": 1,
+          "wins": 1,
+          "pnl_usd": 6.1245
         }
       }
     },
