@@ -411,6 +411,23 @@ footer {
     border-radius: 4px;
     font-size: 13px;
 }
+.pw-lifecycle-controls .pw-lc-toggle {
+    cursor: pointer;
+    user-select: none;
+    padding: 4px 10px;
+    border-radius: 4px;
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+}
+.pw-lifecycle-controls .pw-lc-toggle:hover {
+    background: var(--bg-card-hover);
+    color: var(--text);
+}
+.pw-lifecycle-controls .pw-lc-toggle input[type="checkbox"] {
+    margin: 0;
+    accent-color: var(--accent);
+    cursor: pointer;
+}
 .pw-lc-stats {
     margin-left: auto;
     color: var(--text-dim);

@@ -440,7 +440,17 @@ function renderLifecycle() {
     const cityFilter = document.getElementById('pw-lc-city').value;
     const typeFilter = document.getElementById('pw-lc-type').value;
     const stateFilter = document.getElementById('pw-lc-state').value;
+    const hideOldResolved = document.getElementById('pw-lc-hide-old').checked;
     const strat = currentStrategy();
+
+    // "Hide old resolved" cutoff: anything resolved AND whose resolution_date
+    // is more than 1 day before now is considered stale clutter. Active
+    // markets (trading / awaiting UMA / future) and recently-resolved
+    // markets always show. Default ON because the lifecycle is meant for
+    // active monitoring, not historical review.
+    const ONE_DAY_MS = 24 * 60 * 60 * 1000;
+    const oldCutoffMs = nowMs - ONE_DAY_MS;
+    let hiddenOldCount = 0;
 
     // Market-level filters first (city/type/state), then strategy filter on bets.
     // When a specific strategy is selected, markets with zero matching bets are
@@ -451,12 +461,26 @@ function renderLifecycle() {
         if (typeFilter && m.market_type !== typeFilter) return null;
         if (stateFilter && m.state !== stateFilter) return null;
 
+        // Hide-old-resolved cutoff. resolution_date is "YYYY-MM-DD"; we treat
+        // it as midnight UTC end-of-that-day. A market "exact 9 · 04-24" with
+        // resolution_date='2026-04-24' becomes stale once now > 04-25 00:00 UTC.
+        if (hideOldResolved && m.state === 'resolved' && m.resolution_date) {
+            const resEndMs = Date.parse(m.resolution_date + 'T23:59:59Z');
+            if (Number.isFinite(resEndMs) && resEndMs < oldCutoffMs) {
+                hiddenOldCount++;
+                return null;
+            }
+        }
+
         if (strat === 'all') return m;
 
         const filteredBets = (m.bets || []).filter(b => (b.strategy || 'tail_longshot') === strat);
         if (filteredBets.length === 0) return null;  // strict: only markets with matching bets
         return { ...m, bets: filteredBets };
     }).filter(m => m !== null);
+
+    // Stash for the summary line so renderLifecycle's footer can show "(N hidden)"
+    _pwLifecycleData._hiddenOldCount = hiddenOldCount;
 
     // Cluster by city, sorted by soonest pending close. Cities with any
     // pending market come first (ordered by earliest pending effective_close);
@@ -496,8 +520,10 @@ function renderLifecycle() {
     });
 
     const betCount = visible.reduce((s, m) => s + m.bets.length, 0);
-    document.getElementById('pw-lc-summary').textContent =
-        visible.length + ' markets • ' + betCount + ' bets';
+    const hidden = _pwLifecycleData._hiddenOldCount || 0;
+    const summaryParts = [visible.length + ' markets', betCount + ' bets'];
+    if (hidden > 0) summaryParts.push(hidden + ' old hidden');
+    document.getElementById('pw-lc-summary').textContent = summaryParts.join(' • ');
     document.getElementById('pw-lc-updated').textContent =
         'Updated ' + new Date(updated_at).toLocaleTimeString() + ' • auto-refresh 60s';
 
@@ -652,7 +678,7 @@ function escapeXml(s) {
 loadPolyWeatherLifecycle();
 setInterval(loadPolyWeatherLifecycle, PW_LC_REFRESH_MS);
 window.addEventListener('resize', renderLifecycle);
-['pw-lc-city', 'pw-lc-type', 'pw-lc-state'].forEach(id => {
+['pw-lc-city', 'pw-lc-type', 'pw-lc-state', 'pw-lc-hide-old'].forEach(id => {
     document.getElementById(id).addEventListener('change', renderLifecycle);
 });
 
