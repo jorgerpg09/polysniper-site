@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-04-26T12:38:20.789125+00:00",
-  "now": "2026-04-26T12:38:20.789125+00:00",
+  "updated_at": "2026-04-26T12:48:20.760948+00:00",
+  "now": "2026-04-26T12:48:20.760948+00:00",
   "markets": [
     {
       "condition_id": "0x4276f86bfa6d55d31ee884308c67fc221e71f30db6c7ba228d11e14b6e79ea09",
@@ -3635,6 +3635,74 @@
           "model_prob": 0.27636938511270687,
           "best_ask_at_placement": 0.19,
           "limit_price": 0.2,
+          "outcome": null,
+          "realized_pnl_usd": null,
+          "fee_usd": null,
+          "fill_quality": null,
+          "strategy": "modal_early"
+        }
+      ]
+    },
+    {
+      "condition_id": "0x7762ce299f371b12e3ffdff5d27f67b28df8ff7f3e500e9db2fba3f11c65e722",
+      "city": "New York City",
+      "market_type": "high",
+      "bracket": "between 52 and 53",
+      "bracket_type": "between",
+      "resolution_date": "2026-04-26",
+      "game_start_time": "2026-04-26T04:00:00+00:00",
+      "last_placement_time": "2026-04-27T02:00:00+00:00",
+      "effective_close_time": "2026-04-27T07:00:00+00:00",
+      "market_end_date": "2026-04-26T12:00:00+00:00",
+      "market_slug": "highest-temperature-in-nyc-on-april-26-2026-52-53f",
+      "resolved_at": null,
+      "outcome": null,
+      "resolution_source": null,
+      "state": "trading",
+      "bets": [
+        {
+          "id": 273,
+          "placed_at": "2026-04-26T12:41:00.541602+00:00",
+          "size_usd": 2.0,
+          "filled_shares": 11.11111111111111,
+          "filled_vwap": 0.17,
+          "model_prob": 0.26628371762211944,
+          "best_ask_at_placement": 0.17,
+          "limit_price": 0.18,
+          "outcome": null,
+          "realized_pnl_usd": null,
+          "fee_usd": null,
+          "fill_quality": null,
+          "strategy": "modal_early"
+        }
+      ]
+    },
+    {
+      "condition_id": "0x75f8ed63fffb2ea3319716f41268c28d0f020e073b188c63606152ecff910ab6",
+      "city": "Seoul",
+      "market_type": "low",
+      "bracket": "below 8",
+      "bracket_type": "below",
+      "resolution_date": "2026-04-27",
+      "game_start_time": "2026-04-26T15:00:00+00:00",
+      "last_placement_time": "2026-04-27T03:00:00+00:00",
+      "effective_close_time": "2026-04-27T11:00:00+00:00",
+      "market_end_date": "2026-04-27T12:00:00+00:00",
+      "market_slug": "lowest-temperature-in-seoul-on-april-27-2026-8corbelow",
+      "resolved_at": null,
+      "outcome": null,
+      "resolution_source": null,
+      "state": "before_start",
+      "bets": [
+        {
+          "id": 274,
+          "placed_at": "2026-04-26T12:41:00.541602+00:00",
+          "size_usd": 2.0,
+          "filled_shares": 11.11111111111111,
+          "filled_vwap": 0.17,
+          "model_prob": 0.45362086212687985,
+          "best_ask_at_placement": 0.17,
+          "limit_price": 0.18,
           "outcome": null,
           "realized_pnl_usd": null,
           "fee_usd": null,
