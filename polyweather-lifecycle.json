@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-04-26T17:08:21.350776+00:00",
-  "now": "2026-04-26T17:08:21.350776+00:00",
+  "updated_at": "2026-04-26T17:18:20.924109+00:00",
+  "now": "2026-04-26T17:18:20.924109+00:00",
   "markets": [
     {
       "condition_id": "0x4276f86bfa6d55d31ee884308c67fc221e71f30db6c7ba228d11e14b6e79ea09",
@@ -3674,6 +3674,21 @@
           "fee_usd": null,
           "fill_quality": null,
           "strategy": "modal_early"
+        },
+        {
+          "id": 275,
+          "placed_at": "2026-04-26T17:13:00.597425+00:00",
+          "size_usd": 2.0,
+          "filled_shares": 16.666666666666668,
+          "filled_vwap": 0.09,
+          "model_prob": 0.20388185239253936,
+          "best_ask_at_placement": 0.11,
+          "limit_price": 0.12,
+          "outcome": null,
+          "realized_pnl_usd": null,
+          "fee_usd": null,
+          "fill_quality": null,
+          "strategy": "modal_early"
         }
       ]
     },
@@ -3703,6 +3718,55 @@
           "model_prob": 0.45362086212687985,
           "best_ask_at_placement": 0.17,
           "limit_price": 0.18,
+          "outcome": null,
+          "realized_pnl_usd": null,
+          "fee_usd": null,
+          "fill_quality": null,
+          "strategy": "modal_early"
+        },
+        {
+          "id": 277,
+          "placed_at": "2026-04-26T17:13:00.597425+00:00",
+          "size_usd": 2.0,
+          "filled_shares": 13.333333333333334,
+          "filled_vwap": 0.143025,
+          "model_prob": 0.4430503099792066,
+          "best_ask_at_placement": 0.14,
+          "limit_price": 0.15,
+          "outcome": null,
+          "realized_pnl_usd": null,
+          "fee_usd": null,
+          "fill_quality": null,
+          "strategy": "modal_early"
+        }
+      ]
+    },
+    {
+      "condition_id": "0x2609bfa422c6af73ad99a962c9c3c8f5fa7ff2d1e312d81d4e644973cdcbff0d",
+      "city": "Paris",
+      "market_type": "low",
+      "bracket": "exact 10",
+      "bracket_type": "exact",
+      "resolution_date": "2026-04-27",
+      "game_start_time": "2026-04-26T22:00:00+00:00",
+      "last_placement_time": "2026-04-27T10:00:00+00:00",
+      "effective_close_time": "2026-04-27T18:00:00+00:00",
+      "market_end_date": "2026-04-27T12:00:00+00:00",
+      "market_slug": "lowest-temperature-in-paris-on-april-27-2026-10c",
+      "resolved_at": null,
+      "outcome": null,
+      "resolution_source": null,
+      "state": "before_start",
+      "bets": [
+        {
+          "id": 276,
+          "placed_at": "2026-04-26T17:13:00.597425+00:00",
+          "size_usd": 2.0,
+          "filled_shares": 11.76470588235294,
+          "filled_vwap": 0.143,
+          "model_prob": 0.25608629970912666,
+          "best_ask_at_placement": 0.16,
+          "limit_price": 0.17,
           "outcome": null,
           "realized_pnl_usd": null,
           "fee_usd": null,
