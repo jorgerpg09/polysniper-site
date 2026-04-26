@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-04-26T18:38:18.940470+00:00",
+  "updated_at": "2026-04-26T18:48:19.001160+00:00",
   "hit_rate": 0.0175,
   "theoretical_pnl": -47.0343,
-  "trade_count": 116,
+  "trade_count": 117,
   "active_cities": 11,
   "daily_pnl": [
     {
@@ -23,6 +23,20 @@
     }
   ],
   "recent_trades": [
+    {
+      "logged_at": "2026-04-26T18:41:00.607396+00:00",
+      "city": "Seoul",
+      "bracket": "below 8",
+      "model_prob": 0.4430503099792066,
+      "market_ask": 0.043,
+      "edge": 0.4000503099792066,
+      "kelly_size_usdc": 2.0,
+      "outcome": "PENDING",
+      "resolution_date": "2026-04-27",
+      "strategy": "modal_early",
+      "market_slug": "lowest-temperature-in-seoul-on-april-27-2026-8corbelow",
+      "boundary_convention": "round"
+    },
     {
       "logged_at": "2026-04-26T17:13:00.597425+00:00",
       "city": "New York City",
@@ -568,33 +582,19 @@
       "strategy": "modal_early",
       "market_slug": "lowest-temperature-in-nyc-on-april-25-2026-40-41f",
       "boundary_convention": "floor"
-    },
-    {
-      "logged_at": "2026-04-24T23:12:03.835540+00:00",
-      "city": "Paris",
-      "bracket": "exact 8",
-      "model_prob": 0.46294314901874084,
-      "market_ask": 0.22,
-      "edge": 0.24294314901874084,
-      "kelly_size_usdc": 2.0,
-      "outcome": "LOSS",
-      "resolution_date": "2026-04-25",
-      "strategy": "modal_early",
-      "market_slug": "lowest-temperature-in-paris-on-april-25-2026-8c",
-      "boundary_convention": "floor"
     }
   ],
   "strategies": {
     "modal_early": {
-      "bets": 28,
+      "bets": 29,
       "resolved": 21,
       "wins": 2,
       "pnl_usd": -27.8124,
       "bankroll": {
         "start": 100.0,
         "current": 72.1875,
-        "open_stake": 14.0,
-        "available": 58.1875,
+        "open_stake": 16.0,
+        "available": 56.1875,
         "daily_loss": 17.9383
       },
       "by_boundary": {
@@ -605,7 +605,7 @@
           "pnl_usd": -25.8219
         },
         "round": {
-          "bets": 11,
+          "bets": 12,
           "resolved": 5,
           "wins": 1,
           "pnl_usd": -1.9905
