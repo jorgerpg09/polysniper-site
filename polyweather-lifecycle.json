@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-04-26T00:58:20.819096+00:00",
-  "now": "2026-04-26T00:58:20.819096+00:00",
+  "updated_at": "2026-04-26T01:08:20.756411+00:00",
+  "now": "2026-04-26T01:08:20.756411+00:00",
   "markets": [
     {
       "condition_id": "0x4276f86bfa6d55d31ee884308c67fc221e71f30db6c7ba228d11e14b6e79ea09",
@@ -3100,10 +3100,10 @@
       "effective_close_time": "2026-04-26T01:00:00+00:00",
       "market_end_date": "2026-04-25T12:00:00+00:00",
       "market_slug": "highest-temperature-in-paris-on-april-25-2026-23c",
-      "resolved_at": null,
-      "outcome": null,
-      "resolution_source": null,
-      "state": "after_last_placement",
+      "resolved_at": "2026-04-25T06:42:28.878161+00:00",
+      "outcome": "win",
+      "resolution_source": "uma_resolved",
+      "state": "resolved",
       "bets": [
         {
           "id": 243,
@@ -3114,9 +3114,9 @@
           "model_prob": 0.5749837996700724,
           "best_ask_at_placement": 0.37,
           "limit_price": 0.38,
-          "outcome": null,
-          "realized_pnl_usd": null,
-          "fee_usd": null,
+          "outcome": "win",
+          "realized_pnl_usd": 3.3078,
+          "fee_usd": 0.0606,
           "fill_quality": null,
           "strategy": "modal_early"
         }
@@ -3353,10 +3353,10 @@
       "effective_close_time": "2026-04-26T12:00:00+00:00",
       "market_end_date": "2026-04-25T12:00:00+00:00",
       "market_slug": "highest-temperature-in-paris-on-april-25-2026-24c",
-      "resolved_at": null,
-      "outcome": null,
-      "resolution_source": null,
-      "state": "legacy",
+      "resolved_at": "2026-04-25T18:15:11.121167+00:00",
+      "outcome": "loss",
+      "resolution_source": "uma_resolved",
+      "state": "resolved",
       "bets": [
         {
           "id": 266,
@@ -3367,9 +3367,9 @@
           "model_prob": 0.26832720683685984,
           "best_ask_at_placement": 0.007,
           "limit_price": 0.008,
-          "outcome": null,
-          "realized_pnl_usd": null,
-          "fee_usd": null,
+          "outcome": "loss",
+          "realized_pnl_usd": -0.9184,
+          "fee_usd": 0.0434,
           "fill_quality": null,
           "strategy": "tail_longshot"
         }
