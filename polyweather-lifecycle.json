@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-04-26T00:38:20.797660+00:00",
-  "now": "2026-04-26T00:38:20.797660+00:00",
+  "updated_at": "2026-04-26T00:48:20.923001+00:00",
+  "now": "2026-04-26T00:48:20.923001+00:00",
   "markets": [
     {
       "condition_id": "0x4276f86bfa6d55d31ee884308c67fc221e71f30db6c7ba228d11e14b6e79ea09",
@@ -2862,10 +2862,10 @@
       "effective_close_time": "2026-04-26T00:00:00+00:00",
       "market_end_date": "2026-04-25T12:00:00+00:00",
       "market_slug": "highest-temperature-in-helsinki-on-april-25-2026-10c",
-      "resolved_at": null,
-      "outcome": null,
-      "resolution_source": null,
-      "state": "closed",
+      "resolved_at": "2026-04-25T16:48:42.584695+00:00",
+      "outcome": "loss",
+      "resolution_source": "uma_resolved",
+      "state": "resolved",
       "bets": [
         {
           "id": 261,
@@ -2876,9 +2876,9 @@
           "model_prob": 0.05849807313979871,
           "best_ask_at_placement": 0.004,
           "limit_price": 0.005,
-          "outcome": null,
-          "realized_pnl_usd": null,
-          "fee_usd": null,
+          "outcome": "loss",
+          "realized_pnl_usd": -0.8398,
+          "fee_usd": 0.0398,
           "fill_quality": null,
           "strategy": "tail_longshot"
         }
@@ -3552,6 +3552,21 @@
           "model_prob": 0.2760979971658888,
           "best_ask_at_placement": 0.1,
           "limit_price": 0.11,
+          "outcome": null,
+          "realized_pnl_usd": null,
+          "fee_usd": null,
+          "fill_quality": null,
+          "strategy": "modal_early"
+        },
+        {
+          "id": 271,
+          "placed_at": "2026-04-26T00:41:00.612741+00:00",
+          "size_usd": 2.0,
+          "filled_shares": 48.78048780487805,
+          "filled_vwap": 0.04,
+          "model_prob": 0.26691522632191705,
+          "best_ask_at_placement": 0.04,
+          "limit_price": 0.041,
           "outcome": null,
           "realized_pnl_usd": null,
           "fee_usd": null,
