@@ -332,7 +332,7 @@ function renderPolyWeatherTrades(trades) {
             ? (postOnly ? 'No post-fix paper trades yet — first ones land after the next forecast cron'
                         : 'No paper trades yet -- bot is warming up')
             : `No ${strat.replace('_', ' ')} trades yet`;
-        tbody.innerHTML = `<tr><td colspan="6" style="text-align:center;color:var(--text-dim)">${msg}</td></tr>`;
+        tbody.innerHTML = `<tr><td colspan="5" style="text-align:center;color:var(--text-dim)">${msg}</td></tr>`;
         return;
     }
     trades = filtered;
@@ -360,19 +360,27 @@ function renderPolyWeatherTrades(trades) {
             ? ` <span class="edge-pp">(+${edgePP}pp)</span>`
             : ` <span class="edge-pp">${edgePP}pp</span>`;
 
-        // If the row has a market_slug, link the CITY cell (was TIME before —
-        // time isn't market-identifying, city+bracket is). Bracket stays
-        // linked too because our own bracket semantics (e.g. "exact 21")
-        // are the second piece of market identity.
+        // Merged Market cell — mirrors the Market Lifecycle row label format
+        // ("City ↑/↓ bracket · MM-DD") so users can match a trade row to its
+        // lifecycle bar by eye. Same city abbreviations + symbol convention.
+        const cityAbbrev = {
+            'New York City': 'NYC',
+            'Hong Kong': 'HK',
+            'Sao Paulo': 'SP',
+        };
+        const cityShort = cityAbbrev[t.city]
+            || (t.city.length > 12 ? t.city.substring(0, 11) + '…' : t.city);
+        // market_type may be missing on older JSON snapshots — default to '↑' (HIGH).
+        const typeSymbol = t.market_type === 'low' ? '↓' : '↑';
+        const resDateShort = (t.resolution_date || '').substring(5);  // "04-26" from "2026-04-26"
+        const marketLabel = `${cityShort} ${typeSymbol} ${t.bracket} · ${resDateShort}`;
+
         const url = t.market_slug
             ? `https://polymarket.com/market/${encodeURIComponent(t.market_slug)}`
             : null;
-        const cityCell = url
-            ? `<td><a href="${url}" target="_blank" rel="noopener">${t.city}</a></td>`
-            : `<td>${t.city}</td>`;
-        const bracketCell = url
-            ? `<td><a href="${url}" target="_blank" rel="noopener"><code>${t.bracket}</code></a></td>`
-            : `<td><code>${t.bracket}</code></td>`;
+        const marketCell = url
+            ? `<td><a href="${url}" target="_blank" rel="noopener"><code>${marketLabel}</code></a></td>`
+            : `<td><code>${marketLabel}</code></td>`;
 
         // Legacy badge: pre-fix bets keep showing when toggle is OFF; mark them.
         const isLegacy = (t.boundary_convention || 'floor') === 'floor';
@@ -382,8 +390,7 @@ function renderPolyWeatherTrades(trades) {
 
         return `<tr>
             <td>${time}</td>
-            ${cityCell}
-            ${bracketCell}
+            ${marketCell}
             <td class="prob-cell">${modelPct} / ${marketPct}${edgeBadge}${legacyBadge}</td>
             <td>${size}</td>
             <td class="${cls}">${outcome}</td>
