@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-04-26T17:08:19.421522+00:00",
+  "updated_at": "2026-04-26T17:18:19.020568+00:00",
   "hit_rate": 0.0175,
   "theoretical_pnl": -47.0343,
-  "trade_count": 113,
+  "trade_count": 116,
   "active_cities": 11,
   "daily_pnl": [
     {
@@ -23,6 +23,48 @@
     }
   ],
   "recent_trades": [
+    {
+      "logged_at": "2026-04-26T17:13:00.597425+00:00",
+      "city": "New York City",
+      "bracket": "between 52 and 53",
+      "model_prob": 0.20388185239253936,
+      "market_ask": 0.11,
+      "edge": 0.09388185239253936,
+      "kelly_size_usdc": 2.0,
+      "outcome": "PENDING",
+      "resolution_date": "2026-04-26",
+      "strategy": "modal_early",
+      "market_slug": "highest-temperature-in-nyc-on-april-26-2026-52-53f",
+      "boundary_convention": "round"
+    },
+    {
+      "logged_at": "2026-04-26T17:13:00.597425+00:00",
+      "city": "Paris",
+      "bracket": "exact 10",
+      "model_prob": 0.25608629970912666,
+      "market_ask": 0.16,
+      "edge": 0.09608629970912666,
+      "kelly_size_usdc": 2.0,
+      "outcome": "PENDING",
+      "resolution_date": "2026-04-27",
+      "strategy": "modal_early",
+      "market_slug": "lowest-temperature-in-paris-on-april-27-2026-10c",
+      "boundary_convention": "round"
+    },
+    {
+      "logged_at": "2026-04-26T17:13:00.597425+00:00",
+      "city": "Seoul",
+      "bracket": "below 8",
+      "model_prob": 0.4430503099792066,
+      "market_ask": 0.14,
+      "edge": 0.30305030997920657,
+      "kelly_size_usdc": 2.0,
+      "outcome": "PENDING",
+      "resolution_date": "2026-04-27",
+      "strategy": "modal_early",
+      "market_slug": "lowest-temperature-in-seoul-on-april-27-2026-8corbelow",
+      "boundary_convention": "round"
+    },
     {
       "logged_at": "2026-04-26T12:41:00.541602+00:00",
       "city": "New York City",
@@ -540,61 +582,19 @@
       "strategy": "modal_early",
       "market_slug": "lowest-temperature-in-paris-on-april-25-2026-8c",
       "boundary_convention": "floor"
-    },
-    {
-      "logged_at": "2026-04-24T18:41:04.322521+00:00",
-      "city": "Chicago",
-      "bracket": "between 72 and 73",
-      "model_prob": 0.2872765040434979,
-      "market_ask": 0.19,
-      "edge": 0.09727650404349791,
-      "kelly_size_usdc": 2.0,
-      "outcome": "LOSS",
-      "resolution_date": "2026-04-24",
-      "strategy": "modal_early",
-      "market_slug": "highest-temperature-in-chicago-on-april-24-2026-72-73f",
-      "boundary_convention": "floor"
-    },
-    {
-      "logged_at": "2026-04-24T17:13:04.756510+00:00",
-      "city": "Seoul",
-      "bracket": "below 8",
-      "model_prob": 0.4500767558193493,
-      "market_ask": 0.11,
-      "edge": 0.3400767558193493,
-      "kelly_size_usdc": 2.0,
-      "outcome": "LOSS",
-      "resolution_date": "2026-04-25",
-      "strategy": "modal_early",
-      "market_slug": "lowest-temperature-in-seoul-on-april-25-2026-8corbelow",
-      "boundary_convention": "floor"
-    },
-    {
-      "logged_at": "2026-04-24T12:41:03.998386+00:00",
-      "city": "New York City",
-      "bracket": "above 66",
-      "model_prob": 0.5490983122249877,
-      "market_ask": 0.18,
-      "edge": 0.36909831222498773,
-      "kelly_size_usdc": 2.0,
-      "outcome": "LOSS",
-      "resolution_date": "2026-04-24",
-      "strategy": "modal_early",
-      "market_slug": "highest-temperature-in-nyc-on-april-24-2026-66forhigher",
-      "boundary_convention": "floor"
     }
   ],
   "strategies": {
     "modal_early": {
-      "bets": 25,
+      "bets": 28,
       "resolved": 21,
       "wins": 2,
       "pnl_usd": -27.8124,
       "bankroll": {
         "start": 100.0,
         "current": 72.1875,
-        "open_stake": 8.0,
-        "available": 64.1875,
+        "open_stake": 14.0,
+        "available": 58.1875,
         "daily_loss": 17.9383
       },
       "by_boundary": {
@@ -605,7 +605,7 @@
           "pnl_usd": -25.8219
         },
         "round": {
-          "bets": 8,
+          "bets": 11,
           "resolved": 5,
           "wins": 1,
           "pnl_usd": -1.9905
