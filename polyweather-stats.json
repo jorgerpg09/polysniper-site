@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-04-27T11:08:19.500367+00:00",
+  "updated_at": "2026-04-27T11:18:19.454545+00:00",
   "hit_rate": 0.0149,
   "theoretical_pnl": -59.3939,
-  "trade_count": 123,
+  "trade_count": 125,
   "active_cities": 13,
   "daily_pnl": [
     {
@@ -23,6 +23,36 @@
     }
   ],
   "recent_trades": [
+    {
+      "logged_at": "2026-04-27T11:09:00.610350+00:00",
+      "city": "Chicago",
+      "bracket": "above 72",
+      "market_type": "high",
+      "model_prob": 0.2633160890505293,
+      "market_ask": 0.025,
+      "edge": 0.23831608905052928,
+      "kelly_size_usdc": 2.0,
+      "outcome": "PENDING",
+      "resolution_date": "2026-04-27",
+      "strategy": "modal_early",
+      "market_slug": "highest-temperature-in-chicago-on-april-27-2026-72forhigher",
+      "boundary_convention": "round"
+    },
+    {
+      "logged_at": "2026-04-27T11:09:00.610350+00:00",
+      "city": "New York City",
+      "bracket": "between 62 and 63",
+      "market_type": "high",
+      "model_prob": 0.3585363563527267,
+      "market_ask": 0.039,
+      "edge": 0.3195363563527267,
+      "kelly_size_usdc": 2.0,
+      "outcome": "PENDING",
+      "resolution_date": "2026-04-27",
+      "strategy": "modal_early",
+      "market_slug": "highest-temperature-in-nyc-on-april-27-2026-62-63f",
+      "boundary_convention": "round"
+    },
     {
       "logged_at": "2026-04-27T06:41:00.591049+00:00",
       "city": "Hong Kong",
@@ -504,36 +534,6 @@
       "boundary_convention": "floor"
     },
     {
-      "logged_at": "2026-04-25T12:41:00.459484+00:00",
-      "city": "Chicago",
-      "bracket": "above 62",
-      "market_type": "high",
-      "model_prob": 0.9223948052184119,
-      "market_ask": 0.049,
-      "edge": 0.8733948052184118,
-      "kelly_size_usdc": 2.0,
-      "outcome": "LOSS",
-      "resolution_date": "2026-04-25",
-      "strategy": "modal_early",
-      "market_slug": "highest-temperature-in-chicago-on-april-25-2026-62forhigher",
-      "boundary_convention": "floor"
-    },
-    {
-      "logged_at": "2026-04-25T12:41:00.459484+00:00",
-      "city": "Madrid",
-      "bracket": "exact 24",
-      "market_type": "high",
-      "model_prob": 0.2663735789999738,
-      "market_ask": 0.2,
-      "edge": 0.06637357899997381,
-      "kelly_size_usdc": 2.0,
-      "outcome": "LOSS",
-      "resolution_date": "2026-04-25",
-      "strategy": "modal_early",
-      "market_slug": "highest-temperature-in-madrid-on-april-25-2026-24c",
-      "boundary_convention": "floor"
-    },
-    {
       "logged_at": "2026-04-25T10:01:03.062613+00:00",
       "city": "Paris",
       "bracket": "exact 20",
@@ -626,15 +626,15 @@
   ],
   "strategies": {
     "modal_early": {
-      "bets": 35,
+      "bets": 37,
       "resolved": 26,
       "wins": 2,
       "pnl_usd": -36.3644,
       "bankroll": {
         "start": 100.0,
         "current": 63.6355,
-        "open_stake": 18.0,
-        "available": 45.6355,
+        "open_stake": 22.0,
+        "available": 41.6355,
         "daily_loss": 5.0165
       },
       "by_boundary": {
@@ -645,7 +645,7 @@
           "pnl_usd": -26.9975
         },
         "round": {
-          "bets": 18,
+          "bets": 20,
           "resolved": 9,
           "wins": 1,
           "pnl_usd": -9.3669
