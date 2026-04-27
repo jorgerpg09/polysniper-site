@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-04-27T07:28:19.489295+00:00",
+  "updated_at": "2026-04-27T07:38:19.469515+00:00",
   "hit_rate": 0.0149,
   "theoretical_pnl": -59.3939,
   "trade_count": 123,
@@ -242,7 +242,7 @@
       "market_ask": 0.039,
       "edge": 0.19752717820835222,
       "kelly_size_usdc": 2.0,
-      "outcome": "PENDING",
+      "outcome": "LOSS",
       "resolution_date": "2026-04-26",
       "strategy": "modal_early",
       "market_slug": "lowest-temperature-in-nyc-on-april-26-2026-38-39f",
@@ -627,15 +627,15 @@
   "strategies": {
     "modal_early": {
       "bets": 35,
-      "resolved": 25,
+      "resolved": 26,
       "wins": 2,
-      "pnl_usd": -34.2779,
+      "pnl_usd": -36.3644,
       "bankroll": {
         "start": 100.0,
-        "current": 65.722,
-        "open_stake": 20.0,
-        "available": 45.722,
-        "daily_loss": 2.93
+        "current": 63.6355,
+        "open_stake": 18.0,
+        "available": 45.6355,
+        "daily_loss": 5.0165
       },
       "by_boundary": {
         "floor": {
@@ -646,9 +646,9 @@
         },
         "round": {
           "bets": 18,
-          "resolved": 8,
+          "resolved": 9,
           "wins": 1,
-          "pnl_usd": -7.2804
+          "pnl_usd": -9.3669
         }
       }
     },
