@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-04-27T17:58:19.492805+00:00",
+  "updated_at": "2026-04-27T18:08:19.514321+00:00",
   "hit_rate": 0.0147,
   "theoretical_pnl": -61.3213,
   "trade_count": 128,
@@ -201,7 +201,7 @@
       "market_ask": 0.043,
       "edge": 0.4000503099792066,
       "kelly_size_usdc": 2.0,
-      "outcome": "PENDING",
+      "outcome": "LOSS",
       "resolution_date": "2026-04-27",
       "strategy": "modal_early",
       "market_slug": "lowest-temperature-in-seoul-on-april-27-2026-8corbelow",
@@ -246,7 +246,7 @@
       "market_ask": 0.14,
       "edge": 0.30305030997920657,
       "kelly_size_usdc": 2.0,
-      "outcome": "PENDING",
+      "outcome": "LOSS",
       "resolution_date": "2026-04-27",
       "strategy": "modal_early",
       "market_slug": "lowest-temperature-in-seoul-on-april-27-2026-8corbelow",
@@ -276,7 +276,7 @@
       "market_ask": 0.17,
       "edge": 0.28362086212687987,
       "kelly_size_usdc": 2.0,
-      "outcome": "PENDING",
+      "outcome": "LOSS",
       "resolution_date": "2026-04-27",
       "strategy": "modal_early",
       "market_slug": "lowest-temperature-in-seoul-on-april-27-2026-8corbelow",
@@ -631,15 +631,15 @@
   "strategies": {
     "modal_early": {
       "bets": 40,
-      "resolved": 27,
+      "resolved": 30,
       "wins": 2,
-      "pnl_usd": -38.2918,
+      "pnl_usd": -44.2844,
       "bankroll": {
         "start": 100.0,
-        "current": 61.7081,
-        "open_stake": 26.0,
-        "available": 35.7081,
-        "daily_loss": 6.9439
+        "current": 55.7155,
+        "open_stake": 20.0,
+        "available": 35.7155,
+        "daily_loss": 12.9365
       },
       "by_boundary": {
         "floor": {
@@ -650,9 +650,9 @@
         },
         "round": {
           "bets": 23,
-          "resolved": 10,
+          "resolved": 13,
           "wins": 1,
-          "pnl_usd": -11.2943
+          "pnl_usd": -17.2869
         }
       }
     },
