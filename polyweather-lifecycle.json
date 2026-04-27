@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-04-27T07:28:21.474507+00:00",
-  "now": "2026-04-27T07:28:21.474507+00:00",
+  "updated_at": "2026-04-27T07:38:21.241838+00:00",
+  "now": "2026-04-27T07:38:21.241838+00:00",
   "markets": [
     {
       "condition_id": "0x4276f86bfa6d55d31ee884308c67fc221e71f30db6c7ba228d11e14b6e79ea09",
@@ -3587,10 +3587,10 @@
       "effective_close_time": "2026-04-27T00:00:00+00:00",
       "market_end_date": "2026-04-26T12:00:00+00:00",
       "market_slug": "lowest-temperature-in-nyc-on-april-26-2026-38-39f",
-      "resolved_at": null,
-      "outcome": null,
-      "resolution_source": null,
-      "state": "closed",
+      "resolved_at": "2026-04-25T23:12:20.344997+00:00",
+      "outcome": "loss",
+      "resolution_source": "uma_resolved",
+      "state": "resolved",
       "bets": [
         {
           "id": 269,
@@ -3601,9 +3601,9 @@
           "model_prob": 0.23652717820835223,
           "best_ask_at_placement": 0.039,
           "limit_price": 0.04,
-          "outcome": null,
-          "realized_pnl_usd": null,
-          "fee_usd": null,
+          "outcome": "loss",
+          "realized_pnl_usd": -2.0865,
+          "fee_usd": 0.0956,
           "fill_quality": null,
           "strategy": "modal_early"
         }
