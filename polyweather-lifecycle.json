@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-04-27T11:08:21.616590+00:00",
-  "now": "2026-04-27T11:08:21.616590+00:00",
+  "updated_at": "2026-04-27T11:18:21.403011+00:00",
+  "now": "2026-04-27T11:18:21.403011+00:00",
   "markets": [
     {
       "condition_id": "0x4276f86bfa6d55d31ee884308c67fc221e71f30db6c7ba228d11e14b6e79ea09",
@@ -3967,6 +3967,74 @@
           "model_prob": 0.2891393648582421,
           "best_ask_at_placement": 0.082,
           "limit_price": 0.083,
+          "outcome": null,
+          "realized_pnl_usd": null,
+          "fee_usd": null,
+          "fill_quality": null,
+          "strategy": "modal_early"
+        }
+      ]
+    },
+    {
+      "condition_id": "0xa2691c5be94c562a1334340ed6d9ecd575bf5adb11f0785e2395e344429af4b5",
+      "city": "New York City",
+      "market_type": "high",
+      "bracket": "between 62 and 63",
+      "bracket_type": "between",
+      "resolution_date": "2026-04-27",
+      "game_start_time": "2026-04-27T04:00:00+00:00",
+      "last_placement_time": "2026-04-28T02:00:00+00:00",
+      "effective_close_time": "2026-04-28T07:00:00+00:00",
+      "market_end_date": "2026-04-27T12:00:00+00:00",
+      "market_slug": "highest-temperature-in-nyc-on-april-27-2026-62-63f",
+      "resolved_at": null,
+      "outcome": null,
+      "resolution_source": null,
+      "state": "trading",
+      "bets": [
+        {
+          "id": 286,
+          "placed_at": "2026-04-27T11:09:00.610350+00:00",
+          "size_usd": 2.0,
+          "filled_shares": 50.0,
+          "filled_vwap": 0.039,
+          "model_prob": 0.3585363563527267,
+          "best_ask_at_placement": 0.039,
+          "limit_price": 0.04,
+          "outcome": null,
+          "realized_pnl_usd": null,
+          "fee_usd": null,
+          "fill_quality": null,
+          "strategy": "modal_early"
+        }
+      ]
+    },
+    {
+      "condition_id": "0x410d6c623e2012494e21cab4cd9f12670765c49771441094b12e1334c6de1690",
+      "city": "Chicago",
+      "market_type": "high",
+      "bracket": "above 72",
+      "bracket_type": "above",
+      "resolution_date": "2026-04-27",
+      "game_start_time": "2026-04-27T05:00:00+00:00",
+      "last_placement_time": "2026-04-28T03:00:00+00:00",
+      "effective_close_time": "2026-04-28T08:00:00+00:00",
+      "market_end_date": "2026-04-27T12:00:00+00:00",
+      "market_slug": "highest-temperature-in-chicago-on-april-27-2026-72forhigher",
+      "resolved_at": null,
+      "outcome": null,
+      "resolution_source": null,
+      "state": "trading",
+      "bets": [
+        {
+          "id": 285,
+          "placed_at": "2026-04-27T11:09:00.610350+00:00",
+          "size_usd": 2.0,
+          "filled_shares": 15.0,
+          "filled_vwap": 0.025,
+          "model_prob": 0.2633160890505293,
+          "best_ask_at_placement": 0.025,
+          "limit_price": 0.026,
           "outcome": null,
           "realized_pnl_usd": null,
           "fee_usd": null,
