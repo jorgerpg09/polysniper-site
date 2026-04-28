@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-04-28T00:41:47.103904+00:00",
+  "updated_at": "2026-04-28T00:51:47.264383+00:00",
   "hit_rate": 0.0145,
   "theoretical_pnl": -63.365,
   "trade_count": 128,
@@ -156,7 +156,7 @@
       "market_ask": 0.11,
       "edge": 0.31324353016270323,
       "kelly_size_usdc": 2.0,
-      "outcome": "PENDING",
+      "outcome": "LOSS",
       "resolution_date": "2026-04-27",
       "strategy": "modal_early",
       "market_slug": "lowest-temperature-in-miami-on-april-27-2026-68-69f",
@@ -186,7 +186,7 @@
       "market_ask": 0.25,
       "edge": 0.29776381717231537,
       "kelly_size_usdc": 2.0,
-      "outcome": "PENDING",
+      "outcome": "LOSS",
       "resolution_date": "2026-04-27",
       "strategy": "modal_early",
       "market_slug": "lowest-temperature-in-miami-on-april-27-2026-68-69f",
@@ -631,14 +631,14 @@
   "strategies": {
     "modal_early": {
       "bets": 40,
-      "resolved": 31,
+      "resolved": 33,
       "wins": 2,
-      "pnl_usd": -46.3281,
+      "pnl_usd": -50.3169,
       "bankroll": {
         "start": 100.0,
         "current": 53.6718,
-        "open_stake": 18.0,
-        "available": 35.6718,
+        "open_stake": 14.0,
+        "available": 39.6718,
         "daily_loss": 14.9802
       },
       "by_boundary": {
@@ -650,9 +650,9 @@
         },
         "round": {
           "bets": 23,
-          "resolved": 14,
+          "resolved": 16,
           "wins": 1,
-          "pnl_usd": -19.3306
+          "pnl_usd": -23.3194
         }
       }
     },
