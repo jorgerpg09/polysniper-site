@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-04-28T03:14:02.557554+00:00",
+  "updated_at": "2026-04-28T03:34:02.712770+00:00",
   "hit_rate": 0.0141,
   "theoretical_pnl": -67.462,
-  "trade_count": 128,
+  "trade_count": 141,
   "active_cities": 14,
   "daily_pnl": [
     {
@@ -629,6 +629,33 @@
     }
   ],
   "strategies": {
+    "adjacency": {
+      "bets": 13,
+      "resolved": 0,
+      "wins": 0,
+      "pnl_usd": 0.0,
+      "bankroll": {
+        "start": 1000.0,
+        "current": 1000.0,
+        "open_stake": 26.0,
+        "available": 974.0,
+        "daily_loss": 0.0
+      },
+      "by_boundary": {
+        "floor": {
+          "bets": 1,
+          "resolved": 0,
+          "wins": 0,
+          "pnl_usd": 0.0
+        },
+        "round": {
+          "bets": 12,
+          "resolved": 0,
+          "wins": 0,
+          "pnl_usd": 0.0
+        }
+      }
+    },
     "modal_early": {
       "bets": 40,
       "resolved": 35,
@@ -653,6 +680,60 @@
           "resolved": 18,
           "wins": 1,
           "pnl_usd": -27.4164
+        }
+      }
+    },
+    "raw_forecast_corrected": {
+      "bets": 0,
+      "resolved": 0,
+      "wins": 0,
+      "pnl_usd": 0.0,
+      "bankroll": {
+        "start": 10000.0,
+        "current": 10000.0,
+        "open_stake": 0.0,
+        "available": 10000.0,
+        "daily_loss": 0.0
+      },
+      "by_boundary": {
+        "floor": {
+          "bets": 0,
+          "resolved": 0,
+          "wins": 0,
+          "pnl_usd": 0.0
+        },
+        "round": {
+          "bets": 0,
+          "resolved": 0,
+          "wins": 0,
+          "pnl_usd": 0.0
+        }
+      }
+    },
+    "raw_forecast_raw": {
+      "bets": 0,
+      "resolved": 0,
+      "wins": 0,
+      "pnl_usd": 0.0,
+      "bankroll": {
+        "start": 10000.0,
+        "current": 10000.0,
+        "open_stake": 0.0,
+        "available": 10000.0,
+        "daily_loss": 0.0
+      },
+      "by_boundary": {
+        "floor": {
+          "bets": 0,
+          "resolved": 0,
+          "wins": 0,
+          "pnl_usd": 0.0
+        },
+        "round": {
+          "bets": 0,
+          "resolved": 0,
+          "wins": 0,
+          "pnl_usd": 0.0
         }
       }
     },
