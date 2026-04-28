@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-04-28T06:36:46.925447+00:00",
+  "updated_at": "2026-04-28T06:46:46.917507+00:00",
   "hit_rate": 0.0139,
   "theoretical_pnl": -69.3216,
-  "trade_count": 264,
+  "trade_count": 275,
   "active_cities": 14,
   "daily_pnl": [
     {
@@ -684,15 +684,42 @@
       }
     },
     "raw_forecast_corrected": {
-      "bets": 7,
+      "bets": 14,
       "resolved": 0,
       "wins": 0,
       "pnl_usd": 0.0,
       "bankroll": {
         "start": 10000.0,
         "current": 10000.0,
-        "open_stake": 7.0,
-        "available": 9993.0,
+        "open_stake": 14.0,
+        "available": 9986.0,
+        "daily_loss": 0.0
+      },
+      "by_boundary": {
+        "floor": {
+          "bets": 4,
+          "resolved": 0,
+          "wins": 0,
+          "pnl_usd": 0.0
+        },
+        "round": {
+          "bets": 10,
+          "resolved": 0,
+          "wins": 0,
+          "pnl_usd": 0.0
+        }
+      }
+    },
+    "raw_forecast_raw": {
+      "bets": 9,
+      "resolved": 0,
+      "wins": 0,
+      "pnl_usd": 0.0,
+      "bankroll": {
+        "start": 10000.0,
+        "current": 10000.0,
+        "open_stake": 9.0,
+        "available": 9991.0,
         "daily_loss": 0.0
       },
       "by_boundary": {
@@ -703,34 +730,7 @@
           "pnl_usd": 0.0
         },
         "round": {
-          "bets": 5,
-          "resolved": 0,
-          "wins": 0,
-          "pnl_usd": 0.0
-        }
-      }
-    },
-    "raw_forecast_raw": {
-      "bets": 5,
-      "resolved": 0,
-      "wins": 0,
-      "pnl_usd": 0.0,
-      "bankroll": {
-        "start": 10000.0,
-        "current": 10000.0,
-        "open_stake": 5.0,
-        "available": 9995.0,
-        "daily_loss": 0.0
-      },
-      "by_boundary": {
-        "floor": {
-          "bets": 1,
-          "resolved": 0,
-          "wins": 0,
-          "pnl_usd": 0.0
-        },
-        "round": {
-          "bets": 4,
+          "bets": 7,
           "resolved": 0,
           "wins": 0,
           "pnl_usd": 0.0
