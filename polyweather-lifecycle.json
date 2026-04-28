@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-04-28T18:06:35.743314+00:00",
-  "now": "2026-04-28T18:06:35.743314+00:00",
+  "updated_at": "2026-04-28T18:17:47.651867+00:00",
+  "now": "2026-04-28T18:17:47.651867+00:00",
   "markets": [
     {
       "condition_id": "0x4276f86bfa6d55d31ee884308c67fc221e71f30db6c7ba228d11e14b6e79ea09",
@@ -5837,10 +5837,10 @@
       "effective_close_time": null,
       "market_end_date": "2026-04-28T12:00:00+00:00",
       "market_slug": "highest-temperature-in-seoul-on-april-28-2026-16c",
-      "resolved_at": null,
-      "outcome": null,
-      "resolution_source": null,
-      "state": "legacy",
+      "resolved_at": "2026-04-28T07:29:04.725164+00:00",
+      "outcome": "loss",
+      "resolution_source": "uma_resolved",
+      "state": "resolved",
       "bets": [
         {
           "id": 424,
@@ -5851,9 +5851,9 @@
           "model_prob": 0.1052387969643116,
           "best_ask_at_placement": 0.32,
           "limit_price": 0.32,
-          "outcome": null,
-          "realized_pnl_usd": null,
-          "fee_usd": null,
+          "outcome": "loss",
+          "realized_pnl_usd": -1.0022,
+          "fee_usd": 0.0334,
           "fill_quality": null,
           "strategy": "raw_forecast_raw"
         },
@@ -5866,9 +5866,9 @@
           "model_prob": 0.1052387969643116,
           "best_ask_at_placement": 0.049,
           "limit_price": 0.049,
-          "outcome": null,
-          "realized_pnl_usd": null,
-          "fee_usd": null,
+          "outcome": "loss",
+          "realized_pnl_usd": -0.8555,
+          "fee_usd": 0.0392,
           "fill_quality": null,
           "strategy": "raw_forecast_raw"
         }
@@ -7680,6 +7680,40 @@
           "fee_usd": null,
           "fill_quality": null,
           "strategy": "raw_forecast_corrected"
+        }
+      ]
+    },
+    {
+      "condition_id": "0x044464f1e21d5ad7c749c2927eabc78a701db3294e983d34bffbc51af9d59fc8",
+      "city": "Austin",
+      "market_type": "high",
+      "bracket": "above 92",
+      "bracket_type": "above",
+      "resolution_date": "2026-04-28",
+      "game_start_time": null,
+      "last_placement_time": "2026-04-29T08:00:00+00:00",
+      "effective_close_time": "2026-04-29T12:00:00+00:00",
+      "market_end_date": "2026-04-28T12:00:00+00:00",
+      "market_slug": null,
+      "resolved_at": null,
+      "outcome": null,
+      "resolution_source": null,
+      "state": "legacy",
+      "bets": [
+        {
+          "id": 518,
+          "placed_at": "2026-04-28T18:06:51.390317+00:00",
+          "size_usd": 2.0,
+          "filled_shares": null,
+          "filled_vwap": null,
+          "model_prob": 0.48448597475625577,
+          "best_ask_at_placement": 0.39,
+          "limit_price": 0.4,
+          "outcome": null,
+          "realized_pnl_usd": null,
+          "fee_usd": null,
+          "fill_quality": null,
+          "strategy": "modal_early"
         }
       ]
     },
