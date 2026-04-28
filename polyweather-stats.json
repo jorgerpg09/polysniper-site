@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-04-28T05:16:46.882080+00:00",
-  "hit_rate": 0.0141,
-  "theoretical_pnl": -67.462,
+  "updated_at": "2026-04-28T05:26:46.981894+00:00",
+  "hit_rate": 0.0139,
+  "theoretical_pnl": -69.3216,
   "trade_count": 264,
   "active_cities": 14,
   "daily_pnl": [
@@ -23,7 +23,7 @@
     },
     {
       "date": "2026-04-27",
-      "cumulative_pnl": -67.462
+      "cumulative_pnl": -69.3216
     }
   ],
   "recent_trades": [
@@ -111,7 +111,7 @@
       "market_ask": 0.08,
       "edge": 0.26749289770097107,
       "kelly_size_usdc": 2.0,
-      "outcome": "PENDING",
+      "outcome": "LOSS",
       "resolution_date": "2026-04-27",
       "strategy": "modal_early",
       "market_slug": "highest-temperature-in-hong-kong-on-april-27-2026-28c",
@@ -630,16 +630,16 @@
   ],
   "strategies": {
     "adjacency": {
-      "bets": 75,
+      "bets": 22,
       "resolved": 0,
       "wins": 0,
       "pnl_usd": 0.0,
       "bankroll": {
         "start": 1000.0,
-        "current": 897.1049,
-        "open_stake": 150.0,
-        "available": 747.1049,
-        "daily_loss": 102.8951
+        "current": 785.8102,
+        "open_stake": 44.0,
+        "available": 741.8102,
+        "daily_loss": 214.1898
       },
       "by_boundary": {
         "floor": {
@@ -649,7 +649,7 @@
           "pnl_usd": 0.0
         },
         "round": {
-          "bets": 71,
+          "bets": 18,
           "resolved": 0,
           "wins": 0,
           "pnl_usd": 0.0
@@ -658,15 +658,15 @@
     },
     "modal_early": {
       "bets": 40,
-      "resolved": 35,
+      "resolved": 36,
       "wins": 2,
-      "pnl_usd": -54.4139,
+      "pnl_usd": -56.2735,
       "bankroll": {
         "start": 1000.0,
-        "current": 1000.0,
-        "open_stake": 10.0,
-        "available": 990.0,
-        "daily_loss": 0.0
+        "current": 998.1404,
+        "open_stake": 8.0,
+        "available": 990.1404,
+        "daily_loss": 1.8596
       },
       "by_boundary": {
         "floor": {
@@ -677,9 +677,9 @@
         },
         "round": {
           "bets": 23,
-          "resolved": 18,
+          "resolved": 19,
           "wins": 1,
-          "pnl_usd": -27.4164
+          "pnl_usd": -29.276
         }
       }
     },
