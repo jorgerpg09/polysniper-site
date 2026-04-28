@@ -90,9 +90,21 @@ const PW_POSTFIX_ONLY_KEY = 'pw_postfix_only';  // localStorage key for boundary
 let pwChart = null;
 let _pwStatsData = null;  // last loaded stats, kept for re-renders on tab switch
 
-// Returns the currently selected strategy filter: 'all' | 'tail_longshot' | 'modal_early'
+// All currently-displayed strategies (tail_longshot archived 2026-04-25, hidden 2026-04-28).
+// Order matches the index.html tab order so updateTabCounts can iterate consistently.
+const PW_STRATEGIES = ['modal_early', 'raw_forecast_corrected', 'raw_forecast_raw', 'adjacency'];
+
+// Returns the currently selected strategy filter:
+// 'all' | 'modal_early' | 'raw_forecast_corrected' | 'raw_forecast_raw' | 'adjacency'
+// (legacy 'tail_longshot' value is auto-migrated to 'all' on load — tab no longer exists)
 function currentStrategy() {
-    return localStorage.getItem(PW_STRATEGY_KEY) || 'all';
+    const stored = localStorage.getItem(PW_STRATEGY_KEY) || 'all';
+    if (stored === 'tail_longshot') {
+        // User had tail tab selected before its removal; reset to 'all'.
+        localStorage.setItem(PW_STRATEGY_KEY, 'all');
+        return 'all';
+    }
+    return stored;
 }
 
 // Returns whether the "post-fix only" toggle is on (default ON — hide pre-fix
@@ -161,29 +173,30 @@ function _pwStrategyBets(strat, postOnly) {
 
 // Paints the bet-count badges inside each tab.
 // "All strategies" sums the per-strategy bets (NOT stats.trade_count) so the
-// "All" badge equals Tail + Modal — otherwise FANTASY-filtered fills cause
-// the All badge to exceed the sum of strategy badges, which is confusing.
+// "All" badge equals the sum of visible strategy badges — otherwise FANTASY-
+// filtered fills cause the All badge to exceed the sum, which is confusing.
 function updateTabCounts(stats) {
     const strat = stats.strategies || {};
     const postOnly = postfixOnly();
-    const tailBets = _pwStrategyBets(strat.tail_longshot, postOnly);
-    const modalBets = _pwStrategyBets(strat.modal_early, postOnly);
-    const counts = {
-        all: tailBets + modalBets,
-        tail_longshot: tailBets,
-        modal_early: modalBets,
-    };
+    const counts = { all: 0 };
+    for (const key of PW_STRATEGIES) {
+        const n = _pwStrategyBets(strat[key], postOnly);
+        counts[key] = n;
+        counts.all += n;
+    }
     document.querySelectorAll('.strategy-tab').forEach(btn => {
         const key = btn.dataset.strategy;
         const metaEl = btn.querySelector('[data-role="bets"]');
         if (metaEl) metaEl.textContent = counts[key] != null ? counts[key] : '—';
     });
 
-    // Update boundary-filter meta: "(N legacy bets hidden)" when toggle is on
+    // Update boundary-filter meta: "(N legacy bets hidden)" when toggle is on.
+    // Sum across all CURRENTLY-DISPLAYED strategies. Legacy tail_longshot rows
+    // still in the data file are NOT counted here — UI only reflects active.
     const metaEl = document.getElementById('pw-postfix-meta');
     if (metaEl) {
         let totalFloor = 0;
-        for (const k of ['tail_longshot', 'modal_early']) {
+        for (const k of PW_STRATEGIES) {
             const s = strat[k];
             if (s && s.by_boundary && s.by_boundary.floor) {
                 totalFloor += s.by_boundary.floor.bets || 0;
@@ -313,11 +326,14 @@ function renderPolyWeatherTrades(trades) {
     const tbody = document.getElementById('pw-trades-body');
     if (!tbody) return;
 
-    // Filter by current strategy tab (trades without strategy field fall through as tail_longshot)
+    // Filter by current strategy tab. Trades without a strategy field are legacy
+    // tail_longshot — when "all" is selected we exclude them from the displayed
+    // table (tail was archived 2026-04-25 and removed from UI 2026-04-28). When
+    // a specific strategy tab is selected, only exact matches show.
     const strat = currentStrategy();
     let filtered = strat === 'all'
-        ? trades
-        : trades.filter(t => (t.strategy || 'tail_longshot') === strat);
+        ? trades.filter(t => t.strategy && t.strategy !== 'tail_longshot')
+        : trades.filter(t => t.strategy === strat);
 
     // Boundary-convention filter: when post-fix-only is on, hide legacy 'floor'
     // rows. Rows without the field (older exporter JSON) treated as 'floor'
@@ -472,9 +488,14 @@ function renderLifecycle() {
             }
         }
 
-        if (strat === 'all') return m;
+        // 'all' filters out legacy tail_longshot bets but keeps everything else.
+        if (strat === 'all') {
+            const visibleBets = (m.bets || []).filter(b => b.strategy && b.strategy !== 'tail_longshot');
+            if (visibleBets.length === 0 && (m.bets || []).length > 0) return null;
+            return { ...m, bets: visibleBets };
+        }
 
-        const filteredBets = (m.bets || []).filter(b => (b.strategy || 'tail_longshot') === strat);
+        const filteredBets = (m.bets || []).filter(b => b.strategy === strat);
         if (filteredBets.length === 0) return null;  // strict: only markets with matching bets
         return { ...m, bets: filteredBets };
     }).filter(m => m !== null);

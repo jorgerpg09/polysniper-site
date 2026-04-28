@@ -34,18 +34,30 @@
                 Paper-trading to validate the edge before deploying real capital.
             </p>
 
-            <!-- Strategy selector — filters all PolyWeather panels below -->
+            <!-- Strategy selector — filters all PolyWeather panels below.
+                 Tail_longshot was archived 2026-04-25 (0/59 wins, >5σ rejection)
+                 and is hidden from the UI as of 2026-04-28. Pre-tail-archive
+                 bets remain queryable via SQL but no longer display here.
+                 See docs/STRATEGY_AUDIT_2026-04-25.md. -->
             <div class="strategy-tabs" role="tablist" aria-label="Trading strategy filter">
                 <button class="strategy-tab is-active" data-strategy="all" role="tab" aria-selected="true">
                     <span class="tab-label">All strategies</span>
                     <span class="tab-meta" data-role="bets">—</span>
                 </button>
-                <button class="strategy-tab is-archived" data-strategy="tail_longshot" role="tab" aria-selected="false" title="Archived 2026-04-25 after 0/59 wins. See docs/STRATEGY_AUDIT_2026-04-25.md">
-                    <span class="tab-label">Tail longshot <span class="tab-archived-badge">archived</span></span>
+                <button class="strategy-tab" data-strategy="modal_early" role="tab" aria-selected="false" title="Phase 1: edge cap 10pp + METAR + FU-15 city pause">
+                    <span class="tab-label">Modal early</span>
                     <span class="tab-meta" data-role="bets">—</span>
                 </button>
-                <button class="strategy-tab" data-strategy="modal_early" role="tab" aria-selected="false">
-                    <span class="tab-label">Modal early</span>
+                <button class="strategy-tab" data-strategy="raw_forecast_corrected" role="tab" aria-selected="false" title="Diagnostic 1.a: bet round(μ_corrected), no filter, $1 stake. Compares vs raw_forecast_raw to isolate bias-correction effect.">
+                    <span class="tab-label">Raw (corrected)</span>
+                    <span class="tab-meta" data-role="bets">—</span>
+                </button>
+                <button class="strategy-tab" data-strategy="raw_forecast_raw" role="tab" aria-selected="false" title="Diagnostic 1.b: bet round(μ_raw) — NO bias correction. If this beats raw_corrected, our 60-day station_bias is broken.">
+                    <span class="tab-label">Raw (no bias)</span>
+                    <span class="tab-meta" data-role="bets">—</span>
+                </button>
+                <button class="strategy-tab" data-strategy="adjacency" role="tab" aria-selected="false" title="Diagnostic 2: bet model_argmax IF adjacent to market_argmax (±1) AND raw_edge > 0. NO upper edge cap.">
+                    <span class="tab-label">Adjacency</span>
                     <span class="tab-meta" data-role="bets">—</span>
                 </button>
             </div>
