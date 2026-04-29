@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-04-29T07:57:45.009756+00:00",
+  "updated_at": "2026-04-29T08:07:45.091462+00:00",
   "hit_rate": 0.1818,
   "theoretical_pnl": 461.6672,
-  "trade_count": 485,
+  "trade_count": 486,
   "active_cities": 15,
   "daily_pnl": [
     {
@@ -31,6 +31,21 @@
     }
   ],
   "recent_trades": [
+    {
+      "logged_at": "2026-04-29T08:04:31.310223+00:00",
+      "city": "New York City",
+      "bracket": "between 44 and 45",
+      "market_type": "low",
+      "model_prob": 0.28904417065193644,
+      "market_ask": 0.01,
+      "edge": 0.27904417065193643,
+      "kelly_size_usdc": 2.0,
+      "outcome": "PENDING",
+      "resolution_date": "2026-04-29",
+      "strategy": "adjacency",
+      "market_slug": null,
+      "boundary_convention": "floor"
+    },
     {
       "logged_at": "2026-04-29T07:50:29.747069+00:00",
       "city": "New York City",
@@ -498,21 +513,6 @@
     },
     {
       "logged_at": "2026-04-29T06:06:28.240337+00:00",
-      "city": "London",
-      "bracket": "exact 16",
-      "market_type": "high",
-      "model_prob": 0.28208915802772433,
-      "market_ask": 0.2,
-      "edge": 0.08208915802772432,
-      "kelly_size_usdc": 2.0,
-      "outcome": "PENDING",
-      "resolution_date": "2026-04-29",
-      "strategy": "adjacency",
-      "market_slug": null,
-      "boundary_convention": "round"
-    },
-    {
-      "logged_at": "2026-04-29T06:04:30.894679+00:00",
       "city": "London",
       "bracket": "exact 16",
       "market_type": "high",
@@ -1534,23 +1534,23 @@
   ],
   "strategies": {
     "adjacency": {
-      "bets": 99,
-      "resolved": 16,
+      "bets": 100,
+      "resolved": 20,
       "wins": 16,
-      "pnl_usd": 548.701,
+      "pnl_usd": 540.337,
       "bankroll": {
         "start": 1000.0,
-        "current": 1334.5112,
-        "open_stake": 102.0,
-        "available": 1232.5112,
-        "daily_loss": 0.0
+        "current": 1326.1472,
+        "open_stake": 96.0,
+        "available": 1230.1472,
+        "daily_loss": 8.364
       },
       "by_boundary": {
         "floor": {
-          "bets": 23,
-          "resolved": 0,
+          "bets": 24,
+          "resolved": 4,
           "wins": 0,
-          "pnl_usd": 0.0
+          "pnl_usd": -8.364
         },
         "round": {
           "bets": 76,
@@ -1589,49 +1589,49 @@
     },
     "raw_forecast_corrected": {
       "bets": 97,
-      "resolved": 23,
+      "resolved": 26,
       "wins": 5,
-      "pnl_usd": -14.0825,
+      "pnl_usd": -17.184,
       "bankroll": {
         "start": 10000.0,
-        "current": 9985.9694,
-        "open_stake": 48.0,
-        "available": 9937.9694,
-        "daily_loss": 14.3084
+        "current": 9982.8678,
+        "open_stake": 45.0,
+        "available": 9937.8678,
+        "daily_loss": 17.4099
       },
       "by_boundary": {
         "floor": {
           "bets": 32,
-          "resolved": 5,
+          "resolved": 7,
           "wins": 1,
-          "pnl_usd": -3.1782
+          "pnl_usd": -5.2597
         },
         "round": {
           "bets": 65,
-          "resolved": 18,
+          "resolved": 19,
           "wins": 4,
-          "pnl_usd": -10.9043
+          "pnl_usd": -11.9243
         }
       }
     },
     "raw_forecast_raw": {
       "bets": 57,
-      "resolved": 11,
+      "resolved": 12,
       "wins": 0,
-      "pnl_usd": -11.0628,
+      "pnl_usd": -12.1053,
       "bankroll": {
         "start": 10000.0,
-        "current": 9987.8873,
-        "open_stake": 33.0,
-        "available": 9954.8873,
-        "daily_loss": 9.2206
+        "current": 9986.8448,
+        "open_stake": 32.0,
+        "available": 9954.8448,
+        "daily_loss": 10.2631
       },
       "by_boundary": {
         "floor": {
           "bets": 16,
-          "resolved": 3,
+          "resolved": 4,
           "wins": 0,
-          "pnl_usd": -3.091
+          "pnl_usd": -4.1335
         },
         "round": {
           "bets": 41,
