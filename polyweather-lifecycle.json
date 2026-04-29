@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-04-29T19:44:33.622544+00:00",
-  "now": "2026-04-29T19:44:33.622544+00:00",
+  "updated_at": "2026-04-29T19:54:33.700062+00:00",
+  "now": "2026-04-29T19:54:33.700062+00:00",
   "markets": [
     {
       "condition_id": "0x4276f86bfa6d55d31ee884308c67fc221e71f30db6c7ba228d11e14b6e79ea09",
@@ -10378,10 +10378,10 @@
       "effective_close_time": null,
       "market_end_date": "2026-04-29T12:00:00+00:00",
       "market_slug": "highest-temperature-in-sao-paulo-on-april-29-2026-28c",
-      "resolved_at": null,
-      "outcome": null,
-      "resolution_source": null,
-      "state": "legacy",
+      "resolved_at": "2026-04-29T11:09:51.179158+00:00",
+      "outcome": "loss",
+      "resolution_source": "uma_resolved",
+      "state": "resolved",
       "bets": [
         {
           "id": 698,
@@ -10392,9 +10392,9 @@
           "model_prob": 0.18331316664051228,
           "best_ask_at_placement": 0.31,
           "limit_price": 0.31,
-          "outcome": null,
-          "realized_pnl_usd": null,
-          "fee_usd": null,
+          "outcome": "loss",
+          "realized_pnl_usd": -1.0345,
+          "fee_usd": 0.0345,
           "fill_quality": null,
           "strategy": "raw_forecast_raw"
         },
@@ -23378,8 +23378,8 @@
           "id": 1377,
           "placed_at": "2026-04-29T16:46:34.072025+00:00",
           "size_usd": 2.0,
-          "filled_shares": null,
-          "filled_vwap": null,
+          "filled_shares": 5.714285714285714,
+          "filled_vwap": 0.34,
           "model_prob": 0.3802593573601306,
           "best_ask_at_placement": 0.35,
           "limit_price": 0.35,
