@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-04-29T09:57:45.233107+00:00",
+  "updated_at": "2026-04-29T10:07:45.060588+00:00",
   "hit_rate": 0.176,
   "theoretical_pnl": 458.2471,
-  "trade_count": 510,
+  "trade_count": 513,
   "active_cities": 15,
   "daily_pnl": [
     {
@@ -35,6 +35,51 @@
     }
   ],
   "recent_trades": [
+    {
+      "logged_at": "2026-04-29T10:03:31.000100+00:00",
+      "city": "Madrid",
+      "bracket": "exact 18",
+      "market_type": "high",
+      "model_prob": 0.17553308753000307,
+      "market_ask": 0.14,
+      "edge": 0.03553308753000306,
+      "kelly_size_usdc": 2.0,
+      "outcome": "PENDING",
+      "resolution_date": "2026-04-29",
+      "strategy": "adjacency",
+      "market_slug": null,
+      "boundary_convention": "round"
+    },
+    {
+      "logged_at": "2026-04-29T10:02:30.674998+00:00",
+      "city": "New York City",
+      "bracket": "between 44 and 45",
+      "market_type": "low",
+      "model_prob": 0.28904417065193644,
+      "market_ask": 0.009,
+      "edge": 0.28004417065193643,
+      "kelly_size_usdc": 2.0,
+      "outcome": "PENDING",
+      "resolution_date": "2026-04-29",
+      "strategy": "adjacency",
+      "market_slug": null,
+      "boundary_convention": "floor"
+    },
+    {
+      "logged_at": "2026-04-29T09:58:30.875727+00:00",
+      "city": "Madrid",
+      "bracket": "exact 18",
+      "market_type": "high",
+      "model_prob": 0.17553308753000307,
+      "market_ask": 0.17,
+      "edge": 0.005533087530003061,
+      "kelly_size_usdc": 2.0,
+      "outcome": "PENDING",
+      "resolution_date": "2026-04-29",
+      "strategy": "adjacency",
+      "market_slug": null,
+      "boundary_convention": "round"
+    },
     {
       "logged_at": "2026-04-29T09:56:31.055915+00:00",
       "city": "Madrid",
@@ -289,51 +334,6 @@
       "strategy": "adjacency",
       "market_slug": null,
       "boundary_convention": "floor"
-    },
-    {
-      "logged_at": "2026-04-29T08:28:31.651733+00:00",
-      "city": "Hong Kong",
-      "bracket": "above 29",
-      "market_type": "high",
-      "model_prob": 0.43089979272953705,
-      "market_ask": 0.004,
-      "edge": 0.42689979272953704,
-      "kelly_size_usdc": 2.0,
-      "outcome": "PENDING",
-      "resolution_date": "2026-04-29",
-      "strategy": "adjacency",
-      "market_slug": null,
-      "boundary_convention": "round"
-    },
-    {
-      "logged_at": "2026-04-29T08:26:32.643859+00:00",
-      "city": "Hong Kong",
-      "bracket": "above 29",
-      "market_type": "high",
-      "model_prob": 0.43089979272953705,
-      "market_ask": 0.004,
-      "edge": 0.42689979272953704,
-      "kelly_size_usdc": 2.0,
-      "outcome": "PENDING",
-      "resolution_date": "2026-04-29",
-      "strategy": "adjacency",
-      "market_slug": null,
-      "boundary_convention": "round"
-    },
-    {
-      "logged_at": "2026-04-29T08:24:30.802964+00:00",
-      "city": "Hong Kong",
-      "bracket": "above 29",
-      "market_type": "high",
-      "model_prob": 0.43089979272953705,
-      "market_ask": 0.004,
-      "edge": 0.42689979272953704,
-      "kelly_size_usdc": 2.0,
-      "outcome": "PENDING",
-      "resolution_date": "2026-04-29",
-      "strategy": "adjacency",
-      "market_slug": null,
-      "boundary_convention": "round"
     },
     {
       "logged_at": "2026-04-29T06:41:00.682726+00:00",
@@ -1538,26 +1538,26 @@
   ],
   "strategies": {
     "adjacency": {
-      "bets": 115,
+      "bets": 118,
       "resolved": 22,
       "wins": 16,
       "pnl_usd": 539.0775,
       "bankroll": {
         "start": 1000.0,
         "current": 1305.9886,
-        "open_stake": 122.0,
-        "available": 1183.9886,
+        "open_stake": 128.0,
+        "available": 1177.9886,
         "daily_loss": 28.5226
       },
       "by_boundary": {
         "floor": {
-          "bets": 27,
+          "bets": 28,
           "resolved": 4,
           "wins": 0,
           "pnl_usd": -8.364
         },
         "round": {
-          "bets": 88,
+          "bets": 90,
           "resolved": 18,
           "wins": 16,
           "pnl_usd": 547.4415
