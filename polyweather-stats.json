@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-04-29T17:47:28.139924+00:00",
+  "updated_at": "2026-04-29T17:57:28.408075+00:00",
   "hit_rate": 0.1392,
   "theoretical_pnl": 417.6346,
-  "trade_count": 1312,
+  "trade_count": 1313,
   "active_cities": 15,
   "daily_pnl": [
     {
@@ -35,6 +35,21 @@
     }
   ],
   "recent_trades": [
+    {
+      "logged_at": "2026-04-29T17:57:17.074852+00:00",
+      "city": "Atlanta",
+      "bracket": "between 78 and 79",
+      "market_type": "high",
+      "model_prob": 0.15766384398334332,
+      "market_ask": 0.001,
+      "edge": 0.15666384398334332,
+      "kelly_size_usdc": 2.0,
+      "outcome": "PENDING",
+      "resolution_date": "2026-04-29",
+      "strategy": "adjacency",
+      "market_slug": null,
+      "boundary_convention": "floor"
+    },
     {
       "logged_at": "2026-04-29T17:34:56.954961+00:00",
       "city": "Helsinki",
@@ -739,21 +754,6 @@
       "strategy": "adjacency",
       "market_slug": null,
       "boundary_convention": "round"
-    },
-    {
-      "logged_at": "2026-04-29T17:10:35.032002+00:00",
-      "city": "Miami",
-      "bracket": "between 82 and 83",
-      "market_type": "high",
-      "model_prob": 0.3654918986694358,
-      "market_ask": 0.001,
-      "edge": 0.3644918986694358,
-      "kelly_size_usdc": 2.0,
-      "outcome": "PENDING",
-      "resolution_date": "2026-04-29",
-      "strategy": "adjacency",
-      "market_slug": null,
-      "boundary_convention": "floor"
     },
     {
       "logged_at": "2026-04-29T12:41:00.823628+00:00",
@@ -1538,20 +1538,20 @@
   ],
   "strategies": {
     "adjacency": {
-      "bets": 831,
+      "bets": 832,
       "resolved": 30,
       "wins": 16,
       "pnl_usd": 524.0727,
       "bankroll": {
         "start": 1000.0,
         "current": 1282.5843,
-        "open_stake": 366.0,
-        "available": 916.5843,
+        "open_stake": 368.0,
+        "available": 914.5843,
         "daily_loss": 51.9269
       },
       "by_boundary": {
         "floor": {
-          "bets": 372,
+          "bets": 373,
           "resolved": 5,
           "wins": 0,
           "pnl_usd": -10.4636
