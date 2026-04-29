@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-04-29T05:47:45.011043+00:00",
+  "updated_at": "2026-04-29T05:57:45.047885+00:00",
   "hit_rate": 0.1864,
   "theoretical_pnl": 464.7637,
-  "trade_count": 444,
+  "trade_count": 448,
   "active_cities": 15,
   "daily_pnl": [
     {
@@ -31,6 +31,66 @@
     }
   ],
   "recent_trades": [
+    {
+      "logged_at": "2026-04-29T05:56:29.371061+00:00",
+      "city": "London",
+      "bracket": "exact 16",
+      "market_type": "high",
+      "model_prob": 0.28208915802772433,
+      "market_ask": 0.2,
+      "edge": 0.08208915802772432,
+      "kelly_size_usdc": 2.0,
+      "outcome": "PENDING",
+      "resolution_date": "2026-04-29",
+      "strategy": "adjacency",
+      "market_slug": null,
+      "boundary_convention": "round"
+    },
+    {
+      "logged_at": "2026-04-29T05:54:29.617984+00:00",
+      "city": "London",
+      "bracket": "exact 16",
+      "market_type": "high",
+      "model_prob": 0.28208915802772433,
+      "market_ask": 0.21,
+      "edge": 0.07208915802772434,
+      "kelly_size_usdc": 2.0,
+      "outcome": "PENDING",
+      "resolution_date": "2026-04-29",
+      "strategy": "adjacency",
+      "market_slug": null,
+      "boundary_convention": "round"
+    },
+    {
+      "logged_at": "2026-04-29T05:52:29.688286+00:00",
+      "city": "London",
+      "bracket": "exact 16",
+      "market_type": "high",
+      "model_prob": 0.28208915802772433,
+      "market_ask": 0.21,
+      "edge": 0.07208915802772434,
+      "kelly_size_usdc": 2.0,
+      "outcome": "PENDING",
+      "resolution_date": "2026-04-29",
+      "strategy": "adjacency",
+      "market_slug": null,
+      "boundary_convention": "round"
+    },
+    {
+      "logged_at": "2026-04-29T05:50:29.664335+00:00",
+      "city": "London",
+      "bracket": "exact 16",
+      "market_type": "high",
+      "model_prob": 0.28208915802772433,
+      "market_ask": 0.21,
+      "edge": 0.07208915802772434,
+      "kelly_size_usdc": 2.0,
+      "outcome": "PENDING",
+      "resolution_date": "2026-04-29",
+      "strategy": "adjacency",
+      "market_slug": null,
+      "boundary_convention": "round"
+    },
     {
       "logged_at": "2026-04-29T05:47:31.727434+00:00",
       "city": "London",
@@ -272,36 +332,6 @@
       "boundary_convention": "round"
     },
     {
-      "logged_at": "2026-04-29T05:14:30.088236+00:00",
-      "city": "London",
-      "bracket": "exact 16",
-      "market_type": "high",
-      "model_prob": 0.28208915802772433,
-      "market_ask": 0.25,
-      "edge": 0.03208915802772433,
-      "kelly_size_usdc": 2.0,
-      "outcome": "PENDING",
-      "resolution_date": "2026-04-29",
-      "strategy": "adjacency",
-      "market_slug": null,
-      "boundary_convention": "round"
-    },
-    {
-      "logged_at": "2026-04-29T05:13:29.929036+00:00",
-      "city": "Hong Kong",
-      "bracket": "above 29",
-      "market_type": "high",
-      "model_prob": 0.5990780042188562,
-      "market_ask": 0.088,
-      "edge": 0.5110780042188562,
-      "kelly_size_usdc": 2.0,
-      "outcome": "PENDING",
-      "resolution_date": "2026-04-29",
-      "strategy": "adjacency",
-      "market_slug": null,
-      "boundary_convention": "round"
-    },
-    {
       "logged_at": "2026-04-29T05:11:08.236995+00:00",
       "city": "Helsinki",
       "bracket": "exact 9",
@@ -479,36 +509,6 @@
       "resolution_date": "2026-04-29",
       "strategy": "raw_forecast_raw",
       "market_slug": "highest-temperature-in-seoul-on-april-29-2026-17c",
-      "boundary_convention": "round"
-    },
-    {
-      "logged_at": "2026-04-29T02:50:30.148075+00:00",
-      "city": "Austin",
-      "bracket": "above 92",
-      "market_type": "high",
-      "model_prob": 0.37284673157539794,
-      "market_ask": 0.001,
-      "edge": 0.37184673157539794,
-      "kelly_size_usdc": 2.0,
-      "outcome": "PENDING",
-      "resolution_date": "2026-04-28",
-      "strategy": "adjacency",
-      "market_slug": null,
-      "boundary_convention": "floor"
-    },
-    {
-      "logged_at": "2026-04-29T02:50:30.148075+00:00",
-      "city": "Toronto",
-      "bracket": "above 19",
-      "market_type": "high",
-      "model_prob": 0.47160674921470247,
-      "market_ask": 0.004,
-      "edge": 0.46760674921470247,
-      "kelly_size_usdc": 2.0,
-      "outcome": "PENDING",
-      "resolution_date": "2026-04-28",
-      "strategy": "adjacency",
-      "market_slug": null,
       "boundary_convention": "round"
     },
     {
@@ -1534,15 +1534,15 @@
   ],
   "strategies": {
     "adjacency": {
-      "bets": 71,
+      "bets": 75,
       "resolved": 16,
       "wins": 16,
       "pnl_usd": 548.701,
       "bankroll": {
         "start": 1000.0,
         "current": 1334.5112,
-        "open_stake": 46.0,
-        "available": 1288.5112,
+        "open_stake": 54.0,
+        "available": 1280.5112,
         "daily_loss": 0.0
       },
       "by_boundary": {
@@ -1553,7 +1553,7 @@
           "pnl_usd": 0.0
         },
         "round": {
-          "bets": 51,
+          "bets": 55,
           "resolved": 16,
           "wins": 16,
           "pnl_usd": 548.701
