@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-04-29T19:09:19.574702+00:00",
+  "updated_at": "2026-04-29T19:19:19.545586+00:00",
   "hit_rate": 0.1358,
   "theoretical_pnl": 413.5101,
   "trade_count": 1325,
@@ -63,7 +63,7 @@
       "resolution_date": "2026-04-30",
       "strategy": "below_tail",
       "market_slug": "highest-temperature-in-nyc-on-april-30-2026-55forbelow",
-      "boundary_convention": "floor"
+      "boundary_convention": "round"
     },
     {
       "logged_at": "2026-04-29T18:41:12.559804+00:00",
@@ -1593,13 +1593,13 @@
       },
       "by_boundary": {
         "floor": {
-          "bets": 1,
+          "bets": 0,
           "resolved": 0,
           "wins": 0,
           "pnl_usd": 0.0
         },
         "round": {
-          "bets": 0,
+          "bets": 1,
           "resolved": 0,
           "wins": 0,
           "pnl_usd": 0.0
