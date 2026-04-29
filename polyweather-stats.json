@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-04-29T11:27:45.138418+00:00",
+  "updated_at": "2026-04-29T11:37:45.123589+00:00",
   "hit_rate": 0.176,
   "theoretical_pnl": 458.2471,
-  "trade_count": 540,
+  "trade_count": 544,
   "active_cities": 15,
   "daily_pnl": [
     {
@@ -35,6 +35,66 @@
     }
   ],
   "recent_trades": [
+    {
+      "logged_at": "2026-04-29T11:36:31.164971+00:00",
+      "city": "Hong Kong",
+      "bracket": "above 29",
+      "market_type": "high",
+      "model_prob": 0.43089979272953705,
+      "market_ask": 0.003,
+      "edge": 0.42789979272953704,
+      "kelly_size_usdc": 2.0,
+      "outcome": "PENDING",
+      "resolution_date": "2026-04-29",
+      "strategy": "adjacency",
+      "market_slug": null,
+      "boundary_convention": "round"
+    },
+    {
+      "logged_at": "2026-04-29T11:34:31.077251+00:00",
+      "city": "Hong Kong",
+      "bracket": "above 29",
+      "market_type": "high",
+      "model_prob": 0.43089979272953705,
+      "market_ask": 0.003,
+      "edge": 0.42789979272953704,
+      "kelly_size_usdc": 2.0,
+      "outcome": "PENDING",
+      "resolution_date": "2026-04-29",
+      "strategy": "adjacency",
+      "market_slug": null,
+      "boundary_convention": "round"
+    },
+    {
+      "logged_at": "2026-04-29T11:32:30.910400+00:00",
+      "city": "Hong Kong",
+      "bracket": "above 29",
+      "market_type": "high",
+      "model_prob": 0.43089979272953705,
+      "market_ask": 0.003,
+      "edge": 0.42789979272953704,
+      "kelly_size_usdc": 2.0,
+      "outcome": "PENDING",
+      "resolution_date": "2026-04-29",
+      "strategy": "adjacency",
+      "market_slug": null,
+      "boundary_convention": "round"
+    },
+    {
+      "logged_at": "2026-04-29T11:31:30.942344+00:00",
+      "city": "New York City",
+      "bracket": "between 44 and 45",
+      "market_type": "low",
+      "model_prob": 0.28904417065193644,
+      "market_ask": 0.005,
+      "edge": 0.28404417065193643,
+      "kelly_size_usdc": 2.0,
+      "outcome": "PENDING",
+      "resolution_date": "2026-04-29",
+      "strategy": "adjacency",
+      "market_slug": null,
+      "boundary_convention": "floor"
+    },
     {
       "logged_at": "2026-04-29T11:18:31.222810+00:00",
       "city": "New York City",
@@ -508,66 +568,6 @@
       "model_prob": 0.43089979272953705,
       "market_ask": 0.002,
       "edge": 0.42889979272953704,
-      "kelly_size_usdc": 2.0,
-      "outcome": "PENDING",
-      "resolution_date": "2026-04-29",
-      "strategy": "adjacency",
-      "market_slug": null,
-      "boundary_convention": "round"
-    },
-    {
-      "logged_at": "2026-04-29T09:30:30.672373+00:00",
-      "city": "Hong Kong",
-      "bracket": "above 29",
-      "market_type": "high",
-      "model_prob": 0.43089979272953705,
-      "market_ask": 0.003,
-      "edge": 0.42789979272953704,
-      "kelly_size_usdc": 2.0,
-      "outcome": "PENDING",
-      "resolution_date": "2026-04-29",
-      "strategy": "adjacency",
-      "market_slug": null,
-      "boundary_convention": "round"
-    },
-    {
-      "logged_at": "2026-04-29T09:28:32.502713+00:00",
-      "city": "Hong Kong",
-      "bracket": "above 29",
-      "market_type": "high",
-      "model_prob": 0.43089979272953705,
-      "market_ask": 0.003,
-      "edge": 0.42789979272953704,
-      "kelly_size_usdc": 2.0,
-      "outcome": "PENDING",
-      "resolution_date": "2026-04-29",
-      "strategy": "adjacency",
-      "market_slug": null,
-      "boundary_convention": "round"
-    },
-    {
-      "logged_at": "2026-04-29T09:26:32.460793+00:00",
-      "city": "Hong Kong",
-      "bracket": "above 29",
-      "market_type": "high",
-      "model_prob": 0.43089979272953705,
-      "market_ask": 0.003,
-      "edge": 0.42789979272953704,
-      "kelly_size_usdc": 2.0,
-      "outcome": "PENDING",
-      "resolution_date": "2026-04-29",
-      "strategy": "adjacency",
-      "market_slug": null,
-      "boundary_convention": "round"
-    },
-    {
-      "logged_at": "2026-04-29T09:24:30.756810+00:00",
-      "city": "Hong Kong",
-      "bracket": "above 29",
-      "market_type": "high",
-      "model_prob": 0.43089979272953705,
-      "market_ask": 0.003,
-      "edge": 0.42789979272953704,
       "kelly_size_usdc": 2.0,
       "outcome": "PENDING",
       "resolution_date": "2026-04-29",
@@ -1538,26 +1538,26 @@
   ],
   "strategies": {
     "adjacency": {
-      "bets": 129,
+      "bets": 133,
       "resolved": 22,
       "wins": 16,
       "pnl_usd": 539.0775,
       "bankroll": {
         "start": 1000.0,
         "current": 1305.9886,
-        "open_stake": 148.0,
-        "available": 1157.9886,
+        "open_stake": 154.0,
+        "available": 1151.9886,
         "daily_loss": 28.5226
       },
       "by_boundary": {
         "floor": {
-          "bets": 35,
+          "bets": 36,
           "resolved": 4,
           "wins": 0,
           "pnl_usd": -8.364
         },
         "round": {
-          "bets": 94,
+          "bets": 97,
           "resolved": 18,
           "wins": 16,
           "pnl_usd": 547.4415
