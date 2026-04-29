@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-04-29T23:09:47.506105+00:00",
+  "updated_at": "2026-04-29T23:19:47.454104+00:00",
   "hit_rate": 0.1272,
   "theoretical_pnl": 402.2106,
-  "trade_count": 1325,
+  "trade_count": 1335,
   "active_cities": 15,
   "daily_pnl": [
     {
@@ -35,6 +35,156 @@
     }
   ],
   "recent_trades": [
+    {
+      "logged_at": "2026-04-29T23:16:35.757571+00:00",
+      "city": "Hong Kong",
+      "bracket": "above 25",
+      "market_type": "high",
+      "model_prob": 0.971399210096984,
+      "market_ask": 0.83,
+      "edge": 0.14139921009698408,
+      "kelly_size_usdc": 2.0,
+      "outcome": "PENDING",
+      "resolution_date": "2026-04-30",
+      "strategy": "adjacency",
+      "market_slug": "highest-temperature-in-hong-kong-on-april-30-2026-25corhigher",
+      "boundary_convention": "round"
+    },
+    {
+      "logged_at": "2026-04-29T23:12:04.757120+00:00",
+      "city": "London",
+      "bracket": "exact 8",
+      "market_type": "low",
+      "model_prob": 0.35160126829926525,
+      "market_ask": 0.001,
+      "edge": 0.35060126829926525,
+      "kelly_size_usdc": 2.0,
+      "outcome": "PENDING",
+      "resolution_date": "2026-04-29",
+      "strategy": "adjacency",
+      "market_slug": "lowest-temperature-in-london-on-april-29-2026-8c",
+      "boundary_convention": "round"
+    },
+    {
+      "logged_at": "2026-04-29T23:12:04.757120+00:00",
+      "city": "Hong Kong",
+      "bracket": "above 29",
+      "market_type": "high",
+      "model_prob": 0.7584752046528846,
+      "market_ask": 0.003,
+      "edge": 0.7554752046528846,
+      "kelly_size_usdc": 1.0,
+      "outcome": "PENDING",
+      "resolution_date": "2026-04-29",
+      "strategy": "raw_forecast_corrected",
+      "market_slug": "highest-temperature-in-hong-kong-on-april-29-2026-29corhigher",
+      "boundary_convention": "round"
+    },
+    {
+      "logged_at": "2026-04-29T23:12:04.757120+00:00",
+      "city": "Hong Kong",
+      "bracket": "above 25",
+      "market_type": "high",
+      "model_prob": 0.971399210096984,
+      "market_ask": 0.89,
+      "edge": 0.08139921009698403,
+      "kelly_size_usdc": 1.0,
+      "outcome": "PENDING",
+      "resolution_date": "2026-04-30",
+      "strategy": "raw_forecast_corrected",
+      "market_slug": "highest-temperature-in-hong-kong-on-april-30-2026-25corhigher",
+      "boundary_convention": "round"
+    },
+    {
+      "logged_at": "2026-04-29T23:12:04.757120+00:00",
+      "city": "Miami",
+      "bracket": "between 74 and 75",
+      "market_type": "low",
+      "model_prob": 0.19609850143358915,
+      "market_ask": 0.1,
+      "edge": 0.09609850143358914,
+      "kelly_size_usdc": 1.0,
+      "outcome": "PENDING",
+      "resolution_date": "2026-04-30",
+      "strategy": "raw_forecast_corrected",
+      "market_slug": "lowest-temperature-in-miami-on-april-30-2026-74-75f",
+      "boundary_convention": "round"
+    },
+    {
+      "logged_at": "2026-04-29T23:12:04.757120+00:00",
+      "city": "New York City",
+      "bracket": "between 50 and 51",
+      "market_type": "low",
+      "model_prob": 0.1796343375950576,
+      "market_ask": 0.645,
+      "edge": -0.4653656624049424,
+      "kelly_size_usdc": 1.0,
+      "outcome": "PENDING",
+      "resolution_date": "2026-04-29",
+      "strategy": "raw_forecast_corrected",
+      "market_slug": "lowest-temperature-in-nyc-on-april-29-2026-50-51f",
+      "boundary_convention": "round"
+    },
+    {
+      "logged_at": "2026-04-29T23:12:04.757120+00:00",
+      "city": "New York City",
+      "bracket": "between 48 and 49",
+      "market_type": "low",
+      "model_prob": 0.1826139935446066,
+      "market_ask": 0.24,
+      "edge": -0.05738600645539338,
+      "kelly_size_usdc": 1.0,
+      "outcome": "PENDING",
+      "resolution_date": "2026-04-30",
+      "strategy": "raw_forecast_corrected",
+      "market_slug": "lowest-temperature-in-nyc-on-april-30-2026-48-49f",
+      "boundary_convention": "round"
+    },
+    {
+      "logged_at": "2026-04-29T23:12:04.757120+00:00",
+      "city": "Seoul",
+      "bracket": "exact 17",
+      "market_type": "high",
+      "model_prob": 0.21580288853664326,
+      "market_ask": 0.016,
+      "edge": 0.19980288853664324,
+      "kelly_size_usdc": 1.0,
+      "outcome": "PENDING",
+      "resolution_date": "2026-04-30",
+      "strategy": "raw_forecast_corrected",
+      "market_slug": "highest-temperature-in-seoul-on-april-30-2026-17c",
+      "boundary_convention": "round"
+    },
+    {
+      "logged_at": "2026-04-29T23:12:04.757120+00:00",
+      "city": "Hong Kong",
+      "bracket": "exact 28",
+      "market_type": "high",
+      "model_prob": 0.12200940971385255,
+      "market_ask": 0.999,
+      "edge": -0.8769905902861475,
+      "kelly_size_usdc": 1.0,
+      "outcome": "PENDING",
+      "resolution_date": "2026-04-29",
+      "strategy": "raw_forecast_raw",
+      "market_slug": "highest-temperature-in-hong-kong-on-april-29-2026-28c",
+      "boundary_convention": "round"
+    },
+    {
+      "logged_at": "2026-04-29T23:12:04.757120+00:00",
+      "city": "Seoul",
+      "bracket": "exact 19",
+      "market_type": "high",
+      "model_prob": 0.15677794852338267,
+      "market_ask": 0.34,
+      "edge": -0.18322205147661735,
+      "kelly_size_usdc": 1.0,
+      "outcome": "PENDING",
+      "resolution_date": "2026-04-30",
+      "strategy": "raw_forecast_raw",
+      "market_slug": "highest-temperature-in-seoul-on-april-30-2026-19c",
+      "boundary_convention": "round"
+    },
     {
       "logged_at": "2026-04-29T18:41:18.499345+00:00",
       "city": "Madrid",
@@ -607,96 +757,6 @@
     },
     {
       "logged_at": "2026-04-29T17:13:00.937532+00:00",
-      "city": "Sao Paulo",
-      "bracket": "exact 29",
-      "market_type": "high",
-      "model_prob": 0.21729583731425184,
-      "market_ask": 0.95,
-      "edge": -0.7327041626857481,
-      "kelly_size_usdc": 1.0,
-      "outcome": "PENDING",
-      "resolution_date": "2026-04-29",
-      "strategy": "raw_forecast_corrected",
-      "market_slug": "highest-temperature-in-sao-paulo-on-april-29-2026-29c",
-      "boundary_convention": "round"
-    },
-    {
-      "logged_at": "2026-04-29T17:13:00.937532+00:00",
-      "city": "Sao Paulo",
-      "bracket": "exact 28",
-      "market_type": "high",
-      "model_prob": 0.1592605792823214,
-      "market_ask": 0.33,
-      "edge": -0.1707394207176786,
-      "kelly_size_usdc": 1.0,
-      "outcome": "PENDING",
-      "resolution_date": "2026-04-30",
-      "strategy": "raw_forecast_corrected",
-      "market_slug": "highest-temperature-in-sao-paulo-on-april-30-2026-28c",
-      "boundary_convention": "round"
-    },
-    {
-      "logged_at": "2026-04-29T17:13:00.937532+00:00",
-      "city": "Seoul",
-      "bracket": "exact 7",
-      "market_type": "low",
-      "model_prob": 0.21397892128256257,
-      "market_ask": 0.001,
-      "edge": 0.21297892128256257,
-      "kelly_size_usdc": 1.0,
-      "outcome": "PENDING",
-      "resolution_date": "2026-04-29",
-      "strategy": "raw_forecast_corrected",
-      "market_slug": "lowest-temperature-in-seoul-on-april-29-2026-7c",
-      "boundary_convention": "round"
-    },
-    {
-      "logged_at": "2026-04-29T17:13:00.937532+00:00",
-      "city": "Seoul",
-      "bracket": "exact 9",
-      "market_type": "low",
-      "model_prob": 0.21695303427169965,
-      "market_ask": 0.37,
-      "edge": -0.15304696572830034,
-      "kelly_size_usdc": 1.0,
-      "outcome": "PENDING",
-      "resolution_date": "2026-04-30",
-      "strategy": "raw_forecast_corrected",
-      "market_slug": "lowest-temperature-in-seoul-on-april-30-2026-9c",
-      "boundary_convention": "round"
-    },
-    {
-      "logged_at": "2026-04-29T17:13:00.937532+00:00",
-      "city": "Toronto",
-      "bracket": "exact 14",
-      "market_type": "high",
-      "model_prob": 0.1828013505966909,
-      "market_ask": 0.003,
-      "edge": 0.1798013505966909,
-      "kelly_size_usdc": 1.0,
-      "outcome": "PENDING",
-      "resolution_date": "2026-04-29",
-      "strategy": "raw_forecast_corrected",
-      "market_slug": "highest-temperature-in-toronto-on-april-29-2026-14c",
-      "boundary_convention": "round"
-    },
-    {
-      "logged_at": "2026-04-29T17:13:00.937532+00:00",
-      "city": "Toronto",
-      "bracket": "exact 10",
-      "market_type": "high",
-      "model_prob": 0.19594688514317798,
-      "market_ask": 0.27,
-      "edge": -0.07405311485682203,
-      "kelly_size_usdc": 1.0,
-      "outcome": "PENDING",
-      "resolution_date": "2026-04-30",
-      "strategy": "raw_forecast_corrected",
-      "market_slug": "highest-temperature-in-toronto-on-april-30-2026-10c",
-      "boundary_convention": "round"
-    },
-    {
-      "logged_at": "2026-04-29T17:13:00.937532+00:00",
       "city": "Austin",
       "bracket": "between 76 and 77",
       "market_type": "high",
@@ -876,36 +936,6 @@
       "boundary_convention": "round"
     },
     {
-      "logged_at": "2026-04-29T17:12:33.949366+00:00",
-      "city": "London",
-      "bracket": "exact 17",
-      "market_type": "high",
-      "model_prob": 0.3484948082495007,
-      "market_ask": 0.01,
-      "edge": 0.3384948082495007,
-      "kelly_size_usdc": 2.0,
-      "outcome": "PENDING",
-      "resolution_date": "2026-04-29",
-      "strategy": "adjacency",
-      "market_slug": null,
-      "boundary_convention": "round"
-    },
-    {
-      "logged_at": "2026-04-29T17:12:33.949366+00:00",
-      "city": "Miami",
-      "bracket": "between 82 and 83",
-      "market_type": "high",
-      "model_prob": 0.3654918986694358,
-      "market_ask": 0.001,
-      "edge": 0.3644918986694358,
-      "kelly_size_usdc": 2.0,
-      "outcome": "PENDING",
-      "resolution_date": "2026-04-29",
-      "strategy": "adjacency",
-      "market_slug": null,
-      "boundary_convention": "round"
-    },
-    {
       "logged_at": "2026-04-29T12:41:00.823628+00:00",
       "city": "Atlanta",
       "bracket": "between 78 and 79",
@@ -918,36 +948,6 @@
       "resolution_date": "2026-04-29",
       "strategy": "raw_forecast_raw",
       "market_slug": "highest-temperature-in-atlanta-on-april-29-2026-78-79f",
-      "boundary_convention": "round"
-    },
-    {
-      "logged_at": "2026-04-29T12:41:00.823628+00:00",
-      "city": "Hong Kong",
-      "bracket": "exact 19",
-      "market_type": "low",
-      "model_prob": 0.1162498751933452,
-      "market_ask": 0.031,
-      "edge": 0.0852498751933452,
-      "kelly_size_usdc": 1.0,
-      "outcome": "PENDING",
-      "resolution_date": "2026-04-29",
-      "strategy": "raw_forecast_raw",
-      "market_slug": "lowest-temperature-in-hong-kong-on-april-29-2026-19c",
-      "boundary_convention": "round"
-    },
-    {
-      "logged_at": "2026-04-29T12:41:00.823628+00:00",
-      "city": "Hong Kong",
-      "bracket": "exact 19",
-      "market_type": "low",
-      "model_prob": 0.04791143592870644,
-      "market_ask": 0.4,
-      "edge": -0.3520885640712936,
-      "kelly_size_usdc": 1.0,
-      "outcome": "PENDING",
-      "resolution_date": "2026-04-30",
-      "strategy": "raw_forecast_raw",
-      "market_slug": "lowest-temperature-in-hong-kong-on-april-30-2026-19c",
       "boundary_convention": "round"
     },
     {
@@ -1553,15 +1553,15 @@
   ],
   "strategies": {
     "adjacency": {
-      "bets": 834,
+      "bets": 836,
       "resolved": 30,
       "wins": 16,
       "pnl_usd": 524.0727,
       "bankroll": {
         "start": 1000.0,
         "current": 1282.5843,
-        "open_stake": 370.0,
-        "available": 912.5843,
+        "open_stake": 372.0,
+        "available": 910.5843,
         "daily_loss": 51.9269
       },
       "by_boundary": {
@@ -1572,7 +1572,7 @@
           "pnl_usd": 0.0
         },
         "round": {
-          "bets": 834,
+          "bets": 836,
           "resolved": 30,
           "wins": 16,
           "pnl_usd": 524.0727
@@ -1634,15 +1634,15 @@
       }
     },
     "raw_forecast_corrected": {
-      "bets": 151,
+      "bets": 157,
       "resolved": 54,
       "wins": 5,
       "pnl_usd": -45.9418,
       "bankroll": {
         "start": 10000.0,
         "current": 9954.11,
-        "open_stake": 49.0,
-        "available": 9905.11,
+        "open_stake": 53.0,
+        "available": 9901.11,
         "daily_loss": 46.1677
       },
       "by_boundary": {
@@ -1653,7 +1653,7 @@
           "pnl_usd": 0.0
         },
         "round": {
-          "bets": 151,
+          "bets": 157,
           "resolved": 54,
           "wins": 5,
           "pnl_usd": -45.9418
@@ -1661,15 +1661,15 @@
       }
     },
     "raw_forecast_raw": {
-      "bets": 94,
+      "bets": 96,
       "resolved": 33,
       "wins": 0,
       "pnl_usd": -33.5776,
       "bankroll": {
         "start": 10000.0,
         "current": 9965.3724,
-        "open_stake": 32.0,
-        "available": 9933.3724,
+        "open_stake": 33.0,
+        "available": 9932.3724,
         "daily_loss": 31.7354
       },
       "by_boundary": {
@@ -1680,7 +1680,7 @@
           "pnl_usd": 0.0
         },
         "round": {
-          "bets": 94,
+          "bets": 96,
           "resolved": 33,
           "wins": 0,
           "pnl_usd": -33.5776
