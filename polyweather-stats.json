@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-04-29T10:57:45.180426+00:00",
+  "updated_at": "2026-04-29T11:07:45.020604+00:00",
   "hit_rate": 0.176,
   "theoretical_pnl": 458.2471,
-  "trade_count": 522,
+  "trade_count": 523,
   "active_cities": 15,
   "daily_pnl": [
     {
@@ -35,6 +35,21 @@
     }
   ],
   "recent_trades": [
+    {
+      "logged_at": "2026-04-29T11:00:31.235001+00:00",
+      "city": "New York City",
+      "bracket": "between 44 and 45",
+      "market_type": "low",
+      "model_prob": 0.28904417065193644,
+      "market_ask": 0.007,
+      "edge": 0.28204417065193643,
+      "kelly_size_usdc": 2.0,
+      "outcome": "PENDING",
+      "resolution_date": "2026-04-29",
+      "strategy": "adjacency",
+      "market_slug": null,
+      "boundary_convention": "floor"
+    },
     {
       "logged_at": "2026-04-29T10:54:30.963917+00:00",
       "city": "New York City",
@@ -307,21 +322,6 @@
     },
     {
       "logged_at": "2026-04-29T09:22:30.727108+00:00",
-      "city": "Hong Kong",
-      "bracket": "above 29",
-      "market_type": "high",
-      "model_prob": 0.43089979272953705,
-      "market_ask": 0.003,
-      "edge": 0.42789979272953704,
-      "kelly_size_usdc": 2.0,
-      "outcome": "PENDING",
-      "resolution_date": "2026-04-29",
-      "strategy": "adjacency",
-      "market_slug": null,
-      "boundary_convention": "round"
-    },
-    {
-      "logged_at": "2026-04-29T09:20:30.511525+00:00",
       "city": "Hong Kong",
       "bracket": "above 29",
       "market_type": "high",
@@ -1538,20 +1538,20 @@
   ],
   "strategies": {
     "adjacency": {
-      "bets": 127,
+      "bets": 128,
       "resolved": 22,
       "wins": 16,
       "pnl_usd": 539.0775,
       "bankroll": {
         "start": 1000.0,
         "current": 1305.9886,
-        "open_stake": 144.0,
-        "available": 1161.9886,
+        "open_stake": 146.0,
+        "available": 1159.9886,
         "daily_loss": 28.5226
       },
       "by_boundary": {
         "floor": {
-          "bets": 33,
+          "bets": 34,
           "resolved": 4,
           "wins": 0,
           "pnl_usd": -8.364
