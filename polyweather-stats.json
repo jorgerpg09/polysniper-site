@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-04-30T15:05:43.187162+00:00",
+  "updated_at": "2026-04-30T15:15:43.302925+00:00",
   "hit_rate": 0.2308,
   "theoretical_pnl": 567.9954,
-  "trade_count": 1396,
+  "trade_count": 1398,
   "active_cities": 15,
   "daily_pnl": [
     {
@@ -39,6 +39,36 @@
     }
   ],
   "recent_trades": [
+    {
+      "logged_at": "2026-04-30T15:08:35.062528+00:00",
+      "city": "Helsinki",
+      "bracket": "exact 18",
+      "market_type": "high",
+      "model_prob": 0.2141417389214778,
+      "market_ask": 0.034,
+      "edge": 0.1801417389214778,
+      "kelly_size_usdc": 2.0,
+      "outcome": "PENDING",
+      "resolution_date": "2026-05-01",
+      "strategy": "adjacency_capped",
+      "market_slug": "highest-temperature-in-helsinki-on-may-1-2026-18c",
+      "boundary_convention": "round"
+    },
+    {
+      "logged_at": "2026-04-30T15:06:36.205493+00:00",
+      "city": "Helsinki",
+      "bracket": "exact 18",
+      "market_type": "high",
+      "model_prob": 0.2141417389214778,
+      "market_ask": 0.034,
+      "edge": 0.1801417389214778,
+      "kelly_size_usdc": 2.0,
+      "outcome": "PENDING",
+      "resolution_date": "2026-05-01",
+      "strategy": "adjacency_capped",
+      "market_slug": "highest-temperature-in-helsinki-on-may-1-2026-18c",
+      "boundary_convention": "round"
+    },
     {
       "logged_at": "2026-04-30T15:04:36.881674+00:00",
       "city": "Helsinki",
@@ -296,36 +326,6 @@
     },
     {
       "logged_at": "2026-04-30T14:44:33.691224+00:00",
-      "city": "London",
-      "bracket": "exact 20",
-      "market_type": "high",
-      "model_prob": 0.3336413325685725,
-      "market_ask": 0.021,
-      "edge": 0.31264133256857246,
-      "kelly_size_usdc": 2.0,
-      "outcome": "PENDING",
-      "resolution_date": "2026-04-30",
-      "strategy": "adjacency_capped",
-      "market_slug": "highest-temperature-in-london-on-april-30-2026-20c",
-      "boundary_convention": "round"
-    },
-    {
-      "logged_at": "2026-04-30T14:44:33.691224+00:00",
-      "city": "Madrid",
-      "bracket": "exact 20",
-      "market_type": "high",
-      "model_prob": 0.20731031178538828,
-      "market_ask": 0.001,
-      "edge": 0.20631031178538828,
-      "kelly_size_usdc": 2.0,
-      "outcome": "PENDING",
-      "resolution_date": "2026-04-30",
-      "strategy": "adjacency_capped",
-      "market_slug": "highest-temperature-in-madrid-on-april-30-2026-20c",
-      "boundary_convention": "round"
-    },
-    {
-      "logged_at": "2026-04-30T14:42:33.396531+00:00",
       "city": "London",
       "bracket": "exact 20",
       "market_type": "high",
@@ -1884,15 +1884,15 @@
       }
     },
     "adjacency_capped": {
-      "bets": 38,
+      "bets": 40,
       "resolved": 0,
       "wins": 0,
       "pnl_usd": 0.0,
       "bankroll": {
         "start": 1000.0,
         "current": 1000.0,
-        "open_stake": 18.0,
-        "available": 982.0,
+        "open_stake": 20.0,
+        "available": 980.0,
         "daily_loss": 0.0
       },
       "by_boundary": {
@@ -1903,7 +1903,7 @@
           "pnl_usd": 0.0
         },
         "round": {
-          "bets": 38,
+          "bets": 40,
           "resolved": 0,
           "wins": 0,
           "pnl_usd": 0.0
