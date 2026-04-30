@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-04-30T18:39:51.043091+00:00",
-  "now": "2026-04-30T18:39:51.043091+00:00",
+  "updated_at": "2026-04-30T18:49:51.671379+00:00",
+  "now": "2026-04-30T18:49:51.671379+00:00",
   "markets": [
     {
       "condition_id": "0x4276f86bfa6d55d31ee884308c67fc221e71f30db6c7ba228d11e14b6e79ea09",
@@ -25608,6 +25608,55 @@
       ]
     },
     {
+      "condition_id": "0x1392b8c15088b6e15640b81800d4d1803d6442e394c0efade7222a3ef129209d",
+      "city": "Paris",
+      "market_type": "low",
+      "bracket": "above 14",
+      "bracket_type": "above",
+      "resolution_date": "2026-05-01",
+      "game_start_time": null,
+      "last_placement_time": null,
+      "effective_close_time": null,
+      "market_end_date": "2026-05-01T12:00:00+00:00",
+      "market_slug": "lowest-temperature-in-paris-on-may-1-2026-14corhigher",
+      "resolved_at": null,
+      "outcome": null,
+      "resolution_source": null,
+      "state": "legacy",
+      "bets": [
+        {
+          "id": 1579,
+          "placed_at": "2026-04-30T18:43:50.168669+00:00",
+          "size_usd": 2.0,
+          "filled_shares": 18.34862385321101,
+          "filled_vwap": 0.109,
+          "model_prob": 0.31660340607569915,
+          "best_ask_at_placement": 0.109,
+          "limit_price": 0.109,
+          "outcome": null,
+          "realized_pnl_usd": null,
+          "fee_usd": null,
+          "fill_quality": null,
+          "strategy": "adjacency"
+        },
+        {
+          "id": 1580,
+          "placed_at": "2026-04-30T18:45:51.133163+00:00",
+          "size_usd": 2.0,
+          "filled_shares": 18.34862385321101,
+          "filled_vwap": 0.109,
+          "model_prob": 0.31660340607569915,
+          "best_ask_at_placement": 0.109,
+          "limit_price": 0.109,
+          "outcome": null,
+          "realized_pnl_usd": null,
+          "fee_usd": null,
+          "fill_quality": null,
+          "strategy": "adjacency_capped"
+        }
+      ]
+    },
+    {
       "condition_id": "0x50a3aa3b4683846ed5eae61f53d47086e0a3bc5b6ac3fdab33df3b322546ab0e",
       "city": "Paris",
       "market_type": "low",
@@ -25672,6 +25721,21 @@
           "fee_usd": null,
           "fill_quality": null,
           "strategy": "raw_forecast_corrected"
+        },
+        {
+          "id": 1581,
+          "placed_at": "2026-04-30T18:41:03.446866+00:00",
+          "size_usd": 1.0,
+          "filled_shares": null,
+          "filled_vwap": null,
+          "model_prob": 0.3027803737378742,
+          "best_ask_at_placement": 0.47,
+          "limit_price": 0.47,
+          "outcome": null,
+          "realized_pnl_usd": null,
+          "fee_usd": null,
+          "fill_quality": null,
+          "strategy": "raw_forecast_raw"
         }
       ]
     },
