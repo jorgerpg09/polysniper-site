@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-04-30T23:12:48.788198+00:00",
-  "now": "2026-04-30T23:12:48.788198+00:00",
+  "updated_at": "2026-04-30T23:22:48.851827+00:00",
+  "now": "2026-04-30T23:22:48.851827+00:00",
   "markets": [
     {
       "condition_id": "0x4276f86bfa6d55d31ee884308c67fc221e71f30db6c7ba228d11e14b6e79ea09",
@@ -22386,6 +22386,21 @@
           "fee_usd": null,
           "fill_quality": null,
           "strategy": "raw_forecast_corrected"
+        },
+        {
+          "id": 1598,
+          "placed_at": "2026-04-30T23:12:04.227026+00:00",
+          "size_usd": 1.0,
+          "filled_shares": null,
+          "filled_vwap": null,
+          "model_prob": 0.16978826822013138,
+          "best_ask_at_placement": 0.039,
+          "limit_price": 0.039,
+          "outcome": null,
+          "realized_pnl_usd": null,
+          "fee_usd": null,
+          "fill_quality": null,
+          "strategy": "raw_forecast_raw"
         }
       ]
     },
@@ -25848,6 +25863,21 @@
           "fee_usd": null,
           "fill_quality": null,
           "strategy": "adjacency_hourly"
+        },
+        {
+          "id": 1597,
+          "placed_at": "2026-04-30T23:12:48.858523+00:00",
+          "size_usd": 2.0,
+          "filled_shares": 2000.0,
+          "filled_vwap": 0.001,
+          "model_prob": 0.31660340607569915,
+          "best_ask_at_placement": 0.001,
+          "limit_price": 0.001,
+          "outcome": null,
+          "realized_pnl_usd": null,
+          "fee_usd": null,
+          "fill_quality": null,
+          "strategy": "adjacency_hourly"
         }
       ]
     },
@@ -26179,6 +26209,40 @@
       ]
     },
     {
+      "condition_id": "0x923d60c9297125614d3283e0f42a23a396ea211de87471a2b58f65cfe183197d",
+      "city": "Miami",
+      "market_type": "low",
+      "bracket": "between 72 and 73",
+      "bracket_type": "between",
+      "resolution_date": "2026-05-01",
+      "game_start_time": null,
+      "last_placement_time": null,
+      "effective_close_time": null,
+      "market_end_date": "2026-05-01T12:00:00+00:00",
+      "market_slug": "lowest-temperature-in-miami-on-may-1-2026-72-73f",
+      "resolved_at": null,
+      "outcome": null,
+      "resolution_source": null,
+      "state": "legacy",
+      "bets": [
+        {
+          "id": 1599,
+          "placed_at": "2026-04-30T23:12:04.227026+00:00",
+          "size_usd": 1.0,
+          "filled_shares": 2.0,
+          "filled_vwap": 0.5,
+          "model_prob": 0.13758969101069918,
+          "best_ask_at_placement": 0.5,
+          "limit_price": 0.5,
+          "outcome": null,
+          "realized_pnl_usd": null,
+          "fee_usd": null,
+          "fill_quality": null,
+          "strategy": "raw_forecast_corrected"
+        }
+      ]
+    },
+    {
       "condition_id": "0x9269c637ecaf83022db4b684b2514e2af597f0501ed4aefb574ea7b5f4dccd73",
       "city": "Sao Paulo",
       "market_type": "high",
@@ -26345,6 +26409,40 @@
           "fee_usd": null,
           "fill_quality": null,
           "strategy": "raw_forecast_raw"
+        }
+      ]
+    },
+    {
+      "condition_id": "0xd93c73c9081e8af23c6c2d5d5f29480df57457e4678b66a51923f85d5496bdb0",
+      "city": "Miami",
+      "market_type": "low",
+      "bracket": "below 67",
+      "bracket_type": "below",
+      "resolution_date": "2026-05-01",
+      "game_start_time": null,
+      "last_placement_time": null,
+      "effective_close_time": null,
+      "market_end_date": "2026-05-01T12:00:00+00:00",
+      "market_slug": "lowest-temperature-in-miami-on-may-1-2026-67forbelow",
+      "resolved_at": null,
+      "outcome": null,
+      "resolution_source": null,
+      "state": "legacy",
+      "bets": [
+        {
+          "id": 1600,
+          "placed_at": "2026-04-30T23:12:04.227026+00:00",
+          "size_usd": 2.0,
+          "filled_shares": 6.14,
+          "filled_vwap": 0.009,
+          "model_prob": 0.2130421033678606,
+          "best_ask_at_placement": 0.009,
+          "limit_price": 0.009,
+          "outcome": null,
+          "realized_pnl_usd": null,
+          "fee_usd": null,
+          "fill_quality": null,
+          "strategy": "below_tail"
         }
       ]
     },
