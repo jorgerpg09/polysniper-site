@@ -92,10 +92,10 @@ let _pwStatsData = null;  // last loaded stats, kept for re-renders on tab switc
 
 // All currently-displayed strategies (tail_longshot archived 2026-04-25, hidden 2026-04-28).
 // Order matches the index.html tab order so updateTabCounts can iterate consistently.
-const PW_STRATEGIES = ['modal_early', 'raw_forecast_corrected', 'raw_forecast_raw', 'adjacency', 'below_tail'];
+const PW_STRATEGIES = ['modal_early', 'raw_forecast_corrected', 'raw_forecast_raw', 'adjacency', 'adjacency_capped', 'below_tail'];
 
 // Returns the currently selected strategy filter:
-// 'all' | 'modal_early' | 'raw_forecast_corrected' | 'raw_forecast_raw' | 'adjacency' | 'below_tail'
+// 'all' | 'modal_early' | 'raw_forecast_corrected' | 'raw_forecast_raw' | 'adjacency' | 'adjacency_capped' | 'below_tail'
 // (legacy 'tail_longshot' value is auto-migrated to 'all' on load — tab no longer exists)
 function currentStrategy() {
     const stored = localStorage.getItem(PW_STRATEGY_KEY) || 'all';

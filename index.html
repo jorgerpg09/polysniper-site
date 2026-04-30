@@ -56,8 +56,12 @@
                     <span class="tab-label">Raw (no bias)</span>
                     <span class="tab-meta" data-role="bets">—</span>
                 </button>
-                <button class="strategy-tab" data-strategy="adjacency" role="tab" aria-selected="false" title="Diagnostic 2: bet model_argmax IF adjacent to market_argmax (±1) AND raw_edge > 0. NO upper edge cap.">
-                    <span class="tab-label">Adjacency</span>
+                <button class="strategy-tab" data-strategy="adjacency" role="tab" aria-selected="false" title="Diagnostic 2: bet model_argmax IF adjacent to market_argmax (±1) AND raw_edge > 0. NO upper edge cap. STRICT DEDUP (cap=1) — A side of A/B vs adjacency_capped.">
+                    <span class="tab-label">Adjacency (cap=1)</span>
+                    <span class="tab-meta" data-role="bets">—</span>
+                </button>
+                <button class="strategy-tab" data-strategy="adjacency_capped" role="tab" aria-selected="false" title="A/B variant of adjacency added 2026-04-30. Same selection logic but rebet_cap=10 (vs strict cap=1). Tests whether moderate rebets capture more edge than strict dedup. $1000 bankroll, $2 stake. Compare WR/PnL after ~5-7 days of post-archive data.">
+                    <span class="tab-label">Adjacency (cap=10)</span>
                     <span class="tab-meta" data-role="bets">—</span>
                 </button>
                 <button class="strategy-tab" data-strategy="below_tail" role="tab" aria-selected="false" title="Strategy 4 (added 2026-04-29): bet ONLY when modal_early picks a 'below X' bracket. Bypasses EDGE_CAP/PRICE_FLOOR. Empirical 15.6% WR on N=423 with avg 27x payout — exploits market underpricing of cold tails × model cold-bias on NYC/Atlanta/Lagos/Sao Paulo/Seoul. $500 bankroll, $50 daily cap, $2 stake.">
