@@ -60,8 +60,12 @@
                     <span class="tab-label">Adjacency (cap=1)</span>
                     <span class="tab-meta" data-role="bets">—</span>
                 </button>
-                <button class="strategy-tab" data-strategy="adjacency_capped" role="tab" aria-selected="false" title="A/B variant of adjacency added 2026-04-30. Same selection logic but rebet_cap=10 (vs strict cap=1). Tests whether moderate rebets capture more edge than strict dedup. $1000 bankroll, $2 stake. Compare WR/PnL after ~5-7 days of post-archive data.">
+                <button class="strategy-tab" data-strategy="adjacency_capped" role="tab" aria-selected="false" title="A/B variant of adjacency added 2026-04-30. Same selection logic but rebet_cap=10 immediate (vs strict cap=1). Clusters in ~20 min. $1000 bankroll, $2 stake.">
                     <span class="tab-label">Adjacency (cap=10)</span>
+                    <span class="tab-meta" data-role="bets">—</span>
+                </button>
+                <button class="strategy-tab" data-strategy="adjacency_hourly" role="tab" aria-selected="false" title="3rd A/B variant added 2026-04-30. Same selection logic, cap=10, BUT requires min 1h between rebets (vs immediate). Spreads bets across the ~10h cluster window to capture longer-horizon price decay. Tests whether tight clusters waste cap on duplicate prices. $1000 bankroll, $2 stake.">
+                    <span class="tab-label">Adjacency (1h gap)</span>
                     <span class="tab-meta" data-role="bets">—</span>
                 </button>
                 <button class="strategy-tab" data-strategy="below_tail" role="tab" aria-selected="false" title="Strategy 4 (added 2026-04-29): bet ONLY when modal_early picks a 'below X' bracket. Bypasses EDGE_CAP/PRICE_FLOOR. Empirical 15.6% WR on N=423 with avg 27x payout — exploits market underpricing of cold tails × model cold-bias on NYC/Atlanta/Lagos/Sao Paulo/Seoul. $500 bankroll, $50 daily cap, $2 stake.">
