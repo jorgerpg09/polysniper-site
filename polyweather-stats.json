@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-04-30T19:52:47.060515+00:00",
+  "updated_at": "2026-04-30T20:02:47.074035+00:00",
   "hit_rate": 0.1429,
   "theoretical_pnl": -5.0926,
-  "trade_count": 104,
+  "trade_count": 106,
   "active_cities": 10,
   "daily_pnl": [
     {
@@ -11,6 +11,36 @@
     }
   ],
   "recent_trades": [
+    {
+      "logged_at": "2026-04-30T19:59:38.832421+00:00",
+      "city": "London",
+      "bracket": "exact 11",
+      "market_type": "low",
+      "model_prob": 0.3027803737378742,
+      "market_ask": 0.1,
+      "edge": 0.2027803737378742,
+      "kelly_size_usdc": 2.0,
+      "outcome": "PENDING",
+      "resolution_date": "2026-05-01",
+      "strategy": "adjacency_capped",
+      "market_slug": "lowest-temperature-in-london-on-may-1-2026-11c",
+      "boundary_convention": "round"
+    },
+    {
+      "logged_at": "2026-04-30T19:52:47.524588+00:00",
+      "city": "London",
+      "bracket": "exact 11",
+      "market_type": "low",
+      "model_prob": 0.3027803737378742,
+      "market_ask": 0.1,
+      "edge": 0.2027803737378742,
+      "kelly_size_usdc": 2.0,
+      "outcome": "PENDING",
+      "resolution_date": "2026-05-01",
+      "strategy": "adjacency",
+      "market_slug": "lowest-temperature-in-london-on-may-1-2026-11c",
+      "boundary_convention": "round"
+    },
     {
       "logged_at": "2026-04-30T19:11:38.605228+00:00",
       "city": "Paris",
@@ -448,21 +478,6 @@
     },
     {
       "logged_at": "2026-04-30T16:08:34.419044+00:00",
-      "city": "Paris",
-      "bracket": "exact 26",
-      "market_type": "high",
-      "model_prob": 0.3477757286977927,
-      "market_ask": 0.33,
-      "edge": 0.017775728697792703,
-      "kelly_size_usdc": 2.0,
-      "outcome": "PENDING",
-      "resolution_date": "2026-05-01",
-      "strategy": "adjacency_capped",
-      "market_slug": "highest-temperature-in-paris-on-may-1-2026-26c",
-      "boundary_convention": "round"
-    },
-    {
-      "logged_at": "2026-04-30T16:06:32.951924+00:00",
       "city": "Paris",
       "bracket": "exact 26",
       "market_type": "high",
@@ -974,15 +989,15 @@
   ],
   "strategies": {
     "adjacency": {
-      "bets": 9,
+      "bets": 10,
       "resolved": 1,
       "wins": 0,
       "pnl_usd": -2.0995,
       "bankroll": {
         "start": 1000.0,
         "current": 1000.0,
-        "open_stake": 204.0,
-        "available": 796.0,
+        "open_stake": 206.0,
+        "available": 794.0,
         "daily_loss": 0.0
       },
       "by_boundary": {
@@ -993,7 +1008,7 @@
           "pnl_usd": 0.0
         },
         "round": {
-          "bets": 9,
+          "bets": 10,
           "resolved": 1,
           "wins": 0,
           "pnl_usd": -2.0995
@@ -1001,15 +1016,15 @@
       }
     },
     "adjacency_capped": {
-      "bets": 60,
+      "bets": 61,
       "resolved": 0,
       "wins": 0,
       "pnl_usd": 0.0,
       "bankroll": {
         "start": 1000.0,
         "current": 1000.0,
-        "open_stake": 60.0,
-        "available": 940.0,
+        "open_stake": 62.0,
+        "available": 938.0,
         "daily_loss": 0.0
       },
       "by_boundary": {
@@ -1020,7 +1035,7 @@
           "pnl_usd": 0.0
         },
         "round": {
-          "bets": 60,
+          "bets": 61,
           "resolved": 0,
           "wins": 0,
           "pnl_usd": 0.0
