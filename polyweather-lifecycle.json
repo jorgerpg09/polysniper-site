@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-04-30T00:39:49.246001+00:00",
-  "now": "2026-04-30T00:39:49.246001+00:00",
+  "updated_at": "2026-04-30T00:56:36.376481+00:00",
+  "now": "2026-04-30T00:56:36.376481+00:00",
   "markets": [
     {
       "condition_id": "0x4276f86bfa6d55d31ee884308c67fc221e71f30db6c7ba228d11e14b6e79ea09",
@@ -21968,6 +21968,21 @@
           "fee_usd": null,
           "fill_quality": null,
           "strategy": "adjacency"
+        },
+        {
+          "id": 1499,
+          "placed_at": "2026-04-30T00:41:00.609101+00:00",
+          "size_usd": 1.0,
+          "filled_shares": 1.2048192771084338,
+          "filled_vwap": 0.8,
+          "model_prob": 0.9814271603679412,
+          "best_ask_at_placement": 0.83,
+          "limit_price": 0.83,
+          "outcome": null,
+          "realized_pnl_usd": null,
+          "fee_usd": null,
+          "fill_quality": null,
+          "strategy": "raw_forecast_raw"
         }
       ]
     },
@@ -22258,6 +22273,40 @@
           "fee_usd": null,
           "fill_quality": null,
           "strategy": "adjacency"
+        }
+      ]
+    },
+    {
+      "condition_id": "0x49779e3716f998e576c071ed775e622afab040ac0b2b18f3866ea6c35a579fa5",
+      "city": "Miami",
+      "market_type": "low",
+      "bracket": "between 72 and 73",
+      "bracket_type": "between",
+      "resolution_date": "2026-04-30",
+      "game_start_time": null,
+      "last_placement_time": null,
+      "effective_close_time": null,
+      "market_end_date": "2026-04-30T12:00:00+00:00",
+      "market_slug": "lowest-temperature-in-miami-on-april-30-2026-72-73f",
+      "resolved_at": null,
+      "outcome": null,
+      "resolution_source": null,
+      "state": "legacy",
+      "bets": [
+        {
+          "id": 1500,
+          "placed_at": "2026-04-30T00:41:00.609101+00:00",
+          "size_usd": 1.0,
+          "filled_shares": 2.7777777777777777,
+          "filled_vwap": 0.36,
+          "model_prob": 0.3769358495295566,
+          "best_ask_at_placement": 0.36,
+          "limit_price": 0.36,
+          "outcome": null,
+          "realized_pnl_usd": null,
+          "fee_usd": null,
+          "fill_quality": null,
+          "strategy": "raw_forecast_corrected"
         }
       ]
     },
@@ -24498,6 +24547,21 @@
           "fee_usd": null,
           "fill_quality": null,
           "strategy": "raw_forecast_corrected"
+        },
+        {
+          "id": 1501,
+          "placed_at": "2026-04-30T00:41:00.609101+00:00",
+          "size_usd": 1.0,
+          "filled_shares": 2.127659574468085,
+          "filled_vwap": 0.47,
+          "model_prob": 0.17868651724145695,
+          "best_ask_at_placement": 0.47,
+          "limit_price": 0.47,
+          "outcome": null,
+          "realized_pnl_usd": null,
+          "fee_usd": null,
+          "fill_quality": null,
+          "strategy": "raw_forecast_raw"
         }
       ]
     },
