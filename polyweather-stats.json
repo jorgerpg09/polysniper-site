@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-05-01T11:22:47.183273+00:00",
+  "updated_at": "2026-05-01T11:32:47.275523+00:00",
   "hit_rate": 0.2222,
   "theoretical_pnl": -6.044,
   "trade_count": 182,
@@ -20,7 +20,7 @@
       "market_ask": 0.001,
       "edge": 0.12704487595484376,
       "kelly_size_usdc": 2.0,
-      "outcome": "PENDING",
+      "outcome": "LOSS",
       "resolution_date": "2026-05-01",
       "strategy": "below_tail",
       "market_slug": "highest-temperature-in-lagos-on-may-1-2026-28corbelow",
@@ -1550,16 +1550,16 @@
       }
     },
     "below_tail": {
-      "bets": 4,
+      "bets": 3,
       "resolved": 1,
       "wins": 0,
       "pnl_usd": -2.0983,
       "bankroll": {
         "start": 500.0,
-        "current": 497.9017,
-        "open_stake": 4.0,
-        "available": 493.9017,
-        "daily_loss": 0.0
+        "current": 495.8018,
+        "open_stake": 2.0,
+        "available": 493.8018,
+        "daily_loss": 2.0999
       },
       "by_boundary": {
         "floor": {
@@ -1569,7 +1569,7 @@
           "pnl_usd": 0.0
         },
         "round": {
-          "bets": 4,
+          "bets": 3,
           "resolved": 1,
           "wins": 0,
           "pnl_usd": -2.0983
