@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-05-01T23:02:48.684306+00:00",
-  "now": "2026-05-01T23:02:48.684306+00:00",
+  "updated_at": "2026-05-01T23:12:48.959201+00:00",
+  "now": "2026-05-01T23:12:48.959201+00:00",
   "markets": [
     {
       "condition_id": "0x4276f86bfa6d55d31ee884308c67fc221e71f30db6c7ba228d11e14b6e79ea09",
@@ -28562,6 +28562,51 @@
           "fee_usd": null,
           "fill_quality": null,
           "strategy": "raw_forecast_corrected"
+        },
+        {
+          "id": 1721,
+          "placed_at": "2026-05-01T23:06:41.946379+00:00",
+          "size_usd": 2.0,
+          "filled_shares": 6.25,
+          "filled_vwap": 0.3,
+          "model_prob": 0.32274800999304243,
+          "best_ask_at_placement": 0.32,
+          "limit_price": 0.32,
+          "outcome": null,
+          "realized_pnl_usd": null,
+          "fee_usd": null,
+          "fill_quality": null,
+          "strategy": "adjacency"
+        },
+        {
+          "id": 1722,
+          "placed_at": "2026-05-01T23:07:41.110559+00:00",
+          "size_usd": 2.0,
+          "filled_shares": 6.666666666666667,
+          "filled_vwap": 0.2,
+          "model_prob": 0.32274800999304243,
+          "best_ask_at_placement": 0.3,
+          "limit_price": 0.3,
+          "outcome": null,
+          "realized_pnl_usd": null,
+          "fee_usd": null,
+          "fill_quality": null,
+          "strategy": "adjacency_capped"
+        },
+        {
+          "id": 1723,
+          "placed_at": "2026-05-01T23:09:44.269875+00:00",
+          "size_usd": 2.0,
+          "filled_shares": null,
+          "filled_vwap": null,
+          "model_prob": 0.32274800999304243,
+          "best_ask_at_placement": 0.2,
+          "limit_price": 0.2,
+          "outcome": null,
+          "realized_pnl_usd": null,
+          "fee_usd": null,
+          "fill_quality": null,
+          "strategy": "adjacency_capped"
         }
       ]
     },
@@ -28596,6 +28641,21 @@
           "fee_usd": null,
           "fill_quality": null,
           "strategy": "raw_forecast_corrected"
+        },
+        {
+          "id": 1724,
+          "placed_at": "2026-05-01T23:12:00.554153+00:00",
+          "size_usd": 1.0,
+          "filled_shares": 1.1235955056179776,
+          "filled_vwap": 0.8899999999999999,
+          "model_prob": 0.3045527570277484,
+          "best_ask_at_placement": 0.89,
+          "limit_price": 0.89,
+          "outcome": null,
+          "realized_pnl_usd": null,
+          "fee_usd": null,
+          "fill_quality": null,
+          "strategy": "raw_forecast_raw"
         }
       ]
     },
@@ -28698,6 +28758,21 @@
           "fee_usd": null,
           "fill_quality": null,
           "strategy": "raw_forecast_corrected"
+        },
+        {
+          "id": 1726,
+          "placed_at": "2026-05-01T23:12:41.768276+00:00",
+          "size_usd": 2.0,
+          "filled_shares": null,
+          "filled_vwap": null,
+          "model_prob": 0.33741982101194135,
+          "best_ask_at_placement": 0.14,
+          "limit_price": 0.14,
+          "outcome": null,
+          "realized_pnl_usd": null,
+          "fee_usd": null,
+          "fill_quality": null,
+          "strategy": "adjacency"
         }
       ]
     },
@@ -28747,6 +28822,40 @@
           "fee_usd": null,
           "fill_quality": null,
           "strategy": "raw_forecast_raw"
+        }
+      ]
+    },
+    {
+      "condition_id": "0x81fb88118a57c90e4c4726351001d04c4b879806387035e68f6cbaf92a6e760a",
+      "city": "Miami",
+      "market_type": "low",
+      "bracket": "between 76 and 77",
+      "bracket_type": "between",
+      "resolution_date": "2026-05-02",
+      "game_start_time": null,
+      "last_placement_time": null,
+      "effective_close_time": null,
+      "market_end_date": "2026-05-02T12:00:00+00:00",
+      "market_slug": "lowest-temperature-in-miami-on-may-2-2026-76-77f",
+      "resolved_at": null,
+      "outcome": null,
+      "resolution_source": null,
+      "state": "legacy",
+      "bets": [
+        {
+          "id": 1725,
+          "placed_at": "2026-05-01T23:12:00.554153+00:00",
+          "size_usd": 1.0,
+          "filled_shares": null,
+          "filled_vwap": null,
+          "model_prob": 0.3355263573511388,
+          "best_ask_at_placement": 0.809,
+          "limit_price": 0.809,
+          "outcome": null,
+          "realized_pnl_usd": null,
+          "fee_usd": null,
+          "fill_quality": null,
+          "strategy": "raw_forecast_corrected"
         }
       ]
     },
