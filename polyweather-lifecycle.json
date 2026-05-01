@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-05-01T15:22:48.937964+00:00",
-  "now": "2026-05-01T15:22:48.937964+00:00",
+  "updated_at": "2026-05-01T15:32:48.855047+00:00",
+  "now": "2026-05-01T15:32:48.855047+00:00",
   "markets": [
     {
       "condition_id": "0x4276f86bfa6d55d31ee884308c67fc221e71f30db6c7ba228d11e14b6e79ea09",
@@ -28197,6 +28197,40 @@
           "fee_usd": null,
           "fill_quality": null,
           "strategy": "adjacency_hourly"
+        }
+      ]
+    },
+    {
+      "condition_id": "0xf8e6703dda2476d880721c3e7fdf200baa9721be0fab580e362e274b5f0e6e5d",
+      "city": "New York City",
+      "market_type": "low",
+      "bracket": "between 44 and 45",
+      "bracket_type": "between",
+      "resolution_date": "2026-05-01",
+      "game_start_time": null,
+      "last_placement_time": "2026-05-02T08:00:00+00:00",
+      "effective_close_time": "2026-05-02T12:00:00+00:00",
+      "market_end_date": "2026-05-01T12:00:00+00:00",
+      "market_slug": "lowest-temperature-in-nyc-on-may-1-2026-44-45f",
+      "resolved_at": null,
+      "outcome": null,
+      "resolution_source": null,
+      "state": "legacy",
+      "bets": [
+        {
+          "id": 1699,
+          "placed_at": "2026-05-01T15:26:40.498145+00:00",
+          "size_usd": 1.0,
+          "filled_shares": 333.3333333333333,
+          "filled_vwap": 0.0025199999999999997,
+          "model_prob": 0.1818146125266753,
+          "best_ask_at_placement": 0.002,
+          "limit_price": 0.003,
+          "outcome": null,
+          "realized_pnl_usd": null,
+          "fee_usd": null,
+          "fill_quality": null,
+          "strategy": "tail_longshot"
         }
       ]
     },
