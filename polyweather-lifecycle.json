@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-05-01T11:02:48.753738+00:00",
-  "now": "2026-05-01T11:02:48.753738+00:00",
+  "updated_at": "2026-05-01T11:12:48.836602+00:00",
+  "now": "2026-05-01T11:12:48.836602+00:00",
   "markets": [
     {
       "condition_id": "0x4276f86bfa6d55d31ee884308c67fc221e71f30db6c7ba228d11e14b6e79ea09",
@@ -26562,6 +26562,21 @@
           "fee_usd": null,
           "fill_quality": null,
           "strategy": "raw_forecast_corrected"
+        },
+        {
+          "id": 1667,
+          "placed_at": "2026-05-01T11:09:00.539650+00:00",
+          "size_usd": 1.0,
+          "filled_shares": 15.0,
+          "filled_vwap": 0.019,
+          "model_prob": 0.25835276268555446,
+          "best_ask_at_placement": 0.019,
+          "limit_price": 0.019,
+          "outcome": null,
+          "realized_pnl_usd": null,
+          "fee_usd": null,
+          "fill_quality": null,
+          "strategy": "raw_forecast_raw"
         }
       ]
     },
@@ -26609,6 +26624,40 @@
           "outcome": "loss",
           "realized_pnl_usd": -1.0365,
           "fee_usd": 0.0365,
+          "fill_quality": null,
+          "strategy": "raw_forecast_raw"
+        }
+      ]
+    },
+    {
+      "condition_id": "0x613206bdacb040ddd79e4c6d3dfc5d141909c06b51241f26b341fc85862e4ca8",
+      "city": "Sao Paulo",
+      "market_type": "high",
+      "bracket": "exact 26",
+      "bracket_type": "exact",
+      "resolution_date": "2026-05-01",
+      "game_start_time": null,
+      "last_placement_time": null,
+      "effective_close_time": null,
+      "market_end_date": "2026-05-01T12:00:00+00:00",
+      "market_slug": "highest-temperature-in-sao-paulo-on-may-1-2026-26c",
+      "resolved_at": null,
+      "outcome": null,
+      "resolution_source": null,
+      "state": "legacy",
+      "bets": [
+        {
+          "id": 1669,
+          "placed_at": "2026-05-01T11:09:00.539650+00:00",
+          "size_usd": 1.0,
+          "filled_shares": 3.7037037037037033,
+          "filled_vwap": 0.27,
+          "model_prob": 0.20910549935341655,
+          "best_ask_at_placement": 0.27,
+          "limit_price": 0.27,
+          "outcome": null,
+          "realized_pnl_usd": null,
+          "fee_usd": null,
           "fill_quality": null,
           "strategy": "raw_forecast_raw"
         }
@@ -27133,6 +27182,40 @@
       ]
     },
     {
+      "condition_id": "0x6b1871751db2eb2841d105f5b4c430f54b1b90e28966996b063a8e347b5b13d2",
+      "city": "Lagos",
+      "market_type": "high",
+      "bracket": "below 28",
+      "bracket_type": "below",
+      "resolution_date": "2026-05-01",
+      "game_start_time": null,
+      "last_placement_time": null,
+      "effective_close_time": null,
+      "market_end_date": "2026-05-01T12:00:00+00:00",
+      "market_slug": "highest-temperature-in-lagos-on-may-1-2026-28corbelow",
+      "resolved_at": null,
+      "outcome": null,
+      "resolution_source": null,
+      "state": "legacy",
+      "bets": [
+        {
+          "id": 1666,
+          "placed_at": "2026-05-01T11:09:00.539650+00:00",
+          "size_usd": 2.0,
+          "filled_shares": 2000.0,
+          "filled_vwap": 0.001,
+          "model_prob": 0.12804487595484376,
+          "best_ask_at_placement": 0.001,
+          "limit_price": 0.001,
+          "outcome": null,
+          "realized_pnl_usd": null,
+          "fee_usd": null,
+          "fill_quality": null,
+          "strategy": "below_tail"
+        }
+      ]
+    },
+    {
       "condition_id": "0x7f509d52c32676993e5f37b114093cff274b2d9e824b4c79b2908dd3b3424427",
       "city": "Paris",
       "market_type": "low",
@@ -27246,6 +27329,21 @@
           "fee_usd": null,
           "fill_quality": null,
           "strategy": "raw_forecast_raw"
+        },
+        {
+          "id": 1668,
+          "placed_at": "2026-05-01T11:09:00.539650+00:00",
+          "size_usd": 1.0,
+          "filled_shares": 2.0,
+          "filled_vwap": 0.5,
+          "model_prob": 0.24701169526197897,
+          "best_ask_at_placement": 0.5,
+          "limit_price": 0.5,
+          "outcome": null,
+          "realized_pnl_usd": null,
+          "fee_usd": null,
+          "fill_quality": null,
+          "strategy": "raw_forecast_corrected"
         }
       ]
     },
