@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-05-01T08:42:47.087427+00:00",
+  "updated_at": "2026-05-01T08:52:47.075492+00:00",
   "hit_rate": 0.2222,
   "theoretical_pnl": -6.044,
-  "trade_count": 169,
+  "trade_count": 171,
   "active_cities": 10,
   "daily_pnl": [
     {
@@ -11,6 +11,36 @@
     }
   ],
   "recent_trades": [
+    {
+      "logged_at": "2026-05-01T08:50:40.919723+00:00",
+      "city": "Helsinki",
+      "bracket": "exact 18",
+      "market_type": "high",
+      "model_prob": 0.23444746846822895,
+      "market_ask": 0.069,
+      "edge": 0.16544746846822894,
+      "kelly_size_usdc": 2.0,
+      "outcome": "PENDING",
+      "resolution_date": "2026-05-01",
+      "strategy": "adjacency_hourly",
+      "market_slug": "highest-temperature-in-helsinki-on-may-1-2026-18c",
+      "boundary_convention": "round"
+    },
+    {
+      "logged_at": "2026-05-01T08:45:40.994531+00:00",
+      "city": "Madrid",
+      "bracket": "exact 24",
+      "market_type": "high",
+      "model_prob": 0.28991331142277127,
+      "market_ask": 0.2,
+      "edge": 0.08991331142277126,
+      "kelly_size_usdc": 2.0,
+      "outcome": "PENDING",
+      "resolution_date": "2026-05-01",
+      "strategy": "adjacency_hourly",
+      "market_slug": "highest-temperature-in-madrid-on-may-1-2026-24c",
+      "boundary_convention": "round"
+    },
     {
       "logged_at": "2026-05-01T07:55:41.037495+00:00",
       "city": "Paris",
@@ -927,21 +957,6 @@
       "boundary_convention": "round"
     },
     {
-      "logged_at": "2026-04-30T18:00:50.962833+00:00",
-      "city": "Paris",
-      "bracket": "exact 26",
-      "market_type": "high",
-      "model_prob": 0.3477757286977927,
-      "market_ask": 0.22,
-      "edge": 0.12777572869779272,
-      "kelly_size_usdc": 2.0,
-      "outcome": "PENDING",
-      "resolution_date": "2026-05-01",
-      "strategy": "adjacency_hourly",
-      "market_slug": "highest-temperature-in-paris-on-may-1-2026-26c",
-      "boundary_convention": "round"
-    },
-    {
       "logged_at": "2026-04-30T17:13:03.568839+00:00",
       "city": "Chicago",
       "bracket": "below 55",
@@ -1493,15 +1508,15 @@
       }
     },
     "adjacency_hourly": {
-      "bets": 16,
+      "bets": 18,
       "resolved": 4,
       "wins": 0,
       "pnl_usd": -8.3568,
       "bankroll": {
         "start": 1000.0,
         "current": 985.3435,
-        "open_stake": 20.0,
-        "available": 965.3435,
+        "open_stake": 24.0,
+        "available": 961.3435,
         "daily_loss": 14.6565
       },
       "by_boundary": {
@@ -1512,7 +1527,7 @@
           "pnl_usd": 0.0
         },
         "round": {
-          "bets": 16,
+          "bets": 18,
           "resolved": 4,
           "wins": 0,
           "pnl_usd": -8.3568
