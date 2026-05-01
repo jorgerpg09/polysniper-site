@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-05-01T10:42:48.679791+00:00",
-  "now": "2026-05-01T10:42:48.679791+00:00",
+  "updated_at": "2026-05-01T10:52:48.651807+00:00",
+  "now": "2026-05-01T10:52:48.651807+00:00",
   "markets": [
     {
       "condition_id": "0x4276f86bfa6d55d31ee884308c67fc221e71f30db6c7ba228d11e14b6e79ea09",
@@ -25878,6 +25878,21 @@
           "fee_usd": null,
           "fill_quality": null,
           "strategy": "adjacency_hourly"
+        },
+        {
+          "id": 1663,
+          "placed_at": "2026-05-01T10:46:41.328782+00:00",
+          "size_usd": 2.0,
+          "filled_shares": 16.666666666666668,
+          "filled_vwap": 0.12,
+          "model_prob": 0.28991331142277127,
+          "best_ask_at_placement": 0.12,
+          "limit_price": 0.12,
+          "outcome": null,
+          "realized_pnl_usd": null,
+          "fee_usd": null,
+          "fill_quality": null,
+          "strategy": "adjacency_hourly"
         }
       ]
     },
@@ -26152,10 +26167,10 @@
       "effective_close_time": null,
       "market_end_date": "2026-05-01T12:00:00+00:00",
       "market_slug": "lowest-temperature-in-miami-on-may-1-2026-74-75f",
-      "resolved_at": null,
-      "outcome": null,
-      "resolution_source": null,
-      "state": "legacy",
+      "resolved_at": "2026-05-01T05:12:48.695778+00:00",
+      "outcome": "loss",
+      "resolution_source": "uma_resolved",
+      "state": "resolved",
       "bets": [
         {
           "id": 1634,
@@ -26166,9 +26181,9 @@
           "model_prob": 0.15854300890118933,
           "best_ask_at_placement": 0.28,
           "limit_price": 0.28,
-          "outcome": null,
-          "realized_pnl_usd": null,
-          "fee_usd": null,
+          "outcome": "loss",
+          "realized_pnl_usd": -1.036,
+          "fee_usd": 0.036,
           "fill_quality": null,
           "strategy": "raw_forecast_corrected"
         }
@@ -27094,6 +27109,21 @@
           "model_prob": 0.23444746846822895,
           "best_ask_at_placement": 0.044,
           "limit_price": 0.044,
+          "outcome": null,
+          "realized_pnl_usd": null,
+          "fee_usd": null,
+          "fill_quality": null,
+          "strategy": "adjacency_hourly"
+        },
+        {
+          "id": 1664,
+          "placed_at": "2026-05-01T10:52:40.829995+00:00",
+          "size_usd": 2.0,
+          "filled_shares": 2000.0,
+          "filled_vwap": 0.001,
+          "model_prob": 0.23444746846822895,
+          "best_ask_at_placement": 0.001,
+          "limit_price": 0.001,
           "outcome": null,
           "realized_pnl_usd": null,
           "fee_usd": null,
