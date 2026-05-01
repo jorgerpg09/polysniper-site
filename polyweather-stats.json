@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-05-01T11:52:47.105204+00:00",
+  "updated_at": "2026-05-01T12:02:47.115827+00:00",
   "hit_rate": 0.2222,
   "theoretical_pnl": -6.044,
-  "trade_count": 182,
+  "trade_count": 184,
   "active_cities": 11,
   "daily_pnl": [
     {
@@ -11,6 +11,36 @@
     }
   ],
   "recent_trades": [
+    {
+      "logged_at": "2026-05-01T12:01:41.724952+00:00",
+      "city": "Madrid",
+      "bracket": "exact 23",
+      "market_type": "high",
+      "model_prob": 0.25835276268555446,
+      "market_ask": 0.003,
+      "edge": 0.25535276268555446,
+      "kelly_size_usdc": 2.0,
+      "outcome": "PENDING",
+      "resolution_date": "2026-05-01",
+      "strategy": "adjacency_capped",
+      "market_slug": "highest-temperature-in-madrid-on-may-1-2026-23c",
+      "boundary_convention": "round"
+    },
+    {
+      "logged_at": "2026-05-01T11:54:41.258716+00:00",
+      "city": "Madrid",
+      "bracket": "exact 23",
+      "market_type": "high",
+      "model_prob": 0.25835276268555446,
+      "market_ask": 0.005,
+      "edge": 0.25335276268555446,
+      "kelly_size_usdc": 2.0,
+      "outcome": "PENDING",
+      "resolution_date": "2026-05-01",
+      "strategy": "adjacency",
+      "market_slug": "highest-temperature-in-madrid-on-may-1-2026-23c",
+      "boundary_convention": "round"
+    },
     {
       "logged_at": "2026-05-01T11:09:00.539650+00:00",
       "city": "Lagos",
@@ -822,21 +852,6 @@
       "boundary_convention": "round"
     },
     {
-      "logged_at": "2026-05-01T01:15:39.460321+00:00",
-      "city": "Miami",
-      "bracket": "between 70 and 71",
-      "market_type": "low",
-      "model_prob": 0.3056585359082272,
-      "market_ask": 0.26,
-      "edge": 0.045658535908227216,
-      "kelly_size_usdc": 2.0,
-      "outcome": "PENDING",
-      "resolution_date": "2026-05-01",
-      "strategy": "adjacency_capped",
-      "market_slug": "lowest-temperature-in-miami-on-may-1-2026-70-71f",
-      "boundary_convention": "round"
-    },
-    {
       "logged_at": "2026-05-01T00:55:37.524365+00:00",
       "city": "Miami",
       "bracket": "between 70 and 71",
@@ -1469,15 +1484,15 @@
   ],
   "strategies": {
     "adjacency": {
-      "bets": 12,
+      "bets": 13,
       "resolved": 4,
       "wins": 1,
       "pnl_usd": 3.4031,
       "bankroll": {
         "start": 1000.0,
         "current": 995.8209,
-        "open_stake": 24.0,
-        "available": 971.8209,
+        "open_stake": 26.0,
+        "available": 969.8209,
         "daily_loss": 4.1791
       },
       "by_boundary": {
@@ -1488,7 +1503,7 @@
           "pnl_usd": 0.0
         },
         "round": {
-          "bets": 12,
+          "bets": 13,
           "resolved": 4,
           "wins": 1,
           "pnl_usd": 3.4031
@@ -1496,15 +1511,15 @@
       }
     },
     "adjacency_capped": {
-      "bets": 82,
+      "bets": 83,
       "resolved": 12,
       "wins": 0,
       "pnl_usd": -22.4409,
       "bankroll": {
         "start": 1000.0,
         "current": 960.7599,
-        "open_stake": 80.0,
-        "available": 880.7599,
+        "open_stake": 82.0,
+        "available": 878.7599,
         "daily_loss": 39.2401
       },
       "by_boundary": {
@@ -1515,7 +1530,7 @@
           "pnl_usd": 0.0
         },
         "round": {
-          "bets": 82,
+          "bets": 83,
           "resolved": 12,
           "wins": 0,
           "pnl_usd": -22.4409
