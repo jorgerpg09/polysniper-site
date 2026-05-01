@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-05-01T18:22:49.229689+00:00",
-  "now": "2026-05-01T18:22:49.229689+00:00",
+  "updated_at": "2026-05-01T18:32:48.816163+00:00",
+  "now": "2026-05-01T18:32:48.816163+00:00",
   "markets": [
     {
       "condition_id": "0x4276f86bfa6d55d31ee884308c67fc221e71f30db6c7ba228d11e14b6e79ea09",
@@ -27599,6 +27599,36 @@
           "fee_usd": null,
           "fill_quality": null,
           "strategy": "adjacency_capped"
+        },
+        {
+          "id": 1714,
+          "placed_at": "2026-05-01T18:23:42.320624+00:00",
+          "size_usd": 2.0,
+          "filled_shares": null,
+          "filled_vwap": null,
+          "model_prob": 0.2498742640206968,
+          "best_ask_at_placement": 0.09,
+          "limit_price": 0.09,
+          "outcome": null,
+          "realized_pnl_usd": null,
+          "fee_usd": null,
+          "fill_quality": null,
+          "strategy": "adjacency_capped"
+        },
+        {
+          "id": 1715,
+          "placed_at": "2026-05-01T18:25:41.059627+00:00",
+          "size_usd": 2.0,
+          "filled_shares": null,
+          "filled_vwap": null,
+          "model_prob": 0.2498742640206968,
+          "best_ask_at_placement": 0.09,
+          "limit_price": 0.09,
+          "outcome": null,
+          "realized_pnl_usd": null,
+          "fee_usd": null,
+          "fill_quality": null,
+          "strategy": "adjacency_hourly"
         }
       ]
     },
@@ -27975,10 +28005,10 @@
       "effective_close_time": null,
       "market_end_date": "2026-05-01T12:00:00+00:00",
       "market_slug": "highest-temperature-in-paris-on-may-1-2026-25c",
-      "resolved_at": null,
-      "outcome": null,
-      "resolution_source": null,
-      "state": "legacy",
+      "resolved_at": "2026-05-01T05:12:49.134324+00:00",
+      "outcome": "loss",
+      "resolution_source": "uma_resolved",
+      "state": "resolved",
       "bets": [
         {
           "id": 1516,
@@ -27989,9 +28019,9 @@
           "model_prob": 0.25743664111581893,
           "best_ask_at_placement": 0.43,
           "limit_price": 0.43,
-          "outcome": null,
-          "realized_pnl_usd": null,
-          "fee_usd": null,
+          "outcome": "loss",
+          "realized_pnl_usd": -1.0285,
+          "fee_usd": 0.0285,
           "fill_quality": null,
           "strategy": "raw_forecast_raw"
         },
@@ -28004,9 +28034,9 @@
           "model_prob": 0.2234345329282872,
           "best_ask_at_placement": 0.52,
           "limit_price": 0.52,
-          "outcome": null,
-          "realized_pnl_usd": null,
-          "fee_usd": null,
+          "outcome": "loss",
+          "realized_pnl_usd": -1.024,
+          "fee_usd": 0.024,
           "fill_quality": null,
           "strategy": "raw_forecast_corrected"
         }
