@@ -1,9 +1,9 @@
 {
-  "updated_at": "2026-05-01T23:52:47.165641+00:00",
+  "updated_at": "2026-05-02T00:02:47.230707+00:00",
   "hit_rate": 0.037,
   "theoretical_pnl": -78.9878,
-  "trade_count": 252,
-  "active_cities": 11,
+  "trade_count": 255,
+  "active_cities": 12,
   "daily_pnl": [
     {
       "date": "2026-04-30",
@@ -15,6 +15,51 @@
     }
   ],
   "recent_trades": [
+    {
+      "logged_at": "2026-05-01T23:59:40.858701+00:00",
+      "city": "London",
+      "bracket": "exact 12",
+      "market_type": "low",
+      "model_prob": 0.33242210501948194,
+      "market_ask": 0.21,
+      "edge": 0.12242210501948195,
+      "kelly_size_usdc": 2.0,
+      "outcome": "PENDING",
+      "resolution_date": "2026-05-02",
+      "strategy": "adjacency_capped",
+      "market_slug": "lowest-temperature-in-london-on-may-2-2026-12c",
+      "boundary_convention": "round"
+    },
+    {
+      "logged_at": "2026-05-01T23:58:41.085260+00:00",
+      "city": "Atlanta",
+      "bracket": "between 66 and 67",
+      "market_type": "high",
+      "model_prob": 0.20340247975425302,
+      "market_ask": 0.002,
+      "edge": 0.20140247975425302,
+      "kelly_size_usdc": 1.0,
+      "outcome": "PENDING",
+      "resolution_date": "2026-05-01",
+      "strategy": "tail_longshot",
+      "market_slug": "highest-temperature-in-atlanta-on-may-1-2026-66-67f",
+      "boundary_convention": "round"
+    },
+    {
+      "logged_at": "2026-05-01T23:55:41.164549+00:00",
+      "city": "London",
+      "bracket": "exact 12",
+      "market_type": "low",
+      "model_prob": 0.33242210501948194,
+      "market_ask": 0.21,
+      "edge": 0.12242210501948195,
+      "kelly_size_usdc": 2.0,
+      "outcome": "PENDING",
+      "resolution_date": "2026-05-02",
+      "strategy": "adjacency_capped",
+      "market_slug": "lowest-temperature-in-london-on-may-2-2026-12c",
+      "boundary_convention": "round"
+    },
     {
       "logged_at": "2026-05-01T23:41:41.543119+00:00",
       "city": "London",
@@ -458,36 +503,6 @@
       "model_prob": 0.2498742640206968,
       "market_ask": 0.09,
       "edge": 0.1598742640206968,
-      "kelly_size_usdc": 2.0,
-      "outcome": "PENDING",
-      "resolution_date": "2026-05-01",
-      "strategy": "adjacency_capped",
-      "market_slug": "highest-temperature-in-sao-paulo-on-may-1-2026-27c",
-      "boundary_convention": "round"
-    },
-    {
-      "logged_at": "2026-05-01T18:13:41.317672+00:00",
-      "city": "Sao Paulo",
-      "bracket": "exact 27",
-      "market_type": "high",
-      "model_prob": 0.2498742640206968,
-      "market_ask": 0.09,
-      "edge": 0.1598742640206968,
-      "kelly_size_usdc": 2.0,
-      "outcome": "PENDING",
-      "resolution_date": "2026-05-01",
-      "strategy": "adjacency_capped",
-      "market_slug": "highest-temperature-in-sao-paulo-on-may-1-2026-27c",
-      "boundary_convention": "round"
-    },
-    {
-      "logged_at": "2026-05-01T18:11:41.337419+00:00",
-      "city": "Sao Paulo",
-      "bracket": "exact 27",
-      "market_type": "high",
-      "model_prob": 0.2498742640206968,
-      "market_ask": 0.08,
-      "edge": 0.16987426402069677,
       "kelly_size_usdc": 2.0,
       "outcome": "PENDING",
       "resolution_date": "2026-05-01",
@@ -1635,16 +1650,16 @@
       }
     },
     "adjacency_capped": {
-      "bets": 119,
+      "bets": 121,
       "resolved": 32,
       "wins": 0,
       "pnl_usd": -63.6606,
       "bankroll": {
         "start": 1000.0,
         "current": 919.5402,
-        "open_stake": 66.0,
-        "available": 853.5402,
-        "daily_loss": 80.4598
+        "open_stake": 70.0,
+        "available": 849.5402,
+        "daily_loss": 0.0
       },
       "by_boundary": {
         "floor": {
@@ -1654,7 +1669,7 @@
           "pnl_usd": 0.0
         },
         "round": {
-          "bets": 119,
+          "bets": 121,
           "resolved": 32,
           "wins": 0,
           "pnl_usd": -63.6606
@@ -1671,7 +1686,7 @@
         "current": 969.2377,
         "open_stake": 22.0,
         "available": 947.2377,
-        "daily_loss": 30.7623
+        "daily_loss": 0.0
       },
       "by_boundary": {
         "floor": {
@@ -1797,15 +1812,15 @@
       }
     },
     "tail_longshot": {
-      "bets": 4,
+      "bets": 5,
       "resolved": 2,
       "wins": 0,
       "pnl_usd": -0.875,
       "bankroll": {
         "start": 100.0,
         "current": 99.125,
-        "open_stake": 1.0,
-        "available": 98.125,
+        "open_stake": 2.0,
+        "available": 97.125,
         "daily_loss": 0.875
       },
       "by_boundary": {
@@ -1816,7 +1831,7 @@
           "pnl_usd": 0.0
         },
         "round": {
-          "bets": 4,
+          "bets": 5,
           "resolved": 2,
           "wins": 0,
           "pnl_usd": -0.875
