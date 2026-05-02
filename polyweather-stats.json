@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-05-02T01:32:47.121848+00:00",
-  "hit_rate": 0.2778,
-  "theoretical_pnl": 13.7845,
-  "trade_count": 264,
+  "updated_at": "2026-05-02T01:42:47.315335+00:00",
+  "hit_rate": 0.2973,
+  "theoretical_pnl": 15.8249,
+  "trade_count": 267,
   "active_cities": 12,
   "daily_pnl": [
     {
@@ -11,10 +11,55 @@
     },
     {
       "date": "2026-05-01",
-      "cumulative_pnl": 13.7845
+      "cumulative_pnl": 15.8249
     }
   ],
   "recent_trades": [
+    {
+      "logged_at": "2026-05-02T01:41:47.360025+00:00",
+      "city": "Paris",
+      "bracket": "exact 14",
+      "market_type": "low",
+      "model_prob": 0.32274800999304243,
+      "market_ask": 0.25,
+      "edge": 0.07274800999304243,
+      "kelly_size_usdc": 2.0,
+      "outcome": "PENDING",
+      "resolution_date": "2026-05-02",
+      "strategy": "adjacency_capped",
+      "market_slug": "lowest-temperature-in-paris-on-may-2-2026-14c",
+      "boundary_convention": "round"
+    },
+    {
+      "logged_at": "2026-05-02T01:37:42.057210+00:00",
+      "city": "Paris",
+      "bracket": "exact 14",
+      "market_type": "low",
+      "model_prob": 0.32274800999304243,
+      "market_ask": 0.25,
+      "edge": 0.07274800999304243,
+      "kelly_size_usdc": 2.0,
+      "outcome": "PENDING",
+      "resolution_date": "2026-05-02",
+      "strategy": "adjacency_capped",
+      "market_slug": "lowest-temperature-in-paris-on-may-2-2026-14c",
+      "boundary_convention": "round"
+    },
+    {
+      "logged_at": "2026-05-02T01:34:43.636868+00:00",
+      "city": "Paris",
+      "bracket": "exact 14",
+      "market_type": "low",
+      "model_prob": 0.32274800999304243,
+      "market_ask": 0.25,
+      "edge": 0.07274800999304243,
+      "kelly_size_usdc": 2.0,
+      "outcome": "PENDING",
+      "resolution_date": "2026-05-02",
+      "strategy": "adjacency_capped",
+      "market_slug": "lowest-temperature-in-paris-on-may-2-2026-14c",
+      "boundary_convention": "round"
+    },
     {
       "logged_at": "2026-05-02T00:41:00.328747+00:00",
       "city": "Paris",
@@ -317,51 +362,6 @@
     },
     {
       "logged_at": "2026-05-01T23:26:41.003155+00:00",
-      "city": "Paris",
-      "bracket": "exact 15",
-      "market_type": "low",
-      "model_prob": 0.33741982101194135,
-      "market_ask": 0.13,
-      "edge": 0.20741982101194134,
-      "kelly_size_usdc": 2.0,
-      "outcome": "PENDING",
-      "resolution_date": "2026-05-02",
-      "strategy": "adjacency_capped",
-      "market_slug": "lowest-temperature-in-paris-on-may-2-2026-15c",
-      "boundary_convention": "round"
-    },
-    {
-      "logged_at": "2026-05-01T23:23:43.031868+00:00",
-      "city": "Paris",
-      "bracket": "exact 15",
-      "market_type": "low",
-      "model_prob": 0.33741982101194135,
-      "market_ask": 0.14,
-      "edge": 0.19741982101194133,
-      "kelly_size_usdc": 2.0,
-      "outcome": "PENDING",
-      "resolution_date": "2026-05-02",
-      "strategy": "adjacency_capped",
-      "market_slug": "lowest-temperature-in-paris-on-may-2-2026-15c",
-      "boundary_convention": "round"
-    },
-    {
-      "logged_at": "2026-05-01T23:19:42.181728+00:00",
-      "city": "Paris",
-      "bracket": "exact 15",
-      "market_type": "low",
-      "model_prob": 0.33741982101194135,
-      "market_ask": 0.12,
-      "edge": 0.21741982101194135,
-      "kelly_size_usdc": 2.0,
-      "outcome": "PENDING",
-      "resolution_date": "2026-05-02",
-      "strategy": "adjacency_capped",
-      "market_slug": "lowest-temperature-in-paris-on-may-2-2026-15c",
-      "boundary_convention": "round"
-    },
-    {
-      "logged_at": "2026-05-01T23:18:41.480505+00:00",
       "city": "Paris",
       "bracket": "exact 15",
       "market_type": "low",
@@ -1134,7 +1134,7 @@
       "market_ask": 0.55,
       "edge": -0.21204201631695102,
       "kelly_size_usdc": 1.0,
-      "outcome": "PENDING",
+      "outcome": "WIN",
       "resolution_date": "2026-05-01",
       "strategy": "raw_forecast_raw",
       "market_slug": "highest-temperature-in-london-on-may-1-2026-24c",
@@ -1650,15 +1650,15 @@
       }
     },
     "adjacency_capped": {
-      "bets": 129,
+      "bets": 132,
       "resolved": 42,
       "wins": 10,
       "pnl_usd": -23.7246,
       "bankroll": {
         "start": 1000.0,
         "current": 959.4762,
-        "open_stake": 66.0,
-        "available": 893.4762,
+        "open_stake": 72.0,
+        "available": 887.4762,
         "daily_loss": 0.0
       },
       "by_boundary": {
@@ -1669,7 +1669,7 @@
           "pnl_usd": 0.0
         },
         "round": {
-          "bets": 129,
+          "bets": 132,
           "resolved": 42,
           "wins": 10,
           "pnl_usd": -23.7246
@@ -1759,14 +1759,14 @@
     },
     "raw_forecast_corrected": {
       "bets": 35,
-      "resolved": 16,
-      "wins": 3,
-      "pnl_usd": -1.1686,
+      "resolved": 17,
+      "wins": 4,
+      "pnl_usd": 0.0761,
       "bankroll": {
         "start": 10000.0,
-        "current": 9992.9903,
-        "open_stake": 17.0,
-        "available": 9975.9903,
+        "current": 9994.235,
+        "open_stake": 16.0,
+        "available": 9978.235,
         "daily_loss": 0.0
       },
       "by_boundary": {
@@ -1778,22 +1778,22 @@
         },
         "round": {
           "bets": 35,
-          "resolved": 16,
-          "wins": 3,
-          "pnl_usd": -1.1686
+          "resolved": 17,
+          "wins": 4,
+          "pnl_usd": 0.0761
         }
       }
     },
     "raw_forecast_raw": {
       "bets": 30,
-      "resolved": 14,
-      "wins": 2,
-      "pnl_usd": -9.2189,
+      "resolved": 15,
+      "wins": 3,
+      "pnl_usd": -8.4232,
       "bankroll": {
         "start": 10000.0,
-        "current": 9990.5565,
-        "open_stake": 15.0,
-        "available": 9975.5565,
+        "current": 9991.3522,
+        "open_stake": 14.0,
+        "available": 9977.3522,
         "daily_loss": 0.0
       },
       "by_boundary": {
@@ -1805,9 +1805,9 @@
         },
         "round": {
           "bets": 30,
-          "resolved": 14,
-          "wins": 2,
-          "pnl_usd": -9.2189
+          "resolved": 15,
+          "wins": 3,
+          "pnl_usd": -8.4232
         }
       }
     },
