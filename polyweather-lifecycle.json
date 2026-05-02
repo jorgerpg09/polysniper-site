@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-05-02T11:02:48.746361+00:00",
-  "now": "2026-05-02T11:02:48.746361+00:00",
+  "updated_at": "2026-05-02T11:12:48.730094+00:00",
+  "now": "2026-05-02T11:12:48.730094+00:00",
   "markets": [
     {
       "condition_id": "0x4276f86bfa6d55d31ee884308c67fc221e71f30db6c7ba228d11e14b6e79ea09",
@@ -29024,6 +29024,40 @@
           "fee_usd": null,
           "fill_quality": null,
           "strategy": "raw_forecast_raw"
+        }
+      ]
+    },
+    {
+      "condition_id": "0x358ed382a898ce1eb8f3ef988cb09e1bf00a5a91fa66ac66cd2e10217f8f6818",
+      "city": "Helsinki",
+      "market_type": "high",
+      "bracket": "exact 19",
+      "bracket_type": "exact",
+      "resolution_date": "2026-05-02",
+      "game_start_time": null,
+      "last_placement_time": null,
+      "effective_close_time": null,
+      "market_end_date": "2026-05-02T12:00:00+00:00",
+      "market_slug": "highest-temperature-in-helsinki-on-may-2-2026-19c",
+      "resolved_at": null,
+      "outcome": null,
+      "resolution_source": null,
+      "state": "legacy",
+      "bets": [
+        {
+          "id": 1775,
+          "placed_at": "2026-05-02T11:09:00.478183+00:00",
+          "size_usd": 2.0,
+          "filled_shares": 2000.0,
+          "filled_vwap": 0.001,
+          "model_prob": 0.09469024904067813,
+          "best_ask_at_placement": 0.001,
+          "limit_price": 0.001,
+          "outcome": null,
+          "realized_pnl_usd": null,
+          "fee_usd": null,
+          "fill_quality": null,
+          "strategy": "adjacency"
         }
       ]
     },
