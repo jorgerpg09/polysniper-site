@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-05-02T08:12:47.107621+00:00",
+  "updated_at": "2026-05-02T08:22:47.084333+00:00",
   "hit_rate": 0.3077,
   "theoretical_pnl": 16.8158,
-  "trade_count": 280,
+  "trade_count": 282,
   "active_cities": 12,
   "daily_pnl": [
     {
@@ -15,6 +15,36 @@
     }
   ],
   "recent_trades": [
+    {
+      "logged_at": "2026-05-02T08:21:44.363849+00:00",
+      "city": "London",
+      "bracket": "exact 23",
+      "market_type": "high",
+      "model_prob": 0.21362668793471368,
+      "market_ask": 0.16,
+      "edge": 0.053626687934713674,
+      "kelly_size_usdc": 2.0,
+      "outcome": "PENDING",
+      "resolution_date": "2026-05-02",
+      "strategy": "adjacency_capped",
+      "market_slug": "highest-temperature-in-london-on-may-2-2026-23c",
+      "boundary_convention": "round"
+    },
+    {
+      "logged_at": "2026-05-02T08:19:44.286488+00:00",
+      "city": "London",
+      "bracket": "exact 23",
+      "market_type": "high",
+      "model_prob": 0.21362668793471368,
+      "market_ask": 0.207,
+      "edge": 0.0066266879347136876,
+      "kelly_size_usdc": 2.0,
+      "outcome": "PENDING",
+      "resolution_date": "2026-05-02",
+      "strategy": "adjacency",
+      "market_slug": "highest-temperature-in-london-on-may-2-2026-23c",
+      "boundary_convention": "round"
+    },
     {
       "logged_at": "2026-05-02T06:41:00.334807+00:00",
       "city": "Paris",
@@ -477,21 +507,6 @@
       "outcome": "LOSS",
       "resolution_date": "2026-05-02",
       "strategy": "adjacency_hourly",
-      "market_slug": "lowest-temperature-in-paris-on-may-2-2026-15c",
-      "boundary_convention": "round"
-    },
-    {
-      "logged_at": "2026-05-01T23:37:42.503296+00:00",
-      "city": "Paris",
-      "bracket": "exact 15",
-      "market_type": "low",
-      "model_prob": 0.33741982101194135,
-      "market_ask": 0.12,
-      "edge": 0.21741982101194135,
-      "kelly_size_usdc": 2.0,
-      "outcome": "LOSS",
-      "resolution_date": "2026-05-02",
-      "strategy": "adjacency_capped",
       "market_slug": "lowest-temperature-in-paris-on-may-2-2026-15c",
       "boundary_convention": "round"
     },
@@ -1653,15 +1668,15 @@
   ],
   "strategies": {
     "adjacency": {
-      "bets": 19,
+      "bets": 20,
       "resolved": 12,
       "wins": 2,
       "pnl_usd": -5.0807,
       "bankroll": {
         "start": 1000.0,
         "current": 989.411,
-        "open_stake": 18.0,
-        "available": 971.411,
+        "open_stake": 20.0,
+        "available": 969.411,
         "daily_loss": 5.6742
       },
       "by_boundary": {
@@ -1672,7 +1687,7 @@
           "pnl_usd": 0.0
         },
         "round": {
-          "bets": 19,
+          "bets": 20,
           "resolved": 12,
           "wins": 2,
           "pnl_usd": -5.0807
@@ -1680,15 +1695,15 @@
       }
     },
     "adjacency_capped": {
-      "bets": 137,
+      "bets": 138,
       "resolved": 82,
       "wins": 10,
       "pnl_usd": -102.9551,
       "bankroll": {
         "start": 1000.0,
         "current": 900.986,
-        "open_stake": 2.0,
-        "available": 898.986,
+        "open_stake": 4.0,
+        "available": 896.986,
         "daily_loss": 58.4902
       },
       "by_boundary": {
@@ -1699,7 +1714,7 @@
           "pnl_usd": 0.0
         },
         "round": {
-          "bets": 137,
+          "bets": 138,
           "resolved": 82,
           "wins": 10,
           "pnl_usd": -102.9551
