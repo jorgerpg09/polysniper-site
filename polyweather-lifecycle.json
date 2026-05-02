@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-05-02T05:32:49.060586+00:00",
-  "now": "2026-05-02T05:32:49.060586+00:00",
+  "updated_at": "2026-05-02T05:42:48.672146+00:00",
+  "now": "2026-05-02T05:42:48.672146+00:00",
   "markets": [
     {
       "condition_id": "0x4276f86bfa6d55d31ee884308c67fc221e71f30db6c7ba228d11e14b6e79ea09",
@@ -27415,10 +27415,10 @@
       "effective_close_time": null,
       "market_end_date": "2026-05-01T12:00:00+00:00",
       "market_slug": "highest-temperature-in-sao-paulo-on-may-1-2026-27c",
-      "resolved_at": null,
-      "outcome": null,
-      "resolution_source": null,
-      "state": "legacy",
+      "resolved_at": "2026-05-01T11:10:48.210523+00:00",
+      "outcome": "win",
+      "resolution_source": "uma_resolved",
+      "state": "resolved",
       "bets": [
         {
           "id": 1518,
@@ -27429,9 +27429,9 @@
           "model_prob": 0.2753284115032165,
           "best_ask_at_placement": 0.36,
           "limit_price": 0.36,
-          "outcome": null,
-          "realized_pnl_usd": null,
-          "fee_usd": null,
+          "outcome": "win",
+          "realized_pnl_usd": 1.7458,
+          "fee_usd": 0.032,
           "fill_quality": null,
           "strategy": "raw_forecast_raw"
         },
@@ -27444,9 +27444,9 @@
           "model_prob": 0.24701169526197897,
           "best_ask_at_placement": 0.5,
           "limit_price": 0.5,
-          "outcome": null,
-          "realized_pnl_usd": null,
-          "fee_usd": null,
+          "outcome": "win",
+          "realized_pnl_usd": 0.975,
+          "fee_usd": 0.025,
           "fill_quality": null,
           "strategy": "raw_forecast_corrected"
         },
@@ -27971,10 +27971,10 @@
       "effective_close_time": null,
       "market_end_date": "2026-05-01T12:00:00+00:00",
       "market_slug": "highest-temperature-in-sao-paulo-on-may-1-2026-28c",
-      "resolved_at": null,
-      "outcome": null,
-      "resolution_source": null,
-      "state": "legacy",
+      "resolved_at": "2026-04-30T12:43:03.638856+00:00",
+      "outcome": "loss",
+      "resolution_source": "uma_resolved",
+      "state": "resolved",
       "bets": [
         {
           "id": 1517,
@@ -27985,9 +27985,9 @@
           "model_prob": 0.3125921325358283,
           "best_ask_at_placement": 0.4,
           "limit_price": 0.4,
-          "outcome": null,
-          "realized_pnl_usd": null,
-          "fee_usd": null,
+          "outcome": "loss",
+          "realized_pnl_usd": -1.03,
+          "fee_usd": 0.03,
           "fill_quality": null,
           "strategy": "raw_forecast_corrected"
         }
@@ -29438,6 +29438,21 @@
           "fee_usd": null,
           "fill_quality": null,
           "strategy": "raw_forecast_corrected"
+        },
+        {
+          "id": 1764,
+          "placed_at": "2026-05-02T05:32:50.021143+00:00",
+          "size_usd": 2.0,
+          "filled_shares": 20.77,
+          "filled_vwap": 0.022,
+          "model_prob": 0.23084015538475006,
+          "best_ask_at_placement": 0.022,
+          "limit_price": 0.022,
+          "outcome": null,
+          "realized_pnl_usd": null,
+          "fee_usd": null,
+          "fill_quality": null,
+          "strategy": "adjacency"
         }
       ]
     },
