@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-05-02T01:52:48.942823+00:00",
-  "now": "2026-05-02T01:52:48.942823+00:00",
+  "updated_at": "2026-05-02T02:02:48.917817+00:00",
+  "now": "2026-05-02T02:02:48.917817+00:00",
   "markets": [
     {
       "condition_id": "0x4276f86bfa6d55d31ee884308c67fc221e71f30db6c7ba228d11e14b6e79ea09",
@@ -28395,7 +28395,7 @@
       "resolved_at": null,
       "outcome": null,
       "resolution_source": null,
-      "state": "trading",
+      "state": "after_last_placement",
       "bets": [
         {
           "id": 1741,
@@ -28896,6 +28896,51 @@
           "fee_usd": null,
           "fill_quality": null,
           "strategy": "adjacency_capped"
+        },
+        {
+          "id": 1757,
+          "placed_at": "2026-05-02T01:53:42.435528+00:00",
+          "size_usd": 2.0,
+          "filled_shares": 8.0,
+          "filled_vwap": 0.25,
+          "model_prob": 0.32274800999304243,
+          "best_ask_at_placement": 0.25,
+          "limit_price": 0.25,
+          "outcome": null,
+          "realized_pnl_usd": null,
+          "fee_usd": null,
+          "fill_quality": null,
+          "strategy": "adjacency_capped"
+        },
+        {
+          "id": 1758,
+          "placed_at": "2026-05-02T01:57:41.732969+00:00",
+          "size_usd": 2.0,
+          "filled_shares": 8.0,
+          "filled_vwap": 0.25,
+          "model_prob": 0.32274800999304243,
+          "best_ask_at_placement": 0.25,
+          "limit_price": 0.25,
+          "outcome": null,
+          "realized_pnl_usd": null,
+          "fee_usd": null,
+          "fill_quality": null,
+          "strategy": "adjacency_capped"
+        },
+        {
+          "id": 1759,
+          "placed_at": "2026-05-02T02:01:42.185119+00:00",
+          "size_usd": 2.0,
+          "filled_shares": 6.42,
+          "filled_vwap": 0.25,
+          "model_prob": 0.32274800999304243,
+          "best_ask_at_placement": 0.25,
+          "limit_price": 0.25,
+          "outcome": null,
+          "realized_pnl_usd": null,
+          "fee_usd": null,
+          "fill_quality": null,
+          "strategy": "adjacency_hourly"
         }
       ]
     },
