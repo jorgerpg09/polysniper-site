@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-05-03T20:42:49.026746+00:00",
-  "now": "2026-05-03T20:42:49.026746+00:00",
+  "updated_at": "2026-05-03T20:52:48.929432+00:00",
+  "now": "2026-05-03T20:52:48.929432+00:00",
   "markets": [
     {
       "condition_id": "0x4276f86bfa6d55d31ee884308c67fc221e71f30db6c7ba228d11e14b6e79ea09",
@@ -33028,6 +33028,51 @@
           "id": 1943,
           "placed_at": "2026-05-03T20:28:50.397089+00:00",
           "size_usd": 2.0,
+          "filled_shares": 6.25,
+          "filled_vwap": 0.32,
+          "model_prob": 0.3419072007746811,
+          "best_ask_at_placement": 0.32,
+          "limit_price": 0.32,
+          "outcome": null,
+          "realized_pnl_usd": null,
+          "fee_usd": null,
+          "fill_quality": null,
+          "strategy": "adjacency_capped"
+        },
+        {
+          "id": 1944,
+          "placed_at": "2026-05-03T20:46:49.814178+00:00",
+          "size_usd": 2.0,
+          "filled_shares": 6.0606060606060606,
+          "filled_vwap": 0.32,
+          "model_prob": 0.3419072007746811,
+          "best_ask_at_placement": 0.33,
+          "limit_price": 0.33,
+          "outcome": null,
+          "realized_pnl_usd": null,
+          "fee_usd": null,
+          "fill_quality": null,
+          "strategy": "adjacency_capped"
+        },
+        {
+          "id": 1946,
+          "placed_at": "2026-05-03T20:49:47.600358+00:00",
+          "size_usd": 2.0,
+          "filled_shares": 6.25,
+          "filled_vwap": 0.32,
+          "model_prob": 0.3419072007746811,
+          "best_ask_at_placement": 0.32,
+          "limit_price": 0.32,
+          "outcome": null,
+          "realized_pnl_usd": null,
+          "fee_usd": null,
+          "fill_quality": null,
+          "strategy": "adjacency_capped"
+        },
+        {
+          "id": 1947,
+          "placed_at": "2026-05-03T20:51:48.252454+00:00",
+          "size_usd": 2.0,
           "filled_shares": null,
           "filled_vwap": null,
           "model_prob": 0.3419072007746811,
@@ -33037,7 +33082,7 @@
           "realized_pnl_usd": null,
           "fee_usd": null,
           "fill_quality": null,
-          "strategy": "adjacency_capped"
+          "strategy": "adjacency_hourly"
         }
       ]
     },
@@ -33189,6 +33234,21 @@
           "fee_usd": null,
           "fill_quality": null,
           "strategy": "raw_forecast_corrected"
+        },
+        {
+          "id": 1945,
+          "placed_at": "2026-05-03T20:46:49.814178+00:00",
+          "size_usd": 2.0,
+          "filled_shares": null,
+          "filled_vwap": null,
+          "model_prob": 0.34294233297132737,
+          "best_ask_at_placement": 0.15,
+          "limit_price": 0.15,
+          "outcome": null,
+          "realized_pnl_usd": null,
+          "fee_usd": null,
+          "fill_quality": null,
+          "strategy": "adjacency"
         }
       ]
     }
