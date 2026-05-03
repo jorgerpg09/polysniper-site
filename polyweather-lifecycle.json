@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-05-03T13:42:48.903156+00:00",
-  "now": "2026-05-03T13:42:48.903156+00:00",
+  "updated_at": "2026-05-03T14:12:48.716637+00:00",
+  "now": "2026-05-03T14:12:48.716637+00:00",
   "markets": [
     {
       "condition_id": "0x4276f86bfa6d55d31ee884308c67fc221e71f30db6c7ba228d11e14b6e79ea09",
@@ -31717,6 +31717,21 @@
           "fee_usd": null,
           "fill_quality": null,
           "strategy": "adjacency_hourly"
+        },
+        {
+          "id": 1917,
+          "placed_at": "2026-05-03T14:01:47.767236+00:00",
+          "size_usd": 2.0,
+          "filled_shares": null,
+          "filled_vwap": null,
+          "model_prob": 0.24624020239851885,
+          "best_ask_at_placement": 0.09,
+          "limit_price": 0.09,
+          "outcome": null,
+          "realized_pnl_usd": null,
+          "fee_usd": null,
+          "fill_quality": null,
+          "strategy": "adjacency_hourly"
         }
       ]
     },
@@ -31947,10 +31962,10 @@
       "effective_close_time": null,
       "market_end_date": "2026-05-03T12:00:00+00:00",
       "market_slug": "highest-temperature-in-madrid-on-may-3-2026-19c",
-      "resolved_at": null,
-      "outcome": null,
-      "resolution_source": null,
-      "state": "legacy",
+      "resolved_at": "2026-05-03T09:14:47.898067+00:00",
+      "outcome": "loss",
+      "resolution_source": "uma_resolved",
+      "state": "resolved",
       "bets": [
         {
           "id": 1856,
@@ -31961,9 +31976,9 @@
           "model_prob": 0.2869223618864064,
           "best_ask_at_placement": 0.086,
           "limit_price": 0.086,
-          "outcome": null,
-          "realized_pnl_usd": null,
-          "fee_usd": null,
+          "outcome": "loss",
+          "realized_pnl_usd": -0.8275,
+          "fee_usd": 0.0368,
           "fill_quality": null,
           "strategy": "raw_forecast_corrected"
         },
@@ -31976,9 +31991,9 @@
           "model_prob": 0.2869223618864064,
           "best_ask_at_placement": 0.068,
           "limit_price": 0.068,
-          "outcome": null,
-          "realized_pnl_usd": null,
-          "fee_usd": null,
+          "outcome": "loss",
+          "realized_pnl_usd": -1.7972,
+          "fee_usd": 0.0808,
           "fill_quality": null,
           "strategy": "adjacency"
         },
@@ -31991,9 +32006,9 @@
           "model_prob": 0.2869223618864064,
           "best_ask_at_placement": 0.062,
           "limit_price": 0.062,
-          "outcome": null,
-          "realized_pnl_usd": null,
-          "fee_usd": null,
+          "outcome": "loss",
+          "realized_pnl_usd": -1.9704,
+          "fee_usd": 0.0886,
           "fill_quality": null,
           "strategy": "adjacency_capped"
         },
@@ -32006,9 +32021,9 @@
           "model_prob": 0.2869223618864064,
           "best_ask_at_placement": 0.058,
           "limit_price": 0.058,
-          "outcome": null,
-          "realized_pnl_usd": null,
-          "fee_usd": null,
+          "outcome": "loss",
+          "realized_pnl_usd": -1.8531,
+          "fee_usd": 0.0839,
           "fill_quality": null,
           "strategy": "adjacency_capped"
         },
@@ -32021,9 +32036,9 @@
           "model_prob": 0.2869223618864064,
           "best_ask_at_placement": 0.049,
           "limit_price": 0.049,
-          "outcome": null,
-          "realized_pnl_usd": null,
-          "fee_usd": null,
+          "outcome": "loss",
+          "realized_pnl_usd": -1.7434,
+          "fee_usd": 0.0798,
           "fill_quality": null,
           "strategy": "adjacency_capped"
         },
