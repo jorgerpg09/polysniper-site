@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-05-03T01:22:48.629453+00:00",
-  "now": "2026-05-03T01:22:48.629453+00:00",
+  "updated_at": "2026-05-03T01:32:49.104724+00:00",
+  "now": "2026-05-03T01:32:49.104724+00:00",
   "markets": [
     {
       "condition_id": "0x4276f86bfa6d55d31ee884308c67fc221e71f30db6c7ba228d11e14b6e79ea09",
@@ -30680,6 +30680,51 @@
           "fee_usd": null,
           "fill_quality": null,
           "strategy": "raw_forecast_corrected"
+        },
+        {
+          "id": 1837,
+          "placed_at": "2026-05-03T01:24:46.064636+00:00",
+          "size_usd": 2.0,
+          "filled_shares": 5.555555555555555,
+          "filled_vwap": 0.35,
+          "model_prob": 0.3621152875826278,
+          "best_ask_at_placement": 0.36,
+          "limit_price": 0.36,
+          "outcome": null,
+          "realized_pnl_usd": null,
+          "fee_usd": null,
+          "fill_quality": null,
+          "strategy": "adjacency"
+        },
+        {
+          "id": 1838,
+          "placed_at": "2026-05-03T01:25:47.088933+00:00",
+          "size_usd": 2.0,
+          "filled_shares": 5.714285714285714,
+          "filled_vwap": 0.33,
+          "model_prob": 0.3621152875826278,
+          "best_ask_at_placement": 0.35,
+          "limit_price": 0.35,
+          "outcome": null,
+          "realized_pnl_usd": null,
+          "fee_usd": null,
+          "fill_quality": null,
+          "strategy": "adjacency_capped"
+        },
+        {
+          "id": 1839,
+          "placed_at": "2026-05-03T01:27:47.804335+00:00",
+          "size_usd": 2.0,
+          "filled_shares": null,
+          "filled_vwap": null,
+          "model_prob": 0.3621152875826278,
+          "best_ask_at_placement": 0.33,
+          "limit_price": 0.33,
+          "outcome": null,
+          "realized_pnl_usd": null,
+          "fee_usd": null,
+          "fill_quality": null,
+          "strategy": "adjacency_capped"
         }
       ]
     },
@@ -31151,6 +31196,36 @@
           "fee_usd": null,
           "fill_quality": null,
           "strategy": "adjacency_capped"
+        },
+        {
+          "id": 1836,
+          "placed_at": "2026-05-03T01:23:46.510214+00:00",
+          "size_usd": 2.0,
+          "filled_shares": 7.692307692307692,
+          "filled_vwap": 0.26,
+          "model_prob": 0.34806258814856095,
+          "best_ask_at_placement": 0.26,
+          "limit_price": 0.26,
+          "outcome": null,
+          "realized_pnl_usd": null,
+          "fee_usd": null,
+          "fill_quality": null,
+          "strategy": "adjacency_capped"
+        },
+        {
+          "id": 1840,
+          "placed_at": "2026-05-03T01:27:47.804335+00:00",
+          "size_usd": 2.0,
+          "filled_shares": 7.692307692307692,
+          "filled_vwap": 0.26,
+          "model_prob": 0.34806258814856095,
+          "best_ask_at_placement": 0.26,
+          "limit_price": 0.26,
+          "outcome": null,
+          "realized_pnl_usd": null,
+          "fee_usd": null,
+          "fill_quality": null,
+          "strategy": "adjacency_hourly"
         }
       ]
     }
