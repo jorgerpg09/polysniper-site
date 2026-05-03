@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-05-03T06:42:49.051716+00:00",
-  "now": "2026-05-03T06:42:49.051716+00:00",
+  "updated_at": "2026-05-03T06:52:49.163228+00:00",
+  "now": "2026-05-03T06:52:49.163228+00:00",
   "markets": [
     {
       "condition_id": "0x4276f86bfa6d55d31ee884308c67fc221e71f30db6c7ba228d11e14b6e79ea09",
@@ -31201,8 +31201,8 @@
           "id": 1857,
           "placed_at": "2026-05-03T06:41:00.814683+00:00",
           "size_usd": 1.0,
-          "filled_shares": null,
-          "filled_vwap": null,
+          "filled_shares": 2.564102564102564,
+          "filled_vwap": 0.39,
           "model_prob": 0.3456442050377475,
           "best_ask_at_placement": 0.39,
           "limit_price": 0.39,
@@ -31235,8 +31235,8 @@
           "id": 1856,
           "placed_at": "2026-05-03T06:41:00.814683+00:00",
           "size_usd": 1.0,
-          "filled_shares": null,
-          "filled_vwap": null,
+          "filled_shares": 11.627906976744187,
+          "filled_vwap": 0.068,
           "model_prob": 0.2869223618864064,
           "best_ask_at_placement": 0.086,
           "limit_price": 0.086,
@@ -31245,6 +31245,36 @@
           "fee_usd": null,
           "fill_quality": null,
           "strategy": "raw_forecast_corrected"
+        },
+        {
+          "id": 1858,
+          "placed_at": "2026-05-03T06:43:42.382013+00:00",
+          "size_usd": 2.0,
+          "filled_shares": 29.41176470588235,
+          "filled_vwap": 0.058357,
+          "model_prob": 0.2869223618864064,
+          "best_ask_at_placement": 0.068,
+          "limit_price": 0.068,
+          "outcome": null,
+          "realized_pnl_usd": null,
+          "fee_usd": null,
+          "fill_quality": null,
+          "strategy": "adjacency"
+        },
+        {
+          "id": 1859,
+          "placed_at": "2026-05-03T06:52:40.322784+00:00",
+          "size_usd": 2.0,
+          "filled_shares": null,
+          "filled_vwap": null,
+          "model_prob": 0.2869223618864064,
+          "best_ask_at_placement": 0.062,
+          "limit_price": 0.062,
+          "outcome": null,
+          "realized_pnl_usd": null,
+          "fee_usd": null,
+          "fill_quality": null,
+          "strategy": "adjacency_capped"
         }
       ]
     },
