@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-05-03T17:02:47.252446+00:00",
-  "hit_rate": 0.3017,
-  "theoretical_pnl": 73.7152,
-  "trade_count": 437,
+  "updated_at": "2026-05-03T17:12:47.072524+00:00",
+  "hit_rate": 0.2991,
+  "theoretical_pnl": 72.6882,
+  "trade_count": 438,
   "active_cities": 12,
   "daily_pnl": [
     {
@@ -19,10 +19,25 @@
     },
     {
       "date": "2026-05-03",
-      "cumulative_pnl": 73.7152
+      "cumulative_pnl": 72.6882
     }
   ],
   "recent_trades": [
+    {
+      "logged_at": "2026-05-03T17:03:46.674918+00:00",
+      "city": "Sao Paulo",
+      "bracket": "exact 21",
+      "market_type": "high",
+      "model_prob": 0.24624020239851885,
+      "market_ask": 0.01,
+      "edge": 0.23624020239851884,
+      "kelly_size_usdc": 2.0,
+      "outcome": "PENDING",
+      "resolution_date": "2026-05-03",
+      "strategy": "adjacency_hourly",
+      "market_slug": "highest-temperature-in-sao-paulo-on-may-3-2026-21c",
+      "boundary_convention": "round"
+    },
     {
       "logged_at": "2026-05-03T16:02:48.427277+00:00",
       "city": "Sao Paulo",
@@ -1202,7 +1217,7 @@
       "market_ask": 0.46,
       "edge": -0.24498631841216872,
       "kelly_size_usdc": 1.0,
-      "outcome": "PENDING",
+      "outcome": "LOSS",
       "resolution_date": "2026-05-03",
       "strategy": "raw_forecast_corrected",
       "market_slug": "highest-temperature-in-london-on-may-3-2026-19c",
@@ -1704,21 +1719,6 @@
       "boundary_convention": "round"
     },
     {
-      "logged_at": "2026-05-01T12:41:00.344318+00:00",
-      "city": "Madrid",
-      "bracket": "exact 24",
-      "market_type": "high",
-      "model_prob": 0.28991331142277127,
-      "market_ask": 0.1,
-      "edge": 0.18991331142277126,
-      "kelly_size_usdc": 2.0,
-      "outcome": "PENDING",
-      "resolution_date": "2026-05-01",
-      "strategy": "adjacency_hourly",
-      "market_slug": "highest-temperature-in-madrid-on-may-1-2026-24c",
-      "boundary_convention": "round"
-    },
-    {
       "logged_at": "2026-05-01T11:09:00.539650+00:00",
       "city": "Lagos",
       "bracket": "below 28",
@@ -1850,7 +1850,7 @@
       }
     },
     "adjacency_hourly": {
-      "bets": 44,
+      "bets": 45,
       "resolved": 24,
       "wins": 6,
       "pnl_usd": 12.1138,
@@ -1869,7 +1869,7 @@
           "pnl_usd": 0.0
         },
         "round": {
-          "bets": 44,
+          "bets": 45,
           "resolved": 24,
           "wins": 6,
           "pnl_usd": 12.1138
@@ -1932,15 +1932,15 @@
     },
     "raw_forecast_corrected": {
       "bets": 57,
-      "resolved": 40,
+      "resolved": 41,
       "wins": 11,
-      "pnl_usd": -6.6147,
+      "pnl_usd": -7.6417,
       "bankroll": {
         "start": 10000.0,
-        "current": 9987.3683,
-        "open_stake": 15.0,
-        "available": 9972.3683,
-        "daily_loss": 5.628
+        "current": 9986.3413,
+        "open_stake": 14.0,
+        "available": 9972.3413,
+        "daily_loss": 6.655
       },
       "by_boundary": {
         "floor": {
@@ -1951,9 +1951,9 @@
         },
         "round": {
           "bets": 57,
-          "resolved": 40,
+          "resolved": 41,
           "wins": 11,
-          "pnl_usd": -6.6147
+          "pnl_usd": -7.6417
         }
       }
     },
