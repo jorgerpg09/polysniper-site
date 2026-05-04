@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-05-04T00:17:22.028862+00:00",
-  "hit_rate": 0.2893,
-  "theoretical_pnl": 69.8417,
+  "updated_at": "2026-05-04T00:27:22.183235+00:00",
+  "hit_rate": 0.2869,
+  "theoretical_pnl": 68.8082,
   "trade_count": 464,
   "active_cities": 12,
   "daily_pnl": [
@@ -20,6 +20,10 @@
     {
       "date": "2026-05-03",
       "cumulative_pnl": 69.8417
+    },
+    {
+      "date": "2026-05-04",
+      "cumulative_pnl": 68.8082
     }
   ],
   "recent_trades": [
@@ -602,7 +606,7 @@
       "market_ask": 0.33,
       "edge": -0.05350722514199818,
       "kelly_size_usdc": 1.0,
-      "outcome": "PENDING",
+      "outcome": "LOSS",
       "resolution_date": "2026-05-04",
       "strategy": "raw_forecast_corrected",
       "market_slug": "highest-temperature-in-helsinki-on-may-4-2026-10c",
@@ -1977,15 +1981,15 @@
     },
     "raw_forecast_corrected": {
       "bets": 61,
-      "resolved": 42,
+      "resolved": 43,
       "wins": 11,
-      "pnl_usd": -8.6787,
+      "pnl_usd": -9.7122,
       "bankroll": {
         "start": 10000.0,
-        "current": 9985.3043,
-        "open_stake": 17.0,
-        "available": 9968.3043,
-        "daily_loss": 7.692
+        "current": 9984.2708,
+        "open_stake": 16.0,
+        "available": 9968.2708,
+        "daily_loss": 1.0335
       },
       "by_boundary": {
         "floor": {
@@ -1996,9 +2000,9 @@
         },
         "round": {
           "bets": 61,
-          "resolved": 42,
+          "resolved": 43,
           "wins": 11,
-          "pnl_usd": -8.6787
+          "pnl_usd": -9.7122
         }
       }
     },
