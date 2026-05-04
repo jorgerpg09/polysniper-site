@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-05-04T13:36:35.608099+00:00",
+  "updated_at": "2026-05-04T13:46:35.108416+00:00",
   "hit_rate": 0.3041,
   "theoretical_pnl": 103.698,
   "trade_count": 499,
@@ -606,7 +606,7 @@
       "market_ask": 0.68,
       "edge": -0.5381106652850868,
       "kelly_size_usdc": 1.0,
-      "outcome": "PENDING",
+      "outcome": "LOSS",
       "resolution_date": "2026-05-04",
       "strategy": "raw_forecast_raw",
       "market_slug": "lowest-temperature-in-miami-on-may-4-2026-72-73f",
@@ -2023,15 +2023,15 @@
     },
     "raw_forecast_raw": {
       "bets": 61,
-      "resolved": 41,
+      "resolved": 42,
       "wins": 12,
-      "pnl_usd": -17.8566,
+      "pnl_usd": -18.8726,
       "bankroll": {
         "start": 10000.0,
-        "current": 9980.1805,
-        "open_stake": 13.0,
-        "available": 9967.1805,
-        "daily_loss": 4.146
+        "current": 9979.1645,
+        "open_stake": 12.0,
+        "available": 9967.1645,
+        "daily_loss": 5.162
       },
       "by_boundary": {
         "floor": {
@@ -2042,9 +2042,9 @@
         },
         "round": {
           "bets": 61,
-          "resolved": 41,
+          "resolved": 42,
           "wins": 12,
-          "pnl_usd": -17.8566
+          "pnl_usd": -18.8726
         }
       }
     },
