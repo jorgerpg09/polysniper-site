@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-05-04T01:46:35.088213+00:00",
-  "hit_rate": 0.315,
-  "theoretical_pnl": 130.208,
+  "updated_at": "2026-05-04T01:56:35.131381+00:00",
+  "hit_rate": 0.3256,
+  "theoretical_pnl": 132.51,
   "trade_count": 464,
   "active_cities": 12,
   "daily_pnl": [
@@ -19,11 +19,11 @@
     },
     {
       "date": "2026-05-03",
-      "cumulative_pnl": 131.2415
+      "cumulative_pnl": 133.5435
     },
     {
       "date": "2026-05-04",
-      "cumulative_pnl": 130.208
+      "cumulative_pnl": 132.51
     }
   ],
   "recent_trades": [
@@ -1056,7 +1056,7 @@
       "market_ask": 0.44,
       "edge": -0.20790640702876356,
       "kelly_size_usdc": 1.0,
-      "outcome": "PENDING",
+      "outcome": "WIN",
       "resolution_date": "2026-05-03",
       "strategy": "raw_forecast_raw",
       "market_slug": "highest-temperature-in-london-on-may-3-2026-20c",
@@ -1101,7 +1101,7 @@
       "market_ask": 0.48,
       "edge": -0.2709354188809848,
       "kelly_size_usdc": 1.0,
-      "outcome": "PENDING",
+      "outcome": "WIN",
       "resolution_date": "2026-05-03",
       "strategy": "raw_forecast_corrected",
       "market_slug": "highest-temperature-in-london-on-may-3-2026-20c",
@@ -1251,7 +1251,7 @@
       "market_ask": 0.3,
       "edge": 0.009229878560581939,
       "kelly_size_usdc": 1.0,
-      "outcome": "PENDING",
+      "outcome": "LOSS",
       "resolution_date": "2026-05-03",
       "strategy": "raw_forecast_raw",
       "market_slug": "lowest-temperature-in-london-on-may-3-2026-13c",
@@ -1296,7 +1296,7 @@
       "market_ask": 0.23,
       "edge": 0.08451595644094165,
       "kelly_size_usdc": 1.0,
-      "outcome": "PENDING",
+      "outcome": "LOSS",
       "resolution_date": "2026-05-03",
       "strategy": "raw_forecast_corrected",
       "market_slug": "lowest-temperature-in-london-on-may-3-2026-12c",
@@ -1311,7 +1311,7 @@
       "market_ask": 0.49,
       "edge": -0.17989976411442155,
       "kelly_size_usdc": 1.0,
-      "outcome": "PENDING",
+      "outcome": "LOSS",
       "resolution_date": "2026-05-03",
       "strategy": "raw_forecast_corrected",
       "market_slug": "lowest-temperature-in-london-on-may-3-2026-13c",
@@ -1341,7 +1341,7 @@
       "market_ask": 0.23,
       "edge": 0.054788315932993464,
       "kelly_size_usdc": 1.0,
-      "outcome": "PENDING",
+      "outcome": "LOSS",
       "resolution_date": "2026-05-03",
       "strategy": "raw_forecast_raw",
       "market_slug": "lowest-temperature-in-london-on-may-3-2026-12c",
@@ -1981,15 +1981,15 @@
     },
     "raw_forecast_corrected": {
       "bets": 61,
-      "resolved": 45,
-      "wins": 13,
-      "pnl_usd": -1.6663,
+      "resolved": 48,
+      "wins": 14,
+      "pnl_usd": -2.673,
       "bankroll": {
         "start": 10000.0,
-        "current": 9992.3167,
-        "open_stake": 14.0,
-        "available": 9978.3167,
-        "daily_loss": 1.0335
+        "current": 9991.3101,
+        "open_stake": 11.0,
+        "available": 9980.3101,
+        "daily_loss": 3.0975
       },
       "by_boundary": {
         "floor": {
@@ -2000,23 +2000,23 @@
         },
         "round": {
           "bets": 61,
-          "resolved": 45,
-          "wins": 13,
-          "pnl_usd": -1.6663
+          "resolved": 48,
+          "wins": 14,
+          "pnl_usd": -2.673
         }
       }
     },
     "raw_forecast_raw": {
       "bets": 54,
-      "resolved": 35,
-      "wins": 9,
-      "pnl_usd": -17.7488,
+      "resolved": 38,
+      "wins": 10,
+      "pnl_usd": -18.5776,
       "bankroll": {
         "start": 10000.0,
-        "current": 9981.8219,
-        "open_stake": 14.0,
-        "available": 9967.8219,
-        "daily_loss": 1.0285
+        "current": 9980.9931,
+        "open_stake": 11.0,
+        "available": 9969.9931,
+        "daily_loss": 3.102
       },
       "by_boundary": {
         "floor": {
@@ -2027,9 +2027,9 @@
         },
         "round": {
           "bets": 54,
-          "resolved": 35,
-          "wins": 9,
-          "pnl_usd": -17.7488
+          "resolved": 38,
+          "wins": 10,
+          "pnl_usd": -18.5776
         }
       }
     },
