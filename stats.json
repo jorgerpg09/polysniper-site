@@ -1,21 +1,21 @@
 {
-  "updated_at": "2026-05-04T10:24:31.404135+00:00",
-  "total_bets": 42,
-  "wins": 22,
+  "updated_at": "2026-05-04T10:25:34.027716+00:00",
+  "total_bets": 44,
+  "wins": 23,
   "losses": 19,
-  "pending": 1,
-  "win_rate": 53.7,
-  "pnl": -4.95,
-  "kelly_pnl": -5.77,
-  "current_streak": 2,
-  "streak_type": "L",
+  "pending": 2,
+  "win_rate": 54.8,
+  "pnl": -4.31,
+  "kelly_pnl": -4.82,
+  "current_streak": 1,
+  "streak_type": "W",
   "daily": [
     {
       "date": "2026-05-04",
-      "bets": 40,
-      "wins": 22,
+      "bets": 41,
+      "wins": 23,
       "losses": 18,
-      "wr": 55.0
+      "wr": 56.1
     },
     {
       "date": "2026-05-03",
@@ -27,12 +27,30 @@
   ],
   "recent_signals": [
     {
+      "timestamp": "2026-05-04T10:25:29.086939+00:00",
+      "coin": "BTC",
+      "direction": "UP",
+      "entry_price": 0.58,
+      "secs": 28.5,
+      "outcome": "PENDING",
+      "slug": "btc-updown-5m-1777890300"
+    },
+    {
+      "timestamp": "2026-05-04T10:25:25.374519+00:00",
+      "coin": "ETH",
+      "direction": "UP",
+      "entry_price": 0.58,
+      "secs": 24.8,
+      "outcome": "PENDING",
+      "slug": "eth-updown-5m-1777890300"
+    },
+    {
       "timestamp": "2026-05-04T10:15:16.367176+00:00",
       "coin": "BTC",
       "direction": "DOWN",
       "entry_price": 0.6,
       "secs": 15.9,
-      "outcome": "PENDING",
+      "outcome": "WIN",
       "slug": "btc-updown-5m-1777889700"
     },
     {
@@ -187,24 +205,6 @@
       "secs": 16.8,
       "outcome": "WIN",
       "slug": "eth-updown-5m-1777866300"
-    },
-    {
-      "timestamp": "2026-05-04T03:30:08.812128+00:00",
-      "coin": "BTC",
-      "direction": "UP",
-      "entry_price": 0.59,
-      "secs": 8.4,
-      "outcome": "LOSS",
-      "slug": "btc-updown-5m-1777865400"
-    },
-    {
-      "timestamp": "2026-05-04T03:25:18.799447+00:00",
-      "coin": "ETH",
-      "direction": "UP",
-      "entry_price": 0.6,
-      "secs": 18.3,
-      "outcome": "LOSS",
-      "slug": "eth-updown-5m-1777865100"
     }
   ],
   "backtest": {
