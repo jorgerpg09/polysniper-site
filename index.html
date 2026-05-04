@@ -68,8 +68,16 @@
                     <span class="tab-label">Adjacency (1h gap)</span>
                     <span class="tab-meta" data-role="bets">—</span>
                 </button>
-                <button class="strategy-tab" data-strategy="below_tail" role="tab" aria-selected="false" title="Strategy 4 (added 2026-04-29): bet ONLY when modal_early picks a 'below X' bracket. Bypasses EDGE_CAP/PRICE_FLOOR. Empirical 15.6% WR on N=423 with avg 27x payout — exploits market underpricing of cold tails × model cold-bias on NYC/Atlanta/Lagos/Sao Paulo/Seoul. $500 bankroll, $50 daily cap, $2 stake.">
+                <button class="strategy-tab" data-strategy="below_tail" role="tab" aria-selected="false" title="Strategy 4 (added 2026-04-29, FROZEN 2026-05-04): bet ONLY when modal_early picks a 'below X' bracket. 0/5 WR on live data — same shape as tail_longshot's 0/59 failure. Apparent edge only existed because model had uncorrected cold bias. $500 bankroll, $50 daily cap, $2 stake.">
                     <span class="tab-label">Below tail</span>
+                    <span class="tab-meta" data-role="bets">—</span>
+                </button>
+                <button class="strategy-tab" data-strategy="consensus_fires" role="tab" aria-selected="false" title="Strategy 5 (added 2026-05-04): bet model's argmax bracket only when ≥3 of last 4 fires of the SAME forecast source (~24h) picked the same bracket. Trades on temporal forecast convergence. $1000 bankroll, $2 stake, strict dedup, 6-18h window, edge ≥ 0.05.">
+                    <span class="tab-label">Consensus (fires)</span>
+                    <span class="tab-meta" data-role="bets">—</span>
+                </button>
+                <button class="strategy-tab" data-strategy="consensus_models" role="tab" aria-selected="false" title="Strategy 6 (added 2026-05-04): bet model's argmax bracket only when the most recent OTHER source's argmax (within 8h) agrees. Trades on cross-model agreement (GFS ↔ ECMWF independent confirmation). $1000 bankroll, $2 stake, strict dedup, 6-18h window, edge ≥ 0.05.">
+                    <span class="tab-label">Consensus (models)</span>
                     <span class="tab-meta" data-role="bets">—</span>
                 </button>
             </div>
