@@ -1,32 +1,47 @@
 {
-  "updated_at": "2026-05-04T05:16:35.097926+00:00",
-  "hit_rate": 0.3256,
-  "theoretical_pnl": 132.51,
-  "trade_count": 470,
+  "updated_at": "2026-05-04T05:26:35.068436+00:00",
+  "hit_rate": 0.3409,
+  "theoretical_pnl": 133.317,
+  "trade_count": 471,
   "active_cities": 12,
   "daily_pnl": [
     {
       "date": "2026-04-30",
-      "cumulative_pnl": -6.044
+      "cumulative_pnl": -5.237
     },
     {
       "date": "2026-05-01",
-      "cumulative_pnl": 16.8158
+      "cumulative_pnl": 17.6228
     },
     {
       "date": "2026-05-02",
-      "cumulative_pnl": 89.1015
+      "cumulative_pnl": 89.9085
     },
     {
       "date": "2026-05-03",
-      "cumulative_pnl": 133.5435
+      "cumulative_pnl": 134.3505
     },
     {
       "date": "2026-05-04",
-      "cumulative_pnl": 132.51
+      "cumulative_pnl": 133.317
     }
   ],
   "recent_trades": [
+    {
+      "logged_at": "2026-05-04T05:16:39.765213+00:00",
+      "city": "Madrid",
+      "bracket": "exact 19",
+      "market_type": "high",
+      "model_prob": 0.2285436197828835,
+      "market_ask": 0.21,
+      "edge": 0.01854361978288352,
+      "kelly_size_usdc": 2.0,
+      "outcome": "PENDING",
+      "resolution_date": "2026-05-04",
+      "strategy": "adjacency_hourly",
+      "market_slug": "highest-temperature-in-madrid-on-may-4-2026-19c",
+      "boundary_convention": "round"
+    },
     {
       "logged_at": "2026-05-04T05:13:40.130756+00:00",
       "city": "Madrid",
@@ -1753,21 +1768,6 @@
       "boundary_convention": "round"
     },
     {
-      "logged_at": "2026-05-01T13:43:33.950862+00:00",
-      "city": "Madrid",
-      "bracket": "exact 24",
-      "market_type": "high",
-      "model_prob": 0.28991331142277127,
-      "market_ask": 0.28,
-      "edge": 0.009913311422771243,
-      "kelly_size_usdc": 2.0,
-      "outcome": "PENDING",
-      "resolution_date": "2026-05-01",
-      "strategy": "adjacency_hourly",
-      "market_slug": "highest-temperature-in-madrid-on-may-1-2026-24c",
-      "boundary_convention": "round"
-    },
-    {
       "logged_at": "2026-05-01T11:09:00.539650+00:00",
       "city": "Lagos",
       "bracket": "below 28",
@@ -1846,14 +1846,14 @@
   "strategies": {
     "adjacency": {
       "bets": 34,
-      "resolved": 18,
-      "wins": 5,
-      "pnl_usd": 17.6636,
+      "resolved": 19,
+      "wins": 6,
+      "pnl_usd": 18.0562,
       "bankroll": {
         "start": 1000.0,
-        "current": 1007.9555,
-        "open_stake": 10.0,
-        "available": 997.9555,
+        "current": 1008.3481,
+        "open_stake": 8.0,
+        "available": 1000.3481,
         "daily_loss": 0.0
       },
       "by_boundary": {
@@ -1865,9 +1865,9 @@
         },
         "round": {
           "bets": 34,
-          "resolved": 18,
-          "wins": 5,
-          "pnl_usd": 17.6636
+          "resolved": 19,
+          "wins": 6,
+          "pnl_usd": 18.0562
         }
       }
     },
@@ -1899,15 +1899,15 @@
       }
     },
     "adjacency_hourly": {
-      "bets": 46,
+      "bets": 47,
       "resolved": 27,
       "wins": 9,
       "pnl_usd": 27.7988,
       "bankroll": {
         "start": 1000.0,
         "current": 1027.6952,
-        "open_stake": 2.0,
-        "available": 1025.6952,
+        "open_stake": 4.0,
+        "available": 1023.6952,
         "daily_loss": 0.0
       },
       "by_boundary": {
@@ -1918,7 +1918,7 @@
           "pnl_usd": 0.0
         },
         "round": {
-          "bets": 46,
+          "bets": 47,
           "resolved": 27,
           "wins": 9,
           "pnl_usd": 27.7988
@@ -1981,14 +1981,14 @@
     },
     "raw_forecast_corrected": {
       "bets": 64,
-      "resolved": 48,
-      "wins": 14,
-      "pnl_usd": -2.673,
+      "resolved": 49,
+      "wins": 15,
+      "pnl_usd": -2.4899,
       "bankroll": {
         "start": 10000.0,
-        "current": 9991.3101,
-        "open_stake": 13.0,
-        "available": 9978.3101,
+        "current": 9991.4932,
+        "open_stake": 12.0,
+        "available": 9979.4932,
         "daily_loss": 3.0975
       },
       "by_boundary": {
@@ -2000,22 +2000,22 @@
         },
         "round": {
           "bets": 64,
-          "resolved": 48,
-          "wins": 14,
-          "pnl_usd": -2.673
+          "resolved": 49,
+          "wins": 15,
+          "pnl_usd": -2.4899
         }
       }
     },
     "raw_forecast_raw": {
       "bets": 56,
-      "resolved": 39,
-      "wins": 11,
-      "pnl_usd": -17.044,
+      "resolved": 40,
+      "wins": 12,
+      "pnl_usd": -16.8127,
       "bankroll": {
         "start": 10000.0,
-        "current": 9980.9931,
-        "open_stake": 10.0,
-        "available": 9970.9931,
+        "current": 9981.2244,
+        "open_stake": 9.0,
+        "available": 9972.2244,
         "daily_loss": 3.102
       },
       "by_boundary": {
@@ -2027,9 +2027,9 @@
         },
         "round": {
           "bets": 56,
-          "resolved": 39,
-          "wins": 11,
-          "pnl_usd": -17.044
+          "resolved": 40,
+          "wins": 12,
+          "pnl_usd": -16.8127
         }
       }
     },
