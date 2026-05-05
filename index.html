@@ -72,14 +72,11 @@
                     <span class="tab-label">Below tail</span>
                     <span class="tab-meta" data-role="bets">—</span>
                 </button>
-                <button class="strategy-tab" data-strategy="consensus_fires" role="tab" aria-selected="false" title="Strategy 5 (added 2026-05-04): bet model's argmax bracket only when ≥3 of last 4 fires of the SAME forecast source (~24h) picked the same bracket. Trades on temporal forecast convergence. $1000 bankroll, $2 stake, strict dedup, 6-18h window, edge ≥ 0.05.">
-                    <span class="tab-label">Consensus (fires)</span>
-                    <span class="tab-meta" data-role="bets">—</span>
-                </button>
-                <button class="strategy-tab" data-strategy="consensus_models" role="tab" aria-selected="false" title="Strategy 6 (added 2026-05-04): bet model's argmax bracket only when the most recent OTHER source's argmax (within 8h) agrees. Trades on cross-model agreement (GFS ↔ ECMWF independent confirmation). $1000 bankroll, $2 stake, strict dedup, 6-18h window, edge ≥ 0.05.">
-                    <span class="tab-label">Consensus (models)</span>
-                    <span class="tab-meta" data-role="bets">—</span>
-                </button>
+                <!-- consensus_fires + consensus_models tabs hidden 2026-05-05.
+                     Strategies disabled in PolyWeather config — projected ~3-5
+                     bets/week was too slow vs other strategies firing 2/day.
+                     signal_cycle_brackets keeps logging; re-evaluate offline
+                     in ~2 weeks via scripts/consensus_backtest.py. -->
             </div>
 
             <!-- Boundary-convention filter (added 2026-04-25). Default ON =
