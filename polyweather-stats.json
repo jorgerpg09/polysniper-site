@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-05-05T18:33:05.168850+00:00",
+  "updated_at": "2026-05-05T18:43:05.112455+00:00",
   "hit_rate": 0.2541,
   "theoretical_pnl": 53.6669,
-  "trade_count": 548,
+  "trade_count": 550,
   "active_cities": 12,
   "daily_pnl": [
     {
@@ -31,6 +31,36 @@
     }
   ],
   "recent_trades": [
+    {
+      "logged_at": "2026-05-05T18:42:25.877188+00:00",
+      "city": "New York City",
+      "bracket": "between 74 and 75",
+      "market_type": "high",
+      "model_prob": 0.18165297538713027,
+      "market_ask": 0.001,
+      "edge": 0.18065297538713027,
+      "kelly_size_usdc": 1.0,
+      "outcome": "PENDING",
+      "resolution_date": "2026-05-05",
+      "strategy": "tail_longshot",
+      "market_slug": "highest-temperature-in-nyc-on-may-5-2026-74-75f",
+      "boundary_convention": "round"
+    },
+    {
+      "logged_at": "2026-05-05T18:41:08.328774+00:00",
+      "city": "Sao Paulo",
+      "bracket": "exact 28",
+      "market_type": "high",
+      "model_prob": 0.31918906796878144,
+      "market_ask": 0.001,
+      "edge": 0.31818906796878144,
+      "kelly_size_usdc": 2.0,
+      "outcome": "PENDING",
+      "resolution_date": "2026-05-05",
+      "strategy": "adjacency_hourly",
+      "market_slug": "highest-temperature-in-sao-paulo-on-may-5-2026-28c",
+      "boundary_convention": "round"
+    },
     {
       "logged_at": "2026-05-05T17:13:05.722852+00:00",
       "city": "Sao Paulo",
@@ -644,21 +674,6 @@
       "resolution_date": "2026-05-05",
       "strategy": "raw_forecast_raw",
       "market_slug": "highest-temperature-in-sao-paulo-on-may-5-2026-28c",
-      "boundary_convention": "round"
-    },
-    {
-      "logged_at": "2026-05-04T18:00:14.737240+00:00",
-      "city": "Sao Paulo",
-      "bracket": "exact 26",
-      "market_type": "high",
-      "model_prob": 0.2454512170984029,
-      "market_ask": 0.01,
-      "edge": 0.2354512170984029,
-      "kelly_size_usdc": 2.0,
-      "outcome": "PENDING",
-      "resolution_date": "2026-05-04",
-      "strategy": "adjacency_hourly",
-      "market_slug": "highest-temperature-in-sao-paulo-on-may-4-2026-26c",
       "boundary_convention": "round"
     },
     {
@@ -1948,15 +1963,15 @@
       }
     },
     "adjacency_hourly": {
-      "bets": 84,
+      "bets": 85,
       "resolved": 43,
       "wins": 9,
       "pnl_usd": -4.1098,
       "bankroll": {
         "start": 1000.0,
         "current": 993.6867,
-        "open_stake": 16.0,
-        "available": 977.6867,
+        "open_stake": 18.0,
+        "available": 975.6867,
         "daily_loss": 19.5939
       },
       "by_boundary": {
@@ -1967,7 +1982,7 @@
           "pnl_usd": 0.0
         },
         "round": {
-          "bets": 84,
+          "bets": 85,
           "resolved": 43,
           "wins": 9,
           "pnl_usd": -4.1098
@@ -2137,15 +2152,15 @@
       }
     },
     "tail_longshot": {
-      "bets": 17,
+      "bets": 18,
       "resolved": 15,
       "wins": 0,
       "pnl_usd": -9.7502,
       "bankroll": {
         "start": 100.0,
         "current": 90.2499,
-        "open_stake": 0.0,
-        "available": 90.2499,
+        "open_stake": 1.0,
+        "available": 89.2499,
         "daily_loss": 1.0289
       },
       "by_boundary": {
@@ -2156,7 +2171,7 @@
           "pnl_usd": 0.0
         },
         "round": {
-          "bets": 17,
+          "bets": 18,
           "resolved": 15,
           "wins": 0,
           "pnl_usd": -9.7502
