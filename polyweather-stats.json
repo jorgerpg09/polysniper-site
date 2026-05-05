@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-05-05T05:32:07.815529+00:00",
+  "updated_at": "2026-05-05T05:42:07.782847+00:00",
   "hit_rate": 0.2611,
   "theoretical_pnl": 61.893,
-  "trade_count": 513,
+  "trade_count": 515,
   "active_cities": 12,
   "daily_pnl": [
     {
@@ -27,6 +27,36 @@
     }
   ],
   "recent_trades": [
+    {
+      "logged_at": "2026-05-05T05:39:14.813384+00:00",
+      "city": "Madrid",
+      "bracket": "exact 18",
+      "market_type": "high",
+      "model_prob": 0.24035702589921526,
+      "market_ask": 0.13,
+      "edge": 0.11035702589921526,
+      "kelly_size_usdc": 2.0,
+      "outcome": "PENDING",
+      "resolution_date": "2026-05-05",
+      "strategy": "adjacency_hourly",
+      "market_slug": "highest-temperature-in-madrid-on-may-5-2026-18c",
+      "boundary_convention": "round"
+    },
+    {
+      "logged_at": "2026-05-05T05:32:13.410897+00:00",
+      "city": "Madrid",
+      "bracket": "exact 18",
+      "market_type": "high",
+      "model_prob": 0.24035702589921526,
+      "market_ask": 0.14,
+      "edge": 0.10035702589921525,
+      "kelly_size_usdc": 2.0,
+      "outcome": "PENDING",
+      "resolution_date": "2026-05-05",
+      "strategy": "adjacency",
+      "market_slug": "highest-temperature-in-madrid-on-may-5-2026-18c",
+      "boundary_convention": "round"
+    },
     {
       "logged_at": "2026-05-05T05:11:00.487202+00:00",
       "city": "Helsinki",
@@ -655,21 +685,6 @@
       "resolution_date": "2026-05-04",
       "strategy": "adjacency",
       "market_slug": "highest-temperature-in-helsinki-on-may-4-2026-11c",
-      "boundary_convention": "round"
-    },
-    {
-      "logged_at": "2026-05-04T05:16:39.765213+00:00",
-      "city": "Madrid",
-      "bracket": "exact 19",
-      "market_type": "high",
-      "model_prob": 0.2285436197828835,
-      "market_ask": 0.21,
-      "edge": 0.01854361978288352,
-      "kelly_size_usdc": 2.0,
-      "outcome": "LOSS",
-      "resolution_date": "2026-05-04",
-      "strategy": "adjacency_hourly",
-      "market_slug": "highest-temperature-in-madrid-on-may-4-2026-19c",
       "boundary_convention": "round"
     },
     {
@@ -1723,21 +1738,6 @@
       "boundary_convention": "round"
     },
     {
-      "logged_at": "2026-05-02T11:09:00.478183+00:00",
-      "city": "Helsinki",
-      "bracket": "exact 19",
-      "market_type": "high",
-      "model_prob": 0.09469024904067813,
-      "market_ask": 0.001,
-      "edge": 0.09369024904067813,
-      "kelly_size_usdc": 2.0,
-      "outcome": "LOSS",
-      "resolution_date": "2026-05-02",
-      "strategy": "adjacency",
-      "market_slug": "highest-temperature-in-helsinki-on-may-2-2026-19c",
-      "boundary_convention": "round"
-    },
-    {
       "logged_at": "2026-05-02T03:18:45.271903+00:00",
       "city": "New York City",
       "bracket": "between 46 and 47",
@@ -1890,15 +1890,15 @@
   ],
   "strategies": {
     "adjacency": {
-      "bets": 38,
+      "bets": 39,
       "resolved": 26,
       "wins": 7,
       "pnl_usd": 17.7192,
       "bankroll": {
         "start": 1000.0,
         "current": 1008.0112,
-        "open_stake": 0.0,
-        "available": 1008.0112,
+        "open_stake": 2.0,
+        "available": 1006.0112,
         "daily_loss": 6.0637
       },
       "by_boundary": {
@@ -1909,7 +1909,7 @@
           "pnl_usd": 0.0
         },
         "round": {
-          "bets": 38,
+          "bets": 39,
           "resolved": 26,
           "wins": 7,
           "pnl_usd": 17.7192
@@ -1944,15 +1944,15 @@
       }
     },
     "adjacency_hourly": {
-      "bets": 65,
+      "bets": 66,
       "resolved": 41,
       "wins": 9,
       "pnl_usd": 0.0712,
       "bankroll": {
         "start": 1000.0,
         "current": 997.8677,
-        "open_stake": 0.0,
-        "available": 997.8677,
+        "open_stake": 2.0,
+        "available": 995.8677,
         "daily_loss": 15.4129
       },
       "by_boundary": {
@@ -1963,7 +1963,7 @@
           "pnl_usd": 0.0
         },
         "round": {
-          "bets": 65,
+          "bets": 66,
           "resolved": 41,
           "wins": 9,
           "pnl_usd": 0.0712
