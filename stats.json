@@ -1,21 +1,21 @@
 {
-  "updated_at": "2026-05-05T14:05:01.738317+00:00",
-  "total_bets": 148,
-  "wins": 88,
+  "updated_at": "2026-05-05T14:06:03.803389+00:00",
+  "total_bets": 150,
+  "wins": 89,
   "losses": 59,
-  "pending": 1,
-  "win_rate": 59.9,
-  "pnl": -1.65,
-  "kelly_pnl": -3.07,
-  "current_streak": 2,
-  "streak_type": "L",
+  "pending": 2,
+  "win_rate": 60.1,
+  "pnl": -0.99,
+  "kelly_pnl": -2.08,
+  "current_streak": 1,
+  "streak_type": "W",
   "daily": [
     {
       "date": "2026-05-05",
-      "bets": 63,
-      "wins": 39,
+      "bets": 64,
+      "wins": 40,
       "losses": 24,
-      "wr": 61.9
+      "wr": 62.5
     },
     {
       "date": "2026-05-04",
@@ -34,12 +34,30 @@
   ],
   "recent_signals": [
     {
+      "timestamp": "2026-05-05T14:05:22.498489+00:00",
+      "coin": "BTC",
+      "direction": "DOWN",
+      "entry_price": 0.59,
+      "secs": 22.0,
+      "outcome": "PENDING",
+      "slug": "btc-updown-5m-1777989900"
+    },
+    {
+      "timestamp": "2026-05-05T14:05:10.930884+00:00",
+      "coin": "ETH",
+      "direction": "DOWN",
+      "entry_price": 0.58,
+      "secs": 10.3,
+      "outcome": "PENDING",
+      "slug": "eth-updown-5m-1777989900"
+    },
+    {
       "timestamp": "2026-05-05T13:55:12.839003+00:00",
       "coin": "BTC",
       "direction": "DOWN",
       "entry_price": 0.59,
       "secs": 12.4,
-      "outcome": "PENDING",
+      "outcome": "WIN",
       "slug": "btc-updown-5m-1777989300"
     },
     {
@@ -194,24 +212,6 @@
       "secs": 19.6,
       "outcome": "WIN",
       "slug": "btc-updown-5m-1777976400"
-    },
-    {
-      "timestamp": "2026-05-05T10:10:08.558058+00:00",
-      "coin": "ETH",
-      "direction": "UP",
-      "entry_price": 0.59,
-      "secs": 8.2,
-      "outcome": "LOSS",
-      "slug": "eth-updown-5m-1777975800"
-    },
-    {
-      "timestamp": "2026-05-05T10:05:25.903569+00:00",
-      "coin": "ETH",
-      "direction": "UP",
-      "entry_price": 0.6,
-      "secs": 25.3,
-      "outcome": "WIN",
-      "slug": "eth-updown-5m-1777975500"
     }
   ],
   "backtest": {
