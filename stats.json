@@ -1,21 +1,21 @@
 {
-  "updated_at": "2026-05-05T17:49:31.238070+00:00",
-  "total_bets": 181,
+  "updated_at": "2026-05-05T17:50:33.101209+00:00",
+  "total_bets": 183,
   "wins": 104,
-  "losses": 76,
-  "pending": 1,
-  "win_rate": 57.8,
-  "pnl": -8.56,
-  "kelly_pnl": -15.08,
-  "current_streak": 1,
+  "losses": 77,
+  "pending": 2,
+  "win_rate": 57.5,
+  "pnl": -9.59,
+  "kelly_pnl": -16.87,
+  "current_streak": 2,
   "streak_type": "L",
   "daily": [
     {
       "date": "2026-05-05",
-      "bets": 96,
+      "bets": 97,
       "wins": 55,
-      "losses": 41,
-      "wr": 57.3
+      "losses": 42,
+      "wr": 56.7
     },
     {
       "date": "2026-05-04",
@@ -34,12 +34,30 @@
   ],
   "recent_signals": [
     {
+      "timestamp": "2026-05-05T17:50:27.834092+00:00",
+      "coin": "BTC",
+      "direction": "DOWN",
+      "entry_price": 0.59,
+      "secs": 27.3,
+      "outcome": "PENDING",
+      "slug": "btc-updown-5m-1778003400"
+    },
+    {
+      "timestamp": "2026-05-05T17:50:07.909721+00:00",
+      "coin": "ETH",
+      "direction": "DOWN",
+      "entry_price": 0.59,
+      "secs": 7.4,
+      "outcome": "PENDING",
+      "slug": "eth-updown-5m-1778003400"
+    },
+    {
       "timestamp": "2026-05-05T17:40:08.156706+00:00",
       "coin": "ETH",
       "direction": "DOWN",
       "entry_price": 0.58,
       "secs": 7.7,
-      "outcome": "PENDING",
+      "outcome": "LOSS",
       "slug": "eth-updown-5m-1778002800"
     },
     {
@@ -194,24 +212,6 @@
       "secs": 10.0,
       "outcome": "LOSS",
       "slug": "btc-updown-5m-1777995000"
-    },
-    {
-      "timestamp": "2026-05-05T15:25:21.176562+00:00",
-      "coin": "BTC",
-      "direction": "UP",
-      "entry_price": 0.61,
-      "secs": 20.8,
-      "outcome": "LOSS",
-      "slug": "btc-updown-5m-1777994700"
-    },
-    {
-      "timestamp": "2026-05-05T15:20:13.122530+00:00",
-      "coin": "BTC",
-      "direction": "DOWN",
-      "entry_price": 0.58,
-      "secs": 12.7,
-      "outcome": "LOSS",
-      "slug": "btc-updown-5m-1777994400"
     }
   ],
   "backtest": {
