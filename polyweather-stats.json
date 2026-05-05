@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-05-05T08:02:07.787823+00:00",
+  "updated_at": "2026-05-05T08:12:07.844750+00:00",
   "hit_rate": 0.2611,
   "theoretical_pnl": 61.893,
-  "trade_count": 522,
+  "trade_count": 524,
   "active_cities": 12,
   "daily_pnl": [
     {
@@ -27,6 +27,36 @@
     }
   ],
   "recent_trades": [
+    {
+      "logged_at": "2026-05-05T08:06:16.804107+00:00",
+      "city": "Paris",
+      "bracket": "exact 16",
+      "market_type": "high",
+      "model_prob": 0.25289880459285874,
+      "market_ask": 0.23,
+      "edge": 0.02289880459285873,
+      "kelly_size_usdc": 2.0,
+      "outcome": "PENDING",
+      "resolution_date": "2026-05-05",
+      "strategy": "adjacency_hourly",
+      "market_slug": "highest-temperature-in-paris-on-may-5-2026-16c",
+      "boundary_convention": "round"
+    },
+    {
+      "logged_at": "2026-05-05T08:02:11.934415+00:00",
+      "city": "Paris",
+      "bracket": "exact 16",
+      "market_type": "high",
+      "model_prob": 0.25289880459285874,
+      "market_ask": 0.23,
+      "edge": 0.02289880459285873,
+      "kelly_size_usdc": 2.0,
+      "outcome": "PENDING",
+      "resolution_date": "2026-05-05",
+      "strategy": "adjacency",
+      "market_slug": "highest-temperature-in-paris-on-may-5-2026-16c",
+      "boundary_convention": "round"
+    },
     {
       "logged_at": "2026-05-05T07:52:18.881962+00:00",
       "city": "Helsinki",
@@ -685,21 +715,6 @@
       "resolution_date": "2026-05-04",
       "strategy": "adjacency_hourly",
       "market_slug": "highest-temperature-in-madrid-on-may-4-2026-19c",
-      "boundary_convention": "round"
-    },
-    {
-      "logged_at": "2026-05-04T07:08:38.812404+00:00",
-      "city": "Paris",
-      "bracket": "exact 19",
-      "market_type": "high",
-      "model_prob": 0.24422909539519555,
-      "market_ask": 0.19,
-      "edge": 0.05422909539519555,
-      "kelly_size_usdc": 2.0,
-      "outcome": "LOSS",
-      "resolution_date": "2026-05-04",
-      "strategy": "adjacency_hourly",
-      "market_slug": "highest-temperature-in-paris-on-may-4-2026-19c",
       "boundary_convention": "round"
     },
     {
@@ -1709,21 +1724,6 @@
     },
     {
       "logged_at": "2026-05-02T12:41:00.341348+00:00",
-      "city": "Helsinki",
-      "bracket": "exact 20",
-      "market_type": "high",
-      "model_prob": 0.030533184377969036,
-      "market_ask": 0.001,
-      "edge": 0.029533184377969035,
-      "kelly_size_usdc": 2.0,
-      "outcome": "PENDING",
-      "resolution_date": "2026-05-02",
-      "strategy": "adjacency",
-      "market_slug": "highest-temperature-in-helsinki-on-may-2-2026-20c",
-      "boundary_convention": "round"
-    },
-    {
-      "logged_at": "2026-05-02T12:41:00.341348+00:00",
       "city": "Seoul",
       "bracket": "below 7",
       "market_type": "low",
@@ -1890,15 +1890,15 @@
   ],
   "strategies": {
     "adjacency": {
-      "bets": 41,
+      "bets": 42,
       "resolved": 26,
       "wins": 7,
       "pnl_usd": 17.7192,
       "bankroll": {
         "start": 1000.0,
         "current": 1008.0112,
-        "open_stake": 6.0,
-        "available": 1002.0112,
+        "open_stake": 8.0,
+        "available": 1000.0112,
         "daily_loss": 6.0637
       },
       "by_boundary": {
@@ -1909,7 +1909,7 @@
           "pnl_usd": 0.0
         },
         "round": {
-          "bets": 41,
+          "bets": 42,
           "resolved": 26,
           "wins": 7,
           "pnl_usd": 17.7192
@@ -1944,15 +1944,15 @@
       }
     },
     "adjacency_hourly": {
-      "bets": 69,
+      "bets": 70,
       "resolved": 41,
       "wins": 9,
       "pnl_usd": 0.0712,
       "bankroll": {
         "start": 1000.0,
         "current": 997.8677,
-        "open_stake": 8.0,
-        "available": 989.8677,
+        "open_stake": 10.0,
+        "available": 987.8677,
         "daily_loss": 15.4129
       },
       "by_boundary": {
@@ -1963,7 +1963,7 @@
           "pnl_usd": 0.0
         },
         "round": {
-          "bets": 69,
+          "bets": 70,
           "resolved": 41,
           "wins": 9,
           "pnl_usd": 0.0712
