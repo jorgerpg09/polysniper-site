@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-05-05T02:02:07.792280+00:00",
-  "hit_rate": 0.2733,
-  "theoretical_pnl": 73.3769,
+  "updated_at": "2026-05-05T02:12:07.772766+00:00",
+  "hit_rate": 0.2611,
+  "theoretical_pnl": 61.893,
   "trade_count": 508,
   "active_cities": 12,
   "daily_pnl": [
@@ -23,7 +23,7 @@
     },
     {
       "date": "2026-05-04",
-      "cumulative_pnl": 73.3769
+      "cumulative_pnl": 61.893
     }
   ],
   "recent_trades": [
@@ -321,7 +321,7 @@
       "market_ask": 0.42,
       "edge": -0.2533570480643552,
       "kelly_size_usdc": 1.0,
-      "outcome": "PENDING",
+      "outcome": "LOSS",
       "resolution_date": "2026-05-04",
       "strategy": "raw_forecast_raw",
       "market_slug": "highest-temperature-in-london-on-may-4-2026-18c",
@@ -366,7 +366,7 @@
       "market_ask": 0.063,
       "edge": 0.13843623455528858,
       "kelly_size_usdc": 2.0,
-      "outcome": "PENDING",
+      "outcome": "LOSS",
       "resolution_date": "2026-05-04",
       "strategy": "adjacency_hourly",
       "market_slug": "highest-temperature-in-london-on-may-4-2026-19c",
@@ -396,7 +396,7 @@
       "market_ask": 0.061,
       "edge": 0.14043623455528859,
       "kelly_size_usdc": 2.0,
-      "outcome": "PENDING",
+      "outcome": "LOSS",
       "resolution_date": "2026-05-04",
       "strategy": "adjacency_hourly",
       "market_slug": "highest-temperature-in-london-on-may-4-2026-19c",
@@ -426,7 +426,7 @@
       "market_ask": 0.192,
       "edge": 0.00943623455528858,
       "kelly_size_usdc": 2.0,
-      "outcome": "PENDING",
+      "outcome": "LOSS",
       "resolution_date": "2026-05-04",
       "strategy": "adjacency_hourly",
       "market_slug": "highest-temperature-in-london-on-may-4-2026-19c",
@@ -441,7 +441,7 @@
       "market_ask": 0.192,
       "edge": 0.00943623455528858,
       "kelly_size_usdc": 2.0,
-      "outcome": "PENDING",
+      "outcome": "LOSS",
       "resolution_date": "2026-05-04",
       "strategy": "adjacency",
       "market_slug": "highest-temperature-in-london-on-may-4-2026-19c",
@@ -531,7 +531,7 @@
       "market_ask": 0.272,
       "edge": -0.07056376544471143,
       "kelly_size_usdc": 1.0,
-      "outcome": "PENDING",
+      "outcome": "LOSS",
       "resolution_date": "2026-05-04",
       "strategy": "raw_forecast_raw",
       "market_slug": "highest-temperature-in-london-on-may-4-2026-19c",
@@ -636,7 +636,7 @@
       "market_ask": 0.54,
       "edge": -0.3764083215693349,
       "kelly_size_usdc": 1.0,
-      "outcome": "PENDING",
+      "outcome": "LOSS",
       "resolution_date": "2026-05-04",
       "strategy": "raw_forecast_corrected",
       "market_slug": "highest-temperature-in-london-on-may-4-2026-18c",
@@ -1176,7 +1176,7 @@
       "market_ask": 0.27,
       "edge": -0.11304303937714288,
       "kelly_size_usdc": 1.0,
-      "outcome": "PENDING",
+      "outcome": "LOSS",
       "resolution_date": "2026-05-04",
       "strategy": "raw_forecast_corrected",
       "market_slug": "highest-temperature-in-london-on-may-4-2026-19c",
@@ -1891,15 +1891,15 @@
   "strategies": {
     "adjacency": {
       "bets": 38,
-      "resolved": 25,
+      "resolved": 26,
       "wins": 7,
-      "pnl_usd": 19.6413,
+      "pnl_usd": 17.7192,
       "bankroll": {
         "start": 1000.0,
-        "current": 1009.9333,
-        "open_stake": 2.0,
-        "available": 1007.9333,
-        "daily_loss": 4.1416
+        "current": 1008.0112,
+        "open_stake": 0.0,
+        "available": 1008.0112,
+        "daily_loss": 6.0637
       },
       "by_boundary": {
         "floor": {
@@ -1910,9 +1910,9 @@
         },
         "round": {
           "bets": 38,
-          "resolved": 25,
+          "resolved": 26,
           "wins": 7,
-          "pnl_usd": 19.6413
+          "pnl_usd": 17.7192
         }
       }
     },
@@ -1945,15 +1945,15 @@
     },
     "adjacency_hourly": {
       "bets": 65,
-      "resolved": 38,
+      "resolved": 41,
       "wins": 9,
-      "pnl_usd": 5.5561,
+      "pnl_usd": 0.0712,
       "bankroll": {
         "start": 1000.0,
-        "current": 1003.3526,
-        "open_stake": 6.0,
-        "available": 997.3526,
-        "daily_loss": 9.928
+        "current": 997.8677,
+        "open_stake": 0.0,
+        "available": 997.8677,
+        "daily_loss": 15.4129
       },
       "by_boundary": {
         "floor": {
@@ -1964,9 +1964,9 @@
         },
         "round": {
           "bets": 65,
-          "resolved": 38,
+          "resolved": 41,
           "wins": 9,
-          "pnl_usd": 5.5561
+          "pnl_usd": 0.0712
         }
       }
     },
@@ -2080,15 +2080,15 @@
     },
     "raw_forecast_corrected": {
       "bets": 69,
-      "resolved": 59,
+      "resolved": 61,
       "wins": 17,
-      "pnl_usd": -8.437,
+      "pnl_usd": -10.4965,
       "bankroll": {
         "start": 10000.0,
-        "current": 9985.5461,
-        "open_stake": 7.0,
-        "available": 9978.5461,
-        "daily_loss": 2.0665
+        "current": 9983.4866,
+        "open_stake": 5.0,
+        "available": 9978.4866,
+        "daily_loss": 4.126
       },
       "by_boundary": {
         "floor": {
@@ -2099,23 +2099,23 @@
         },
         "round": {
           "bets": 69,
-          "resolved": 59,
+          "resolved": 61,
           "wins": 17,
-          "pnl_usd": -8.437
+          "pnl_usd": -10.4965
         }
       }
     },
     "raw_forecast_raw": {
       "bets": 62,
-      "resolved": 50,
+      "resolved": 52,
       "wins": 13,
-      "pnl_usd": -24.4613,
+      "pnl_usd": -26.4787,
       "bankroll": {
         "start": 10000.0,
-        "current": 9973.5757,
-        "open_stake": 5.0,
-        "available": 9968.5757,
-        "daily_loss": 2.0645
+        "current": 9971.5584,
+        "open_stake": 3.0,
+        "available": 9968.5584,
+        "daily_loss": 4.0819
       },
       "by_boundary": {
         "floor": {
@@ -2126,9 +2126,9 @@
         },
         "round": {
           "bets": 62,
-          "resolved": 50,
+          "resolved": 52,
           "wins": 13,
-          "pnl_usd": -24.4613
+          "pnl_usd": -26.4787
         }
       }
     },
