@@ -462,11 +462,11 @@ function renderLifecycle() {
     const hideOldResolved = document.getElementById('pw-lc-hide-old').checked;
     const strat = currentStrategy();
 
-    // "Hide old resolved" cutoff: anything resolved AND whose resolution_date
-    // is more than 1 day before now is considered stale clutter. Active
-    // markets (trading / awaiting UMA / future) and recently-resolved
-    // markets always show. Default ON because the lifecycle is meant for
-    // active monitoring, not historical review.
+    // "Hide old resolved" cutoff: hide markets whose resolved_at is more than
+    // 24h before now. Was previously based on resolution_date midnight, which
+    // kept markets visible up to ~24h longer than intended. Switched to
+    // resolved_at (the actual UMA resolution timestamp) for tighter control.
+    // 2026-05-06: dropped from 1 day to 24h hard cutoff per user request.
     const ONE_DAY_MS = 24 * 60 * 60 * 1000;
     const oldCutoffMs = nowMs - ONE_DAY_MS;
     let hiddenOldCount = 0;
@@ -480,12 +480,14 @@ function renderLifecycle() {
         if (typeFilter && m.market_type !== typeFilter) return null;
         if (stateFilter && m.state !== stateFilter) return null;
 
-        // Hide-old-resolved cutoff. resolution_date is "YYYY-MM-DD"; we treat
-        // it as midnight UTC end-of-that-day. A market "exact 9 · 04-24" with
-        // resolution_date='2026-04-24' becomes stale once now > 04-25 00:00 UTC.
-        if (hideOldResolved && m.state === 'resolved' && m.resolution_date) {
-            const resEndMs = Date.parse(m.resolution_date + 'T23:59:59Z');
-            if (Number.isFinite(resEndMs) && resEndMs < oldCutoffMs) {
+        // Hide-old-resolved cutoff. Use resolved_at (actual UMA resolution
+        // timestamp) and hide if it's older than 24h. Falls back to
+        // resolution_date midnight if resolved_at missing (legacy data).
+        if (hideOldResolved && m.state === 'resolved') {
+            const refMs = m.resolved_at
+                ? Date.parse(m.resolved_at)
+                : (m.resolution_date ? Date.parse(m.resolution_date + 'T23:59:59Z') : null);
+            if (Number.isFinite(refMs) && refMs < oldCutoffMs) {
                 hiddenOldCount++;
                 return null;
             }
@@ -575,37 +577,36 @@ function drawLifecycleSvg(markets, nowMs) {
     const totalWidth = svg.getBoundingClientRect().width || svg.clientWidth || 900;
     const chartW = totalWidth - MARGIN_LEFT - MARGIN_RIGHT;
 
-    const times = [];
-    for (const m of markets) {
-        if (m.game_start_time) times.push(Date.parse(m.game_start_time));
-        if (m.effective_close_time) times.push(Date.parse(m.effective_close_time));
-        if (m.resolved_at) times.push(Date.parse(m.resolved_at));
-        for (const b of m.bets) if (b.placed_at) times.push(Date.parse(b.placed_at));
-    }
-    if (times.length === 0) { svg.innerHTML = ''; return; }
+    if (markets.length === 0) { svg.innerHTML = ''; return; }
 
-    const tMin = Math.min(...times);
-    const tMax = Math.max(...times, nowMs);
-    const tSpan = tMax - tMin || 1;
+    // 2026-05-06: fixed 48h window centered on NOW (was: dynamic min/max
+    // computed from event timestamps, which made the chart span 36+ hours
+    // and made trading-window zones invisibly small).
+    // Left half: past 24h (recent fills + resolutions); right half: next 24h
+    // (upcoming windows so we can see what's about to start trading).
+    // Anything outside this window is clipped from the chart.
+    const WINDOW_HALF_MS = 24 * 60 * 60 * 1000;
+    const tMin = nowMs - WINDOW_HALF_MS;
+    const tMax = nowMs + WINDOW_HALF_MS;
+    const tSpan = tMax - tMin;
     const xOf = (ts) => MARGIN_LEFT + ((ts - tMin) / tSpan) * chartW;
+    const xOfClipped = (ts) => Math.max(MARGIN_LEFT, Math.min(totalWidth - MARGIN_RIGHT, xOf(ts)));
 
     const parts = [];
 
-    // Time axis (4 ticks)
-    for (let i = 0; i <= 4; i++) {
-        const t = tMin + (tSpan * i / 4);
+    // Time axis: 7 ticks (every 8h on a 48h window). Format: "MM-DD HH:MM Z".
+    for (let i = 0; i <= 6; i++) {
+        const t = tMin + (tSpan * i / 6);
         const x = xOf(t).toFixed(1);
         const lbl = new Date(t).toISOString().replace('T', ' ').substring(5, 16) + 'Z';
         parts.push(`<line x1="${x}" y1="${MARGIN_TOP - 10}" x2="${x}" y2="${height - 20}" stroke="#2a2a3a" stroke-dasharray="2,4"/>`);
         parts.push(`<text x="${x}" y="${height - 4}" text-anchor="middle" font-size="9" fill="#666">${lbl}</text>`);
     }
 
-    // Now line
+    // Now line (always at center of chart now)
     const nowX = xOf(nowMs);
-    if (nowX >= MARGIN_LEFT && nowX <= totalWidth - MARGIN_RIGHT) {
-        parts.push(`<line x1="${nowX.toFixed(1)}" y1="${MARGIN_TOP - 15}" x2="${nowX.toFixed(1)}" y2="${height - 20}" stroke="var(--accent)" stroke-width="2"/>`);
-        parts.push(`<text x="${nowX.toFixed(1)}" y="${MARGIN_TOP - 18}" text-anchor="middle" font-size="9" fill="var(--accent)">NOW</text>`);
-    }
+    parts.push(`<line x1="${nowX.toFixed(1)}" y1="${MARGIN_TOP - 15}" x2="${nowX.toFixed(1)}" y2="${height - 20}" stroke="var(--accent)" stroke-width="2"/>`);
+    parts.push(`<text x="${nowX.toFixed(1)}" y="${MARGIN_TOP - 18}" text-anchor="middle" font-size="9" fill="var(--accent)">NOW</text>`);
 
     // Per-market rows
     markets.forEach((m, i) => {
@@ -647,36 +648,36 @@ function drawLifecycleSvg(markets, nowMs) {
         const efc = m.effective_close_time ? Date.parse(m.effective_close_time) : null;
         const resolvedAt = m.resolved_at ? Date.parse(m.resolved_at) : null;
 
-        // Trading segment: game_start → last_placement
-        if (gst !== null && lpt !== null) {
-            const x0 = xOf(gst), x1 = xOf(lpt);
-            if (x1 > x0) parts.push(`<rect x="${x0.toFixed(1)}" y="${y + 6}" width="${(x1 - x0).toFixed(1)}" height="${ROW_H - 12}" fill="var(--legend-trading)" opacity="0.65" rx="2"/>`);
-        }
-        // Post-placement segment: last_placement → effective_close
-        if (lpt !== null && efc !== null) {
-            const x0 = xOf(lpt), x1 = xOf(efc);
-            if (x1 > x0) parts.push(`<rect x="${x0.toFixed(1)}" y="${y + 6}" width="${(x1 - x0).toFixed(1)}" height="${ROW_H - 12}" fill="var(--legend-post)" opacity="0.65" rx="2"/>`);
-        }
-        // Closed/awaiting segment: effective_close → resolved_at (or now)
-        if (efc !== null) {
-            const closedEnd = resolvedAt !== null ? resolvedAt : nowMs;
-            if (closedEnd > efc) {
-                const x0 = xOf(efc), x1 = xOf(closedEnd);
-                if (x1 > x0) parts.push(`<rect x="${x0.toFixed(1)}" y="${y + 6}" width="${(x1 - x0).toFixed(1)}" height="${ROW_H - 12}" fill="var(--legend-closed)" opacity="0.65" rx="2"/>`);
-            }
-        }
+        // Helper: draw zone bar segment, clipped to visible window. Skips if
+        // segment is entirely outside [tMin, tMax].
+        const drawZone = (t0, t1, fillVar) => {
+            if (t0 === null || t1 === null || t1 <= t0) return;
+            if (t1 < tMin || t0 > tMax) return;  // entirely outside window
+            const x0 = xOfClipped(t0), x1 = xOfClipped(t1);
+            if (x1 <= x0) return;
+            parts.push(`<rect x="${x0.toFixed(1)}" y="${y + 6}" width="${(x1 - x0).toFixed(1)}" height="${ROW_H - 12}" fill="${fillVar}" opacity="0.65" rx="2"/>`);
+        };
 
-        // Resolution dot (circle at resolved_at)
-        if (resolvedAt !== null) {
+        // Three lifecycle zones (drawn for ALL strategies — ensures the zone
+        // visualization is consistent regardless of which tab is selected):
+        drawZone(gst, lpt, 'var(--legend-trading)');                 // Trading
+        drawZone(lpt, efc, 'var(--legend-post)');                    // Post-placement
+        drawZone(efc, resolvedAt !== null ? resolvedAt : nowMs,      // Awaiting UMA
+                 'var(--legend-closed)');
+
+        // Resolution dot (only if resolved_at is in the visible window)
+        if (resolvedAt !== null && resolvedAt >= tMin && resolvedAt <= tMax) {
             const cx = xOf(resolvedAt).toFixed(1);
             const fill = m.outcome === 'win' ? 'var(--legend-won)' : 'var(--legend-lost)';
             parts.push(`<circle cx="${cx}" cy="${rowMid}" r="5" fill="${fill}" stroke="#0a0a0f" stroke-width="1.5"/>`);
         }
 
-        // Bet markers
+        // Bet markers (only if placed_at is in the visible window)
         for (const b of m.bets) {
             if (!b.placed_at) continue;
-            const bx = xOf(Date.parse(b.placed_at)).toFixed(1);
+            const betMs = Date.parse(b.placed_at);
+            if (betMs < tMin || betMs > tMax) continue;
+            const bx = xOf(betMs).toFixed(1);
             const fill = b.outcome === 'win' ? 'var(--legend-won)' :
                 b.outcome === 'loss' ? 'var(--legend-lost)' : 'var(--legend-bet)';
             const pnlStr = b.realized_pnl_usd != null
