@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-05-06T19:56:12.333651+00:00",
-  "now": "2026-05-06T19:56:12.333651+00:00",
+  "updated_at": "2026-05-06T20:06:12.353973+00:00",
+  "now": "2026-05-06T20:06:12.353973+00:00",
   "markets": [
     {
       "condition_id": "0x091d137694061741144097d83e43f740000447e2fcecfdd2cd819dba7650f0f8",
@@ -7917,7 +7917,7 @@
       "resolved_at": null,
       "outcome": null,
       "resolution_source": null,
-      "state": "trading",
+      "state": "after_last_placement",
       "bets": [
         {
           "id": 2040,
@@ -7981,7 +7981,7 @@
       "resolved_at": null,
       "outcome": null,
       "resolution_source": null,
-      "state": "trading",
+      "state": "after_last_placement",
       "bets": [
         {
           "id": 2042,
@@ -8109,7 +8109,7 @@
       "resolved_at": null,
       "outcome": null,
       "resolution_source": null,
-      "state": "trading",
+      "state": "after_last_placement",
       "bets": [
         {
           "id": 2041,
@@ -8238,6 +8238,40 @@
           "fee_usd": null,
           "fill_quality": null,
           "strategy": "raw_forecast_raw"
+        }
+      ]
+    },
+    {
+      "condition_id": "0xcac31605655420355fde02949615a4b020d97293fcc79425c9b3293c64e53a00",
+      "city": "Chicago",
+      "market_type": "high",
+      "bracket": "between 54 and 55",
+      "bracket_type": "between",
+      "resolution_date": "2026-05-06",
+      "game_start_time": "2026-05-06T05:00:00+00:00",
+      "last_placement_time": "2026-05-07T03:00:00+00:00",
+      "effective_close_time": "2026-05-07T08:00:00+00:00",
+      "market_end_date": "2026-05-06T12:00:00+00:00",
+      "market_slug": "highest-temperature-in-chicago-on-may-6-2026-54-55f",
+      "resolved_at": null,
+      "outcome": null,
+      "resolution_source": null,
+      "state": "trading",
+      "bets": [
+        {
+          "id": 2054,
+          "placed_at": "2026-05-06T20:00:41.163712+00:00",
+          "size_usd": 1.0,
+          "filled_shares": 500.0,
+          "filled_vwap": 0.001,
+          "model_prob": 0.16546669867244873,
+          "best_ask_at_placement": 0.001,
+          "limit_price": 0.002,
+          "outcome": null,
+          "realized_pnl_usd": null,
+          "fee_usd": null,
+          "fill_quality": null,
+          "strategy": "tail_longshot"
         }
       ]
     }
