@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-05-07T15:36:05.938432+00:00",
-  "now": "2026-05-07T15:36:05.938432+00:00",
+  "updated_at": "2026-05-07T15:54:58.299095+00:00",
+  "now": "2026-05-07T15:54:58.299095+00:00",
   "markets": [
     {
       "condition_id": "0x091d137694061741144097d83e43f740000447e2fcecfdd2cd819dba7650f0f8",
@@ -9379,6 +9379,40 @@
       ]
     },
     {
+      "condition_id": "0xc5683c346b18f764aaa11d57f3dc8820cdf8ed89f8290b155ecf7b419fb96f98",
+      "city": "Miami",
+      "market_type": "high",
+      "bracket": "between 88 and 89",
+      "bracket_type": "between",
+      "resolution_date": "2026-05-07",
+      "game_start_time": "2026-05-06T09:00:00+00:00",
+      "last_placement_time": "2026-05-08T08:00:00+00:00",
+      "effective_close_time": "2026-05-08T12:00:00+00:00",
+      "market_end_date": "2026-05-07T12:00:00+00:00",
+      "market_slug": null,
+      "resolved_at": null,
+      "outcome": null,
+      "resolution_source": null,
+      "state": "trading",
+      "bets": [
+        {
+          "id": 2108,
+          "placed_at": "2026-05-07T15:46:06.178236+00:00",
+          "size_usd": 2.0,
+          "filled_shares": 15.384615384615383,
+          "filled_vwap": 0.11999999999999998,
+          "model_prob": 0.26298709731509523,
+          "best_ask_at_placement": 0.12,
+          "limit_price": 0.13,
+          "outcome": null,
+          "realized_pnl_usd": null,
+          "fee_usd": null,
+          "fill_quality": null,
+          "strategy": "modal_early"
+        }
+      ]
+    },
+    {
       "condition_id": "0xe0eb3be6d5f68090a787bff389809f80a7d74e6ee87c77881166d3d26b1cf457",
       "city": "New York City",
       "market_type": "high",
@@ -9409,6 +9443,55 @@
           "fee_usd": null,
           "fill_quality": null,
           "strategy": "tail_longshot"
+        }
+      ]
+    },
+    {
+      "condition_id": "0xc19b9a7eba96c1cada34da894951de6b5e35347c7efdad886d95d7862dd01248",
+      "city": "Miami",
+      "market_type": "high",
+      "bracket": "between 88 and 89",
+      "bracket_type": "between",
+      "resolution_date": "2026-05-08",
+      "game_start_time": "2026-05-07T09:00:00+00:00",
+      "last_placement_time": "2026-05-08T07:00:00+00:00",
+      "effective_close_time": "2026-05-08T12:00:00+00:00",
+      "market_end_date": "2026-05-08T12:00:00+00:00",
+      "market_slug": "highest-temperature-in-miami-on-may-8-2026-88-89f",
+      "resolved_at": null,
+      "outcome": null,
+      "resolution_source": null,
+      "state": "trading",
+      "bets": [
+        {
+          "id": 2109,
+          "placed_at": "2026-05-07T15:46:06.309465+00:00",
+          "size_usd": 2.0,
+          "filled_shares": 12.5,
+          "filled_vwap": 0.16,
+          "model_prob": 0.3688226601546071,
+          "best_ask_at_placement": 0.16,
+          "limit_price": 0.16,
+          "outcome": null,
+          "realized_pnl_usd": null,
+          "fee_usd": null,
+          "fill_quality": null,
+          "strategy": "adjacency"
+        },
+        {
+          "id": 2110,
+          "placed_at": "2026-05-07T15:47:29.304151+00:00",
+          "size_usd": 2.0,
+          "filled_shares": 12.5,
+          "filled_vwap": 0.16,
+          "model_prob": 0.3688226601546071,
+          "best_ask_at_placement": 0.16,
+          "limit_price": 0.16,
+          "outcome": null,
+          "realized_pnl_usd": null,
+          "fee_usd": null,
+          "fill_quality": null,
+          "strategy": "adjacency_hourly"
         }
       ]
     }
