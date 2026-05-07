@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-05-07T23:00:00.060891+00:00",
+  "updated_at": "2026-05-07T23:09:15.947929+00:00",
   "hit_rate": 0.2653,
   "theoretical_pnl": 53.748,
-  "trade_count": 478,
+  "trade_count": 479,
   "active_cities": 13,
   "daily_pnl": [
     {
@@ -39,6 +39,36 @@
     }
   ],
   "recent_trades": [
+    {
+      "logged_at": "2026-05-07T23:08:49.525439+00:00",
+      "city": "Chicago",
+      "bracket": "between 64 and 65",
+      "market_type": "high",
+      "model_prob": 0.0979383319828735,
+      "market_ask": 0.001,
+      "edge": 0.0969383319828735,
+      "kelly_size_usdc": 1.0,
+      "outcome": "PENDING",
+      "resolution_date": "2026-05-07",
+      "strategy": "tail_longshot",
+      "market_slug": "highest-temperature-in-chicago-on-may-7-2026-64-65f",
+      "boundary_convention": "round"
+    },
+    {
+      "logged_at": "2026-05-07T23:02:48.620261+00:00",
+      "city": "Austin",
+      "bracket": "between 66 and 67",
+      "market_type": "high",
+      "model_prob": 0.1710254100198173,
+      "market_ask": 0.001,
+      "edge": 0.1700254100198173,
+      "kelly_size_usdc": 1.0,
+      "outcome": "PENDING",
+      "resolution_date": "2026-05-07",
+      "strategy": "tail_longshot",
+      "market_slug": "highest-temperature-in-austin-on-may-7-2026-66-67f",
+      "boundary_convention": "round"
+    },
     {
       "logged_at": "2026-05-07T22:42:49.050079+00:00",
       "city": "Austin",
@@ -4686,15 +4716,15 @@
       }
     },
     "tail_longshot": {
-      "bets": 39,
+      "bets": 41,
       "resolved": 25,
       "wins": 0,
       "pnl_usd": -15.7627,
       "bankroll": {
         "start": 100.0,
         "current": 84.2376,
-        "open_stake": 14.0,
-        "available": 70.2376,
+        "open_stake": 16.0,
+        "available": 68.2376,
         "daily_loss": 4.4374
       },
       "by_boundary": {
@@ -4705,7 +4735,7 @@
           "pnl_usd": 0.0
         },
         "round": {
-          "bets": 39,
+          "bets": 41,
           "resolved": 25,
           "wins": 0,
           "pnl_usd": -15.7627
