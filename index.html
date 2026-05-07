@@ -72,6 +72,18 @@
                     <span class="tab-label">Below tail</span>
                     <span class="tab-meta" data-role="bets">—</span>
                 </button>
+                <button class="strategy-tab" data-strategy="no_between" role="tab" aria-selected="false" title="No-side dry-run on between brackets (added 2026-05-07). Backtest N=10, WR 80% with $1000 liquidity filter. Bets NO when model says Yes is overpriced. $1000 bankroll, $2 stake, DRY_RUN only.">
+                    <span class="tab-label">No between</span>
+                    <span class="tab-meta" data-role="bets">—</span>
+                </button>
+                <button class="strategy-tab" data-strategy="no_above" role="tab" aria-selected="false" title="Shadow logger for No-side bets on above brackets (added 2026-05-07). Backtest N=2 — too small to commit. Logs DRY_RUN signals to accumulate data; promote when N>=30 with bootstrap CI.">
+                    <span class="tab-label">No above</span>
+                    <span class="tab-meta" data-role="bets">—</span>
+                </button>
+                <button class="strategy-tab" data-strategy="no_below" role="tab" aria-selected="false" title="Shadow logger for No-side bets on below brackets (added 2026-05-07). Backtest N=0 at live thresholds. Logs DRY_RUN signals to accumulate data; promote when N>=30 with bootstrap CI.">
+                    <span class="tab-label">No below</span>
+                    <span class="tab-meta" data-role="bets">—</span>
+                </button>
                 <!-- consensus_fires + consensus_models tabs hidden 2026-05-05.
                      Strategies disabled in PolyWeather config — projected ~3-5
                      bets/week was too slow vs other strategies firing 2/day.

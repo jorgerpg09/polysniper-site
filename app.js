@@ -95,7 +95,7 @@ let _pwStatsData = null;  // last loaded stats, kept for re-renders on tab switc
 // 2026-05-05: consensus_fires + consensus_models removed from displayed
 // strategies — disabled in PolyWeather config, evaluated offline via
 // scripts/consensus_backtest.py instead. Stats data still includes them.
-const PW_STRATEGIES = ['modal_early', 'raw_forecast_corrected', 'raw_forecast_raw', 'adjacency', 'adjacency_capped', 'adjacency_hourly', 'below_tail'];
+const PW_STRATEGIES = ['modal_early', 'raw_forecast_corrected', 'raw_forecast_raw', 'adjacency', 'adjacency_capped', 'adjacency_hourly', 'below_tail', 'no_between', 'no_above', 'no_below'];
 
 // Returns the currently selected strategy filter:
 // 'all' | 'modal_early' | 'raw_forecast_corrected' | 'raw_forecast_raw' | 'adjacency' | 'adjacency_capped' | 'below_tail'
