@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-05-07T20:29:17.838564+00:00",
-  "now": "2026-05-07T20:29:17.838564+00:00",
+  "updated_at": "2026-05-07T20:39:17.961006+00:00",
+  "now": "2026-05-07T20:39:17.961006+00:00",
   "markets": [
     {
       "condition_id": "0x091d137694061741144097d83e43f740000447e2fcecfdd2cd819dba7650f0f8",
@@ -9548,10 +9548,10 @@
       "effective_close_time": "2026-05-08T12:00:00+00:00",
       "market_end_date": "2026-05-07T12:00:00+00:00",
       "market_slug": "highest-temperature-in-chicago-on-may-7-2026-56-57f",
-      "resolved_at": null,
-      "outcome": null,
-      "resolution_source": null,
-      "state": "trading",
+      "resolved_at": "2026-05-07T18:03:16.252918+00:00",
+      "outcome": "loss",
+      "resolution_source": "uma_resolved",
+      "state": "resolved",
       "bets": [
         {
           "id": 2123,
@@ -9562,9 +9562,9 @@
           "model_prob": 0.12747657640148502,
           "best_ask_at_placement": 0.001,
           "limit_price": 0.002,
-          "outcome": null,
-          "realized_pnl_usd": null,
-          "fee_usd": null,
+          "outcome": "loss",
+          "realized_pnl_usd": -0.525,
+          "fee_usd": 0.025,
           "fill_quality": null,
           "strategy": "tail_longshot"
         }
@@ -9829,8 +9829,8 @@
           "id": 2131,
           "placed_at": "2026-05-07T18:56:48.569763+00:00",
           "size_usd": 1.0,
-          "filled_shares": 182.60999999999999,
-          "filled_vwap": 0.003845298724056734,
+          "filled_shares": 200.0,
+          "filled_vwap": 0.00379055,
           "model_prob": 0.1719203961168121,
           "best_ask_at_placement": 0.004,
           "limit_price": 0.005,
