@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-05-07T22:59:17.753332+00:00",
-  "now": "2026-05-07T22:59:17.753332+00:00",
+  "updated_at": "2026-05-07T23:09:17.820574+00:00",
+  "now": "2026-05-07T23:09:17.820574+00:00",
   "markets": [
     {
       "condition_id": "0x091d137694061741144097d83e43f740000447e2fcecfdd2cd819dba7650f0f8",
@@ -7935,21 +7935,6 @@
           "strategy": "raw_forecast_corrected"
         },
         {
-          "id": 2047,
-          "placed_at": "2026-05-06T13:21:40.970291+00:00",
-          "size_usd": 2.0,
-          "filled_shares": null,
-          "filled_vwap": null,
-          "model_prob": 0.2708098583767153,
-          "best_ask_at_placement": 0.26,
-          "limit_price": 0.26,
-          "outcome": null,
-          "realized_pnl_usd": null,
-          "fee_usd": null,
-          "fill_quality": null,
-          "strategy": "adjacency"
-        },
-        {
           "id": 2048,
           "placed_at": "2026-05-06T13:22:40.983339+00:00",
           "size_usd": 2.0,
@@ -9557,8 +9542,8 @@
           "id": 2135,
           "placed_at": "2026-05-07T22:42:49.050079+00:00",
           "size_usd": 1.0,
-          "filled_shares": 109.31,
-          "filled_vwap": 0.007085170615680176,
+          "filled_shares": 125.0,
+          "filled_vwap": 0.0065724,
           "model_prob": 0.05693530142576475,
           "best_ask_at_placement": 0.007,
           "limit_price": 0.008,
@@ -9877,6 +9862,40 @@
       ]
     },
     {
+      "condition_id": "0x8a5ee546fe22055982d6240db867f8b6c823f270216259b35c959507f87d965d",
+      "city": "Chicago",
+      "market_type": "high",
+      "bracket": "between 64 and 65",
+      "bracket_type": "between",
+      "resolution_date": "2026-05-07",
+      "game_start_time": "2026-05-07T05:00:00+00:00",
+      "last_placement_time": "2026-05-08T08:00:00+00:00",
+      "effective_close_time": "2026-05-08T12:00:00+00:00",
+      "market_end_date": "2026-05-07T12:00:00+00:00",
+      "market_slug": "highest-temperature-in-chicago-on-may-7-2026-64-65f",
+      "resolved_at": null,
+      "outcome": null,
+      "resolution_source": null,
+      "state": "trading",
+      "bets": [
+        {
+          "id": 2137,
+          "placed_at": "2026-05-07T23:08:49.525439+00:00",
+          "size_usd": 1.0,
+          "filled_shares": 500.0,
+          "filled_vwap": 0.001,
+          "model_prob": 0.0979383319828735,
+          "best_ask_at_placement": 0.001,
+          "limit_price": 0.002,
+          "outcome": null,
+          "realized_pnl_usd": null,
+          "fee_usd": null,
+          "fill_quality": null,
+          "strategy": "tail_longshot"
+        }
+      ]
+    },
+    {
       "condition_id": "0x8f163d408c106e514028f2b278a084f25b99720daa32ba82a13d92c8a4d25a7f",
       "city": "Chicago",
       "market_type": "high",
@@ -9973,6 +9992,40 @@
           "outcome": "loss",
           "realized_pnl_usd": -0.525,
           "fee_usd": 0.025,
+          "fill_quality": null,
+          "strategy": "tail_longshot"
+        }
+      ]
+    },
+    {
+      "condition_id": "0xc5239a9fbb4564d5c58cb324e85be44e8330313954053b9aab0cbbfb838d7580",
+      "city": "Austin",
+      "market_type": "high",
+      "bracket": "between 66 and 67",
+      "bracket_type": "between",
+      "resolution_date": "2026-05-07",
+      "game_start_time": "2026-05-07T05:00:00+00:00",
+      "last_placement_time": "2026-05-08T08:00:00+00:00",
+      "effective_close_time": "2026-05-08T12:00:00+00:00",
+      "market_end_date": "2026-05-07T12:00:00+00:00",
+      "market_slug": "highest-temperature-in-austin-on-may-7-2026-66-67f",
+      "resolved_at": null,
+      "outcome": null,
+      "resolution_source": null,
+      "state": "trading",
+      "bets": [
+        {
+          "id": 2136,
+          "placed_at": "2026-05-07T23:02:48.620261+00:00",
+          "size_usd": 1.0,
+          "filled_shares": 500.0,
+          "filled_vwap": 0.001,
+          "model_prob": 0.1710254100198173,
+          "best_ask_at_placement": 0.001,
+          "limit_price": 0.002,
+          "outcome": null,
+          "realized_pnl_usd": null,
+          "fee_usd": null,
           "fill_quality": null,
           "strategy": "tail_longshot"
         }
