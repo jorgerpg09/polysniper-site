@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-05-07T12:14:42.599691+00:00",
+  "updated_at": "2026-05-07T12:24:42.593888+00:00",
   "hit_rate": 0.279,
   "theoretical_pnl": 62.6067,
-  "trade_count": 431,
+  "trade_count": 434,
   "active_cities": 12,
   "daily_pnl": [
     {
@@ -39,6 +39,51 @@
     }
   ],
   "recent_trades": [
+    {
+      "logged_at": "2026-05-07T12:23:14.410739+00:00",
+      "city": "Helsinki",
+      "bracket": "exact 13",
+      "market_type": "high",
+      "model_prob": 0.29081579157504334,
+      "market_ask": 0.01,
+      "edge": 0.2808157915750433,
+      "kelly_size_usdc": 2.0,
+      "outcome": "PENDING",
+      "resolution_date": "2026-05-07",
+      "strategy": "adjacency_hourly",
+      "market_slug": "highest-temperature-in-helsinki-on-may-7-2026-13c",
+      "boundary_convention": "round"
+    },
+    {
+      "logged_at": "2026-05-07T12:21:14.114171+00:00",
+      "city": "Helsinki",
+      "bracket": "exact 13",
+      "market_type": "high",
+      "model_prob": 0.29081579157504334,
+      "market_ask": 0.29,
+      "edge": 0.0008157915750433564,
+      "kelly_size_usdc": 2.0,
+      "outcome": "PENDING",
+      "resolution_date": "2026-05-07",
+      "strategy": "adjacency",
+      "market_slug": "highest-temperature-in-helsinki-on-may-7-2026-13c",
+      "boundary_convention": "round"
+    },
+    {
+      "logged_at": "2026-05-07T12:15:14.242730+00:00",
+      "city": "London",
+      "bracket": "exact 16",
+      "market_type": "high",
+      "model_prob": 0.1593427795514284,
+      "market_ask": 0.07,
+      "edge": 0.08934277955142839,
+      "kelly_size_usdc": 2.0,
+      "outcome": "PENDING",
+      "resolution_date": "2026-05-07",
+      "strategy": "adjacency_hourly",
+      "market_slug": "highest-temperature-in-london-on-may-7-2026-16c",
+      "boundary_convention": "round"
+    },
     {
       "logged_at": "2026-05-07T11:51:14.306495+00:00",
       "city": "Sao Paulo",
@@ -592,36 +637,6 @@
       "resolution_date": "2026-05-06",
       "strategy": "adjacency_hourly",
       "market_slug": "highest-temperature-in-london-on-may-6-2026-14c",
-      "boundary_convention": "round"
-    },
-    {
-      "logged_at": "2026-05-06T13:51:40.960042+00:00",
-      "city": "London",
-      "bracket": "exact 14",
-      "market_type": "high",
-      "model_prob": 0.2695747410702128,
-      "market_ask": 0.08,
-      "edge": 0.18957474107021277,
-      "kelly_size_usdc": 2.0,
-      "outcome": "LOSS",
-      "resolution_date": "2026-05-06",
-      "strategy": "adjacency_hourly",
-      "market_slug": "highest-temperature-in-london-on-may-6-2026-14c",
-      "boundary_convention": "round"
-    },
-    {
-      "logged_at": "2026-05-06T13:34:40.982743+00:00",
-      "city": "Paris",
-      "bracket": "exact 15",
-      "market_type": "high",
-      "model_prob": 0.30608585580794134,
-      "market_ask": 0.15,
-      "edge": 0.15608585580794135,
-      "kelly_size_usdc": 2.0,
-      "outcome": "LOSS",
-      "resolution_date": "2026-05-06",
-      "strategy": "adjacency_hourly",
-      "market_slug": "highest-temperature-in-paris-on-may-6-2026-15c",
       "boundary_convention": "round"
     },
     {
@@ -1691,21 +1706,6 @@
     },
     {
       "logged_at": "2026-05-03T11:09:00.596531+00:00",
-      "city": "Helsinki",
-      "bracket": "exact 15",
-      "market_type": "high",
-      "model_prob": 0.1730483252025956,
-      "market_ask": 0.001,
-      "edge": 0.1720483252025956,
-      "kelly_size_usdc": 2.0,
-      "outcome": "LOSS",
-      "resolution_date": "2026-05-03",
-      "strategy": "adjacency",
-      "market_slug": "highest-temperature-in-helsinki-on-may-3-2026-15c",
-      "boundary_convention": "round"
-    },
-    {
-      "logged_at": "2026-05-03T11:09:00.596531+00:00",
       "city": "New York City",
       "bracket": "below 53",
       "market_type": "high",
@@ -1917,15 +1917,15 @@
   ],
   "strategies": {
     "adjacency": {
-      "bets": 36,
+      "bets": 37,
       "resolved": 33,
       "wins": 9,
       "pnl_usd": 17.2107,
       "bankroll": {
         "start": 1000.0,
         "current": 1011.6586,
-        "open_stake": 6.0,
-        "available": 1005.6586,
+        "open_stake": 8.0,
+        "available": 1003.6586,
         "daily_loss": 2.0786
       },
       "by_boundary": {
@@ -1936,7 +1936,7 @@
           "pnl_usd": 0.0
         },
         "round": {
-          "bets": 36,
+          "bets": 37,
           "resolved": 33,
           "wins": 9,
           "pnl_usd": 17.2107
@@ -1971,15 +1971,15 @@
       }
     },
     "adjacency_hourly": {
-      "bets": 72,
+      "bets": 74,
       "resolved": 60,
       "wins": 14,
       "pnl_usd": -0.0156,
       "bankroll": {
         "start": 1000.0,
         "current": 998.6936,
-        "open_stake": 24.0,
-        "available": 974.6936,
+        "open_stake": 28.0,
+        "available": 970.6936,
         "daily_loss": 10.3506
       },
       "by_boundary": {
@@ -1990,7 +1990,7 @@
           "pnl_usd": 0.0
         },
         "round": {
-          "bets": 72,
+          "bets": 74,
           "resolved": 60,
           "wins": 14,
           "pnl_usd": -0.0156
