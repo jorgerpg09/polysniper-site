@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-05-07T05:15:41.266697+00:00",
-  "now": "2026-05-07T05:15:41.266697+00:00",
+  "updated_at": "2026-05-07T05:30:16.726832+00:00",
+  "now": "2026-05-07T05:30:16.726832+00:00",
   "markets": [
     {
       "condition_id": "0x091d137694061741144097d83e43f740000447e2fcecfdd2cd819dba7650f0f8",
@@ -8340,6 +8340,36 @@
           "fee_usd": null,
           "fill_quality": null,
           "strategy": "raw_forecast_corrected"
+        },
+        {
+          "id": 2061,
+          "placed_at": "2026-05-07T05:19:10.124669+00:00",
+          "size_usd": 2.0,
+          "filled_shares": 9.345794392523365,
+          "filled_vwap": 0.214,
+          "model_prob": 0.30570870933083416,
+          "best_ask_at_placement": 0.214,
+          "limit_price": 0.214,
+          "outcome": null,
+          "realized_pnl_usd": null,
+          "fee_usd": null,
+          "fill_quality": null,
+          "strategy": "adjacency"
+        },
+        {
+          "id": 2062,
+          "placed_at": "2026-05-07T05:20:10.172224+00:00",
+          "size_usd": 2.0,
+          "filled_shares": 9.345794392523365,
+          "filled_vwap": 0.203,
+          "model_prob": 0.30570870933083416,
+          "best_ask_at_placement": 0.214,
+          "limit_price": 0.214,
+          "outcome": null,
+          "realized_pnl_usd": null,
+          "fee_usd": null,
+          "fill_quality": null,
+          "strategy": "adjacency_hourly"
         }
       ]
     },
@@ -8408,6 +8438,55 @@
           "fee_usd": null,
           "fill_quality": null,
           "strategy": "raw_forecast_raw"
+        }
+      ]
+    },
+    {
+      "condition_id": "0x5aa60d324f2f9463a6aa73f630bc47e40b8945180858db212cbc1329e2efea31",
+      "city": "Madrid",
+      "market_type": "high",
+      "bracket": "below 17",
+      "bracket_type": "below",
+      "resolution_date": "2026-05-07",
+      "game_start_time": "2026-05-06T22:00:00+00:00",
+      "last_placement_time": "2026-05-07T20:00:00+00:00",
+      "effective_close_time": "2026-05-08T01:00:00+00:00",
+      "market_end_date": "2026-05-07T12:00:00+00:00",
+      "market_slug": "highest-temperature-in-madrid-on-may-7-2026-17corbelow",
+      "resolved_at": null,
+      "outcome": null,
+      "resolution_source": null,
+      "state": "trading",
+      "bets": [
+        {
+          "id": 2063,
+          "placed_at": "2026-05-07T05:20:10.172224+00:00",
+          "size_usd": 2.0,
+          "filled_shares": 10.1010101010101,
+          "filled_vwap": 0.19713672000000002,
+          "model_prob": 0.3308133776063362,
+          "best_ask_at_placement": 0.198,
+          "limit_price": 0.198,
+          "outcome": null,
+          "realized_pnl_usd": null,
+          "fee_usd": null,
+          "fill_quality": null,
+          "strategy": "adjacency"
+        },
+        {
+          "id": 2064,
+          "placed_at": "2026-05-07T05:24:45.402909+00:00",
+          "size_usd": 2.0,
+          "filled_shares": 10.152284263959391,
+          "filled_vwap": 0.19643568,
+          "model_prob": 0.3308133776063362,
+          "best_ask_at_placement": 0.197,
+          "limit_price": 0.197,
+          "outcome": null,
+          "realized_pnl_usd": null,
+          "fee_usd": null,
+          "fill_quality": null,
+          "strategy": "adjacency_hourly"
         }
       ]
     },
