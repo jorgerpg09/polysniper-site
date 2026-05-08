@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-05-08T15:09:17.887392+00:00",
-  "now": "2026-05-08T15:09:17.887392+00:00",
+  "updated_at": "2026-05-08T15:19:17.783014+00:00",
+  "now": "2026-05-08T15:19:17.783014+00:00",
   "markets": [
     {
       "condition_id": "0x091d137694061741144097d83e43f740000447e2fcecfdd2cd819dba7650f0f8",
@@ -10643,10 +10643,10 @@
       "effective_close_time": "2026-05-09T01:00:00+00:00",
       "market_end_date": "2026-05-08T12:00:00+00:00",
       "market_slug": "highest-temperature-in-paris-on-may-8-2026-19c",
-      "resolved_at": null,
-      "outcome": null,
-      "resolution_source": null,
-      "state": "trading",
+      "resolved_at": "2026-05-08T05:11:16.356279+00:00",
+      "outcome": "loss",
+      "resolution_source": "uma_resolved",
+      "state": "resolved",
       "bets": [
         {
           "id": 2151,
@@ -10657,9 +10657,9 @@
           "model_prob": 0.24207127871714962,
           "best_ask_at_placement": 0.11,
           "limit_price": 0.11,
-          "outcome": null,
-          "realized_pnl_usd": null,
-          "fee_usd": null,
+          "outcome": "loss",
+          "realized_pnl_usd": -1.0445,
+          "fee_usd": 0.0445,
           "fill_quality": null,
           "strategy": "raw_forecast_raw"
         }
@@ -11045,6 +11045,40 @@
           "model_prob": 0.045418908519288696,
           "best_ask_at_placement": 0.004,
           "limit_price": 0.005,
+          "outcome": null,
+          "realized_pnl_usd": null,
+          "fee_usd": null,
+          "fill_quality": null,
+          "strategy": "tail_longshot"
+        }
+      ]
+    },
+    {
+      "condition_id": "0x2eaacb5b65c65fc782eb2cfde355fd7685a4bff91b13a13733a03679257d8894",
+      "city": "Austin",
+      "market_type": "high",
+      "bracket": "between 72 and 73",
+      "bracket_type": "between",
+      "resolution_date": "2026-05-08",
+      "game_start_time": "2026-05-08T05:00:00+00:00",
+      "last_placement_time": "2026-05-09T08:00:00+00:00",
+      "effective_close_time": "2026-05-09T12:00:00+00:00",
+      "market_end_date": "2026-05-08T12:00:00+00:00",
+      "market_slug": "highest-temperature-in-austin-on-may-8-2026-72-73f",
+      "resolved_at": null,
+      "outcome": null,
+      "resolution_source": null,
+      "state": "trading",
+      "bets": [
+        {
+          "id": 2176,
+          "placed_at": "2026-05-08T15:12:49.478960+00:00",
+          "size_usd": 1.0,
+          "filled_shares": 125.0,
+          "filled_vwap": 0.00692512,
+          "model_prob": 0.08493673012599887,
+          "best_ask_at_placement": 0.007,
+          "limit_price": 0.008,
           "outcome": null,
           "realized_pnl_usd": null,
           "fee_usd": null,
