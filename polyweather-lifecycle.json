@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-05-08T18:59:17.819050+00:00",
-  "now": "2026-05-08T18:59:17.819050+00:00",
+  "updated_at": "2026-05-08T19:09:17.919923+00:00",
+  "now": "2026-05-08T19:09:17.919923+00:00",
   "markets": [
     {
       "condition_id": "0x091d137694061741144097d83e43f740000447e2fcecfdd2cd819dba7650f0f8",
@@ -11144,10 +11144,10 @@
       "effective_close_time": "2026-05-09T12:00:00+00:00",
       "market_end_date": "2026-05-08T12:00:00+00:00",
       "market_slug": "highest-temperature-in-austin-on-may-8-2026-72-73f",
-      "resolved_at": null,
-      "outcome": null,
-      "resolution_source": null,
-      "state": "trading",
+      "resolved_at": "2026-05-08T15:15:16.247821+00:00",
+      "outcome": "loss",
+      "resolution_source": "uma_resolved",
+      "state": "resolved",
       "bets": [
         {
           "id": 2176,
@@ -11158,9 +11158,9 @@
           "model_prob": 0.08493673012599887,
           "best_ask_at_placement": 0.007,
           "limit_price": 0.008,
-          "outcome": null,
-          "realized_pnl_usd": null,
-          "fee_usd": null,
+          "outcome": "loss",
+          "realized_pnl_usd": -0.9086,
+          "fee_usd": 0.043,
           "fill_quality": null,
           "strategy": "tail_longshot"
         }
