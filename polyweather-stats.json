@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-05-08T13:09:15.947125+00:00",
+  "updated_at": "2026-05-08T13:19:15.959708+00:00",
   "hit_rate": 0.2557,
   "theoretical_pnl": 152.1481,
-  "trade_count": 506,
+  "trade_count": 507,
   "active_cities": 13,
   "daily_pnl": [
     {
@@ -39,6 +39,21 @@
     }
   ],
   "recent_trades": [
+    {
+      "logged_at": "2026-05-08T13:10:50.422030+00:00",
+      "city": "London",
+      "bracket": "exact 17",
+      "market_type": "high",
+      "model_prob": 0.1930090214448299,
+      "market_ask": 0.149,
+      "edge": 0.044009021444829904,
+      "kelly_size_usdc": 2.0,
+      "outcome": "PENDING",
+      "resolution_date": "2026-05-08",
+      "strategy": "adjacency",
+      "market_slug": "highest-temperature-in-london-on-may-8-2026-17c",
+      "boundary_convention": "round"
+    },
     {
       "logged_at": "2026-05-08T12:41:00.139634+00:00",
       "city": "Atlanta",
@@ -4527,15 +4542,15 @@
   ],
   "strategies": {
     "adjacency": {
-      "bets": 42,
+      "bets": 43,
       "resolved": 39,
       "wins": 10,
       "pnl_usd": 17.0096,
       "bankroll": {
         "start": 1000.0,
         "current": 1011.4575,
-        "open_stake": 6.0,
-        "available": 1005.4575,
+        "open_stake": 8.0,
+        "available": 1003.4575,
         "daily_loss": 8.1585
       },
       "by_boundary": {
@@ -4546,7 +4561,7 @@
           "pnl_usd": 0.0
         },
         "round": {
-          "bets": 42,
+          "bets": 43,
           "resolved": 39,
           "wins": 10,
           "pnl_usd": 17.0096
