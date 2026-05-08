@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-05-08T00:09:17.826477+00:00",
-  "now": "2026-05-08T00:09:17.826477+00:00",
+  "updated_at": "2026-05-08T00:19:17.760238+00:00",
+  "now": "2026-05-08T00:19:17.760238+00:00",
   "markets": [
     {
       "condition_id": "0x091d137694061741144097d83e43f740000447e2fcecfdd2cd819dba7650f0f8",
@@ -10179,6 +10179,40 @@
           "fee_usd": 0.0452,
           "fill_quality": null,
           "strategy": "raw_forecast_raw"
+        }
+      ]
+    },
+    {
+      "condition_id": "0xd9b7b854873df032bc5724da6101bf6fe1fd26ecc93e39bdc25ad46426e67b01",
+      "city": "Austin",
+      "market_type": "high",
+      "bracket": "between 72 and 73",
+      "bracket_type": "between",
+      "resolution_date": "2026-05-07",
+      "game_start_time": "2026-05-07T05:00:00+00:00",
+      "last_placement_time": "2026-05-08T08:00:00+00:00",
+      "effective_close_time": "2026-05-08T12:00:00+00:00",
+      "market_end_date": "2026-05-07T12:00:00+00:00",
+      "market_slug": "highest-temperature-in-austin-on-may-7-2026-72-73f",
+      "resolved_at": null,
+      "outcome": null,
+      "resolution_source": null,
+      "state": "trading",
+      "bets": [
+        {
+          "id": 2142,
+          "placed_at": "2026-05-08T00:17:48.458559+00:00",
+          "size_usd": 1.0,
+          "filled_shares": 500.0,
+          "filled_vwap": 0.001,
+          "model_prob": 0.1008487083534868,
+          "best_ask_at_placement": 0.001,
+          "limit_price": 0.002,
+          "outcome": null,
+          "realized_pnl_usd": null,
+          "fee_usd": null,
+          "fill_quality": null,
+          "strategy": "tail_longshot"
         }
       ]
     },
