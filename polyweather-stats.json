@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-05-08T21:19:15.963768+00:00",
-  "hit_rate": 0.2407,
-  "theoretical_pnl": 132.0617,
+  "updated_at": "2026-05-08T21:29:15.960352+00:00",
+  "hit_rate": 0.2393,
+  "theoretical_pnl": 131.0117,
   "trade_count": 533,
   "active_cities": 13,
   "daily_pnl": [
@@ -39,7 +39,7 @@
     },
     {
       "date": "2026-05-08",
-      "cumulative_pnl": 132.0617
+      "cumulative_pnl": 131.0117
     }
   ],
   "recent_trades": [
@@ -67,7 +67,7 @@
       "market_ask": 0.001,
       "edge": 0.1504777101246246,
       "kelly_size_usdc": 1.0,
-      "outcome": "PENDING",
+      "outcome": "LOSS",
       "resolution_date": "2026-05-08",
       "strategy": "tail_longshot",
       "market_slug": "highest-temperature-in-atlanta-on-may-8-2026-70-71f",
@@ -82,7 +82,7 @@
       "market_ask": 0.001,
       "edge": 0.19164561537183666,
       "kelly_size_usdc": 1.0,
-      "outcome": "PENDING",
+      "outcome": "LOSS",
       "resolution_date": "2026-05-08",
       "strategy": "tail_longshot",
       "market_slug": "highest-temperature-in-austin-on-may-8-2026-76-77f",
@@ -4916,15 +4916,15 @@
     },
     "tail_longshot": {
       "bets": 68,
-      "resolved": 56,
+      "resolved": 58,
       "wins": 0,
-      "pnl_usd": -40.0329,
+      "pnl_usd": -41.0829,
       "bankroll": {
         "start": 100.0,
-        "current": 59.9674,
-        "open_stake": 12.0,
-        "available": 47.9674,
-        "daily_loss": 24.2702
+        "current": 58.9175,
+        "open_stake": 10.0,
+        "available": 48.9175,
+        "daily_loss": 25.3202
       },
       "by_boundary": {
         "floor": {
@@ -4935,9 +4935,9 @@
         },
         "round": {
           "bets": 68,
-          "resolved": 56,
+          "resolved": 58,
           "wins": 0,
-          "pnl_usd": -40.0329
+          "pnl_usd": -41.0829
         }
       }
     }
