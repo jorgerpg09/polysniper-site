@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-05-08T17:09:17.911146+00:00",
-  "now": "2026-05-08T17:09:17.911146+00:00",
+  "updated_at": "2026-05-08T17:19:17.945180+00:00",
+  "now": "2026-05-08T17:19:17.945180+00:00",
   "markets": [
     {
       "condition_id": "0x091d137694061741144097d83e43f740000447e2fcecfdd2cd819dba7650f0f8",
@@ -10462,6 +10462,21 @@
           "fee_usd": null,
           "fill_quality": null,
           "strategy": "adjacency_hourly"
+        },
+        {
+          "id": 2181,
+          "placed_at": "2026-05-08T17:13:00.139407+00:00",
+          "size_usd": 1.0,
+          "filled_shares": null,
+          "filled_vwap": null,
+          "model_prob": 0.3413250815544432,
+          "best_ask_at_placement": 0.35,
+          "limit_price": 0.35,
+          "outcome": null,
+          "realized_pnl_usd": null,
+          "fee_usd": null,
+          "fill_quality": null,
+          "strategy": "raw_forecast_raw"
         }
       ]
     },
@@ -11084,6 +11099,40 @@
       ]
     },
     {
+      "condition_id": "0x18776695d080b91e8fee957a1ad0407c2102d9d816abc81b894c4e837f04d8d2",
+      "city": "Atlanta",
+      "market_type": "high",
+      "bracket": "between 82 and 83",
+      "bracket_type": "between",
+      "resolution_date": "2026-05-08",
+      "game_start_time": "2026-05-08T04:00:00+00:00",
+      "last_placement_time": "2026-05-09T08:00:00+00:00",
+      "effective_close_time": "2026-05-09T12:00:00+00:00",
+      "market_end_date": "2026-05-08T12:00:00+00:00",
+      "market_slug": "highest-temperature-in-atlanta-on-may-8-2026-82-83f",
+      "resolved_at": null,
+      "outcome": null,
+      "resolution_source": null,
+      "state": "trading",
+      "bets": [
+        {
+          "id": 2184,
+          "placed_at": "2026-05-08T17:13:49.089365+00:00",
+          "size_usd": 1.0,
+          "filled_shares": 333.33333333333326,
+          "filled_vwap": 0.00277455,
+          "model_prob": 0.03751081092077346,
+          "best_ask_at_placement": 0.002,
+          "limit_price": 0.003,
+          "outcome": null,
+          "realized_pnl_usd": null,
+          "fee_usd": null,
+          "fill_quality": null,
+          "strategy": "tail_longshot"
+        }
+      ]
+    },
+    {
       "condition_id": "0x2eaacb5b65c65fc782eb2cfde355fd7685a4bff91b13a13733a03679257d8894",
       "city": "Austin",
       "market_type": "high",
@@ -11143,6 +11192,40 @@
           "model_prob": 0.11350064982338737,
           "best_ask_at_placement": 0.008,
           "limit_price": 0.009,
+          "outcome": null,
+          "realized_pnl_usd": null,
+          "fee_usd": null,
+          "fill_quality": null,
+          "strategy": "tail_longshot"
+        }
+      ]
+    },
+    {
+      "condition_id": "0x5bbeed3ea7f8e345b540b357b05af00fdd2b8c576153906dfe35682bc80b1527",
+      "city": "Atlanta",
+      "market_type": "high",
+      "bracket": "between 80 and 81",
+      "bracket_type": "between",
+      "resolution_date": "2026-05-08",
+      "game_start_time": "2026-05-08T04:00:00+00:00",
+      "last_placement_time": "2026-05-09T08:00:00+00:00",
+      "effective_close_time": "2026-05-09T12:00:00+00:00",
+      "market_end_date": "2026-05-08T12:00:00+00:00",
+      "market_slug": "highest-temperature-in-atlanta-on-may-8-2026-80-81f",
+      "resolved_at": null,
+      "outcome": null,
+      "resolution_source": null,
+      "state": "trading",
+      "bets": [
+        {
+          "id": 2182,
+          "placed_at": "2026-05-08T17:13:48.671207+00:00",
+          "size_usd": 1.0,
+          "filled_shares": 200.0,
+          "filled_vwap": 0.0045985,
+          "model_prob": 0.07460942959687189,
+          "best_ask_at_placement": 0.004,
+          "limit_price": 0.005,
           "outcome": null,
           "realized_pnl_usd": null,
           "fee_usd": null,
@@ -11347,6 +11430,40 @@
           "model_prob": 0.1048275165794742,
           "best_ask_at_placement": 0.004,
           "limit_price": 0.005,
+          "outcome": null,
+          "realized_pnl_usd": null,
+          "fee_usd": null,
+          "fill_quality": null,
+          "strategy": "tail_longshot"
+        }
+      ]
+    },
+    {
+      "condition_id": "0xc3133b21568317153439cb0c0364ec3521921e2152c1ca73d2bd4f9d485bbee7",
+      "city": "Austin",
+      "market_type": "high",
+      "bracket": "between 86 and 87",
+      "bracket_type": "between",
+      "resolution_date": "2026-05-08",
+      "game_start_time": "2026-05-08T05:00:00+00:00",
+      "last_placement_time": "2026-05-09T08:00:00+00:00",
+      "effective_close_time": "2026-05-09T12:00:00+00:00",
+      "market_end_date": "2026-05-08T12:00:00+00:00",
+      "market_slug": "highest-temperature-in-austin-on-may-8-2026-86-87f",
+      "resolved_at": null,
+      "outcome": null,
+      "resolution_source": null,
+      "state": "trading",
+      "bets": [
+        {
+          "id": 2183,
+          "placed_at": "2026-05-08T17:13:48.878612+00:00",
+          "size_usd": 1.0,
+          "filled_shares": 142.85714285714286,
+          "filled_vwap": 0.006,
+          "model_prob": 0.04876892850266179,
+          "best_ask_at_placement": 0.006,
+          "limit_price": 0.007,
           "outcome": null,
           "realized_pnl_usd": null,
           "fee_usd": null,
