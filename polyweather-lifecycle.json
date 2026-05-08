@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-05-08T00:59:17.839528+00:00",
-  "now": "2026-05-08T00:59:17.839528+00:00",
+  "updated_at": "2026-05-08T01:09:17.782523+00:00",
+  "now": "2026-05-08T01:09:17.782523+00:00",
   "markets": [
     {
       "condition_id": "0x091d137694061741144097d83e43f740000447e2fcecfdd2cd819dba7650f0f8",
@@ -8309,7 +8309,7 @@
       "resolved_at": null,
       "outcome": null,
       "resolution_source": null,
-      "state": "trading",
+      "state": "after_last_placement",
       "bets": [
         {
           "id": 2083,
@@ -9174,7 +9174,7 @@
       "resolved_at": null,
       "outcome": null,
       "resolution_source": null,
-      "state": "trading",
+      "state": "after_last_placement",
       "bets": [
         {
           "id": 2084,
@@ -10066,6 +10066,40 @@
       ]
     },
     {
+      "condition_id": "0xb7bd42dd327d463a17d75a577ff5133e434d08c0851ed51a9774924f14022e9f",
+      "city": "Austin",
+      "market_type": "high",
+      "bracket": "between 70 and 71",
+      "bracket_type": "between",
+      "resolution_date": "2026-05-07",
+      "game_start_time": "2026-05-07T05:00:00+00:00",
+      "last_placement_time": "2026-05-08T08:00:00+00:00",
+      "effective_close_time": "2026-05-08T12:00:00+00:00",
+      "market_end_date": "2026-05-07T12:00:00+00:00",
+      "market_slug": "highest-temperature-in-austin-on-may-7-2026-70-71f",
+      "resolved_at": null,
+      "outcome": null,
+      "resolution_source": null,
+      "state": "trading",
+      "bets": [
+        {
+          "id": 2145,
+          "placed_at": "2026-05-08T01:03:49.157053+00:00",
+          "size_usd": 1.0,
+          "filled_shares": 500.0,
+          "filled_vwap": 0.001,
+          "model_prob": 0.14656832986236523,
+          "best_ask_at_placement": 0.001,
+          "limit_price": 0.002,
+          "outcome": null,
+          "realized_pnl_usd": null,
+          "fee_usd": null,
+          "fill_quality": null,
+          "strategy": "tail_longshot"
+        }
+      ]
+    },
+    {
       "condition_id": "0xb95250cd02e56a6ddf2a1fb1e984cdebd1a8412d4be867fc6461b255cc64d90d",
       "city": "Chicago",
       "market_type": "high",
@@ -10481,6 +10515,21 @@
           "fee_usd": null,
           "fill_quality": null,
           "strategy": "raw_forecast_corrected"
+        },
+        {
+          "id": 2146,
+          "placed_at": "2026-05-08T01:08:48.302395+00:00",
+          "size_usd": 2.0,
+          "filled_shares": 5.0,
+          "filled_vwap": 0.37,
+          "model_prob": 0.3750474687014478,
+          "best_ask_at_placement": 0.37,
+          "limit_price": 0.37,
+          "outcome": null,
+          "realized_pnl_usd": null,
+          "fee_usd": null,
+          "fill_quality": null,
+          "strategy": "adjacency"
         }
       ]
     }
