@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-05-09T13:59:17.771149+00:00",
-  "now": "2026-05-09T13:59:17.771149+00:00",
+  "updated_at": "2026-05-09T14:09:17.762790+00:00",
+  "now": "2026-05-09T14:09:17.762790+00:00",
   "markets": [
     {
       "condition_id": "0x091d137694061741144097d83e43f740000447e2fcecfdd2cd819dba7650f0f8",
@@ -12461,6 +12461,108 @@
           "fee_usd": null,
           "fill_quality": null,
           "strategy": "adjacency_hourly"
+        }
+      ]
+    },
+    {
+      "condition_id": "0x376ab678b4c426421d9d72eaab5d9e50907cffa5ac3b2847bd4f9013749f7244",
+      "city": "New York City",
+      "market_type": "high",
+      "bracket": "between 56 and 57",
+      "bracket_type": "between",
+      "resolution_date": "2026-05-09",
+      "game_start_time": "2026-05-09T04:00:00+00:00",
+      "last_placement_time": "2026-05-10T08:00:00+00:00",
+      "effective_close_time": "2026-05-10T12:00:00+00:00",
+      "market_end_date": "2026-05-09T12:00:00+00:00",
+      "market_slug": "highest-temperature-in-nyc-on-may-9-2026-56-57f",
+      "resolved_at": null,
+      "outcome": null,
+      "resolution_source": null,
+      "state": "trading",
+      "bets": [
+        {
+          "id": 2223,
+          "placed_at": "2026-05-09T14:00:49.020368+00:00",
+          "size_usd": 1.0,
+          "filled_shares": 500.0,
+          "filled_vwap": 0.001,
+          "model_prob": 0.08148406167231939,
+          "best_ask_at_placement": 0.001,
+          "limit_price": 0.002,
+          "outcome": null,
+          "realized_pnl_usd": null,
+          "fee_usd": null,
+          "fill_quality": null,
+          "strategy": "tail_longshot"
+        }
+      ]
+    },
+    {
+      "condition_id": "0x5ba37b7b50409e2a9a78cf0569e45fc2e1ae275e9b7d45b849237b409326c01d",
+      "city": "New York City",
+      "market_type": "high",
+      "bracket": "between 58 and 59",
+      "bracket_type": "between",
+      "resolution_date": "2026-05-09",
+      "game_start_time": "2026-05-09T04:00:00+00:00",
+      "last_placement_time": "2026-05-10T08:00:00+00:00",
+      "effective_close_time": "2026-05-10T12:00:00+00:00",
+      "market_end_date": "2026-05-09T12:00:00+00:00",
+      "market_slug": "highest-temperature-in-nyc-on-may-9-2026-58-59f",
+      "resolved_at": null,
+      "outcome": null,
+      "resolution_source": null,
+      "state": "trading",
+      "bets": [
+        {
+          "id": 2222,
+          "placed_at": "2026-05-09T14:00:48.915547+00:00",
+          "size_usd": 1.0,
+          "filled_shares": 500.0,
+          "filled_vwap": 0.001,
+          "model_prob": 0.13127620514150695,
+          "best_ask_at_placement": 0.001,
+          "limit_price": 0.002,
+          "outcome": null,
+          "realized_pnl_usd": null,
+          "fee_usd": null,
+          "fill_quality": null,
+          "strategy": "tail_longshot"
+        }
+      ]
+    },
+    {
+      "condition_id": "0xafe868fee5687bef4aa9a159404ab572f374d6a0f6cc3e775daebcd37d11d8cd",
+      "city": "New York City",
+      "market_type": "low",
+      "bracket": "between 44 and 45",
+      "bracket_type": "between",
+      "resolution_date": "2026-05-09",
+      "game_start_time": "2026-05-09T04:00:00+00:00",
+      "last_placement_time": "2026-05-10T08:00:00+00:00",
+      "effective_close_time": "2026-05-10T12:00:00+00:00",
+      "market_end_date": "2026-05-09T12:00:00+00:00",
+      "market_slug": "lowest-temperature-in-nyc-on-may-9-2026-44-45f",
+      "resolved_at": null,
+      "outcome": null,
+      "resolution_source": null,
+      "state": "trading",
+      "bets": [
+        {
+          "id": 2224,
+          "placed_at": "2026-05-09T14:00:49.200067+00:00",
+          "size_usd": 1.0,
+          "filled_shares": 200.0,
+          "filled_vwap": 0.0048000000000000004,
+          "model_prob": 0.04323322829565632,
+          "best_ask_at_placement": 0.004,
+          "limit_price": 0.005,
+          "outcome": null,
+          "realized_pnl_usd": null,
+          "fee_usd": null,
+          "fill_quality": null,
+          "strategy": "tail_longshot"
         }
       ]
     }
