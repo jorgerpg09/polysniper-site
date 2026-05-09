@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-05-09T18:09:17.789228+00:00",
-  "now": "2026-05-09T18:09:17.789228+00:00",
+  "updated_at": "2026-05-09T18:19:17.717733+00:00",
+  "now": "2026-05-09T18:19:17.717733+00:00",
   "markets": [
     {
       "condition_id": "0x091d137694061741144097d83e43f740000447e2fcecfdd2cd819dba7650f0f8",
@@ -12559,10 +12559,10 @@
       "effective_close_time": "2026-05-10T12:00:00+00:00",
       "market_end_date": "2026-05-09T12:00:00+00:00",
       "market_slug": "highest-temperature-in-nyc-on-may-9-2026-62-63f",
-      "resolved_at": null,
-      "outcome": null,
-      "resolution_source": null,
-      "state": "trading",
+      "resolved_at": "2026-05-09T14:59:16.188510+00:00",
+      "outcome": "loss",
+      "resolution_source": "uma_resolved",
+      "state": "resolved",
       "bets": [
         {
           "id": 2225,
@@ -12573,9 +12573,9 @@
           "model_prob": 0.1816834969971859,
           "best_ask_at_placement": 0.001,
           "limit_price": 0.002,
-          "outcome": null,
-          "realized_pnl_usd": null,
-          "fee_usd": null,
+          "outcome": "loss",
+          "realized_pnl_usd": -0.525,
+          "fee_usd": 0.025,
           "fill_quality": null,
           "strategy": "tail_longshot"
         }
@@ -12661,10 +12661,10 @@
       "effective_close_time": "2026-05-10T12:00:00+00:00",
       "market_end_date": "2026-05-09T12:00:00+00:00",
       "market_slug": "highest-temperature-in-nyc-on-may-9-2026-60-61f",
-      "resolved_at": null,
-      "outcome": null,
-      "resolution_source": null,
-      "state": "trading",
+      "resolved_at": "2026-05-09T14:59:16.226945+00:00",
+      "outcome": "loss",
+      "resolution_source": "uma_resolved",
+      "state": "resolved",
       "bets": [
         {
           "id": 2226,
@@ -12675,9 +12675,9 @@
           "model_prob": 0.1714998932015087,
           "best_ask_at_placement": 0.001,
           "limit_price": 0.002,
-          "outcome": null,
-          "realized_pnl_usd": null,
-          "fee_usd": null,
+          "outcome": "loss",
+          "realized_pnl_usd": -0.525,
+          "fee_usd": 0.025,
           "fill_quality": null,
           "strategy": "tail_longshot"
         }
@@ -12709,6 +12709,40 @@
           "model_prob": 0.04323322829565632,
           "best_ask_at_placement": 0.004,
           "limit_price": 0.005,
+          "outcome": null,
+          "realized_pnl_usd": null,
+          "fee_usd": null,
+          "fill_quality": null,
+          "strategy": "tail_longshot"
+        }
+      ]
+    },
+    {
+      "condition_id": "0xf80458c15b1cec0642db5b4163268cc8db1f61a46d2c3c1903b46893cb9a4ee4",
+      "city": "New York City",
+      "market_type": "high",
+      "bracket": "between 68 and 69",
+      "bracket_type": "between",
+      "resolution_date": "2026-05-09",
+      "game_start_time": "2026-05-09T04:00:00+00:00",
+      "last_placement_time": "2026-05-10T08:00:00+00:00",
+      "effective_close_time": "2026-05-10T12:00:00+00:00",
+      "market_end_date": "2026-05-09T12:00:00+00:00",
+      "market_slug": "highest-temperature-in-nyc-on-may-9-2026-68-69f",
+      "resolved_at": null,
+      "outcome": null,
+      "resolution_source": null,
+      "state": "trading",
+      "bets": [
+        {
+          "id": 2231,
+          "placed_at": "2026-05-09T18:14:51.175618+00:00",
+          "size_usd": 1.0,
+          "filled_shares": 125.0,
+          "filled_vwap": 0.00616432,
+          "model_prob": 0.08759115789922356,
+          "best_ask_at_placement": 0.007,
+          "limit_price": 0.008,
           "outcome": null,
           "realized_pnl_usd": null,
           "fee_usd": null,
