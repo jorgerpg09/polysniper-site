@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-05-09T02:39:15.946017+00:00",
+  "updated_at": "2026-05-09T02:49:15.968518+00:00",
   "hit_rate": 0.2447,
   "theoretical_pnl": 131.984,
   "trade_count": 541,
@@ -322,7 +322,7 @@
       "market_ask": 0.35,
       "edge": -0.00867491844555679,
       "kelly_size_usdc": 1.0,
-      "outcome": "PENDING",
+      "outcome": "UNFILLED",
       "resolution_date": "2026-05-08",
       "strategy": "raw_forecast_raw",
       "market_slug": "highest-temperature-in-sao-paulo-on-may-8-2026-29c",
@@ -4903,15 +4903,15 @@
       }
     },
     "raw_forecast_raw": {
-      "bets": 81,
+      "bets": 80,
       "resolved": 77,
       "wins": 22,
       "pnl_usd": -29.7707,
       "bankroll": {
         "start": 10000.0,
         "current": 9966.4416,
-        "open_stake": 4.0,
-        "available": 9962.4416,
+        "open_stake": 3.0,
+        "available": 9963.4416,
         "daily_loss": 1.0395
       },
       "by_boundary": {
@@ -4922,7 +4922,7 @@
           "pnl_usd": 0.0
         },
         "round": {
-          "bets": 81,
+          "bets": 80,
           "resolved": 77,
           "wins": 22,
           "pnl_usd": -29.7707
