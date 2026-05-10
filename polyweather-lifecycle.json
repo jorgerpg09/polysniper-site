@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-05-10T21:39:17.845984+00:00",
-  "now": "2026-05-10T21:39:17.845984+00:00",
+  "updated_at": "2026-05-10T21:49:17.757602+00:00",
+  "now": "2026-05-10T21:49:17.757602+00:00",
   "markets": [
     {
       "condition_id": "0x091d137694061741144097d83e43f740000447e2fcecfdd2cd819dba7650f0f8",
@@ -13600,55 +13600,6 @@
       ]
     },
     {
-      "condition_id": "0xf46866527688fb4370fc41d579ce072f20e083e431560a504c5216aec2b9fed4",
-      "city": "Atlanta",
-      "market_type": "high",
-      "bracket": "between 78 and 79",
-      "bracket_type": "between",
-      "resolution_date": "2026-05-10",
-      "game_start_time": "2026-05-10T04:00:00+00:00",
-      "last_placement_time": "2026-05-11T02:00:00+00:00",
-      "effective_close_time": "2026-05-11T07:00:00+00:00",
-      "market_end_date": "2026-05-10T12:00:00+00:00",
-      "market_slug": "highest-temperature-in-atlanta-on-may-10-2026-78-79f",
-      "resolved_at": null,
-      "outcome": null,
-      "resolution_source": null,
-      "state": "trading",
-      "bets": [
-        {
-          "id": 2274,
-          "placed_at": "2026-05-10T17:58:23.284651+00:00",
-          "size_usd": 1.0,
-          "filled_shares": 500.0,
-          "filled_vwap": 0.001,
-          "model_prob": 0.1315753945075026,
-          "best_ask_at_placement": 0.001,
-          "limit_price": 0.002,
-          "outcome": null,
-          "realized_pnl_usd": null,
-          "fee_usd": null,
-          "fill_quality": null,
-          "strategy": "tail_longshot"
-        },
-        {
-          "id": 2278,
-          "placed_at": "2026-05-10T18:41:00.132879+00:00",
-          "size_usd": 1.0,
-          "filled_shares": 1000.0,
-          "filled_vwap": 0.001,
-          "model_prob": 0.20734282174466062,
-          "best_ask_at_placement": 0.001,
-          "limit_price": 0.001,
-          "outcome": null,
-          "realized_pnl_usd": null,
-          "fee_usd": null,
-          "fill_quality": null,
-          "strategy": "raw_forecast_raw"
-        }
-      ]
-    },
-    {
       "condition_id": "0xfb28227c2ffbe5538b70ae4c734e9cfc0e6eda8907c293e5d426e2aac357893e",
       "city": "Miami",
       "market_type": "low",
@@ -13898,10 +13849,10 @@
       "effective_close_time": "2026-05-11T12:00:00+00:00",
       "market_end_date": "2026-05-10T12:00:00+00:00",
       "market_slug": "highest-temperature-in-nyc-on-may-10-2026-66-67f",
-      "resolved_at": null,
-      "outcome": null,
-      "resolution_source": null,
-      "state": "trading",
+      "resolved_at": "2026-05-10T17:55:16.196059+00:00",
+      "outcome": "loss",
+      "resolution_source": "uma_resolved",
+      "state": "resolved",
       "bets": [
         {
           "id": 2273,
@@ -13912,9 +13863,9 @@
           "model_prob": 0.06263788022654723,
           "best_ask_at_placement": 0.001,
           "limit_price": 0.002,
-          "outcome": null,
-          "realized_pnl_usd": null,
-          "fee_usd": null,
+          "outcome": "loss",
+          "realized_pnl_usd": -0.525,
+          "fee_usd": 0.025,
           "fill_quality": null,
           "strategy": "tail_longshot"
         }
@@ -14053,6 +14004,55 @@
           "fee_usd": null,
           "fill_quality": null,
           "strategy": "tail_longshot"
+        }
+      ]
+    },
+    {
+      "condition_id": "0xf46866527688fb4370fc41d579ce072f20e083e431560a504c5216aec2b9fed4",
+      "city": "Atlanta",
+      "market_type": "high",
+      "bracket": "between 78 and 79",
+      "bracket_type": "between",
+      "resolution_date": "2026-05-10",
+      "game_start_time": "2026-05-10T04:00:00+00:00",
+      "last_placement_time": "2026-05-11T08:00:00+00:00",
+      "effective_close_time": "2026-05-11T12:00:00+00:00",
+      "market_end_date": "2026-05-10T12:00:00+00:00",
+      "market_slug": "highest-temperature-in-atlanta-on-may-10-2026-78-79f",
+      "resolved_at": "2026-05-10T18:41:16.276233+00:00",
+      "outcome": "loss",
+      "resolution_source": "uma_resolved",
+      "state": "resolved",
+      "bets": [
+        {
+          "id": 2274,
+          "placed_at": "2026-05-10T17:58:23.284651+00:00",
+          "size_usd": 1.0,
+          "filled_shares": 500.0,
+          "filled_vwap": 0.001,
+          "model_prob": 0.1315753945075026,
+          "best_ask_at_placement": 0.001,
+          "limit_price": 0.002,
+          "outcome": "loss",
+          "realized_pnl_usd": -0.525,
+          "fee_usd": 0.025,
+          "fill_quality": null,
+          "strategy": "tail_longshot"
+        },
+        {
+          "id": 2278,
+          "placed_at": "2026-05-10T18:41:00.132879+00:00",
+          "size_usd": 1.0,
+          "filled_shares": 1000.0,
+          "filled_vwap": 0.001,
+          "model_prob": 0.20734282174466062,
+          "best_ask_at_placement": 0.001,
+          "limit_price": 0.001,
+          "outcome": "loss",
+          "realized_pnl_usd": -1.0499,
+          "fee_usd": 0.05,
+          "fill_quality": "FANTASY",
+          "strategy": "raw_forecast_raw"
         }
       ]
     },
