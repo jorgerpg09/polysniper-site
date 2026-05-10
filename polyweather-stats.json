@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-05-10T18:19:15.984420+00:00",
+  "updated_at": "2026-05-10T18:29:15.979389+00:00",
   "hit_rate": 0.2316,
   "theoretical_pnl": 100.7405,
-  "trade_count": 613,
+  "trade_count": 615,
   "active_cities": 13,
   "daily_pnl": [
     {
@@ -47,6 +47,36 @@
     }
   ],
   "recent_trades": [
+    {
+      "logged_at": "2026-05-10T18:28:12.423625+00:00",
+      "city": "New York City",
+      "bracket": "between 46 and 47",
+      "market_type": "low",
+      "model_prob": 0.1555126451420457,
+      "market_ask": 0.002,
+      "edge": 0.1535126451420457,
+      "kelly_size_usdc": 1.0,
+      "outcome": "PENDING",
+      "resolution_date": "2026-05-10",
+      "strategy": "tail_longshot",
+      "market_slug": "lowest-temperature-in-nyc-on-may-10-2026-46-47f",
+      "boundary_convention": "round"
+    },
+    {
+      "logged_at": "2026-05-10T18:27:24.093950+00:00",
+      "city": "New York City",
+      "bracket": "between 76 and 77",
+      "market_type": "high",
+      "model_prob": 0.13011625363557522,
+      "market_ask": 0.007,
+      "edge": 0.12311625363557521,
+      "kelly_size_usdc": 1.0,
+      "outcome": "PENDING",
+      "resolution_date": "2026-05-10",
+      "strategy": "tail_longshot",
+      "market_slug": "highest-temperature-in-nyc-on-may-10-2026-76-77f",
+      "boundary_convention": "round"
+    },
     {
       "logged_at": "2026-05-10T17:58:23.284651+00:00",
       "city": "Atlanta",
@@ -1995,36 +2025,6 @@
       "resolution_date": "2026-05-07",
       "strategy": "tail_longshot",
       "market_slug": "highest-temperature-in-austin-on-may-7-2026-72-73f",
-      "boundary_convention": "round"
-    },
-    {
-      "logged_at": "2026-05-07T23:52:49.138390+00:00",
-      "city": "Chicago",
-      "bracket": "between 62 and 63",
-      "market_type": "high",
-      "model_prob": 0.13868556923165531,
-      "market_ask": 0.001,
-      "edge": 0.1376855692316553,
-      "kelly_size_usdc": 1.0,
-      "outcome": "LOSS",
-      "resolution_date": "2026-05-07",
-      "strategy": "tail_longshot",
-      "market_slug": "highest-temperature-in-chicago-on-may-7-2026-62-63f",
-      "boundary_convention": "round"
-    },
-    {
-      "logged_at": "2026-05-07T23:17:48.337161+00:00",
-      "city": "New York City",
-      "bracket": "between 46 and 47",
-      "market_type": "low",
-      "model_prob": 0.11548849791971066,
-      "market_ask": 0.008,
-      "edge": 0.10748849791971066,
-      "kelly_size_usdc": 1.0,
-      "outcome": "LOSS",
-      "resolution_date": "2026-05-07",
-      "strategy": "tail_longshot",
-      "market_slug": "lowest-temperature-in-nyc-on-may-7-2026-46-47f",
       "boundary_convention": "round"
     },
     {
@@ -5009,15 +5009,15 @@
       }
     },
     "tail_longshot": {
-      "bets": 92,
+      "bets": 94,
       "resolved": 84,
       "wins": 0,
       "pnl_usd": -62.3764,
       "bankroll": {
         "start": 100.0,
         "current": 37.624,
-        "open_stake": 8.0,
-        "available": 29.624,
+        "open_stake": 10.0,
+        "available": 27.624,
         "daily_loss": 6.6716
       },
       "by_boundary": {
@@ -5028,7 +5028,7 @@
           "pnl_usd": 0.0
         },
         "round": {
-          "bets": 92,
+          "bets": 94,
           "resolved": 84,
           "wins": 0,
           "pnl_usd": -62.3764
