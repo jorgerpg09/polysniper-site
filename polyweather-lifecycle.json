@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-05-10T19:59:17.878873+00:00",
-  "now": "2026-05-10T19:59:17.878873+00:00",
+  "updated_at": "2026-05-10T20:09:17.910806+00:00",
+  "now": "2026-05-10T20:09:17.910806+00:00",
   "markets": [
     {
       "condition_id": "0x091d137694061741144097d83e43f740000447e2fcecfdd2cd819dba7650f0f8",
@@ -13237,7 +13237,7 @@
       "resolved_at": null,
       "outcome": null,
       "resolution_source": null,
-      "state": "trading",
+      "state": "after_last_placement",
       "bets": [
         {
           "id": 2243,
@@ -13980,6 +13980,40 @@
           "model_prob": 0.04557086190948361,
           "best_ask_at_placement": 0.006,
           "limit_price": 0.007,
+          "outcome": null,
+          "realized_pnl_usd": null,
+          "fee_usd": null,
+          "fill_quality": null,
+          "strategy": "tail_longshot"
+        }
+      ]
+    },
+    {
+      "condition_id": "0xd0a748c9162cde449a49e82d6b7a7bba760b22e43744864495bca0eab8931cc6",
+      "city": "Chicago",
+      "market_type": "high",
+      "bracket": "between 62 and 63",
+      "bracket_type": "between",
+      "resolution_date": "2026-05-10",
+      "game_start_time": "2026-05-10T05:00:00+00:00",
+      "last_placement_time": "2026-05-11T08:00:00+00:00",
+      "effective_close_time": "2026-05-11T12:00:00+00:00",
+      "market_end_date": "2026-05-10T12:00:00+00:00",
+      "market_slug": "highest-temperature-in-chicago-on-may-10-2026-62-63f",
+      "resolved_at": null,
+      "outcome": null,
+      "resolution_source": null,
+      "state": "trading",
+      "bets": [
+        {
+          "id": 2281,
+          "placed_at": "2026-05-10T20:03:15.563118+00:00",
+          "size_usd": 1.0,
+          "filled_shares": 500.0,
+          "filled_vwap": 0.001,
+          "model_prob": 0.08520995708167095,
+          "best_ask_at_placement": 0.001,
+          "limit_price": 0.002,
           "outcome": null,
           "realized_pnl_usd": null,
           "fee_usd": null,
