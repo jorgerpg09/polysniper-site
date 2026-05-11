@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-05-11T00:29:15.964481+00:00",
-  "hit_rate": 0.2245,
-  "theoretical_pnl": 88.05,
+  "updated_at": "2026-05-11T00:39:15.975727+00:00",
+  "hit_rate": 0.2234,
+  "theoretical_pnl": 85.986,
   "trade_count": 623,
   "active_cities": 13,
   "daily_pnl": [
@@ -47,7 +47,7 @@
     },
     {
       "date": "2026-05-10",
-      "cumulative_pnl": 88.05
+      "cumulative_pnl": 85.986
     }
   ],
   "recent_trades": [
@@ -150,7 +150,7 @@
       "market_ask": 0.24,
       "edge": 0.06571897756075779,
       "kelly_size_usdc": 1.0,
-      "outcome": "PENDING",
+      "outcome": "LOSS",
       "resolution_date": "2026-05-10",
       "strategy": "raw_forecast_corrected",
       "market_slug": "highest-temperature-in-atlanta-on-may-10-2026-80-81f",
@@ -495,7 +495,7 @@
       "market_ask": 0.48,
       "edge": -0.19708784892644243,
       "kelly_size_usdc": 1.0,
-      "outcome": "PENDING",
+      "outcome": "LOSS",
       "resolution_date": "2026-05-10",
       "strategy": "raw_forecast_raw",
       "market_slug": "highest-temperature-in-atlanta-on-may-10-2026-80-81f",
@@ -4960,15 +4960,15 @@
     },
     "raw_forecast_corrected": {
       "bets": 113,
-      "resolved": 102,
+      "resolved": 103,
       "wins": 29,
-      "pnl_usd": -26.697,
+      "pnl_usd": -27.735,
       "bankroll": {
         "start": 10000.0,
-        "current": 9967.15,
-        "open_stake": 11.0,
-        "available": 9956.15,
-        "daily_loss": 5.1991
+        "current": 9966.112,
+        "open_stake": 10.0,
+        "available": 9956.112,
+        "daily_loss": 1.038
       },
       "by_boundary": {
         "floor": {
@@ -4979,23 +4979,23 @@
         },
         "round": {
           "bets": 113,
-          "resolved": 102,
+          "resolved": 103,
           "wins": 29,
-          "pnl_usd": -26.697
+          "pnl_usd": -27.735
         }
       }
     },
     "raw_forecast_raw": {
       "bets": 93,
-      "resolved": 87,
+      "resolved": 88,
       "wins": 25,
-      "pnl_usd": -33.8733,
+      "pnl_usd": -34.8993,
       "bankroll": {
         "start": 10000.0,
-        "current": 9961.289,
-        "open_stake": 6.0,
-        "available": 9955.289,
-        "daily_loss": 5.174
+        "current": 9960.263,
+        "open_stake": 5.0,
+        "available": 9955.263,
+        "daily_loss": 1.026
       },
       "by_boundary": {
         "floor": {
@@ -5006,9 +5006,9 @@
         },
         "round": {
           "bets": 93,
-          "resolved": 87,
+          "resolved": 88,
           "wins": 25,
-          "pnl_usd": -33.8733
+          "pnl_usd": -34.8993
         }
       }
     },
