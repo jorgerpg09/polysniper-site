@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-05-11T22:49:17.782531+00:00",
-  "now": "2026-05-11T22:49:17.782531+00:00",
+  "updated_at": "2026-05-11T22:59:17.792859+00:00",
+  "now": "2026-05-11T22:59:17.792859+00:00",
   "markets": [
     {
       "condition_id": "0x091d137694061741144097d83e43f740000447e2fcecfdd2cd819dba7650f0f8",
@@ -14879,6 +14879,40 @@
       ]
     },
     {
+      "condition_id": "0x5ed0ac27dc3faa0e03c8c2691e954617a8b25ec622f34343e01f1795835acecd",
+      "city": "Chicago",
+      "market_type": "high",
+      "bracket": "between 60 and 61",
+      "bracket_type": "between",
+      "resolution_date": "2026-05-11",
+      "game_start_time": "2026-05-11T05:00:00+00:00",
+      "last_placement_time": "2026-05-12T08:00:00+00:00",
+      "effective_close_time": "2026-05-12T12:00:00+00:00",
+      "market_end_date": "2026-05-11T12:00:00+00:00",
+      "market_slug": "highest-temperature-in-chicago-on-may-11-2026-60-61f",
+      "resolved_at": null,
+      "outcome": null,
+      "resolution_source": null,
+      "state": "trading",
+      "bets": [
+        {
+          "id": 2332,
+          "placed_at": "2026-05-11T22:56:34.024092+00:00",
+          "size_usd": 1.0,
+          "filled_shares": 500.0,
+          "filled_vwap": 0.0015664799999999999,
+          "model_prob": 0.14341195145603042,
+          "best_ask_at_placement": 0.001,
+          "limit_price": 0.002,
+          "outcome": null,
+          "realized_pnl_usd": null,
+          "fee_usd": null,
+          "fill_quality": null,
+          "strategy": "tail_longshot"
+        }
+      ]
+    },
+    {
       "condition_id": "0x60aef82a3c6f86cd6bb0ea290bdce1f6f6bd570cbb3bf4ba85773f869435d87c",
       "city": "New York City",
       "market_type": "high",
@@ -15004,6 +15038,40 @@
           "filled_shares": 333.3333333333333,
           "filled_vwap": 0.0027397199999999997,
           "model_prob": 0.16127018364539658,
+          "best_ask_at_placement": 0.002,
+          "limit_price": 0.003,
+          "outcome": null,
+          "realized_pnl_usd": null,
+          "fee_usd": null,
+          "fill_quality": null,
+          "strategy": "tail_longshot"
+        }
+      ]
+    },
+    {
+      "condition_id": "0xa4fea9512fbf692afc5dbd0e71d59069d20792788c1fc78686761b30ff7d7eee",
+      "city": "Chicago",
+      "market_type": "high",
+      "bracket": "between 58 and 59",
+      "bracket_type": "between",
+      "resolution_date": "2026-05-11",
+      "game_start_time": "2026-05-11T05:00:00+00:00",
+      "last_placement_time": "2026-05-12T08:00:00+00:00",
+      "effective_close_time": "2026-05-12T12:00:00+00:00",
+      "market_end_date": "2026-05-11T12:00:00+00:00",
+      "market_slug": "highest-temperature-in-chicago-on-may-11-2026-58-59f",
+      "resolved_at": null,
+      "outcome": null,
+      "resolution_source": null,
+      "state": "trading",
+      "bets": [
+        {
+          "id": 2333,
+          "placed_at": "2026-05-11T22:56:34.127183+00:00",
+          "size_usd": 1.0,
+          "filled_shares": 333.3333333333333,
+          "filled_vwap": 0.00291435,
+          "model_prob": 0.10373052493989715,
           "best_ask_at_placement": 0.002,
           "limit_price": 0.003,
           "outcome": null,
@@ -15162,10 +15230,10 @@
       "effective_close_time": "2026-05-12T12:00:00+00:00",
       "market_end_date": "2026-05-11T12:00:00+00:00",
       "market_slug": "highest-temperature-in-austin-on-may-11-2026-78-79f",
-      "resolved_at": null,
-      "outcome": null,
-      "resolution_source": null,
-      "state": "trading",
+      "resolved_at": "2026-05-11T21:03:16.205448+00:00",
+      "outcome": "loss",
+      "resolution_source": "uma_resolved",
+      "state": "resolved",
       "bets": [
         {
           "id": 2328,
@@ -15176,9 +15244,9 @@
           "model_prob": 0.16073761289024202,
           "best_ask_at_placement": 0.001,
           "limit_price": 0.002,
-          "outcome": null,
-          "realized_pnl_usd": null,
-          "fee_usd": null,
+          "outcome": "loss",
+          "realized_pnl_usd": -0.525,
+          "fee_usd": 0.025,
           "fill_quality": null,
           "strategy": "tail_longshot"
         }
