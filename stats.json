@@ -1,21 +1,21 @@
 {
-  "updated_at": "2026-05-11T02:44:37.620767+00:00",
-  "total_bets": 347,
+  "updated_at": "2026-05-11T02:45:39.412728+00:00",
+  "total_bets": 349,
   "wins": 197,
-  "losses": 148,
-  "pending": 2,
-  "win_rate": 57.1,
-  "pnl": -27.86,
-  "kelly_pnl": -42.55,
+  "losses": 149,
+  "pending": 3,
+  "win_rate": 56.9,
+  "pnl": -28.89,
+  "kelly_pnl": -44.02,
   "current_streak": 1,
-  "streak_type": "W",
+  "streak_type": "L",
   "daily": [
     {
       "date": "2026-05-11",
-      "bets": 6,
+      "bets": 7,
       "wins": 3,
-      "losses": 3,
-      "wr": 50.0
+      "losses": 4,
+      "wr": 42.9
     },
     {
       "date": "2026-05-10",
@@ -48,12 +48,30 @@
   ],
   "recent_signals": [
     {
+      "timestamp": "2026-05-11T02:45:25.157132+00:00",
+      "coin": "ETH",
+      "direction": "UP",
+      "entry_price": 0.63,
+      "secs": 25.1,
+      "outcome": "PENDING",
+      "slug": "eth-updown-5m-1778467500"
+    },
+    {
+      "timestamp": "2026-05-11T02:45:23.231969+00:00",
+      "coin": "BTC",
+      "direction": "UP",
+      "entry_price": 0.6,
+      "secs": 23.2,
+      "outcome": "PENDING",
+      "slug": "btc-updown-5m-1778467500"
+    },
+    {
       "timestamp": "2026-05-11T02:35:13.515687+00:00",
       "coin": "ETH",
       "direction": "UP",
       "entry_price": 0.57,
       "secs": 13.5,
-      "outcome": "PENDING",
+      "outcome": "LOSS",
       "slug": "eth-updown-5m-1778466900"
     },
     {
@@ -208,24 +226,6 @@
       "secs": 29.7,
       "outcome": "WIN",
       "slug": "eth-updown-5m-1778453700"
-    },
-    {
-      "timestamp": "2026-05-10T22:50:13.121401+00:00",
-      "coin": "ETH",
-      "direction": "UP",
-      "entry_price": 0.6,
-      "secs": 13.0,
-      "outcome": "LOSS",
-      "slug": "eth-updown-5m-1778453400"
-    },
-    {
-      "timestamp": "2026-05-10T22:50:10.681662+00:00",
-      "coin": "BTC",
-      "direction": "UP",
-      "entry_price": 0.63,
-      "secs": 10.6,
-      "outcome": "WIN",
-      "slug": "btc-updown-5m-1778453400"
     }
   ],
   "backtest": {
