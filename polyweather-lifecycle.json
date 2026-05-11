@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-05-11T13:59:17.826352+00:00",
-  "now": "2026-05-11T13:59:17.826352+00:00",
+  "updated_at": "2026-05-11T14:09:17.984152+00:00",
+  "now": "2026-05-11T14:09:17.984152+00:00",
   "markets": [
     {
       "condition_id": "0x091d137694061741144097d83e43f740000447e2fcecfdd2cd819dba7650f0f8",
@@ -14611,6 +14611,21 @@
           "fee_usd": null,
           "fill_quality": null,
           "strategy": "adjacency_hourly"
+        },
+        {
+          "id": 2309,
+          "placed_at": "2026-05-11T14:01:06.232616+00:00",
+          "size_usd": 2.0,
+          "filled_shares": 5.88235294117647,
+          "filled_vwap": 0.34,
+          "model_prob": 0.3453070666499799,
+          "best_ask_at_placement": 0.34,
+          "limit_price": 0.34,
+          "outcome": null,
+          "realized_pnl_usd": null,
+          "fee_usd": null,
+          "fill_quality": null,
+          "strategy": "adjacency_hourly"
         }
       ]
     },
@@ -14713,6 +14728,108 @@
           "fee_usd": null,
           "fill_quality": null,
           "strategy": "raw_forecast_corrected"
+        }
+      ]
+    },
+    {
+      "condition_id": "0x14c6711fe95ac37a7358e90d02c6916a8f36021702d663ec91cec78a86ffd1c4",
+      "city": "New York City",
+      "market_type": "high",
+      "bracket": "between 70 and 71",
+      "bracket_type": "between",
+      "resolution_date": "2026-05-11",
+      "game_start_time": "2026-05-11T04:00:00+00:00",
+      "last_placement_time": "2026-05-12T08:00:00+00:00",
+      "effective_close_time": "2026-05-12T12:00:00+00:00",
+      "market_end_date": "2026-05-11T12:00:00+00:00",
+      "market_slug": "highest-temperature-in-nyc-on-may-11-2026-70-71f",
+      "resolved_at": null,
+      "outcome": null,
+      "resolution_source": null,
+      "state": "trading",
+      "bets": [
+        {
+          "id": 2308,
+          "placed_at": "2026-05-11T14:01:06.163394+00:00",
+          "size_usd": 1.0,
+          "filled_shares": 250.0,
+          "filled_vwap": 0.003,
+          "model_prob": 0.09374773241470802,
+          "best_ask_at_placement": 0.003,
+          "limit_price": 0.004,
+          "outcome": null,
+          "realized_pnl_usd": null,
+          "fee_usd": null,
+          "fill_quality": null,
+          "strategy": "tail_longshot"
+        }
+      ]
+    },
+    {
+      "condition_id": "0x703977f0bdfaeb9775a5e2303b72b577a51777f3a0c12bc58bcb02603901030c",
+      "city": "Chicago",
+      "market_type": "high",
+      "bracket": "between 64 and 65",
+      "bracket_type": "between",
+      "resolution_date": "2026-05-11",
+      "game_start_time": "2026-05-11T05:00:00+00:00",
+      "last_placement_time": "2026-05-12T08:00:00+00:00",
+      "effective_close_time": "2026-05-12T12:00:00+00:00",
+      "market_end_date": "2026-05-11T12:00:00+00:00",
+      "market_slug": "highest-temperature-in-chicago-on-may-11-2026-64-65f",
+      "resolved_at": null,
+      "outcome": null,
+      "resolution_source": null,
+      "state": "trading",
+      "bets": [
+        {
+          "id": 2307,
+          "placed_at": "2026-05-11T14:01:06.058858+00:00",
+          "size_usd": 1.0,
+          "filled_shares": 141.9,
+          "filled_vwap": 0.00269415081042988,
+          "model_prob": 0.16127018364539658,
+          "best_ask_at_placement": 0.002,
+          "limit_price": 0.003,
+          "outcome": null,
+          "realized_pnl_usd": null,
+          "fee_usd": null,
+          "fill_quality": null,
+          "strategy": "tail_longshot"
+        }
+      ]
+    },
+    {
+      "condition_id": "0xdca2f3ac0e3d829b4272169f6fbd09ba2be6d7b0aba1d2270f43794ad44d8566",
+      "city": "Austin",
+      "market_type": "high",
+      "bracket": "between 70 and 71",
+      "bracket_type": "between",
+      "resolution_date": "2026-05-11",
+      "game_start_time": "2026-05-11T05:00:00+00:00",
+      "last_placement_time": "2026-05-12T08:00:00+00:00",
+      "effective_close_time": "2026-05-12T12:00:00+00:00",
+      "market_end_date": "2026-05-11T12:00:00+00:00",
+      "market_slug": "highest-temperature-in-austin-on-may-11-2026-70-71f",
+      "resolved_at": null,
+      "outcome": null,
+      "resolution_source": null,
+      "state": "trading",
+      "bets": [
+        {
+          "id": 2306,
+          "placed_at": "2026-05-11T14:01:05.860122+00:00",
+          "size_usd": 1.0,
+          "filled_shares": 166.66666666666666,
+          "filled_vwap": 0.005,
+          "model_prob": 0.041064297374945664,
+          "best_ask_at_placement": 0.005,
+          "limit_price": 0.006,
+          "outcome": null,
+          "realized_pnl_usd": null,
+          "fee_usd": null,
+          "fill_quality": null,
+          "strategy": "tail_longshot"
         }
       ]
     }
