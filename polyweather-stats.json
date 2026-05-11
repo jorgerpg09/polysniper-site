@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-05-11T22:49:15.962668+00:00",
+  "updated_at": "2026-05-11T22:59:15.946175+00:00",
   "hit_rate": 0.2191,
   "theoretical_pnl": 55.9347,
-  "trade_count": 670,
+  "trade_count": 672,
   "active_cities": 13,
   "daily_pnl": [
     {
@@ -55,6 +55,36 @@
     }
   ],
   "recent_trades": [
+    {
+      "logged_at": "2026-05-11T22:56:34.127183+00:00",
+      "city": "Chicago",
+      "bracket": "between 58 and 59",
+      "market_type": "high",
+      "model_prob": 0.10373052493989715,
+      "market_ask": 0.002,
+      "edge": 0.10173052493989715,
+      "kelly_size_usdc": 1.0,
+      "outcome": "PENDING",
+      "resolution_date": "2026-05-11",
+      "strategy": "tail_longshot",
+      "market_slug": "highest-temperature-in-chicago-on-may-11-2026-58-59f",
+      "boundary_convention": "round"
+    },
+    {
+      "logged_at": "2026-05-11T22:56:34.024092+00:00",
+      "city": "Chicago",
+      "bracket": "between 60 and 61",
+      "market_type": "high",
+      "model_prob": 0.14341195145603042,
+      "market_ask": 0.001,
+      "edge": 0.14241195145603042,
+      "kelly_size_usdc": 1.0,
+      "outcome": "PENDING",
+      "resolution_date": "2026-05-11",
+      "strategy": "tail_longshot",
+      "market_slug": "highest-temperature-in-chicago-on-may-11-2026-60-61f",
+      "boundary_convention": "round"
+    },
     {
       "logged_at": "2026-05-11T22:26:37.153076+00:00",
       "city": "Miami",
@@ -2183,36 +2213,6 @@
       "resolution_date": "2026-05-08",
       "strategy": "tail_longshot",
       "market_slug": "highest-temperature-in-austin-on-may-8-2026-74-75f",
-      "boundary_convention": "round"
-    },
-    {
-      "logged_at": "2026-05-08T18:52:49.608565+00:00",
-      "city": "Chicago",
-      "bracket": "between 62 and 63",
-      "market_type": "high",
-      "model_prob": 0.12558290340429856,
-      "market_ask": 0.002,
-      "edge": 0.12358290340429856,
-      "kelly_size_usdc": 1.0,
-      "outcome": "LOSS",
-      "resolution_date": "2026-05-08",
-      "strategy": "tail_longshot",
-      "market_slug": "highest-temperature-in-chicago-on-may-8-2026-62-63f",
-      "boundary_convention": "round"
-    },
-    {
-      "logged_at": "2026-05-08T17:57:49.683752+00:00",
-      "city": "New York City",
-      "bracket": "between 60 and 61",
-      "market_type": "high",
-      "model_prob": 0.1288615454885912,
-      "market_ask": 0.001,
-      "edge": 0.1278615454885912,
-      "kelly_size_usdc": 1.0,
-      "outcome": "LOSS",
-      "resolution_date": "2026-05-08",
-      "strategy": "tail_longshot",
-      "market_slug": "highest-temperature-in-nyc-on-may-8-2026-60-61f",
       "boundary_convention": "round"
     },
     {
@@ -5017,15 +5017,15 @@
       }
     },
     "tail_longshot": {
-      "bets": 112,
+      "bets": 114,
       "resolved": 103,
       "wins": 0,
       "pnl_usd": -75.4835,
       "bankroll": {
         "start": 100.0,
         "current": 24.5172,
-        "open_stake": 9.0,
-        "available": 15.5172,
+        "open_stake": 11.0,
+        "available": 13.5172,
         "daily_loss": 9.2323
       },
       "by_boundary": {
@@ -5036,7 +5036,7 @@
           "pnl_usd": 0.0
         },
         "round": {
-          "bets": 112,
+          "bets": 114,
           "resolved": 103,
           "wins": 0,
           "pnl_usd": -75.4835
