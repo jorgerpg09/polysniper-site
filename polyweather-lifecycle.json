@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-05-12T22:09:17.923832+00:00",
-  "now": "2026-05-12T22:09:17.923832+00:00",
+  "updated_at": "2026-05-12T22:19:17.927040+00:00",
+  "now": "2026-05-12T22:19:17.927040+00:00",
   "markets": [
     {
       "condition_id": "0x091d137694061741144097d83e43f740000447e2fcecfdd2cd819dba7650f0f8",
@@ -15668,10 +15668,10 @@
       "effective_close_time": "2026-05-13T07:00:00+00:00",
       "market_end_date": "2026-05-12T12:00:00+00:00",
       "market_slug": "highest-temperature-in-atlanta-on-may-12-2026-71forbelow",
-      "resolved_at": null,
-      "outcome": null,
-      "resolution_source": null,
-      "state": "trading",
+      "resolved_at": "2026-05-12T17:43:17.472638+00:00",
+      "outcome": "loss",
+      "resolution_source": "uma_resolved",
+      "state": "resolved",
       "bets": [
         {
           "id": 2396,
@@ -15682,9 +15682,9 @@
           "model_prob": 0.2387825533618838,
           "best_ask_at_placement": 0.17,
           "limit_price": 0.17,
-          "outcome": null,
-          "realized_pnl_usd": null,
-          "fee_usd": null,
+          "outcome": "loss",
+          "realized_pnl_usd": -1.4466,
+          "fee_usd": 0.0611,
           "fill_quality": null,
           "strategy": "adjacency"
         },
@@ -15697,9 +15697,9 @@
           "model_prob": 0.2387825533618838,
           "best_ask_at_placement": 0.205,
           "limit_price": 0.205,
-          "outcome": null,
-          "realized_pnl_usd": null,
-          "fee_usd": null,
+          "outcome": "loss",
+          "realized_pnl_usd": -1.8315,
+          "fee_usd": 0.0721,
           "fill_quality": null,
           "strategy": "adjacency_hourly"
         }
@@ -16624,10 +16624,10 @@
       "effective_close_time": "2026-05-13T12:00:00+00:00",
       "market_end_date": "2026-05-12T12:00:00+00:00",
       "market_slug": "highest-temperature-in-austin-on-may-12-2026-80-81f",
-      "resolved_at": null,
-      "outcome": null,
-      "resolution_source": null,
-      "state": "trading",
+      "resolved_at": "2026-05-12T19:55:16.198461+00:00",
+      "outcome": "loss",
+      "resolution_source": "uma_resolved",
+      "state": "resolved",
       "bets": [
         {
           "id": 2383,
@@ -16638,9 +16638,9 @@
           "model_prob": 0.19007832810206104,
           "best_ask_at_placement": 0.005,
           "limit_price": 0.006,
-          "outcome": null,
-          "realized_pnl_usd": null,
-          "fee_usd": null,
+          "outcome": "loss",
+          "realized_pnl_usd": -0.4359,
+          "fee_usd": 0.0207,
           "fill_quality": null,
           "strategy": "tail_longshot"
         }
@@ -16811,6 +16811,40 @@
           "outcome": "loss",
           "realized_pnl_usd": -0.8748,
           "fee_usd": 0.0415,
+          "fill_quality": null,
+          "strategy": "tail_longshot"
+        }
+      ]
+    },
+    {
+      "condition_id": "0x78d44bbbdf75f9d87ba2870a64c02e7f2d80d8e51d9ad53d1f48341811a71cfe",
+      "city": "New York City",
+      "market_type": "high",
+      "bracket": "between 70 and 71",
+      "bracket_type": "between",
+      "resolution_date": "2026-05-12",
+      "game_start_time": "2026-05-12T04:00:00+00:00",
+      "last_placement_time": "2026-05-13T08:00:00+00:00",
+      "effective_close_time": "2026-05-13T12:00:00+00:00",
+      "market_end_date": "2026-05-12T12:00:00+00:00",
+      "market_slug": "highest-temperature-in-nyc-on-may-12-2026-70-71f",
+      "resolved_at": null,
+      "outcome": null,
+      "resolution_source": null,
+      "state": "trading",
+      "bets": [
+        {
+          "id": 2401,
+          "placed_at": "2026-05-12T22:14:33.047990+00:00",
+          "size_usd": 1.0,
+          "filled_shares": 120.0,
+          "filled_vwap": 0.003,
+          "model_prob": 0.12190574392450337,
+          "best_ask_at_placement": 0.003,
+          "limit_price": 0.004,
+          "outcome": null,
+          "realized_pnl_usd": null,
+          "fee_usd": null,
           "fill_quality": null,
           "strategy": "tail_longshot"
         }
