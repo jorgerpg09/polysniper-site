@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-05-12T17:19:15.954051+00:00",
-  "hit_rate": 0.2111,
-  "theoretical_pnl": 17.0992,
+  "updated_at": "2026-05-12T17:29:15.954707+00:00",
+  "hit_rate": 0.2054,
+  "theoretical_pnl": -7.5589,
   "trade_count": 733,
   "active_cities": 13,
   "daily_pnl": [
@@ -55,7 +55,7 @@
     },
     {
       "date": "2026-05-12",
-      "cumulative_pnl": 17.0992
+      "cumulative_pnl": -7.5589
     }
   ],
   "recent_trades": [
@@ -413,7 +413,7 @@
       "market_ask": 0.06,
       "edge": 0.21385933676553115,
       "kelly_size_usdc": 1.0,
-      "outcome": "PENDING",
+      "outcome": "LOSS",
       "resolution_date": "2026-05-12",
       "strategy": "raw_forecast_raw",
       "market_slug": "highest-temperature-in-miami-on-may-12-2026-86-87f",
@@ -533,7 +533,7 @@
       "market_ask": 0.06,
       "edge": 0.21763699405782416,
       "kelly_size_usdc": 1.0,
-      "outcome": "PENDING",
+      "outcome": "LOSS",
       "resolution_date": "2026-05-12",
       "strategy": "raw_forecast_corrected",
       "market_slug": "highest-temperature-in-miami-on-may-12-2026-86-87f",
@@ -863,7 +863,7 @@
       "market_ask": 0.17,
       "edge": 0.09854693062025846,
       "kelly_size_usdc": 2.0,
-      "outcome": "PENDING",
+      "outcome": "LOSS",
       "resolution_date": "2026-05-12",
       "strategy": "adjacency_hourly",
       "market_slug": "highest-temperature-in-miami-on-may-12-2026-86-87f",
@@ -908,7 +908,7 @@
       "market_ask": 0.17,
       "edge": 0.09854693062025846,
       "kelly_size_usdc": 2.0,
-      "outcome": "PENDING",
+      "outcome": "LOSS",
       "resolution_date": "2026-05-12",
       "strategy": "adjacency_hourly",
       "market_slug": "highest-temperature-in-miami-on-may-12-2026-86-87f",
@@ -953,7 +953,7 @@
       "market_ask": 0.22,
       "edge": 0.04854693062025847,
       "kelly_size_usdc": 2.0,
-      "outcome": "PENDING",
+      "outcome": "LOSS",
       "resolution_date": "2026-05-12",
       "strategy": "adjacency_hourly",
       "market_slug": "highest-temperature-in-miami-on-may-12-2026-86-87f",
@@ -1013,7 +1013,7 @@
       "market_ask": 0.22,
       "edge": 0.04854693062025847,
       "kelly_size_usdc": 2.0,
-      "outcome": "PENDING",
+      "outcome": "LOSS",
       "resolution_date": "2026-05-12",
       "strategy": "adjacency_hourly",
       "market_slug": "highest-temperature-in-miami-on-may-12-2026-86-87f",
@@ -1073,7 +1073,7 @@
       "market_ask": 0.21,
       "edge": 0.05854693062025848,
       "kelly_size_usdc": 2.0,
-      "outcome": "PENDING",
+      "outcome": "LOSS",
       "resolution_date": "2026-05-12",
       "strategy": "adjacency_hourly",
       "market_slug": "highest-temperature-in-miami-on-may-12-2026-86-87f",
@@ -1088,7 +1088,7 @@
       "market_ask": 0.2,
       "edge": 0.06854693062025846,
       "kelly_size_usdc": 2.0,
-      "outcome": "PENDING",
+      "outcome": "LOSS",
       "resolution_date": "2026-05-12",
       "strategy": "adjacency_hourly",
       "market_slug": "highest-temperature-in-miami-on-may-12-2026-86-87f",
@@ -1148,7 +1148,7 @@
       "market_ask": 0.25,
       "edge": 0.018546930620258473,
       "kelly_size_usdc": 2.0,
-      "outcome": "PENDING",
+      "outcome": "LOSS",
       "resolution_date": "2026-05-12",
       "strategy": "adjacency_hourly",
       "market_slug": "highest-temperature-in-miami-on-may-12-2026-86-87f",
@@ -1193,7 +1193,7 @@
       "market_ask": 0.26,
       "edge": 0.016282850467094434,
       "kelly_size_usdc": 2.0,
-      "outcome": "PENDING",
+      "outcome": "LOSS",
       "resolution_date": "2026-05-12",
       "strategy": "adjacency_hourly",
       "market_slug": "highest-temperature-in-miami-on-may-12-2026-86-87f",
@@ -1223,7 +1223,7 @@
       "market_ask": 0.21,
       "edge": 0.04524400685270871,
       "kelly_size_usdc": 2.0,
-      "outcome": "PENDING",
+      "outcome": "LOSS",
       "resolution_date": "2026-05-12",
       "strategy": "adjacency_hourly",
       "market_slug": "highest-temperature-in-miami-on-may-12-2026-86-87f",
@@ -1268,7 +1268,7 @@
       "market_ask": 0.23,
       "edge": 0.025244006852708695,
       "kelly_size_usdc": 2.0,
-      "outcome": "PENDING",
+      "outcome": "LOSS",
       "resolution_date": "2026-05-12",
       "strategy": "adjacency_hourly",
       "market_slug": "highest-temperature-in-miami-on-may-12-2026-86-87f",
@@ -1283,7 +1283,7 @@
       "market_ask": 0.23,
       "edge": 0.025244006852708695,
       "kelly_size_usdc": 2.0,
-      "outcome": "PENDING",
+      "outcome": "LOSS",
       "resolution_date": "2026-05-12",
       "strategy": "adjacency",
       "market_slug": "highest-temperature-in-miami-on-may-12-2026-86-87f",
@@ -4728,15 +4728,15 @@
   "strategies": {
     "adjacency": {
       "bets": 59,
-      "resolved": 54,
+      "resolved": 55,
       "wins": 12,
-      "pnl_usd": -1.2658,
+      "pnl_usd": -3.3428,
       "bankroll": {
         "start": 1000.0,
-        "current": 993.1822,
-        "open_stake": 10.0,
-        "available": 983.1822,
-        "daily_loss": 6.214
+        "current": 991.1052,
+        "open_stake": 8.0,
+        "available": 983.1052,
+        "daily_loss": 8.291
       },
       "by_boundary": {
         "floor": {
@@ -4747,9 +4747,9 @@
         },
         "round": {
           "bets": 59,
-          "resolved": 54,
+          "resolved": 55,
           "wins": 12,
-          "pnl_usd": -1.2658
+          "pnl_usd": -3.3428
         }
       }
     },
@@ -4782,15 +4782,15 @@
     },
     "adjacency_hourly": {
       "bets": 138,
-      "resolved": 119,
+      "resolved": 129,
       "wins": 26,
-      "pnl_usd": 81.6499,
+      "pnl_usd": 61.1628,
       "bankroll": {
         "start": 1000.0,
-        "current": 1078.2592,
-        "open_stake": 38.0,
-        "available": 1040.2592,
-        "daily_loss": 22.1131
+        "current": 1057.7721,
+        "open_stake": 18.0,
+        "available": 1039.7721,
+        "daily_loss": 42.6002
       },
       "by_boundary": {
         "floor": {
@@ -4801,9 +4801,9 @@
         },
         "round": {
           "bets": 138,
-          "resolved": 119,
+          "resolved": 129,
           "wins": 26,
-          "pnl_usd": 81.6499
+          "pnl_usd": 61.1628
         }
       }
     },
@@ -4998,15 +4998,15 @@
     },
     "raw_forecast_corrected": {
       "bets": 130,
-      "resolved": 122,
+      "resolved": 123,
       "wins": 37,
-      "pnl_usd": -29.2241,
+      "pnl_usd": -30.2711,
       "bankroll": {
         "start": 10000.0,
-        "current": 9963.5728,
-        "open_stake": 8.0,
-        "available": 9955.5728,
-        "daily_loss": 5.0285
+        "current": 9962.5258,
+        "open_stake": 7.0,
+        "available": 9955.5258,
+        "daily_loss": 6.0755
       },
       "by_boundary": {
         "floor": {
@@ -5017,23 +5017,23 @@
         },
         "round": {
           "bets": 130,
-          "resolved": 122,
+          "resolved": 123,
           "wins": 37,
-          "pnl_usd": -29.2241
+          "pnl_usd": -30.2711
         }
       }
     },
     "raw_forecast_raw": {
       "bets": 110,
-      "resolved": 104,
+      "resolved": 105,
       "wins": 30,
-      "pnl_usd": -39.1557,
+      "pnl_usd": -40.2027,
       "bankroll": {
         "start": 10000.0,
-        "current": 9954.9568,
-        "open_stake": 6.0,
-        "available": 9948.9568,
-        "daily_loss": 7.2212
+        "current": 9953.9098,
+        "open_stake": 5.0,
+        "available": 9948.9098,
+        "daily_loss": 8.2682
       },
       "by_boundary": {
         "floor": {
@@ -5044,9 +5044,9 @@
         },
         "round": {
           "bets": 110,
-          "resolved": 104,
+          "resolved": 105,
           "wins": 30,
-          "pnl_usd": -39.1557
+          "pnl_usd": -40.2027
         }
       }
     },
