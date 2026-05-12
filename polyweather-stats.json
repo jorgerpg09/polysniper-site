@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-05-12T07:09:15.967974+00:00",
-  "hit_rate": 0.2195,
-  "theoretical_pnl": 43.4739,
+  "updated_at": "2026-05-12T07:19:15.962390+00:00",
+  "hit_rate": 0.2166,
+  "theoretical_pnl": 38.1242,
   "trade_count": 690,
   "active_cities": 13,
   "daily_pnl": [
@@ -51,7 +51,7 @@
     },
     {
       "date": "2026-05-11",
-      "cumulative_pnl": 43.4739
+      "cumulative_pnl": 38.1242
     }
   ],
   "recent_trades": [
@@ -274,7 +274,7 @@
       "market_ask": 0.006,
       "edge": 0.050007285716546786,
       "kelly_size_usdc": 1.0,
-      "outcome": "PENDING",
+      "outcome": "LOSS",
       "resolution_date": "2026-05-11",
       "strategy": "tail_longshot",
       "market_slug": "highest-temperature-in-austin-on-may-11-2026-82-83f",
@@ -334,7 +334,7 @@
       "market_ask": 0.002,
       "edge": 0.10173052493989715,
       "kelly_size_usdc": 1.0,
-      "outcome": "PENDING",
+      "outcome": "LOSS",
       "resolution_date": "2026-05-11",
       "strategy": "tail_longshot",
       "market_slug": "highest-temperature-in-chicago-on-may-11-2026-58-59f",
@@ -349,7 +349,7 @@
       "market_ask": 0.001,
       "edge": 0.14241195145603042,
       "kelly_size_usdc": 1.0,
-      "outcome": "PENDING",
+      "outcome": "LOSS",
       "resolution_date": "2026-05-11",
       "strategy": "tail_longshot",
       "market_slug": "highest-temperature-in-chicago-on-may-11-2026-60-61f",
@@ -379,7 +379,7 @@
       "market_ask": 0.008,
       "edge": 0.05486715724681316,
       "kelly_size_usdc": 1.0,
-      "outcome": "PENDING",
+      "outcome": "LOSS",
       "resolution_date": "2026-05-11",
       "strategy": "tail_longshot",
       "market_slug": "highest-temperature-in-chicago-on-may-11-2026-56-57f",
@@ -679,7 +679,7 @@
       "market_ask": 0.008,
       "edge": 0.1581371770567277,
       "kelly_size_usdc": 1.0,
-      "outcome": "PENDING",
+      "outcome": "LOSS",
       "resolution_date": "2026-05-11",
       "strategy": "tail_longshot",
       "market_slug": "highest-temperature-in-chicago-on-may-11-2026-62-63f",
@@ -724,7 +724,7 @@
       "market_ask": 0.002,
       "edge": 0.15927018364539658,
       "kelly_size_usdc": 1.0,
-      "outcome": "PENDING",
+      "outcome": "LOSS",
       "resolution_date": "2026-05-11",
       "strategy": "tail_longshot",
       "market_slug": "highest-temperature-in-chicago-on-may-11-2026-64-65f",
@@ -5018,15 +5018,15 @@
     },
     "tail_longshot": {
       "bets": 118,
-      "resolved": 112,
+      "resolved": 118,
       "wins": 0,
-      "pnl_usd": -82.4149,
+      "pnl_usd": -87.7646,
       "bankroll": {
         "start": 100.0,
-        "current": 17.5858,
-        "open_stake": 6.0,
-        "available": 11.5858,
-        "daily_loss": 6.4064
+        "current": 12.2362,
+        "open_stake": 0.0,
+        "available": 12.2362,
+        "daily_loss": 11.7561
       },
       "by_boundary": {
         "floor": {
@@ -5037,9 +5037,9 @@
         },
         "round": {
           "bets": 118,
-          "resolved": 112,
+          "resolved": 118,
           "wins": 0,
-          "pnl_usd": -82.4149
+          "pnl_usd": -87.7646
         }
       }
     }
