@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-05-12T11:29:16.092627+00:00",
+  "updated_at": "2026-05-12T11:39:15.966375+00:00",
   "hit_rate": 0.2166,
   "theoretical_pnl": 38.1242,
-  "trade_count": 704,
+  "trade_count": 706,
   "active_cities": 13,
   "daily_pnl": [
     {
@@ -55,6 +55,36 @@
     }
   ],
   "recent_trades": [
+    {
+      "logged_at": "2026-05-12T11:37:17.943956+00:00",
+      "city": "London",
+      "bracket": "exact 15",
+      "market_type": "high",
+      "model_prob": 0.2698563920090109,
+      "market_ask": 0.09,
+      "edge": 0.1798563920090109,
+      "kelly_size_usdc": 2.0,
+      "outcome": "PENDING",
+      "resolution_date": "2026-05-12",
+      "strategy": "adjacency_hourly",
+      "market_slug": "highest-temperature-in-london-on-may-12-2026-15c",
+      "boundary_convention": "round"
+    },
+    {
+      "logged_at": "2026-05-12T11:33:20.107058+00:00",
+      "city": "Sao Paulo",
+      "bracket": "below 19",
+      "market_type": "high",
+      "model_prob": 0.2463400844537525,
+      "market_ask": 0.082,
+      "edge": 0.16434008445375248,
+      "kelly_size_usdc": 2.0,
+      "outcome": "PENDING",
+      "resolution_date": "2026-05-12",
+      "strategy": "adjacency",
+      "market_slug": "highest-temperature-in-sao-paulo-on-may-12-2026-19corbelow",
+      "boundary_convention": "round"
+    },
     {
       "logged_at": "2026-05-12T11:09:00.139480+00:00",
       "city": "London",
@@ -3146,21 +3176,6 @@
       "boundary_convention": "round"
     },
     {
-      "logged_at": "2026-05-07T16:48:21.498391+00:00",
-      "city": "Miami",
-      "bracket": "between 88 and 89",
-      "market_type": "high",
-      "model_prob": 0.3688226601546071,
-      "market_ask": 0.15,
-      "edge": 0.21882266015460708,
-      "kelly_size_usdc": 2.0,
-      "outcome": "LOSS",
-      "resolution_date": "2026-05-08",
-      "strategy": "adjacency_hourly",
-      "market_slug": "highest-temperature-in-miami-on-may-8-2026-88-89f",
-      "boundary_convention": "round"
-    },
-    {
       "logged_at": "2026-05-07T15:46:06.309465+00:00",
       "city": "Miami",
       "bracket": "between 88 and 89",
@@ -4661,21 +4676,6 @@
       "boundary_convention": "round"
     },
     {
-      "logged_at": "2026-05-01T06:55:40.005415+00:00",
-      "city": "Madrid",
-      "bracket": "exact 24",
-      "market_type": "high",
-      "model_prob": 0.28991331142277127,
-      "market_ask": 0.25,
-      "edge": 0.03991331142277127,
-      "kelly_size_usdc": 2.0,
-      "outcome": "LOSS",
-      "resolution_date": "2026-05-01",
-      "strategy": "adjacency",
-      "market_slug": "highest-temperature-in-madrid-on-may-1-2026-24c",
-      "boundary_convention": "round"
-    },
-    {
       "logged_at": "2026-04-30T23:12:04.227026+00:00",
       "city": "Miami",
       "bracket": "below 67",
@@ -4708,15 +4708,15 @@
   ],
   "strategies": {
     "adjacency": {
-      "bets": 56,
+      "bets": 57,
       "resolved": 53,
       "wins": 12,
       "pnl_usd": 0.8162,
       "bankroll": {
         "start": 1000.0,
         "current": 995.2642,
-        "open_stake": 6.0,
-        "available": 989.2642,
+        "open_stake": 8.0,
+        "available": 987.2642,
         "daily_loss": 4.132
       },
       "by_boundary": {
@@ -4727,7 +4727,7 @@
           "pnl_usd": 0.0
         },
         "round": {
-          "bets": 56,
+          "bets": 57,
           "resolved": 53,
           "wins": 12,
           "pnl_usd": 0.8162
@@ -4762,15 +4762,15 @@
       }
     },
     "adjacency_hourly": {
-      "bets": 130,
+      "bets": 131,
       "resolved": 112,
       "wins": 26,
       "pnl_usd": 95.5795,
       "bankroll": {
         "start": 1000.0,
         "current": 1092.1888,
-        "open_stake": 36.0,
-        "available": 1056.1888,
+        "open_stake": 38.0,
+        "available": 1054.1888,
         "daily_loss": 8.1836
       },
       "by_boundary": {
@@ -4781,7 +4781,7 @@
           "pnl_usd": 0.0
         },
         "round": {
-          "bets": 130,
+          "bets": 131,
           "resolved": 112,
           "wins": 26,
           "pnl_usd": 95.5795
