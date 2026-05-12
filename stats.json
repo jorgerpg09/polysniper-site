@@ -1,21 +1,21 @@
 {
-  "updated_at": "2026-05-12T14:35:08.007170+00:00",
-  "total_bets": 563,
+  "updated_at": "2026-05-12T14:36:09.958348+00:00",
+  "total_bets": 565,
   "wins": 322,
-  "losses": 240,
-  "pending": 1,
-  "win_rate": 57.3,
-  "pnl": -43.48,
-  "kelly_pnl": -65.6,
-  "current_streak": 1,
+  "losses": 241,
+  "pending": 2,
+  "win_rate": 57.2,
+  "pnl": -44.51,
+  "kelly_pnl": -67.21,
+  "current_streak": 2,
   "streak_type": "L",
   "daily": [
     {
       "date": "2026-05-12",
-      "bets": 73,
+      "bets": 74,
       "wins": 42,
-      "losses": 31,
-      "wr": 57.5
+      "losses": 32,
+      "wr": 56.8
     },
     {
       "date": "2026-05-11",
@@ -55,12 +55,30 @@
   ],
   "recent_signals": [
     {
+      "timestamp": "2026-05-12T14:35:12.768414+00:00",
+      "coin": "BTC",
+      "direction": "UP",
+      "entry_price": 0.61,
+      "secs": 12.7,
+      "outcome": "PENDING",
+      "slug": "btc-updown-5m-1778596500"
+    },
+    {
+      "timestamp": "2026-05-12T14:35:10.522566+00:00",
+      "coin": "ETH",
+      "direction": "UP",
+      "entry_price": 0.57,
+      "secs": 10.4,
+      "outcome": "PENDING",
+      "slug": "eth-updown-5m-1778596500"
+    },
+    {
       "timestamp": "2026-05-12T14:25:17.293234+00:00",
       "coin": "BTC",
       "direction": "UP",
       "entry_price": 0.61,
       "secs": 17.2,
-      "outcome": "PENDING",
+      "outcome": "LOSS",
       "slug": "btc-updown-5m-1778595900"
     },
     {
@@ -215,24 +233,6 @@
       "secs": 26.3,
       "outcome": "LOSS",
       "slug": "btc-updown-5m-1778582400"
-    },
-    {
-      "timestamp": "2026-05-12T10:30:27.495872+00:00",
-      "coin": "ETH",
-      "direction": "UP",
-      "entry_price": 0.6,
-      "secs": 27.4,
-      "outcome": "LOSS",
-      "slug": "eth-updown-5m-1778581800"
-    },
-    {
-      "timestamp": "2026-05-12T10:30:23.454972+00:00",
-      "coin": "BTC",
-      "direction": "UP",
-      "entry_price": 0.64,
-      "secs": 23.4,
-      "outcome": "LOSS",
-      "slug": "btc-updown-5m-1778581800"
     }
   ],
   "backtest": {
