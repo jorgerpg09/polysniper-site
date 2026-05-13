@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-05-13T21:19:15.985625+00:00",
+  "updated_at": "2026-05-13T21:29:15.948409+00:00",
   "hit_rate": 0.1913,
   "theoretical_pnl": -67.4459,
   "trade_count": 777,
@@ -372,7 +372,7 @@
       "market_ask": 0.01,
       "edge": 0.27958673031471604,
       "kelly_size_usdc": 2.0,
-      "outcome": "PENDING",
+      "outcome": "UNFILLED",
       "resolution_date": "2026-05-13",
       "strategy": "adjacency",
       "market_slug": "highest-temperature-in-paris-on-may-13-2026-14c",
@@ -4746,15 +4746,15 @@
   ],
   "strategies": {
     "adjacency": {
-      "bets": 66,
+      "bets": 65,
       "resolved": 61,
       "wins": 12,
       "pnl_usd": -14.7576,
       "bankroll": {
         "start": 1000.0,
         "current": 977.5905,
-        "open_stake": 10.0,
-        "available": 967.5905,
+        "open_stake": 8.0,
+        "available": 969.5905,
         "daily_loss": 8.1421
       },
       "by_boundary": {
@@ -4765,7 +4765,7 @@
           "pnl_usd": 0.0
         },
         "round": {
-          "bets": 66,
+          "bets": 65,
           "resolved": 61,
           "wins": 12,
           "pnl_usd": -14.7576
