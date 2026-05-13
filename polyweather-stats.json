@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-05-13T21:29:15.948409+00:00",
+  "updated_at": "2026-05-13T21:39:16.020226+00:00",
   "hit_rate": 0.1913,
   "theoretical_pnl": -67.4459,
-  "trade_count": 777,
+  "trade_count": 779,
   "active_cities": 13,
   "daily_pnl": [
     {
@@ -63,6 +63,36 @@
     }
   ],
   "recent_trades": [
+    {
+      "logged_at": "2026-05-13T21:36:37.365976+00:00",
+      "city": "Miami",
+      "bracket": "between 88 and 89",
+      "market_type": "high",
+      "model_prob": 0.2080128343438289,
+      "market_ask": 0.2,
+      "edge": 0.008012834343828878,
+      "kelly_size_usdc": 2.0,
+      "outcome": "PENDING",
+      "resolution_date": "2026-05-14",
+      "strategy": "adjacency_hourly",
+      "market_slug": "highest-temperature-in-miami-on-may-14-2026-88-89f",
+      "boundary_convention": "round"
+    },
+    {
+      "logged_at": "2026-05-13T21:34:36.421990+00:00",
+      "city": "Miami",
+      "bracket": "between 88 and 89",
+      "market_type": "high",
+      "model_prob": 0.2080128343438289,
+      "market_ask": 0.2,
+      "edge": 0.008012834343828878,
+      "kelly_size_usdc": 2.0,
+      "outcome": "PENDING",
+      "resolution_date": "2026-05-14",
+      "strategy": "adjacency",
+      "market_slug": "highest-temperature-in-miami-on-may-14-2026-88-89f",
+      "boundary_convention": "round"
+    },
     {
       "logged_at": "2026-05-13T18:41:00.138077+00:00",
       "city": "Miami",
@@ -2644,21 +2674,6 @@
       "boundary_convention": "round"
     },
     {
-      "logged_at": "2026-05-10T14:01:20.311107+00:00",
-      "city": "Miami",
-      "bracket": "between 88 and 89",
-      "market_type": "high",
-      "model_prob": 0.2741193385527857,
-      "market_ask": 0.23,
-      "edge": 0.044119338552785686,
-      "kelly_size_usdc": 2.0,
-      "outcome": "LOSS",
-      "resolution_date": "2026-05-10",
-      "strategy": "adjacency_hourly",
-      "market_slug": "highest-temperature-in-miami-on-may-10-2026-88-89f",
-      "boundary_convention": "round"
-    },
-    {
       "logged_at": "2026-05-10T14:00:17.646345+00:00",
       "city": "New York City",
       "bracket": "between 80 and 81",
@@ -4250,21 +4265,6 @@
     },
     {
       "logged_at": "2026-05-03T11:09:00.596531+00:00",
-      "city": "Helsinki",
-      "bracket": "exact 15",
-      "market_type": "high",
-      "model_prob": 0.1730483252025956,
-      "market_ask": 0.001,
-      "edge": 0.1720483252025956,
-      "kelly_size_usdc": 2.0,
-      "outcome": "LOSS",
-      "resolution_date": "2026-05-03",
-      "strategy": "adjacency",
-      "market_slug": "highest-temperature-in-helsinki-on-may-3-2026-15c",
-      "boundary_convention": "round"
-    },
-    {
-      "logged_at": "2026-05-03T11:09:00.596531+00:00",
       "city": "New York City",
       "bracket": "below 53",
       "market_type": "high",
@@ -4746,15 +4746,15 @@
   ],
   "strategies": {
     "adjacency": {
-      "bets": 65,
+      "bets": 66,
       "resolved": 61,
       "wins": 12,
       "pnl_usd": -14.7576,
       "bankroll": {
         "start": 1000.0,
         "current": 977.5905,
-        "open_stake": 8.0,
-        "available": 969.5905,
+        "open_stake": 10.0,
+        "available": 967.5905,
         "daily_loss": 8.1421
       },
       "by_boundary": {
@@ -4765,7 +4765,7 @@
           "pnl_usd": 0.0
         },
         "round": {
-          "bets": 65,
+          "bets": 66,
           "resolved": 61,
           "wins": 12,
           "pnl_usd": -14.7576
@@ -4800,15 +4800,15 @@
       }
     },
     "adjacency_hourly": {
-      "bets": 153,
+      "bets": 154,
       "resolved": 146,
       "wins": 26,
       "pnl_usd": 26.8071,
       "bankroll": {
         "start": 1000.0,
         "current": 1021.3166,
-        "open_stake": 14.0,
-        "available": 1007.3166,
+        "open_stake": 16.0,
+        "available": 1005.3166,
         "daily_loss": 28.6438
       },
       "by_boundary": {
@@ -4819,7 +4819,7 @@
           "pnl_usd": 0.0
         },
         "round": {
-          "bets": 153,
+          "bets": 154,
           "resolved": 146,
           "wins": 26,
           "pnl_usd": 26.8071
