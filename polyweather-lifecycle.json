@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-05-14T00:39:17.750498+00:00",
-  "now": "2026-05-14T00:39:17.750498+00:00",
+  "updated_at": "2026-05-14T00:49:17.808872+00:00",
+  "now": "2026-05-14T00:49:17.808872+00:00",
   "markets": [
     {
       "condition_id": "0x091d137694061741144097d83e43f740000447e2fcecfdd2cd819dba7650f0f8",
@@ -17149,6 +17149,70 @@
       ]
     },
     {
+      "condition_id": "0x7567bb2c98359fb44da785731d932140d762fc8fe9d5c83041df99506d7ed738",
+      "city": "Miami",
+      "market_type": "high",
+      "bracket": "between 88 and 89",
+      "bracket_type": "between",
+      "resolution_date": "2026-05-13",
+      "game_start_time": "2026-05-12T09:00:00+00:00",
+      "last_placement_time": "2026-05-13T07:00:00+00:00",
+      "effective_close_time": "2026-05-13T12:00:00+00:00",
+      "market_end_date": "2026-05-13T12:00:00+00:00",
+      "market_slug": "highest-temperature-in-miami-on-may-13-2026-88-89f",
+      "resolved_at": "2026-05-13T18:41:16.260473+00:00",
+      "outcome": "loss",
+      "resolution_source": "uma_resolved",
+      "state": "resolved",
+      "bets": [
+        {
+          "id": 2423,
+          "placed_at": "2026-05-13T11:09:00.137522+00:00",
+          "size_usd": 1.0,
+          "filled_shares": 3.0303030303030303,
+          "filled_vwap": 0.33,
+          "model_prob": 0.19867995908111746,
+          "best_ask_at_placement": 0.33,
+          "limit_price": 0.33,
+          "outcome": "loss",
+          "realized_pnl_usd": -1.0335,
+          "fee_usd": 0.0335,
+          "fill_quality": null,
+          "strategy": "raw_forecast_corrected"
+        },
+        {
+          "id": 2438,
+          "placed_at": "2026-05-13T17:13:00.131808+00:00",
+          "size_usd": 1.0,
+          "filled_shares": 4.166666666666667,
+          "filled_vwap": 0.23,
+          "model_prob": 0.21150294074489995,
+          "best_ask_at_placement": 0.24,
+          "limit_price": 0.24,
+          "outcome": "loss",
+          "realized_pnl_usd": -0.9952,
+          "fee_usd": 0.0369,
+          "fill_quality": null,
+          "strategy": "raw_forecast_raw"
+        },
+        {
+          "id": 2440,
+          "placed_at": "2026-05-13T18:41:00.138077+00:00",
+          "size_usd": 2.0,
+          "filled_shares": 15.503875968992247,
+          "filled_vwap": 0.12867750000000003,
+          "model_prob": 0.20594727387283068,
+          "best_ask_at_placement": 0.128,
+          "limit_price": 0.129,
+          "outcome": "loss",
+          "realized_pnl_usd": -2.0819,
+          "fee_usd": 0.0869,
+          "fill_quality": null,
+          "strategy": "modal_early"
+        }
+      ]
+    },
+    {
       "condition_id": "0x84016c37da0116d66c3d9a4a0a951563af11cc500c029b00e60856d0f24a7c5f",
       "city": "Paris",
       "market_type": "high",
@@ -17785,70 +17849,6 @@
       ]
     },
     {
-      "condition_id": "0x7567bb2c98359fb44da785731d932140d762fc8fe9d5c83041df99506d7ed738",
-      "city": "Miami",
-      "market_type": "high",
-      "bracket": "between 88 and 89",
-      "bracket_type": "between",
-      "resolution_date": "2026-05-13",
-      "game_start_time": "2026-05-13T04:00:00+00:00",
-      "last_placement_time": "2026-05-14T02:00:00+00:00",
-      "effective_close_time": "2026-05-14T07:00:00+00:00",
-      "market_end_date": "2026-05-13T12:00:00+00:00",
-      "market_slug": "highest-temperature-in-miami-on-may-13-2026-88-89f",
-      "resolved_at": null,
-      "outcome": null,
-      "resolution_source": null,
-      "state": "trading",
-      "bets": [
-        {
-          "id": 2423,
-          "placed_at": "2026-05-13T11:09:00.137522+00:00",
-          "size_usd": 1.0,
-          "filled_shares": 3.0303030303030303,
-          "filled_vwap": 0.33,
-          "model_prob": 0.19867995908111746,
-          "best_ask_at_placement": 0.33,
-          "limit_price": 0.33,
-          "outcome": null,
-          "realized_pnl_usd": null,
-          "fee_usd": null,
-          "fill_quality": null,
-          "strategy": "raw_forecast_corrected"
-        },
-        {
-          "id": 2438,
-          "placed_at": "2026-05-13T17:13:00.131808+00:00",
-          "size_usd": 1.0,
-          "filled_shares": 4.166666666666667,
-          "filled_vwap": 0.23,
-          "model_prob": 0.21150294074489995,
-          "best_ask_at_placement": 0.24,
-          "limit_price": 0.24,
-          "outcome": null,
-          "realized_pnl_usd": null,
-          "fee_usd": null,
-          "fill_quality": null,
-          "strategy": "raw_forecast_raw"
-        },
-        {
-          "id": 2440,
-          "placed_at": "2026-05-13T18:41:00.138077+00:00",
-          "size_usd": 2.0,
-          "filled_shares": 15.503875968992247,
-          "filled_vwap": 0.12867750000000003,
-          "model_prob": 0.20594727387283068,
-          "best_ask_at_placement": 0.128,
-          "limit_price": 0.129,
-          "outcome": null,
-          "realized_pnl_usd": null,
-          "fee_usd": null,
-          "fill_quality": null,
-          "strategy": "modal_early"
-        }
-      ]
-    },
-    {
       "condition_id": "0x180df7cb9c5450cd0f6c8b8a63002501264457c1dbb08535254c774a113644eb",
       "city": "New York City",
       "market_type": "high",
@@ -17913,6 +17913,21 @@
           "fee_usd": null,
           "fill_quality": null,
           "strategy": "raw_forecast_corrected"
+        },
+        {
+          "id": 2447,
+          "placed_at": "2026-05-14T00:41:00.144388+00:00",
+          "size_usd": 1.0,
+          "filled_shares": 2.7027027027027026,
+          "filled_vwap": 0.37,
+          "model_prob": 0.37552696848079425,
+          "best_ask_at_placement": 0.37,
+          "limit_price": 0.37,
+          "outcome": null,
+          "realized_pnl_usd": null,
+          "fee_usd": null,
+          "fill_quality": null,
+          "strategy": "raw_forecast_raw"
         }
       ]
     },
@@ -17984,6 +17999,21 @@
           "size_usd": 2.0,
           "filled_shares": 10.526315789473685,
           "filled_vwap": 0.18999999999999997,
+          "model_prob": 0.2080128343438289,
+          "best_ask_at_placement": 0.19,
+          "limit_price": 0.19,
+          "outcome": null,
+          "realized_pnl_usd": null,
+          "fee_usd": null,
+          "fill_quality": null,
+          "strategy": "adjacency_hourly"
+        },
+        {
+          "id": 2448,
+          "placed_at": "2026-05-14T00:46:04.642950+00:00",
+          "size_usd": 2.0,
+          "filled_shares": 10.526315789473685,
+          "filled_vwap": 0.18,
           "model_prob": 0.2080128343438289,
           "best_ask_at_placement": 0.19,
           "limit_price": 0.19,
