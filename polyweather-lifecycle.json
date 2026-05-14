@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-05-14T05:09:17.832723+00:00",
-  "now": "2026-05-14T05:09:17.832723+00:00",
+  "updated_at": "2026-05-14T05:19:17.779973+00:00",
+  "now": "2026-05-14T05:19:17.779973+00:00",
   "markets": [
     {
       "condition_id": "0x091d137694061741144097d83e43f740000447e2fcecfdd2cd819dba7650f0f8",
@@ -17883,6 +17883,40 @@
       ]
     },
     {
+      "condition_id": "0x01e084e85e66ab6ae5560612563dc92b9b414163c9dbfbc4c236ef0e4ca942da",
+      "city": "London",
+      "market_type": "high",
+      "bracket": "exact 13",
+      "bracket_type": "exact",
+      "resolution_date": "2026-05-14",
+      "game_start_time": "2026-05-13T23:00:00+00:00",
+      "last_placement_time": "2026-05-14T21:00:00+00:00",
+      "effective_close_time": "2026-05-15T02:00:00+00:00",
+      "market_end_date": "2026-05-14T12:00:00+00:00",
+      "market_slug": "highest-temperature-in-london-on-may-14-2026-13c",
+      "resolved_at": null,
+      "outcome": null,
+      "resolution_source": null,
+      "state": "trading",
+      "bets": [
+        {
+          "id": 2451,
+          "placed_at": "2026-05-14T05:11:00.137682+00:00",
+          "size_usd": 1.0,
+          "filled_shares": null,
+          "filled_vwap": null,
+          "model_prob": 0.1377909241975077,
+          "best_ask_at_placement": 0.2,
+          "limit_price": 0.2,
+          "outcome": null,
+          "realized_pnl_usd": null,
+          "fee_usd": null,
+          "fill_quality": null,
+          "strategy": "raw_forecast_raw"
+        }
+      ]
+    },
+    {
       "condition_id": "0x11fa068d131bec3b4e2f6c1af35683444e85b3c30e6a9218ffdc500bb8b0b919",
       "city": "Miami",
       "market_type": "low",
@@ -18071,6 +18105,55 @@
           "fee_usd": null,
           "fill_quality": null,
           "strategy": "raw_forecast_raw"
+        },
+        {
+          "id": 2452,
+          "placed_at": "2026-05-14T05:11:00.137682+00:00",
+          "size_usd": 1.0,
+          "filled_shares": 1.3157894736842106,
+          "filled_vwap": 0.7599999999999999,
+          "model_prob": 0.30924310651405856,
+          "best_ask_at_placement": 0.76,
+          "limit_price": 0.76,
+          "outcome": null,
+          "realized_pnl_usd": null,
+          "fee_usd": null,
+          "fill_quality": null,
+          "strategy": "raw_forecast_corrected"
+        }
+      ]
+    },
+    {
+      "condition_id": "0x63e37ccb1e9c8e8e37aaf2bbb2aab628e13596d61e616b9126c7e2c15fbff1cf",
+      "city": "London",
+      "market_type": "high",
+      "bracket": "exact 12",
+      "bracket_type": "exact",
+      "resolution_date": "2026-05-14",
+      "game_start_time": "2026-05-13T23:00:00+00:00",
+      "last_placement_time": "2026-05-14T21:00:00+00:00",
+      "effective_close_time": "2026-05-15T02:00:00+00:00",
+      "market_end_date": "2026-05-14T12:00:00+00:00",
+      "market_slug": "highest-temperature-in-london-on-may-14-2026-12c",
+      "resolved_at": null,
+      "outcome": null,
+      "resolution_source": null,
+      "state": "trading",
+      "bets": [
+        {
+          "id": 2450,
+          "placed_at": "2026-05-14T05:11:00.137682+00:00",
+          "size_usd": 1.0,
+          "filled_shares": 2.2222222222222223,
+          "filled_vwap": 0.44,
+          "model_prob": 0.15374236291699983,
+          "best_ask_at_placement": 0.45,
+          "limit_price": 0.45,
+          "outcome": null,
+          "realized_pnl_usd": null,
+          "fee_usd": null,
+          "fill_quality": null,
+          "strategy": "raw_forecast_corrected"
         }
       ]
     },
@@ -18120,6 +18203,74 @@
           "fee_usd": null,
           "fill_quality": null,
           "strategy": "adjacency_hourly"
+        }
+      ]
+    },
+    {
+      "condition_id": "0xeab98f9df0d7085f0191dcee9e2be9db5fc1f569fe6de76a3686b9c4a0846c74",
+      "city": "Paris",
+      "market_type": "high",
+      "bracket": "exact 13",
+      "bracket_type": "exact",
+      "resolution_date": "2026-05-14",
+      "game_start_time": "2026-05-13T22:00:00+00:00",
+      "last_placement_time": "2026-05-14T20:00:00+00:00",
+      "effective_close_time": "2026-05-15T01:00:00+00:00",
+      "market_end_date": "2026-05-14T12:00:00+00:00",
+      "market_slug": "highest-temperature-in-paris-on-may-14-2026-13c",
+      "resolved_at": null,
+      "outcome": null,
+      "resolution_source": null,
+      "state": "trading",
+      "bets": [
+        {
+          "id": 2453,
+          "placed_at": "2026-05-14T05:11:00.137682+00:00",
+          "size_usd": 1.0,
+          "filled_shares": 4.3478260869565215,
+          "filled_vwap": 0.23,
+          "model_prob": 0.20331387256250916,
+          "best_ask_at_placement": 0.23,
+          "limit_price": 0.23,
+          "outcome": null,
+          "realized_pnl_usd": null,
+          "fee_usd": null,
+          "fill_quality": null,
+          "strategy": "raw_forecast_corrected"
+        }
+      ]
+    },
+    {
+      "condition_id": "0xec2a62e1fa7a0a782f4383ef614fc12b16d5a6c123bc26a49da12597bbb5576c",
+      "city": "Paris",
+      "market_type": "high",
+      "bracket": "exact 12",
+      "bracket_type": "exact",
+      "resolution_date": "2026-05-14",
+      "game_start_time": "2026-05-13T22:00:00+00:00",
+      "last_placement_time": "2026-05-14T20:00:00+00:00",
+      "effective_close_time": "2026-05-15T01:00:00+00:00",
+      "market_end_date": "2026-05-14T12:00:00+00:00",
+      "market_slug": "highest-temperature-in-paris-on-may-14-2026-12c",
+      "resolved_at": null,
+      "outcome": null,
+      "resolution_source": null,
+      "state": "trading",
+      "bets": [
+        {
+          "id": 2454,
+          "placed_at": "2026-05-14T05:11:00.137682+00:00",
+          "size_usd": 1.0,
+          "filled_shares": 1.6949152542372883,
+          "filled_vwap": 0.59,
+          "model_prob": 0.18918250202581927,
+          "best_ask_at_placement": 0.59,
+          "limit_price": 0.59,
+          "outcome": null,
+          "realized_pnl_usd": null,
+          "fee_usd": null,
+          "fill_quality": null,
+          "strategy": "raw_forecast_raw"
         }
       ]
     }
