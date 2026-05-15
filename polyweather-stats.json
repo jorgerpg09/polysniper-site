@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-05-15T22:28:09.951279+00:00",
+  "updated_at": "2026-05-15T22:38:09.955751+00:00",
   "hit_rate": 0.1957,
   "theoretical_pnl": -125.941,
   "trade_count": 857,
@@ -281,7 +281,7 @@
       "market_ask": 0.52,
       "edge": -0.3165160412375193,
       "kelly_size_usdc": 1.0,
-      "outcome": "PENDING",
+      "outcome": "UNFILLED",
       "resolution_date": "2026-05-15",
       "strategy": "raw_forecast_raw",
       "market_slug": "highest-temperature-in-london-on-may-15-2026-14c",
@@ -7226,15 +7226,15 @@
       }
     },
     "raw_forecast_raw": {
-      "bets": 138,
+      "bets": 137,
       "resolved": 133,
       "wins": 39,
       "pnl_usd": -46.2656,
       "bankroll": {
         "start": 10000.0,
         "current": 9946.7968,
-        "open_stake": 5.0,
-        "available": 9941.7968,
+        "open_stake": 4.0,
+        "available": 9942.7968,
         "daily_loss": 6.1012
       },
       "by_boundary": {
@@ -7245,7 +7245,7 @@
           "pnl_usd": 0.0
         },
         "round": {
-          "bets": 138,
+          "bets": 137,
           "resolved": 133,
           "wins": 39,
           "pnl_usd": -46.2656
