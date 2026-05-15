@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-05-15T10:18:09.890170+00:00",
-  "hit_rate": 0.2003,
-  "theoretical_pnl": -103.1648,
+  "updated_at": "2026-05-15T10:28:09.916870+00:00",
+  "hit_rate": 0.2,
+  "theoretical_pnl": -104.2048,
   "trade_count": 839,
   "active_cities": 12,
   "daily_pnl": [
@@ -64,6 +64,10 @@
     {
       "date": "2026-05-14",
       "cumulative_pnl": -103.1648
+    },
+    {
+      "date": "2026-05-15",
+      "cumulative_pnl": -104.2048
     }
   ],
   "recent_trades": [
@@ -121,7 +125,7 @@
       "market_ask": 0.2,
       "edge": -0.034927203658551065,
       "kelly_size_usdc": 1.0,
-      "outcome": "PENDING",
+      "outcome": "LOSS",
       "resolution_date": "2026-05-15",
       "strategy": "raw_forecast_raw",
       "market_slug": "highest-temperature-in-paris-on-may-15-2026-12c",
@@ -7063,15 +7067,15 @@
     },
     "raw_forecast_raw": {
       "bets": 133,
-      "resolved": 129,
+      "resolved": 130,
       "wins": 39,
-      "pnl_usd": -42.2463,
+      "pnl_usd": -43.2863,
       "bankroll": {
         "start": 10000.0,
-        "current": 9950.8161,
-        "open_stake": 4.0,
-        "available": 9946.8161,
-        "daily_loss": 2.082
+        "current": 9949.7761,
+        "open_stake": 3.0,
+        "available": 9946.7761,
+        "daily_loss": 3.122
       },
       "by_boundary": {
         "floor": {
@@ -7082,9 +7086,9 @@
         },
         "round": {
           "bets": 133,
-          "resolved": 129,
+          "resolved": 130,
           "wins": 39,
-          "pnl_usd": -42.2463
+          "pnl_usd": -43.2863
         }
       }
     },
