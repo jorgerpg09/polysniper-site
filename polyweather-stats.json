@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-05-16T17:18:09.895767+00:00",
+  "updated_at": "2026-05-16T17:28:09.912707+00:00",
   "hit_rate": 0.1955,
   "theoretical_pnl": -142.5027,
   "trade_count": 901,
@@ -75,6 +75,22 @@
     }
   ],
   "recent_trades": [
+    {
+      "logged_at": "2026-05-16T17:27:05.586601+00:00",
+      "city": "Miami",
+      "bracket": "between 86 and 87",
+      "market_type": "high",
+      "model_prob": 0.7413687981763304,
+      "market_ask": 0.39,
+      "edge": 0.3513687981763304,
+      "kelly_size_usdc": 2.0,
+      "outcome": "PENDING",
+      "resolution_date": "2026-05-16",
+      "strategy": "no_between",
+      "market_slug": "highest-temperature-in-miami-on-may-16-2026-86-87f",
+      "boundary_convention": "round",
+      "bet_side": "NO"
+    },
     {
       "logged_at": "2026-05-16T17:13:00.131441+00:00",
       "city": "Sao Paulo",
@@ -7397,7 +7413,7 @@
       }
     },
     "no_between": {
-      "bets": 124,
+      "bets": 125,
       "resolved": 87,
       "wins": 50,
       "pnl_usd": -20.3806,
