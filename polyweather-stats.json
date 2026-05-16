@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-05-16T19:28:09.955935+00:00",
+  "updated_at": "2026-05-16T19:38:09.962803+00:00",
   "hit_rate": 0.1933,
   "theoretical_pnl": -153.903,
   "trade_count": 905,
@@ -114,7 +114,7 @@
       "market_ask": 0.001,
       "edge": 0.17713344891634097,
       "kelly_size_usdc": 1.0,
-      "outcome": "PENDING",
+      "outcome": "LOSS",
       "resolution_date": "2026-05-16",
       "strategy": "raw_forecast_raw",
       "market_slug": "highest-temperature-in-nyc-on-may-16-2026-72-73f",
@@ -7467,16 +7467,16 @@
       }
     },
     "raw_forecast_raw": {
-      "bets": 149,
+      "bets": 148,
       "resolved": 140,
       "wins": 40,
       "pnl_usd": -51.602,
       "bankroll": {
         "start": 10000.0,
-        "current": 9941.4604,
-        "open_stake": 9.0,
-        "available": 9932.4604,
-        "daily_loss": 6.2355
+        "current": 9940.4105,
+        "open_stake": 8.0,
+        "available": 9932.4105,
+        "daily_loss": 7.2855
       },
       "by_boundary": {
         "floor": {
@@ -7486,7 +7486,7 @@
           "pnl_usd": 0.0
         },
         "round": {
-          "bets": 149,
+          "bets": 148,
           "resolved": 140,
           "wins": 40,
           "pnl_usd": -51.602
