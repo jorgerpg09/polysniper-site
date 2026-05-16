@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-05-16T19:28:11.857642+00:00",
-  "now": "2026-05-16T19:28:11.857642+00:00",
+  "updated_at": "2026-05-16T19:38:11.795481+00:00",
+  "now": "2026-05-16T19:38:11.795481+00:00",
   "markets": [
     {
       "condition_id": "0x091d137694061741144097d83e43f740000447e2fcecfdd2cd819dba7650f0f8",
@@ -20677,10 +20677,10 @@
       "effective_close_time": "2026-05-17T06:00:00+00:00",
       "market_end_date": "2026-05-16T12:00:00+00:00",
       "market_slug": "highest-temperature-in-sao-paulo-on-may-16-2026-26c",
-      "resolved_at": null,
-      "outcome": null,
-      "resolution_source": null,
-      "state": "trading",
+      "resolved_at": "2026-05-16T18:56:10.250454+00:00",
+      "outcome": "loss",
+      "resolution_source": "uma_resolved",
+      "state": "resolved",
       "bets": [
         {
           "id": 2566,
@@ -20691,9 +20691,9 @@
           "model_prob": 0.328467822236687,
           "best_ask_at_placement": 0.63,
           "limit_price": 0.63,
-          "outcome": null,
-          "realized_pnl_usd": null,
-          "fee_usd": null,
+          "outcome": "loss",
+          "realized_pnl_usd": -0.9242,
+          "fee_usd": 0.0195,
           "fill_quality": null,
           "strategy": "raw_forecast_corrected"
         },
@@ -20706,9 +20706,9 @@
           "model_prob": 0.3208337121856892,
           "best_ask_at_placement": 0.96,
           "limit_price": 0.96,
-          "outcome": null,
-          "realized_pnl_usd": null,
-          "fee_usd": null,
+          "outcome": "loss",
+          "realized_pnl_usd": -1.002,
+          "fee_usd": 0.002,
           "fill_quality": null,
           "strategy": "raw_forecast_raw"
         },
@@ -20721,9 +20721,9 @@
           "model_prob": 0.3208337121856892,
           "best_ask_at_placement": 0.01,
           "limit_price": 0.01,
-          "outcome": null,
-          "realized_pnl_usd": null,
-          "fee_usd": null,
+          "outcome": "loss",
+          "realized_pnl_usd": -2.099,
+          "fee_usd": 0.099,
           "fill_quality": null,
           "strategy": "adjacency"
         }
