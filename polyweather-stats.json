@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-05-16T20:18:09.925840+00:00",
+  "updated_at": "2026-05-16T20:28:09.911258+00:00",
   "hit_rate": 0.1924,
   "theoretical_pnl": -157.9282,
   "trade_count": 905,
@@ -75,6 +75,22 @@
     }
   ],
   "recent_trades": [
+    {
+      "logged_at": "2026-05-16T20:22:03.661943+00:00",
+      "city": "Austin",
+      "bracket": "between 86 and 87",
+      "market_type": "high",
+      "model_prob": 0.8598563991422679,
+      "market_ask": 0.25,
+      "edge": 0.6098563991422679,
+      "kelly_size_usdc": 2.0,
+      "outcome": "PENDING",
+      "resolution_date": "2026-05-16",
+      "strategy": "no_between",
+      "market_slug": "highest-temperature-in-austin-on-may-16-2026-86-87f",
+      "boundary_convention": "round",
+      "bet_side": "NO"
+    },
     {
       "logged_at": "2026-05-16T18:55:16.461580+00:00",
       "city": "Sao Paulo",
@@ -7413,7 +7429,7 @@
       }
     },
     "no_between": {
-      "bets": 125,
+      "bets": 126,
       "resolved": 87,
       "wins": 50,
       "pnl_usd": -20.3806,
