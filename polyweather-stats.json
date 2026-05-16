@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-05-16T01:38:09.899903+00:00",
+  "updated_at": "2026-05-16T01:48:09.906080+00:00",
   "hit_rate": 0.1964,
   "theoretical_pnl": -135.3278,
   "trade_count": 860,
@@ -404,7 +404,7 @@
       "market_ask": 0.24,
       "edge": 0.2604099558214432,
       "kelly_size_usdc": 2.0,
-      "outcome": "PENDING",
+      "outcome": "UNFILLED",
       "resolution_date": "2026-05-15",
       "strategy": "adjacency_hourly",
       "market_slug": "highest-temperature-in-sao-paulo-on-may-15-2026-20corbelow",
@@ -7046,15 +7046,15 @@
       }
     },
     "adjacency_hourly": {
-      "bets": 180,
+      "bets": 179,
       "resolved": 178,
       "wins": 28,
       "pnl_usd": -24.8311,
       "bankroll": {
         "start": 1000.0,
         "current": 966.5283,
-        "open_stake": 4.0,
-        "available": 962.5283,
+        "open_stake": 2.0,
+        "available": 964.5283,
         "daily_loss": 8.2616
       },
       "by_boundary": {
@@ -7065,7 +7065,7 @@
           "pnl_usd": 0.0
         },
         "round": {
-          "bets": 180,
+          "bets": 179,
           "resolved": 178,
           "wins": 28,
           "pnl_usd": -24.8311
