@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-05-16T22:58:09.899291+00:00",
+  "updated_at": "2026-05-16T23:00:00.194632+00:00",
   "hit_rate": 0.1906,
   "theoretical_pnl": -162.3447,
   "trade_count": 905,
@@ -1233,21 +1233,6 @@
       "resolution_date": "2026-05-15",
       "strategy": "raw_forecast_corrected",
       "market_slug": "highest-temperature-in-sao-paulo-on-may-15-2026-23c",
-      "boundary_convention": "round"
-    },
-    {
-      "logged_at": "2026-05-15T12:41:00.133483+00:00",
-      "city": "London",
-      "bracket": "exact 14",
-      "market_type": "high",
-      "model_prob": 0.2034839587624807,
-      "market_ask": 0.52,
-      "edge": -0.3165160412375193,
-      "kelly_size_usdc": 1.0,
-      "outcome": "UNFILLED",
-      "resolution_date": "2026-05-15",
-      "strategy": "raw_forecast_raw",
-      "market_slug": "highest-temperature-in-london-on-may-15-2026-14c",
       "boundary_convention": "round"
     },
     {
@@ -4605,6 +4590,21 @@
       "resolution_date": "2026-05-11",
       "strategy": "adjacency",
       "market_slug": "highest-temperature-in-london-on-may-11-2026-11c",
+      "boundary_convention": "round"
+    },
+    {
+      "logged_at": "2026-05-11T12:41:00.126168+00:00",
+      "city": "Atlanta",
+      "bracket": "above 76",
+      "market_type": "high",
+      "model_prob": 0.9373686906438176,
+      "market_ask": 0.987,
+      "edge": -0.04963130935618243,
+      "kelly_size_usdc": 1.0,
+      "outcome": "WIN",
+      "resolution_date": "2026-05-11",
+      "strategy": "raw_forecast_raw",
+      "market_slug": "highest-temperature-in-atlanta-on-may-11-2026-76forhigher",
       "boundary_convention": "round"
     },
     {
