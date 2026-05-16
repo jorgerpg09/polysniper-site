@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-05-16T17:08:11.864210+00:00",
-  "now": "2026-05-16T17:08:11.864210+00:00",
+  "updated_at": "2026-05-16T17:18:11.745568+00:00",
+  "now": "2026-05-16T17:18:11.745568+00:00",
   "markets": [
     {
       "condition_id": "0x091d137694061741144097d83e43f740000447e2fcecfdd2cd819dba7650f0f8",
@@ -20109,6 +20109,40 @@
       ]
     },
     {
+      "condition_id": "0xbe6c25fc149de19b66f254e547f8ac163ce44291f541547e5e367dabbe29c5b6",
+      "city": "Miami",
+      "market_type": "high",
+      "bracket": "between 86 and 87",
+      "bracket_type": "between",
+      "resolution_date": "2026-05-16",
+      "game_start_time": "2026-05-15T09:00:00+00:00",
+      "last_placement_time": "2026-05-16T07:00:00+00:00",
+      "effective_close_time": "2026-05-16T12:00:00+00:00",
+      "market_end_date": "2026-05-16T12:00:00+00:00",
+      "market_slug": "highest-temperature-in-miami-on-may-16-2026-86-87f",
+      "resolved_at": null,
+      "outcome": null,
+      "resolution_source": null,
+      "state": "closed",
+      "bets": [
+        {
+          "id": 2565,
+          "placed_at": "2026-05-16T17:13:00.131441+00:00",
+          "size_usd": 1.0,
+          "filled_shares": 3.571428571428571,
+          "filled_vwap": 0.27,
+          "model_prob": 0.25863120182366967,
+          "best_ask_at_placement": 0.28,
+          "limit_price": 0.28,
+          "outcome": null,
+          "realized_pnl_usd": null,
+          "fee_usd": null,
+          "fill_quality": null,
+          "strategy": "raw_forecast_raw"
+        }
+      ]
+    },
+    {
       "condition_id": "0xbecbf1cbe29e21d1927e46ff0f33c09a51b0ac27c9891da54b62990a3ad4fabd",
       "city": "London",
       "market_type": "high",
@@ -20579,6 +20613,40 @@
           "fee_usd": null,
           "fill_quality": null,
           "strategy": "adjacency_hourly"
+        }
+      ]
+    },
+    {
+      "condition_id": "0xfd1487fffb45ec68e548598f84c7f8694c489905700f2f0fa08e21e4647bffd0",
+      "city": "Sao Paulo",
+      "market_type": "high",
+      "bracket": "exact 26",
+      "bracket_type": "exact",
+      "resolution_date": "2026-05-16",
+      "game_start_time": "2026-05-16T03:00:00+00:00",
+      "last_placement_time": "2026-05-17T01:00:00+00:00",
+      "effective_close_time": "2026-05-17T06:00:00+00:00",
+      "market_end_date": "2026-05-16T12:00:00+00:00",
+      "market_slug": "highest-temperature-in-sao-paulo-on-may-16-2026-26c",
+      "resolved_at": null,
+      "outcome": null,
+      "resolution_source": null,
+      "state": "trading",
+      "bets": [
+        {
+          "id": 2566,
+          "placed_at": "2026-05-16T17:13:00.131441+00:00",
+          "size_usd": 1.0,
+          "filled_shares": 1.5873015873015872,
+          "filled_vwap": 0.57,
+          "model_prob": 0.328467822236687,
+          "best_ask_at_placement": 0.63,
+          "limit_price": 0.63,
+          "outcome": null,
+          "realized_pnl_usd": null,
+          "fee_usd": null,
+          "fill_quality": null,
+          "strategy": "raw_forecast_corrected"
         }
       ]
     },
