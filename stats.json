@@ -1,21 +1,21 @@
 {
-  "updated_at": "2026-05-17T02:15:21.845668+00:00",
-  "total_bets": 239,
-  "wins": 157,
-  "losses": 80,
+  "updated_at": "2026-05-17T02:16:23.665856+00:00",
+  "total_bets": 241,
+  "wins": 158,
+  "losses": 81,
   "pending": 2,
-  "win_rate": 66.2,
-  "pnl": 16.34,
-  "kelly_pnl": 26.78,
+  "win_rate": 66.1,
+  "pnl": 15.87,
+  "kelly_pnl": 26.02,
   "current_streak": 1,
-  "streak_type": "W",
+  "streak_type": "L",
   "daily": [
     {
       "date": "2026-05-17",
-      "bets": 13,
-      "wins": 10,
-      "losses": 3,
-      "wr": 76.9
+      "bets": 15,
+      "wins": 11,
+      "losses": 4,
+      "wr": 73.3
     },
     {
       "date": "2026-05-16",
@@ -41,12 +41,30 @@
   ],
   "recent_signals": [
     {
+      "timestamp": "2026-05-17T02:15:24.765616+00:00",
+      "coin": "BTC",
+      "direction": "UP",
+      "entry_price": 0.61,
+      "secs": 24.7,
+      "outcome": "PENDING",
+      "slug": "btc-updown-5m-1778984100"
+    },
+    {
+      "timestamp": "2026-05-17T02:15:24.737602+00:00",
+      "coin": "ETH",
+      "direction": "UP",
+      "entry_price": 0.57,
+      "secs": 24.6,
+      "outcome": "PENDING",
+      "slug": "eth-updown-5m-1778984100"
+    },
+    {
       "timestamp": "2026-05-17T02:10:20.246171+00:00",
       "coin": "ETH",
       "direction": "UP",
       "entry_price": 0.61,
       "secs": 20.2,
-      "outcome": "PENDING",
+      "outcome": "LOSS",
       "slug": "eth-updown-5m-1778983800"
     },
     {
@@ -55,7 +73,7 @@
       "direction": "UP",
       "entry_price": 0.63,
       "secs": 4.5,
-      "outcome": "PENDING",
+      "outcome": "WIN",
       "slug": "btc-updown-5m-1778983800"
     },
     {
@@ -201,24 +219,6 @@
       "secs": 5.6,
       "outcome": "WIN",
       "slug": "eth-updown-5m-1778972700"
-    },
-    {
-      "timestamp": "2026-05-16T22:50:11.621270+00:00",
-      "coin": "BTC",
-      "direction": "UP",
-      "entry_price": 0.62,
-      "secs": 11.6,
-      "outcome": "LOSS",
-      "slug": "btc-updown-5m-1778971800"
-    },
-    {
-      "timestamp": "2026-05-16T22:50:08.524270+00:00",
-      "coin": "ETH",
-      "direction": "UP",
-      "entry_price": 0.61,
-      "secs": 8.4,
-      "outcome": "WIN",
-      "slug": "eth-updown-5m-1778971800"
     }
   ],
   "backtest": {
