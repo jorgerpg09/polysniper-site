@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-05-17T22:08:11.334228+00:00",
-  "hit_rate": 0.1901,
-  "theoretical_pnl": -189.5152,
+  "updated_at": "2026-05-17T22:18:09.893430+00:00",
+  "hit_rate": 0.1898,
+  "theoretical_pnl": -190.5447,
   "trade_count": 944,
   "active_cities": 10,
   "daily_pnl": [
@@ -75,10 +75,26 @@
     },
     {
       "date": "2026-05-17",
-      "cumulative_pnl": -189.5152
+      "cumulative_pnl": -190.5447
     }
   ],
   "recent_trades": [
+    {
+      "logged_at": "2026-05-17T22:13:37.011456+00:00",
+      "city": "Miami",
+      "bracket": "between 90 and 91",
+      "market_type": "high",
+      "model_prob": 0.9612341793532286,
+      "market_ask": 0.17900000000000005,
+      "edge": 0.7822341793532286,
+      "kelly_size_usdc": 2.0,
+      "outcome": "PENDING",
+      "resolution_date": "2026-05-17",
+      "strategy": "no_between",
+      "market_slug": "highest-temperature-in-miami-on-may-17-2026-90-91f",
+      "boundary_convention": "round",
+      "bet_side": "NO"
+    },
     {
       "logged_at": "2026-05-17T19:06:22.602281+00:00",
       "city": "Austin",
@@ -916,7 +932,7 @@
       "market_ask": 0.41,
       "edge": -0.2589411681488159,
       "kelly_size_usdc": 1.0,
-      "outcome": "PENDING",
+      "outcome": "LOSS",
       "resolution_date": "2026-05-17",
       "strategy": "raw_forecast_raw",
       "market_slug": "highest-temperature-in-paris-on-may-17-2026-15c",
@@ -6334,22 +6350,6 @@
       "boundary_convention": "round"
     },
     {
-      "logged_at": "2026-05-07T14:02:35.840086+00:00",
-      "city": "Austin",
-      "bracket": "between 68 and 69",
-      "market_type": "high",
-      "model_prob": 0.8521730062388699,
-      "market_ask": 0.25,
-      "edge": 0.6021730062388699,
-      "kelly_size_usdc": 2.0,
-      "outcome": "LOSS",
-      "resolution_date": "2026-05-07",
-      "strategy": "no_between",
-      "market_slug": "highest-temperature-in-austin-on-may-7-2026-68-69f",
-      "boundary_convention": "round",
-      "bet_side": "NO"
-    },
-    {
       "logged_at": "2026-05-07T13:27:35.592335+00:00",
       "city": "London",
       "bracket": "exact 15",
@@ -7510,7 +7510,7 @@
       }
     },
     "no_between": {
-      "bets": 141,
+      "bets": 142,
       "resolved": 87,
       "wins": 50,
       "pnl_usd": -20.3806,
