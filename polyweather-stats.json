@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-05-17T16:48:09.944030+00:00",
+  "updated_at": "2026-05-17T16:58:09.915439+00:00",
   "hit_rate": 0.196,
   "theoretical_pnl": -158.9528,
   "trade_count": 938,
@@ -75,6 +75,22 @@
     }
   ],
   "recent_trades": [
+    {
+      "logged_at": "2026-05-17T16:48:24.584036+00:00",
+      "city": "Miami",
+      "bracket": "between 82 and 83",
+      "market_type": "high",
+      "model_prob": 0.8053052790539701,
+      "market_ask": 0.31099999999999994,
+      "edge": 0.49430527905397015,
+      "kelly_size_usdc": 2.0,
+      "outcome": "PENDING",
+      "resolution_date": "2026-05-17",
+      "strategy": "no_between",
+      "market_slug": "highest-temperature-in-miami-on-may-17-2026-82-83f",
+      "boundary_convention": "round",
+      "bet_side": "NO"
+    },
     {
       "logged_at": "2026-05-17T16:12:26.127978+00:00",
       "city": "Sao Paulo",
@@ -6330,22 +6346,6 @@
       "bet_side": "NO"
     },
     {
-      "logged_at": "2026-05-07T12:41:01.474125+00:00",
-      "city": "Austin",
-      "bracket": "between 70 and 71",
-      "market_type": "high",
-      "model_prob": 0.8256014996090932,
-      "market_ask": 0.28,
-      "edge": 0.5456014996090932,
-      "kelly_size_usdc": 2.0,
-      "outcome": "WIN",
-      "resolution_date": "2026-05-07",
-      "strategy": "no_between",
-      "market_slug": "highest-temperature-in-austin-on-may-7-2026-70-71f",
-      "boundary_convention": "round",
-      "bet_side": "NO"
-    },
-    {
       "logged_at": "2026-05-07T12:21:14.114171+00:00",
       "city": "Helsinki",
       "bracket": "exact 13",
@@ -7491,7 +7491,7 @@
       }
     },
     "no_between": {
-      "bets": 137,
+      "bets": 138,
       "resolved": 87,
       "wins": 50,
       "pnl_usd": -20.3806,
