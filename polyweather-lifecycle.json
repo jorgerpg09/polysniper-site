@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-05-17T23:08:11.832154+00:00",
-  "now": "2026-05-17T23:08:11.832154+00:00",
+  "updated_at": "2026-05-17T23:18:11.767013+00:00",
+  "now": "2026-05-17T23:18:11.767013+00:00",
   "markets": [
     {
       "condition_id": "0x091d137694061741144097d83e43f740000447e2fcecfdd2cd819dba7650f0f8",
@@ -21645,6 +21645,40 @@
           "fee_usd": 0.05,
           "fill_quality": "FANTASY",
           "strategy": "raw_forecast_raw"
+        }
+      ]
+    },
+    {
+      "condition_id": "0x3d8c33552119bab7e10612f273a1750f74f76ac1fd0391631d56ff5f28896f40",
+      "city": "Miami",
+      "market_type": "low",
+      "bracket": "between 78 and 79",
+      "bracket_type": "between",
+      "resolution_date": "2026-05-18",
+      "game_start_time": "2026-05-17T16:00:00+00:00",
+      "last_placement_time": "2026-05-18T04:00:00+00:00",
+      "effective_close_time": "2026-05-18T12:00:00+00:00",
+      "market_end_date": "2026-05-18T12:00:00+00:00",
+      "market_slug": "lowest-temperature-in-miami-on-may-18-2026-78-79f",
+      "resolved_at": null,
+      "outcome": null,
+      "resolution_source": null,
+      "state": "trading",
+      "bets": [
+        {
+          "id": 2611,
+          "placed_at": "2026-05-17T23:12:00.128031+00:00",
+          "size_usd": 1.0,
+          "filled_shares": 3.0303030303030303,
+          "filled_vwap": 0.33,
+          "model_prob": 0.2661650885547735,
+          "best_ask_at_placement": 0.33,
+          "limit_price": 0.33,
+          "outcome": null,
+          "realized_pnl_usd": null,
+          "fee_usd": null,
+          "fill_quality": null,
+          "strategy": "raw_forecast_corrected"
         }
       ]
     }
