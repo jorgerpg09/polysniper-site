@@ -108,6 +108,7 @@ function setSource(source) {
             ? 'Live trading from Mac. Real CLOB orders on No-side between brackets.'
             : 'Paper-trading to validate the edge before deploying real capital.';
     }
+    applySourceTabVisibility();
     loadPolyWeather();
     loadPolyWeatherLifecycle();
 }
@@ -118,6 +119,35 @@ function setSource(source) {
 // strategies — disabled in PolyWeather config, evaluated offline via
 // scripts/consensus_backtest.py instead. Stats data still includes them.
 const PW_STRATEGIES = ['modal_early', 'raw_forecast_corrected', 'raw_forecast_raw', 'adjacency', 'adjacency_capped', 'adjacency_hourly', 'below_tail', 'no_between', 'no_between_live', 'no_above', 'no_below'];
+
+// Strategies that actually place real CLOB orders. Live tab hides everything
+// else so the user isn't misled by paper-only counters that the exporter
+// still writes into polyweather-live-stats.json (the Mac scheduler runs the
+// full strategy battery; only no_between currently goes live, dashboarded
+// as no_between_live). Promote others here as they go live.
+const PW_LIVE_STRATEGIES = ['no_between_live'];
+
+// Returns the list of strategy keys that should be VISIBLE for the current
+// data source. Paper shows everything; Live shows only PW_LIVE_STRATEGIES.
+function visibleStrategiesForSource() {
+    return currentSource() === 'live' ? PW_LIVE_STRATEGIES : PW_STRATEGIES;
+}
+
+// Show/hide strategy tabs based on the current data source. Called whenever
+// the source switches and on initial load.
+function applySourceTabVisibility() {
+    const visible = new Set(visibleStrategiesForSource());
+    document.querySelectorAll('.strategy-tab').forEach(btn => {
+        const key = btn.dataset.strategy;
+        if (key === 'all') return;  // 'all' always shown
+        btn.style.display = visible.has(key) ? '' : 'none';
+    });
+    // If currently-selected strategy got hidden, fall back to 'all'
+    const cur = currentStrategy();
+    if (cur !== 'all' && !visible.has(cur)) {
+        setStrategy('all');
+    }
+}
 
 // Returns the currently selected strategy filter:
 // 'all' | 'modal_early' | 'raw_forecast_corrected' | 'raw_forecast_raw' | 'adjacency' | 'adjacency_capped' | 'below_tail'
@@ -206,11 +236,15 @@ function _pwStrategyBets(strat, postOnly) {
 function updateTabCounts(stats) {
     const strat = stats.strategies || {};
     const postOnly = postfixOnly();
+    const visible = new Set(visibleStrategiesForSource());
     const counts = { all: 0 };
     for (const key of PW_STRATEGIES) {
         const n = _pwStrategyBets(strat[key], postOnly);
         counts[key] = n;
-        counts.all += n;
+        // "All" badge only sums VISIBLE strategies — on Live tab this means
+        // only live-eligible strategies count, so the badge matches what the
+        // user can see in the tab list (no phantom paper bets inflating it).
+        if (visible.has(key)) counts.all += n;
     }
     document.querySelectorAll('.strategy-tab').forEach(btn => {
         const key = btn.dataset.strategy;
@@ -261,7 +295,14 @@ function renderPolyWeatherStats(stats) {
     // matches the tab badge. Hit rate uses only RESOLVED bets as denominator
     // since pending bets don't have an outcome yet. Summed from the strategies
     // block (NOT stats.trade_count) so aggregate matches Tail + Modal exactly.
-    const allStrats = Object.values(stats.strategies || {}).map(pick);
+    // On Live tab, restrict the "All" aggregate to live-eligible strategies so
+    // headline metrics aren't polluted by paper-only counters present in the
+    // live stats JSON (Mac scheduler runs the full battery; only no_between
+    // actually places real CLOB orders).
+    const visibleKeys = new Set(visibleStrategiesForSource());
+    const allStrats = Object.entries(stats.strategies || {})
+        .filter(([k, _]) => visibleKeys.has(k))
+        .map(([_, v]) => pick(v));
     const sPick = pick(s);
     const totalBets = isAll
         ? allStrats.reduce((n, v) => n + (v.bets || 0), 0)
@@ -358,9 +399,12 @@ function renderPolyWeatherTrades(trades) {
     // tail_longshot — when "all" is selected we exclude them from the displayed
     // table (tail was archived 2026-04-25 and removed from UI 2026-04-28). When
     // a specific strategy tab is selected, only exact matches show.
+    // On Live tab, "all" further restricts to live-eligible strategies so paper
+    // rows don't show up under live (the live stats JSON contains both).
     const strat = currentStrategy();
+    const visibleKeys = new Set(visibleStrategiesForSource());
     let filtered = strat === 'all'
-        ? trades.filter(t => t.strategy && t.strategy !== 'tail_longshot')
+        ? trades.filter(t => t.strategy && t.strategy !== 'tail_longshot' && visibleKeys.has(t.strategy))
         : trades.filter(t => t.strategy === strat);
 
     // Boundary-convention filter: when post-fix-only is on, hide legacy 'floor'
@@ -519,8 +563,15 @@ function renderLifecycle() {
         }
 
         // 'all' filters out legacy tail_longshot bets but keeps everything else.
+        // On Live tab, also restrict to live-eligible strategies so the lifecycle
+        // doesn't surface paper markets the user can't actually trade live.
         if (strat === 'all') {
-            const visibleBets = (m.bets || []).filter(b => b.strategy && b.strategy !== 'tail_longshot');
+            const liveVisible = new Set(visibleStrategiesForSource());
+            const visibleBets = (m.bets || []).filter(b =>
+                b.strategy
+                && b.strategy !== 'tail_longshot'
+                && liveVisible.has(b.strategy)
+            );
             if (visibleBets.length === 0 && (m.bets || []).length > 0) return null;
             return { ...m, bets: visibleBets };
         }
@@ -734,6 +785,11 @@ window.addEventListener('resize', renderLifecycle);
 
 // Restore strategy tab from localStorage and wire click handlers
 (function initStrategyTabs() {
+    // Apply source-based tab visibility BEFORE restoring the selected strategy,
+    // so if the saved selection is now hidden (e.g. user was on "Modal early"
+    // and reloads on Live tab) the fallback to 'all' inside applySourceTabVisibility
+    // runs before setStrategy paints a stale highlight.
+    applySourceTabVisibility();
     const saved = currentStrategy();
     setStrategy(saved);  // paint initial UI state
     document.querySelectorAll('.strategy-tab').forEach(btn => {
