@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-05-20T15:07:26.857516+00:00",
+  "updated_at": "2026-05-20T15:17:26.862084+00:00",
   "hit_rate": 0.1898,
   "theoretical_pnl": -190.5447,
-  "trade_count": 967,
+  "trade_count": 969,
   "active_cities": 10,
   "daily_pnl": [
     {
@@ -79,6 +79,36 @@
     }
   ],
   "recent_trades": [
+    {
+      "logged_at": "2026-05-20T15:17:15.847642+00:00",
+      "city": "Sao Paulo",
+      "bracket": "exact 19",
+      "market_type": "high",
+      "model_prob": 0.24916848801892932,
+      "market_ask": 0.23,
+      "edge": 0.019168488018929314,
+      "kelly_size_usdc": 2.0,
+      "outcome": "PENDING",
+      "resolution_date": "2026-05-20",
+      "strategy": "adjacency_hourly",
+      "market_slug": "highest-temperature-in-sao-paulo-on-may-20-2026-19c",
+      "boundary_convention": "round"
+    },
+    {
+      "logged_at": "2026-05-20T15:15:16.728675+00:00",
+      "city": "Sao Paulo",
+      "bracket": "exact 19",
+      "market_type": "high",
+      "model_prob": 0.24916848801892932,
+      "market_ask": 0.23,
+      "edge": 0.019168488018929314,
+      "kelly_size_usdc": 2.0,
+      "outcome": "PENDING",
+      "resolution_date": "2026-05-20",
+      "strategy": "adjacency",
+      "market_slug": "highest-temperature-in-sao-paulo-on-may-20-2026-19c",
+      "boundary_convention": "round"
+    },
     {
       "logged_at": "2026-05-20T14:00:29.382928+00:00",
       "city": "Austin",
@@ -3252,21 +3282,6 @@
       "boundary_convention": "round"
     },
     {
-      "logged_at": "2026-05-14T13:31:08.652731+00:00",
-      "city": "Sao Paulo",
-      "bracket": "exact 27",
-      "market_type": "high",
-      "model_prob": 0.32541983791604145,
-      "market_ask": 0.32,
-      "edge": 0.005419837916041448,
-      "kelly_size_usdc": 2.0,
-      "outcome": "LOSS",
-      "resolution_date": "2026-05-14",
-      "strategy": "adjacency_hourly",
-      "market_slug": "highest-temperature-in-sao-paulo-on-may-14-2026-27c",
-      "boundary_convention": "round"
-    },
-    {
       "logged_at": "2026-05-14T12:57:03.866093+00:00",
       "city": "Paris",
       "bracket": "exact 12",
@@ -6410,21 +6425,6 @@
       "boundary_convention": "round"
     },
     {
-      "logged_at": "2026-05-07T11:48:14.006918+00:00",
-      "city": "Sao Paulo",
-      "bracket": "exact 30",
-      "market_type": "high",
-      "model_prob": 0.3242900566948518,
-      "market_ask": 0.32,
-      "edge": 0.004290056694851774,
-      "kelly_size_usdc": 2.0,
-      "outcome": "LOSS",
-      "resolution_date": "2026-05-07",
-      "strategy": "adjacency",
-      "market_slug": "highest-temperature-in-sao-paulo-on-may-7-2026-30c",
-      "boundary_convention": "round"
-    },
-    {
       "logged_at": "2026-05-03T23:12:00.604148+00:00",
       "city": "Miami",
       "bracket": "below 67",
@@ -7267,15 +7267,15 @@
   ],
   "strategies": {
     "adjacency": {
-      "bets": 84,
+      "bets": 85,
       "resolved": 80,
       "wins": 15,
       "pnl_usd": -30.0467,
       "bankroll": {
         "start": 1000.0,
         "current": 962.3014,
-        "open_stake": 8.0,
-        "available": 954.3014,
+        "open_stake": 10.0,
+        "available": 952.3014,
         "daily_loss": 0.0
       },
       "by_boundary": {
@@ -7286,7 +7286,7 @@
           "pnl_usd": 0.0
         },
         "round": {
-          "bets": 84,
+          "bets": 85,
           "resolved": 80,
           "wins": 15,
           "pnl_usd": -30.0467
@@ -7321,15 +7321,15 @@
       }
     },
     "adjacency_hourly": {
-      "bets": 210,
+      "bets": 211,
       "resolved": 202,
       "wins": 29,
       "pnl_usd": -63.3201,
       "bankroll": {
         "start": 1000.0,
         "current": 925.9394,
-        "open_stake": 16.0,
-        "available": 909.9394,
+        "open_stake": 18.0,
+        "available": 907.9394,
         "daily_loss": 0.0
       },
       "by_boundary": {
@@ -7340,7 +7340,7 @@
           "pnl_usd": 0.0
         },
         "round": {
-          "bets": 210,
+          "bets": 211,
           "resolved": 202,
           "wins": 29,
           "pnl_usd": -63.3201
