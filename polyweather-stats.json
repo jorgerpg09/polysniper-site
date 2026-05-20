@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-05-20T23:07:00.305428+00:00",
+  "updated_at": "2026-05-20T23:17:00.385397+00:00",
   "hit_rate": 0.1879,
   "theoretical_pnl": -220.0869,
   "trade_count": 974,
@@ -83,6 +83,70 @@
     }
   ],
   "recent_trades": [
+    {
+      "logged_at": "2026-05-20T23:12:06.506024+00:00",
+      "city": "Seoul",
+      "bracket": "exact 21",
+      "market_type": "high",
+      "model_prob": 0.8901947489473842,
+      "market_ask": 0.26,
+      "edge": 0.6301947489473841,
+      "kelly_size_usdc": 2.0,
+      "outcome": "PENDING",
+      "resolution_date": "2026-05-21",
+      "strategy": "no_exact",
+      "market_slug": "highest-temperature-in-seoul-on-may-21-2026-21c",
+      "boundary_convention": "round",
+      "bet_side": "NO"
+    },
+    {
+      "logged_at": "2026-05-20T23:12:06.464927+00:00",
+      "city": "Seoul",
+      "bracket": "exact 20",
+      "market_type": "high",
+      "model_prob": 0.8414357450416663,
+      "market_ask": 0.26,
+      "edge": 0.5814357450416663,
+      "kelly_size_usdc": 2.0,
+      "outcome": "PENDING",
+      "resolution_date": "2026-05-21",
+      "strategy": "no_exact",
+      "market_slug": "highest-temperature-in-seoul-on-may-21-2026-20c",
+      "boundary_convention": "round",
+      "bet_side": "NO"
+    },
+    {
+      "logged_at": "2026-05-20T23:12:05.878827+00:00",
+      "city": "Hong Kong",
+      "bracket": "exact 29",
+      "market_type": "high",
+      "model_prob": 0.8275985662570866,
+      "market_ask": 0.29000000000000004,
+      "edge": 0.5375985662570866,
+      "kelly_size_usdc": 2.0,
+      "outcome": "PENDING",
+      "resolution_date": "2026-05-21",
+      "strategy": "no_exact",
+      "market_slug": "highest-temperature-in-hong-kong-on-may-21-2026-29c",
+      "boundary_convention": "round",
+      "bet_side": "NO"
+    },
+    {
+      "logged_at": "2026-05-20T23:12:05.842623+00:00",
+      "city": "Hong Kong",
+      "bracket": "exact 28",
+      "market_type": "high",
+      "model_prob": 0.9057106224146196,
+      "market_ask": 0.43999999999999995,
+      "edge": 0.4657106224146197,
+      "kelly_size_usdc": 2.0,
+      "outcome": "PENDING",
+      "resolution_date": "2026-05-21",
+      "strategy": "no_exact",
+      "market_slug": "highest-temperature-in-hong-kong-on-may-21-2026-28c",
+      "boundary_convention": "round",
+      "bet_side": "NO"
+    },
     {
       "logged_at": "2026-05-20T19:52:21.293945+00:00",
       "city": "Austin",
@@ -7824,7 +7888,7 @@
       }
     },
     "no_exact": {
-      "bets": 0,
+      "bets": 4,
       "resolved": 0,
       "wins": 0,
       "pnl_usd": 0.0,
@@ -7843,7 +7907,7 @@
           "pnl_usd": 0.0
         },
         "round": {
-          "bets": 0,
+          "bets": 4,
           "resolved": 0,
           "wins": 0,
           "pnl_usd": 0.0
