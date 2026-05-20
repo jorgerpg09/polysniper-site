@@ -84,11 +84,33 @@ setInterval(loadStats, 60000);
 // PolyWeather -- Phase 4 stats (D-13)
 // ==========================================================================
 
-const PW_STATS_URL = 'polyweather-stats.json';
+const PW_SOURCES = {
+    paper: { stats: 'polyweather-stats.json', lifecycle: 'polyweather-lifecycle.json' },
+    live:  { stats: 'polyweather-live-stats.json', lifecycle: 'polyweather-live-lifecycle.json' },
+};
+const PW_SOURCE_KEY = 'pw_data_source';  // localStorage key
 const PW_STRATEGY_KEY = 'pw_strategy_filter';  // localStorage key
 const PW_POSTFIX_ONLY_KEY = 'pw_postfix_only';  // localStorage key for boundary toggle
 let pwChart = null;
 let _pwStatsData = null;  // last loaded stats, kept for re-renders on tab switch
+
+function currentSource() {
+    return localStorage.getItem(PW_SOURCE_KEY) || 'paper';
+}
+function setSource(source) {
+    localStorage.setItem(PW_SOURCE_KEY, source);
+    document.querySelectorAll('.pw-source-btn').forEach(btn => {
+        btn.classList.toggle('is-active', btn.dataset.source === source);
+    });
+    const tagline = document.getElementById('pw-source-tagline');
+    if (tagline) {
+        tagline.textContent = source === 'live'
+            ? 'Live trading from Mac. Real CLOB orders on No-side between brackets.'
+            : 'Paper-trading to validate the edge before deploying real capital.';
+    }
+    loadPolyWeather();
+    loadPolyWeatherLifecycle();
+}
 
 // All currently-displayed strategies (tail_longshot archived 2026-04-25, hidden 2026-04-28).
 // Order matches the index.html tab order so updateTabCounts can iterate consistently.
@@ -147,8 +169,9 @@ function setStrategy(strategy) {
 }
 
 async function loadPolyWeather() {
+    const url = PW_SOURCES[currentSource()].stats;
     try {
-        const resp = await fetch(PW_STATS_URL, { cache: 'no-cache' });
+        const resp = await fetch(url, { cache: 'no-cache' });
         if (!resp.ok) throw new Error('HTTP ' + resp.status);
         const stats = await resp.json();
         _pwStatsData = stats;
@@ -159,7 +182,9 @@ async function loadPolyWeather() {
     } catch (err) {
         console.warn('Failed to load polyweather stats:', err);
         const el = document.getElementById('pw-updated');
-        if (el) el.textContent = 'Stats unavailable -- check back soon';
+        if (el) el.textContent = currentSource() === 'live'
+            ? 'Live stats not available yet -- Mac exporter not running'
+            : 'Stats unavailable -- check back soon';
     }
 }
 
@@ -423,13 +448,13 @@ setInterval(loadPolyWeather, 60000);
 
 // ---------- PolyWeather Lifecycle Timeline ----------
 
-const PW_LIFECYCLE_URL = 'polyweather-lifecycle.json';
 const PW_LC_REFRESH_MS = 60_000;
 let _pwLifecycleData = null;
 
 async function loadPolyWeatherLifecycle() {
+    const url = PW_SOURCES[currentSource()].lifecycle;
     try {
-        const resp = await fetch(PW_LIFECYCLE_URL, { cache: 'no-cache' });
+        const resp = await fetch(url, { cache: 'no-cache' });
         if (!resp.ok) throw new Error('HTTP ' + resp.status);
         const data = await resp.json();
         _pwLifecycleData = data;
@@ -722,4 +747,18 @@ window.addEventListener('resize', renderLifecycle);
     if (!cb) return;
     cb.checked = postfixOnly();
     cb.addEventListener('change', () => setPostfixOnly(cb.checked));
+})();
+
+// Restore + wire the Paper / Live source toggle.
+(function initSourceToggle() {
+    const saved = currentSource();
+    document.querySelectorAll('.pw-source-btn').forEach(btn => {
+        btn.classList.toggle('is-active', btn.dataset.source === saved);
+        btn.addEventListener('click', () => setSource(btn.dataset.source));
+    });
+    // Set initial tagline text
+    const tagline = document.getElementById('pw-source-tagline');
+    if (tagline && saved === 'live') {
+        tagline.textContent = 'Live trading from Mac. Real CLOB orders on No-side between brackets.';
+    }
 })();

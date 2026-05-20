@@ -470,6 +470,36 @@ footer {
 #pw-lc-svg { display: block; }
 
 /* ============================================================= */
+/* Paper / Live source toggle                                     */
+/* ============================================================= */
+.pw-source-toggle {
+    display: flex;
+    gap: 0;
+    justify-content: center;
+    margin: 0 auto 12px;
+}
+.pw-source-btn {
+    background: var(--bg-card);
+    color: var(--text-dim);
+    border: 1px solid var(--border);
+    padding: 6px 20px;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.15s;
+}
+.pw-source-btn:first-child { border-radius: 6px 0 0 6px; }
+.pw-source-btn:last-child  { border-radius: 0 6px 6px 0; }
+.pw-source-btn.is-active {
+    background: var(--accent);
+    color: var(--bg);
+    border-color: var(--accent);
+}
+.pw-source-btn[data-source="live"].is-active {
+    background: #f59e0b;
+    border-color: #f59e0b;
+}
+
 /* Strategy tabs — per-strategy filter for PolyWeather panels     */
 /* ============================================================= */
 .strategy-tabs {

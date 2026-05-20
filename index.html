@@ -28,8 +28,14 @@
     <!-- PolyWeather Stats (Phase 4) -->
     <section class="stats-section" id="polyweather-section">
         <div class="container">
-            <h2>PolyWeather &mdash; Dry-Run Validation</h2>
-            <p class="tagline" style="text-align:center;margin-bottom:1.5em;">
+            <h2>PolyWeather</h2>
+
+            <!-- Paper / Live data source toggle -->
+            <div class="pw-source-toggle" style="text-align:center;margin-bottom:1em;">
+                <button class="pw-source-btn is-active" data-source="paper">Paper</button>
+                <button class="pw-source-btn" data-source="live">Live</button>
+            </div>
+            <p class="tagline" style="text-align:center;margin-bottom:1.5em;" id="pw-source-tagline">
                 Our weather model identifies mispriced temperature markets on Polymarket.
                 Paper-trading to validate the edge before deploying real capital.
             </p>
