@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-05-20T17:07:29.221731+00:00",
-  "now": "2026-05-20T17:07:29.221731+00:00",
+  "updated_at": "2026-05-20T17:17:29.058017+00:00",
+  "now": "2026-05-20T17:17:29.058017+00:00",
   "markets": [
     {
       "condition_id": "0x091d137694061741144097d83e43f740000447e2fcecfdd2cd819dba7650f0f8",
@@ -22169,6 +22169,21 @@
           "fee_usd": null,
           "fill_quality": null,
           "strategy": "raw_forecast_raw"
+        },
+        {
+          "id": 2638,
+          "placed_at": "2026-05-20T17:13:04.390526+00:00",
+          "size_usd": 1.0,
+          "filled_shares": 1.7543859649122808,
+          "filled_vwap": 0.57,
+          "model_prob": 0.17639752125550512,
+          "best_ask_at_placement": 0.57,
+          "limit_price": 0.57,
+          "outcome": null,
+          "realized_pnl_usd": null,
+          "fee_usd": null,
+          "fill_quality": null,
+          "strategy": "raw_forecast_corrected"
         }
       ]
     },
@@ -22252,6 +22267,40 @@
           "fee_usd": null,
           "fill_quality": null,
           "strategy": "raw_forecast_raw"
+        }
+      ]
+    },
+    {
+      "condition_id": "0xb416c36855a841cd7b53e79cc1a3554fb9ba1882e9d8d50a5f5d79d8b41fb3c3",
+      "city": "Miami",
+      "market_type": "high",
+      "bracket": "between 88 and 89",
+      "bracket_type": "between",
+      "resolution_date": "2026-05-20",
+      "game_start_time": "2026-05-19T09:00:00+00:00",
+      "last_placement_time": "2026-05-20T07:00:00+00:00",
+      "effective_close_time": "2026-05-20T12:00:00+00:00",
+      "market_end_date": "2026-05-20T12:00:00+00:00",
+      "market_slug": "highest-temperature-in-miami-on-may-20-2026-88-89f",
+      "resolved_at": null,
+      "outcome": null,
+      "resolution_source": null,
+      "state": "closed",
+      "bets": [
+        {
+          "id": 2637,
+          "placed_at": "2026-05-20T17:13:04.390526+00:00",
+          "size_usd": 1.0,
+          "filled_shares": 1.6666666666666667,
+          "filled_vwap": 0.58,
+          "model_prob": 0.30888831876457257,
+          "best_ask_at_placement": 0.6,
+          "limit_price": 0.6,
+          "outcome": null,
+          "realized_pnl_usd": null,
+          "fee_usd": null,
+          "fill_quality": null,
+          "strategy": "raw_forecast_corrected"
         }
       ]
     },
