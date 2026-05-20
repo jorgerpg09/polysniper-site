@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-05-20T18:40:42.551334+00:00",
+  "updated_at": "2026-05-20T18:50:42.526854+00:00",
   "hit_rate": 0.191,
   "theoretical_pnl": -206.0729,
-  "trade_count": 972,
+  "trade_count": 974,
   "active_cities": 10,
   "daily_pnl": [
     {
@@ -83,6 +83,36 @@
     }
   ],
   "recent_trades": [
+    {
+      "logged_at": "2026-05-20T18:41:02.981476+00:00",
+      "city": "Atlanta",
+      "bracket": "between 86 and 87",
+      "market_type": "high",
+      "model_prob": 0.31625018306764796,
+      "market_ask": 0.001,
+      "edge": 0.31525018306764796,
+      "kelly_size_usdc": 1.0,
+      "outcome": "PENDING",
+      "resolution_date": "2026-05-20",
+      "strategy": "raw_forecast_corrected",
+      "market_slug": "highest-temperature-in-atlanta-on-may-20-2026-86-87f",
+      "boundary_convention": "round"
+    },
+    {
+      "logged_at": "2026-05-20T18:41:02.981476+00:00",
+      "city": "New York City",
+      "bracket": "between 96 and 97",
+      "market_type": "high",
+      "model_prob": 0.18236372319714117,
+      "market_ask": 0.006,
+      "edge": 0.17636372319714116,
+      "kelly_size_usdc": 1.0,
+      "outcome": "PENDING",
+      "resolution_date": "2026-05-20",
+      "strategy": "raw_forecast_corrected",
+      "market_slug": "highest-temperature-in-nyc-on-may-20-2026-96-97f",
+      "boundary_convention": "round"
+    },
     {
       "logged_at": "2026-05-20T18:03:09.857685+00:00",
       "city": "Miami",
@@ -3486,36 +3516,6 @@
       "market_slug": "highest-temperature-in-atlanta-on-may-14-2026-74-75f",
       "boundary_convention": "round",
       "bet_side": "NO"
-    },
-    {
-      "logged_at": "2026-05-14T11:09:00.159791+00:00",
-      "city": "Atlanta",
-      "bracket": "between 74 and 75",
-      "market_type": "high",
-      "model_prob": 0.25911949249685395,
-      "market_ask": 0.66,
-      "edge": -0.4008805075031461,
-      "kelly_size_usdc": 1.0,
-      "outcome": "LOSS",
-      "resolution_date": "2026-05-14",
-      "strategy": "raw_forecast_corrected",
-      "market_slug": "highest-temperature-in-atlanta-on-may-14-2026-74-75f",
-      "boundary_convention": "round"
-    },
-    {
-      "logged_at": "2026-05-14T11:09:00.159791+00:00",
-      "city": "Miami",
-      "bracket": "between 90 and 91",
-      "market_type": "high",
-      "model_prob": 0.22033887773855243,
-      "market_ask": 0.41,
-      "edge": -0.18966112226144755,
-      "kelly_size_usdc": 1.0,
-      "outcome": "LOSS",
-      "resolution_date": "2026-05-14",
-      "strategy": "raw_forecast_corrected",
-      "market_slug": "highest-temperature-in-miami-on-may-14-2026-90-91f",
-      "boundary_convention": "round"
     },
     {
       "logged_at": "2026-05-14T11:09:00.159791+00:00",
@@ -7568,15 +7568,15 @@
       }
     },
     "raw_forecast_corrected": {
-      "bets": 195,
+      "bets": 197,
       "resolved": 186,
       "wins": 58,
       "pnl_usd": -43.6597,
       "bankroll": {
         "start": 10000.0,
         "current": 9948.9539,
-        "open_stake": 9.0,
-        "available": 9939.9539,
+        "open_stake": 11.0,
+        "available": 9937.9539,
         "daily_loss": 1.032
       },
       "by_boundary": {
@@ -7587,7 +7587,7 @@
           "pnl_usd": 0.0
         },
         "round": {
-          "bets": 195,
+          "bets": 197,
           "resolved": 186,
           "wins": 58,
           "pnl_usd": -43.6597
