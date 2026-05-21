@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-05-21T13:37:00.485209+00:00",
-  "hit_rate": 0.1946,
-  "theoretical_pnl": -217.3304,
-  "trade_count": 996,
+  "updated_at": "2026-05-21T13:47:00.348611+00:00",
+  "hit_rate": 0.1944,
+  "theoretical_pnl": -218.3789,
+  "trade_count": 997,
   "active_cities": 10,
   "daily_pnl": [
     {
@@ -80,9 +80,28 @@
     {
       "date": "2026-05-20",
       "cumulative_pnl": -217.3304
+    },
+    {
+      "date": "2026-05-21",
+      "cumulative_pnl": -218.3789
     }
   ],
   "recent_trades": [
+    {
+      "logged_at": "2026-05-21T13:42:36.081992+00:00",
+      "city": "Paris",
+      "bracket": "exact 23",
+      "market_type": "high",
+      "model_prob": 0.336393860152632,
+      "market_ask": 0.001,
+      "edge": 0.335393860152632,
+      "kelly_size_usdc": 2.0,
+      "outcome": "PENDING",
+      "resolution_date": "2026-05-21",
+      "strategy": "adjacency_hourly",
+      "market_slug": "highest-temperature-in-paris-on-may-21-2026-23c",
+      "boundary_convention": "round"
+    },
     {
       "logged_at": "2026-05-21T13:22:21.801522+00:00",
       "city": "London",
@@ -615,7 +634,7 @@
       "market_ask": 0.031,
       "edge": 0.1130133871946151,
       "kelly_size_usdc": 1.0,
-      "outcome": "PENDING",
+      "outcome": "LOSS",
       "resolution_date": "2026-05-21",
       "strategy": "raw_forecast_raw",
       "market_slug": "highest-temperature-in-paris-on-may-21-2026-22c",
@@ -3418,21 +3437,6 @@
       "market_slug": "highest-temperature-in-chicago-on-may-15-2026-74forhigher",
       "boundary_convention": "round",
       "bet_side": "NO"
-    },
-    {
-      "logged_at": "2026-05-15T11:09:00.192692+00:00",
-      "city": "Paris",
-      "bracket": "exact 14",
-      "market_type": "high",
-      "model_prob": 0.2308766331319999,
-      "market_ask": 0.2,
-      "edge": 0.030876633131999898,
-      "kelly_size_usdc": 2.0,
-      "outcome": "LOSS",
-      "resolution_date": "2026-05-15",
-      "strategy": "adjacency_hourly",
-      "market_slug": "highest-temperature-in-paris-on-may-15-2026-14c",
-      "boundary_convention": "round"
     },
     {
       "logged_at": "2026-05-15T11:09:00.192692+00:00",
@@ -7853,15 +7857,15 @@
       }
     },
     "adjacency_hourly": {
-      "bets": 221,
+      "bets": 222,
       "resolved": 211,
       "wins": 29,
       "pnl_usd": -80.9254,
       "bankroll": {
         "start": 1000.0,
         "current": 913.6812,
-        "open_stake": 20.0,
-        "available": 893.6812,
+        "open_stake": 22.0,
+        "available": 891.6812,
         "daily_loss": 4.0099
       },
       "by_boundary": {
@@ -7872,7 +7876,7 @@
           "pnl_usd": 0.0
         },
         "round": {
-          "bets": 221,
+          "bets": 222,
           "resolved": 211,
           "wins": 29,
           "pnl_usd": -80.9254
@@ -8151,15 +8155,15 @@
     },
     "raw_forecast_raw": {
       "bets": 169,
-      "resolved": 165,
+      "resolved": 166,
       "wins": 46,
-      "pnl_usd": -59.4322,
+      "pnl_usd": -60.4807,
       "bankroll": {
         "start": 10000.0,
-        "current": 9932.9536,
-        "open_stake": 4.0,
-        "available": 9928.9536,
-        "daily_loss": 0.0
+        "current": 9931.9051,
+        "open_stake": 3.0,
+        "available": 9928.9051,
+        "daily_loss": 1.0485
       },
       "by_boundary": {
         "floor": {
@@ -8170,9 +8174,9 @@
         },
         "round": {
           "bets": 169,
-          "resolved": 165,
+          "resolved": 166,
           "wins": 46,
-          "pnl_usd": -59.4322
+          "pnl_usd": -60.4807
         }
       }
     },
