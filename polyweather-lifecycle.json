@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-05-21T19:57:04.483779+00:00",
-  "now": "2026-05-21T19:57:04.483779+00:00",
+  "updated_at": "2026-05-21T20:07:04.616649+00:00",
+  "now": "2026-05-21T20:07:04.616649+00:00",
   "markets": [
     {
       "condition_id": "0x091d137694061741144097d83e43f740000447e2fcecfdd2cd819dba7650f0f8",
@@ -22666,10 +22666,10 @@
       "effective_close_time": "2026-05-22T01:00:00+00:00",
       "market_end_date": "2026-05-21T12:00:00+00:00",
       "market_slug": "highest-temperature-in-paris-on-may-21-2026-23c",
-      "resolved_at": null,
-      "outcome": null,
-      "resolution_source": null,
-      "state": "trading",
+      "resolved_at": "2026-05-21T13:43:00.644089+00:00",
+      "outcome": "loss",
+      "resolution_source": "uma_resolved",
+      "state": "resolved",
       "bets": [
         {
           "id": 2648,
@@ -22680,9 +22680,9 @@
           "model_prob": 0.336393860152632,
           "best_ask_at_placement": 0.17,
           "limit_price": 0.17,
-          "outcome": null,
-          "realized_pnl_usd": null,
-          "fee_usd": null,
+          "outcome": "loss",
+          "realized_pnl_usd": -1.0415,
+          "fee_usd": 0.0415,
           "fill_quality": null,
           "strategy": "raw_forecast_corrected"
         },
@@ -22695,9 +22695,9 @@
           "model_prob": 0.336393860152632,
           "best_ask_at_placement": 0.13,
           "limit_price": 0.13,
-          "outcome": null,
-          "realized_pnl_usd": null,
-          "fee_usd": null,
+          "outcome": "loss",
+          "realized_pnl_usd": -2.087,
+          "fee_usd": 0.087,
           "fill_quality": null,
           "strategy": "adjacency"
         },
@@ -22710,9 +22710,9 @@
           "model_prob": 0.336393860152632,
           "best_ask_at_placement": 0.13,
           "limit_price": 0.13,
-          "outcome": null,
-          "realized_pnl_usd": null,
-          "fee_usd": null,
+          "outcome": "loss",
+          "realized_pnl_usd": -2.083,
+          "fee_usd": 0.0869,
           "fill_quality": null,
           "strategy": "adjacency_hourly"
         },
@@ -22725,9 +22725,9 @@
           "model_prob": 0.336393860152632,
           "best_ask_at_placement": 0.12,
           "limit_price": 0.12,
-          "outcome": null,
-          "realized_pnl_usd": null,
-          "fee_usd": null,
+          "outcome": "loss",
+          "realized_pnl_usd": -2.088,
+          "fee_usd": 0.088,
           "fill_quality": null,
           "strategy": "adjacency_hourly"
         },
@@ -22740,24 +22740,9 @@
           "model_prob": 0.336393860152632,
           "best_ask_at_placement": 0.15,
           "limit_price": 0.15,
-          "outcome": null,
-          "realized_pnl_usd": null,
-          "fee_usd": null,
-          "fill_quality": null,
-          "strategy": "adjacency_hourly"
-        },
-        {
-          "id": 2661,
-          "placed_at": "2026-05-21T12:41:00.156875+00:00",
-          "size_usd": 2.0,
-          "filled_shares": null,
-          "filled_vwap": null,
-          "model_prob": 0.336393860152632,
-          "best_ask_at_placement": 0.088,
-          "limit_price": 0.088,
-          "outcome": null,
-          "realized_pnl_usd": null,
-          "fee_usd": null,
+          "outcome": "loss",
+          "realized_pnl_usd": -1.9469,
+          "fee_usd": 0.0803,
           "fill_quality": null,
           "strategy": "adjacency_hourly"
         },
@@ -22770,10 +22755,10 @@
           "model_prob": 0.336393860152632,
           "best_ask_at_placement": 0.001,
           "limit_price": 0.001,
-          "outcome": null,
-          "realized_pnl_usd": null,
-          "fee_usd": null,
-          "fill_quality": null,
+          "outcome": "loss",
+          "realized_pnl_usd": -2.0999,
+          "fee_usd": 0.0999,
+          "fill_quality": "FANTASY",
           "strategy": "adjacency_hourly"
         }
       ]
@@ -22891,7 +22876,7 @@
       "resolved_at": null,
       "outcome": null,
       "resolution_source": null,
-      "state": "trading",
+      "state": "after_last_placement",
       "bets": [
         {
           "id": 2642,
