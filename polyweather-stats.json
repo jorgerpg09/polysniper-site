@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-05-21T00:17:00.313112+00:00",
-  "hit_rate": 0.1879,
-  "theoretical_pnl": -220.0869,
+  "updated_at": "2026-05-21T00:27:00.331597+00:00",
+  "hit_rate": 0.1869,
+  "theoretical_pnl": -226.9518,
   "trade_count": 974,
   "active_cities": 10,
   "daily_pnl": [
@@ -79,7 +79,7 @@
     },
     {
       "date": "2026-05-20",
-      "cumulative_pnl": -220.0869
+      "cumulative_pnl": -226.9518
     }
   ],
   "recent_trades": [
@@ -615,7 +615,7 @@
       "market_ask": 0.24,
       "edge": 0.108632704646485,
       "kelly_size_usdc": 2.0,
-      "outcome": "PENDING",
+      "outcome": "LOSS",
       "resolution_date": "2026-05-20",
       "strategy": "adjacency_hourly",
       "market_slug": "highest-temperature-in-paris-on-may-20-2026-21c",
@@ -630,7 +630,7 @@
       "market_ask": 0.3,
       "edge": 0.048632704646485,
       "kelly_size_usdc": 2.0,
-      "outcome": "PENDING",
+      "outcome": "LOSS",
       "resolution_date": "2026-05-20",
       "strategy": "adjacency_hourly",
       "market_slug": "highest-temperature-in-paris-on-may-20-2026-21c",
@@ -645,7 +645,7 @@
       "market_ask": 0.34,
       "edge": 0.008632704646484968,
       "kelly_size_usdc": 2.0,
-      "outcome": "PENDING",
+      "outcome": "LOSS",
       "resolution_date": "2026-05-20",
       "strategy": "adjacency",
       "market_slug": "highest-temperature-in-paris-on-may-20-2026-21c",
@@ -690,7 +690,7 @@
       "market_ask": 0.43,
       "edge": -0.11984452246633709,
       "kelly_size_usdc": 1.0,
-      "outcome": "PENDING",
+      "outcome": "LOSS",
       "resolution_date": "2026-05-20",
       "strategy": "raw_forecast_corrected",
       "market_slug": "highest-temperature-in-paris-on-may-20-2026-21c",
@@ -7592,15 +7592,15 @@
   "strategies": {
     "adjacency": {
       "bets": 85,
-      "resolved": 84,
+      "resolved": 85,
       "wins": 15,
-      "pnl_usd": -37.8497,
+      "pnl_usd": -39.6762,
       "bankroll": {
         "start": 1000.0,
-        "current": 958.4272,
-        "open_stake": 2.0,
-        "available": 956.4272,
-        "daily_loss": 3.8742
+        "current": 956.6007,
+        "open_stake": 0.0,
+        "available": 956.6007,
+        "daily_loss": 1.8265
       },
       "by_boundary": {
         "floor": {
@@ -7611,9 +7611,9 @@
         },
         "round": {
           "bets": 85,
-          "resolved": 84,
+          "resolved": 85,
           "wins": 15,
-          "pnl_usd": -37.8497
+          "pnl_usd": -39.6762
         }
       }
     },
@@ -7646,15 +7646,15 @@
     },
     "adjacency_hourly": {
       "bets": 211,
-      "resolved": 209,
+      "resolved": 211,
       "wins": 29,
-      "pnl_usd": -76.9155,
+      "pnl_usd": -80.9254,
       "bankroll": {
         "start": 1000.0,
-        "current": 917.6911,
-        "open_stake": 4.0,
-        "available": 913.6911,
-        "daily_loss": 8.2483
+        "current": 913.6812,
+        "open_stake": 0.0,
+        "available": 913.6812,
+        "daily_loss": 4.0099
       },
       "by_boundary": {
         "floor": {
@@ -7665,9 +7665,9 @@
         },
         "round": {
           "bets": 211,
-          "resolved": 209,
+          "resolved": 211,
           "wins": 29,
-          "pnl_usd": -76.9155
+          "pnl_usd": -80.9254
         }
       }
     },
@@ -7916,15 +7916,15 @@
     },
     "raw_forecast_corrected": {
       "bets": 196,
-      "resolved": 190,
+      "resolved": 191,
       "wins": 58,
-      "pnl_usd": -47.7917,
+      "pnl_usd": -48.8202,
       "bankroll": {
         "start": 10000.0,
-        "current": 9943.772,
-        "open_stake": 6.0,
-        "available": 9937.772,
-        "daily_loss": 6.2139
+        "current": 9942.7435,
+        "open_stake": 5.0,
+        "available": 9937.7435,
+        "daily_loss": 1.0285
       },
       "by_boundary": {
         "floor": {
@@ -7935,9 +7935,9 @@
         },
         "round": {
           "bets": 196,
-          "resolved": 190,
+          "resolved": 191,
           "wins": 58,
-          "pnl_usd": -47.7917
+          "pnl_usd": -48.8202
         }
       }
     },
