@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-05-21T13:57:00.475093+00:00",
+  "updated_at": "2026-05-21T14:07:00.382432+00:00",
   "hit_rate": 0.1944,
   "theoretical_pnl": -218.3789,
   "trade_count": 997,
@@ -87,6 +87,38 @@
     }
   ],
   "recent_trades": [
+    {
+      "logged_at": "2026-05-21T14:01:23.102709+00:00",
+      "city": "Toronto",
+      "bracket": "exact 16",
+      "market_type": "high",
+      "model_prob": 0.856574860943885,
+      "market_ask": 0.27,
+      "edge": 0.586574860943885,
+      "kelly_size_usdc": 2.0,
+      "outcome": "PENDING",
+      "resolution_date": "2026-05-21",
+      "strategy": "no_exact",
+      "market_slug": "highest-temperature-in-toronto-on-may-21-2026-16c",
+      "boundary_convention": "round",
+      "bet_side": "NO"
+    },
+    {
+      "logged_at": "2026-05-21T14:01:22.185144+00:00",
+      "city": "Atlanta",
+      "bracket": "below 87",
+      "market_type": "high",
+      "model_prob": 0.25670434585119084,
+      "market_ask": 0.922,
+      "edge": -0.6652956541488092,
+      "kelly_size_usdc": 2.0,
+      "outcome": "PENDING",
+      "resolution_date": "2026-05-21",
+      "strategy": "no_below",
+      "market_slug": "highest-temperature-in-atlanta-on-may-21-2026-87forbelow",
+      "boundary_convention": "round",
+      "bet_side": "NO"
+    },
     {
       "logged_at": "2026-05-21T13:42:36.081992+00:00",
       "city": "Paris",
@@ -8019,7 +8051,7 @@
       }
     },
     "no_below": {
-      "bets": 7,
+      "bets": 8,
       "resolved": 7,
       "wins": 6,
       "pnl_usd": 8.4326,
@@ -8038,7 +8070,7 @@
           "pnl_usd": 0.0
         },
         "round": {
-          "bets": 7,
+          "bets": 8,
           "resolved": 7,
           "wins": 6,
           "pnl_usd": 8.4326
@@ -8100,7 +8132,7 @@
       }
     },
     "no_exact": {
-      "bets": 16,
+      "bets": 17,
       "resolved": 0,
       "wins": 0,
       "pnl_usd": 0.0,
@@ -8119,7 +8151,7 @@
           "pnl_usd": 0.0
         },
         "round": {
-          "bets": 16,
+          "bets": 17,
           "resolved": 0,
           "wins": 0,
           "pnl_usd": 0.0
