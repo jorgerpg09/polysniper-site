@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-05-21T06:29:05.815068+00:00",
-  "now": "2026-05-21T06:29:05.815068+00:00",
+  "updated_at": "2026-05-21T06:39:05.926894+00:00",
+  "now": "2026-05-21T06:39:05.926894+00:00",
   "markets": [
     {
       "condition_id": "0x091d137694061741144097d83e43f740000447e2fcecfdd2cd819dba7650f0f8",
@@ -8216,6 +8216,21 @@
           "fee_usd": null,
           "fill_quality": null,
           "strategy": "adjacency_hourly"
+        },
+        {
+          "id": 2048,
+          "placed_at": "2026-05-21T06:36:36.809950+00:00",
+          "size_usd": 2.0,
+          "filled_shares": 12.5,
+          "filled_vwap": 0.16,
+          "model_prob": 0.2583201586268844,
+          "best_ask_at_placement": 0.16,
+          "limit_price": 0.16,
+          "outcome": null,
+          "realized_pnl_usd": null,
+          "fee_usd": null,
+          "fill_quality": null,
+          "strategy": "adjacency_hourly"
         }
       ]
     },
@@ -8314,6 +8329,40 @@
           "fee_usd": null,
           "fill_quality": null,
           "strategy": "adjacency_hourly"
+        }
+      ]
+    },
+    {
+      "condition_id": "0x22c92957ff25a6321cd101cde149264c480e8ac47e434437630eb59e7feabdc3",
+      "city": "Seoul",
+      "market_type": "high",
+      "bracket": "exact 18",
+      "bracket_type": "exact",
+      "resolution_date": "2026-05-21",
+      "game_start_time": "2026-05-20T15:00:00+00:00",
+      "last_placement_time": "2026-05-21T13:00:00+00:00",
+      "effective_close_time": "2026-05-21T18:00:00+00:00",
+      "market_end_date": "2026-05-21T12:00:00+00:00",
+      "market_slug": "highest-temperature-in-seoul-on-may-21-2026-18c",
+      "resolved_at": null,
+      "outcome": null,
+      "resolution_source": null,
+      "state": "trading",
+      "bets": [
+        {
+          "id": 2047,
+          "placed_at": "2026-05-21T06:29:36.623767+00:00",
+          "size_usd": 1.0,
+          "filled_shares": 333.3333333333333,
+          "filled_vwap": 0.001,
+          "model_prob": 0.16905384996126155,
+          "best_ask_at_placement": 0.002,
+          "limit_price": 0.003,
+          "outcome": null,
+          "realized_pnl_usd": null,
+          "fee_usd": null,
+          "fill_quality": null,
+          "strategy": "tail_longshot"
         }
       ]
     },
