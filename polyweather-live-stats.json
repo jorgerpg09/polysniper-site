@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-05-21T23:07:21.203926+00:00",
+  "updated_at": "2026-05-21T23:17:21.490934+00:00",
   "hit_rate": 0.2329,
   "theoretical_pnl": 20.2616,
   "trade_count": 431,
@@ -39,6 +39,54 @@
     }
   ],
   "recent_trades": [
+    {
+      "logged_at": "2026-05-21T23:12:10.395663+00:00",
+      "city": "Seoul",
+      "bracket": "above 27",
+      "market_type": "high",
+      "model_prob": 0.9945040200898561,
+      "market_ask": 0.83,
+      "edge": 0.1645040200898561,
+      "kelly_size_usdc": 2.0,
+      "outcome": "PENDING",
+      "resolution_date": "2026-05-22",
+      "strategy": "no_above",
+      "market_slug": "highest-temperature-in-seoul-on-may-22-2026-27corhigher",
+      "boundary_convention": "round",
+      "bet_side": "NO"
+    },
+    {
+      "logged_at": "2026-05-21T23:12:10.156692+00:00",
+      "city": "Seoul",
+      "bracket": "exact 26",
+      "market_type": "high",
+      "model_prob": 0.9812529295796477,
+      "market_ask": 0.7,
+      "edge": 0.28125292957964776,
+      "kelly_size_usdc": 2.0,
+      "outcome": "PENDING",
+      "resolution_date": "2026-05-22",
+      "strategy": "no_exact",
+      "market_slug": "highest-temperature-in-seoul-on-may-22-2026-26c",
+      "boundary_convention": "round",
+      "bet_side": "NO"
+    },
+    {
+      "logged_at": "2026-05-21T23:12:09.890087+00:00",
+      "city": "Seoul",
+      "bracket": "exact 25",
+      "market_type": "high",
+      "model_prob": 0.943966203455289,
+      "market_ask": 0.68,
+      "edge": 0.263966203455289,
+      "kelly_size_usdc": 2.0,
+      "outcome": "PENDING",
+      "resolution_date": "2026-05-22",
+      "strategy": "no_exact",
+      "market_slug": "highest-temperature-in-seoul-on-may-22-2026-25c",
+      "boundary_convention": "round",
+      "bet_side": "NO"
+    },
     {
       "logged_at": "2026-05-21T22:36:54.780407+00:00",
       "city": "Chicago",
@@ -4735,7 +4783,7 @@
       }
     },
     "no_above": {
-      "bets": 0,
+      "bets": 1,
       "resolved": 0,
       "wins": 0,
       "pnl_usd": 0.0,
@@ -4754,7 +4802,7 @@
           "pnl_usd": 0.0
         },
         "round": {
-          "bets": 0,
+          "bets": 1,
           "resolved": 0,
           "wins": 0,
           "pnl_usd": 0.0
@@ -4843,7 +4891,7 @@
       }
     },
     "no_exact": {
-      "bets": 15,
+      "bets": 17,
       "resolved": 0,
       "wins": 0,
       "pnl_usd": 0.0,
@@ -4862,7 +4910,7 @@
           "pnl_usd": 0.0
         },
         "round": {
-          "bets": 15,
+          "bets": 17,
           "resolved": 0,
           "wins": 0,
           "pnl_usd": 0.0
