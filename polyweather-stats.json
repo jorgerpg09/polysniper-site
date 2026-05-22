@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-05-22T00:37:00.356561+00:00",
+  "updated_at": "2026-05-22T00:47:00.406610+00:00",
   "hit_rate": 0.1915,
   "theoretical_pnl": -244.6282,
   "trade_count": 998,
@@ -87,6 +87,22 @@
     }
   ],
   "recent_trades": [
+    {
+      "logged_at": "2026-05-22T00:41:01.493623+00:00",
+      "city": "Hong Kong",
+      "bracket": "above 31",
+      "market_type": "high",
+      "model_prob": 0.29798780706196537,
+      "market_ask": 0.87,
+      "edge": -0.5720121929380346,
+      "kelly_size_usdc": 2.0,
+      "outcome": "PENDING",
+      "resolution_date": "2026-05-22",
+      "strategy": "no_above",
+      "market_slug": "highest-temperature-in-hong-kong-on-may-22-2026-31corhigher",
+      "boundary_convention": "round",
+      "bet_side": "NO"
+    },
     {
       "logged_at": "2026-05-21T23:12:04.234977+00:00",
       "city": "Seoul",
@@ -8104,7 +8120,7 @@
       }
     },
     "no_above": {
-      "bets": 17,
+      "bets": 18,
       "resolved": 16,
       "wins": 10,
       "pnl_usd": 36.2235,
@@ -8123,7 +8139,7 @@
           "pnl_usd": 0.0
         },
         "round": {
-          "bets": 17,
+          "bets": 18,
           "resolved": 16,
           "wins": 10,
           "pnl_usd": 36.2235
