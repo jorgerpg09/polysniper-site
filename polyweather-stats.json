@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-05-22T13:42:59.865729+00:00",
-  "hit_rate": 0.1932,
-  "theoretical_pnl": -246.6598,
+  "updated_at": "2026-05-22T13:52:59.875761+00:00",
+  "hit_rate": 0.1921,
+  "theoretical_pnl": -253.6365,
   "trade_count": 1027,
   "active_cities": 8,
   "daily_pnl": [
@@ -87,7 +87,7 @@
     },
     {
       "date": "2026-05-22",
-      "cumulative_pnl": -246.6598
+      "cumulative_pnl": -253.6365
     }
   ],
   "recent_trades": [
@@ -576,7 +576,7 @@
       "market_ask": 0.08,
       "edge": 0.15545671567031644,
       "kelly_size_usdc": 2.0,
-      "outcome": "PENDING",
+      "outcome": "LOSS",
       "resolution_date": "2026-05-22",
       "strategy": "adjacency_hourly",
       "market_slug": "highest-temperature-in-paris-on-may-22-2026-27c",
@@ -606,7 +606,7 @@
       "market_ask": 0.12,
       "edge": 0.11545671567031646,
       "kelly_size_usdc": 2.0,
-      "outcome": "PENDING",
+      "outcome": "LOSS",
       "resolution_date": "2026-05-22",
       "strategy": "adjacency_hourly",
       "market_slug": "highest-temperature-in-paris-on-may-22-2026-27c",
@@ -651,7 +651,7 @@
       "market_ask": 0.12,
       "edge": 0.11545671567031646,
       "kelly_size_usdc": 2.0,
-      "outcome": "PENDING",
+      "outcome": "LOSS",
       "resolution_date": "2026-05-22",
       "strategy": "adjacency",
       "market_slug": "highest-temperature-in-paris-on-may-22-2026-27c",
@@ -777,7 +777,7 @@
       "market_ask": 0.1,
       "edge": 0.13545671567031645,
       "kelly_size_usdc": 1.0,
-      "outcome": "PENDING",
+      "outcome": "LOSS",
       "resolution_date": "2026-05-22",
       "strategy": "raw_forecast_corrected",
       "market_slug": "highest-temperature-in-paris-on-may-22-2026-27c",
@@ -8080,15 +8080,15 @@
   "strategies": {
     "adjacency": {
       "bets": 92,
-      "resolved": 87,
+      "resolved": 88,
       "wins": 15,
-      "pnl_usd": -43.8472,
+      "pnl_usd": -45.7621,
       "bankroll": {
         "start": 1000.0,
-        "current": 952.4297,
-        "open_stake": 10.0,
-        "available": 942.4297,
-        "daily_loss": 0.0
+        "current": 950.5148,
+        "open_stake": 8.0,
+        "available": 942.5148,
+        "daily_loss": 1.9149
       },
       "by_boundary": {
         "floor": {
@@ -8099,9 +8099,9 @@
         },
         "round": {
           "bets": 92,
-          "resolved": 87,
+          "resolved": 88,
           "wins": 15,
-          "pnl_usd": -43.8472
+          "pnl_usd": -45.7621
         }
       }
     },
@@ -8134,15 +8134,15 @@
     },
     "adjacency_hourly": {
       "bets": 229,
-      "resolved": 221,
+      "resolved": 223,
       "wins": 29,
-      "pnl_usd": -100.815,
+      "pnl_usd": -104.8318,
       "bankroll": {
         "start": 1000.0,
-        "current": 891.6917,
-        "open_stake": 16.0,
-        "available": 875.6917,
-        "daily_loss": 0.0
+        "current": 887.6749,
+        "open_stake": 12.0,
+        "available": 875.6749,
+        "daily_loss": 4.0168
       },
       "by_boundary": {
         "floor": {
@@ -8153,9 +8153,9 @@
         },
         "round": {
           "bets": 229,
-          "resolved": 221,
+          "resolved": 223,
           "wins": 29,
-          "pnl_usd": -100.815
+          "pnl_usd": -104.8318
         }
       }
     },
@@ -8404,15 +8404,15 @@
     },
     "raw_forecast_corrected": {
       "bets": 210,
-      "resolved": 200,
+      "resolved": 201,
       "wins": 64,
-      "pnl_usd": -46.8121,
+      "pnl_usd": -47.8571,
       "bankroll": {
         "start": 10000.0,
-        "current": 9942.6517,
-        "open_stake": 10.0,
-        "available": 9932.6517,
-        "daily_loss": 2.0999
+        "current": 9941.6067,
+        "open_stake": 9.0,
+        "available": 9932.6067,
+        "daily_loss": 3.1449
       },
       "by_boundary": {
         "floor": {
@@ -8423,9 +8423,9 @@
         },
         "round": {
           "bets": 210,
-          "resolved": 200,
+          "resolved": 201,
           "wins": 64,
-          "pnl_usd": -46.8121
+          "pnl_usd": -47.8571
         }
       }
     },
