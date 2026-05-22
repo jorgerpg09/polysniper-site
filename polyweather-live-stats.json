@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-05-22T16:32:31.285252+00:00",
+  "updated_at": "2026-05-22T16:42:31.233005+00:00",
   "hit_rate": 0.2149,
   "theoretical_pnl": 0.3553,
   "trade_count": 436,
@@ -43,6 +43,22 @@
     }
   ],
   "recent_trades": [
+    {
+      "logged_at": "2026-05-22T16:34:03.729849+00:00",
+      "city": "Chicago",
+      "bracket": "between 64 and 65",
+      "market_type": "high",
+      "model_prob": 0.8668730562303257,
+      "market_ask": 0.75,
+      "edge": 0.11687305623032573,
+      "kelly_size_usdc": 2.0,
+      "outcome": "PENDING",
+      "resolution_date": "2026-05-22",
+      "strategy": "no_between_live",
+      "market_slug": "highest-temperature-in-chicago-on-may-22-2026-64-65f",
+      "boundary_convention": "round",
+      "bet_side": "NO"
+    },
     {
       "logged_at": "2026-05-22T16:03:03.975749+00:00",
       "city": "Sao Paulo",
@@ -5327,7 +5343,7 @@
       }
     },
     "no_between_live": {
-      "bets": 6,
+      "bets": 7,
       "resolved": 1,
       "wins": 0,
       "pnl_usd": -2.0,
@@ -5346,7 +5362,7 @@
           "pnl_usd": 0.0
         },
         "round": {
-          "bets": 6,
+          "bets": 7,
           "resolved": 1,
           "wins": 0,
           "pnl_usd": -2.0
