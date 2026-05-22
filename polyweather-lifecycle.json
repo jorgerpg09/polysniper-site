@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-05-22T18:33:03.861835+00:00",
-  "now": "2026-05-22T18:33:03.861835+00:00",
+  "updated_at": "2026-05-22T18:43:03.840507+00:00",
+  "now": "2026-05-22T18:43:03.840507+00:00",
   "markets": [
     {
       "condition_id": "0x091d137694061741144097d83e43f740000447e2fcecfdd2cd819dba7650f0f8",
@@ -23065,10 +23065,10 @@
       "effective_close_time": "2026-05-23T07:00:00+00:00",
       "market_end_date": "2026-05-22T12:00:00+00:00",
       "market_slug": "highest-temperature-in-atlanta-on-may-22-2026-82-83f",
-      "resolved_at": null,
-      "outcome": null,
-      "resolution_source": null,
-      "state": "trading",
+      "resolved_at": "2026-05-22T17:14:59.937505+00:00",
+      "outcome": "loss",
+      "resolution_source": "uma_resolved",
+      "state": "resolved",
       "bets": [
         {
           "id": 2699,
@@ -23079,10 +23079,10 @@
           "model_prob": 0.09602667979647073,
           "best_ask_at_placement": 0.001,
           "limit_price": 0.001,
-          "outcome": null,
-          "realized_pnl_usd": null,
-          "fee_usd": null,
-          "fill_quality": null,
+          "outcome": "loss",
+          "realized_pnl_usd": -1.0499,
+          "fee_usd": 0.05,
+          "fill_quality": "FANTASY",
           "strategy": "raw_forecast_corrected"
         }
       ]
@@ -23261,6 +23261,21 @@
           "fee_usd": null,
           "fill_quality": null,
           "strategy": "raw_forecast_corrected"
+        },
+        {
+          "id": 2702,
+          "placed_at": "2026-05-22T18:41:00.135648+00:00",
+          "size_usd": 1.0,
+          "filled_shares": 2.4390243902439024,
+          "filled_vwap": 0.39,
+          "model_prob": 0.14285285613922433,
+          "best_ask_at_placement": 0.41,
+          "limit_price": 0.41,
+          "outcome": null,
+          "realized_pnl_usd": null,
+          "fee_usd": null,
+          "fill_quality": null,
+          "strategy": "raw_forecast_raw"
         }
       ]
     },
