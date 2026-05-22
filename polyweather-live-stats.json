@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-05-22T03:27:21.318256+00:00",
-  "hit_rate": 0.2297,
-  "theoretical_pnl": 17.5971,
+  "updated_at": "2026-05-22T03:37:21.234002+00:00",
+  "hit_rate": 0.2257,
+  "theoretical_pnl": 15.139,
   "trade_count": 432,
   "active_cities": 8,
   "daily_pnl": [
@@ -35,7 +35,7 @@
     },
     {
       "date": "2026-05-21",
-      "cumulative_pnl": 17.5971
+      "cumulative_pnl": 15.139
     }
   ],
   "recent_trades": [
@@ -342,7 +342,7 @@
       "market_ask": 0.001,
       "edge": 0.11227627560132836,
       "kelly_size_usdc": 1.0,
-      "outcome": "PENDING",
+      "outcome": "LOSS",
       "resolution_date": "2026-05-21",
       "strategy": "tail_longshot",
       "market_slug": "highest-temperature-in-hong-kong-on-may-21-2026-28c",
@@ -402,7 +402,7 @@
       "market_ask": 0.001,
       "edge": 0.15860050948588572,
       "kelly_size_usdc": 1.0,
-      "outcome": "PENDING",
+      "outcome": "LOSS",
       "resolution_date": "2026-05-21",
       "strategy": "tail_longshot",
       "market_slug": "highest-temperature-in-hong-kong-on-may-21-2026-29c",
@@ -659,7 +659,7 @@
       "market_ask": 0.001,
       "edge": 0.2228891109471326,
       "kelly_size_usdc": 1.0,
-      "outcome": "PENDING",
+      "outcome": "LOSS",
       "resolution_date": "2026-05-21",
       "strategy": "tail_longshot",
       "market_slug": "highest-temperature-in-hong-kong-on-may-21-2026-30c",
@@ -889,7 +889,7 @@
       "market_ask": 0.002,
       "edge": 0.2621602811296464,
       "kelly_size_usdc": 1.0,
-      "outcome": "PENDING",
+      "outcome": "LOSS",
       "resolution_date": "2026-05-21",
       "strategy": "tail_longshot",
       "market_slug": "highest-temperature-in-hong-kong-on-may-21-2026-32corhigher",
@@ -5004,15 +5004,15 @@
     },
     "tail_longshot": {
       "bets": 40,
-      "resolved": 24,
+      "resolved": 28,
       "wins": 0,
-      "pnl_usd": -16.0544,
+      "pnl_usd": -18.5125,
       "bankroll": {
         "start": 100.0,
-        "current": 83.9458,
-        "open_stake": 16.0,
-        "available": 67.9458,
-        "daily_loss": 0.8748
+        "current": 81.4878,
+        "open_stake": 12.0,
+        "available": 69.4878,
+        "daily_loss": 3.3328
       },
       "by_boundary": {
         "floor": {
@@ -5023,9 +5023,9 @@
         },
         "round": {
           "bets": 40,
-          "resolved": 24,
+          "resolved": 28,
           "wins": 0,
-          "pnl_usd": -16.0544
+          "pnl_usd": -18.5125
         }
       }
     }
