@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-05-22T16:32:36.371124+00:00",
-  "now": "2026-05-22T16:32:36.371124+00:00",
+  "updated_at": "2026-05-22T16:42:36.420419+00:00",
+  "now": "2026-05-22T16:42:36.420419+00:00",
   "markets": [
     {
       "condition_id": "0x3728429b82b86b6c3c78f1bd5b82ab8663c713b9d284e379345ab3b472bbcf2b",
@@ -11288,6 +11288,41 @@
           "fee_usd": null,
           "fill_quality": null,
           "strategy": "no_above",
+          "bet_side": "NO"
+        }
+      ]
+    },
+    {
+      "condition_id": "0xc3053a687af0feecd38a26c83582450d9e5d0bc46d7b086107b07cae0fa57f03",
+      "city": "Chicago",
+      "market_type": "high",
+      "bracket": "between 64 and 65",
+      "bracket_type": "between",
+      "resolution_date": "2026-05-22",
+      "game_start_time": "2026-05-22T05:00:00+00:00",
+      "last_placement_time": "2026-05-23T03:00:00+00:00",
+      "effective_close_time": "2026-05-23T08:00:00+00:00",
+      "market_end_date": null,
+      "market_slug": "highest-temperature-in-chicago-on-may-22-2026-64-65f",
+      "resolved_at": null,
+      "outcome": null,
+      "resolution_source": null,
+      "state": "trading",
+      "bets": [
+        {
+          "id": "sl-50202",
+          "placed_at": "2026-05-22T16:34:03.729849+00:00",
+          "size_usd": 2.0,
+          "filled_shares": null,
+          "filled_vwap": null,
+          "model_prob": 0.13312694376967432,
+          "best_ask_at_placement": 0.75,
+          "limit_price": null,
+          "outcome": null,
+          "realized_pnl_usd": null,
+          "fee_usd": null,
+          "fill_quality": null,
+          "strategy": "no_between_live",
           "bet_side": "NO"
         }
       ]
