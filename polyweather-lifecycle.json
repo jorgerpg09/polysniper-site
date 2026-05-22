@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-05-22T16:53:03.235961+00:00",
-  "now": "2026-05-22T16:53:03.235961+00:00",
+  "updated_at": "2026-05-22T17:03:03.807805+00:00",
+  "now": "2026-05-22T17:03:03.807805+00:00",
   "markets": [
     {
       "condition_id": "0x091d137694061741144097d83e43f740000447e2fcecfdd2cd819dba7650f0f8",
@@ -23453,10 +23453,10 @@
       "effective_close_time": "2026-05-23T07:00:00+00:00",
       "market_end_date": "2026-05-22T12:00:00+00:00",
       "market_slug": "highest-temperature-in-atlanta-on-may-22-2026-80-81f",
-      "resolved_at": null,
-      "outcome": null,
-      "resolution_source": null,
-      "state": "trading",
+      "resolved_at": "2026-05-22T11:13:00.616269+00:00",
+      "outcome": "loss",
+      "resolution_source": "uma_resolved",
+      "state": "resolved",
       "bets": [
         {
           "id": 2679,
@@ -23467,9 +23467,9 @@
           "model_prob": 0.15332500168630414,
           "best_ask_at_placement": 0.19,
           "limit_price": 0.19,
-          "outcome": null,
-          "realized_pnl_usd": null,
-          "fee_usd": null,
+          "outcome": "loss",
+          "realized_pnl_usd": -1.0405,
+          "fee_usd": 0.0405,
           "fill_quality": null,
           "strategy": "raw_forecast_corrected"
         }
@@ -23623,6 +23623,36 @@
           "fee_usd": null,
           "fill_quality": null,
           "strategy": "raw_forecast_corrected"
+        },
+        {
+          "id": 2697,
+          "placed_at": "2026-05-22T16:57:23.504044+00:00",
+          "size_usd": 2.0,
+          "filled_shares": 11.76470588235294,
+          "filled_vwap": 0.15,
+          "model_prob": 0.17826550804424146,
+          "best_ask_at_placement": 0.17,
+          "limit_price": 0.17,
+          "outcome": null,
+          "realized_pnl_usd": null,
+          "fee_usd": null,
+          "fill_quality": null,
+          "strategy": "adjacency"
+        },
+        {
+          "id": 2698,
+          "placed_at": "2026-05-22T16:59:22.205735+00:00",
+          "size_usd": 2.0,
+          "filled_shares": 13.333333333333334,
+          "filled_vwap": 0.15,
+          "model_prob": 0.17826550804424146,
+          "best_ask_at_placement": 0.15,
+          "limit_price": 0.15,
+          "outcome": null,
+          "realized_pnl_usd": null,
+          "fee_usd": null,
+          "fill_quality": null,
+          "strategy": "adjacency_hourly"
         }
       ]
     }
