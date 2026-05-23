@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-05-23T18:22:59.944195+00:00",
+  "updated_at": "2026-05-23T18:32:59.960427+00:00",
   "hit_rate": 0.186,
   "theoretical_pnl": -299.0364,
   "trade_count": 1057,
@@ -95,6 +95,22 @@
     }
   ],
   "recent_trades": [
+    {
+      "logged_at": "2026-05-23T18:31:50.812114+00:00",
+      "city": "Austin",
+      "bracket": "between 80 and 81",
+      "market_type": "high",
+      "model_prob": 0.9086991990165397,
+      "market_ask": 0.21999999999999997,
+      "edge": 0.6886991990165398,
+      "kelly_size_usdc": 2.0,
+      "outcome": "PENDING",
+      "resolution_date": "2026-05-23",
+      "strategy": "no_between",
+      "market_slug": "highest-temperature-in-austin-on-may-23-2026-80-81f",
+      "boundary_convention": "round",
+      "bet_side": "NO"
+    },
     {
       "logged_at": "2026-05-23T17:53:52.671392+00:00",
       "city": "Atlanta",
@@ -7135,22 +7151,6 @@
       "boundary_convention": "round"
     },
     {
-      "logged_at": "2026-05-10T05:11:03.825380+00:00",
-      "city": "New York City",
-      "bracket": "between 50 and 51",
-      "market_type": "low",
-      "model_prob": 0.8580061352698153,
-      "market_ask": 0.4,
-      "edge": 0.45800613526981526,
-      "kelly_size_usdc": 2.0,
-      "outcome": "LOSS",
-      "resolution_date": "2026-05-10",
-      "strategy": "no_between",
-      "market_slug": "lowest-temperature-in-nyc-on-may-10-2026-50-51f",
-      "boundary_convention": "round",
-      "bet_side": "NO"
-    },
-    {
       "logged_at": "2026-05-10T03:48:57.470011+00:00",
       "city": "New York City",
       "bracket": "between 50 and 51",
@@ -8326,7 +8326,7 @@
       }
     },
     "no_between": {
-      "bets": 163,
+      "bets": 164,
       "resolved": 144,
       "wins": 89,
       "pnl_usd": -1.6864,
@@ -8345,7 +8345,7 @@
           "pnl_usd": 0.0
         },
         "round": {
-          "bets": 163,
+          "bets": 164,
           "resolved": 144,
           "wins": 89,
           "pnl_usd": -1.6864
