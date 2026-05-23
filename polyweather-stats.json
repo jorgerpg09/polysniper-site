@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-05-23T06:13:00.469690+00:00",
+  "updated_at": "2026-05-23T06:22:59.988847+00:00",
   "hit_rate": 0.1869,
   "theoretical_pnl": -294.8626,
-  "trade_count": 1039,
+  "trade_count": 1040,
   "active_cities": 8,
   "daily_pnl": [
     {
@@ -91,6 +91,21 @@
     }
   ],
   "recent_trades": [
+    {
+      "logged_at": "2026-05-23T06:16:15.536149+00:00",
+      "city": "Paris",
+      "bracket": "exact 30",
+      "market_type": "high",
+      "model_prob": 0.23013677040667047,
+      "market_ask": 0.22,
+      "edge": 0.010136770406670464,
+      "kelly_size_usdc": 2.0,
+      "outcome": "PENDING",
+      "resolution_date": "2026-05-23",
+      "strategy": "adjacency_hourly",
+      "market_slug": "highest-temperature-in-paris-on-may-23-2026-30c",
+      "boundary_convention": "round"
+    },
     {
       "logged_at": "2026-05-23T05:40:08.338591+00:00",
       "city": "Paris",
@@ -4026,21 +4041,6 @@
       "resolution_date": "2026-05-16",
       "strategy": "adjacency_hourly",
       "market_slug": "highest-temperature-in-paris-on-may-16-2026-15c",
-      "boundary_convention": "round"
-    },
-    {
-      "logged_at": "2026-05-16T09:18:54.709525+00:00",
-      "city": "London",
-      "bracket": "exact 13",
-      "market_type": "high",
-      "model_prob": 0.315481589118301,
-      "market_ask": 0.04,
-      "edge": 0.275481589118301,
-      "kelly_size_usdc": 2.0,
-      "outcome": "LOSS",
-      "resolution_date": "2026-05-16",
-      "strategy": "adjacency_hourly",
-      "market_slug": "highest-temperature-in-london-on-may-16-2026-13c",
       "boundary_convention": "round"
     },
     {
@@ -8133,15 +8133,15 @@
       }
     },
     "adjacency_hourly": {
-      "bets": 233,
+      "bets": 234,
       "resolved": 233,
       "wins": 29,
       "pnl_usd": -123.4445,
       "bankroll": {
         "start": 1000.0,
         "current": 869.0623,
-        "open_stake": 0.0,
-        "available": 869.0623,
+        "open_stake": 2.0,
+        "available": 867.0623,
         "daily_loss": 0.0
       },
       "by_boundary": {
@@ -8152,7 +8152,7 @@
           "pnl_usd": 0.0
         },
         "round": {
-          "bets": 233,
+          "bets": 234,
           "resolved": 233,
           "wins": 29,
           "pnl_usd": -123.4445
