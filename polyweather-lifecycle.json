@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-05-23T05:03:03.651814+00:00",
-  "now": "2026-05-23T05:03:03.651814+00:00",
+  "updated_at": "2026-05-23T05:13:04.809167+00:00",
+  "now": "2026-05-23T05:13:04.809167+00:00",
   "markets": [
     {
       "condition_id": "0x091d137694061741144097d83e43f740000447e2fcecfdd2cd819dba7650f0f8",
@@ -23730,6 +23730,108 @@
           "outcome": "loss",
           "realized_pnl_usd": -1.046,
           "fee_usd": 0.046,
+          "fill_quality": null,
+          "strategy": "raw_forecast_raw"
+        }
+      ]
+    },
+    {
+      "condition_id": "0x21a748ff1b48a6701f4cfd66f854f372be692dcbaa343bd10af29d3ea9b8840a",
+      "city": "Paris",
+      "market_type": "high",
+      "bracket": "exact 30",
+      "bracket_type": "exact",
+      "resolution_date": "2026-05-23",
+      "game_start_time": "2026-05-22T22:00:00+00:00",
+      "last_placement_time": "2026-05-23T20:00:00+00:00",
+      "effective_close_time": "2026-05-24T01:00:00+00:00",
+      "market_end_date": "2026-05-23T12:00:00+00:00",
+      "market_slug": "highest-temperature-in-paris-on-may-23-2026-30c",
+      "resolved_at": null,
+      "outcome": null,
+      "resolution_source": null,
+      "state": "trading",
+      "bets": [
+        {
+          "id": 2704,
+          "placed_at": "2026-05-23T05:11:00.178713+00:00",
+          "size_usd": 1.0,
+          "filled_shares": 3.846153846153846,
+          "filled_vwap": 0.26,
+          "model_prob": 0.23013677040667047,
+          "best_ask_at_placement": 0.26,
+          "limit_price": 0.26,
+          "outcome": null,
+          "realized_pnl_usd": null,
+          "fee_usd": null,
+          "fill_quality": null,
+          "strategy": "raw_forecast_corrected"
+        }
+      ]
+    },
+    {
+      "condition_id": "0x4a23e44c8d229657aef9ce710d8dcf921c19fd10090c079b4763766c260c1a92",
+      "city": "London",
+      "market_type": "high",
+      "bracket": "exact 30",
+      "bracket_type": "exact",
+      "resolution_date": "2026-05-23",
+      "game_start_time": "2026-05-22T23:00:00+00:00",
+      "last_placement_time": "2026-05-23T21:00:00+00:00",
+      "effective_close_time": "2026-05-24T02:00:00+00:00",
+      "market_end_date": "2026-05-23T12:00:00+00:00",
+      "market_slug": "highest-temperature-in-london-on-may-23-2026-30c",
+      "resolved_at": null,
+      "outcome": null,
+      "resolution_source": null,
+      "state": "trading",
+      "bets": [
+        {
+          "id": 2703,
+          "placed_at": "2026-05-23T05:11:00.178713+00:00",
+          "size_usd": 1.0,
+          "filled_shares": 3.4482758620689657,
+          "filled_vwap": 0.29,
+          "model_prob": 0.24148591426944038,
+          "best_ask_at_placement": 0.29,
+          "limit_price": 0.29,
+          "outcome": null,
+          "realized_pnl_usd": null,
+          "fee_usd": null,
+          "fill_quality": null,
+          "strategy": "raw_forecast_corrected"
+        }
+      ]
+    },
+    {
+      "condition_id": "0x533d9e2d4d008f6e1f778c9f19da67a95289f912cb227c7f7806119f26f85b6c",
+      "city": "Paris",
+      "market_type": "high",
+      "bracket": "exact 28",
+      "bracket_type": "exact",
+      "resolution_date": "2026-05-23",
+      "game_start_time": "2026-05-22T22:00:00+00:00",
+      "last_placement_time": "2026-05-23T20:00:00+00:00",
+      "effective_close_time": "2026-05-24T01:00:00+00:00",
+      "market_end_date": "2026-05-23T12:00:00+00:00",
+      "market_slug": "highest-temperature-in-paris-on-may-23-2026-28c",
+      "resolved_at": null,
+      "outcome": null,
+      "resolution_source": null,
+      "state": "trading",
+      "bets": [
+        {
+          "id": 2705,
+          "placed_at": "2026-05-23T05:11:00.178713+00:00",
+          "size_usd": 1.0,
+          "filled_shares": 15.0,
+          "filled_vwap": 0.003,
+          "model_prob": 0.14872308712899535,
+          "best_ask_at_placement": 0.003,
+          "limit_price": 0.003,
+          "outcome": null,
+          "realized_pnl_usd": null,
+          "fee_usd": null,
           "fill_quality": null,
           "strategy": "raw_forecast_raw"
         }
