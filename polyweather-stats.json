@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-05-23T15:02:59.889615+00:00",
+  "updated_at": "2026-05-23T15:13:00.292548+00:00",
   "hit_rate": 0.1867,
   "theoretical_pnl": -295.9124,
   "trade_count": 1056,
@@ -95,6 +95,22 @@
     }
   ],
   "recent_trades": [
+    {
+      "logged_at": "2026-05-23T15:03:52.118663+00:00",
+      "city": "Chicago",
+      "bracket": "between 70 and 71",
+      "market_type": "high",
+      "model_prob": 0.8757268167203613,
+      "market_ask": 0.26,
+      "edge": 0.6157268167203613,
+      "kelly_size_usdc": 2.0,
+      "outcome": "PENDING",
+      "resolution_date": "2026-05-23",
+      "strategy": "no_between",
+      "market_slug": "highest-temperature-in-chicago-on-may-23-2026-70-71f",
+      "boundary_convention": "round",
+      "bet_side": "NO"
+    },
     {
       "logged_at": "2026-05-23T15:01:53.008135+00:00",
       "city": "Atlanta",
@@ -7180,22 +7196,6 @@
       "bet_side": "NO"
     },
     {
-      "logged_at": "2026-05-09T14:17:50.050207+00:00",
-      "city": "Atlanta",
-      "bracket": "between 72 and 73",
-      "market_type": "high",
-      "model_prob": 0.9015485946065246,
-      "market_ask": 0.19999999999999996,
-      "edge": 0.7015485946065246,
-      "kelly_size_usdc": 2.0,
-      "outcome": "WIN",
-      "resolution_date": "2026-05-09",
-      "strategy": "no_between",
-      "market_slug": "highest-temperature-in-atlanta-on-may-9-2026-72-73f",
-      "boundary_convention": "round",
-      "bet_side": "NO"
-    },
-    {
       "logged_at": "2026-05-09T11:09:00.127989+00:00",
       "city": "Paris",
       "bracket": "exact 23",
@@ -8326,7 +8326,7 @@
       }
     },
     "no_between": {
-      "bets": 159,
+      "bets": 160,
       "resolved": 144,
       "wins": 89,
       "pnl_usd": -1.6864,
@@ -8345,7 +8345,7 @@
           "pnl_usd": 0.0
         },
         "round": {
-          "bets": 159,
+          "bets": 160,
           "resolved": 144,
           "wins": 89,
           "pnl_usd": -1.6864
