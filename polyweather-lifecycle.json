@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-05-23T06:33:04.131169+00:00",
-  "now": "2026-05-23T06:33:04.131169+00:00",
+  "updated_at": "2026-05-23T06:43:03.296778+00:00",
+  "now": "2026-05-23T06:43:03.296778+00:00",
   "markets": [
     {
       "condition_id": "0x091d137694061741144097d83e43f740000447e2fcecfdd2cd819dba7650f0f8",
@@ -23830,6 +23830,21 @@
           "fee_usd": null,
           "fill_quality": null,
           "strategy": "raw_forecast_corrected"
+        },
+        {
+          "id": 2708,
+          "placed_at": "2026-05-23T06:41:00.108558+00:00",
+          "size_usd": 1.0,
+          "filled_shares": 2.6315789473684212,
+          "filled_vwap": 0.37,
+          "model_prob": 0.34961153528440914,
+          "best_ask_at_placement": 0.38,
+          "limit_price": 0.38,
+          "outcome": null,
+          "realized_pnl_usd": null,
+          "fee_usd": null,
+          "fill_quality": null,
+          "strategy": "raw_forecast_raw"
         }
       ]
     },
@@ -23864,6 +23879,40 @@
           "fee_usd": null,
           "fill_quality": null,
           "strategy": "raw_forecast_raw"
+        }
+      ]
+    },
+    {
+      "condition_id": "0x806fb0aeb93a212c00b3db034e79019e3c461fe718f0ea8af25a0c7c94c9f9d3",
+      "city": "Paris",
+      "market_type": "high",
+      "bracket": "exact 29",
+      "bracket_type": "exact",
+      "resolution_date": "2026-05-23",
+      "game_start_time": "2026-05-22T22:00:00+00:00",
+      "last_placement_time": "2026-05-23T20:00:00+00:00",
+      "effective_close_time": "2026-05-24T01:00:00+00:00",
+      "market_end_date": "2026-05-23T12:00:00+00:00",
+      "market_slug": "highest-temperature-in-paris-on-may-23-2026-29c",
+      "resolved_at": null,
+      "outcome": null,
+      "resolution_source": null,
+      "state": "trading",
+      "bets": [
+        {
+          "id": 2709,
+          "placed_at": "2026-05-23T06:41:00.108558+00:00",
+          "size_usd": 1.0,
+          "filled_shares": 10.0,
+          "filled_vwap": 0.049,
+          "model_prob": 0.348528462405875,
+          "best_ask_at_placement": 0.049,
+          "limit_price": 0.049,
+          "outcome": null,
+          "realized_pnl_usd": null,
+          "fee_usd": null,
+          "fill_quality": null,
+          "strategy": "raw_forecast_corrected"
         }
       ]
     }
