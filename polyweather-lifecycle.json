@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-05-24T05:04:14.433114+00:00",
-  "now": "2026-05-24T05:04:14.433114+00:00",
+  "updated_at": "2026-05-24T05:14:13.926543+00:00",
+  "now": "2026-05-24T05:14:13.926543+00:00",
   "markets": [
     {
       "condition_id": "0x091d137694061741144097d83e43f740000447e2fcecfdd2cd819dba7650f0f8",
@@ -24294,6 +24294,74 @@
       ]
     },
     {
+      "condition_id": "0x3ed7991066d39b6de115c99a70dec30e6324dd965b1218b728f202f3cfb9d143",
+      "city": "Paris",
+      "market_type": "high",
+      "bracket": "exact 29",
+      "bracket_type": "exact",
+      "resolution_date": "2026-05-24",
+      "game_start_time": "2026-05-23T22:00:00+00:00",
+      "last_placement_time": "2026-05-24T20:00:00+00:00",
+      "effective_close_time": "2026-05-25T01:00:00+00:00",
+      "market_end_date": "2026-05-24T12:00:00+00:00",
+      "market_slug": "highest-temperature-in-paris-on-may-24-2026-29c",
+      "resolved_at": null,
+      "outcome": null,
+      "resolution_source": null,
+      "state": "trading",
+      "bets": [
+        {
+          "id": 2730,
+          "placed_at": "2026-05-24T05:11:00.153288+00:00",
+          "size_usd": 1.0,
+          "filled_shares": 100.0,
+          "filled_vwap": 0.01,
+          "model_prob": 0.1042147667320136,
+          "best_ask_at_placement": 0.01,
+          "limit_price": 0.01,
+          "outcome": null,
+          "realized_pnl_usd": null,
+          "fee_usd": null,
+          "fill_quality": null,
+          "strategy": "raw_forecast_raw"
+        }
+      ]
+    },
+    {
+      "condition_id": "0x7a22d75bed74abec7882b7dd37df5a493179aecbe635a2656a34309fb19afc2b",
+      "city": "Paris",
+      "market_type": "high",
+      "bracket": "exact 31",
+      "bracket_type": "exact",
+      "resolution_date": "2026-05-24",
+      "game_start_time": "2026-05-23T22:00:00+00:00",
+      "last_placement_time": "2026-05-24T20:00:00+00:00",
+      "effective_close_time": "2026-05-25T01:00:00+00:00",
+      "market_end_date": "2026-05-24T12:00:00+00:00",
+      "market_slug": "highest-temperature-in-paris-on-may-24-2026-31c",
+      "resolved_at": null,
+      "outcome": null,
+      "resolution_source": null,
+      "state": "trading",
+      "bets": [
+        {
+          "id": 2729,
+          "placed_at": "2026-05-24T05:11:00.153288+00:00",
+          "size_usd": 1.0,
+          "filled_shares": 3.571428571428571,
+          "filled_vwap": 0.28,
+          "model_prob": 0.34269495002314215,
+          "best_ask_at_placement": 0.28,
+          "limit_price": 0.28,
+          "outcome": null,
+          "realized_pnl_usd": null,
+          "fee_usd": null,
+          "fill_quality": null,
+          "strategy": "raw_forecast_corrected"
+        }
+      ]
+    },
+    {
       "condition_id": "0xa3ec169fe6541db73e2422d4661a7bb5cb39677429b1832526cf18ab7f295f97",
       "city": "Miami",
       "market_type": "low",
@@ -24358,6 +24426,40 @@
           "fee_usd": null,
           "fill_quality": null,
           "strategy": "raw_forecast_raw"
+        }
+      ]
+    },
+    {
+      "condition_id": "0xf42469d0c0e5eef5d8e9ce56ec863cc30df501bec4dec0ee62a7826817dc06d2",
+      "city": "London",
+      "market_type": "high",
+      "bracket": "exact 31",
+      "bracket_type": "exact",
+      "resolution_date": "2026-05-24",
+      "game_start_time": "2026-05-23T23:00:00+00:00",
+      "last_placement_time": "2026-05-24T21:00:00+00:00",
+      "effective_close_time": "2026-05-25T02:00:00+00:00",
+      "market_end_date": "2026-05-24T12:00:00+00:00",
+      "market_slug": "highest-temperature-in-london-on-may-24-2026-31c",
+      "resolved_at": null,
+      "outcome": null,
+      "resolution_source": null,
+      "state": "trading",
+      "bets": [
+        {
+          "id": 2728,
+          "placed_at": "2026-05-24T05:11:00.153288+00:00",
+          "size_usd": 1.0,
+          "filled_shares": 2.857142857142857,
+          "filled_vwap": 0.35,
+          "model_prob": 0.11877493739435341,
+          "best_ask_at_placement": 0.35,
+          "limit_price": 0.35,
+          "outcome": null,
+          "realized_pnl_usd": null,
+          "fee_usd": null,
+          "fill_quality": null,
+          "strategy": "raw_forecast_corrected"
         }
       ]
     }
