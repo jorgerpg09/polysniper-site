@@ -1,21 +1,21 @@
 {
-  "updated_at": "2026-05-24T11:05:09.698572+00:00",
-  "total_bets": 1259,
-  "wins": 759,
+  "updated_at": "2026-05-24T11:06:11.810180+00:00",
+  "total_bets": 1261,
+  "wins": 760,
   "losses": 499,
-  "pending": 1,
-  "win_rate": 60.3,
-  "pnl": -34.19,
-  "kelly_pnl": -49.33,
-  "current_streak": 5,
+  "pending": 2,
+  "win_rate": 60.4,
+  "pnl": -33.55,
+  "kelly_pnl": -48.36,
+  "current_streak": 6,
   "streak_type": "W",
   "daily": [
     {
       "date": "2026-05-24",
-      "bets": 52,
-      "wins": 36,
+      "bets": 53,
+      "wins": 37,
       "losses": 16,
-      "wr": 69.2
+      "wr": 69.8
     },
     {
       "date": "2026-05-23",
@@ -90,12 +90,30 @@
   ],
   "recent_signals": [
     {
+      "timestamp": "2026-05-24T11:05:18.646496+00:00",
+      "coin": "ETH",
+      "direction": "UP",
+      "entry_price": 0.6,
+      "secs": 18.6,
+      "outcome": "PENDING",
+      "slug": "eth-updown-5m-1779620700"
+    },
+    {
+      "timestamp": "2026-05-24T11:05:12.649475+00:00",
+      "coin": "BTC",
+      "direction": "UP",
+      "entry_price": 0.62,
+      "secs": 12.5,
+      "outcome": "PENDING",
+      "slug": "btc-updown-5m-1779620700"
+    },
+    {
       "timestamp": "2026-05-24T11:00:16.729018+00:00",
       "coin": "ETH",
       "direction": "UP",
       "entry_price": 0.6,
       "secs": 16.6,
-      "outcome": "PENDING",
+      "outcome": "WIN",
       "slug": "eth-updown-5m-1779620400"
     },
     {
@@ -250,24 +268,6 @@
       "secs": 11.1,
       "outcome": "WIN",
       "slug": "eth-updown-5m-1779604500"
-    },
-    {
-      "timestamp": "2026-05-24T06:30:10.473251+00:00",
-      "coin": "ETH",
-      "direction": "UP",
-      "entry_price": 0.6,
-      "secs": 10.4,
-      "outcome": "LOSS",
-      "slug": "eth-updown-5m-1779604200"
-    },
-    {
-      "timestamp": "2026-05-24T06:25:10.721230+00:00",
-      "coin": "ETH",
-      "direction": "UP",
-      "entry_price": 0.63,
-      "secs": 10.6,
-      "outcome": "WIN",
-      "slug": "eth-updown-5m-1779603900"
     }
   ],
   "backtest": {
