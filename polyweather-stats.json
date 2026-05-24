@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-05-24T05:14:10.366650+00:00",
+  "updated_at": "2026-05-24T05:24:10.343873+00:00",
   "hit_rate": 0.1939,
   "theoretical_pnl": -247.2807,
-  "trade_count": 1062,
+  "trade_count": 1064,
   "active_cities": 8,
   "daily_pnl": [
     {
@@ -95,6 +95,36 @@
     }
   ],
   "recent_trades": [
+    {
+      "logged_at": "2026-05-24T05:16:56.356938+00:00",
+      "city": "Paris",
+      "bracket": "exact 31",
+      "market_type": "high",
+      "model_prob": 0.34269495002314215,
+      "market_ask": 0.27,
+      "edge": 0.07269495002314214,
+      "kelly_size_usdc": 2.0,
+      "outcome": "PENDING",
+      "resolution_date": "2026-05-24",
+      "strategy": "adjacency_hourly",
+      "market_slug": "highest-temperature-in-paris-on-may-24-2026-31c",
+      "boundary_convention": "round"
+    },
+    {
+      "logged_at": "2026-05-24T05:15:49.756623+00:00",
+      "city": "Paris",
+      "bracket": "exact 31",
+      "market_type": "high",
+      "model_prob": 0.34269495002314215,
+      "market_ask": 0.27,
+      "edge": 0.07269495002314214,
+      "kelly_size_usdc": 2.0,
+      "outcome": "PENDING",
+      "resolution_date": "2026-05-24",
+      "strategy": "adjacency",
+      "market_slug": "highest-temperature-in-paris-on-may-24-2026-31c",
+      "boundary_convention": "round"
+    },
     {
       "logged_at": "2026-05-24T05:11:06.835022+00:00",
       "city": "Seoul",
@@ -4776,21 +4806,6 @@
       "boundary_convention": "round"
     },
     {
-      "logged_at": "2026-05-16T10:21:52.522677+00:00",
-      "city": "London",
-      "bracket": "exact 13",
-      "market_type": "high",
-      "model_prob": 0.315481589118301,
-      "market_ask": 0.06,
-      "edge": 0.255481589118301,
-      "kelly_size_usdc": 2.0,
-      "outcome": "LOSS",
-      "resolution_date": "2026-05-16",
-      "strategy": "adjacency_hourly",
-      "market_slug": "highest-temperature-in-london-on-may-16-2026-13c",
-      "boundary_convention": "round"
-    },
-    {
       "logged_at": "2026-05-16T06:44:10.488248+00:00",
       "city": "Paris",
       "bracket": "exact 15",
@@ -7181,21 +7196,6 @@
       "boundary_convention": "round"
     },
     {
-      "logged_at": "2026-05-09T17:39:48.635122+00:00",
-      "city": "Sao Paulo",
-      "bracket": "exact 29",
-      "market_type": "high",
-      "model_prob": 0.27883318161702425,
-      "market_ask": 0.25,
-      "edge": 0.02883318161702425,
-      "kelly_size_usdc": 2.0,
-      "outcome": "LOSS",
-      "resolution_date": "2026-05-09",
-      "strategy": "adjacency",
-      "market_slug": "highest-temperature-in-sao-paulo-on-may-9-2026-29c",
-      "boundary_convention": "round"
-    },
-    {
       "logged_at": "2026-05-09T11:09:00.127989+00:00",
       "city": "Paris",
       "bracket": "exact 23",
@@ -8083,15 +8083,15 @@
   ],
   "strategies": {
     "adjacency": {
-      "bets": 95,
+      "bets": 96,
       "resolved": 95,
       "wins": 17,
       "pnl_usd": -45.3601,
       "bankroll": {
         "start": 1000.0,
         "current": 950.9168,
-        "open_stake": 0.0,
-        "available": 950.9168,
+        "open_stake": 2.0,
+        "available": 948.9168,
         "daily_loss": 0.0
       },
       "by_boundary": {
@@ -8102,7 +8102,7 @@
           "pnl_usd": 0.0
         },
         "round": {
-          "bets": 95,
+          "bets": 96,
           "resolved": 95,
           "wins": 17,
           "pnl_usd": -45.3601
@@ -8137,15 +8137,15 @@
       }
     },
     "adjacency_hourly": {
-      "bets": 236,
+      "bets": 237,
       "resolved": 236,
       "wins": 32,
       "pnl_usd": -83.6545,
       "bankroll": {
         "start": 1000.0,
         "current": 908.8523,
-        "open_stake": 0.0,
-        "available": 908.8523,
+        "open_stake": 2.0,
+        "available": 906.8523,
         "daily_loss": 0.0
       },
       "by_boundary": {
@@ -8156,7 +8156,7 @@
           "pnl_usd": 0.0
         },
         "round": {
-          "bets": 236,
+          "bets": 237,
           "resolved": 236,
           "wins": 32,
           "pnl_usd": -83.6545
