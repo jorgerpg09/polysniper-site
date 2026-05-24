@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-05-24T14:10:07.064853+00:00",
+  "updated_at": "2026-05-24T14:20:07.206180+00:00",
   "hit_rate": 0.214,
   "theoretical_pnl": -1.5596,
   "trade_count": 439,
@@ -43,6 +43,22 @@
     }
   ],
   "recent_trades": [
+    {
+      "logged_at": "2026-05-24T14:14:38.823889+00:00",
+      "city": "Madrid",
+      "bracket": "exact 33",
+      "market_type": "high",
+      "model_prob": 0.8220294362266212,
+      "market_ask": 0.69,
+      "edge": 0.13202943622662122,
+      "kelly_size_usdc": 2.0,
+      "outcome": "PENDING",
+      "resolution_date": "2026-05-24",
+      "strategy": "no_exact",
+      "market_slug": "highest-temperature-in-madrid-on-may-24-2026-33c",
+      "boundary_convention": "round",
+      "bet_side": "NO"
+    },
     {
       "logged_at": "2026-05-24T14:04:39.228883+00:00",
       "city": "Paris",
@@ -5847,7 +5863,7 @@
       }
     },
     "no_exact": {
-      "bets": 46,
+      "bets": 47,
       "resolved": 31,
       "wins": 18,
       "pnl_usd": -1.651,
@@ -5866,7 +5882,7 @@
           "pnl_usd": 0.0
         },
         "round": {
-          "bets": 46,
+          "bets": 47,
           "resolved": 31,
           "wins": 18,
           "pnl_usd": -1.651
