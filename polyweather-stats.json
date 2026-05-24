@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-05-24T21:00:36.901915+00:00",
+  "updated_at": "2026-05-24T21:10:36.893589+00:00",
   "hit_rate": 0.1914,
   "theoretical_pnl": -257.5989,
-  "trade_count": 1086,
+  "trade_count": 1087,
   "active_cities": 8,
   "daily_pnl": [
     {
@@ -99,6 +99,21 @@
     }
   ],
   "recent_trades": [
+    {
+      "logged_at": "2026-05-24T21:03:06.937372+00:00",
+      "city": "New York City",
+      "bracket": "above 62",
+      "market_type": "high",
+      "model_prob": 0.2333537238955221,
+      "market_ask": 0.047,
+      "edge": 0.18635372389552213,
+      "kelly_size_usdc": 2.0,
+      "outcome": "PENDING",
+      "resolution_date": "2026-05-24",
+      "strategy": "modal_early",
+      "market_slug": null,
+      "boundary_convention": "round"
+    },
     {
       "logged_at": "2026-05-24T15:00:25.101235+00:00",
       "city": "Sao Paulo",
@@ -8249,16 +8264,16 @@
       }
     },
     "modal_early": {
-      "bets": 13,
+      "bets": 14,
       "resolved": 13,
       "wins": 0,
       "pnl_usd": -25.0478,
       "bankroll": {
         "start": 1000.0,
         "current": 976.7082,
-        "open_stake": 0.0,
-        "available": 976.7082,
-        "daily_loss": 8.0409
+        "open_stake": 2.0,
+        "available": 974.7082,
+        "daily_loss": 0.0
       },
       "by_boundary": {
         "floor": {
@@ -8268,7 +8283,7 @@
           "pnl_usd": 0.0
         },
         "round": {
-          "bets": 13,
+          "bets": 14,
           "resolved": 13,
           "wins": 0,
           "pnl_usd": -25.0478
