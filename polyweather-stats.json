@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-05-23T23:56:58.745743+00:00",
-  "hit_rate": 0.1855,
-  "theoretical_pnl": -301.1054,
+  "updated_at": "2026-05-24T00:06:59.124868+00:00",
+  "hit_rate": 0.1865,
+  "theoretical_pnl": -300.4023,
   "trade_count": 1060,
   "active_cities": 8,
   "daily_pnl": [
@@ -91,7 +91,7 @@
     },
     {
       "date": "2026-05-23",
-      "cumulative_pnl": -301.1054
+      "cumulative_pnl": -300.4023
     }
   ],
   "recent_trades": [
@@ -575,7 +575,7 @@
       "market_ask": 0.5700000000000001,
       "edge": 0.053269642460868516,
       "kelly_size_usdc": 2.0,
-      "outcome": "PENDING",
+      "outcome": "LOSS",
       "resolution_date": "2026-05-23",
       "strategy": "no_between",
       "market_slug": "highest-temperature-in-miami-on-may-23-2026-88-89f",
@@ -732,7 +732,7 @@
       "market_ask": 0.58,
       "edge": -0.20326964246086848,
       "kelly_size_usdc": 1.0,
-      "outcome": "PENDING",
+      "outcome": "WIN",
       "resolution_date": "2026-05-23",
       "strategy": "raw_forecast_corrected",
       "market_slug": "highest-temperature-in-miami-on-may-23-2026-88-89f",
@@ -1039,7 +1039,7 @@
       "market_ask": 0.15000000000000002,
       "edge": 0.8455004167203986,
       "kelly_size_usdc": 2.0,
-      "outcome": "PENDING",
+      "outcome": "WIN",
       "resolution_date": "2026-05-23",
       "strategy": "no_exact",
       "market_slug": "highest-temperature-in-seoul-on-may-23-2026-23c",
@@ -1055,7 +1055,7 @@
       "market_ask": 0.42000000000000004,
       "edge": 0.5614821399861594,
       "kelly_size_usdc": 2.0,
-      "outcome": "PENDING",
+      "outcome": "LOSS",
       "resolution_date": "2026-05-23",
       "strategy": "no_exact",
       "market_slug": "highest-temperature-in-seoul-on-may-23-2026-22c",
@@ -1071,7 +1071,7 @@
       "market_ask": 0.24,
       "edge": 0.7044792458778172,
       "kelly_size_usdc": 2.0,
-      "outcome": "PENDING",
+      "outcome": "WIN",
       "resolution_date": "2026-05-23",
       "strategy": "no_exact",
       "market_slug": "highest-temperature-in-seoul-on-may-23-2026-21c",
@@ -8327,14 +8327,14 @@
     },
     "no_between": {
       "bets": 168,
-      "resolved": 150,
+      "resolved": 151,
       "wins": 91,
-      "pnl_usd": -6.5615,
+      "pnl_usd": -8.5615,
       "bankroll": {
         "start": 1000.0,
-        "current": 993.4385,
+        "current": 991.4385,
         "open_stake": 0.0,
-        "available": 993.4385,
+        "available": 991.4385,
         "daily_loss": 0.0
       },
       "by_boundary": {
@@ -8346,9 +8346,9 @@
         },
         "round": {
           "bets": 168,
-          "resolved": 150,
+          "resolved": 151,
           "wins": 91,
-          "pnl_usd": -6.5615
+          "pnl_usd": -8.5615
         }
       }
     },
@@ -8381,14 +8381,14 @@
     },
     "no_exact": {
       "bets": 55,
-      "resolved": 35,
-      "wins": 24,
-      "pnl_usd": 10.0693,
+      "resolved": 38,
+      "wins": 26,
+      "pnl_usd": 9.0538,
       "bankroll": {
         "start": 100.0,
-        "current": 110.0693,
+        "current": 109.0538,
         "open_stake": 0.0,
-        "available": 110.0693,
+        "available": 109.0538,
         "daily_loss": 0.0
       },
       "by_boundary": {
@@ -8400,22 +8400,22 @@
         },
         "round": {
           "bets": 55,
-          "resolved": 35,
-          "wins": 24,
-          "pnl_usd": 10.0693
+          "resolved": 38,
+          "wins": 26,
+          "pnl_usd": 9.0538
         }
       }
     },
     "raw_forecast_corrected": {
       "bets": 220,
-      "resolved": 213,
-      "wins": 65,
-      "pnl_usd": -58.4402,
+      "resolved": 214,
+      "wins": 66,
+      "pnl_usd": -57.7371,
       "bankroll": {
         "start": 10000.0,
         "current": 9928.9236,
-        "open_stake": 7.0,
-        "available": 9921.9236,
+        "open_stake": 6.0,
+        "available": 9922.9236,
         "daily_loss": 4.163
       },
       "by_boundary": {
@@ -8427,9 +8427,9 @@
         },
         "round": {
           "bets": 220,
-          "resolved": 213,
-          "wins": 65,
-          "pnl_usd": -58.4402
+          "resolved": 214,
+          "wins": 66,
+          "pnl_usd": -57.7371
         }
       }
     },
