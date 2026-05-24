@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-05-24T06:14:14.481150+00:00",
-  "now": "2026-05-24T06:14:14.481150+00:00",
+  "updated_at": "2026-05-24T06:24:14.804744+00:00",
+  "now": "2026-05-24T06:24:14.804744+00:00",
   "markets": [
     {
       "condition_id": "0x091d137694061741144097d83e43f740000447e2fcecfdd2cd819dba7650f0f8",
@@ -24090,10 +24090,10 @@
       "effective_close_time": "2026-05-24T07:00:00+00:00",
       "market_end_date": "2026-05-23T12:00:00+00:00",
       "market_slug": "highest-temperature-in-nyc-on-may-23-2026-58-59f",
-      "resolved_at": null,
-      "outcome": null,
-      "resolution_source": null,
-      "state": "after_last_placement",
+      "resolved_at": "2026-05-23T12:42:59.957131+00:00",
+      "outcome": "loss",
+      "resolution_source": "uma_resolved",
+      "state": "resolved",
       "bets": [
         {
           "id": 2715,
@@ -24104,9 +24104,9 @@
           "model_prob": 0.18252455832253944,
           "best_ask_at_placement": 0.28,
           "limit_price": 0.28,
-          "outcome": null,
-          "realized_pnl_usd": null,
-          "fee_usd": null,
+          "outcome": "loss",
+          "realized_pnl_usd": -1.036,
+          "fee_usd": 0.036,
           "fill_quality": null,
           "strategy": "raw_forecast_corrected"
         },
@@ -24119,9 +24119,9 @@
           "model_prob": 0.18189913480858366,
           "best_ask_at_placement": 0.2,
           "limit_price": 0.2,
-          "outcome": null,
-          "realized_pnl_usd": null,
-          "fee_usd": null,
+          "outcome": "loss",
+          "realized_pnl_usd": -1.04,
+          "fee_usd": 0.04,
           "fill_quality": null,
           "strategy": "raw_forecast_raw"
         }
@@ -24388,6 +24388,21 @@
           "fee_usd": null,
           "fill_quality": null,
           "strategy": "adjacency_hourly"
+        },
+        {
+          "id": 2733,
+          "placed_at": "2026-05-24T06:17:03.869365+00:00",
+          "size_usd": 2.0,
+          "filled_shares": 10.526315789473685,
+          "filled_vwap": 0.18999999999999997,
+          "model_prob": 0.34269495002314215,
+          "best_ask_at_placement": 0.19,
+          "limit_price": 0.19,
+          "outcome": null,
+          "realized_pnl_usd": null,
+          "fee_usd": null,
+          "fill_quality": null,
+          "strategy": "adjacency_hourly"
         }
       ]
     },
@@ -24403,10 +24418,10 @@
       "effective_close_time": "2026-05-24T12:00:00+00:00",
       "market_end_date": "2026-05-24T12:00:00+00:00",
       "market_slug": "lowest-temperature-in-miami-on-may-24-2026-82-83f",
-      "resolved_at": null,
-      "outcome": null,
-      "resolution_source": null,
-      "state": "after_last_placement",
+      "resolved_at": "2026-05-23T23:12:59.936384+00:00",
+      "outcome": "loss",
+      "resolution_source": "uma_resolved",
+      "state": "resolved",
       "bets": [
         {
           "id": 2726,
@@ -24417,9 +24432,9 @@
           "model_prob": 0.09140724611077145,
           "best_ask_at_placement": 0.07,
           "limit_price": 0.07,
-          "outcome": null,
-          "realized_pnl_usd": null,
-          "fee_usd": null,
+          "outcome": "loss",
+          "realized_pnl_usd": -1.0465,
+          "fee_usd": 0.0465,
           "fill_quality": null,
           "strategy": "raw_forecast_corrected"
         }
