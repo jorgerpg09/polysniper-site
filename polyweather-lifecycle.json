@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-05-24T12:34:14.469768+00:00",
-  "now": "2026-05-24T12:34:14.469768+00:00",
+  "updated_at": "2026-05-24T12:44:14.781279+00:00",
+  "now": "2026-05-24T12:44:14.781279+00:00",
   "markets": [
     {
       "condition_id": "0x091d137694061741144097d83e43f740000447e2fcecfdd2cd819dba7650f0f8",
@@ -24328,6 +24328,40 @@
       ]
     },
     {
+      "condition_id": "0x033e4177c97d7ff276d6e79023da5cf622f195dfa40e4f3d979be8dfbe2c50aa",
+      "city": "Sao Paulo",
+      "market_type": "high",
+      "bracket": "exact 21",
+      "bracket_type": "exact",
+      "resolution_date": "2026-05-24",
+      "game_start_time": "2026-05-24T03:00:00+00:00",
+      "last_placement_time": "2026-05-25T01:00:00+00:00",
+      "effective_close_time": "2026-05-25T06:00:00+00:00",
+      "market_end_date": "2026-05-24T12:00:00+00:00",
+      "market_slug": "highest-temperature-in-sao-paulo-on-may-24-2026-21c",
+      "resolved_at": null,
+      "outcome": null,
+      "resolution_source": null,
+      "state": "trading",
+      "bets": [
+        {
+          "id": 2753,
+          "placed_at": "2026-05-24T12:41:00.150797+00:00",
+          "size_usd": 1.0,
+          "filled_shares": 5.555555555555555,
+          "filled_vwap": 0.17,
+          "model_prob": 0.17143135661253184,
+          "best_ask_at_placement": 0.18,
+          "limit_price": 0.18,
+          "outcome": null,
+          "realized_pnl_usd": null,
+          "fee_usd": null,
+          "fill_quality": null,
+          "strategy": "raw_forecast_corrected"
+        }
+      ]
+    },
+    {
       "condition_id": "0x052faa879eac53e2e3c2219dbc2646cef4e34083103e40915d9566f663331c98",
       "city": "Sao Paulo",
       "market_type": "high",
@@ -24392,6 +24426,55 @@
           "fee_usd": null,
           "fill_quality": null,
           "strategy": "raw_forecast_corrected"
+        },
+        {
+          "id": 2754,
+          "placed_at": "2026-05-24T12:41:00.150797+00:00",
+          "size_usd": 1.0,
+          "filled_shares": 2.564102564102564,
+          "filled_vwap": 0.39,
+          "model_prob": 0.15851406968277093,
+          "best_ask_at_placement": 0.39,
+          "limit_price": 0.39,
+          "outcome": null,
+          "realized_pnl_usd": null,
+          "fee_usd": null,
+          "fill_quality": null,
+          "strategy": "raw_forecast_raw"
+        }
+      ]
+    },
+    {
+      "condition_id": "0x21719ad0f52252da062f57feffb292dccccd0e22bbddaee7c454a5156a340650",
+      "city": "Atlanta",
+      "market_type": "high",
+      "bracket": "between 80 and 81",
+      "bracket_type": "between",
+      "resolution_date": "2026-05-24",
+      "game_start_time": "2026-05-24T04:00:00+00:00",
+      "last_placement_time": "2026-05-25T02:00:00+00:00",
+      "effective_close_time": "2026-05-25T07:00:00+00:00",
+      "market_end_date": "2026-05-24T12:00:00+00:00",
+      "market_slug": "highest-temperature-in-atlanta-on-may-24-2026-80-81f",
+      "resolved_at": null,
+      "outcome": null,
+      "resolution_source": null,
+      "state": "trading",
+      "bets": [
+        {
+          "id": 2749,
+          "placed_at": "2026-05-24T12:41:00.150797+00:00",
+          "size_usd": 1.0,
+          "filled_shares": 2.5,
+          "filled_vwap": 0.4,
+          "model_prob": 0.16047444021262458,
+          "best_ask_at_placement": 0.4,
+          "limit_price": 0.4,
+          "outcome": null,
+          "realized_pnl_usd": null,
+          "fee_usd": null,
+          "fill_quality": null,
+          "strategy": "raw_forecast_raw"
         }
       ]
     },
@@ -24494,6 +24577,21 @@
           "fee_usd": null,
           "fill_quality": null,
           "strategy": "raw_forecast_corrected"
+        },
+        {
+          "id": 2750,
+          "placed_at": "2026-05-24T12:41:00.150797+00:00",
+          "size_usd": 2.0,
+          "filled_shares": null,
+          "filled_vwap": null,
+          "model_prob": 0.3476007649517372,
+          "best_ask_at_placement": 0.1,
+          "limit_price": 0.1,
+          "outcome": null,
+          "realized_pnl_usd": null,
+          "fee_usd": null,
+          "fill_quality": null,
+          "strategy": "adjacency"
         }
       ]
     },
@@ -24653,7 +24751,7 @@
           "id": 2748,
           "placed_at": "2026-05-24T12:20:08.987139+00:00",
           "size_usd": 2.0,
-          "filled_shares": 5.0,
+          "filled_shares": 7.692307692307692,
           "filled_vwap": 0.26,
           "model_prob": 0.3384750756420827,
           "best_ask_at_placement": 0.26,
@@ -24692,6 +24790,40 @@
           "model_prob": 0.3689918160094837,
           "best_ask_at_placement": 0.57,
           "limit_price": 0.57,
+          "outcome": null,
+          "realized_pnl_usd": null,
+          "fee_usd": null,
+          "fill_quality": null,
+          "strategy": "raw_forecast_corrected"
+        }
+      ]
+    },
+    {
+      "condition_id": "0x9de7cc04effd0c0caf6c29f68c39fa2dd7043591dbfbdb2194718c9aaf712888",
+      "city": "Paris",
+      "market_type": "high",
+      "bracket": "exact 30",
+      "bracket_type": "exact",
+      "resolution_date": "2026-05-24",
+      "game_start_time": "2026-05-23T22:00:00+00:00",
+      "last_placement_time": "2026-05-24T20:00:00+00:00",
+      "effective_close_time": "2026-05-25T01:00:00+00:00",
+      "market_end_date": "2026-05-24T12:00:00+00:00",
+      "market_slug": "highest-temperature-in-paris-on-may-24-2026-30c",
+      "resolved_at": null,
+      "outcome": null,
+      "resolution_source": null,
+      "state": "trading",
+      "bets": [
+        {
+          "id": 2752,
+          "placed_at": "2026-05-24T12:41:00.150797+00:00",
+          "size_usd": 1.0,
+          "filled_shares": 1000.0,
+          "filled_vwap": 0.001,
+          "model_prob": 0.3332517618741739,
+          "best_ask_at_placement": 0.001,
+          "limit_price": 0.001,
           "outcome": null,
           "realized_pnl_usd": null,
           "fee_usd": null,
@@ -24833,6 +24965,21 @@
           "fee_usd": null,
           "fill_quality": null,
           "strategy": "raw_forecast_corrected"
+        },
+        {
+          "id": 2751,
+          "placed_at": "2026-05-24T12:41:00.150797+00:00",
+          "size_usd": 1.0,
+          "filled_shares": 1.8518518518518516,
+          "filled_vwap": 0.54,
+          "model_prob": 0.17652835947219947,
+          "best_ask_at_placement": 0.54,
+          "limit_price": 0.54,
+          "outcome": null,
+          "realized_pnl_usd": null,
+          "fee_usd": null,
+          "fill_quality": null,
+          "strategy": "raw_forecast_raw"
         }
       ]
     },
