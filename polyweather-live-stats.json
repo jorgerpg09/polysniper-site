@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-05-24T19:06:46.710317+00:00",
-  "hit_rate": 0.2131,
-  "theoretical_pnl": -3.589,
+  "updated_at": "2026-05-24T19:16:46.880634+00:00",
+  "hit_rate": 0.2122,
+  "theoretical_pnl": -5.6162,
   "trade_count": 439,
   "active_cities": 9,
   "daily_pnl": [
@@ -43,10 +43,26 @@
     },
     {
       "date": "2026-05-24",
-      "cumulative_pnl": -3.589
+      "cumulative_pnl": -5.6162
     }
   ],
   "recent_trades": [
+    {
+      "logged_at": "2026-05-24T19:09:19.128316+00:00",
+      "city": "Atlanta",
+      "bracket": "between 84 and 85",
+      "market_type": "high",
+      "model_prob": 0.8888982841072306,
+      "market_ask": 0.774,
+      "edge": 0.11489828410723057,
+      "kelly_size_usdc": 2.0,
+      "outcome": "PENDING",
+      "resolution_date": "2026-05-24",
+      "strategy": "no_between_live",
+      "market_slug": "highest-temperature-in-atlanta-on-may-24-2026-84-85f",
+      "boundary_convention": "round",
+      "bet_side": "NO"
+    },
     {
       "logged_at": "2026-05-24T15:05:39.530870+00:00",
       "city": "Sao Paulo",
@@ -392,7 +408,7 @@
       "market_ask": 0.029,
       "edge": 0.33278989328089953,
       "kelly_size_usdc": 2.0,
-      "outcome": "PENDING",
+      "outcome": "LOSS",
       "resolution_date": "2026-05-24",
       "strategy": "modal_early",
       "market_slug": "highest-temperature-in-miami-on-may-24-2026-84-85f",
@@ -5781,15 +5797,15 @@
     },
     "modal_early": {
       "bets": 7,
-      "resolved": 5,
+      "resolved": 6,
       "wins": 0,
-      "pnl_usd": -9.7889,
+      "pnl_usd": -11.8161,
       "bankroll": {
         "start": 1000.0,
-        "current": 990.2112,
-        "open_stake": 4.0,
-        "available": 986.2112,
-        "daily_loss": 2.0294
+        "current": 988.184,
+        "open_stake": 2.0,
+        "available": 986.184,
+        "daily_loss": 4.0566
       },
       "by_boundary": {
         "floor": {
@@ -5800,9 +5816,9 @@
         },
         "round": {
           "bets": 7,
-          "resolved": 5,
+          "resolved": 6,
           "wins": 0,
-          "pnl_usd": -9.7889
+          "pnl_usd": -11.8161
         }
       }
     },
@@ -5888,7 +5904,7 @@
       }
     },
     "no_between_live": {
-      "bets": 17,
+      "bets": 18,
       "resolved": 9,
       "wins": 4,
       "pnl_usd": -5.2783,
@@ -5907,7 +5923,7 @@
           "pnl_usd": 0.0
         },
         "round": {
-          "bets": 17,
+          "bets": 18,
           "resolved": 9,
           "wins": 4,
           "pnl_usd": -5.2783
