@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-05-24T21:00:40.884190+00:00",
-  "now": "2026-05-24T21:00:40.884190+00:00",
+  "updated_at": "2026-05-24T21:10:40.634042+00:00",
+  "now": "2026-05-24T21:10:40.634042+00:00",
   "markets": [
     {
       "condition_id": "0x091d137694061741144097d83e43f740000447e2fcecfdd2cd819dba7650f0f8",
@@ -25029,6 +25029,40 @@
           "fee_usd": null,
           "fill_quality": null,
           "strategy": "raw_forecast_raw"
+        }
+      ]
+    },
+    {
+      "condition_id": "0x9a524c531d67ad251daa392ab69d9bdb4e7332e5246c88d7ad6751dbdc101dc0",
+      "city": "New York City",
+      "market_type": "high",
+      "bracket": "above 62",
+      "bracket_type": "above",
+      "resolution_date": "2026-05-24",
+      "game_start_time": "2026-05-24T04:00:00+00:00",
+      "last_placement_time": "2026-05-25T08:00:00+00:00",
+      "effective_close_time": "2026-05-25T12:00:00+00:00",
+      "market_end_date": "2026-05-24T12:00:00+00:00",
+      "market_slug": null,
+      "resolved_at": null,
+      "outcome": null,
+      "resolution_source": null,
+      "state": "trading",
+      "bets": [
+        {
+          "id": 2756,
+          "placed_at": "2026-05-24T21:03:06.937372+00:00",
+          "size_usd": 2.0,
+          "filled_shares": 41.666666666666664,
+          "filled_vwap": 0.03448776,
+          "model_prob": 0.2333537238955221,
+          "best_ask_at_placement": 0.047,
+          "limit_price": 0.048,
+          "outcome": null,
+          "realized_pnl_usd": null,
+          "fee_usd": null,
+          "fill_quality": null,
+          "strategy": "modal_early"
         }
       ]
     }
