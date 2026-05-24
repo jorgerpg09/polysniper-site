@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-05-24T15:00:12.562403+00:00",
-  "now": "2026-05-24T15:00:12.562403+00:00",
+  "updated_at": "2026-05-24T15:10:11.682700+00:00",
+  "now": "2026-05-24T15:10:11.682700+00:00",
   "markets": [
     {
       "condition_id": "0x3728429b82b86b6c3c78f1bd5b82ab8663c713b9d284e379345ab3b472bbcf2b",
@@ -11918,6 +11918,76 @@
           "fee_usd": null,
           "fill_quality": null,
           "strategy": "no_exact",
+          "bet_side": "NO"
+        }
+      ]
+    },
+    {
+      "condition_id": "0x869451ff6afc1a6c8a3eec7e028872945ac785e5c21e1ef711f6ebc727bd73ff",
+      "city": "Sao Paulo",
+      "market_type": "high",
+      "bracket": "exact 24",
+      "bracket_type": "exact",
+      "resolution_date": "2026-05-24",
+      "game_start_time": "2026-05-24T03:00:00+00:00",
+      "last_placement_time": "2026-05-25T01:00:00+00:00",
+      "effective_close_time": "2026-05-25T06:00:00+00:00",
+      "market_end_date": null,
+      "market_slug": "highest-temperature-in-sao-paulo-on-may-24-2026-24c",
+      "resolved_at": null,
+      "outcome": null,
+      "resolution_source": null,
+      "state": "trading",
+      "bets": [
+        {
+          "id": "sl-57956",
+          "placed_at": "2026-05-24T15:00:39.541176+00:00",
+          "size_usd": 2.0,
+          "filled_shares": null,
+          "filled_vwap": null,
+          "model_prob": 0.13474054513368594,
+          "best_ask_at_placement": 0.31999999999999995,
+          "limit_price": null,
+          "outcome": null,
+          "realized_pnl_usd": null,
+          "fee_usd": null,
+          "fill_quality": null,
+          "strategy": "no_exact",
+          "bet_side": "NO"
+        }
+      ]
+    },
+    {
+      "condition_id": "0xa2f57779e4049180f14c9364f958a176443ee49f6822a38524fa3ebc79095b29",
+      "city": "Sao Paulo",
+      "market_type": "high",
+      "bracket": "above 25",
+      "bracket_type": "above",
+      "resolution_date": "2026-05-24",
+      "game_start_time": "2026-05-24T03:00:00+00:00",
+      "last_placement_time": "2026-05-25T01:00:00+00:00",
+      "effective_close_time": "2026-05-25T06:00:00+00:00",
+      "market_end_date": null,
+      "market_slug": "highest-temperature-in-sao-paulo-on-may-24-2026-25corhigher",
+      "resolved_at": null,
+      "outcome": null,
+      "resolution_source": null,
+      "state": "trading",
+      "bets": [
+        {
+          "id": "sl-58124",
+          "placed_at": "2026-05-24T15:05:39.530870+00:00",
+          "size_usd": 2.0,
+          "filled_shares": null,
+          "filled_vwap": null,
+          "model_prob": 0.17959509467463286,
+          "best_ask_at_placement": 0.6819999999999999,
+          "limit_price": null,
+          "outcome": null,
+          "realized_pnl_usd": null,
+          "fee_usd": null,
+          "fill_quality": null,
+          "strategy": "no_above",
           "bet_side": "NO"
         }
       ]
