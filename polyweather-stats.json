@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-05-24T18:40:36.882157+00:00",
+  "updated_at": "2026-05-24T18:50:36.848972+00:00",
   "hit_rate": 0.1929,
   "theoretical_pnl": -251.3898,
-  "trade_count": 1086,
+  "trade_count": 1087,
   "active_cities": 8,
   "daily_pnl": [
     {
@@ -99,6 +99,21 @@
     }
   ],
   "recent_trades": [
+    {
+      "logged_at": "2026-05-24T18:41:00.141013+00:00",
+      "city": "Sao Paulo",
+      "bracket": "exact 22",
+      "market_type": "high",
+      "model_prob": 0.19440302358480432,
+      "market_ask": 0.001,
+      "edge": 0.19340302358480432,
+      "kelly_size_usdc": 2.0,
+      "outcome": "UNFILLED",
+      "resolution_date": "2026-05-24",
+      "strategy": "adjacency",
+      "market_slug": "highest-temperature-in-sao-paulo-on-may-24-2026-22c",
+      "boundary_convention": "round"
+    },
     {
       "logged_at": "2026-05-24T15:00:25.101235+00:00",
       "city": "Sao Paulo",
@@ -7152,21 +7167,6 @@
       "resolution_date": "2026-05-10",
       "strategy": "adjacency",
       "market_slug": "highest-temperature-in-miami-on-may-10-2026-88-89f",
-      "boundary_convention": "round"
-    },
-    {
-      "logged_at": "2026-05-10T12:44:28.420476+00:00",
-      "city": "London",
-      "bracket": "exact 14",
-      "market_type": "high",
-      "model_prob": 0.24273423569357205,
-      "market_ask": 0.11,
-      "edge": 0.13273423569357207,
-      "kelly_size_usdc": 2.0,
-      "outcome": "LOSS",
-      "resolution_date": "2026-05-10",
-      "strategy": "adjacency",
-      "market_slug": "highest-temperature-in-london-on-may-10-2026-14c",
       "boundary_convention": "round"
     },
     {
