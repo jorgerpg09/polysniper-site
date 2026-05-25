@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-05-25T06:32:54.447709+00:00",
-  "now": "2026-05-25T06:32:54.447709+00:00",
+  "updated_at": "2026-05-25T06:42:54.242564+00:00",
+  "now": "2026-05-25T06:42:54.242564+00:00",
   "markets": [
     {
       "condition_id": "0x091d137694061741144097d83e43f740000447e2fcecfdd2cd819dba7650f0f8",
@@ -25052,6 +25052,40 @@
       ]
     },
     {
+      "condition_id": "0x121a7f5410cf513d7582cb07ab2b71a8043c60fb4a22a1ba54c9db8e1dd92b07",
+      "city": "London",
+      "market_type": "high",
+      "bracket": "exact 34",
+      "bracket_type": "exact",
+      "resolution_date": "2026-05-25",
+      "game_start_time": "2026-05-24T23:00:00+00:00",
+      "last_placement_time": "2026-05-25T21:00:00+00:00",
+      "effective_close_time": "2026-05-26T02:00:00+00:00",
+      "market_end_date": "2026-05-25T12:00:00+00:00",
+      "market_slug": "highest-temperature-in-london-on-may-25-2026-34c",
+      "resolved_at": null,
+      "outcome": null,
+      "resolution_source": null,
+      "state": "trading",
+      "bets": [
+        {
+          "id": 2765,
+          "placed_at": "2026-05-25T06:41:00.122490+00:00",
+          "size_usd": 1.0,
+          "filled_shares": null,
+          "filled_vwap": null,
+          "model_prob": 0.32718798045363806,
+          "best_ask_at_placement": 0.347,
+          "limit_price": 0.347,
+          "outcome": null,
+          "realized_pnl_usd": null,
+          "fee_usd": null,
+          "fill_quality": null,
+          "strategy": "raw_forecast_corrected"
+        }
+      ]
+    },
+    {
       "condition_id": "0x422765f5293eb0418eedaafd31e29c5a33b5c6aa764f4ae5e79e7e67e5d4c338",
       "city": "Miami",
       "market_type": "low",
@@ -25252,6 +25286,21 @@
           "fee_usd": null,
           "fill_quality": null,
           "strategy": "raw_forecast_corrected"
+        },
+        {
+          "id": 2766,
+          "placed_at": "2026-05-25T06:41:00.122490+00:00",
+          "size_usd": 1.0,
+          "filled_shares": 2.5,
+          "filled_vwap": 0.4,
+          "model_prob": 0.3115197325813476,
+          "best_ask_at_placement": 0.4,
+          "limit_price": 0.4,
+          "outcome": null,
+          "realized_pnl_usd": null,
+          "fee_usd": null,
+          "fill_quality": null,
+          "strategy": "raw_forecast_raw"
         }
       ]
     },
@@ -25286,6 +25335,40 @@
           "fee_usd": null,
           "fill_quality": null,
           "strategy": "raw_forecast_raw"
+        }
+      ]
+    },
+    {
+      "condition_id": "0xb3c9860615e33b6f0270a336c328db7eaabf05c07eaa2d4a86eac6826ade7920",
+      "city": "Paris",
+      "market_type": "high",
+      "bracket": "exact 31",
+      "bracket_type": "exact",
+      "resolution_date": "2026-05-25",
+      "game_start_time": "2026-05-24T22:00:00+00:00",
+      "last_placement_time": "2026-05-25T20:00:00+00:00",
+      "effective_close_time": "2026-05-26T01:00:00+00:00",
+      "market_end_date": "2026-05-25T12:00:00+00:00",
+      "market_slug": "highest-temperature-in-paris-on-may-25-2026-31c",
+      "resolved_at": null,
+      "outcome": null,
+      "resolution_source": null,
+      "state": "trading",
+      "bets": [
+        {
+          "id": 2767,
+          "placed_at": "2026-05-25T06:41:00.122490+00:00",
+          "size_usd": 1.0,
+          "filled_shares": 10.71,
+          "filled_vwap": 0.07,
+          "model_prob": 0.33110822034104026,
+          "best_ask_at_placement": 0.07,
+          "limit_price": 0.07,
+          "outcome": null,
+          "realized_pnl_usd": null,
+          "fee_usd": null,
+          "fill_quality": null,
+          "strategy": "raw_forecast_corrected"
         }
       ]
     },
