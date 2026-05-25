@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-05-25T18:19:35.790707+00:00",
-  "now": "2026-05-25T18:19:35.790707+00:00",
+  "updated_at": "2026-05-25T18:29:35.482291+00:00",
+  "now": "2026-05-25T18:29:35.482291+00:00",
   "markets": [
     {
       "condition_id": "0x091d137694061741144097d83e43f740000447e2fcecfdd2cd819dba7650f0f8",
@@ -25187,10 +25187,10 @@
       "effective_close_time": "2026-05-26T07:00:00+00:00",
       "market_end_date": "2026-05-25T12:00:00+00:00",
       "market_slug": "highest-temperature-in-atlanta-on-may-25-2026-77forbelow",
-      "resolved_at": null,
-      "outcome": null,
-      "resolution_source": null,
-      "state": "trading",
+      "resolved_at": "2026-05-25T17:09:31.883326+00:00",
+      "outcome": "loss",
+      "resolution_source": "uma_resolved",
+      "state": "resolved",
       "bets": [
         {
           "id": 2782,
@@ -25201,9 +25201,9 @@
           "model_prob": 0.22177493639557994,
           "best_ask_at_placement": 0.18,
           "limit_price": 0.18,
-          "outcome": null,
-          "realized_pnl_usd": null,
-          "fee_usd": null,
+          "outcome": "loss",
+          "realized_pnl_usd": -2.082,
+          "fee_usd": 0.082,
           "fill_quality": null,
           "strategy": "adjacency"
         },
@@ -25216,9 +25216,9 @@
           "model_prob": 0.22177493639557994,
           "best_ask_at_placement": 0.16,
           "limit_price": 0.16,
-          "outcome": null,
-          "realized_pnl_usd": null,
-          "fee_usd": null,
+          "outcome": "loss",
+          "realized_pnl_usd": -2.084,
+          "fee_usd": 0.084,
           "fill_quality": null,
           "strategy": "adjacency_hourly"
         },
@@ -25231,9 +25231,9 @@
           "model_prob": 0.22177493639557994,
           "best_ask_at_placement": 0.15,
           "limit_price": 0.15,
-          "outcome": null,
-          "realized_pnl_usd": null,
-          "fee_usd": null,
+          "outcome": "loss",
+          "realized_pnl_usd": -1.9124,
+          "fee_usd": 0.0791,
           "fill_quality": null,
           "strategy": "adjacency_hourly"
         },
@@ -25246,9 +25246,9 @@
           "model_prob": 0.21910565823187267,
           "best_ask_at_placement": 0.09,
           "limit_price": 0.09,
-          "outcome": null,
-          "realized_pnl_usd": null,
-          "fee_usd": null,
+          "outcome": "loss",
+          "realized_pnl_usd": -2.0314,
+          "fee_usd": 0.0886,
           "fill_quality": null,
           "strategy": "adjacency_hourly"
         },
@@ -25261,9 +25261,9 @@
           "model_prob": 0.21910565823187267,
           "best_ask_at_placement": 0.08,
           "limit_price": 0.08,
-          "outcome": null,
-          "realized_pnl_usd": null,
-          "fee_usd": null,
+          "outcome": "loss",
+          "realized_pnl_usd": -0.2624,
+          "fee_usd": 0.0124,
           "fill_quality": null,
           "strategy": "adjacency_hourly"
         },
@@ -25276,10 +25276,10 @@
           "model_prob": 0.21910565823187267,
           "best_ask_at_placement": 0.001,
           "limit_price": 0.001,
-          "outcome": null,
-          "realized_pnl_usd": null,
-          "fee_usd": null,
-          "fill_quality": null,
+          "outcome": "loss",
+          "realized_pnl_usd": -2.0999,
+          "fee_usd": 0.0999,
+          "fill_quality": "FANTASY",
           "strategy": "adjacency_hourly"
         }
       ]
@@ -25655,6 +25655,36 @@
           "fee_usd": null,
           "fill_quality": null,
           "strategy": "raw_forecast_corrected"
+        },
+        {
+          "id": 2803,
+          "placed_at": "2026-05-25T18:26:01.834345+00:00",
+          "size_usd": 2.0,
+          "filled_shares": 5.555555555555555,
+          "filled_vwap": 0.3,
+          "model_prob": 0.3755006067433978,
+          "best_ask_at_placement": 0.36,
+          "limit_price": 0.36,
+          "outcome": null,
+          "realized_pnl_usd": null,
+          "fee_usd": null,
+          "fill_quality": null,
+          "strategy": "adjacency"
+        },
+        {
+          "id": 2804,
+          "placed_at": "2026-05-25T18:28:01.858203+00:00",
+          "size_usd": 2.0,
+          "filled_shares": null,
+          "filled_vwap": null,
+          "model_prob": 0.3755006067433978,
+          "best_ask_at_placement": 0.27,
+          "limit_price": 0.27,
+          "outcome": null,
+          "realized_pnl_usd": null,
+          "fee_usd": null,
+          "fill_quality": null,
+          "strategy": "adjacency_hourly"
         }
       ]
     },
