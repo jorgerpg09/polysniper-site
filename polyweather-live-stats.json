@@ -1,5 +1,7 @@
 {
-  "updated_at": "2026-05-25T22:45:18.440383+00:00",
+  "updated_at": "2026-05-25T23:00:00.958985+00:00",
+  "live_wallet_usdc": null,
+  "live_wallet_at": null,
   "hit_rate": 0.2105,
   "theoretical_pnl": -9.4413,
   "trade_count": 446,
@@ -76,7 +78,7 @@
       "market_ask": 0.772,
       "edge": 0.1276216522494762,
       "kelly_size_usdc": 2.0,
-      "outcome": "PENDING",
+      "outcome": "WIN",
       "resolution_date": "2026-05-25",
       "strategy": "no_exact",
       "market_slug": "highest-temperature-in-toronto-on-may-25-2026-21c",
@@ -6505,14 +6507,14 @@
     },
     "no_exact": {
       "bets": 68,
-      "resolved": 48,
-      "wins": 30,
-      "pnl_usd": 5.1987,
+      "resolved": 49,
+      "wins": 31,
+      "pnl_usd": 5.7894,
       "bankroll": {
         "start": 100.0,
-        "current": 105.1987,
+        "current": 105.7894,
         "open_stake": 0.0,
-        "available": 105.1987,
+        "available": 105.7894,
         "daily_loss": 0.0
       },
       "by_boundary": {
@@ -6524,9 +6526,36 @@
         },
         "round": {
           "bets": 68,
-          "resolved": 48,
-          "wins": 30,
-          "pnl_usd": 5.1987
+          "resolved": 49,
+          "wins": 31,
+          "pnl_usd": 5.7894
+        }
+      }
+    },
+    "no_exact_live": {
+      "bets": 0,
+      "resolved": 0,
+      "wins": 0,
+      "pnl_usd": 0.0,
+      "bankroll": {
+        "start": 100.0,
+        "current": 100.0,
+        "open_stake": 0.0,
+        "available": 100.0,
+        "daily_loss": 0.0
+      },
+      "by_boundary": {
+        "floor": {
+          "bets": 0,
+          "resolved": 0,
+          "wins": 0,
+          "pnl_usd": 0.0
+        },
+        "round": {
+          "bets": 0,
+          "resolved": 0,
+          "wins": 0,
+          "pnl_usd": 0.0
         }
       }
     },
