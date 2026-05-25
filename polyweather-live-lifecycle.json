@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-05-25T17:29:55.395528+00:00",
-  "now": "2026-05-25T17:29:55.395528+00:00",
+  "updated_at": "2026-05-25T17:39:54.716003+00:00",
+  "now": "2026-05-25T17:39:54.716003+00:00",
   "markets": [
     {
       "condition_id": "0x3728429b82b86b6c3c78f1bd5b82ab8663c713b9d284e379345ab3b472bbcf2b",
@@ -12897,6 +12897,41 @@
       ]
     },
     {
+      "condition_id": "0x0675fb139f78ac2400154398b4ca027fa0c82c4d4d2cddef82e71f7c9543b8f8",
+      "city": "Sao Paulo",
+      "market_type": "high",
+      "bracket": "exact 23",
+      "bracket_type": "exact",
+      "resolution_date": "2026-05-25",
+      "game_start_time": "2026-05-25T03:00:00+00:00",
+      "last_placement_time": "2026-05-26T01:00:00+00:00",
+      "effective_close_time": "2026-05-26T06:00:00+00:00",
+      "market_end_date": "2026-05-25T12:00:00+00:00",
+      "market_slug": "highest-temperature-in-sao-paulo-on-may-25-2026-23c",
+      "resolved_at": null,
+      "outcome": null,
+      "resolution_source": null,
+      "state": "trading",
+      "bets": [
+        {
+          "id": 2095,
+          "placed_at": "2026-05-25T17:13:04.801971+00:00",
+          "size_usd": 2.0,
+          "filled_shares": 22.22222222222222,
+          "filled_vwap": 0.07,
+          "model_prob": 0.26358402931708774,
+          "best_ask_at_placement": 0.08,
+          "limit_price": 0.09,
+          "outcome": null,
+          "realized_pnl_usd": null,
+          "fee_usd": null,
+          "fill_quality": null,
+          "strategy": "modal_early",
+          "bet_side": "YES"
+        }
+      ]
+    },
+    {
       "condition_id": "0x4b9ec306e7fe60adf57cb59862175e878c2fb97983c735b91de9b26073eb05aa",
       "city": "Sao Paulo",
       "market_type": "high",
@@ -13242,6 +13277,41 @@
           "fee_usd": null,
           "fill_quality": null,
           "strategy": "no_between",
+          "bet_side": "NO"
+        }
+      ]
+    },
+    {
+      "condition_id": "0xf7f2dc937611dc8933a1b84a3932b52318c5073b76a7d6b20d706551088270a9",
+      "city": "Seoul",
+      "market_type": "low",
+      "bracket": "exact 20",
+      "bracket_type": "exact",
+      "resolution_date": "2026-05-26",
+      "game_start_time": "2026-05-25T15:00:00+00:00",
+      "last_placement_time": "2026-05-26T03:00:00+00:00",
+      "effective_close_time": "2026-05-26T11:00:00+00:00",
+      "market_end_date": null,
+      "market_slug": "lowest-temperature-in-seoul-on-may-26-2026-20c",
+      "resolved_at": null,
+      "outcome": null,
+      "resolution_source": null,
+      "state": "trading",
+      "bets": [
+        {
+          "id": "sl-76839",
+          "placed_at": "2026-05-25T17:36:04.773762+00:00",
+          "size_usd": 2.0,
+          "filled_shares": null,
+          "filled_vwap": null,
+          "model_prob": 0.17293318198583274,
+          "best_ask_at_placement": 0.65,
+          "limit_price": null,
+          "outcome": null,
+          "realized_pnl_usd": null,
+          "fee_usd": null,
+          "fill_quality": null,
+          "strategy": "no_exact",
           "bet_side": "NO"
         }
       ]
