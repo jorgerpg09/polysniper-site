@@ -174,6 +174,7 @@ function setPostfixOnly(on) {
     localStorage.setItem(PW_POSTFIX_ONLY_KEY, on ? 'true' : 'false');
     if (_pwStatsData) {
         renderPolyWeatherStats(_pwStatsData);
+        renderLiveWallet(_pwStatsData);
         renderPolyWeatherChart(_pwStatsData.daily_pnl || []);
         renderPolyWeatherTrades(_pwStatsData.recent_trades || []);
         updateTabCounts(_pwStatsData);
@@ -193,6 +194,7 @@ function setStrategy(strategy) {
     // Re-render everything that depends on strategy filter
     if (_pwStatsData) {
         renderPolyWeatherStats(_pwStatsData);
+        renderLiveWallet(_pwStatsData);
         renderPolyWeatherChart(_pwStatsData.daily_pnl || []);
         renderPolyWeatherTrades(_pwStatsData.recent_trades || []);
     }
@@ -208,6 +210,7 @@ async function loadPolyWeather() {
         _pwStatsData = stats;
         updateTabCounts(stats);
         renderPolyWeatherStats(stats);
+        renderLiveWallet(stats);
         renderPolyWeatherChart(stats.daily_pnl || []);
         renderPolyWeatherTrades(stats.recent_trades || []);
     } catch (err) {
@@ -373,6 +376,52 @@ function renderPolyWeatherStats(stats) {
         document.getElementById('pw-updated').textContent =
             'Updated: ' + d.toLocaleString();
     }
+}
+
+// Live wallet card — visible only on Live tab. Shows real on-chain USDC
+// balance, capital currently deployed across PW_LIVE_STRATEGIES, and the
+// available headroom. Both live strategies share the same Polymarket
+// wallet, so this is a global state — not per-strategy.
+function renderLiveWallet(stats) {
+    const card = document.getElementById('pw-wallet-card');
+    if (!card) return;
+
+    if (currentSource() !== 'live') {
+        card.style.display = 'none';
+        return;
+    }
+
+    const wallet = stats.live_wallet_usdc;
+    if (wallet == null) {
+        // Field not populated yet (e.g. before first post-deploy site_exporter
+        // cycle). Hide rather than show placeholder so the layout doesn't jump.
+        card.style.display = 'none';
+        return;
+    }
+
+    const strats = stats.strategies || {};
+    let deployed = 0;
+    for (const key of PW_LIVE_STRATEGIES) {
+        const s = strats[key];
+        if (s && s.bankroll && s.bankroll.open_stake) {
+            deployed += s.bankroll.open_stake;
+        }
+    }
+    const available = wallet - deployed;
+
+    document.getElementById('pw-wallet-balance').textContent = '$' + wallet.toFixed(2);
+    document.getElementById('pw-wallet-deployed').textContent = '$' + deployed.toFixed(2);
+    document.getElementById('pw-wallet-available').textContent = '$' + available.toFixed(2);
+
+    const updEl = document.getElementById('pw-wallet-updated');
+    if (stats.live_wallet_at) {
+        const d = new Date(stats.live_wallet_at);
+        updEl.textContent = 'Wallet sampled: ' + d.toLocaleString();
+    } else {
+        updEl.textContent = '';
+    }
+
+    card.style.display = 'block';
 }
 
 function renderPolyWeatherChart(dailyPnl) {

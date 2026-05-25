@@ -40,6 +40,29 @@
                 Paper-trading to validate the edge before deploying real capital.
             </p>
 
+            <!-- Live wallet status — only visible on Live tab. Shows actual
+                 on-chain USDC balance + sum of open stakes across ALL live
+                 strategies (which share one Polymarket wallet) + available
+                 headroom. Populated by stats_exporter via clob_client
+                 get_live_wallet_usdc() since 2026-05-25. -->
+            <div id="pw-wallet-card" class="pw-wallet-card" style="display:none;">
+                <div class="pw-wallet-row">
+                    <div class="pw-wallet-stat">
+                        <div class="pw-wallet-value" id="pw-wallet-balance">—</div>
+                        <div class="pw-wallet-label">Real PM wallet (USDC)</div>
+                    </div>
+                    <div class="pw-wallet-stat">
+                        <div class="pw-wallet-value" id="pw-wallet-deployed">—</div>
+                        <div class="pw-wallet-label">Deployed (open stakes)</div>
+                    </div>
+                    <div class="pw-wallet-stat">
+                        <div class="pw-wallet-value" id="pw-wallet-available">—</div>
+                        <div class="pw-wallet-label">Available</div>
+                    </div>
+                </div>
+                <div class="pw-wallet-updated" id="pw-wallet-updated"></div>
+            </div>
+
             <!-- Strategy selector — filters all PolyWeather panels below.
                  Tail_longshot was archived 2026-04-25 (0/59 wins, >5σ rejection)
                  and is hidden from the UI as of 2026-04-28. Pre-tail-archive

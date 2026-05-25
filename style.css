@@ -682,3 +682,42 @@ body.strategy-mode #pw-cities-card { display: none; }
     font-size: 0.85em;
     margin-left: 4px;
 }
+
+/* Live wallet status card (added 2026-05-25)
+   Visible only on the Live tab; shows real PM USDC balance + capital
+   deployed across all live strategies + free headroom. */
+.pw-wallet-card {
+    background: linear-gradient(135deg, var(--bg-card) 0%, #0a1a15 100%);
+    border: 1px solid var(--accent);
+    border-radius: var(--radius);
+    padding: 18px 20px;
+    margin: 0 auto 1.5em;
+    max-width: 760px;
+}
+.pw-wallet-row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    text-align: center;
+}
+.pw-wallet-stat { padding: 4px 0; }
+.pw-wallet-value {
+    font-size: 1.6rem;
+    font-weight: 800;
+    color: var(--accent);
+    line-height: 1.1;
+}
+.pw-wallet-label {
+    font-size: 0.78rem;
+    color: var(--text-dim);
+    margin-top: 4px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+.pw-wallet-updated {
+    text-align: center;
+    font-size: 0.72rem;
+    color: var(--text-dim);
+    margin-top: 8px;
+    opacity: 0.7;
+}
