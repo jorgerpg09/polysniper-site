@@ -352,6 +352,20 @@ function renderPolyWeatherStats(stats) {
         fillEl.style.width = (pct * 100).toFixed(1) + '%';
         fillEl.classList.toggle('is-warn',   pct <= 0.5 && pct > 0.2);
         fillEl.classList.toggle('is-danger', pct <= 0.2);
+    } else {
+        // No data for this strategy yet (e.g. newly-enabled live tab before
+        // first stats_exporter cycle). Reset the bankroll tile to a clean
+        // default so we don't leave stale values from the previously-selected
+        // tab (bug discovered 2026-05-25 when no_exact_live tab inherited
+        // no_between_live's $93.18 bankroll while showing 0 bets / $0 PnL).
+        const valEl  = document.getElementById('pw-bankroll-value');
+        const lblEl  = document.getElementById('pw-bankroll-label');
+        const fillEl = document.getElementById('pw-bankroll-fill');
+        valEl.textContent = '$100.00';
+        valEl.style.color = 'var(--win)';
+        lblEl.textContent = 'Bankroll (of $100 · no bets yet)';
+        fillEl.style.width = '100%';
+        fillEl.classList.remove('is-warn', 'is-danger');
     }
 
     if (stats.updated_at) {
