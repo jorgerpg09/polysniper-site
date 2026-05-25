@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-05-25T22:23:33.254284+00:00",
+  "updated_at": "2026-05-25T22:35:18.454003+00:00",
   "hit_rate": 0.2105,
   "theoretical_pnl": -9.4413,
   "trade_count": 446,
@@ -223,22 +223,6 @@
       "resolution_date": "2026-05-25",
       "strategy": "no_exact",
       "market_slug": "highest-temperature-in-toronto-on-may-25-2026-22c",
-      "boundary_convention": "round",
-      "bet_side": "NO"
-    },
-    {
-      "logged_at": "2026-05-25T14:00:25.588320+00:00",
-      "city": "New York City",
-      "bracket": "above 70",
-      "market_type": "high",
-      "model_prob": 0.28281834879106293,
-      "market_ask": 0.028000000000000025,
-      "edge": 0.2548183487910629,
-      "kelly_size_usdc": 2.0,
-      "outcome": "LOSS",
-      "resolution_date": "2026-05-25",
-      "strategy": "no_above",
-      "market_slug": "highest-temperature-in-nyc-on-may-25-2026-70forhigher",
       "boundary_convention": "round",
       "bet_side": "NO"
     },
@@ -6412,15 +6396,15 @@
       }
     },
     "no_above": {
-      "bets": 9,
-      "resolved": 8,
+      "bets": 8,
+      "resolved": 7,
       "wins": 5,
-      "pnl_usd": 6.8751,
+      "pnl_usd": 8.8751,
       "bankroll": {
         "start": 1000.0,
-        "current": 1006.8751,
+        "current": 1008.8751,
         "open_stake": 0.0,
-        "available": 1006.8751,
+        "available": 1008.8751,
         "daily_loss": 0.0
       },
       "by_boundary": {
@@ -6431,10 +6415,10 @@
           "pnl_usd": 0.0
         },
         "round": {
-          "bets": 9,
-          "resolved": 8,
+          "bets": 8,
+          "resolved": 7,
           "wins": 5,
-          "pnl_usd": 6.8751
+          "pnl_usd": 8.8751
         }
       }
     },
