@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-05-25T10:05:01.292106+00:00",
+  "updated_at": "2026-05-25T10:15:01.430709+00:00",
   "hit_rate": 0.2114,
   "theoretical_pnl": -7.5776,
   "trade_count": 441,
@@ -230,7 +230,7 @@
       "market_ask": 0.774,
       "edge": 0.11489828410723057,
       "kelly_size_usdc": 2.0,
-      "outcome": "PENDING",
+      "outcome": "LOSS",
       "resolution_date": "2026-05-24",
       "strategy": "no_between_live",
       "market_slug": "highest-temperature-in-atlanta-on-may-24-2026-84-85f",
@@ -278,7 +278,7 @@
       "market_ask": 0.875,
       "edge": 0.11025864771559568,
       "kelly_size_usdc": 2.0,
-      "outcome": "PENDING",
+      "outcome": "LOSS",
       "resolution_date": "2026-05-24",
       "strategy": "no_exact",
       "market_slug": "highest-temperature-in-toronto-on-may-24-2026-14c",
@@ -342,7 +342,7 @@
       "market_ask": 0.77,
       "edge": 0.19695411014701758,
       "kelly_size_usdc": 2.0,
-      "outcome": "PENDING",
+      "outcome": "WIN",
       "resolution_date": "2026-05-24",
       "strategy": "no_exact",
       "market_slug": "highest-temperature-in-toronto-on-may-24-2026-15c",
@@ -422,7 +422,7 @@
       "market_ask": 0.72,
       "edge": 0.2060175723740607,
       "kelly_size_usdc": 2.0,
-      "outcome": "PENDING",
+      "outcome": "WIN",
       "resolution_date": "2026-05-24",
       "strategy": "no_exact",
       "market_slug": "highest-temperature-in-toronto-on-may-24-2026-16c",
@@ -470,7 +470,7 @@
       "market_ask": 0.51,
       "edge": 0.3073626480258136,
       "kelly_size_usdc": 2.0,
-      "outcome": "PENDING",
+      "outcome": "WIN",
       "resolution_date": "2026-05-24",
       "strategy": "no_between_live",
       "market_slug": "highest-temperature-in-nyc-on-may-24-2026-58-59f",
@@ -486,7 +486,7 @@
       "market_ask": 0.72,
       "edge": 0.1163456657706804,
       "kelly_size_usdc": 2.0,
-      "outcome": "PENDING",
+      "outcome": "LOSS",
       "resolution_date": "2026-05-24",
       "strategy": "no_between_live",
       "market_slug": "highest-temperature-in-nyc-on-may-24-2026-56-57f",
@@ -6079,14 +6079,14 @@
     },
     "no_between_live": {
       "bets": 21,
-      "resolved": 15,
-      "wins": 8,
-      "pnl_usd": -5.6422,
+      "resolved": 18,
+      "wins": 9,
+      "pnl_usd": -7.7207,
       "bankroll": {
         "start": 100.0,
-        "current": 94.3578,
+        "current": 92.2793,
         "open_stake": 0.0,
-        "available": 94.3578,
+        "available": 92.2793,
         "daily_loss": 0.0
       },
       "by_boundary": {
@@ -6098,22 +6098,22 @@
         },
         "round": {
           "bets": 21,
-          "resolved": 15,
-          "wins": 8,
-          "pnl_usd": -5.6422
+          "resolved": 18,
+          "wins": 9,
+          "pnl_usd": -7.7207
         }
       }
     },
     "no_exact": {
       "bets": 55,
-      "resolved": 42,
-      "wins": 25,
-      "pnl_usd": 1.2651,
+      "resolved": 45,
+      "wins": 27,
+      "pnl_usd": 0.6403,
       "bankroll": {
         "start": 100.0,
-        "current": 101.2651,
+        "current": 100.6403,
         "open_stake": 0.0,
-        "available": 101.2651,
+        "available": 100.6403,
         "daily_loss": 0.0
       },
       "by_boundary": {
@@ -6125,9 +6125,9 @@
         },
         "round": {
           "bets": 55,
-          "resolved": 42,
-          "wins": 25,
-          "pnl_usd": 1.2651
+          "resolved": 45,
+          "wins": 27,
+          "pnl_usd": 0.6403
         }
       }
     },
