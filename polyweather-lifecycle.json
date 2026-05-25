@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-05-25T12:42:54.465523+00:00",
-  "now": "2026-05-25T12:42:54.465523+00:00",
+  "updated_at": "2026-05-25T12:52:54.480114+00:00",
+  "now": "2026-05-25T12:52:54.480114+00:00",
   "markets": [
     {
       "condition_id": "0x091d137694061741144097d83e43f740000447e2fcecfdd2cd819dba7650f0f8",
@@ -25532,8 +25532,8 @@
           "id": 2790,
           "placed_at": "2026-05-25T12:41:00.156890+00:00",
           "size_usd": 1.0,
-          "filled_shares": null,
-          "filled_vwap": null,
+          "filled_shares": 2.857142857142857,
+          "filled_vwap": 0.35,
           "model_prob": 0.14427093534155627,
           "best_ask_at_placement": 0.35,
           "limit_price": 0.35,
@@ -25659,6 +25659,36 @@
           "fee_usd": null,
           "fill_quality": null,
           "strategy": "raw_forecast_raw"
+        },
+        {
+          "id": 2795,
+          "placed_at": "2026-05-25T12:43:20.660123+00:00",
+          "size_usd": 2.0,
+          "filled_shares": 6.0606060606060606,
+          "filled_vwap": 0.31,
+          "model_prob": 0.3415321359424797,
+          "best_ask_at_placement": 0.33,
+          "limit_price": 0.33,
+          "outcome": null,
+          "realized_pnl_usd": null,
+          "fee_usd": null,
+          "fill_quality": null,
+          "strategy": "adjacency"
+        },
+        {
+          "id": 2796,
+          "placed_at": "2026-05-25T12:45:20.694078+00:00",
+          "size_usd": 2.0,
+          "filled_shares": 6.451612903225807,
+          "filled_vwap": 0.27,
+          "model_prob": 0.3415321359424797,
+          "best_ask_at_placement": 0.31,
+          "limit_price": 0.31,
+          "outcome": null,
+          "realized_pnl_usd": null,
+          "fee_usd": null,
+          "fill_quality": null,
+          "strategy": "adjacency_hourly"
         }
       ]
     },
