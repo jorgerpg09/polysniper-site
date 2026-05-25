@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-05-25T13:59:50.580344+00:00",
+  "updated_at": "2026-05-25T14:09:50.594008+00:00",
   "hit_rate": 0.2114,
   "theoretical_pnl": -7.5776,
   "trade_count": 445,
@@ -47,6 +47,54 @@
     }
   ],
   "recent_trades": [
+    {
+      "logged_at": "2026-05-25T14:01:24.624304+00:00",
+      "city": "Toronto",
+      "bracket": "exact 22",
+      "market_type": "high",
+      "model_prob": 0.8630317477735703,
+      "market_ask": 0.75,
+      "edge": 0.11303174777357028,
+      "kelly_size_usdc": 2.0,
+      "outcome": "PENDING",
+      "resolution_date": "2026-05-25",
+      "strategy": "no_exact",
+      "market_slug": "highest-temperature-in-toronto-on-may-25-2026-22c",
+      "boundary_convention": "round",
+      "bet_side": "NO"
+    },
+    {
+      "logged_at": "2026-05-25T14:00:25.588320+00:00",
+      "city": "New York City",
+      "bracket": "above 70",
+      "market_type": "high",
+      "model_prob": 0.28281834879106293,
+      "market_ask": 0.028000000000000025,
+      "edge": 0.2548183487910629,
+      "kelly_size_usdc": 2.0,
+      "outcome": "PENDING",
+      "resolution_date": "2026-05-25",
+      "strategy": "no_above",
+      "market_slug": "highest-temperature-in-nyc-on-may-25-2026-70forhigher",
+      "boundary_convention": "round",
+      "bet_side": "NO"
+    },
+    {
+      "logged_at": "2026-05-25T14:00:23.812995+00:00",
+      "city": "London",
+      "bracket": "exact 31",
+      "market_type": "high",
+      "model_prob": 0.9012915498277625,
+      "market_ask": 0.43100000000000005,
+      "edge": 0.47029154982776245,
+      "kelly_size_usdc": 2.0,
+      "outcome": "PENDING",
+      "resolution_date": "2026-05-25",
+      "strategy": "no_exact",
+      "market_slug": "highest-temperature-in-london-on-may-25-2026-31c",
+      "boundary_convention": "round",
+      "bet_side": "NO"
+    },
     {
       "logged_at": "2026-05-25T12:41:32.750183+00:00",
       "city": "Sao Paulo",
@@ -6201,7 +6249,7 @@
       }
     },
     "no_above": {
-      "bets": 8,
+      "bets": 9,
       "resolved": 7,
       "wins": 5,
       "pnl_usd": 8.8751,
@@ -6220,7 +6268,7 @@
           "pnl_usd": 0.0
         },
         "round": {
-          "bets": 8,
+          "bets": 9,
           "resolved": 7,
           "wins": 5,
           "pnl_usd": 8.8751
@@ -6309,7 +6357,7 @@
       }
     },
     "no_exact": {
-      "bets": 60,
+      "bets": 62,
       "resolved": 45,
       "wins": 27,
       "pnl_usd": 0.6403,
@@ -6328,7 +6376,7 @@
           "pnl_usd": 0.0
         },
         "round": {
-          "bets": 60,
+          "bets": 62,
           "resolved": 45,
           "wins": 27,
           "pnl_usd": 0.6403
