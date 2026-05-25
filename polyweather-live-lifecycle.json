@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-05-25T06:45:04.761364+00:00",
-  "now": "2026-05-25T06:45:04.761364+00:00",
+  "updated_at": "2026-05-25T06:55:04.846423+00:00",
+  "now": "2026-05-25T06:55:04.846423+00:00",
   "markets": [
     {
       "condition_id": "0x3728429b82b86b6c3c78f1bd5b82ab8663c713b9d284e379345ab3b472bbcf2b",
@@ -12619,6 +12619,22 @@
           "fill_quality": null,
           "strategy": "modal_early",
           "bet_side": "YES"
+        },
+        {
+          "id": 2090,
+          "placed_at": "2026-05-25T06:41:10.592534+00:00",
+          "size_usd": 2.0,
+          "filled_shares": 28.57142857142857,
+          "filled_vwap": 0.06545,
+          "model_prob": 0.3487777818027358,
+          "best_ask_at_placement": 0.06,
+          "limit_price": 0.07,
+          "outcome": null,
+          "realized_pnl_usd": null,
+          "fee_usd": null,
+          "fill_quality": null,
+          "strategy": "modal_early",
+          "bet_side": "YES"
         }
       ]
     },
@@ -12682,6 +12698,41 @@
           "filled_vwap": null,
           "model_prob": 0.10054608123883768,
           "best_ask_at_placement": 0.72,
+          "limit_price": null,
+          "outcome": null,
+          "realized_pnl_usd": null,
+          "fee_usd": null,
+          "fill_quality": null,
+          "strategy": "no_exact",
+          "bet_side": "NO"
+        }
+      ]
+    },
+    {
+      "condition_id": "0x41975e4ee321f7e80cec798231bf1c805de2c9a4d90bdd97fd8c06d61644dd64",
+      "city": "Madrid",
+      "market_type": "high",
+      "bracket": "exact 32",
+      "bracket_type": "exact",
+      "resolution_date": "2026-05-25",
+      "game_start_time": "2026-05-24T22:00:00+00:00",
+      "last_placement_time": "2026-05-25T20:00:00+00:00",
+      "effective_close_time": "2026-05-26T01:00:00+00:00",
+      "market_end_date": null,
+      "market_slug": "highest-temperature-in-madrid-on-may-25-2026-32c",
+      "resolved_at": null,
+      "outcome": null,
+      "resolution_source": null,
+      "state": "trading",
+      "bets": [
+        {
+          "id": "sl-69551",
+          "placed_at": "2026-05-25T06:46:09.943619+00:00",
+          "size_usd": 2.0,
+          "filled_shares": null,
+          "filled_vwap": null,
+          "model_prob": 0.36090181371070357,
+          "best_ask_at_placement": 0.43,
           "limit_price": null,
           "outcome": null,
           "realized_pnl_usd": null,
@@ -12895,6 +12946,41 @@
           "limit_price": null,
           "outcome": "loss",
           "realized_pnl_usd": -2.0,
+          "fee_usd": null,
+          "fill_quality": null,
+          "strategy": "no_between_live",
+          "bet_side": "NO"
+        }
+      ]
+    },
+    {
+      "condition_id": "0x422765f5293eb0418eedaafd31e29c5a33b5c6aa764f4ae5e79e7e67e5d4c338",
+      "city": "Miami",
+      "market_type": "low",
+      "bracket": "between 80 and 81",
+      "bracket_type": "between",
+      "resolution_date": "2026-05-25",
+      "game_start_time": null,
+      "last_placement_time": null,
+      "effective_close_time": null,
+      "market_end_date": null,
+      "market_slug": "lowest-temperature-in-miami-on-may-25-2026-80-81f",
+      "resolved_at": null,
+      "outcome": null,
+      "resolution_source": null,
+      "state": "legacy",
+      "bets": [
+        {
+          "id": "sl-69561",
+          "placed_at": "2026-05-25T06:47:40.429254+00:00",
+          "size_usd": 2.0,
+          "filled_shares": null,
+          "filled_vwap": null,
+          "model_prob": 0.3275024043284218,
+          "best_ask_at_placement": 0.55,
+          "limit_price": null,
+          "outcome": null,
+          "realized_pnl_usd": null,
           "fee_usd": null,
           "fill_quality": null,
           "strategy": "no_between_live",
