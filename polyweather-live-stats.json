@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-05-25T17:19:50.517242+00:00",
+  "updated_at": "2026-05-25T17:29:50.689662+00:00",
   "hit_rate": 0.2114,
   "theoretical_pnl": -7.5776,
   "trade_count": 445,
@@ -47,6 +47,38 @@
     }
   ],
   "recent_trades": [
+    {
+      "logged_at": "2026-05-25T17:24:21.484622+00:00",
+      "city": "London",
+      "bracket": "exact 18",
+      "market_type": "low",
+      "model_prob": 0.9219306123513958,
+      "market_ask": 0.79,
+      "edge": 0.1319306123513958,
+      "kelly_size_usdc": 2.0,
+      "outcome": "PENDING",
+      "resolution_date": "2026-05-26",
+      "strategy": "no_exact",
+      "market_slug": "lowest-temperature-in-london-on-may-26-2026-18c",
+      "boundary_convention": "round",
+      "bet_side": "NO"
+    },
+    {
+      "logged_at": "2026-05-25T17:24:21.249989+00:00",
+      "city": "London",
+      "bracket": "exact 17",
+      "market_type": "low",
+      "model_prob": 0.9761291060022562,
+      "market_ask": 0.77,
+      "edge": 0.2061291060022562,
+      "kelly_size_usdc": 2.0,
+      "outcome": "PENDING",
+      "resolution_date": "2026-05-26",
+      "strategy": "no_exact",
+      "market_slug": "lowest-temperature-in-london-on-may-26-2026-17c",
+      "boundary_convention": "round",
+      "bet_side": "NO"
+    },
     {
       "logged_at": "2026-05-25T17:18:56.604566+00:00",
       "city": "Austin",
@@ -6389,7 +6421,7 @@
       }
     },
     "no_exact": {
-      "bets": 63,
+      "bets": 65,
       "resolved": 47,
       "wins": 28,
       "pnl_usd": -0.8281,
@@ -6408,7 +6440,7 @@
           "pnl_usd": 0.0
         },
         "round": {
-          "bets": 63,
+          "bets": 65,
           "resolved": 47,
           "wins": 28,
           "pnl_usd": -0.8281
