@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-05-25T05:15:01.429235+00:00",
+  "updated_at": "2026-05-25T05:25:01.395772+00:00",
   "hit_rate": 0.2114,
   "theoretical_pnl": -7.5776,
-  "trade_count": 439,
+  "trade_count": 440,
   "active_cities": 9,
   "daily_pnl": [
     {
@@ -48,6 +48,54 @@
   ],
   "recent_trades": [
     {
+      "logged_at": "2026-05-25T05:22:33.777811+00:00",
+      "city": "Paris",
+      "bracket": "exact 33",
+      "market_type": "high",
+      "model_prob": 0.8994539187611623,
+      "market_ask": 0.72,
+      "edge": 0.17945391876116235,
+      "kelly_size_usdc": 2.0,
+      "outcome": "PENDING",
+      "resolution_date": "2026-05-25",
+      "strategy": "no_exact",
+      "market_slug": "highest-temperature-in-paris-on-may-25-2026-33c",
+      "boundary_convention": "round",
+      "bet_side": "NO"
+    },
+    {
+      "logged_at": "2026-05-25T05:22:33.547479+00:00",
+      "city": "Paris",
+      "bracket": "exact 32",
+      "market_type": "high",
+      "model_prob": 0.7270443315119699,
+      "market_ask": 0.39,
+      "edge": 0.3370443315119699,
+      "kelly_size_usdc": 2.0,
+      "outcome": "PENDING",
+      "resolution_date": "2026-05-25",
+      "strategy": "no_exact",
+      "market_slug": "highest-temperature-in-paris-on-may-25-2026-32c",
+      "boundary_convention": "round",
+      "bet_side": "NO"
+    },
+    {
+      "logged_at": "2026-05-25T05:19:47.352361+00:00",
+      "city": "New York City",
+      "bracket": "between 54 and 55",
+      "market_type": "low",
+      "model_prob": 0.8370097616983985,
+      "market_ask": 0.1,
+      "edge": 0.7370097616983985,
+      "kelly_size_usdc": 2.0,
+      "outcome": "PENDING",
+      "resolution_date": "2026-05-25",
+      "strategy": "no_between_live",
+      "market_slug": "lowest-temperature-in-nyc-on-may-25-2026-54-55f",
+      "boundary_convention": "round",
+      "bet_side": "NO"
+    },
+    {
       "logged_at": "2026-05-25T05:14:15.225588+00:00",
       "city": "London",
       "bracket": "exact 33",
@@ -62,6 +110,21 @@
       "market_slug": "highest-temperature-in-london-on-may-25-2026-33c",
       "boundary_convention": "round",
       "bet_side": "NO"
+    },
+    {
+      "logged_at": "2026-05-25T05:11:10.662147+00:00",
+      "city": "Paris",
+      "bracket": "exact 31",
+      "market_type": "high",
+      "model_prob": 0.34413888862769737,
+      "market_ask": 0.06,
+      "edge": 0.2841388886276974,
+      "kelly_size_usdc": 2.0,
+      "outcome": "PENDING",
+      "resolution_date": "2026-05-25",
+      "strategy": "modal_early",
+      "market_slug": "highest-temperature-in-paris-on-may-25-2026-31c",
+      "boundary_convention": "round"
     },
     {
       "logged_at": "2026-05-24T23:12:21.484710+00:00",
@@ -5860,15 +5923,15 @@
       }
     },
     "modal_early": {
-      "bets": 7,
+      "bets": 8,
       "resolved": 7,
       "wins": 0,
       "pnl_usd": -13.7775,
       "bankroll": {
         "start": 1000.0,
         "current": 986.2226,
-        "open_stake": 0.0,
-        "available": 986.2226,
+        "open_stake": 2.0,
+        "available": 984.2226,
         "daily_loss": 1.9614
       },
       "by_boundary": {
@@ -5879,7 +5942,7 @@
           "pnl_usd": 0.0
         },
         "round": {
-          "bets": 7,
+          "bets": 8,
           "resolved": 7,
           "wins": 0,
           "pnl_usd": -13.7775
@@ -5968,7 +6031,7 @@
       }
     },
     "no_between_live": {
-      "bets": 19,
+      "bets": 20,
       "resolved": 15,
       "wins": 8,
       "pnl_usd": -5.6422,
@@ -5987,7 +6050,7 @@
           "pnl_usd": 0.0
         },
         "round": {
-          "bets": 19,
+          "bets": 20,
           "resolved": 15,
           "wins": 8,
           "pnl_usd": -5.6422
@@ -5995,7 +6058,7 @@
       }
     },
     "no_exact": {
-      "bets": 52,
+      "bets": 54,
       "resolved": 42,
       "wins": 25,
       "pnl_usd": 1.2651,
@@ -6014,7 +6077,7 @@
           "pnl_usd": 0.0
         },
         "round": {
-          "bets": 52,
+          "bets": 54,
           "resolved": 42,
           "wins": 25,
           "pnl_usd": 1.2651
