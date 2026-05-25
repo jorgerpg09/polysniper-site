@@ -94,6 +94,14 @@
                     <span class="tab-label">No below</span>
                     <span class="tab-meta" data-role="bets">—</span>
                 </button>
+                <button class="strategy-tab" data-strategy="no_exact" role="tab" aria-selected="false" title="No-side dry-run on exact temperature brackets (added 2026-05-20). 75-bet paper analysis: 65.3% WR overall, but only 30pp+ edge bucket is profitable (+$0.45 EV/$1). $100 bankroll, $2 stake, DRY_RUN paper data informs the strict live gates.">
+                    <span class="tab-label">No exact</span>
+                    <span class="tab-meta" data-role="bets">—</span>
+                </button>
+                <button class="strategy-tab" data-strategy="no_exact_live" role="tab" aria-selected="false" title="LIVE no_exact — real CLOB FAK orders on NO tokens for exact brackets (started 2026-05-25). Stricter gates than no_between: min_edge=0.30, NO ask in [$0.05, $0.55], $2/bet. Expected ~1 bet/day. Tracked separately to monitor live WR.">
+                    <span class="tab-label">No exact (live)</span>
+                    <span class="tab-meta" data-role="bets">—</span>
+                </button>
                 <!-- consensus_fires + consensus_models tabs hidden 2026-05-05.
                      Strategies disabled in PolyWeather config — projected ~3-5
                      bets/week was too slow vs other strategies firing 2/day.

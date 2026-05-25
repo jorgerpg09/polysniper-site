@@ -118,14 +118,15 @@ function setSource(source) {
 // 2026-05-05: consensus_fires + consensus_models removed from displayed
 // strategies — disabled in PolyWeather config, evaluated offline via
 // scripts/consensus_backtest.py instead. Stats data still includes them.
-const PW_STRATEGIES = ['modal_early', 'raw_forecast_corrected', 'raw_forecast_raw', 'adjacency', 'adjacency_capped', 'adjacency_hourly', 'below_tail', 'no_between', 'no_between_live', 'no_above', 'no_below'];
+const PW_STRATEGIES = ['modal_early', 'raw_forecast_corrected', 'raw_forecast_raw', 'adjacency', 'adjacency_capped', 'adjacency_hourly', 'below_tail', 'no_between', 'no_between_live', 'no_above', 'no_below', 'no_exact', 'no_exact_live'];
 
 // Strategies that actually place real CLOB orders. Live tab hides everything
 // else so the user isn't misled by paper-only counters that the exporter
 // still writes into polyweather-live-stats.json (the Mac scheduler runs the
-// full strategy battery; only no_between currently goes live, dashboarded
-// as no_between_live). Promote others here as they go live.
-const PW_LIVE_STRATEGIES = ['no_between_live'];
+// full strategy battery). As of 2026-05-25, no_between and no_exact both
+// place live orders, dashboarded as no_between_live and no_exact_live.
+// Promote others here as they go live.
+const PW_LIVE_STRATEGIES = ['no_between_live', 'no_exact_live'];
 
 // Returns the list of strategy keys that should be VISIBLE for the current
 // data source. Paper shows everything; Live shows only PW_LIVE_STRATEGIES.
