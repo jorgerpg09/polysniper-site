@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-05-25T18:19:54.757187+00:00",
-  "now": "2026-05-25T18:19:54.757187+00:00",
+  "updated_at": "2026-05-25T18:29:55.231994+00:00",
+  "now": "2026-05-25T18:29:55.231994+00:00",
   "markets": [
     {
       "condition_id": "0x3728429b82b86b6c3c78f1bd5b82ab8663c713b9d284e379345ab3b472bbcf2b",
@@ -13013,10 +13013,10 @@
       "effective_close_time": "2026-05-26T07:00:00+00:00",
       "market_end_date": "2026-05-25T12:00:00+00:00",
       "market_slug": "highest-temperature-in-atlanta-on-may-25-2026-77forbelow",
-      "resolved_at": null,
-      "outcome": null,
-      "resolution_source": null,
-      "state": "trading",
+      "resolved_at": "2026-05-25T11:11:01.691514+00:00",
+      "outcome": "loss",
+      "resolution_source": "uma_resolved",
+      "state": "resolved",
       "bets": [
         {
           "id": 2091,
@@ -13027,9 +13027,9 @@
           "model_prob": 0.31725572791168316,
           "best_ask_at_placement": 0.18,
           "limit_price": 0.19,
-          "outcome": null,
-          "realized_pnl_usd": null,
-          "fee_usd": null,
+          "outcome": "loss",
+          "realized_pnl_usd": -1.8637,
+          "fee_usd": 0.0743,
           "fill_quality": null,
           "strategy": "modal_early",
           "bet_side": "YES"
@@ -13252,6 +13252,41 @@
           "filled_vwap": null,
           "model_prob": 0.13696825222642978,
           "best_ask_at_placement": 0.75,
+          "limit_price": null,
+          "outcome": null,
+          "realized_pnl_usd": null,
+          "fee_usd": null,
+          "fill_quality": null,
+          "strategy": "no_exact",
+          "bet_side": "NO"
+        }
+      ]
+    },
+    {
+      "condition_id": "0x119ce6271de3cffce3c3cfd87476b47d2ea0ffb553bc947458f1e69267178d1c",
+      "city": "Toronto",
+      "market_type": "high",
+      "bracket": "exact 21",
+      "bracket_type": "exact",
+      "resolution_date": "2026-05-25",
+      "game_start_time": "2026-05-25T04:00:00+00:00",
+      "last_placement_time": "2026-05-26T02:00:00+00:00",
+      "effective_close_time": "2026-05-26T07:00:00+00:00",
+      "market_end_date": null,
+      "market_slug": "highest-temperature-in-toronto-on-may-25-2026-21c",
+      "resolved_at": null,
+      "outcome": null,
+      "resolution_source": null,
+      "state": "trading",
+      "bets": [
+        {
+          "id": "sl-78193",
+          "placed_at": "2026-05-25T18:23:34.586192+00:00",
+          "size_usd": 2.0,
+          "filled_shares": null,
+          "filled_vwap": null,
+          "model_prob": 0.10037834775052373,
+          "best_ask_at_placement": 0.772,
           "limit_price": null,
           "outcome": null,
           "realized_pnl_usd": null,
