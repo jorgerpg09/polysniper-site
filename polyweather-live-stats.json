@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-05-26T17:11:38.572463+00:00",
-  "live_wallet_usdc": 22.814204,
-  "live_wallet_at": "2026-05-26T17:11:38.312092+00:00",
+  "updated_at": "2026-05-26T17:21:38.706587+00:00",
+  "live_wallet_usdc": 18.694076,
+  "live_wallet_at": "2026-05-26T17:21:38.263926+00:00",
   "hit_rate": 0.2253,
   "theoretical_pnl": 76.5314,
   "trade_count": 446,
@@ -53,6 +53,38 @@
     }
   ],
   "recent_trades": [
+    {
+      "logged_at": "2026-05-26T17:19:12.189103+00:00",
+      "city": "New York City",
+      "bracket": "between 78 and 79",
+      "market_type": "high",
+      "model_prob": 0.8309080072629026,
+      "market_ask": 0.63,
+      "edge": 0.2009080072629026,
+      "kelly_size_usdc": 2.0,
+      "outcome": "PENDING",
+      "resolution_date": "2026-05-26",
+      "strategy": "no_between_live",
+      "market_slug": "highest-temperature-in-nyc-on-may-26-2026-78-79f",
+      "boundary_convention": "round",
+      "bet_side": "NO"
+    },
+    {
+      "logged_at": "2026-05-26T17:13:17.531094+00:00",
+      "city": "Hong Kong",
+      "bracket": "exact 29",
+      "market_type": "low",
+      "model_prob": 0.6935809181443036,
+      "market_ask": 0.14,
+      "edge": 0.5535809181443035,
+      "kelly_size_usdc": 2.0,
+      "outcome": "PENDING",
+      "resolution_date": "2026-05-27",
+      "strategy": "no_exact_live",
+      "market_slug": "lowest-temperature-in-hong-kong-on-may-27-2026-29c",
+      "boundary_convention": "round",
+      "bet_side": "NO"
+    },
     {
       "logged_at": "2026-05-26T17:01:11.966066+00:00",
       "city": "Sao Paulo",
@@ -6783,7 +6815,7 @@
       }
     },
     "no_between_live": {
-      "bets": 35,
+      "bets": 36,
       "resolved": 28,
       "wins": 15,
       "pnl_usd": -8.4682,
@@ -6802,7 +6834,7 @@
           "pnl_usd": 0.0
         },
         "round": {
-          "bets": 35,
+          "bets": 36,
           "resolved": 28,
           "wins": 15,
           "pnl_usd": -8.4682
@@ -6837,7 +6869,7 @@
       }
     },
     "no_exact_live": {
-      "bets": 6,
+      "bets": 7,
       "resolved": 0,
       "wins": 0,
       "pnl_usd": 0.0,
@@ -6856,7 +6888,7 @@
           "pnl_usd": 0.0
         },
         "round": {
-          "bets": 6,
+          "bets": 7,
           "resolved": 0,
           "wins": 0,
           "pnl_usd": 0.0
