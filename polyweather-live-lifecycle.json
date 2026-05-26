@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-05-26T17:51:42.071740+00:00",
-  "now": "2026-05-26T17:51:42.071740+00:00",
+  "updated_at": "2026-05-26T18:01:41.976340+00:00",
+  "now": "2026-05-26T18:01:41.976340+00:00",
   "markets": [
     {
       "condition_id": "0x3728429b82b86b6c3c78f1bd5b82ab8663c713b9d284e379345ab3b472bbcf2b",
@@ -13487,7 +13487,7 @@
       "resolved_at": null,
       "outcome": null,
       "resolution_source": null,
-      "state": "after_last_placement",
+      "state": "closed",
       "bets": [
         {
           "id": "sl-91975",
@@ -14617,6 +14617,41 @@
           "filled_vwap": null,
           "model_prob": 0.27367403277256064,
           "best_ask_at_placement": 0.06000000000000005,
+          "limit_price": null,
+          "outcome": null,
+          "realized_pnl_usd": null,
+          "fee_usd": null,
+          "fill_quality": null,
+          "strategy": "no_between_live",
+          "bet_side": "NO"
+        }
+      ]
+    },
+    {
+      "condition_id": "0x46e877c67adadd62e738382704a39c8eaa2692b7167ccb56a6a8a167834bd638",
+      "city": "Miami",
+      "market_type": "high",
+      "bracket": "between 86 and 87",
+      "bracket_type": "between",
+      "resolution_date": "2026-05-26",
+      "game_start_time": null,
+      "last_placement_time": null,
+      "effective_close_time": null,
+      "market_end_date": null,
+      "market_slug": "highest-temperature-in-miami-on-may-26-2026-86-87f",
+      "resolved_at": null,
+      "outcome": null,
+      "resolution_source": null,
+      "state": "legacy",
+      "bets": [
+        {
+          "id": "sl-93104",
+          "placed_at": "2026-05-26T17:54:11.603993+00:00",
+          "size_usd": 2.0,
+          "filled_shares": null,
+          "filled_vwap": null,
+          "model_prob": 0.3308059116795089,
+          "best_ask_at_placement": 0.44999999999999996,
           "limit_price": null,
           "outcome": null,
           "realized_pnl_usd": null,
