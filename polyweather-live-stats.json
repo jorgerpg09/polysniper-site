@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-05-26T05:01:38.680714+00:00",
-  "live_wallet_usdc": 34.415787,
-  "live_wallet_at": "2026-05-26T05:01:38.347268+00:00",
+  "updated_at": "2026-05-26T05:11:38.672644+00:00",
+  "live_wallet_usdc": 32.355787,
+  "live_wallet_at": "2026-05-26T05:11:38.289679+00:00",
   "hit_rate": 0.2262,
   "theoretical_pnl": 78.1593,
   "trade_count": 446,
@@ -53,6 +53,22 @@
     }
   ],
   "recent_trades": [
+    {
+      "logged_at": "2026-05-26T05:11:07.167334+00:00",
+      "city": "Hong Kong",
+      "bracket": "exact 31",
+      "market_type": "high",
+      "model_prob": 0.8365619686145642,
+      "market_ask": 0.41,
+      "edge": 0.42656196861456425,
+      "kelly_size_usdc": 2.0,
+      "outcome": "PENDING",
+      "resolution_date": "2026-05-26",
+      "strategy": "no_exact_live",
+      "market_slug": "highest-temperature-in-hong-kong-on-may-26-2026-31c",
+      "boundary_convention": "round",
+      "bet_side": "NO"
+    },
     {
       "logged_at": "2026-05-26T03:56:10.609297+00:00",
       "city": "Miami",
@@ -6549,7 +6565,7 @@
       }
     },
     "no_exact_live": {
-      "bets": 0,
+      "bets": 1,
       "resolved": 0,
       "wins": 0,
       "pnl_usd": 0.0,
@@ -6568,7 +6584,7 @@
           "pnl_usd": 0.0
         },
         "round": {
-          "bets": 0,
+          "bets": 1,
           "resolved": 0,
           "wins": 0,
           "pnl_usd": 0.0
