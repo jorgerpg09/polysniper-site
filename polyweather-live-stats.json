@@ -1,9 +1,9 @@
 {
-  "updated_at": "2026-05-26T05:51:38.798406+00:00",
+  "updated_at": "2026-05-26T06:01:38.734199+00:00",
   "live_wallet_usdc": 32.355787,
-  "live_wallet_at": "2026-05-26T05:51:38.500038+00:00",
-  "hit_rate": 0.2262,
-  "theoretical_pnl": 78.1593,
+  "live_wallet_at": "2026-05-26T06:01:38.321869+00:00",
+  "hit_rate": 0.2253,
+  "theoretical_pnl": 76.5314,
   "trade_count": 446,
   "active_cities": 10,
   "daily_pnl": [
@@ -49,7 +49,7 @@
     },
     {
       "date": "2026-05-25",
-      "cumulative_pnl": 78.1593
+      "cumulative_pnl": 76.5314
     }
   ],
   "recent_trades": [
@@ -222,7 +222,7 @@
       "market_ask": 0.08,
       "edge": 0.18358402931708773,
       "kelly_size_usdc": 2.0,
-      "outcome": "PENDING",
+      "outcome": "LOSS",
       "resolution_date": "2026-05-25",
       "strategy": "modal_early",
       "market_slug": "highest-temperature-in-sao-paulo-on-may-25-2026-23c",
@@ -6404,15 +6404,15 @@
     },
     "modal_early": {
       "bets": 14,
-      "resolved": 13,
+      "resolved": 14,
       "wins": 5,
-      "pnl_usd": 71.9594,
+      "pnl_usd": 70.3315,
       "bankroll": {
         "start": 1000.0,
-        "current": 1064.8952,
-        "open_stake": 2.0,
-        "available": 1062.8952,
-        "daily_loss": 3.8251
+        "current": 1063.2673,
+        "open_stake": 0.0,
+        "available": 1063.2673,
+        "daily_loss": 1.6279
       },
       "by_boundary": {
         "floor": {
@@ -6423,9 +6423,9 @@
         },
         "round": {
           "bets": 14,
-          "resolved": 13,
+          "resolved": 14,
           "wins": 5,
-          "pnl_usd": 71.9594
+          "pnl_usd": 70.3315
         }
       }
     },
