@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-05-27T00:31:39.040342+00:00",
-  "live_wallet_usdc": 25.493754,
-  "live_wallet_at": "2026-05-27T00:31:38.428470+00:00",
+  "updated_at": "2026-05-27T00:41:38.606429+00:00",
+  "live_wallet_usdc": 23.436765,
+  "live_wallet_at": "2026-05-27T00:41:38.386488+00:00",
   "hit_rate": 0.2253,
   "theoretical_pnl": 76.5314,
   "trade_count": 446,
@@ -53,6 +53,22 @@
     }
   ],
   "recent_trades": [
+    {
+      "logged_at": "2026-05-27T00:41:26.315197+00:00",
+      "city": "Paris",
+      "bracket": "exact 17",
+      "market_type": "low",
+      "model_prob": 0.7994278618810161,
+      "market_ask": 0.43,
+      "edge": 0.3694278618810161,
+      "kelly_size_usdc": 2.0,
+      "outcome": "PENDING",
+      "resolution_date": "2026-05-27",
+      "strategy": "no_exact_live",
+      "market_slug": "lowest-temperature-in-paris-on-may-27-2026-17c",
+      "boundary_convention": "round",
+      "bet_side": "NO"
+    },
     {
       "logged_at": "2026-05-26T20:47:12.400025+00:00",
       "city": "Toronto",
@@ -6901,7 +6917,7 @@
       }
     },
     "no_exact_live": {
-      "bets": 8,
+      "bets": 9,
       "resolved": 2,
       "wins": 2,
       "pnl_usd": 4.0032,
@@ -6920,7 +6936,7 @@
           "pnl_usd": 0.0
         },
         "round": {
-          "bets": 8,
+          "bets": 9,
           "resolved": 2,
           "wins": 2,
           "pnl_usd": 4.0032
