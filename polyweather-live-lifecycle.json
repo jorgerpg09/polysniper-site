@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-05-28T11:04:25.543882+00:00",
-  "now": "2026-05-28T11:04:25.543882+00:00",
+  "updated_at": "2026-05-28T11:14:25.766296+00:00",
+  "now": "2026-05-28T11:14:25.766296+00:00",
   "markets": [
     {
       "condition_id": "0x3728429b82b86b6c3c78f1bd5b82ab8663c713b9d284e379345ab3b472bbcf2b",
@@ -14254,10 +14254,10 @@
       "effective_close_time": "2026-05-27T12:00:00+00:00",
       "market_end_date": null,
       "market_slug": "lowest-temperature-in-hong-kong-on-may-27-2026-29c",
-      "resolved_at": null,
-      "outcome": null,
+      "resolved_at": "2026-05-28T11:06:22.041053+00:00",
+      "outcome": "win",
       "resolution_source": null,
-      "state": "closed",
+      "state": "resolved",
       "bets": [
         {
           "id": "sl-91898",
@@ -14268,8 +14268,8 @@
           "model_prob": 0.3064190818556964,
           "best_ask_at_placement": 0.14,
           "limit_price": null,
-          "outcome": null,
-          "realized_pnl_usd": null,
+          "outcome": "win",
+          "realized_pnl_usd": 12.2857,
           "fee_usd": null,
           "fill_quality": null,
           "strategy": "no_exact",
@@ -14795,6 +14795,111 @@
           "fee_usd": null,
           "fill_quality": null,
           "strategy": "no_exact",
+          "bet_side": "NO"
+        }
+      ]
+    },
+    {
+      "condition_id": "0x4ac3753dc89ec2c0485a8c705672fa43a78475a95b906c7463b597b4bf6fd801",
+      "city": "London",
+      "market_type": "high",
+      "bracket": "above 31",
+      "bracket_type": "above",
+      "resolution_date": "2026-05-28",
+      "game_start_time": "2026-05-27T23:00:00+00:00",
+      "last_placement_time": "2026-05-28T21:00:00+00:00",
+      "effective_close_time": "2026-05-29T02:00:00+00:00",
+      "market_end_date": "2026-05-28T12:00:00+00:00",
+      "market_slug": "highest-temperature-in-london-on-may-28-2026-31corhigher",
+      "resolved_at": null,
+      "outcome": null,
+      "resolution_source": null,
+      "state": "trading",
+      "bets": [
+        {
+          "id": 2102,
+          "placed_at": "2026-05-28T11:09:00.605670+00:00",
+          "size_usd": 2.0,
+          "filled_shares": 15.384615384615383,
+          "filled_vwap": 0.12999999999999998,
+          "model_prob": 0.4117586004979522,
+          "best_ask_at_placement": 0.12,
+          "limit_price": 0.13,
+          "outcome": null,
+          "realized_pnl_usd": null,
+          "fee_usd": null,
+          "fill_quality": null,
+          "strategy": "modal_early",
+          "bet_side": "YES"
+        }
+      ]
+    },
+    {
+      "condition_id": "0xc80313d56d2fdb6158719e549aa6ce6bd21b8a71d9c849fa32a159e78b14d909",
+      "city": "Sao Paulo",
+      "market_type": "high",
+      "bracket": "exact 22",
+      "bracket_type": "exact",
+      "resolution_date": "2026-05-28",
+      "game_start_time": "2026-05-28T03:00:00+00:00",
+      "last_placement_time": "2026-05-29T01:00:00+00:00",
+      "effective_close_time": "2026-05-29T06:00:00+00:00",
+      "market_end_date": "2026-05-28T12:00:00+00:00",
+      "market_slug": "highest-temperature-in-sao-paulo-on-may-28-2026-22c",
+      "resolved_at": null,
+      "outcome": null,
+      "resolution_source": null,
+      "state": "trading",
+      "bets": [
+        {
+          "id": 2103,
+          "placed_at": "2026-05-28T11:09:00.605670+00:00",
+          "size_usd": 2.0,
+          "filled_shares": 10.0,
+          "filled_vwap": 0.19,
+          "model_prob": 0.2513351042226616,
+          "best_ask_at_placement": 0.19,
+          "limit_price": 0.2,
+          "outcome": null,
+          "realized_pnl_usd": null,
+          "fee_usd": null,
+          "fill_quality": null,
+          "strategy": "modal_early",
+          "bet_side": "YES"
+        }
+      ]
+    },
+    {
+      "condition_id": "0xa3bb5fb6fc1e06b5c86802f4de27ac2cffbd8ea847de5e0d4b65e95d1f0b605f",
+      "city": "New York City",
+      "market_type": "high",
+      "bracket": "between 76 and 77",
+      "bracket_type": "between",
+      "resolution_date": "2026-05-28",
+      "game_start_time": "2026-05-28T04:00:00+00:00",
+      "last_placement_time": "2026-05-29T02:00:00+00:00",
+      "effective_close_time": "2026-05-29T07:00:00+00:00",
+      "market_end_date": null,
+      "market_slug": "highest-temperature-in-nyc-on-may-28-2026-76-77f",
+      "resolved_at": null,
+      "outcome": null,
+      "resolution_source": null,
+      "state": "trading",
+      "bets": [
+        {
+          "id": "sl-125030",
+          "placed_at": "2026-05-28T11:09:11.459731+00:00",
+          "size_usd": 2.0,
+          "filled_shares": null,
+          "filled_vwap": null,
+          "model_prob": 0.1749515647478308,
+          "best_ask_at_placement": 0.49,
+          "limit_price": null,
+          "outcome": null,
+          "realized_pnl_usd": null,
+          "fee_usd": null,
+          "fill_quality": null,
+          "strategy": "no_between_live",
           "bet_side": "NO"
         }
       ]
