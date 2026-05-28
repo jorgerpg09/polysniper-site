@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-05-28T15:24:22.617790+00:00",
+  "updated_at": "2026-05-28T15:34:22.472506+00:00",
   "live_wallet_usdc": 45.233282,
-  "live_wallet_at": "2026-05-28T15:24:22.265083+00:00",
+  "live_wallet_at": "2026-05-28T15:34:22.137293+00:00",
   "hit_rate": 0.2239,
   "theoretical_pnl": 71.415,
   "trade_count": 455,
@@ -57,6 +57,22 @@
     }
   ],
   "recent_trades": [
+    {
+      "logged_at": "2026-05-28T15:32:53.575748+00:00",
+      "city": "Chicago",
+      "bracket": "between 72 and 73",
+      "market_type": "high",
+      "model_prob": 0.8546549911771246,
+      "market_ask": 0.5700000000000001,
+      "edge": 0.28465499117712456,
+      "kelly_size_usdc": 2.0,
+      "outcome": "PENDING",
+      "resolution_date": "2026-05-28",
+      "strategy": "no_between",
+      "market_slug": "highest-temperature-in-chicago-on-may-28-2026-72-73f",
+      "boundary_convention": "round",
+      "bet_side": "NO"
+    },
     {
       "logged_at": "2026-05-28T14:00:53.533777+00:00",
       "city": "Atlanta",
@@ -7247,7 +7263,7 @@
       }
     },
     "no_between": {
-      "bets": 15,
+      "bets": 16,
       "resolved": 11,
       "wins": 6,
       "pnl_usd": 3.7722,
@@ -7266,7 +7282,7 @@
           "pnl_usd": 0.0
         },
         "round": {
-          "bets": 15,
+          "bets": 16,
           "resolved": 11,
           "wins": 6,
           "pnl_usd": 3.7722
