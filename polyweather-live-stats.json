@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-05-29T00:34:22.066311+00:00",
+  "updated_at": "2026-05-29T00:44:22.340972+00:00",
   "live_wallet_usdc": 50.767583,
-  "live_wallet_at": "2026-05-29T00:34:21.803587+00:00",
+  "live_wallet_at": "2026-05-29T00:44:21.907601+00:00",
   "hit_rate": 0.2239,
   "theoretical_pnl": 71.415,
   "trade_count": 455,
@@ -57,6 +57,22 @@
     }
   ],
   "recent_trades": [
+    {
+      "logged_at": "2026-05-29T00:41:15.493054+00:00",
+      "city": "New York City",
+      "bracket": "between 60 and 61",
+      "market_type": "low",
+      "model_prob": 0.8962311068756126,
+      "market_ask": 0.68,
+      "edge": 0.21623110687561253,
+      "kelly_size_usdc": 2.0,
+      "outcome": "PENDING",
+      "resolution_date": "2026-05-29",
+      "strategy": "no_between",
+      "market_slug": "lowest-temperature-in-nyc-on-may-29-2026-60-61f",
+      "boundary_convention": "round",
+      "bet_side": "NO"
+    },
     {
       "logged_at": "2026-05-28T19:31:54.013158+00:00",
       "city": "Atlanta",
@@ -7327,7 +7343,7 @@
       }
     },
     "no_between": {
-      "bets": 18,
+      "bets": 19,
       "resolved": 11,
       "wins": 6,
       "pnl_usd": 3.7722,
@@ -7346,7 +7362,7 @@
           "pnl_usd": 0.0
         },
         "round": {
-          "bets": 18,
+          "bets": 19,
           "resolved": 11,
           "wins": 6,
           "pnl_usd": 3.7722
