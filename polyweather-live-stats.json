@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-05-29T15:34:22.601945+00:00",
-  "live_wallet_usdc": 42.564627,
-  "live_wallet_at": "2026-05-29T15:34:21.976934+00:00",
+  "updated_at": "2026-05-29T15:44:22.584943+00:00",
+  "live_wallet_usdc": 40.504627,
+  "live_wallet_at": "2026-05-29T15:44:22.155077+00:00",
   "hit_rate": 0.2214,
   "theoretical_pnl": 69.4381,
   "trade_count": 455,
@@ -61,6 +61,22 @@
     }
   ],
   "recent_trades": [
+    {
+      "logged_at": "2026-05-29T15:40:56.488263+00:00",
+      "city": "London",
+      "bracket": "exact 25",
+      "market_type": "high",
+      "model_prob": 0.824552445668197,
+      "market_ask": 0.48,
+      "edge": 0.344552445668197,
+      "kelly_size_usdc": 2.0,
+      "outcome": "PENDING",
+      "resolution_date": "2026-05-29",
+      "strategy": "no_exact_live",
+      "market_slug": "highest-temperature-in-london-on-may-29-2026-25c",
+      "boundary_convention": "round",
+      "bet_side": "NO"
+    },
     {
       "logged_at": "2026-05-29T14:00:58.281425+00:00",
       "city": "Miami",
@@ -7540,7 +7556,7 @@
       }
     },
     "no_exact_live": {
-      "bets": 14,
+      "bets": 15,
       "resolved": 12,
       "wins": 7,
       "pnl_usd": 17.923,
@@ -7559,7 +7575,7 @@
           "pnl_usd": 0.0
         },
         "round": {
-          "bets": 14,
+          "bets": 15,
           "resolved": 12,
           "wins": 7,
           "pnl_usd": 17.923
