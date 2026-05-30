@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-05-30T06:34:26.032556+00:00",
-  "now": "2026-05-30T06:34:26.032556+00:00",
+  "updated_at": "2026-05-30T06:44:25.928913+00:00",
+  "now": "2026-05-30T06:44:25.928913+00:00",
   "markets": [
     {
       "condition_id": "0x3728429b82b86b6c3c78f1bd5b82ab8663c713b9d284e379345ab3b472bbcf2b",
@@ -15611,6 +15611,57 @@
           "model_prob": 0.27313942297551885,
           "best_ask_at_placement": 0.15,
           "limit_price": 0.16,
+          "outcome": null,
+          "realized_pnl_usd": null,
+          "fee_usd": null,
+          "fill_quality": null,
+          "strategy": "modal_early",
+          "bet_side": "YES"
+        },
+        {
+          "id": 2107,
+          "placed_at": "2026-05-30T06:41:00.639874+00:00",
+          "size_usd": 2.0,
+          "filled_shares": 15.384615384615383,
+          "filled_vwap": 0.11999999999999998,
+          "model_prob": 0.2517949221040143,
+          "best_ask_at_placement": 0.12,
+          "limit_price": 0.13,
+          "outcome": null,
+          "realized_pnl_usd": null,
+          "fee_usd": null,
+          "fill_quality": null,
+          "strategy": "modal_early",
+          "bet_side": "YES"
+        }
+      ]
+    },
+    {
+      "condition_id": "0xe78eb9b400d8296f10a086ce7af41e8b7160acc601001e82d7141877743d57e2",
+      "city": "London",
+      "market_type": "high",
+      "bracket": "exact 30",
+      "bracket_type": "exact",
+      "resolution_date": "2026-05-30",
+      "game_start_time": "2026-05-29T23:00:00+00:00",
+      "last_placement_time": "2026-05-30T21:00:00+00:00",
+      "effective_close_time": "2026-05-31T02:00:00+00:00",
+      "market_end_date": "2026-05-30T12:00:00+00:00",
+      "market_slug": "highest-temperature-in-london-on-may-30-2026-30c",
+      "resolved_at": null,
+      "outcome": null,
+      "resolution_source": null,
+      "state": "trading",
+      "bets": [
+        {
+          "id": 2106,
+          "placed_at": "2026-05-30T06:41:00.639874+00:00",
+          "size_usd": 2.0,
+          "filled_shares": 20.0,
+          "filled_vwap": 0.099,
+          "model_prob": 0.3247226756375499,
+          "best_ask_at_placement": 0.099,
+          "limit_price": 0.1,
           "outcome": null,
           "realized_pnl_usd": null,
           "fee_usd": null,
