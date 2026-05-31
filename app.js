@@ -115,10 +115,21 @@ function setSource(source) {
 
 // All currently-displayed strategies (tail_longshot archived 2026-04-25, hidden 2026-04-28).
 // Order matches the index.html tab order so updateTabCounts can iterate consistently.
-// 2026-05-05: consensus_fires + consensus_models removed from displayed
-// strategies — disabled in PolyWeather config, evaluated offline via
-// scripts/consensus_backtest.py instead. Stats data still includes them.
-const PW_STRATEGIES = ['modal_early', 'raw_forecast_corrected', 'raw_forecast_raw', 'adjacency', 'adjacency_capped', 'adjacency_hourly', 'below_tail', 'no_between', 'no_between_live', 'no_above', 'no_below', 'no_exact', 'no_exact_live', 'conviction_yes'];
+// 2026-05-31 (quick 260531-nj5): the dead "diagnostic battery" strategies
+// (raw_forecast_*, adjacency*, below_tail, consensus_*, tail_longshot) were
+// removed from PolyWeather's active code path. They no longer have active
+// tabs here — but the exporter JSON still contains their historical stats, so
+// they're rendered under a collapsed "Archived" grouping (PW_LEGACY_STRATEGIES)
+// to keep the history viewable.
+const PW_STRATEGIES = ['modal_early', 'no_between', 'no_between_live', 'no_above', 'no_below', 'no_exact', 'no_exact_live', 'conviction_yes'];
+
+// Dead/legacy strategies. No active tab — shown only under the collapsed
+// "Archived" grouping so their historical stats (still in the JSON) stay
+// viewable. Never counted toward the "All" badge.
+const PW_LEGACY_STRATEGIES = ['tail_longshot', 'raw_forecast_corrected', 'raw_forecast_raw', 'adjacency', 'adjacency_capped', 'adjacency_hourly', 'below_tail', 'consensus_fires', 'consensus_models'];
+
+// Every strategy key the UI can render a panel for (active + archived).
+const PW_ALL_STRATEGIES = PW_STRATEGIES.concat(PW_LEGACY_STRATEGIES);
 
 // Strategies that actually place real CLOB orders. Live tab hides everything
 // else so the user isn't misled by paper-only counters that the exporter
@@ -138,29 +149,30 @@ function visibleStrategiesForSource() {
 // the source switches and on initial load.
 function applySourceTabVisibility() {
     const visible = new Set(visibleStrategiesForSource());
+    const legacy = new Set(PW_LEGACY_STRATEGIES);
     document.querySelectorAll('.strategy-tab').forEach(btn => {
         const key = btn.dataset.strategy;
         if (key === 'all') return;  // 'all' always shown
+        // Archived/legacy tabs live inside the collapsible "Archived" group
+        // (controlled by that <details> element), so leave their display alone
+        // here — the source toggle only governs the active tab row.
+        if (legacy.has(key)) return;
         btn.style.display = visible.has(key) ? '' : 'none';
     });
-    // If currently-selected strategy got hidden, fall back to 'all'
+    // If currently-selected ACTIVE strategy got hidden, fall back to 'all'.
+    // Archived selections are valid (their data still renders), so don't reset.
     const cur = currentStrategy();
-    if (cur !== 'all' && !visible.has(cur)) {
+    if (cur !== 'all' && !legacy.has(cur) && !visible.has(cur)) {
         setStrategy('all');
     }
 }
 
-// Returns the currently selected strategy filter:
-// 'all' | 'modal_early' | 'raw_forecast_corrected' | 'raw_forecast_raw' | 'adjacency' | 'adjacency_capped' | 'below_tail'
-// (legacy 'tail_longshot' value is auto-migrated to 'all' on load — tab no longer exists)
+// Returns the currently selected strategy filter ('all' | any active key |
+// any archived key). Archived/legacy keys (e.g. 'tail_longshot') are valid
+// selections again as of 2026-05-31 — they render historical stats under the
+// collapsed "Archived" grouping.
 function currentStrategy() {
-    const stored = localStorage.getItem(PW_STRATEGY_KEY) || 'all';
-    if (stored === 'tail_longshot') {
-        // User had tail tab selected before its removal; reset to 'all'.
-        localStorage.setItem(PW_STRATEGY_KEY, 'all');
-        return 'all';
-    }
-    return stored;
+    return localStorage.getItem(PW_STRATEGY_KEY) || 'all';
 }
 
 // Returns whether the "post-fix only" toggle is on (default ON — hide pre-fix
@@ -242,12 +254,13 @@ function updateTabCounts(stats) {
     const postOnly = postfixOnly();
     const visible = new Set(visibleStrategiesForSource());
     const counts = { all: 0 };
-    for (const key of PW_STRATEGIES) {
+    // Iterate active + archived so archived tabs also get their bet badges.
+    for (const key of PW_ALL_STRATEGIES) {
         const n = _pwStrategyBets(strat[key], postOnly);
         counts[key] = n;
-        // "All" badge only sums VISIBLE strategies — on Live tab this means
-        // only live-eligible strategies count, so the badge matches what the
-        // user can see in the tab list (no phantom paper bets inflating it).
+        // "All" badge only sums VISIBLE ACTIVE strategies — archived/legacy
+        // strategies never count toward it. On Live tab this further narrows
+        // to live-eligible strategies, matching what the user can see.
         if (visible.has(key)) counts.all += n;
     }
     document.querySelectorAll('.strategy-tab').forEach(btn => {

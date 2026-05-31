@@ -584,6 +584,45 @@ footer {
     color: #fff;
 }
 
+/* Archived (legacy) strategy grouping — collapsed by default (2026-05-31).
+   Strategies removed from the active code path but whose historical stats
+   remain in the exporter JSON and viewable here. */
+.archived-strategies {
+    flex-basis: 100%;
+    margin-top: 6px;
+    font-size: 12px;
+}
+.archived-strategies > summary {
+    cursor: pointer;
+    color: var(--text-dim);
+    text-align: center;
+    padding: 6px 0;
+    list-style: none;
+    user-select: none;
+}
+.archived-strategies > summary:hover {
+    color: var(--text);
+}
+.archived-strategies[open] > summary {
+    margin-bottom: 8px;
+}
+.archived-strategy-tabs {
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+/* Archived tabs read as dimmed/struck-through unless selected. */
+.archived-strategy-tabs .strategy-tab:not(.is-active) {
+    opacity: 0.55;
+    text-decoration: line-through;
+    text-decoration-color: var(--text-dim);
+    text-decoration-thickness: 1px;
+}
+.archived-strategy-tabs .strategy-tab:not(.is-active):hover {
+    opacity: 0.85;
+}
+
 /* Boundary-convention filter (added 2026-04-25 after the floor→round fix) */
 .boundary-filter {
     display: flex;
