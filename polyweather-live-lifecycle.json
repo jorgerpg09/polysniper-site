@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-06-01T06:34:29.046201+00:00",
-  "now": "2026-06-01T06:34:29.046201+00:00",
+  "updated_at": "2026-06-01T06:44:27.708428+00:00",
+  "now": "2026-06-01T06:44:27.708428+00:00",
   "markets": [
     {
       "condition_id": "0x3728429b82b86b6c3c78f1bd5b82ab8663c713b9d284e379345ab3b472bbcf2b",
@@ -16348,6 +16348,76 @@
           "fee_usd": null,
           "fill_quality": null,
           "strategy": "no_between",
+          "bet_side": "NO"
+        }
+      ]
+    },
+    {
+      "condition_id": "0xee6f06587566c7e74fee42a4f99b1211776184a6cde5d108de2eab7b77b5f963",
+      "city": "Paris",
+      "market_type": "high",
+      "bracket": "exact 27",
+      "bracket_type": "exact",
+      "resolution_date": "2026-06-01",
+      "game_start_time": "2026-05-31T22:00:00+00:00",
+      "last_placement_time": "2026-06-01T20:00:00+00:00",
+      "effective_close_time": "2026-06-02T01:00:00+00:00",
+      "market_end_date": "2026-06-01T12:00:00+00:00",
+      "market_slug": "highest-temperature-in-paris-on-june-1-2026-27c",
+      "resolved_at": null,
+      "outcome": null,
+      "resolution_source": null,
+      "state": "trading",
+      "bets": [
+        {
+          "id": 2112,
+          "placed_at": "2026-06-01T06:41:00.672125+00:00",
+          "size_usd": 2.0,
+          "filled_shares": 11.904761904761903,
+          "filled_vwap": 0.167,
+          "model_prob": 0.2890689008706543,
+          "best_ask_at_placement": 0.167,
+          "limit_price": 0.168,
+          "outcome": null,
+          "realized_pnl_usd": null,
+          "fee_usd": null,
+          "fill_quality": null,
+          "strategy": "modal_early",
+          "bet_side": "YES"
+        }
+      ]
+    },
+    {
+      "condition_id": "0x904d26627d84323813bac90418bde2daafff0f50c4066f3bc6fbfc6f26077609",
+      "city": "Paris",
+      "market_type": "high",
+      "bracket": "exact 26",
+      "bracket_type": "exact",
+      "resolution_date": "2026-06-01",
+      "game_start_time": "2026-05-31T22:00:00+00:00",
+      "last_placement_time": "2026-06-01T20:00:00+00:00",
+      "effective_close_time": "2026-06-02T01:00:00+00:00",
+      "market_end_date": null,
+      "market_slug": "highest-temperature-in-paris-on-june-1-2026-26c",
+      "resolved_at": null,
+      "outcome": null,
+      "resolution_source": null,
+      "state": "trading",
+      "bets": [
+        {
+          "id": "sl-192377",
+          "placed_at": "2026-06-01T06:41:12.927043+00:00",
+          "size_usd": 2.0,
+          "filled_shares": null,
+          "filled_vwap": null,
+          "model_prob": 0.18582946679913243,
+          "best_ask_at_placement": 0.49,
+          "limit_price": null,
+          "outcome": null,
+          "realized_pnl_usd": null,
+          "fee_usd": null,
+          "fill_quality": null,
+          "strategy": "no_exact",
           "bet_side": "NO"
         }
       ]
