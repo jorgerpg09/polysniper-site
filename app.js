@@ -115,6 +115,7 @@ function setSource(source) {
 
 // All currently-displayed strategies (tail_longshot archived 2026-04-25, hidden 2026-04-28).
 // Order matches the index.html tab order so updateTabCounts can iterate consistently.
+<<<<<<< Updated upstream
 // 2026-05-31 (quick 260531-nj5): the dead "diagnostic battery" strategies
 // (raw_forecast_*, adjacency*, below_tail, consensus_*, tail_longshot) were
 // removed from PolyWeather's active code path. They no longer have active
@@ -130,6 +131,12 @@ const PW_LEGACY_STRATEGIES = ['tail_longshot', 'raw_forecast_corrected', 'raw_fo
 
 // Every strategy key the UI can render a panel for (active + archived).
 const PW_ALL_STRATEGIES = PW_STRATEGIES.concat(PW_LEGACY_STRATEGIES);
+=======
+// 2026-05-05: consensus_fires + consensus_models removed from displayed
+// strategies — disabled in PolyWeather config, evaluated offline via
+// scripts/consensus_backtest.py instead. Stats data still includes them.
+const PW_STRATEGIES = ['modal_early', 'raw_forecast_corrected', 'raw_forecast_raw', 'adjacency', 'adjacency_capped', 'adjacency_hourly', 'below_tail', 'no_between', 'no_between_live', 'no_above', 'no_below', 'no_exact', 'no_exact_live', 'conviction_yes'];
+>>>>>>> Stashed changes
 
 // Strategies that actually place real CLOB orders. Live tab hides everything
 // else so the user isn't misled by paper-only counters that the exporter

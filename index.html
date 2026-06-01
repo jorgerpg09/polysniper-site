@@ -101,6 +101,7 @@
                     <span class="tab-label">No exact (live)</span>
                     <span class="tab-meta" data-role="bets">—</span>
                 </button>
+<<<<<<< Updated upstream
                 <!-- Archived (legacy) strategies. Removed from PolyWeather's
                      active code path 2026-05-31 (quick 260531-nj5). The
                      exporter JSON still contains their historical stats, so
@@ -147,6 +148,17 @@
                         </button>
                     </div>
                 </details>
+=======
+                <button class="strategy-tab" data-strategy="conviction_yes" role="tab" aria-selected="false" title="YES-side conviction (added 2026-05-31). Bets YES on cheap brackets (ask 0.10-0.25) the model is bullish on (model_prob &gt; ask), ask depth &gt;= 10. PAPER ONLY — never places a live CLOB order. Validated in backtest 260531-gvs.">
+                    <span class="tab-label">Conviction yes</span>
+                    <span class="tab-meta" data-role="bets">—</span>
+                </button>
+                <!-- consensus_fires + consensus_models tabs hidden 2026-05-05.
+                     Strategies disabled in PolyWeather config — projected ~3-5
+                     bets/week was too slow vs other strategies firing 2/day.
+                     signal_cycle_brackets keeps logging; re-evaluate offline
+                     in ~2 weeks via scripts/consensus_backtest.py. -->
+>>>>>>> Stashed changes
             </div>
 
             <!-- Boundary-convention filter (added 2026-04-25). Default ON =
