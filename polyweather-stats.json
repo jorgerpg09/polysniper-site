@@ -1,10 +1,10 @@
 {
-  "updated_at": "2026-06-01T19:46:49.369419+00:00",
+  "updated_at": "2026-06-01T19:56:49.400240+00:00",
   "live_wallet_usdc": 45.880735,
-  "live_wallet_at": "2026-06-01T19:46:49.022416+00:00",
+  "live_wallet_at": "2026-06-01T19:56:49.007626+00:00",
   "hit_rate": 0.2128,
   "theoretical_pnl": -102.2599,
-  "trade_count": 1365,
+  "trade_count": 1366,
   "active_cities": 10,
   "daily_pnl": [
     {
@@ -129,6 +129,21 @@
     }
   ],
   "recent_trades": [
+    {
+      "logged_at": "2026-06-01T19:53:21.672901+00:00",
+      "city": "Miami",
+      "bracket": "between 90 and 91",
+      "market_type": "high",
+      "model_prob": 0.28986558552447267,
+      "market_ask": 0.26,
+      "edge": 0.02986558552447266,
+      "kelly_size_usdc": 2.0,
+      "outcome": "PENDING",
+      "resolution_date": "2026-06-01",
+      "strategy": "conviction_yes",
+      "market_slug": "highest-temperature-in-miami-on-june-1-2026-90-91f",
+      "boundary_convention": "round"
+    },
     {
       "logged_at": "2026-06-01T19:35:21.147096+00:00",
       "city": "Chicago",
@@ -8654,15 +8669,15 @@
       }
     },
     "conviction_yes": {
-      "bets": 20,
+      "bets": 21,
       "resolved": 0,
       "wins": 0,
       "pnl_usd": 0.0,
       "bankroll": {
         "start": 1000.0,
         "current": 1000.0,
-        "open_stake": 40.0,
-        "available": 960.0,
+        "open_stake": 42.0,
+        "available": 958.0,
         "daily_loss": 0.0
       },
       "by_boundary": {
@@ -8673,7 +8688,7 @@
           "pnl_usd": 0.0
         },
         "round": {
-          "bets": 20,
+          "bets": 21,
           "resolved": 0,
           "wins": 0,
           "pnl_usd": 0.0
