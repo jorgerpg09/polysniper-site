@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-06-01T23:06:53.299860+00:00",
-  "now": "2026-06-01T23:06:53.299860+00:00",
+  "updated_at": "2026-06-01T23:16:53.640612+00:00",
+  "now": "2026-06-01T23:16:53.640612+00:00",
   "markets": [
     {
       "condition_id": "0x681518875b966a13c2dc10020eb48bcd27ab8c474e49f7552124c16431c8d844",
@@ -44685,6 +44685,76 @@
           "fill_quality": null,
           "strategy": "conviction_yes",
           "bet_side": "YES"
+        }
+      ]
+    },
+    {
+      "condition_id": "0xb1067b23b81ebcd458d2dfd0e45d31820fb45fee100fa3c30116eb252074028a",
+      "city": "Seoul",
+      "market_type": "high",
+      "bracket": "exact 29",
+      "bracket_type": "exact",
+      "resolution_date": "2026-06-02",
+      "game_start_time": "2026-06-01T15:00:00+00:00",
+      "last_placement_time": "2026-06-02T13:00:00+00:00",
+      "effective_close_time": "2026-06-02T18:00:00+00:00",
+      "market_end_date": null,
+      "market_slug": "highest-temperature-in-seoul-on-june-2-2026-29c",
+      "resolved_at": null,
+      "outcome": null,
+      "resolution_source": null,
+      "state": "trading",
+      "bets": [
+        {
+          "id": "sl-381017",
+          "placed_at": "2026-06-01T23:12:01.649197+00:00",
+          "size_usd": 2.0,
+          "filled_shares": null,
+          "filled_vwap": null,
+          "model_prob": 0.049838741006682175,
+          "best_ask_at_placement": 0.62,
+          "limit_price": null,
+          "outcome": null,
+          "realized_pnl_usd": null,
+          "fee_usd": null,
+          "fill_quality": null,
+          "strategy": "no_exact",
+          "bet_side": "NO"
+        }
+      ]
+    },
+    {
+      "condition_id": "0x4e608eb6d0fe25de0549ab3956928926d3a2b219e3feaed59d4c9ef80de99169",
+      "city": "Seoul",
+      "market_type": "high",
+      "bracket": "above 30",
+      "bracket_type": "above",
+      "resolution_date": "2026-06-02",
+      "game_start_time": "2026-06-01T15:00:00+00:00",
+      "last_placement_time": "2026-06-02T13:00:00+00:00",
+      "effective_close_time": "2026-06-02T18:00:00+00:00",
+      "market_end_date": null,
+      "market_slug": "highest-temperature-in-seoul-on-june-2-2026-30corhigher",
+      "resolved_at": null,
+      "outcome": null,
+      "resolution_source": null,
+      "state": "trading",
+      "bets": [
+        {
+          "id": "sl-381018",
+          "placed_at": "2026-06-01T23:12:01.800037+00:00",
+          "size_usd": 2.0,
+          "filled_shares": null,
+          "filled_vwap": null,
+          "model_prob": 0.0205301629609822,
+          "best_ask_at_placement": 0.74,
+          "limit_price": null,
+          "outcome": null,
+          "realized_pnl_usd": null,
+          "fee_usd": null,
+          "fill_quality": null,
+          "strategy": "no_above",
+          "bet_side": "NO"
         }
       ]
     }
