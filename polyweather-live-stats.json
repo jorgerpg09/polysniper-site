@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-06-01T22:34:22.193779+00:00",
+  "updated_at": "2026-06-01T22:44:22.321049+00:00",
   "live_wallet_usdc": 53.469065,
-  "live_wallet_at": "2026-06-01T22:34:21.829808+00:00",
+  "live_wallet_at": "2026-06-01T22:44:21.855222+00:00",
   "hit_rate": 0.223,
   "theoretical_pnl": 76.2912,
   "trade_count": 463,
@@ -317,7 +317,7 @@
       "market_ask": 0.742,
       "edge": 0.23736294291534288,
       "kelly_size_usdc": 2.0,
-      "outcome": "LOSS",
+      "outcome": "WIN",
       "resolution_date": "2026-05-31",
       "strategy": "no_between",
       "market_slug": "highest-temperature-in-miami-on-may-31-2026-94-95f",
@@ -333,7 +333,7 @@
       "market_ask": 0.51,
       "edge": 0.316412984446659,
       "kelly_size_usdc": 2.0,
-      "outcome": "LOSS",
+      "outcome": "WIN",
       "resolution_date": "2026-05-31",
       "strategy": "no_between_live",
       "market_slug": "highest-temperature-in-nyc-on-may-31-2026-74-75f",
@@ -349,7 +349,7 @@
       "market_ask": 0.58,
       "edge": 0.249378461639577,
       "kelly_size_usdc": 2.0,
-      "outcome": "LOSS",
+      "outcome": "WIN",
       "resolution_date": "2026-05-31",
       "strategy": "no_between",
       "market_slug": "highest-temperature-in-austin-on-may-31-2026-90-91f",
@@ -396,7 +396,7 @@
       "market_ask": 0.52,
       "edge": 0.3184871983270958,
       "kelly_size_usdc": 2.0,
-      "outcome": "LOSS",
+      "outcome": "WIN",
       "resolution_date": "2026-05-31",
       "strategy": "no_between_live",
       "market_slug": "highest-temperature-in-miami-on-may-31-2026-90-91f",
@@ -1837,7 +1837,7 @@
       "market_ask": 0.20899999999999996,
       "edge": 0.4959186853732067,
       "kelly_size_usdc": 2.0,
-      "outcome": "WIN",
+      "outcome": "LOSS",
       "resolution_date": "2026-05-25",
       "strategy": "no_between",
       "market_slug": "lowest-temperature-in-miami-on-may-25-2026-78-79f",
@@ -2248,7 +2248,7 @@
       "market_ask": 0.55,
       "edge": 0.12249759567157814,
       "kelly_size_usdc": 2.0,
-      "outcome": "LOSS",
+      "outcome": "WIN",
       "resolution_date": "2026-05-25",
       "strategy": "no_between_live",
       "market_slug": "lowest-temperature-in-miami-on-may-25-2026-80-81f",
@@ -8197,13 +8197,13 @@
     "no_between": {
       "bets": 41,
       "resolved": 34,
-      "wins": 17,
-      "pnl_usd": -5.6653,
+      "wins": 18,
+      "pnl_usd": -9.0909,
       "bankroll": {
         "start": 1000.0,
-        "current": 994.3347,
+        "current": 990.9091,
         "open_stake": 0.0,
-        "available": 994.3347,
+        "available": 990.9091,
         "daily_loss": 0.0
       },
       "by_boundary": {
@@ -8216,21 +8216,21 @@
         "round": {
           "bets": 41,
           "resolved": 34,
-          "wins": 17,
-          "pnl_usd": -5.6653
+          "wins": 18,
+          "pnl_usd": -9.0909
         }
       }
     },
     "no_between_live": {
       "bets": 46,
       "resolved": 45,
-      "wins": 23,
-      "pnl_usd": -15.0612,
+      "wins": 26,
+      "pnl_usd": -3.657,
       "bankroll": {
         "start": 100.0,
-        "current": 84.9388,
+        "current": 96.343,
         "open_stake": 0.0,
-        "available": 84.9388,
+        "available": 96.343,
         "daily_loss": 0.0
       },
       "by_boundary": {
@@ -8243,8 +8243,8 @@
         "round": {
           "bets": 46,
           "resolved": 45,
-          "wins": 23,
-          "pnl_usd": -15.0612
+          "wins": 26,
+          "pnl_usd": -3.657
         }
       }
     },
