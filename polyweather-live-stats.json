@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-06-01T17:14:22.049052+00:00",
+  "updated_at": "2026-06-01T17:24:22.117922+00:00",
   "live_wallet_usdc": 45.880735,
-  "live_wallet_at": "2026-06-01T17:14:21.802682+00:00",
+  "live_wallet_at": "2026-06-01T17:24:21.780893+00:00",
   "hit_rate": 0.223,
   "theoretical_pnl": 76.2912,
   "trade_count": 463,
@@ -69,6 +69,22 @@
     }
   ],
   "recent_trades": [
+    {
+      "logged_at": "2026-06-01T17:21:57.466140+00:00",
+      "city": "Sao Paulo",
+      "bracket": "below 19",
+      "market_type": "high",
+      "model_prob": 0.9542314250045922,
+      "market_ask": 0.629,
+      "edge": 0.32523142500459223,
+      "kelly_size_usdc": 2.0,
+      "outcome": "PENDING",
+      "resolution_date": "2026-06-01",
+      "strategy": "no_below",
+      "market_slug": "highest-temperature-in-sao-paulo-on-june-1-2026-19corbelow",
+      "boundary_convention": "round",
+      "bet_side": "NO"
+    },
     {
       "logged_at": "2026-06-01T16:44:55.824049+00:00",
       "city": "Miami",
@@ -8152,7 +8168,7 @@
       }
     },
     "no_below": {
-      "bets": 2,
+      "bets": 3,
       "resolved": 2,
       "wins": 0,
       "pnl_usd": -4.0,
@@ -8171,7 +8187,7 @@
           "pnl_usd": 0.0
         },
         "round": {
-          "bets": 2,
+          "bets": 3,
           "resolved": 2,
           "wins": 0,
           "pnl_usd": -4.0
