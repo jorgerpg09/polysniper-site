@@ -1,9 +1,9 @@
 {
-  "updated_at": "2026-06-01T05:04:22.597967+00:00",
+  "updated_at": "2026-06-01T05:14:22.603507+00:00",
   "live_wallet_usdc": 52.030701,
-  "live_wallet_at": "2026-06-01T05:04:22.083868+00:00",
-  "hit_rate": 0.218,
-  "theoretical_pnl": 61.5063,
+  "live_wallet_at": "2026-06-01T05:14:22.176169+00:00",
+  "hit_rate": 0.2239,
+  "theoretical_pnl": 78.3007,
   "trade_count": 462,
   "active_cities": 10,
   "daily_pnl": [
@@ -65,7 +65,7 @@
     },
     {
       "date": "2026-05-31",
-      "cumulative_pnl": 61.5063
+      "cumulative_pnl": 78.3007
     }
   ],
   "recent_trades": [
@@ -204,7 +204,7 @@
       "market_ask": 0.18,
       "edge": 0.12029536103597949,
       "kelly_size_usdc": 2.0,
-      "outcome": "PENDING",
+      "outcome": "WIN",
       "resolution_date": "2026-05-31",
       "strategy": "modal_early",
       "market_slug": "highest-temperature-in-london-on-may-31-2026-24c",
@@ -251,7 +251,7 @@
       "market_ask": 0.19,
       "edge": 0.07765357333816086,
       "kelly_size_usdc": 2.0,
-      "outcome": "PENDING",
+      "outcome": "WIN",
       "resolution_date": "2026-05-31",
       "strategy": "modal_early",
       "market_slug": "highest-temperature-in-london-on-may-31-2026-24c",
@@ -7940,14 +7940,14 @@
     },
     "modal_early": {
       "bets": 30,
-      "resolved": 27,
-      "wins": 6,
-      "pnl_usd": 55.3064,
+      "resolved": 29,
+      "wins": 8,
+      "pnl_usd": 72.1008,
       "bankroll": {
         "start": 1000.0,
         "current": 1063.2673,
-        "open_stake": 6.0,
-        "available": 1057.2673,
+        "open_stake": 2.0,
+        "available": 1061.2673,
         "daily_loss": 0.0
       },
       "by_boundary": {
@@ -7959,9 +7959,9 @@
         },
         "round": {
           "bets": 30,
-          "resolved": 27,
-          "wins": 6,
-          "pnl_usd": 55.3064
+          "resolved": 29,
+          "wins": 8,
+          "pnl_usd": 72.1008
         }
       }
     },
