@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-06-01T16:44:26.502445+00:00",
-  "now": "2026-06-01T16:44:26.502445+00:00",
+  "updated_at": "2026-06-01T16:54:26.896954+00:00",
+  "now": "2026-06-01T16:54:26.896954+00:00",
   "markets": [
     {
       "condition_id": "0x3728429b82b86b6c3c78f1bd5b82ab8663c713b9d284e379345ab3b472bbcf2b",
@@ -17535,6 +17535,41 @@
           "limit_price": null,
           "outcome": "loss",
           "realized_pnl_usd": -2.0,
+          "fee_usd": null,
+          "fill_quality": null,
+          "strategy": "no_between",
+          "bet_side": "NO"
+        }
+      ]
+    },
+    {
+      "condition_id": "0x304df128a54337b1daeec77a1489f8fb7cd78610042c6a46575600e85a0323cf",
+      "city": "Miami",
+      "market_type": "high",
+      "bracket": "between 92 and 93",
+      "bracket_type": "between",
+      "resolution_date": "2026-06-01",
+      "game_start_time": null,
+      "last_placement_time": null,
+      "effective_close_time": null,
+      "market_end_date": null,
+      "market_slug": "highest-temperature-in-miami-on-june-1-2026-92-93f",
+      "resolved_at": null,
+      "outcome": null,
+      "resolution_source": null,
+      "state": "legacy",
+      "bets": [
+        {
+          "id": "sl-201001",
+          "placed_at": "2026-06-01T16:44:55.824049+00:00",
+          "size_usd": 2.0,
+          "filled_shares": null,
+          "filled_vwap": null,
+          "model_prob": 0.20986914715171545,
+          "best_ask_at_placement": 0.5800000000000001,
+          "limit_price": null,
+          "outcome": null,
+          "realized_pnl_usd": null,
           "fee_usd": null,
           "fill_quality": null,
           "strategy": "no_between",
