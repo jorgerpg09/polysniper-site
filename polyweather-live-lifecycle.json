@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-06-02T18:56:44.335391+00:00",
-  "now": "2026-06-02T18:56:44.335391+00:00",
+  "updated_at": "2026-06-02T19:06:44.842957+00:00",
+  "now": "2026-06-02T19:06:44.842957+00:00",
   "markets": [
     {
       "condition_id": "0x681518875b966a13c2dc10020eb48bcd27ab8c474e49f7552124c16431c8d844",
@@ -17802,7 +17802,7 @@
       "resolved_at": null,
       "outcome": null,
       "resolution_source": null,
-      "state": "after_last_placement",
+      "state": "closed",
       "bets": [
         {
           "id": "sl-212305",
@@ -18389,6 +18389,41 @@
           "model_prob": 0.17600091187437433,
           "best_ask_at_placement": 0.1,
           "limit_price": 0.11,
+          "outcome": null,
+          "realized_pnl_usd": null,
+          "fee_usd": null,
+          "fill_quality": null,
+          "strategy": "conviction_yes",
+          "bet_side": "YES"
+        }
+      ]
+    },
+    {
+      "condition_id": "0xef40fa8c49d8e4f9f49bd795e7a43d624d9aeca54703895276b848a4a048c334",
+      "city": "Toronto",
+      "market_type": "high",
+      "bracket": "above 27",
+      "bracket_type": "above",
+      "resolution_date": "2026-06-02",
+      "game_start_time": "2026-06-02T04:00:00+00:00",
+      "last_placement_time": "2026-06-03T08:00:00+00:00",
+      "effective_close_time": "2026-06-03T12:00:00+00:00",
+      "market_end_date": "2026-06-02T12:00:00+00:00",
+      "market_slug": "highest-temperature-in-toronto-on-june-2-2026-27corhigher",
+      "resolved_at": null,
+      "outcome": null,
+      "resolution_source": null,
+      "state": "trading",
+      "bets": [
+        {
+          "id": 2126,
+          "placed_at": "2026-06-02T18:58:15.860364+00:00",
+          "size_usd": 2.0,
+          "filled_shares": 21.27659574468085,
+          "filled_vwap": 0.088,
+          "model_prob": 0.10224243725202897,
+          "best_ask_at_placement": 0.093,
+          "limit_price": 0.094,
           "outcome": null,
           "realized_pnl_usd": null,
           "fee_usd": null,
