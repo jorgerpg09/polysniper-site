@@ -1,10 +1,10 @@
 {
-  "updated_at": "2026-06-02T18:56:39.392466+00:00",
+  "updated_at": "2026-06-02T19:06:39.188016+00:00",
   "live_wallet_usdc": 43.227099,
-  "live_wallet_at": "2026-06-02T18:56:39.123335+00:00",
+  "live_wallet_at": "2026-06-02T19:06:38.911382+00:00",
   "hit_rate": 0.2222,
   "theoretical_pnl": 74.2203,
-  "trade_count": 476,
+  "trade_count": 477,
   "active_cities": 12,
   "daily_pnl": [
     {
@@ -73,6 +73,21 @@
     }
   ],
   "recent_trades": [
+    {
+      "logged_at": "2026-06-02T18:58:15.860364+00:00",
+      "city": "Toronto",
+      "bracket": "above 27",
+      "market_type": "high",
+      "model_prob": 0.10224243725202897,
+      "market_ask": 0.093,
+      "edge": 0.009242437252028973,
+      "kelly_size_usdc": 2.0,
+      "outcome": "PENDING",
+      "resolution_date": "2026-06-02",
+      "strategy": "conviction_yes",
+      "market_slug": "highest-temperature-in-toronto-on-june-2-2026-27corhigher",
+      "boundary_convention": "round"
+    },
     {
       "logged_at": "2026-06-02T18:09:13.916419+00:00",
       "city": "New York City",
@@ -8313,15 +8328,15 @@
       }
     },
     "conviction_yes": {
-      "bets": 11,
+      "bets": 12,
       "resolved": 0,
       "wins": 0,
       "pnl_usd": 0.0,
       "bankroll": {
         "start": 1000.0,
         "current": 1000.0,
-        "open_stake": 22.0,
-        "available": 978.0,
+        "open_stake": 24.0,
+        "available": 976.0,
         "daily_loss": 0.0
       },
       "by_boundary": {
@@ -8332,7 +8347,7 @@
           "pnl_usd": 0.0
         },
         "round": {
-          "bets": 11,
+          "bets": 12,
           "resolved": 0,
           "wins": 0,
           "pnl_usd": 0.0
