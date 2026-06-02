@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-06-02T13:56:44.725138+00:00",
-  "now": "2026-06-02T13:56:44.725138+00:00",
+  "updated_at": "2026-06-02T14:06:44.188728+00:00",
+  "now": "2026-06-02T14:06:44.188728+00:00",
   "markets": [
     {
       "condition_id": "0x681518875b966a13c2dc10020eb48bcd27ab8c474e49f7552124c16431c8d844",
@@ -17802,7 +17802,7 @@
       "resolved_at": null,
       "outcome": null,
       "resolution_source": null,
-      "state": "trading",
+      "state": "after_last_placement",
       "bets": [
         {
           "id": "sl-212305",
@@ -17994,6 +17994,146 @@
           "fill_quality": null,
           "strategy": "no_between_live",
           "bet_side": "NO"
+        }
+      ]
+    },
+    {
+      "condition_id": "0x1455509a7136138c6348cf906732227bf3198065e9b30eb65e52d9b68c99c79f",
+      "city": "Madrid",
+      "market_type": "high",
+      "bracket": "exact 32",
+      "bracket_type": "exact",
+      "resolution_date": "2026-06-02",
+      "game_start_time": "2026-06-01T22:00:00+00:00",
+      "last_placement_time": "2026-06-03T08:00:00+00:00",
+      "effective_close_time": "2026-06-03T12:00:00+00:00",
+      "market_end_date": "2026-06-02T12:00:00+00:00",
+      "market_slug": "highest-temperature-in-madrid-on-june-2-2026-32c",
+      "resolved_at": null,
+      "outcome": null,
+      "resolution_source": null,
+      "state": "trading",
+      "bets": [
+        {
+          "id": 2116,
+          "placed_at": "2026-06-02T14:00:17.183085+00:00",
+          "size_usd": 2.0,
+          "filled_shares": 11.11111111111111,
+          "filled_vwap": 0.14,
+          "model_prob": 0.2912447172853633,
+          "best_ask_at_placement": 0.17,
+          "limit_price": 0.18,
+          "outcome": null,
+          "realized_pnl_usd": null,
+          "fee_usd": null,
+          "fill_quality": null,
+          "strategy": "conviction_yes",
+          "bet_side": "YES"
+        }
+      ]
+    },
+    {
+      "condition_id": "0x1613544e91a8bc6f7df32b9a6b2b6588f597d03c3ba7a07607c4768f8c8428a6",
+      "city": "London",
+      "market_type": "high",
+      "bracket": "exact 20",
+      "bracket_type": "exact",
+      "resolution_date": "2026-06-02",
+      "game_start_time": "2026-06-01T23:00:00+00:00",
+      "last_placement_time": "2026-06-03T08:00:00+00:00",
+      "effective_close_time": "2026-06-03T12:00:00+00:00",
+      "market_end_date": "2026-06-02T12:00:00+00:00",
+      "market_slug": "highest-temperature-in-london-on-june-2-2026-20c",
+      "resolved_at": null,
+      "outcome": null,
+      "resolution_source": null,
+      "state": "trading",
+      "bets": [
+        {
+          "id": 2118,
+          "placed_at": "2026-06-02T14:02:15.504835+00:00",
+          "size_usd": 2.0,
+          "filled_shares": 18.181818181818183,
+          "filled_vwap": 0.1,
+          "model_prob": 0.17977727427864076,
+          "best_ask_at_placement": 0.1,
+          "limit_price": 0.11,
+          "outcome": null,
+          "realized_pnl_usd": null,
+          "fee_usd": null,
+          "fill_quality": null,
+          "strategy": "conviction_yes",
+          "bet_side": "YES"
+        }
+      ]
+    },
+    {
+      "condition_id": "0x5444f5bc0aeb08667df5fabc8b48ab59b919e1add47d115b5be54284d32589cc",
+      "city": "Atlanta",
+      "market_type": "high",
+      "bracket": "between 78 and 79",
+      "bracket_type": "between",
+      "resolution_date": "2026-06-02",
+      "game_start_time": "2026-06-02T04:00:00+00:00",
+      "last_placement_time": "2026-06-03T08:00:00+00:00",
+      "effective_close_time": "2026-06-03T12:00:00+00:00",
+      "market_end_date": "2026-06-02T12:00:00+00:00",
+      "market_slug": "highest-temperature-in-atlanta-on-june-2-2026-78-79f",
+      "resolved_at": null,
+      "outcome": null,
+      "resolution_source": null,
+      "state": "trading",
+      "bets": [
+        {
+          "id": 2115,
+          "placed_at": "2026-06-02T14:00:15.032316+00:00",
+          "size_usd": 2.0,
+          "filled_shares": 15.384615384615383,
+          "filled_vwap": 0.11999999999999998,
+          "model_prob": 0.30449473752423606,
+          "best_ask_at_placement": 0.12,
+          "limit_price": 0.13,
+          "outcome": null,
+          "realized_pnl_usd": null,
+          "fee_usd": null,
+          "fill_quality": null,
+          "strategy": "conviction_yes",
+          "bet_side": "YES"
+        }
+      ]
+    },
+    {
+      "condition_id": "0xf6e00b06493e62fde26850fe4f05a613e5b8377ffc24ccc2a90cd1a9a182bd26",
+      "city": "Miami",
+      "market_type": "high",
+      "bracket": "between 90 and 91",
+      "bracket_type": "between",
+      "resolution_date": "2026-06-02",
+      "game_start_time": "2026-06-02T04:00:00+00:00",
+      "last_placement_time": "2026-06-03T08:00:00+00:00",
+      "effective_close_time": "2026-06-03T12:00:00+00:00",
+      "market_end_date": "2026-06-02T12:00:00+00:00",
+      "market_slug": "highest-temperature-in-miami-on-june-2-2026-90-91f",
+      "resolved_at": null,
+      "outcome": null,
+      "resolution_source": null,
+      "state": "trading",
+      "bets": [
+        {
+          "id": 2117,
+          "placed_at": "2026-06-02T14:00:18.021755+00:00",
+          "size_usd": 2.0,
+          "filled_shares": 11.76470588235294,
+          "filled_vwap": 0.1632,
+          "model_prob": 0.2749211930414144,
+          "best_ask_at_placement": 0.16,
+          "limit_price": 0.17,
+          "outcome": null,
+          "realized_pnl_usd": null,
+          "fee_usd": null,
+          "fill_quality": null,
+          "strategy": "conviction_yes",
+          "bet_side": "YES"
         }
       ]
     }
