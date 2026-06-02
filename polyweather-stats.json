@@ -1,9 +1,9 @@
 {
-  "updated_at": "2026-06-02T05:39:52.946933+00:00",
+  "updated_at": "2026-06-02T05:49:52.796912+00:00",
   "live_wallet_usdc": 49.358076,
-  "live_wallet_at": "2026-06-02T05:39:52.472720+00:00",
-  "hit_rate": 0.2117,
-  "theoretical_pnl": -115.141,
+  "live_wallet_at": "2026-06-02T05:49:52.449160+00:00",
+  "hit_rate": 0.2119,
+  "theoretical_pnl": -111.9062,
   "trade_count": 1367,
   "active_cities": 10,
   "daily_pnl": [
@@ -129,7 +129,7 @@
     },
     {
       "date": "2026-06-01",
-      "cumulative_pnl": -115.141
+      "cumulative_pnl": -111.9062
     }
   ],
   "recent_trades": [
@@ -314,7 +314,7 @@
       "market_ask": 0.18,
       "edge": 0.01686904085741381,
       "kelly_size_usdc": 2.0,
-      "outcome": "PENDING",
+      "outcome": "LOSS",
       "resolution_date": "2026-06-01",
       "strategy": "conviction_yes",
       "market_slug": "highest-temperature-in-nyc-on-june-1-2026-70-71f",
@@ -422,7 +422,7 @@
       "market_ask": 0.131,
       "edge": 0.014240700921313465,
       "kelly_size_usdc": 2.0,
-      "outcome": "PENDING",
+      "outcome": "LOSS",
       "resolution_date": "2026-06-01",
       "strategy": "conviction_yes",
       "market_slug": "highest-temperature-in-miami-on-june-1-2026-94-95f",
@@ -575,7 +575,7 @@
       "market_ask": 0.62,
       "edge": 0.20522751014438045,
       "kelly_size_usdc": 2.0,
-      "outcome": "PENDING",
+      "outcome": "LOSS",
       "resolution_date": "2026-06-01",
       "strategy": "no_between",
       "market_slug": "highest-temperature-in-nyc-on-june-1-2026-68-69f",
@@ -591,7 +591,7 @@
       "market_ask": 0.16,
       "edge": 0.013844072854666073,
       "kelly_size_usdc": 2.0,
-      "outcome": "PENDING",
+      "outcome": "LOSS",
       "resolution_date": "2026-06-01",
       "strategy": "conviction_yes",
       "market_slug": "highest-temperature-in-nyc-on-june-1-2026-72-73f",
@@ -636,7 +636,7 @@
       "market_ask": 0.17,
       "edge": 0.004772489855619538,
       "kelly_size_usdc": 2.0,
-      "outcome": "PENDING",
+      "outcome": "WIN",
       "resolution_date": "2026-06-01",
       "strategy": "conviction_yes",
       "market_slug": "highest-temperature-in-nyc-on-june-1-2026-68-69f",
@@ -728,7 +728,7 @@
       "market_ask": 0.48,
       "edge": 0.3233927464724855,
       "kelly_size_usdc": 2.0,
-      "outcome": "PENDING",
+      "outcome": "WIN",
       "resolution_date": "2026-06-01",
       "strategy": "no_between",
       "market_slug": "highest-temperature-in-nyc-on-june-1-2026-70-71f",
@@ -8689,15 +8689,15 @@
     },
     "conviction_yes": {
       "bets": 22,
-      "resolved": 14,
-      "wins": 2,
-      "pnl_usd": -10.8102,
+      "resolved": 18,
+      "wins": 3,
+      "pnl_usd": -7.5754,
       "bankroll": {
         "start": 1000.0,
-        "current": 987.4349,
-        "open_stake": 14.0,
-        "available": 973.4349,
-        "daily_loss": 23.3076
+        "current": 992.4246,
+        "open_stake": 8.0,
+        "available": 984.4246,
+        "daily_loss": 27.4617
       },
       "by_boundary": {
         "floor": {
@@ -8708,9 +8708,9 @@
         },
         "round": {
           "bets": 22,
-          "resolved": 14,
-          "wins": 2,
-          "pnl_usd": -10.8102
+          "resolved": 18,
+          "wins": 3,
+          "pnl_usd": -7.5754
         }
       }
     },
@@ -8797,14 +8797,14 @@
     },
     "no_between": {
       "bets": 239,
-      "resolved": 234,
-      "wins": 145,
-      "pnl_usd": -3.5921,
+      "resolved": 236,
+      "wins": 146,
+      "pnl_usd": -3.4254,
       "bankroll": {
         "start": 1000.0,
-        "current": 996.4079,
+        "current": 996.5746,
         "open_stake": 0.0,
-        "available": 996.4079,
+        "available": 996.5746,
         "daily_loss": 0.0
       },
       "by_boundary": {
@@ -8816,9 +8816,9 @@
         },
         "round": {
           "bets": 239,
-          "resolved": 234,
-          "wins": 145,
-          "pnl_usd": -3.5921
+          "resolved": 236,
+          "wins": 146,
+          "pnl_usd": -3.4254
         }
       }
     },
