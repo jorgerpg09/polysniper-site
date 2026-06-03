@@ -1,10 +1,10 @@
 {
-  "updated_at": "2026-06-03T19:27:38.674613+00:00",
+  "updated_at": "2026-06-03T19:37:38.469323+00:00",
   "live_wallet_usdc": 38.037434,
-  "live_wallet_at": "2026-06-03T19:27:38.101941+00:00",
+  "live_wallet_at": "2026-06-03T19:37:38.058938+00:00",
   "hit_rate": 0.2109,
   "theoretical_pnl": -114.3427,
-  "trade_count": 1401,
+  "trade_count": 1402,
   "active_cities": 10,
   "daily_pnl": [
     {
@@ -137,6 +137,37 @@
     }
   ],
   "recent_trades": [
+    {
+      "logged_at": "2026-06-03T19:33:10.302791+00:00",
+      "city": "Austin",
+      "bracket": "between 88 and 89",
+      "market_type": "high",
+      "model_prob": 0.8242083102252753,
+      "market_ask": 0.85,
+      "edge": -0.02579168977472468,
+      "kelly_size_usdc": 2.0,
+      "outcome": "PENDING",
+      "resolution_date": "2026-06-03",
+      "strategy": "conviction_no",
+      "market_slug": "highest-temperature-in-austin-on-june-3-2026-88-89f",
+      "boundary_convention": "round",
+      "bet_side": "NO"
+    },
+    {
+      "logged_at": "2026-06-03T19:33:09.355724+00:00",
+      "city": "Austin",
+      "bracket": "between 88 and 89",
+      "market_type": "high",
+      "model_prob": 0.17579168977472465,
+      "market_ask": 0.16,
+      "edge": 0.015791689774724643,
+      "kelly_size_usdc": 2.0,
+      "outcome": "PENDING",
+      "resolution_date": "2026-06-03",
+      "strategy": "conviction_yes",
+      "market_slug": "highest-temperature-in-austin-on-june-3-2026-88-89f",
+      "boundary_convention": "round"
+    },
     {
       "logged_at": "2026-06-03T19:10:10.675067+00:00",
       "city": "Atlanta",
@@ -1521,21 +1552,6 @@
       "resolution_date": "2026-06-01",
       "strategy": "conviction_yes",
       "market_slug": "highest-temperature-in-miami-on-june-1-2026-88-89f",
-      "boundary_convention": "round"
-    },
-    {
-      "logged_at": "2026-06-01T14:00:20.854286+00:00",
-      "city": "Atlanta",
-      "bracket": "between 82 and 83",
-      "market_type": "high",
-      "model_prob": 0.21252593432142503,
-      "market_ask": 0.1,
-      "edge": 0.11252593432142502,
-      "kelly_size_usdc": 2.0,
-      "outcome": "LOSS",
-      "resolution_date": "2026-06-01",
-      "strategy": "conviction_yes",
-      "market_slug": "highest-temperature-in-atlanta-on-june-1-2026-82-83f",
       "boundary_convention": "round"
     },
     {
@@ -7752,22 +7768,6 @@
       "bet_side": "NO"
     },
     {
-      "logged_at": "2026-05-21T05:11:04.388489+00:00",
-      "city": "London",
-      "bracket": "exact 23",
-      "market_type": "high",
-      "model_prob": 0.7687916440718893,
-      "market_ask": 0.53,
-      "edge": 0.23879164407188924,
-      "kelly_size_usdc": 2.0,
-      "outcome": "WIN",
-      "resolution_date": "2026-05-21",
-      "strategy": "no_exact",
-      "market_slug": "highest-temperature-in-london-on-may-21-2026-23c",
-      "boundary_convention": "round",
-      "bet_side": "NO"
-    },
-    {
       "logged_at": "2026-05-20T15:15:16.728675+00:00",
       "city": "Sao Paulo",
       "bracket": "exact 19",
@@ -9987,7 +9987,7 @@
       }
     },
     "conviction_no": {
-      "bets": 6,
+      "bets": 7,
       "resolved": 0,
       "wins": 0,
       "pnl_usd": 0.0,
@@ -10006,7 +10006,7 @@
           "pnl_usd": 0.0
         },
         "round": {
-          "bets": 6,
+          "bets": 7,
           "resolved": 0,
           "wins": 0,
           "pnl_usd": 0.0
@@ -10014,15 +10014,15 @@
       }
     },
     "conviction_yes": {
-      "bets": 51,
+      "bets": 52,
       "resolved": 36,
       "wins": 5,
       "pnl_usd": -19.1557,
       "bankroll": {
         "start": 1000.0,
         "current": 980.8444,
-        "open_stake": 30.0,
-        "available": 950.8444,
+        "open_stake": 32.0,
+        "available": 948.8444,
         "daily_loss": 22.3213
       },
       "by_boundary": {
@@ -10033,7 +10033,7 @@
           "pnl_usd": 0.0
         },
         "round": {
-          "bets": 51,
+          "bets": 52,
           "resolved": 36,
           "wins": 5,
           "pnl_usd": -19.1557
