@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-06-03T15:08:23.166413+00:00",
-  "now": "2026-06-03T15:08:23.166413+00:00",
+  "updated_at": "2026-06-03T15:18:21.813450+00:00",
+  "now": "2026-06-03T15:18:21.813450+00:00",
   "markets": [
     {
       "condition_id": "0x681518875b966a13c2dc10020eb48bcd27ab8c474e49f7552124c16431c8d844",
@@ -45593,6 +45593,41 @@
       ]
     },
     {
+      "condition_id": "0xc6964266850617a4bfe9fcc0ae8a7d7581f449b1c9450acd7c629a5d7f28595f",
+      "city": "Paris",
+      "market_type": "high",
+      "bracket": "exact 19",
+      "bracket_type": "exact",
+      "resolution_date": "2026-06-03",
+      "game_start_time": "2026-06-02T22:00:00+00:00",
+      "last_placement_time": "2026-06-03T20:00:00+00:00",
+      "effective_close_time": "2026-06-04T01:00:00+00:00",
+      "market_end_date": null,
+      "market_slug": "highest-temperature-in-paris-on-june-3-2026-19c",
+      "resolved_at": null,
+      "outcome": null,
+      "resolution_source": null,
+      "state": "trading",
+      "bets": [
+        {
+          "id": "sl-401914",
+          "placed_at": "2026-06-03T15:14:48.365561+00:00",
+          "size_usd": 2.0,
+          "filled_shares": null,
+          "filled_vwap": null,
+          "model_prob": 0.03910237181858951,
+          "best_ask_at_placement": 0.6,
+          "limit_price": null,
+          "outcome": null,
+          "realized_pnl_usd": null,
+          "fee_usd": null,
+          "fill_quality": null,
+          "strategy": "no_exact",
+          "bet_side": "NO"
+        }
+      ]
+    },
+    {
       "condition_id": "0x1da3fb9d2d120324a7e8043c1206d5a126d8b150805c93dbd4961af7472ca317",
       "city": "New York City",
       "market_type": "high",
@@ -45834,6 +45869,22 @@
           "fill_quality": null,
           "strategy": "conviction_yes",
           "bet_side": "YES"
+        },
+        {
+          "id": "sl-401871",
+          "placed_at": "2026-06-03T15:13:48.441988+00:00",
+          "size_usd": 2.0,
+          "filled_shares": null,
+          "filled_vwap": null,
+          "model_prob": 0.1602748913639171,
+          "best_ask_at_placement": 0.49,
+          "limit_price": null,
+          "outcome": null,
+          "realized_pnl_usd": null,
+          "fee_usd": null,
+          "fill_quality": null,
+          "strategy": "no_exact",
+          "bet_side": "NO"
         }
       ]
     },
