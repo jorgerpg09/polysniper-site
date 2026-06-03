@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-06-03T15:08:17.666831+00:00",
-  "live_wallet_usdc": 44.206412,
-  "live_wallet_at": "2026-06-03T15:08:17.252398+00:00",
+  "updated_at": "2026-06-03T15:18:17.631898+00:00",
+  "live_wallet_usdc": 40.102423,
+  "live_wallet_at": "2026-06-03T15:18:17.239176+00:00",
   "hit_rate": 0.2109,
   "theoretical_pnl": -114.3427,
   "trade_count": 1396,
@@ -137,6 +137,38 @@
     }
   ],
   "recent_trades": [
+    {
+      "logged_at": "2026-06-03T15:14:48.365561+00:00",
+      "city": "Paris",
+      "bracket": "exact 19",
+      "market_type": "high",
+      "model_prob": 0.9608976281814104,
+      "market_ask": 0.6,
+      "edge": 0.36089762818141047,
+      "kelly_size_usdc": 2.0,
+      "outcome": "PENDING",
+      "resolution_date": "2026-06-03",
+      "strategy": "no_exact",
+      "market_slug": "highest-temperature-in-paris-on-june-3-2026-19c",
+      "boundary_convention": "round",
+      "bet_side": "NO"
+    },
+    {
+      "logged_at": "2026-06-03T15:13:48.441988+00:00",
+      "city": "Paris",
+      "bracket": "exact 20",
+      "market_type": "high",
+      "model_prob": 0.8397251086360829,
+      "market_ask": 0.49,
+      "edge": 0.34972510863608286,
+      "kelly_size_usdc": 2.0,
+      "outcome": "PENDING",
+      "resolution_date": "2026-06-03",
+      "strategy": "no_exact",
+      "market_slug": "highest-temperature-in-paris-on-june-3-2026-20c",
+      "boundary_convention": "round",
+      "bet_side": "NO"
+    },
     {
       "logged_at": "2026-06-03T14:39:48.988294+00:00",
       "city": "Sao Paulo",
@@ -6771,38 +6803,6 @@
       "bet_side": "NO"
     },
     {
-      "logged_at": "2026-05-22T14:33:21.810317+00:00",
-      "city": "Madrid",
-      "bracket": "exact 32",
-      "market_type": "high",
-      "model_prob": 0.6211248191195291,
-      "market_ask": 0.48,
-      "edge": 0.14112481911952912,
-      "kelly_size_usdc": 2.0,
-      "outcome": "LOSS",
-      "resolution_date": "2026-05-22",
-      "strategy": "no_exact",
-      "market_slug": "highest-temperature-in-madrid-on-may-22-2026-32c",
-      "boundary_convention": "round",
-      "bet_side": "NO"
-    },
-    {
-      "logged_at": "2026-05-22T14:05:26.438837+00:00",
-      "city": "Sao Paulo",
-      "bracket": "exact 18",
-      "market_type": "high",
-      "model_prob": 0.9056681580741816,
-      "market_ask": 0.77,
-      "edge": 0.13566815807418153,
-      "kelly_size_usdc": 2.0,
-      "outcome": "WIN",
-      "resolution_date": "2026-05-22",
-      "strategy": "no_exact",
-      "market_slug": "highest-temperature-in-sao-paulo-on-may-22-2026-18c",
-      "boundary_convention": "round",
-      "bet_side": "NO"
-    },
-    {
       "logged_at": "2026-05-22T13:10:29.443877+00:00",
       "city": "Sao Paulo",
       "bracket": "exact 16",
@@ -9289,7 +9289,7 @@
       }
     },
     "no_exact": {
-      "bets": 130,
+      "bets": 132,
       "resolved": 129,
       "wins": 67,
       "pnl_usd": -21.6774,
@@ -9308,7 +9308,7 @@
           "pnl_usd": 0.0
         },
         "round": {
-          "bets": 130,
+          "bets": 132,
           "resolved": 129,
           "wins": 67,
           "pnl_usd": -21.6774
