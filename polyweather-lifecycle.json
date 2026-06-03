@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-06-03T14:18:21.654520+00:00",
-  "now": "2026-06-03T14:18:21.654520+00:00",
+  "updated_at": "2026-06-03T14:28:21.911395+00:00",
+  "now": "2026-06-03T14:28:21.911395+00:00",
   "markets": [
     {
       "condition_id": "0x681518875b966a13c2dc10020eb48bcd27ab8c474e49f7552124c16431c8d844",
@@ -45624,6 +45624,76 @@
           "fill_quality": null,
           "strategy": "no_between",
           "bet_side": "NO"
+        }
+      ]
+    },
+    {
+      "condition_id": "0x0260dbb76087929c22ead6331a15543601ea61c9aed3544305ba605412d9fe7a",
+      "city": "Miami",
+      "market_type": "high",
+      "bracket": "between 86 and 87",
+      "bracket_type": "between",
+      "resolution_date": "2026-06-03",
+      "game_start_time": "2026-06-03T04:00:00+00:00",
+      "last_placement_time": "2026-06-04T08:00:00+00:00",
+      "effective_close_time": "2026-06-04T12:00:00+00:00",
+      "market_end_date": "2026-06-03T12:00:00+00:00",
+      "market_slug": "highest-temperature-in-miami-on-june-3-2026-86-87f",
+      "resolved_at": null,
+      "outcome": null,
+      "resolution_source": null,
+      "state": "trading",
+      "bets": [
+        {
+          "id": 3068,
+          "placed_at": "2026-06-03T14:21:48.711761+00:00",
+          "size_usd": 2.0,
+          "filled_shares": 16.528925619834713,
+          "filled_vwap": 0.12,
+          "model_prob": 0.18800409117975647,
+          "best_ask_at_placement": 0.12,
+          "limit_price": 0.121,
+          "outcome": null,
+          "realized_pnl_usd": null,
+          "fee_usd": null,
+          "fill_quality": null,
+          "strategy": "conviction_yes",
+          "bet_side": "YES"
+        }
+      ]
+    },
+    {
+      "condition_id": "0x0c04bf08e122f7724222f713dfbf4a363abd82380be030c9e214fdbc9dbb91bb",
+      "city": "New York City",
+      "market_type": "high",
+      "bracket": "above 86",
+      "bracket_type": "above",
+      "resolution_date": "2026-06-03",
+      "game_start_time": "2026-06-03T04:00:00+00:00",
+      "last_placement_time": "2026-06-04T08:00:00+00:00",
+      "effective_close_time": "2026-06-04T12:00:00+00:00",
+      "market_end_date": "2026-06-03T12:00:00+00:00",
+      "market_slug": null,
+      "resolved_at": null,
+      "outcome": null,
+      "resolution_source": null,
+      "state": "trading",
+      "bets": [
+        {
+          "id": 3067,
+          "placed_at": "2026-06-03T14:20:47.651450+00:00",
+          "size_usd": 2.0,
+          "filled_shares": 20.0,
+          "filled_vwap": 0.0981,
+          "model_prob": 0.29670221272637887,
+          "best_ask_at_placement": 0.099,
+          "limit_price": 0.1,
+          "outcome": null,
+          "realized_pnl_usd": null,
+          "fee_usd": null,
+          "fill_quality": null,
+          "strategy": "modal_early",
+          "bet_side": "YES"
         }
       ]
     },
