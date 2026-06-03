@@ -121,7 +121,7 @@ function setSource(source) {
 // tabs here — but the exporter JSON still contains their historical stats, so
 // they're rendered under a collapsed "Archived" grouping (PW_LEGACY_STRATEGIES)
 // to keep the history viewable.
-const PW_STRATEGIES = ['modal_early', 'no_between', 'no_between_live', 'no_above', 'no_below', 'no_exact', 'no_exact_live', 'conviction_yes'];
+const PW_STRATEGIES = ['modal_early', 'no_between', 'no_between_live', 'no_above', 'no_below', 'no_exact', 'no_exact_live', 'conviction_yes', 'conviction_no'];
 
 // Dead/legacy strategies. No active tab — shown only under the collapsed
 // "Archived" grouping so their historical stats (still in the JSON) stay
