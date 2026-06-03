@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-06-03T17:57:38.488240+00:00",
+  "updated_at": "2026-06-03T18:07:38.551969+00:00",
   "live_wallet_usdc": 38.037434,
-  "live_wallet_at": "2026-06-03T17:57:38.025612+00:00",
+  "live_wallet_at": "2026-06-03T18:07:38.050835+00:00",
   "hit_rate": 0.2109,
   "theoretical_pnl": -114.3427,
   "trade_count": 1400,
@@ -137,6 +137,22 @@
     }
   ],
   "recent_trades": [
+    {
+      "logged_at": "2026-06-03T18:07:10.407206+00:00",
+      "city": "Atlanta",
+      "bracket": "between 76 and 77",
+      "market_type": "high",
+      "model_prob": 0.8580371618072395,
+      "market_ask": 0.89,
+      "edge": -0.03196283819276047,
+      "kelly_size_usdc": 2.0,
+      "outcome": "PENDING",
+      "resolution_date": "2026-06-03",
+      "strategy": "conviction_no",
+      "market_slug": "highest-temperature-in-atlanta-on-june-3-2026-76-77f",
+      "boundary_convention": "round",
+      "bet_side": "NO"
+    },
     {
       "logged_at": "2026-06-03T17:40:08.576619+00:00",
       "city": "Austin",
@@ -7737,22 +7753,6 @@
       "bet_side": "NO"
     },
     {
-      "logged_at": "2026-05-20T23:12:06.464927+00:00",
-      "city": "Seoul",
-      "bracket": "exact 20",
-      "market_type": "high",
-      "model_prob": 0.8414357450416663,
-      "market_ask": 0.74,
-      "edge": 0.1014357450416663,
-      "kelly_size_usdc": 2.0,
-      "outcome": "LOSS",
-      "resolution_date": "2026-05-21",
-      "strategy": "no_exact",
-      "market_slug": "highest-temperature-in-seoul-on-may-21-2026-20c",
-      "boundary_convention": "round",
-      "bet_side": "NO"
-    },
-    {
       "logged_at": "2026-05-20T15:15:16.728675+00:00",
       "city": "Sao Paulo",
       "bracket": "exact 19",
@@ -9972,7 +9972,7 @@
       }
     },
     "conviction_no": {
-      "bets": 3,
+      "bets": 4,
       "resolved": 0,
       "wins": 0,
       "pnl_usd": 0.0,
@@ -9991,7 +9991,7 @@
           "pnl_usd": 0.0
         },
         "round": {
-          "bets": 3,
+          "bets": 4,
           "resolved": 0,
           "wins": 0,
           "pnl_usd": 0.0
