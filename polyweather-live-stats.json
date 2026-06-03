@@ -1,10 +1,10 @@
 {
-  "updated_at": "2026-06-03T19:26:39.068306+00:00",
+  "updated_at": "2026-06-03T19:36:39.022127+00:00",
   "live_wallet_usdc": 38.037434,
-  "live_wallet_at": "2026-06-03T19:26:38.828684+00:00",
+  "live_wallet_at": "2026-06-03T19:36:38.777114+00:00",
   "hit_rate": 0.2175,
   "theoretical_pnl": 64.3503,
-  "trade_count": 492,
+  "trade_count": 493,
   "active_cities": 13,
   "daily_pnl": [
     {
@@ -77,6 +77,21 @@
     }
   ],
   "recent_trades": [
+    {
+      "logged_at": "2026-06-03T19:33:13.226022+00:00",
+      "city": "Austin",
+      "bracket": "between 88 and 89",
+      "market_type": "high",
+      "model_prob": 0.17579168977472465,
+      "market_ask": 0.16,
+      "edge": 0.015791689774724643,
+      "kelly_size_usdc": 2.0,
+      "outcome": "PENDING",
+      "resolution_date": "2026-06-03",
+      "strategy": "conviction_yes",
+      "market_slug": "highest-temperature-in-austin-on-june-3-2026-88-89f",
+      "boundary_convention": "round"
+    },
     {
       "logged_at": "2026-06-03T18:05:13.332985+00:00",
       "city": "Austin",
@@ -8557,15 +8572,15 @@
       }
     },
     "conviction_yes": {
-      "bets": 25,
+      "bets": 26,
       "resolved": 13,
       "wins": 1,
       "pnl_usd": -16.9224,
       "bankroll": {
         "start": 1000.0,
         "current": 983.0775,
-        "open_stake": 24.0,
-        "available": 959.0775,
+        "open_stake": 26.0,
+        "available": 957.0775,
         "daily_loss": 22.9295
       },
       "by_boundary": {
@@ -8576,7 +8591,7 @@
           "pnl_usd": 0.0
         },
         "round": {
-          "bets": 25,
+          "bets": 26,
           "resolved": 13,
           "wins": 1,
           "pnl_usd": -16.9224
