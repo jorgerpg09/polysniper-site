@@ -1,10 +1,10 @@
 {
-  "updated_at": "2026-06-04T21:09:07.352337+00:00",
+  "updated_at": "2026-06-04T21:19:07.107174+00:00",
   "live_wallet_usdc": 28.728924,
-  "live_wallet_at": "2026-06-04T21:09:06.678284+00:00",
+  "live_wallet_at": "2026-06-04T21:19:06.548626+00:00",
   "hit_rate": 0.2126,
   "theoretical_pnl": 57.9113,
-  "trade_count": 509,
+  "trade_count": 510,
   "active_cities": 13,
   "daily_pnl": [
     {
@@ -81,6 +81,37 @@
     }
   ],
   "recent_trades": [
+    {
+      "logged_at": "2026-06-04T21:18:42.807405+00:00",
+      "city": "Austin",
+      "bracket": "between 84 and 85",
+      "market_type": "high",
+      "model_prob": 0.7913603197498598,
+      "market_ask": 0.96,
+      "edge": -0.1686396802501402,
+      "kelly_size_usdc": 2.0,
+      "outcome": "PENDING",
+      "resolution_date": "2026-06-04",
+      "strategy": "conviction_no",
+      "market_slug": "highest-temperature-in-austin-on-june-4-2026-84-85f",
+      "boundary_convention": "round",
+      "bet_side": "NO"
+    },
+    {
+      "logged_at": "2026-06-04T21:18:40.583246+00:00",
+      "city": "Austin",
+      "bracket": "between 84 and 85",
+      "market_type": "high",
+      "model_prob": 0.20863968025014018,
+      "market_ask": 0.08,
+      "edge": 0.12863968025014016,
+      "kelly_size_usdc": 2.0,
+      "outcome": "PENDING",
+      "resolution_date": "2026-06-04",
+      "strategy": "conviction_yes",
+      "market_slug": "highest-temperature-in-austin-on-june-4-2026-84-85f",
+      "boundary_convention": "round"
+    },
     {
       "logged_at": "2026-06-04T19:32:34.312222+00:00",
       "city": "Austin",
@@ -5821,22 +5852,6 @@
       "bet_side": "NO"
     },
     {
-      "logged_at": "2026-05-21T05:11:11.868809+00:00",
-      "city": "Helsinki",
-      "bracket": "exact 18",
-      "market_type": "high",
-      "model_prob": 0.8523828053481053,
-      "market_ask": 0.6,
-      "edge": 0.2523828053481053,
-      "kelly_size_usdc": 2.0,
-      "outcome": "LOSS",
-      "resolution_date": "2026-05-21",
-      "strategy": "no_exact",
-      "market_slug": "highest-temperature-in-helsinki-on-may-21-2026-18c",
-      "boundary_convention": "round",
-      "bet_side": "NO"
-    },
-    {
       "logged_at": "2026-05-21T05:11:07.276854+00:00",
       "city": "London",
       "bracket": "exact 22",
@@ -9616,7 +9631,7 @@
       }
     },
     "conviction_no": {
-      "bets": 13,
+      "bets": 14,
       "resolved": 0,
       "wins": 0,
       "pnl_usd": 0.0,
@@ -9635,7 +9650,7 @@
           "pnl_usd": 0.0
         },
         "round": {
-          "bets": 13,
+          "bets": 14,
           "resolved": 0,
           "wins": 0,
           "pnl_usd": 0.0
@@ -9643,15 +9658,15 @@
       }
     },
     "conviction_yes": {
-      "bets": 39,
+      "bets": 40,
       "resolved": 27,
       "wins": 3,
       "pnl_usd": -19.4263,
       "bankroll": {
         "start": 1000.0,
         "current": 980.5736,
-        "open_stake": 24.0,
-        "available": 956.5736,
+        "open_stake": 26.0,
+        "available": 954.5736,
         "daily_loss": 20.75
       },
       "by_boundary": {
@@ -9662,7 +9677,7 @@
           "pnl_usd": 0.0
         },
         "round": {
-          "bets": 39,
+          "bets": 40,
           "resolved": 27,
           "wins": 3,
           "pnl_usd": -19.4263
