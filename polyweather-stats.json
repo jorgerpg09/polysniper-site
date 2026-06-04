@@ -1,10 +1,10 @@
 {
-  "updated_at": "2026-06-04T14:57:38.616887+00:00",
+  "updated_at": "2026-06-04T15:07:38.632145+00:00",
   "live_wallet_usdc": 27.829142,
-  "live_wallet_at": "2026-06-04T14:57:38.004174+00:00",
+  "live_wallet_at": "2026-06-04T15:07:38.060352+00:00",
   "hit_rate": 0.2087,
   "theoretical_pnl": -128.7869,
-  "trade_count": 1410,
+  "trade_count": 1411,
   "active_cities": 10,
   "daily_pnl": [
     {
@@ -141,6 +141,37 @@
     }
   ],
   "recent_trades": [
+    {
+      "logged_at": "2026-06-04T15:03:11.008037+00:00",
+      "city": "New York City",
+      "bracket": "between 84 and 85",
+      "market_type": "high",
+      "model_prob": 0.8112058478104196,
+      "market_ask": 0.87,
+      "edge": -0.058794152189580395,
+      "kelly_size_usdc": 2.0,
+      "outcome": "PENDING",
+      "resolution_date": "2026-06-04",
+      "strategy": "conviction_no",
+      "market_slug": "highest-temperature-in-nyc-on-june-4-2026-84-85f",
+      "boundary_convention": "round",
+      "bet_side": "NO"
+    },
+    {
+      "logged_at": "2026-06-04T15:03:10.250358+00:00",
+      "city": "New York City",
+      "bracket": "between 84 and 85",
+      "market_type": "high",
+      "model_prob": 0.18879415218958034,
+      "market_ask": 0.16,
+      "edge": 0.02879415218958034,
+      "kelly_size_usdc": 2.0,
+      "outcome": "PENDING",
+      "resolution_date": "2026-06-04",
+      "strategy": "conviction_yes",
+      "market_slug": "highest-temperature-in-nyc-on-june-4-2026-84-85f",
+      "boundary_convention": "round"
+    },
     {
       "logged_at": "2026-06-04T14:18:10.465497+00:00",
       "city": "Austin",
@@ -1764,21 +1795,6 @@
       "resolution_date": "2026-06-01",
       "strategy": "conviction_yes",
       "market_slug": "highest-temperature-in-atlanta-on-june-1-2026-88-89f",
-      "boundary_convention": "round"
-    },
-    {
-      "logged_at": "2026-06-01T15:20:21.345109+00:00",
-      "city": "Sao Paulo",
-      "bracket": "exact 22",
-      "market_type": "high",
-      "model_prob": 0.22662244743003096,
-      "market_ask": 0.19,
-      "edge": 0.03662244743003096,
-      "kelly_size_usdc": 2.0,
-      "outcome": "LOSS",
-      "resolution_date": "2026-06-01",
-      "strategy": "conviction_yes",
-      "market_slug": "highest-temperature-in-sao-paulo-on-june-1-2026-22c",
       "boundary_convention": "round"
     },
     {
@@ -7741,22 +7757,6 @@
       "bet_side": "NO"
     },
     {
-      "logged_at": "2026-05-21T23:12:04.119021+00:00",
-      "city": "Seoul",
-      "bracket": "exact 26",
-      "market_type": "high",
-      "model_prob": 0.9812529295796477,
-      "market_ask": 0.7,
-      "edge": 0.28125292957964776,
-      "kelly_size_usdc": 2.0,
-      "outcome": "LOSS",
-      "resolution_date": "2026-05-22",
-      "strategy": "no_exact",
-      "market_slug": "highest-temperature-in-seoul-on-may-22-2026-26c",
-      "boundary_convention": "round",
-      "bet_side": "NO"
-    },
-    {
       "logged_at": "2026-05-21T06:54:56.875981+00:00",
       "city": "Paris",
       "bracket": "exact 23",
@@ -10006,7 +10006,7 @@
       }
     },
     "conviction_no": {
-      "bets": 15,
+      "bets": 16,
       "resolved": 9,
       "wins": 8,
       "pnl_usd": 0.1776,
@@ -10025,7 +10025,7 @@
           "pnl_usd": 0.0
         },
         "round": {
-          "bets": 15,
+          "bets": 16,
           "resolved": 9,
           "wins": 8,
           "pnl_usd": 0.1776
@@ -10033,15 +10033,15 @@
       }
     },
     "conviction_yes": {
-      "bets": 59,
+      "bets": 60,
       "resolved": 53,
       "wins": 7,
       "pnl_usd": -26.7519,
       "bankroll": {
         "start": 1000.0,
         "current": 973.248,
-        "open_stake": 12.0,
-        "available": 961.248,
+        "open_stake": 14.0,
+        "available": 959.248,
         "daily_loss": 24.0989
       },
       "by_boundary": {
@@ -10052,7 +10052,7 @@
           "pnl_usd": 0.0
         },
         "round": {
-          "bets": 59,
+          "bets": 60,
           "resolved": 53,
           "wins": 7,
           "pnl_usd": -26.7519
