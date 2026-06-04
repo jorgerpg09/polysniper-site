@@ -1,10 +1,10 @@
 {
-  "updated_at": "2026-06-04T19:28:57.032267+00:00",
+  "updated_at": "2026-06-04T19:38:57.097829+00:00",
   "live_wallet_usdc": 28.728924,
-  "live_wallet_at": "2026-06-04T19:28:56.676810+00:00",
+  "live_wallet_at": "2026-06-04T19:38:56.764894+00:00",
   "hit_rate": 0.2126,
   "theoretical_pnl": 57.9113,
-  "trade_count": 508,
+  "trade_count": 509,
   "active_cities": 13,
   "daily_pnl": [
     {
@@ -81,6 +81,53 @@
     }
   ],
   "recent_trades": [
+    {
+      "logged_at": "2026-06-04T19:32:34.312222+00:00",
+      "city": "Austin",
+      "bracket": "between 86 and 87",
+      "market_type": "high",
+      "model_prob": 0.7943852596588992,
+      "market_ask": 0.95,
+      "edge": -0.1556147403411008,
+      "kelly_size_usdc": 2.0,
+      "outcome": "PENDING",
+      "resolution_date": "2026-06-04",
+      "strategy": "conviction_no",
+      "market_slug": "highest-temperature-in-austin-on-june-4-2026-86-87f",
+      "boundary_convention": "round",
+      "bet_side": "NO"
+    },
+    {
+      "logged_at": "2026-06-04T19:32:31.767617+00:00",
+      "city": "Austin",
+      "bracket": "between 86 and 87",
+      "market_type": "high",
+      "model_prob": 0.20561474034110083,
+      "market_ask": 0.1,
+      "edge": 0.10561474034110083,
+      "kelly_size_usdc": 2.0,
+      "outcome": "PENDING",
+      "resolution_date": "2026-06-04",
+      "strategy": "conviction_yes",
+      "market_slug": "highest-temperature-in-austin-on-june-4-2026-86-87f",
+      "boundary_convention": "round"
+    },
+    {
+      "logged_at": "2026-06-04T19:31:29.365100+00:00",
+      "city": "Austin",
+      "bracket": "between 82 and 83",
+      "market_type": "high",
+      "model_prob": 0.8415829676267055,
+      "market_ask": 0.6,
+      "edge": 0.2415829676267055,
+      "kelly_size_usdc": 2.0,
+      "outcome": "PENDING",
+      "resolution_date": "2026-06-04",
+      "strategy": "no_between",
+      "market_slug": "highest-temperature-in-austin-on-june-4-2026-82-83f",
+      "boundary_convention": "round",
+      "bet_side": "NO"
+    },
     {
       "logged_at": "2026-06-04T18:48:32.195130+00:00",
       "city": "Toronto",
@@ -9569,7 +9616,7 @@
       }
     },
     "conviction_no": {
-      "bets": 12,
+      "bets": 13,
       "resolved": 0,
       "wins": 0,
       "pnl_usd": 0.0,
@@ -9588,7 +9635,7 @@
           "pnl_usd": 0.0
         },
         "round": {
-          "bets": 12,
+          "bets": 13,
           "resolved": 0,
           "wins": 0,
           "pnl_usd": 0.0
@@ -9596,15 +9643,15 @@
       }
     },
     "conviction_yes": {
-      "bets": 38,
+      "bets": 39,
       "resolved": 27,
       "wins": 3,
       "pnl_usd": -19.4263,
       "bankroll": {
         "start": 1000.0,
         "current": 980.5736,
-        "open_stake": 22.0,
-        "available": 958.5736,
+        "open_stake": 24.0,
+        "available": 956.5736,
         "daily_loss": 20.75
       },
       "by_boundary": {
@@ -9615,7 +9662,7 @@
           "pnl_usd": 0.0
         },
         "round": {
-          "bets": 38,
+          "bets": 39,
           "resolved": 27,
           "wins": 3,
           "pnl_usd": -19.4263
@@ -9704,7 +9751,7 @@
       }
     },
     "no_between": {
-      "bets": 50,
+      "bets": 51,
       "resolved": 48,
       "wins": 20,
       "pnl_usd": -30.9505,
@@ -9723,7 +9770,7 @@
           "pnl_usd": 0.0
         },
         "round": {
-          "bets": 50,
+          "bets": 51,
           "resolved": 48,
           "wins": 20,
           "pnl_usd": -30.9505
