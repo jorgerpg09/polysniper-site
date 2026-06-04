@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-06-04T11:07:42.470043+00:00",
-  "now": "2026-06-04T11:07:42.470043+00:00",
+  "updated_at": "2026-06-04T11:17:42.584660+00:00",
+  "now": "2026-06-04T11:17:42.584660+00:00",
   "markets": [
     {
       "condition_id": "0x681518875b966a13c2dc10020eb48bcd27ab8c474e49f7552124c16431c8d844",
@@ -46598,6 +46598,111 @@
           "fill_quality": null,
           "strategy": "modal_early",
           "bet_side": "YES"
+        }
+      ]
+    },
+    {
+      "condition_id": "0x61ec92fd10d7f7c5595e9427a851cb1a2af45b8ebafbbf26ca4ee77d56cbe7fc",
+      "city": "London",
+      "market_type": "high",
+      "bracket": "exact 18",
+      "bracket_type": "exact",
+      "resolution_date": "2026-06-04",
+      "game_start_time": "2026-06-03T23:00:00+00:00",
+      "last_placement_time": "2026-06-04T21:00:00+00:00",
+      "effective_close_time": "2026-06-05T02:00:00+00:00",
+      "market_end_date": null,
+      "market_slug": "highest-temperature-in-london-on-june-4-2026-18c",
+      "resolved_at": null,
+      "outcome": null,
+      "resolution_source": null,
+      "state": "trading",
+      "bets": [
+        {
+          "id": "sl-413051",
+          "placed_at": "2026-06-04T11:09:08.015021+00:00",
+          "size_usd": 2.0,
+          "filled_shares": null,
+          "filled_vwap": null,
+          "model_prob": 0.16440871832074133,
+          "best_ask_at_placement": 0.45,
+          "limit_price": null,
+          "outcome": null,
+          "realized_pnl_usd": null,
+          "fee_usd": null,
+          "fill_quality": null,
+          "strategy": "no_exact",
+          "bet_side": "NO"
+        }
+      ]
+    },
+    {
+      "condition_id": "0xe2787237e88e6ded1a7ad389b4340ca4bc17e4d16413be5e17e8805f30ea1329",
+      "city": "New York City",
+      "market_type": "high",
+      "bracket": "between 86 and 87",
+      "bracket_type": "between",
+      "resolution_date": "2026-06-04",
+      "game_start_time": "2026-06-04T04:00:00+00:00",
+      "last_placement_time": "2026-06-05T02:00:00+00:00",
+      "effective_close_time": "2026-06-05T07:00:00+00:00",
+      "market_end_date": null,
+      "market_slug": "highest-temperature-in-nyc-on-june-4-2026-86-87f",
+      "resolved_at": null,
+      "outcome": null,
+      "resolution_source": null,
+      "state": "trading",
+      "bets": [
+        {
+          "id": "sl-413070",
+          "placed_at": "2026-06-04T11:09:13.215895+00:00",
+          "size_usd": 2.0,
+          "filled_shares": null,
+          "filled_vwap": null,
+          "model_prob": 0.15161583841063486,
+          "best_ask_at_placement": 0.54,
+          "limit_price": null,
+          "outcome": null,
+          "realized_pnl_usd": null,
+          "fee_usd": null,
+          "fill_quality": null,
+          "strategy": "no_between",
+          "bet_side": "NO"
+        }
+      ]
+    },
+    {
+      "condition_id": "0x98a7b667b4f40b1584bb63a599bf49c145960e41417afb33a5423dc5665995b1",
+      "city": "Toronto",
+      "market_type": "high",
+      "bracket": "above 30",
+      "bracket_type": "above",
+      "resolution_date": "2026-06-04",
+      "game_start_time": "2026-06-04T04:00:00+00:00",
+      "last_placement_time": "2026-06-05T02:00:00+00:00",
+      "effective_close_time": "2026-06-05T07:00:00+00:00",
+      "market_end_date": null,
+      "market_slug": "highest-temperature-in-toronto-on-june-4-2026-30corhigher",
+      "resolved_at": null,
+      "outcome": null,
+      "resolution_source": null,
+      "state": "trading",
+      "bets": [
+        {
+          "id": "sl-413096",
+          "placed_at": "2026-06-04T11:09:18.149456+00:00",
+          "size_usd": 2.0,
+          "filled_shares": null,
+          "filled_vwap": null,
+          "model_prob": 0.1689891397734008,
+          "best_ask_at_placement": 0.61,
+          "limit_price": null,
+          "outcome": null,
+          "realized_pnl_usd": null,
+          "fee_usd": null,
+          "fill_quality": null,
+          "strategy": "no_above",
+          "bet_side": "NO"
         }
       ]
     }
