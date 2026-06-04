@@ -1,10 +1,10 @@
 {
-  "updated_at": "2026-06-04T12:36:38.996455+00:00",
-  "live_wallet_usdc": 31.892468,
-  "live_wallet_at": "2026-06-04T12:36:38.733873+00:00",
+  "updated_at": "2026-06-04T12:46:39.587389+00:00",
+  "live_wallet_usdc": 25.72049,
+  "live_wallet_at": "2026-06-04T12:46:38.965925+00:00",
   "hit_rate": 0.2126,
   "theoretical_pnl": 57.9113,
-  "trade_count": 495,
+  "trade_count": 496,
   "active_cities": 13,
   "daily_pnl": [
     {
@@ -81,6 +81,69 @@
     }
   ],
   "recent_trades": [
+    {
+      "logged_at": "2026-06-04T12:41:28.716675+00:00",
+      "city": "London",
+      "bracket": "exact 18",
+      "market_type": "high",
+      "model_prob": 0.7700545790757358,
+      "market_ask": 0.4,
+      "edge": 0.3700545790757358,
+      "kelly_size_usdc": 2.0,
+      "outcome": "PENDING",
+      "resolution_date": "2026-06-04",
+      "strategy": "no_exact_live",
+      "market_slug": "highest-temperature-in-london-on-june-4-2026-18c",
+      "boundary_convention": "round",
+      "bet_side": "NO"
+    },
+    {
+      "logged_at": "2026-06-04T12:41:14.886417+00:00",
+      "city": "Austin",
+      "bracket": "between 86 and 87",
+      "market_type": "high",
+      "model_prob": 0.8114425286822479,
+      "market_ask": 0.51,
+      "edge": 0.30144252868224786,
+      "kelly_size_usdc": 2.0,
+      "outcome": "PENDING",
+      "resolution_date": "2026-06-04",
+      "strategy": "no_between_live",
+      "market_slug": "highest-temperature-in-austin-on-june-4-2026-86-87f",
+      "boundary_convention": "round",
+      "bet_side": "NO"
+    },
+    {
+      "logged_at": "2026-06-04T12:41:07.345898+00:00",
+      "city": "Atlanta",
+      "bracket": "between 82 and 83",
+      "market_type": "high",
+      "model_prob": 0.7654687122970149,
+      "market_ask": 0.37,
+      "edge": 0.39546871229701486,
+      "kelly_size_usdc": 2.0,
+      "outcome": "PENDING",
+      "resolution_date": "2026-06-04",
+      "strategy": "no_between_live",
+      "market_slug": "highest-temperature-in-atlanta-on-june-4-2026-82-83f",
+      "boundary_convention": "round",
+      "bet_side": "NO"
+    },
+    {
+      "logged_at": "2026-06-04T12:41:00.728267+00:00",
+      "city": "Atlanta",
+      "bracket": "between 80 and 81",
+      "market_type": "high",
+      "model_prob": 0.30663411056972456,
+      "market_ask": 0.15,
+      "edge": 0.15663411056972457,
+      "kelly_size_usdc": 2.0,
+      "outcome": "PENDING",
+      "resolution_date": "2026-06-04",
+      "strategy": "modal_early",
+      "market_slug": "highest-temperature-in-atlanta-on-june-4-2026-80-81f",
+      "boundary_convention": "round"
+    },
     {
       "logged_at": "2026-06-04T11:10:04.201902+00:00",
       "city": "Toronto",
@@ -4134,38 +4197,6 @@
       "bet_side": "NO"
     },
     {
-      "logged_at": "2026-05-22T11:09:11.594608+00:00",
-      "city": "Austin",
-      "bracket": "above 86",
-      "market_type": "high",
-      "model_prob": 0.4262000194272214,
-      "market_ask": 0.18,
-      "edge": 0.24620001942722142,
-      "kelly_size_usdc": 2.0,
-      "outcome": "LOSS",
-      "resolution_date": "2026-05-22",
-      "strategy": "no_above",
-      "market_slug": "highest-temperature-in-austin-on-may-22-2026-86forhigher",
-      "boundary_convention": "round",
-      "bet_side": "NO"
-    },
-    {
-      "logged_at": "2026-05-22T11:09:04.936878+00:00",
-      "city": "Atlanta",
-      "bracket": "between 84 and 85",
-      "market_type": "high",
-      "model_prob": 0.9176100064519361,
-      "market_ask": 0.61,
-      "edge": 0.30761000645193615,
-      "kelly_size_usdc": 2.0,
-      "outcome": "WIN",
-      "resolution_date": "2026-05-22",
-      "strategy": "no_between_live",
-      "market_slug": "highest-temperature-in-atlanta-on-may-22-2026-84-85f",
-      "boundary_convention": "round",
-      "bet_side": "NO"
-    },
-    {
       "logged_at": "2026-05-22T06:41:00.518720+00:00",
       "city": "Paris",
       "bracket": "exact 27",
@@ -4194,22 +4225,6 @@
       "strategy": "tail_longshot",
       "market_slug": "highest-temperature-in-seoul-on-may-22-2026-23c",
       "boundary_convention": "round"
-    },
-    {
-      "logged_at": "2026-05-22T05:11:23.327101+00:00",
-      "city": "Paris",
-      "bracket": "exact 29",
-      "market_type": "high",
-      "model_prob": 0.8638709545714955,
-      "market_ask": 0.61,
-      "edge": 0.25387095457149556,
-      "kelly_size_usdc": 2.0,
-      "outcome": "LOSS",
-      "resolution_date": "2026-05-22",
-      "strategy": "no_exact",
-      "market_slug": "highest-temperature-in-paris-on-may-22-2026-29c",
-      "boundary_convention": "round",
-      "bet_side": "NO"
     },
     {
       "logged_at": "2026-05-22T05:11:00.515381+00:00",
@@ -8633,15 +8648,15 @@
       }
     },
     "modal_early": {
-      "bets": 36,
+      "bets": 37,
       "resolved": 35,
       "wins": 9,
       "pnl_usd": 71.1377,
       "bankroll": {
         "start": 1000.0,
         "current": 1064.3137,
-        "open_stake": 2.0,
-        "available": 1062.3137,
+        "open_stake": 4.0,
+        "available": 1060.3137,
         "daily_loss": 1.9972
       },
       "by_boundary": {
@@ -8652,7 +8667,7 @@
           "pnl_usd": 0.0
         },
         "round": {
-          "bets": 36,
+          "bets": 37,
           "resolved": 35,
           "wins": 9,
           "pnl_usd": 71.1377
@@ -8741,7 +8756,7 @@
       }
     },
     "no_between_live": {
-      "bets": 49,
+      "bets": 51,
       "resolved": 48,
       "wins": 26,
       "pnl_usd": -9.657,
@@ -8760,7 +8775,7 @@
           "pnl_usd": 0.0
         },
         "round": {
-          "bets": 49,
+          "bets": 51,
           "resolved": 48,
           "wins": 26,
           "pnl_usd": -9.657
@@ -8795,7 +8810,7 @@
       }
     },
     "no_exact_live": {
-      "bets": 34,
+      "bets": 35,
       "resolved": 32,
       "wins": 13,
       "pnl_usd": 2.3296,
@@ -8814,7 +8829,7 @@
           "pnl_usd": 0.0
         },
         "round": {
-          "bets": 34,
+          "bets": 35,
           "resolved": 32,
           "wins": 13,
           "pnl_usd": 2.3296
