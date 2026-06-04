@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-06-04T18:28:56.755322+00:00",
-  "live_wallet_usdc": 32.823902,
-  "live_wallet_at": "2026-06-04T18:28:56.472461+00:00",
+  "updated_at": "2026-06-04T18:38:56.821823+00:00",
+  "live_wallet_usdc": 30.777913,
+  "live_wallet_at": "2026-06-04T18:38:56.466369+00:00",
   "hit_rate": 0.2126,
   "theoretical_pnl": 57.9113,
   "trade_count": 507,
@@ -81,6 +81,22 @@
     }
   ],
   "recent_trades": [
+    {
+      "logged_at": "2026-06-04T18:30:31.370050+00:00",
+      "city": "New York City",
+      "bracket": "between 84 and 85",
+      "market_type": "high",
+      "model_prob": 0.8082624133631645,
+      "market_ask": 0.55,
+      "edge": 0.25826241336316447,
+      "kelly_size_usdc": 2.0,
+      "outcome": "PENDING",
+      "resolution_date": "2026-06-04",
+      "strategy": "no_between_live",
+      "market_slug": "highest-temperature-in-nyc-on-june-4-2026-84-85f",
+      "boundary_convention": "round",
+      "bet_side": "NO"
+    },
     {
       "logged_at": "2026-06-04T17:01:33.358811+00:00",
       "city": "Sao Paulo",
@@ -9684,7 +9700,7 @@
       }
     },
     "no_between_live": {
-      "bets": 51,
+      "bets": 52,
       "resolved": 48,
       "wins": 26,
       "pnl_usd": -9.657,
@@ -9703,7 +9719,7 @@
           "pnl_usd": 0.0
         },
         "round": {
-          "bets": 51,
+          "bets": 52,
           "resolved": 48,
           "wins": 26,
           "pnl_usd": -9.657
