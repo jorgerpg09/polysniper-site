@@ -1,10 +1,10 @@
 {
-  "updated_at": "2026-06-04T15:07:38.632145+00:00",
+  "updated_at": "2026-06-04T15:17:39.052851+00:00",
   "live_wallet_usdc": 27.829142,
-  "live_wallet_at": "2026-06-04T15:07:38.060352+00:00",
+  "live_wallet_at": "2026-06-04T15:17:38.006296+00:00",
   "hit_rate": 0.2087,
   "theoretical_pnl": -128.7869,
-  "trade_count": 1411,
+  "trade_count": 1412,
   "active_cities": 10,
   "daily_pnl": [
     {
@@ -141,6 +141,37 @@
     }
   ],
   "recent_trades": [
+    {
+      "logged_at": "2026-06-04T15:10:10.762017+00:00",
+      "city": "Miami",
+      "bracket": "between 84 and 85",
+      "market_type": "high",
+      "model_prob": 0.7496339938237606,
+      "market_ask": 0.84,
+      "edge": -0.09036600617623936,
+      "kelly_size_usdc": 2.0,
+      "outcome": "PENDING",
+      "resolution_date": "2026-06-04",
+      "strategy": "conviction_no",
+      "market_slug": "highest-temperature-in-miami-on-june-4-2026-84-85f",
+      "boundary_convention": "round",
+      "bet_side": "NO"
+    },
+    {
+      "logged_at": "2026-06-04T15:10:09.962824+00:00",
+      "city": "Miami",
+      "bracket": "between 84 and 85",
+      "market_type": "high",
+      "model_prob": 0.2503660061762394,
+      "market_ask": 0.26,
+      "edge": -0.009633993823760623,
+      "kelly_size_usdc": 2.0,
+      "outcome": "PENDING",
+      "resolution_date": "2026-06-04",
+      "strategy": "conviction_yes",
+      "market_slug": "highest-temperature-in-miami-on-june-4-2026-84-85f",
+      "boundary_convention": "round"
+    },
     {
       "logged_at": "2026-06-04T15:03:11.008037+00:00",
       "city": "New York City",
@@ -1780,21 +1811,6 @@
       "resolution_date": "2026-06-01",
       "strategy": "conviction_yes",
       "market_slug": "highest-temperature-in-atlanta-on-june-1-2026-81forbelow",
-      "boundary_convention": "round"
-    },
-    {
-      "logged_at": "2026-06-01T15:42:20.950565+00:00",
-      "city": "Atlanta",
-      "bracket": "between 88 and 89",
-      "market_type": "high",
-      "model_prob": 0.10428611173992308,
-      "market_ask": 0.11,
-      "edge": -0.005713888260076919,
-      "kelly_size_usdc": 2.0,
-      "outcome": "LOSS",
-      "resolution_date": "2026-06-01",
-      "strategy": "conviction_yes",
-      "market_slug": "highest-temperature-in-atlanta-on-june-1-2026-88-89f",
       "boundary_convention": "round"
     },
     {
@@ -7741,22 +7757,6 @@
       "bet_side": "NO"
     },
     {
-      "logged_at": "2026-05-21T23:12:04.234977+00:00",
-      "city": "Seoul",
-      "bracket": "above 27",
-      "market_type": "high",
-      "model_prob": 0.9945040200898561,
-      "market_ask": 0.83,
-      "edge": 0.1645040200898561,
-      "kelly_size_usdc": 2.0,
-      "outcome": "WIN",
-      "resolution_date": "2026-05-22",
-      "strategy": "no_above",
-      "market_slug": "highest-temperature-in-seoul-on-may-22-2026-27corhigher",
-      "boundary_convention": "round",
-      "bet_side": "NO"
-    },
-    {
       "logged_at": "2026-05-21T06:54:56.875981+00:00",
       "city": "Paris",
       "bracket": "exact 23",
@@ -10006,7 +10006,7 @@
       }
     },
     "conviction_no": {
-      "bets": 16,
+      "bets": 17,
       "resolved": 9,
       "wins": 8,
       "pnl_usd": 0.1776,
@@ -10025,7 +10025,7 @@
           "pnl_usd": 0.0
         },
         "round": {
-          "bets": 16,
+          "bets": 17,
           "resolved": 9,
           "wins": 8,
           "pnl_usd": 0.1776
@@ -10033,15 +10033,15 @@
       }
     },
     "conviction_yes": {
-      "bets": 60,
+      "bets": 61,
       "resolved": 53,
       "wins": 7,
       "pnl_usd": -26.7519,
       "bankroll": {
         "start": 1000.0,
         "current": 973.248,
-        "open_stake": 14.0,
-        "available": 959.248,
+        "open_stake": 16.0,
+        "available": 957.248,
         "daily_loss": 24.0989
       },
       "by_boundary": {
@@ -10052,7 +10052,7 @@
           "pnl_usd": 0.0
         },
         "round": {
-          "bets": 60,
+          "bets": 61,
           "resolved": 53,
           "wins": 7,
           "pnl_usd": -26.7519
