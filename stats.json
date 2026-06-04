@@ -1,21 +1,21 @@
 {
-  "updated_at": "2026-06-04T07:59:25.870193+00:00",
-  "total_bets": 2786,
+  "updated_at": "2026-06-04T08:00:28.717474+00:00",
+  "total_bets": 2788,
   "wins": 1626,
-  "losses": 1158,
+  "losses": 1160,
   "pending": 2,
   "win_rate": 58.4,
-  "pnl": -162.77,
-  "kelly_pnl": -250.07,
-  "current_streak": 6,
-  "streak_type": "W",
+  "pnl": -164.83,
+  "kelly_pnl": -253.07,
+  "current_streak": 2,
+  "streak_type": "L",
   "daily": [
     {
       "date": "2026-06-04",
-      "bets": 70,
+      "bets": 72,
       "wins": 38,
-      "losses": 32,
-      "wr": 54.3
+      "losses": 34,
+      "wr": 52.8
     },
     {
       "date": "2026-06-03",
@@ -167,12 +167,30 @@
   ],
   "recent_signals": [
     {
+      "timestamp": "2026-06-04T08:00:08.693122+00:00",
+      "coin": "ETH",
+      "direction": "UP",
+      "entry_price": 0.58,
+      "secs": 8.4,
+      "outcome": "PENDING",
+      "slug": "eth-updown-5m-1780560000"
+    },
+    {
+      "timestamp": "2026-06-04T08:00:05.544798+00:00",
+      "coin": "BTC",
+      "direction": "UP",
+      "entry_price": 0.62,
+      "secs": 5.5,
+      "outcome": "PENDING",
+      "slug": "btc-updown-5m-1780560000"
+    },
+    {
       "timestamp": "2026-06-04T07:55:14.981259+00:00",
       "coin": "ETH",
       "direction": "UP",
       "entry_price": 0.57,
       "secs": 14.8,
-      "outcome": "PENDING",
+      "outcome": "LOSS",
       "slug": "eth-updown-5m-1780559700"
     },
     {
@@ -181,7 +199,7 @@
       "direction": "UP",
       "entry_price": 0.59,
       "secs": 6.0,
-      "outcome": "PENDING",
+      "outcome": "LOSS",
       "slug": "btc-updown-5m-1780559700"
     },
     {
@@ -327,24 +345,6 @@
       "secs": 21.9,
       "outcome": "WIN",
       "slug": "btc-updown-5m-1780554900"
-    },
-    {
-      "timestamp": "2026-06-04T06:25:26.823012+00:00",
-      "coin": "BTC",
-      "direction": "UP",
-      "entry_price": 0.57,
-      "secs": 26.7,
-      "outcome": "LOSS",
-      "slug": "btc-updown-5m-1780554300"
-    },
-    {
-      "timestamp": "2026-06-04T06:20:13.015724+00:00",
-      "coin": "BTC",
-      "direction": "UP",
-      "entry_price": 0.61,
-      "secs": 12.9,
-      "outcome": "LOSS",
-      "slug": "btc-updown-5m-1780554000"
     }
   ],
   "backtest": {
