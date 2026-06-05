@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-06-05T06:38:01.908160+00:00",
-  "now": "2026-06-05T06:38:01.908160+00:00",
+  "updated_at": "2026-06-05T06:48:01.906557+00:00",
+  "now": "2026-06-05T06:48:01.906557+00:00",
   "markets": [
     {
       "condition_id": "0x681518875b966a13c2dc10020eb48bcd27ab8c474e49f7552124c16431c8d844",
@@ -47378,6 +47378,76 @@
           "fill_quality": null,
           "strategy": "modal_early",
           "bet_side": "YES"
+        }
+      ]
+    },
+    {
+      "condition_id": "0x3d7f03e93100a40d6aa26b0abadee18434ff4c55987988bc69dd8f7de285ab49",
+      "city": "London",
+      "market_type": "high",
+      "bracket": "exact 17",
+      "bracket_type": "exact",
+      "resolution_date": "2026-06-05",
+      "game_start_time": "2026-06-04T23:00:00+00:00",
+      "last_placement_time": "2026-06-05T21:00:00+00:00",
+      "effective_close_time": "2026-06-06T02:00:00+00:00",
+      "market_end_date": "2026-06-05T12:00:00+00:00",
+      "market_slug": "highest-temperature-in-london-on-june-5-2026-17c",
+      "resolved_at": null,
+      "outcome": null,
+      "resolution_source": null,
+      "state": "trading",
+      "bets": [
+        {
+          "id": 3095,
+          "placed_at": "2026-06-05T06:41:00.107935+00:00",
+          "size_usd": 2.0,
+          "filled_shares": 22.22222222222222,
+          "filled_vwap": 0.08,
+          "model_prob": 0.2883264575630571,
+          "best_ask_at_placement": 0.08,
+          "limit_price": 0.09,
+          "outcome": null,
+          "realized_pnl_usd": null,
+          "fee_usd": null,
+          "fill_quality": null,
+          "strategy": "modal_early",
+          "bet_side": "YES"
+        }
+      ]
+    },
+    {
+      "condition_id": "0xa99fdcfaf9b382844c39f0ccf323a109d91fd21a4e7b66a882c431b0a3c444ef",
+      "city": "London",
+      "market_type": "high",
+      "bracket": "exact 19",
+      "bracket_type": "exact",
+      "resolution_date": "2026-06-05",
+      "game_start_time": "2026-06-04T23:00:00+00:00",
+      "last_placement_time": "2026-06-05T21:00:00+00:00",
+      "effective_close_time": "2026-06-06T02:00:00+00:00",
+      "market_end_date": null,
+      "market_slug": "highest-temperature-in-london-on-june-5-2026-19c",
+      "resolved_at": null,
+      "outcome": null,
+      "resolution_source": null,
+      "state": "trading",
+      "bets": [
+        {
+          "id": "sl-428396",
+          "placed_at": "2026-06-05T06:41:05.215739+00:00",
+          "size_usd": 2.0,
+          "filled_shares": null,
+          "filled_vwap": null,
+          "model_prob": 0.13594432836740555,
+          "best_ask_at_placement": 0.53,
+          "limit_price": null,
+          "outcome": null,
+          "realized_pnl_usd": null,
+          "fee_usd": null,
+          "fill_quality": null,
+          "strategy": "no_exact",
+          "bet_side": "NO"
         }
       ]
     }
