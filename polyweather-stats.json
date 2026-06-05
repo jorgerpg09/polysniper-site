@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-06-05T12:37:57.895413+00:00",
+  "updated_at": "2026-06-05T12:47:58.057042+00:00",
   "live_wallet_usdc": 34.309204,
-  "live_wallet_at": "2026-06-05T12:37:57.443055+00:00",
+  "live_wallet_at": "2026-06-05T12:47:57.463419+00:00",
   "hit_rate": 0.2075,
   "theoretical_pnl": -131.2371,
   "trade_count": 1422,
@@ -145,6 +145,22 @@
     }
   ],
   "recent_trades": [
+    {
+      "logged_at": "2026-06-05T12:41:15.045935+00:00",
+      "city": "Paris",
+      "bracket": "exact 19",
+      "market_type": "high",
+      "model_prob": 0.8089523693759553,
+      "market_ask": 0.43,
+      "edge": 0.3789523693759553,
+      "kelly_size_usdc": 2.0,
+      "outcome": "PENDING",
+      "resolution_date": "2026-06-05",
+      "strategy": "no_exact",
+      "market_slug": "highest-temperature-in-paris-on-june-5-2026-19c",
+      "boundary_convention": "round",
+      "bet_side": "NO"
+    },
     {
       "logged_at": "2026-06-05T11:09:11.335529+00:00",
       "city": "Madrid",
@@ -7745,22 +7761,6 @@
       "bet_side": "NO"
     },
     {
-      "logged_at": "2026-05-22T12:41:10.457480+00:00",
-      "city": "Madrid",
-      "bracket": "exact 34",
-      "market_type": "high",
-      "model_prob": 0.9547405944133173,
-      "market_ask": 0.78,
-      "edge": 0.17474059441331724,
-      "kelly_size_usdc": 2.0,
-      "outcome": "WIN",
-      "resolution_date": "2026-05-22",
-      "strategy": "no_exact",
-      "market_slug": "highest-temperature-in-madrid-on-may-22-2026-34c",
-      "boundary_convention": "round",
-      "bet_side": "NO"
-    },
-    {
       "logged_at": "2026-05-22T11:11:32.310815+00:00",
       "city": "Paris",
       "bracket": "exact 28",
@@ -10259,7 +10259,7 @@
       }
     },
     "no_exact": {
-      "bets": 141,
+      "bets": 142,
       "resolved": 139,
       "wins": 71,
       "pnl_usd": -25.8868,
@@ -10278,7 +10278,7 @@
           "pnl_usd": 0.0
         },
         "round": {
-          "bets": 141,
+          "bets": 142,
           "resolved": 139,
           "wins": 71,
           "pnl_usd": -25.8868
