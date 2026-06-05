@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-06-05T17:13:11.396511+00:00",
+  "updated_at": "2026-06-05T17:30:27.390568+00:00",
   "live_wallet_usdc": 28.146237,
-  "live_wallet_at": "2026-06-05T17:13:11.027199+00:00",
+  "live_wallet_at": "2026-06-05T17:30:27.172446+00:00",
   "hit_rate": 0.2057,
   "theoretical_pnl": 47.9344,
   "trade_count": 525,
@@ -85,6 +85,38 @@
     }
   ],
   "recent_trades": [
+    {
+      "logged_at": "2026-06-05T17:13:33.885933+00:00",
+      "city": "New York City",
+      "bracket": "between 90 and 91",
+      "market_type": "high",
+      "model_prob": 0.8182106732514572,
+      "market_ask": 0.42,
+      "edge": 0.39821067325145726,
+      "kelly_size_usdc": 2.0,
+      "outcome": "PENDING",
+      "resolution_date": "2026-06-05",
+      "strategy": "no_between",
+      "market_slug": "highest-temperature-in-nyc-on-june-5-2026-90-91f",
+      "boundary_convention": "round",
+      "bet_side": "NO"
+    },
+    {
+      "logged_at": "2026-06-05T17:13:19.817224+00:00",
+      "city": "Austin",
+      "bracket": "between 84 and 85",
+      "market_type": "high",
+      "model_prob": 0.8226893979369878,
+      "market_ask": 0.45,
+      "edge": 0.3726893979369878,
+      "kelly_size_usdc": 2.0,
+      "outcome": "PENDING",
+      "resolution_date": "2026-06-05",
+      "strategy": "no_between",
+      "market_slug": "highest-temperature-in-austin-on-june-5-2026-84-85f",
+      "boundary_convention": "round",
+      "bet_side": "NO"
+    },
     {
       "logged_at": "2026-06-05T16:17:31.275469+00:00",
       "city": "Atlanta",
@@ -5389,22 +5421,6 @@
       "bet_side": "NO"
     },
     {
-      "logged_at": "2026-05-22T05:11:05.121300+00:00",
-      "city": "Helsinki",
-      "bracket": "above 18",
-      "market_type": "high",
-      "model_prob": 0.5784961072962678,
-      "market_ask": 0.42,
-      "edge": 0.15849610729626779,
-      "kelly_size_usdc": 2.0,
-      "outcome": "WIN",
-      "resolution_date": "2026-05-22",
-      "strategy": "no_above",
-      "market_slug": "highest-temperature-in-helsinki-on-may-22-2026-18corhigher",
-      "boundary_convention": "round",
-      "bet_side": "NO"
-    },
-    {
       "logged_at": "2026-05-22T05:11:00.515381+00:00",
       "city": "Paris",
       "bracket": "exact 27",
@@ -5418,22 +5434,6 @@
       "strategy": "modal_early",
       "market_slug": "highest-temperature-in-paris-on-may-22-2026-27c",
       "boundary_convention": "round"
-    },
-    {
-      "logged_at": "2026-05-22T00:41:05.411047+00:00",
-      "city": "Hong Kong",
-      "bracket": "above 31",
-      "market_type": "high",
-      "model_prob": 0.29798780706196537,
-      "market_ask": 0.13,
-      "edge": 0.16798780706196537,
-      "kelly_size_usdc": 2.0,
-      "outcome": "LOSS",
-      "resolution_date": "2026-05-22",
-      "strategy": "no_above",
-      "market_slug": "highest-temperature-in-hong-kong-on-may-22-2026-31corhigher",
-      "boundary_convention": "round",
-      "bet_side": "NO"
     },
     {
       "logged_at": "2026-05-21T23:57:54.696660+00:00",
@@ -9950,7 +9950,7 @@
       }
     },
     "no_between": {
-      "bets": 52,
+      "bets": 54,
       "resolved": 51,
       "wins": 23,
       "pnl_usd": -26.7601,
@@ -9969,7 +9969,7 @@
           "pnl_usd": 0.0
         },
         "round": {
-          "bets": 52,
+          "bets": 54,
           "resolved": 51,
           "wins": 23,
           "pnl_usd": -26.7601
