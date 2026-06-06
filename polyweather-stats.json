@@ -1,9 +1,9 @@
 {
-  "updated_at": "2026-06-06T06:29:54.138019+00:00",
+  "updated_at": "2026-06-06T06:39:54.264191+00:00",
   "live_wallet_usdc": 33.409393,
-  "live_wallet_at": "2026-06-06T06:29:53.577890+00:00",
-  "hit_rate": 0.2056,
-  "theoretical_pnl": -144.6881,
+  "live_wallet_at": "2026-06-06T06:39:53.588619+00:00",
+  "hit_rate": 0.2055,
+  "theoretical_pnl": -146.7574,
   "trade_count": 1435,
   "active_cities": 11,
   "daily_pnl": [
@@ -145,7 +145,7 @@
     },
     {
       "date": "2026-06-05",
-      "cumulative_pnl": -144.6881
+      "cumulative_pnl": -146.7574
     }
   ],
   "recent_trades": [
@@ -190,7 +190,7 @@
       "market_ask": 0.6,
       "edge": 0.23186519729548893,
       "kelly_size_usdc": 2.0,
-      "outcome": "PENDING",
+      "outcome": "LOSS",
       "resolution_date": "2026-06-05",
       "strategy": "no_between",
       "market_slug": "highest-temperature-in-austin-on-june-5-2026-86-87f",
@@ -347,7 +347,7 @@
       "market_ask": 0.901,
       "edge": -0.08016670282696925,
       "kelly_size_usdc": 2.0,
-      "outcome": "PENDING",
+      "outcome": "WIN",
       "resolution_date": "2026-06-05",
       "strategy": "conviction_no",
       "market_slug": "highest-temperature-in-austin-on-june-5-2026-88forhigher",
@@ -363,7 +363,7 @@
       "market_ask": 0.1,
       "edge": 0.07916670282696922,
       "kelly_size_usdc": 2.0,
-      "outcome": "PENDING",
+      "outcome": "LOSS",
       "resolution_date": "2026-06-05",
       "strategy": "conviction_yes",
       "market_slug": "highest-temperature-in-austin-on-june-5-2026-88forhigher",
@@ -721,7 +721,7 @@
       "market_ask": 0.61,
       "edge": 0.2406206270337824,
       "kelly_size_usdc": 2.0,
-      "outcome": "PENDING",
+      "outcome": "WIN",
       "resolution_date": "2026-06-05",
       "strategy": "no_between",
       "market_slug": "highest-temperature-in-austin-on-june-5-2026-84-85f",
@@ -737,7 +737,7 @@
       "market_ask": 0.66,
       "edge": 0.21246265635846073,
       "kelly_size_usdc": 2.0,
-      "outcome": "PENDING",
+      "outcome": "WIN",
       "resolution_date": "2026-06-05",
       "strategy": "no_between",
       "market_slug": "highest-temperature-in-austin-on-june-5-2026-82-83f",
@@ -10090,9 +10090,9 @@
     },
     "conviction_no": {
       "bets": 37,
-      "resolved": 36,
-      "wins": 30,
-      "pnl_usd": -3.8062,
+      "resolved": 37,
+      "wins": 31,
+      "pnl_usd": -3.5864,
       "bankroll": {
         "start": 1000.0,
         "current": 1000.0,
@@ -10109,23 +10109,23 @@
         },
         "round": {
           "bets": 37,
-          "resolved": 36,
-          "wins": 30,
-          "pnl_usd": -3.8062
+          "resolved": 37,
+          "wins": 31,
+          "pnl_usd": -3.5864
         }
       }
     },
     "conviction_yes": {
       "bets": 79,
-      "resolved": 78,
+      "resolved": 79,
       "wins": 10,
-      "pnl_usd": -31.3481,
+      "pnl_usd": -33.4174,
       "bankroll": {
         "start": 1000.0,
-        "current": 968.6521,
-        "open_stake": 2.0,
-        "available": 966.6521,
-        "daily_loss": 13.8272
+        "current": 966.5828,
+        "open_stake": 0.0,
+        "available": 966.5828,
+        "daily_loss": 15.8965
       },
       "by_boundary": {
         "floor": {
@@ -10136,9 +10136,9 @@
         },
         "round": {
           "bets": 79,
-          "resolved": 78,
+          "resolved": 79,
           "wins": 10,
-          "pnl_usd": -31.3481
+          "pnl_usd": -33.4174
         }
       }
     },
@@ -10225,14 +10225,14 @@
     },
     "no_between": {
       "bets": 258,
-      "resolved": 255,
-      "wins": 154,
-      "pnl_usd": -14.8377,
+      "resolved": 258,
+      "wins": 156,
+      "pnl_usd": -14.5287,
       "bankroll": {
         "start": 1000.0,
-        "current": 985.1623,
+        "current": 985.4713,
         "open_stake": 0.0,
-        "available": 985.1623,
+        "available": 985.4713,
         "daily_loss": 0.0
       },
       "by_boundary": {
@@ -10244,9 +10244,9 @@
         },
         "round": {
           "bets": 258,
-          "resolved": 255,
-          "wins": 154,
-          "pnl_usd": -14.8377
+          "resolved": 258,
+          "wins": 156,
+          "pnl_usd": -14.5287
         }
       }
     },
