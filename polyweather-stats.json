@@ -1,9 +1,9 @@
 {
-  "updated_at": "2026-06-06T03:39:54.286357+00:00",
+  "updated_at": "2026-06-06T03:49:54.235443+00:00",
   "live_wallet_usdc": 33.409393,
-  "live_wallet_at": "2026-06-06T03:39:53.619279+00:00",
-  "hit_rate": 0.2071,
-  "theoretical_pnl": -128.8636,
+  "live_wallet_at": "2026-06-06T03:49:53.592617+00:00",
+  "hit_rate": 0.2069,
+  "theoretical_pnl": -130.8446,
   "trade_count": 1435,
   "active_cities": 11,
   "daily_pnl": [
@@ -145,7 +145,7 @@
     },
     {
       "date": "2026-06-05",
-      "cumulative_pnl": -128.8636
+      "cumulative_pnl": -130.8446
     }
   ],
   "recent_trades": [
@@ -579,7 +579,7 @@
       "market_ask": 0.83,
       "edge": -0.060443758067340814,
       "kelly_size_usdc": 2.0,
-      "outcome": "PENDING",
+      "outcome": "WIN",
       "resolution_date": "2026-06-05",
       "strategy": "conviction_no",
       "market_slug": "highest-temperature-in-sao-paulo-on-june-5-2026-22c",
@@ -595,7 +595,7 @@
       "market_ask": 0.2,
       "edge": 0.030443758067340843,
       "kelly_size_usdc": 2.0,
-      "outcome": "PENDING",
+      "outcome": "LOSS",
       "resolution_date": "2026-06-05",
       "strategy": "conviction_yes",
       "market_slug": "highest-temperature-in-sao-paulo-on-june-5-2026-22c",
@@ -10090,9 +10090,9 @@
     },
     "conviction_no": {
       "bets": 37,
-      "resolved": 29,
-      "wins": 23,
-      "pnl_usd": -6.1091,
+      "resolved": 30,
+      "wins": 24,
+      "pnl_usd": -5.6995,
       "bankroll": {
         "start": 1000.0,
         "current": 1000.0,
@@ -10109,23 +10109,23 @@
         },
         "round": {
           "bets": 37,
-          "resolved": 29,
-          "wins": 23,
-          "pnl_usd": -6.1091
+          "resolved": 30,
+          "wins": 24,
+          "pnl_usd": -5.6995
         }
       }
     },
     "conviction_yes": {
       "bets": 79,
-      "resolved": 71,
+      "resolved": 72,
       "wins": 10,
-      "pnl_usd": -17.5208,
+      "pnl_usd": -19.5018,
       "bankroll": {
         "start": 1000.0,
-        "current": 982.4793,
-        "open_stake": 16.0,
-        "available": 966.4793,
-        "daily_loss": 0.0
+        "current": 980.4983,
+        "open_stake": 14.0,
+        "available": 966.4983,
+        "daily_loss": 1.981
       },
       "by_boundary": {
         "floor": {
@@ -10136,9 +10136,9 @@
         },
         "round": {
           "bets": 79,
-          "resolved": 71,
+          "resolved": 72,
           "wins": 10,
-          "pnl_usd": -17.5208
+          "pnl_usd": -19.5018
         }
       }
     },
