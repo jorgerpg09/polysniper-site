@@ -1,10 +1,10 @@
 {
-  "updated_at": "2026-06-06T14:09:54.285875+00:00",
+  "updated_at": "2026-06-06T14:19:53.957855+00:00",
   "live_wallet_usdc": 33.409393,
-  "live_wallet_at": "2026-06-06T14:09:53.624166+00:00",
+  "live_wallet_at": "2026-06-06T14:19:53.616119+00:00",
   "hit_rate": 0.2055,
   "theoretical_pnl": -146.7574,
-  "trade_count": 1445,
+  "trade_count": 1446,
   "active_cities": 11,
   "daily_pnl": [
     {
@@ -149,6 +149,37 @@
     }
   ],
   "recent_trades": [
+    {
+      "logged_at": "2026-06-06T14:11:26.241458+00:00",
+      "city": "Madrid",
+      "bracket": "exact 31",
+      "market_type": "high",
+      "model_prob": 0.6288290600025372,
+      "market_ask": 0.8200000000000001,
+      "edge": -0.19117093999746282,
+      "kelly_size_usdc": 2.0,
+      "outcome": "PENDING",
+      "resolution_date": "2026-06-06",
+      "strategy": "conviction_no",
+      "market_slug": "highest-temperature-in-madrid-on-june-6-2026-31c",
+      "boundary_convention": "round",
+      "bet_side": "NO"
+    },
+    {
+      "logged_at": "2026-06-06T14:11:25.929946+00:00",
+      "city": "Madrid",
+      "bracket": "exact 31",
+      "market_type": "high",
+      "model_prob": 0.3711709399974628,
+      "market_ask": 0.2,
+      "edge": 0.1711709399974628,
+      "kelly_size_usdc": 2.0,
+      "outcome": "PENDING",
+      "resolution_date": "2026-06-06",
+      "strategy": "conviction_yes",
+      "market_slug": "highest-temperature-in-madrid-on-june-6-2026-31c",
+      "boundary_convention": "round"
+    },
     {
       "logged_at": "2026-06-06T14:07:25.911120+00:00",
       "city": "Miami",
@@ -2376,21 +2407,6 @@
       "resolution_date": "2026-06-03",
       "strategy": "conviction_yes",
       "market_slug": "highest-temperature-in-paris-on-june-3-2026-20c",
-      "boundary_convention": "round"
-    },
-    {
-      "logged_at": "2026-06-03T14:00:48.955386+00:00",
-      "city": "Madrid",
-      "bracket": "exact 32",
-      "market_type": "high",
-      "model_prob": 0.25494209511351984,
-      "market_ask": 0.2,
-      "edge": 0.05494209511351983,
-      "kelly_size_usdc": 2.0,
-      "outcome": "LOSS",
-      "resolution_date": "2026-06-03",
-      "strategy": "conviction_yes",
-      "market_slug": "highest-temperature-in-madrid-on-june-3-2026-32c",
       "boundary_convention": "round"
     },
     {
@@ -7719,22 +7735,6 @@
       "bet_side": "NO"
     },
     {
-      "logged_at": "2026-05-23T15:21:55.128064+00:00",
-      "city": "New York City",
-      "bracket": "between 58 and 59",
-      "market_type": "high",
-      "model_prob": 0.8181008651914163,
-      "market_ask": 0.65,
-      "edge": 0.16810086519141632,
-      "kelly_size_usdc": 2.0,
-      "outcome": "WIN",
-      "resolution_date": "2026-05-23",
-      "strategy": "no_between",
-      "market_slug": "highest-temperature-in-nyc-on-may-23-2026-58-59f",
-      "boundary_convention": "round",
-      "bet_side": "NO"
-    },
-    {
       "logged_at": "2026-05-23T13:51:56.864720+00:00",
       "city": "London",
       "bracket": "exact 30",
@@ -10104,7 +10104,7 @@
       }
     },
     "conviction_no": {
-      "bets": 44,
+      "bets": 45,
       "resolved": 37,
       "wins": 31,
       "pnl_usd": -3.5864,
@@ -10123,7 +10123,7 @@
           "pnl_usd": 0.0
         },
         "round": {
-          "bets": 44,
+          "bets": 45,
           "resolved": 37,
           "wins": 31,
           "pnl_usd": -3.5864
@@ -10131,15 +10131,15 @@
       }
     },
     "conviction_yes": {
-      "bets": 88,
+      "bets": 89,
       "resolved": 79,
       "wins": 10,
       "pnl_usd": -33.4174,
       "bankroll": {
         "start": 1000.0,
         "current": 966.5828,
-        "open_stake": 18.0,
-        "available": 948.5828,
+        "open_stake": 20.0,
+        "available": 946.5828,
         "daily_loss": 15.8965
       },
       "by_boundary": {
@@ -10150,7 +10150,7 @@
           "pnl_usd": 0.0
         },
         "round": {
-          "bets": 88,
+          "bets": 89,
           "resolved": 79,
           "wins": 10,
           "pnl_usd": -33.4174
