@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-06-07T15:19:57.733211+00:00",
-  "now": "2026-06-07T15:19:57.733211+00:00",
+  "updated_at": "2026-06-07T15:29:57.769655+00:00",
+  "now": "2026-06-07T15:29:57.769655+00:00",
   "markets": [
     {
       "condition_id": "0x681518875b966a13c2dc10020eb48bcd27ab8c474e49f7552124c16431c8d844",
@@ -49575,6 +49575,41 @@
       ]
     },
     {
+      "condition_id": "0x20158db336f4243083b95bf0969d1e1cd41044f71017c27518313cfd4b8a4eee",
+      "city": "Chicago",
+      "market_type": "high",
+      "bracket": "between 84 and 85",
+      "bracket_type": "between",
+      "resolution_date": "2026-06-07",
+      "game_start_time": "2026-06-07T05:00:00+00:00",
+      "last_placement_time": "2026-06-08T03:00:00+00:00",
+      "effective_close_time": "2026-06-08T08:00:00+00:00",
+      "market_end_date": null,
+      "market_slug": "highest-temperature-in-chicago-on-june-7-2026-84-85f",
+      "resolved_at": null,
+      "outcome": null,
+      "resolution_source": null,
+      "state": "trading",
+      "bets": [
+        {
+          "id": "sl-466187",
+          "placed_at": "2026-06-07T15:23:25.482351+00:00",
+          "size_usd": 2.0,
+          "filled_shares": null,
+          "filled_vwap": null,
+          "model_prob": 0.06057020676149971,
+          "best_ask_at_placement": 0.71,
+          "limit_price": null,
+          "outcome": null,
+          "realized_pnl_usd": null,
+          "fee_usd": null,
+          "fill_quality": null,
+          "strategy": "no_between",
+          "bet_side": "NO"
+        }
+      ]
+    },
+    {
       "condition_id": "0x0db05db585fba03edef3178fb6a1cb004374e38a7b34c8d86019533cf6b4cf13",
       "city": "Helsinki",
       "market_type": "high",
@@ -49785,6 +49820,41 @@
       ]
     },
     {
+      "condition_id": "0x6ca4632b85bfcf708f808f65e0a496c86bed6577847f222348ad435816694257",
+      "city": "Paris",
+      "market_type": "high",
+      "bracket": "exact 22",
+      "bracket_type": "exact",
+      "resolution_date": "2026-06-07",
+      "game_start_time": "2026-06-06T22:00:00+00:00",
+      "last_placement_time": "2026-06-08T08:00:00+00:00",
+      "effective_close_time": "2026-06-08T12:00:00+00:00",
+      "market_end_date": "2026-06-07T12:00:00+00:00",
+      "market_slug": null,
+      "resolved_at": null,
+      "outcome": null,
+      "resolution_source": null,
+      "state": "trading",
+      "bets": [
+        {
+          "id": 3138,
+          "placed_at": "2026-06-07T15:21:23.970176+00:00",
+          "size_usd": 2.0,
+          "filled_shares": 7.4074074074074066,
+          "filled_vwap": 0.21,
+          "model_prob": 0.2984986720136653,
+          "best_ask_at_placement": 0.26,
+          "limit_price": 0.27,
+          "outcome": null,
+          "realized_pnl_usd": null,
+          "fee_usd": null,
+          "fill_quality": null,
+          "strategy": "modal_early",
+          "bet_side": "YES"
+        }
+      ]
+    },
+    {
       "condition_id": "0x7a42761d53aef0e56c50a077b55ff681963809cb1799ba103a11976e4a9e6777",
       "city": "Chicago",
       "market_type": "high",
@@ -49845,6 +49915,41 @@
           "model_prob": 0.169905305093428,
           "best_ask_at_placement": 0.139,
           "limit_price": 0.14,
+          "outcome": null,
+          "realized_pnl_usd": null,
+          "fee_usd": null,
+          "fill_quality": null,
+          "strategy": "conviction_yes",
+          "bet_side": "YES"
+        }
+      ]
+    },
+    {
+      "condition_id": "0xe781ce591b639a576ed4787c716c0cae3fa6d1e6054553a3778e1ca32943977c",
+      "city": "New York City",
+      "market_type": "high",
+      "bracket": "between 86 and 87",
+      "bracket_type": "between",
+      "resolution_date": "2026-06-07",
+      "game_start_time": "2026-06-07T04:00:00+00:00",
+      "last_placement_time": "2026-06-08T08:00:00+00:00",
+      "effective_close_time": "2026-06-08T12:00:00+00:00",
+      "market_end_date": "2026-06-07T12:00:00+00:00",
+      "market_slug": "highest-temperature-in-nyc-on-june-7-2026-86-87f",
+      "resolved_at": null,
+      "outcome": null,
+      "resolution_source": null,
+      "state": "trading",
+      "bets": [
+        {
+          "id": 3139,
+          "placed_at": "2026-06-07T15:21:26.434703+00:00",
+          "size_usd": 2.0,
+          "filled_shares": 16.666666666666668,
+          "filled_vwap": 0.11903999999999999,
+          "model_prob": 0.1328898613103785,
+          "best_ask_at_placement": 0.119,
+          "limit_price": 0.12,
           "outcome": null,
           "realized_pnl_usd": null,
           "fee_usd": null,
