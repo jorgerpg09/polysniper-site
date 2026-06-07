@@ -1,21 +1,21 @@
 {
-  "updated_at": "2026-06-07T23:24:33.633685+00:00",
-  "total_bets": 3244,
-  "wins": 1877,
+  "updated_at": "2026-06-07T23:25:37.989231+00:00",
+  "total_bets": 3246,
+  "wins": 1878,
   "losses": 1366,
-  "pending": 1,
+  "pending": 2,
   "win_rate": 57.9,
-  "pnl": -217.29,
-  "kelly_pnl": -333.64,
+  "pnl": -216.73,
+  "kelly_pnl": -332.72,
   "current_streak": 1,
-  "streak_type": "L",
+  "streak_type": "W",
   "daily": [
     {
       "date": "2026-06-07",
-      "bets": 116,
-      "wins": 74,
+      "bets": 117,
+      "wins": 75,
       "losses": 42,
-      "wr": 63.8
+      "wr": 64.1
     },
     {
       "date": "2026-06-06",
@@ -188,12 +188,30 @@
   ],
   "recent_signals": [
     {
+      "timestamp": "2026-06-07T23:25:18.304638+00:00",
+      "coin": "ETH",
+      "direction": "UP",
+      "entry_price": 0.6,
+      "secs": 18.1,
+      "outcome": "PENDING",
+      "slug": "eth-updown-5m-1780874700"
+    },
+    {
+      "timestamp": "2026-06-07T23:25:17.323525+00:00",
+      "coin": "BTC",
+      "direction": "UP",
+      "entry_price": 0.59,
+      "secs": 17.2,
+      "outcome": "PENDING",
+      "slug": "btc-updown-5m-1780874700"
+    },
+    {
       "timestamp": "2026-06-07T23:20:20.135638+00:00",
       "coin": "ETH",
       "direction": "UP",
       "entry_price": 0.63,
       "secs": 20.1,
-      "outcome": "PENDING",
+      "outcome": "WIN",
       "slug": "eth-updown-5m-1780874400"
     },
     {
@@ -348,24 +366,6 @@
       "secs": 11.5,
       "outcome": "LOSS",
       "slug": "btc-updown-5m-1780867500"
-    },
-    {
-      "timestamp": "2026-06-07T20:30:20.730544+00:00",
-      "coin": "ETH",
-      "direction": "UP",
-      "entry_price": 0.61,
-      "secs": 20.6,
-      "outcome": "WIN",
-      "slug": "eth-updown-5m-1780864200"
-    },
-    {
-      "timestamp": "2026-06-07T20:20:26.233959+00:00",
-      "coin": "BTC",
-      "direction": "UP",
-      "entry_price": 0.64,
-      "secs": 25.9,
-      "outcome": "WIN",
-      "slug": "btc-updown-5m-1780863600"
     }
   ],
   "backtest": {
