@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-06-07T20:49:57.767217+00:00",
-  "now": "2026-06-07T20:49:57.767217+00:00",
+  "updated_at": "2026-06-07T20:59:57.533129+00:00",
+  "now": "2026-06-07T20:59:57.533129+00:00",
   "markets": [
     {
       "condition_id": "0x681518875b966a13c2dc10020eb48bcd27ab8c474e49f7552124c16431c8d844",
@@ -50141,6 +50141,41 @@
           "fill_quality": null,
           "strategy": "no_exact",
           "bet_side": "NO"
+        }
+      ]
+    },
+    {
+      "condition_id": "0x8030aae7e786228f3e94c111eb8909ad49ca4d3d287e4d73212c139993807e00",
+      "city": "New York City",
+      "market_type": "high",
+      "bracket": "between 82 and 83",
+      "bracket_type": "between",
+      "resolution_date": "2026-06-07",
+      "game_start_time": "2026-06-07T04:00:00+00:00",
+      "last_placement_time": "2026-06-08T08:00:00+00:00",
+      "effective_close_time": "2026-06-08T12:00:00+00:00",
+      "market_end_date": "2026-06-07T12:00:00+00:00",
+      "market_slug": "highest-temperature-in-nyc-on-june-7-2026-82-83f",
+      "resolved_at": null,
+      "outcome": null,
+      "resolution_source": null,
+      "state": "trading",
+      "bets": [
+        {
+          "id": 3151,
+          "placed_at": "2026-06-07T20:53:26.026921+00:00",
+          "size_usd": 2.0,
+          "filled_shares": 14.285714285714285,
+          "filled_vwap": 0.11300000000000002,
+          "model_prob": 0.20031024404496156,
+          "best_ask_at_placement": 0.13,
+          "limit_price": 0.14,
+          "outcome": null,
+          "realized_pnl_usd": null,
+          "fee_usd": null,
+          "fill_quality": null,
+          "strategy": "conviction_yes",
+          "bet_side": "YES"
         }
       ]
     },
