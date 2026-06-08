@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-06-08T19:59:58.120979+00:00",
-  "now": "2026-06-08T19:59:58.120979+00:00",
+  "updated_at": "2026-06-08T20:09:57.886399+00:00",
+  "now": "2026-06-08T20:09:57.886399+00:00",
   "markets": [
     {
       "condition_id": "0x681518875b966a13c2dc10020eb48bcd27ab8c474e49f7552124c16431c8d844",
@@ -50573,7 +50573,7 @@
       "resolved_at": null,
       "outcome": null,
       "resolution_source": null,
-      "state": "trading",
+      "state": "after_last_placement",
       "bets": [
         {
           "id": "sl-481235",
@@ -50608,7 +50608,7 @@
       "resolved_at": null,
       "outcome": null,
       "resolution_source": null,
-      "state": "trading",
+      "state": "after_last_placement",
       "bets": [
         {
           "id": "sl-481243",
@@ -50729,6 +50729,41 @@
           "fee_usd": null,
           "fill_quality": null,
           "strategy": "no_between",
+          "bet_side": "NO"
+        }
+      ]
+    },
+    {
+      "condition_id": "0x163f950556d3d8522e99f5b04325a1539e20c7b0cffd3bf9cdbba01039a5b10a",
+      "city": "Toronto",
+      "market_type": "high",
+      "bracket": "exact 23",
+      "bracket_type": "exact",
+      "resolution_date": "2026-06-08",
+      "game_start_time": "2026-06-08T04:00:00+00:00",
+      "last_placement_time": "2026-06-09T02:00:00+00:00",
+      "effective_close_time": "2026-06-09T07:00:00+00:00",
+      "market_end_date": null,
+      "market_slug": "highest-temperature-in-toronto-on-june-8-2026-23c",
+      "resolved_at": null,
+      "outcome": null,
+      "resolution_source": null,
+      "state": "trading",
+      "bets": [
+        {
+          "id": "sl-492494",
+          "placed_at": "2026-06-08T20:08:25.763430+00:00",
+          "size_usd": 2.0,
+          "filled_shares": null,
+          "filled_vwap": null,
+          "model_prob": 0.10360105399819514,
+          "best_ask_at_placement": 0.55,
+          "limit_price": null,
+          "outcome": null,
+          "realized_pnl_usd": null,
+          "fee_usd": null,
+          "fill_quality": null,
+          "strategy": "no_exact",
           "bet_side": "NO"
         }
       ]
