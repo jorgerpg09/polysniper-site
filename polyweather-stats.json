@@ -1,10 +1,10 @@
 {
-  "updated_at": "2026-06-09T14:19:54.512180+00:00",
+  "updated_at": "2026-06-09T14:29:54.058553+00:00",
   "live_wallet_usdc": 33.409393,
-  "live_wallet_at": "2026-06-09T14:19:53.628893+00:00",
+  "live_wallet_at": "2026-06-09T14:29:53.614900+00:00",
   "hit_rate": 0.2,
   "theoretical_pnl": -192.6728,
-  "trade_count": 1498,
+  "trade_count": 1499,
   "active_cities": 11,
   "daily_pnl": [
     {
@@ -161,6 +161,21 @@
     }
   ],
   "recent_trades": [
+    {
+      "logged_at": "2026-06-09T14:28:23.992236+00:00",
+      "city": "Paris",
+      "bracket": "exact 20",
+      "market_type": "high",
+      "model_prob": 0.329093377861707,
+      "market_ask": 0.29,
+      "edge": 0.039093377861707024,
+      "kelly_size_usdc": 2.0,
+      "outcome": "PENDING",
+      "resolution_date": "2026-06-09",
+      "strategy": "modal_early",
+      "market_slug": null,
+      "boundary_convention": "round"
+    },
     {
       "logged_at": "2026-06-09T14:05:26.590970+00:00",
       "city": "Sao Paulo",
@@ -10260,15 +10275,15 @@
       }
     },
     "modal_early": {
-      "bets": 36,
+      "bets": 37,
       "resolved": 35,
       "wins": 2,
       "pnl_usd": -46.2349,
       "bankroll": {
         "start": 1000.0,
         "current": 955.5213,
-        "open_stake": 2.0,
-        "available": 953.5213,
+        "open_stake": 4.0,
+        "available": 951.5213,
         "daily_loss": 2.007
       },
       "by_boundary": {
@@ -10279,7 +10294,7 @@
           "pnl_usd": 0.0
         },
         "round": {
-          "bets": 36,
+          "bets": 37,
           "resolved": 35,
           "wins": 2,
           "pnl_usd": -46.2349
