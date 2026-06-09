@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-06-09T16:59:54.151104+00:00",
+  "updated_at": "2026-06-09T17:09:54.268523+00:00",
   "live_wallet_usdc": 33.409393,
-  "live_wallet_at": "2026-06-09T16:59:53.652486+00:00",
+  "live_wallet_at": "2026-06-09T17:09:53.626236+00:00",
   "hit_rate": 0.2,
   "theoretical_pnl": -192.6728,
   "trade_count": 1504,
@@ -161,6 +161,22 @@
     }
   ],
   "recent_trades": [
+    {
+      "logged_at": "2026-06-09T17:01:25.779628+00:00",
+      "city": "Toronto",
+      "bracket": "below 24",
+      "market_type": "high",
+      "model_prob": 0.9027162337992991,
+      "market_ask": 0.62,
+      "edge": 0.2827162337992991,
+      "kelly_size_usdc": 2.0,
+      "outcome": "PENDING",
+      "resolution_date": "2026-06-09",
+      "strategy": "no_below",
+      "market_slug": "highest-temperature-in-toronto-on-june-9-2026-24corbelow",
+      "boundary_convention": "round",
+      "bet_side": "NO"
+    },
     {
       "logged_at": "2026-06-09T16:37:25.871662+00:00",
       "city": "Sao Paulo",
@@ -6906,22 +6922,6 @@
       "bet_side": "NO"
     },
     {
-      "logged_at": "2026-05-28T15:32:17.455261+00:00",
-      "city": "Chicago",
-      "bracket": "between 72 and 73",
-      "market_type": "high",
-      "model_prob": 0.8546549911771246,
-      "market_ask": 0.61,
-      "edge": 0.24465499117712464,
-      "kelly_size_usdc": 2.0,
-      "outcome": "WIN",
-      "resolution_date": "2026-05-28",
-      "strategy": "no_between",
-      "market_slug": "highest-temperature-in-chicago-on-may-28-2026-72-73f",
-      "boundary_convention": "round",
-      "bet_side": "NO"
-    },
-    {
       "logged_at": "2026-05-28T12:58:16.768418+00:00",
       "city": "London",
       "bracket": "above 31",
@@ -10344,7 +10344,7 @@
       }
     },
     "no_below": {
-      "bets": 10,
+      "bets": 11,
       "resolved": 10,
       "wins": 6,
       "pnl_usd": 2.9105,
@@ -10363,7 +10363,7 @@
           "pnl_usd": 0.0
         },
         "round": {
-          "bets": 10,
+          "bets": 11,
           "resolved": 10,
           "wins": 6,
           "pnl_usd": 2.9105
