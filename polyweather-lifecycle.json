@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-06-09T12:39:57.836601+00:00",
-  "now": "2026-06-09T12:39:57.836601+00:00",
+  "updated_at": "2026-06-09T12:49:57.805786+00:00",
+  "now": "2026-06-09T12:49:57.805786+00:00",
   "markets": [
     {
       "condition_id": "0x681518875b966a13c2dc10020eb48bcd27ab8c474e49f7552124c16431c8d844",
@@ -51565,6 +51565,76 @@
       ]
     },
     {
+      "condition_id": "0xf273223800a6c51397a9772dc7bd61a1248460a8539b966871684a19d2cdffcf",
+      "city": "London",
+      "market_type": "high",
+      "bracket": "exact 17",
+      "bracket_type": "exact",
+      "resolution_date": "2026-06-09",
+      "game_start_time": "2026-06-08T23:00:00+00:00",
+      "last_placement_time": "2026-06-09T21:00:00+00:00",
+      "effective_close_time": "2026-06-10T02:00:00+00:00",
+      "market_end_date": "2026-06-09T12:00:00+00:00",
+      "market_slug": "highest-temperature-in-london-on-june-9-2026-17c",
+      "resolved_at": null,
+      "outcome": null,
+      "resolution_source": null,
+      "state": "trading",
+      "bets": [
+        {
+          "id": 3169,
+          "placed_at": "2026-06-09T12:41:00.140698+00:00",
+          "size_usd": 2.0,
+          "filled_shares": 14.285714285714285,
+          "filled_vwap": 0.13,
+          "model_prob": 0.3529177680253894,
+          "best_ask_at_placement": 0.13,
+          "limit_price": 0.14,
+          "outcome": null,
+          "realized_pnl_usd": null,
+          "fee_usd": null,
+          "fill_quality": null,
+          "strategy": "modal_early",
+          "bet_side": "YES"
+        }
+      ]
+    },
+    {
+      "condition_id": "0x175b9573e4d6d11120555273bcabb0ec5e157e56cb5ced72e9a592156ef76f76",
+      "city": "London",
+      "market_type": "high",
+      "bracket": "exact 19",
+      "bracket_type": "exact",
+      "resolution_date": "2026-06-09",
+      "game_start_time": "2026-06-08T23:00:00+00:00",
+      "last_placement_time": "2026-06-09T21:00:00+00:00",
+      "effective_close_time": "2026-06-10T02:00:00+00:00",
+      "market_end_date": null,
+      "market_slug": "highest-temperature-in-london-on-june-9-2026-19c",
+      "resolved_at": null,
+      "outcome": null,
+      "resolution_source": null,
+      "state": "trading",
+      "bets": [
+        {
+          "id": "sl-496882",
+          "placed_at": "2026-06-09T12:41:10.629560+00:00",
+          "size_usd": 2.0,
+          "filled_shares": null,
+          "filled_vwap": null,
+          "model_prob": 0.0357250845123388,
+          "best_ask_at_placement": 0.65,
+          "limit_price": null,
+          "outcome": null,
+          "realized_pnl_usd": null,
+          "fee_usd": null,
+          "fill_quality": null,
+          "strategy": "no_exact",
+          "bet_side": "NO"
+        }
+      ]
+    },
+    {
       "condition_id": "0x0ebde7486925ccca5acce571c782b4444ee1d9590b0a8d7c56f8edfc9a755b68",
       "city": "Atlanta",
       "market_type": "high",
@@ -51694,6 +51764,41 @@
           "filled_vwap": null,
           "model_prob": 0.09816096339809632,
           "best_ask_at_placement": 0.66,
+          "limit_price": null,
+          "outcome": null,
+          "realized_pnl_usd": null,
+          "fee_usd": null,
+          "fill_quality": null,
+          "strategy": "no_between",
+          "bet_side": "NO"
+        }
+      ]
+    },
+    {
+      "condition_id": "0x1ae1a93604301c589a8e5edae5f516fea41e70b2a43f75613f9096f412728c74",
+      "city": "Austin",
+      "market_type": "high",
+      "bracket": "between 92 and 93",
+      "bracket_type": "between",
+      "resolution_date": "2026-06-09",
+      "game_start_time": "2026-06-09T05:00:00+00:00",
+      "last_placement_time": "2026-06-10T03:00:00+00:00",
+      "effective_close_time": "2026-06-10T08:00:00+00:00",
+      "market_end_date": null,
+      "market_slug": "highest-temperature-in-austin-on-june-9-2026-92-93f",
+      "resolved_at": null,
+      "outcome": null,
+      "resolution_source": null,
+      "state": "trading",
+      "bets": [
+        {
+          "id": "sl-496868",
+          "placed_at": "2026-06-09T12:41:05.176430+00:00",
+          "size_usd": 2.0,
+          "filled_shares": null,
+          "filled_vwap": null,
+          "model_prob": 0.19380255752706466,
+          "best_ask_at_placement": 0.56,
           "limit_price": null,
           "outcome": null,
           "realized_pnl_usd": null,
