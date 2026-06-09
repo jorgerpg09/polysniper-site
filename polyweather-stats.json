@@ -1,10 +1,10 @@
 {
-  "updated_at": "2026-06-09T14:59:54.140017+00:00",
+  "updated_at": "2026-06-09T15:09:54.290963+00:00",
   "live_wallet_usdc": 33.409393,
-  "live_wallet_at": "2026-06-09T14:59:53.635687+00:00",
+  "live_wallet_at": "2026-06-09T15:09:53.630404+00:00",
   "hit_rate": 0.2,
   "theoretical_pnl": -192.6728,
-  "trade_count": 1499,
+  "trade_count": 1500,
   "active_cities": 11,
   "daily_pnl": [
     {
@@ -161,6 +161,37 @@
     }
   ],
   "recent_trades": [
+    {
+      "logged_at": "2026-06-09T15:05:26.422434+00:00",
+      "city": "Madrid",
+      "bracket": "exact 34",
+      "market_type": "high",
+      "model_prob": 0.7537080289124406,
+      "market_ask": 0.915,
+      "edge": -0.16129197108755944,
+      "kelly_size_usdc": 2.0,
+      "outcome": "PENDING",
+      "resolution_date": "2026-06-09",
+      "strategy": "conviction_no",
+      "market_slug": "highest-temperature-in-madrid-on-june-9-2026-34c",
+      "boundary_convention": "round",
+      "bet_side": "NO"
+    },
+    {
+      "logged_at": "2026-06-09T15:05:25.966573+00:00",
+      "city": "Madrid",
+      "bracket": "exact 34",
+      "market_type": "high",
+      "model_prob": 0.2462919710875594,
+      "market_ask": 0.139,
+      "edge": 0.10729197108755939,
+      "kelly_size_usdc": 2.0,
+      "outcome": "PENDING",
+      "resolution_date": "2026-06-09",
+      "strategy": "conviction_yes",
+      "market_slug": "highest-temperature-in-madrid-on-june-9-2026-34c",
+      "boundary_convention": "round"
+    },
     {
       "logged_at": "2026-06-09T14:42:26.496584+00:00",
       "city": "Paris",
@@ -2616,21 +2647,6 @@
       "market_slug": "highest-temperature-in-atlanta-on-june-6-2026-88-89f",
       "boundary_convention": "round",
       "bet_side": "NO"
-    },
-    {
-      "logged_at": "2026-06-06T14:00:26.759431+00:00",
-      "city": "Toronto",
-      "bracket": "exact 27",
-      "market_type": "high",
-      "model_prob": 0.15202373474594977,
-      "market_ask": 0.1,
-      "edge": 0.05202373474594976,
-      "kelly_size_usdc": 2.0,
-      "outcome": "LOSS",
-      "resolution_date": "2026-06-06",
-      "strategy": "conviction_yes",
-      "market_slug": "highest-temperature-in-toronto-on-june-6-2026-27c",
-      "boundary_convention": "round"
     },
     {
       "logged_at": "2026-06-06T14:00:25.012903+00:00",
@@ -6906,22 +6922,6 @@
       "boundary_convention": "round"
     },
     {
-      "logged_at": "2026-05-28T12:41:06.114172+00:00",
-      "city": "London",
-      "bracket": "exact 29",
-      "market_type": "high",
-      "model_prob": 0.9411912883993094,
-      "market_ask": 0.61,
-      "edge": 0.33119128839930945,
-      "kelly_size_usdc": 2.0,
-      "outcome": "WIN",
-      "resolution_date": "2026-05-28",
-      "strategy": "no_exact",
-      "market_slug": "highest-temperature-in-london-on-may-28-2026-29c",
-      "boundary_convention": "round",
-      "bet_side": "NO"
-    },
-    {
       "logged_at": "2026-05-28T12:41:00.180945+00:00",
       "city": "Atlanta",
       "bracket": "between 84 and 85",
@@ -10221,7 +10221,7 @@
       }
     },
     "conviction_no": {
-      "bets": 92,
+      "bets": 93,
       "resolved": 87,
       "wins": 75,
       "pnl_usd": -4.6354,
@@ -10240,7 +10240,7 @@
           "pnl_usd": 0.0
         },
         "round": {
-          "bets": 92,
+          "bets": 93,
           "resolved": 87,
           "wins": 75,
           "pnl_usd": -4.6354
@@ -10248,15 +10248,15 @@
       }
     },
     "conviction_yes": {
-      "bets": 135,
+      "bets": 136,
       "resolved": 130,
       "wins": 14,
       "pnl_usd": -78.6421,
       "bankroll": {
         "start": 1000.0,
         "current": 921.3579,
-        "open_stake": 10.0,
-        "available": 911.3579,
+        "open_stake": 12.0,
+        "available": 909.3579,
         "daily_loss": 21.13
       },
       "by_boundary": {
@@ -10267,7 +10267,7 @@
           "pnl_usd": 0.0
         },
         "round": {
-          "bets": 135,
+          "bets": 136,
           "resolved": 130,
           "wins": 14,
           "pnl_usd": -78.6421
