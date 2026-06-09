@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-06-09T05:09:57.943988+00:00",
-  "now": "2026-06-09T05:09:57.943988+00:00",
+  "updated_at": "2026-06-09T05:19:58.326054+00:00",
+  "now": "2026-06-09T05:19:58.326054+00:00",
   "markets": [
     {
       "condition_id": "0x681518875b966a13c2dc10020eb48bcd27ab8c474e49f7552124c16431c8d844",
@@ -50675,10 +50675,10 @@
       "effective_close_time": "2026-06-09T07:00:00+00:00",
       "market_end_date": null,
       "market_slug": "highest-temperature-in-atlanta-on-june-8-2026-80-81f",
-      "resolved_at": null,
-      "outcome": null,
+      "resolved_at": "2026-06-09T05:15:55.388265+00:00",
+      "outcome": "loss",
       "resolution_source": null,
-      "state": "after_last_placement",
+      "state": "resolved",
       "bets": [
         {
           "id": "sl-488608",
@@ -50689,8 +50689,8 @@
           "model_prob": 0.12225975709809156,
           "best_ask_at_placement": 0.63,
           "limit_price": null,
-          "outcome": null,
-          "realized_pnl_usd": null,
+          "outcome": "loss",
+          "realized_pnl_usd": -2.0,
           "fee_usd": null,
           "fill_quality": null,
           "strategy": "no_between",
@@ -50971,10 +50971,10 @@
       "effective_close_time": "2026-06-09T12:00:00+00:00",
       "market_end_date": "2026-06-08T12:00:00+00:00",
       "market_slug": "highest-temperature-in-atlanta-on-june-8-2026-82-83f",
-      "resolved_at": null,
-      "outcome": null,
-      "resolution_source": null,
-      "state": "trading",
+      "resolved_at": "2026-06-08T19:05:53.987184+00:00",
+      "outcome": "loss",
+      "resolution_source": "uma_resolved",
+      "state": "resolved",
       "bets": [
         {
           "id": 3166,
@@ -50985,9 +50985,9 @@
           "model_prob": 0.13497082416801165,
           "best_ask_at_placement": 0.108,
           "limit_price": 0.109,
-          "outcome": null,
-          "realized_pnl_usd": null,
-          "fee_usd": null,
+          "outcome": "loss",
+          "realized_pnl_usd": -1.6692,
+          "fee_usd": 0.0729,
           "fill_quality": null,
           "strategy": "conviction_yes",
           "bet_side": "YES"
@@ -51001,8 +51001,8 @@
           "model_prob": 0.11068588685124792,
           "best_ask_at_placement": 0.56,
           "limit_price": null,
-          "outcome": null,
-          "realized_pnl_usd": null,
+          "outcome": "win",
+          "realized_pnl_usd": 1.5714000000000001,
           "fee_usd": null,
           "fill_quality": null,
           "strategy": "no_between",
@@ -51526,6 +51526,41 @@
           "fill_quality": null,
           "strategy": "conviction_yes",
           "bet_side": "YES"
+        }
+      ]
+    },
+    {
+      "condition_id": "0xbcf02ea2be7287eba138f64a04eab01aff5f00f6123a08a25687d1e1aeebd60b",
+      "city": "Helsinki",
+      "market_type": "high",
+      "bracket": "exact 19",
+      "bracket_type": "exact",
+      "resolution_date": "2026-06-09",
+      "game_start_time": "2026-06-08T21:00:00+00:00",
+      "last_placement_time": "2026-06-09T19:00:00+00:00",
+      "effective_close_time": "2026-06-10T00:00:00+00:00",
+      "market_end_date": null,
+      "market_slug": "highest-temperature-in-helsinki-on-june-9-2026-19c",
+      "resolved_at": null,
+      "outcome": null,
+      "resolution_source": null,
+      "state": "trading",
+      "bets": [
+        {
+          "id": "sl-496685",
+          "placed_at": "2026-06-09T05:11:02.552087+00:00",
+          "size_usd": 2.0,
+          "filled_shares": null,
+          "filled_vwap": null,
+          "model_prob": 0.11058684390533974,
+          "best_ask_at_placement": 0.58,
+          "limit_price": null,
+          "outcome": null,
+          "realized_pnl_usd": null,
+          "fee_usd": null,
+          "fill_quality": null,
+          "strategy": "no_exact",
+          "bet_side": "NO"
         }
       ]
     }
