@@ -1,9 +1,9 @@
 {
-  "updated_at": "2026-06-09T04:39:54.577150+00:00",
+  "updated_at": "2026-06-09T04:49:54.029320+00:00",
   "live_wallet_usdc": 33.409393,
-  "live_wallet_at": "2026-06-09T04:39:53.643420+00:00",
-  "hit_rate": 0.2015,
-  "theoretical_pnl": -177.2653,
+  "live_wallet_at": "2026-06-09T04:49:53.623824+00:00",
+  "hit_rate": 0.2012,
+  "theoretical_pnl": -180.5957,
   "trade_count": 1492,
   "active_cities": 11,
   "daily_pnl": [
@@ -157,7 +157,7 @@
     },
     {
       "date": "2026-06-08",
-      "cumulative_pnl": -177.2653
+      "cumulative_pnl": -180.5957
     }
   ],
   "recent_trades": [
@@ -170,7 +170,7 @@
       "market_ask": 0.91,
       "edge": -0.06521502611433361,
       "kelly_size_usdc": 2.0,
-      "outcome": "PENDING",
+      "outcome": "WIN",
       "resolution_date": "2026-06-08",
       "strategy": "conviction_no",
       "market_slug": "highest-temperature-in-toronto-on-june-8-2026-24c",
@@ -186,7 +186,7 @@
       "market_ask": 0.13,
       "edge": 0.025215026114333572,
       "kelly_size_usdc": 2.0,
-      "outcome": "PENDING",
+      "outcome": "LOSS",
       "resolution_date": "2026-06-08",
       "strategy": "conviction_yes",
       "market_slug": "highest-temperature-in-toronto-on-june-8-2026-24c",
@@ -201,7 +201,7 @@
       "market_ask": 0.55,
       "edge": 0.3463989460018049,
       "kelly_size_usdc": 2.0,
-      "outcome": "PENDING",
+      "outcome": "LOSS",
       "resolution_date": "2026-06-08",
       "strategy": "no_exact",
       "market_slug": "highest-temperature-in-toronto-on-june-8-2026-23c",
@@ -263,7 +263,7 @@
       "market_ask": 0.91,
       "edge": -0.09613732078336423,
       "kelly_size_usdc": 2.0,
-      "outcome": "PENDING",
+      "outcome": "WIN",
       "resolution_date": "2026-06-08",
       "strategy": "conviction_no",
       "market_slug": "highest-temperature-in-toronto-on-june-8-2026-25c",
@@ -279,7 +279,7 @@
       "market_ask": 0.15,
       "edge": 0.03613732078336421,
       "kelly_size_usdc": 2.0,
-      "outcome": "PENDING",
+      "outcome": "LOSS",
       "resolution_date": "2026-06-08",
       "strategy": "conviction_yes",
       "market_slug": "highest-temperature-in-toronto-on-june-8-2026-25c",
@@ -809,7 +809,7 @@
       "market_ask": 0.55,
       "edge": 0.3019719378675725,
       "kelly_size_usdc": 2.0,
-      "outcome": "PENDING",
+      "outcome": "WIN",
       "resolution_date": "2026-06-08",
       "strategy": "no_exact",
       "market_slug": "highest-temperature-in-toronto-on-june-8-2026-24c",
@@ -10192,9 +10192,9 @@
     },
     "conviction_no": {
       "bets": 87,
-      "resolved": 80,
-      "wins": 68,
-      "pnl_usd": -6.0227,
+      "resolved": 82,
+      "wins": 70,
+      "pnl_usd": -5.6271,
       "bankroll": {
         "start": 1000.0,
         "current": 1000.0,
@@ -10211,23 +10211,23 @@
         },
         "round": {
           "bets": 87,
-          "resolved": 80,
-          "wins": 68,
-          "pnl_usd": -6.0227
+          "resolved": 82,
+          "wins": 70,
+          "pnl_usd": -5.6271
         }
       }
     },
     "conviction_yes": {
       "bets": 130,
-      "resolved": 121,
+      "resolved": 123,
       "wins": 14,
-      "pnl_usd": -63.239,
+      "pnl_usd": -66.5694,
       "bankroll": {
         "start": 1000.0,
-        "current": 936.7611,
-        "open_stake": 18.0,
-        "available": 918.7611,
-        "daily_loss": 5.7269
+        "current": 933.4307,
+        "open_stake": 14.0,
+        "available": 919.4307,
+        "daily_loss": 9.0572
       },
       "by_boundary": {
         "floor": {
@@ -10238,9 +10238,9 @@
         },
         "round": {
           "bets": 130,
-          "resolved": 121,
+          "resolved": 123,
           "wins": 14,
-          "pnl_usd": -63.239
+          "pnl_usd": -66.5694
         }
       }
     },
@@ -10381,14 +10381,14 @@
     },
     "no_exact": {
       "bets": 166,
-      "resolved": 164,
-      "wins": 85,
-      "pnl_usd": -18.6634,
+      "resolved": 166,
+      "wins": 86,
+      "pnl_usd": -19.027,
       "bankroll": {
         "start": 100.0,
-        "current": 81.3366,
+        "current": 80.973,
         "open_stake": 0.0,
-        "available": 81.3366,
+        "available": 80.973,
         "daily_loss": 0.0
       },
       "by_boundary": {
@@ -10400,9 +10400,9 @@
         },
         "round": {
           "bets": 166,
-          "resolved": 164,
-          "wins": 85,
-          "pnl_usd": -18.6634
+          "resolved": 166,
+          "wins": 86,
+          "pnl_usd": -19.027
         }
       }
     },
