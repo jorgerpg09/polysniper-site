@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-06-11T21:16:40.182958+00:00",
-  "now": "2026-06-11T21:16:40.182958+00:00",
+  "updated_at": "2026-06-11T21:26:40.219711+00:00",
+  "now": "2026-06-11T21:26:40.219711+00:00",
   "markets": [
     {
       "condition_id": "0x681518875b966a13c2dc10020eb48bcd27ab8c474e49f7552124c16431c8d844",
@@ -53618,41 +53618,6 @@
       ]
     },
     {
-      "condition_id": "0x810bb4d584a5145c4f7c63773dbe1412598526655fdcab55c1b98c24c6c7d11f",
-      "city": "Austin",
-      "market_type": "high",
-      "bracket": "between 94 and 95",
-      "bracket_type": "between",
-      "resolution_date": "2026-06-11",
-      "game_start_time": "2026-06-11T05:00:00+00:00",
-      "last_placement_time": "2026-06-12T03:00:00+00:00",
-      "effective_close_time": "2026-06-12T08:00:00+00:00",
-      "market_end_date": null,
-      "market_slug": "highest-temperature-in-austin-on-june-11-2026-94-95f",
-      "resolved_at": null,
-      "outcome": null,
-      "resolution_source": null,
-      "state": "trading",
-      "bets": [
-        {
-          "id": "sl-537006",
-          "placed_at": "2026-06-11T14:20:06.923227+00:00",
-          "size_usd": 2.0,
-          "filled_shares": null,
-          "filled_vwap": null,
-          "model_prob": 0.18750854759601476,
-          "best_ask_at_placement": 0.61,
-          "limit_price": null,
-          "outcome": null,
-          "realized_pnl_usd": null,
-          "fee_usd": null,
-          "fill_quality": null,
-          "strategy": "no_between",
-          "bet_side": "NO"
-        }
-      ]
-    },
-    {
       "condition_id": "0x1db2a1a20e624390b2183a330f1c0c530fc84e5613ea8b5b6b90bfa309fdebef",
       "city": "Austin",
       "market_type": "high",
@@ -54098,6 +54063,57 @@
           "fill_quality": null,
           "strategy": "conviction_yes",
           "bet_side": "YES"
+        }
+      ]
+    },
+    {
+      "condition_id": "0x810bb4d584a5145c4f7c63773dbe1412598526655fdcab55c1b98c24c6c7d11f",
+      "city": "Austin",
+      "market_type": "high",
+      "bracket": "between 94 and 95",
+      "bracket_type": "between",
+      "resolution_date": "2026-06-11",
+      "game_start_time": "2026-06-11T05:00:00+00:00",
+      "last_placement_time": "2026-06-12T08:00:00+00:00",
+      "effective_close_time": "2026-06-12T12:00:00+00:00",
+      "market_end_date": "2026-06-11T12:00:00+00:00",
+      "market_slug": "highest-temperature-in-austin-on-june-11-2026-94-95f",
+      "resolved_at": null,
+      "outcome": null,
+      "resolution_source": null,
+      "state": "trading",
+      "bets": [
+        {
+          "id": 3220,
+          "placed_at": "2026-06-11T21:20:07.821909+00:00",
+          "size_usd": 2.0,
+          "filled_shares": 7.692307692307692,
+          "filled_vwap": 0.2422,
+          "model_prob": 0.1926023402057665,
+          "best_ask_at_placement": 0.25,
+          "limit_price": 0.26,
+          "outcome": null,
+          "realized_pnl_usd": null,
+          "fee_usd": null,
+          "fill_quality": null,
+          "strategy": "conviction_yes",
+          "bet_side": "YES"
+        },
+        {
+          "id": "sl-537006",
+          "placed_at": "2026-06-11T14:20:06.923227+00:00",
+          "size_usd": 2.0,
+          "filled_shares": null,
+          "filled_vwap": null,
+          "model_prob": 0.18750854759601476,
+          "best_ask_at_placement": 0.61,
+          "limit_price": null,
+          "outcome": null,
+          "realized_pnl_usd": null,
+          "fee_usd": null,
+          "fill_quality": null,
+          "strategy": "no_between",
+          "bet_side": "NO"
         }
       ]
     },
