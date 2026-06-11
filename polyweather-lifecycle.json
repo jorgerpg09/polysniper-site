@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-06-11T15:56:40.712939+00:00",
-  "now": "2026-06-11T15:56:40.712939+00:00",
+  "updated_at": "2026-06-11T16:06:40.173719+00:00",
+  "now": "2026-06-11T16:06:40.173719+00:00",
   "markets": [
     {
       "condition_id": "0x681518875b966a13c2dc10020eb48bcd27ab8c474e49f7552124c16431c8d844",
@@ -53824,6 +53824,22 @@
           "fill_quality": null,
           "strategy": "conviction_yes",
           "bet_side": "YES"
+        },
+        {
+          "id": "sl-542168",
+          "placed_at": "2026-06-11T16:06:07.973698+00:00",
+          "size_usd": 2.0,
+          "filled_shares": null,
+          "filled_vwap": null,
+          "model_prob": 0.1399596786964618,
+          "best_ask_at_placement": 0.56,
+          "limit_price": null,
+          "outcome": null,
+          "realized_pnl_usd": null,
+          "fee_usd": null,
+          "fill_quality": null,
+          "strategy": "no_exact",
+          "bet_side": "NO"
         }
       ]
     },
@@ -53958,6 +53974,41 @@
           "model_prob": 0.2936917498158895,
           "best_ask_at_placement": 0.3,
           "limit_price": 0.31,
+          "outcome": null,
+          "realized_pnl_usd": null,
+          "fee_usd": null,
+          "fill_quality": null,
+          "strategy": "conviction_yes",
+          "bet_side": "YES"
+        }
+      ]
+    },
+    {
+      "condition_id": "0xcfa1244a6f2ab79b4f3a497dc7fbb94e1ff766ad74c4030d1c2f0442e0cd1afc",
+      "city": "Sao Paulo",
+      "market_type": "high",
+      "bracket": "exact 22",
+      "bracket_type": "exact",
+      "resolution_date": "2026-06-11",
+      "game_start_time": "2026-06-11T03:00:00+00:00",
+      "last_placement_time": "2026-06-12T08:00:00+00:00",
+      "effective_close_time": "2026-06-12T12:00:00+00:00",
+      "market_end_date": "2026-06-11T12:00:00+00:00",
+      "market_slug": "highest-temperature-in-sao-paulo-on-june-11-2026-22c",
+      "resolved_at": null,
+      "outcome": null,
+      "resolution_source": null,
+      "state": "trading",
+      "bets": [
+        {
+          "id": 3209,
+          "placed_at": "2026-06-11T16:01:08.498142+00:00",
+          "size_usd": 2.0,
+          "filled_shares": 10.526315789473685,
+          "filled_vwap": 0.11,
+          "model_prob": 0.18679664849431626,
+          "best_ask_at_placement": 0.18,
+          "limit_price": 0.19,
           "outcome": null,
           "realized_pnl_usd": null,
           "fee_usd": null,
