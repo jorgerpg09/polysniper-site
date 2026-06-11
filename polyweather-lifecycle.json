@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-06-11T17:36:40.333824+00:00",
-  "now": "2026-06-11T17:36:40.333824+00:00",
+  "updated_at": "2026-06-11T17:46:40.397659+00:00",
+  "now": "2026-06-11T17:46:40.397659+00:00",
   "markets": [
     {
       "condition_id": "0x681518875b966a13c2dc10020eb48bcd27ab8c474e49f7552124c16431c8d844",
@@ -53618,41 +53618,6 @@
       ]
     },
     {
-      "condition_id": "0x644d1eebc0ab223f1d72bab3516359c8661ab2138be14eac93f4839da5456866",
-      "city": "Chicago",
-      "market_type": "high",
-      "bracket": "between 84 and 85",
-      "bracket_type": "between",
-      "resolution_date": "2026-06-11",
-      "game_start_time": "2026-06-11T05:00:00+00:00",
-      "last_placement_time": "2026-06-12T03:00:00+00:00",
-      "effective_close_time": "2026-06-12T08:00:00+00:00",
-      "market_end_date": null,
-      "market_slug": "highest-temperature-in-chicago-on-june-11-2026-84-85f",
-      "resolved_at": null,
-      "outcome": null,
-      "resolution_source": null,
-      "state": "trading",
-      "bets": [
-        {
-          "id": "sl-535790",
-          "placed_at": "2026-06-11T11:09:08.282961+00:00",
-          "size_usd": 2.0,
-          "filled_shares": null,
-          "filled_vwap": null,
-          "model_prob": 0.09362385544141666,
-          "best_ask_at_placement": 0.68,
-          "limit_price": null,
-          "outcome": null,
-          "realized_pnl_usd": null,
-          "fee_usd": null,
-          "fill_quality": null,
-          "strategy": "no_between",
-          "bet_side": "NO"
-        }
-      ]
-    },
-    {
       "condition_id": "0x810bb4d584a5145c4f7c63773dbe1412598526655fdcab55c1b98c24c6c7d11f",
       "city": "Austin",
       "market_type": "high",
@@ -53875,6 +53840,57 @@
           "fill_quality": null,
           "strategy": "conviction_yes",
           "bet_side": "YES"
+        }
+      ]
+    },
+    {
+      "condition_id": "0x644d1eebc0ab223f1d72bab3516359c8661ab2138be14eac93f4839da5456866",
+      "city": "Chicago",
+      "market_type": "high",
+      "bracket": "between 84 and 85",
+      "bracket_type": "between",
+      "resolution_date": "2026-06-11",
+      "game_start_time": "2026-06-11T05:00:00+00:00",
+      "last_placement_time": "2026-06-12T08:00:00+00:00",
+      "effective_close_time": "2026-06-12T12:00:00+00:00",
+      "market_end_date": "2026-06-11T12:00:00+00:00",
+      "market_slug": "highest-temperature-in-chicago-on-june-11-2026-84-85f",
+      "resolved_at": null,
+      "outcome": null,
+      "resolution_source": null,
+      "state": "trading",
+      "bets": [
+        {
+          "id": 3213,
+          "placed_at": "2026-06-11T17:37:08.010739+00:00",
+          "size_usd": 2.0,
+          "filled_shares": 18.181818181818183,
+          "filled_vwap": 0.1056,
+          "model_prob": 0.10824548690503771,
+          "best_ask_at_placement": 0.1,
+          "limit_price": 0.11,
+          "outcome": null,
+          "realized_pnl_usd": null,
+          "fee_usd": null,
+          "fill_quality": null,
+          "strategy": "conviction_yes",
+          "bet_side": "YES"
+        },
+        {
+          "id": "sl-535790",
+          "placed_at": "2026-06-11T11:09:08.282961+00:00",
+          "size_usd": 2.0,
+          "filled_shares": null,
+          "filled_vwap": null,
+          "model_prob": 0.09362385544141666,
+          "best_ask_at_placement": 0.68,
+          "limit_price": null,
+          "outcome": null,
+          "realized_pnl_usd": null,
+          "fee_usd": null,
+          "fill_quality": null,
+          "strategy": "no_between",
+          "bet_side": "NO"
         }
       ]
     },
