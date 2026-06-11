@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-06-11T23:06:40.340439+00:00",
-  "now": "2026-06-11T23:06:40.340439+00:00",
+  "updated_at": "2026-06-11T23:16:40.608170+00:00",
+  "now": "2026-06-11T23:16:40.608170+00:00",
   "markets": [
     {
       "condition_id": "0x681518875b966a13c2dc10020eb48bcd27ab8c474e49f7552124c16431c8d844",
@@ -54406,6 +54406,41 @@
           "fee_usd": null,
           "fill_quality": null,
           "strategy": "no_between",
+          "bet_side": "NO"
+        }
+      ]
+    },
+    {
+      "condition_id": "0xad1779aadc84b84ec69d12851ac361e499169a1d39205f4901b74cf7822b3b03",
+      "city": "Paris",
+      "market_type": "low",
+      "bracket": "exact 15",
+      "bracket_type": "exact",
+      "resolution_date": "2026-06-12",
+      "game_start_time": "2026-06-11T22:00:00+00:00",
+      "last_placement_time": "2026-06-12T10:00:00+00:00",
+      "effective_close_time": "2026-06-12T18:00:00+00:00",
+      "market_end_date": null,
+      "market_slug": "lowest-temperature-in-paris-on-june-12-2026-15c",
+      "resolved_at": null,
+      "outcome": null,
+      "resolution_source": null,
+      "state": "trading",
+      "bets": [
+        {
+          "id": "sl-552815",
+          "placed_at": "2026-06-11T23:12:08.433888+00:00",
+          "size_usd": 2.0,
+          "filled_shares": null,
+          "filled_vwap": null,
+          "model_prob": 0.1553484495726946,
+          "best_ask_at_placement": 0.51,
+          "limit_price": null,
+          "outcome": null,
+          "realized_pnl_usd": null,
+          "fee_usd": null,
+          "fill_quality": null,
+          "strategy": "no_exact",
           "bet_side": "NO"
         }
       ]
