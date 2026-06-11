@@ -1,9 +1,9 @@
 {
-  "updated_at": "2026-06-11T03:29:54.002587+00:00",
+  "updated_at": "2026-06-11T03:39:54.019387+00:00",
   "live_wallet_usdc": 33.409393,
-  "live_wallet_at": "2026-06-11T03:29:53.616160+00:00",
-  "hit_rate": 0.1985,
-  "theoretical_pnl": -200.2981,
+  "live_wallet_at": "2026-06-11T03:39:53.599485+00:00",
+  "hit_rate": 0.198,
+  "theoretical_pnl": -205.9255,
   "trade_count": 1524,
   "active_cities": 11,
   "daily_pnl": [
@@ -165,7 +165,7 @@
     },
     {
       "date": "2026-06-10",
-      "cumulative_pnl": -200.2981
+      "cumulative_pnl": -205.9255
     }
   ],
   "recent_trades": [
@@ -303,7 +303,7 @@
       "market_ask": 0.041,
       "edge": 0.307042736404978,
       "kelly_size_usdc": 2.0,
-      "outcome": "PENDING",
+      "outcome": "LOSS",
       "resolution_date": "2026-06-10",
       "strategy": "modal_early",
       "market_slug": "highest-temperature-in-sao-paulo-on-june-10-2026-25c",
@@ -397,7 +397,7 @@
       "market_ask": 0.23,
       "edge": 0.09149059298069459,
       "kelly_size_usdc": 2.0,
-      "outcome": "PENDING",
+      "outcome": "LOSS",
       "resolution_date": "2026-06-10",
       "strategy": "modal_early",
       "market_slug": "highest-temperature-in-sao-paulo-on-june-10-2026-25c",
@@ -505,7 +505,7 @@
       "market_ask": 0.48,
       "edge": 0.3170570492959708,
       "kelly_size_usdc": 2.0,
-      "outcome": "PENDING",
+      "outcome": "LOSS",
       "resolution_date": "2026-06-10",
       "strategy": "no_exact",
       "market_slug": "highest-temperature-in-sao-paulo-on-june-10-2026-24c",
@@ -553,7 +553,7 @@
       "market_ask": 0.92,
       "edge": -0.2679421409844558,
       "kelly_size_usdc": 2.0,
-      "outcome": "PENDING",
+      "outcome": "WIN",
       "resolution_date": "2026-06-10",
       "strategy": "conviction_no",
       "market_slug": "highest-temperature-in-sao-paulo-on-june-10-2026-25c",
@@ -599,7 +599,7 @@
       "market_ask": 0.29,
       "edge": 0.05794214098445577,
       "kelly_size_usdc": 2.0,
-      "outcome": "PENDING",
+      "outcome": "LOSS",
       "resolution_date": "2026-06-10",
       "strategy": "modal_early",
       "market_slug": null,
@@ -10320,9 +10320,9 @@
     },
     "conviction_no": {
       "bets": 110,
-      "resolved": 101,
-      "wins": 86,
-      "pnl_usd": -7.4982,
+      "resolved": 102,
+      "wins": 87,
+      "pnl_usd": -7.3243,
       "bankroll": {
         "start": 1000.0,
         "current": 1000.0,
@@ -10339,9 +10339,9 @@
         },
         "round": {
           "bets": 110,
-          "resolved": 101,
-          "wins": 86,
-          "pnl_usd": -7.4982
+          "resolved": 102,
+          "wins": 87,
+          "pnl_usd": -7.3243
         }
       }
     },
@@ -10374,15 +10374,15 @@
     },
     "modal_early": {
       "bets": 43,
-      "resolved": 38,
+      "resolved": 41,
       "wins": 2,
-      "pnl_usd": -52.096,
+      "pnl_usd": -57.7234,
       "bankroll": {
         "start": 1000.0,
-        "current": 949.6601,
-        "open_stake": 10.0,
-        "available": 939.6601,
-        "daily_loss": 2.0405
+        "current": 944.0328,
+        "open_stake": 4.0,
+        "available": 940.0328,
+        "daily_loss": 5.6273
       },
       "by_boundary": {
         "floor": {
@@ -10393,9 +10393,9 @@
         },
         "round": {
           "bets": 43,
-          "resolved": 38,
+          "resolved": 41,
           "wins": 2,
-          "pnl_usd": -52.096
+          "pnl_usd": -57.7234
         }
       }
     },
@@ -10509,14 +10509,14 @@
     },
     "no_exact": {
       "bets": 177,
-      "resolved": 173,
+      "resolved": 174,
       "wins": 89,
-      "pnl_usd": -20.6909,
+      "pnl_usd": -22.6909,
       "bankroll": {
         "start": 100.0,
-        "current": 79.3091,
+        "current": 77.3091,
         "open_stake": 0.0,
-        "available": 79.3091,
+        "available": 77.3091,
         "daily_loss": 0.0
       },
       "by_boundary": {
@@ -10528,9 +10528,9 @@
         },
         "round": {
           "bets": 177,
-          "resolved": 173,
+          "resolved": 174,
           "wins": 89,
-          "pnl_usd": -20.6909
+          "pnl_usd": -22.6909
         }
       }
     },
