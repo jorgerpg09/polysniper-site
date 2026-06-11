@@ -1,10 +1,10 @@
 {
-  "updated_at": "2026-06-11T17:36:36.673370+00:00",
+  "updated_at": "2026-06-11T17:46:36.760433+00:00",
   "live_wallet_usdc": 33.409393,
-  "live_wallet_at": "2026-06-11T17:36:36.211806+00:00",
+  "live_wallet_at": "2026-06-11T17:46:36.090225+00:00",
   "hit_rate": 0.1964,
   "theoretical_pnl": -225.0537,
-  "trade_count": 1536,
+  "trade_count": 1537,
   "active_cities": 11,
   "daily_pnl": [
     {
@@ -169,6 +169,21 @@
     }
   ],
   "recent_trades": [
+    {
+      "logged_at": "2026-06-11T17:37:08.010739+00:00",
+      "city": "Chicago",
+      "bracket": "between 84 and 85",
+      "market_type": "high",
+      "model_prob": 0.10824548690503771,
+      "market_ask": 0.1,
+      "edge": 0.008245486905037708,
+      "kelly_size_usdc": 2.0,
+      "outcome": "PENDING",
+      "resolution_date": "2026-06-11",
+      "strategy": "conviction_yes",
+      "market_slug": "highest-temperature-in-chicago-on-june-11-2026-84-85f",
+      "boundary_convention": "round"
+    },
     {
       "logged_at": "2026-06-11T17:15:07.869022+00:00",
       "city": "New York City",
@@ -2572,21 +2587,6 @@
       "resolution_date": "2026-06-08",
       "strategy": "conviction_yes",
       "market_slug": "lowest-temperature-in-nyc-on-june-8-2026-62-63f",
-      "boundary_convention": "round"
-    },
-    {
-      "logged_at": "2026-06-08T14:00:25.242513+00:00",
-      "city": "London",
-      "bracket": "exact 16",
-      "market_type": "high",
-      "model_prob": 0.22397938074422752,
-      "market_ask": 0.18,
-      "edge": 0.043979380744227525,
-      "kelly_size_usdc": 2.0,
-      "outcome": "WIN",
-      "resolution_date": "2026-06-08",
-      "strategy": "conviction_yes",
-      "market_slug": "highest-temperature-in-london-on-june-8-2026-16c",
       "boundary_convention": "round"
     },
     {
@@ -10361,15 +10361,15 @@
       }
     },
     "conviction_yes": {
-      "bets": 165,
+      "bets": 166,
       "resolved": 154,
       "wins": 16,
       "pnl_usd": -95.5594,
       "bankroll": {
         "start": 1000.0,
         "current": 904.4408,
-        "open_stake": 22.0,
-        "available": 882.4408,
+        "open_stake": 24.0,
+        "available": 880.4408,
         "daily_loss": 17.2319
       },
       "by_boundary": {
@@ -10380,7 +10380,7 @@
           "pnl_usd": 0.0
         },
         "round": {
-          "bets": 165,
+          "bets": 166,
           "resolved": 154,
           "wins": 16,
           "pnl_usd": -95.5594
