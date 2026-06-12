@@ -1,21 +1,21 @@
 {
-  "updated_at": "2026-06-12T13:49:59.554114+00:00",
-  "total_bets": 160,
-  "wins": 99,
+  "updated_at": "2026-06-12T13:51:05.055192+00:00",
+  "total_bets": 162,
+  "wins": 100,
   "losses": 60,
-  "pending": 1,
-  "win_rate": 62.3,
-  "pnl": 3.18,
-  "kelly_pnl": 2.62,
-  "current_streak": 3,
-  "streak_type": "L",
+  "pending": 2,
+  "win_rate": 62.5,
+  "pnl": 3.82,
+  "kelly_pnl": 3.6,
+  "current_streak": 1,
+  "streak_type": "W",
   "daily": [
     {
       "date": "2026-06-12",
-      "bets": 75,
-      "wins": 44,
+      "bets": 76,
+      "wins": 45,
       "losses": 31,
-      "wr": 58.7
+      "wr": 59.2
     },
     {
       "date": "2026-06-11",
@@ -27,12 +27,30 @@
   ],
   "recent_signals": [
     {
+      "timestamp": "2026-06-12T13:50:18.506148+00:00",
+      "coin": "ETH",
+      "direction": "UP",
+      "entry_price": 0.62,
+      "secs": 18.4,
+      "outcome": "PENDING",
+      "slug": "eth-updown-5m-1781272200"
+    },
+    {
+      "timestamp": "2026-06-12T13:50:12.873938+00:00",
+      "coin": "BTC",
+      "direction": "UP",
+      "entry_price": 0.6,
+      "secs": 12.8,
+      "outcome": "PENDING",
+      "slug": "btc-updown-5m-1781272200"
+    },
+    {
       "timestamp": "2026-06-12T13:45:21.980657+00:00",
       "coin": "ETH",
       "direction": "UP",
       "entry_price": 0.6,
       "secs": 21.9,
-      "outcome": "PENDING",
+      "outcome": "WIN",
       "slug": "eth-updown-5m-1781271900"
     },
     {
@@ -187,24 +205,6 @@
       "secs": 8.3,
       "outcome": "LOSS",
       "slug": "eth-updown-5m-1781266200"
-    },
-    {
-      "timestamp": "2026-06-12T12:10:06.966935+00:00",
-      "coin": "BTC",
-      "direction": "UP",
-      "entry_price": 0.61,
-      "secs": 6.9,
-      "outcome": "LOSS",
-      "slug": "btc-updown-5m-1781266200"
-    },
-    {
-      "timestamp": "2026-06-12T12:05:17.835844+00:00",
-      "coin": "BTC",
-      "direction": "UP",
-      "entry_price": 0.57,
-      "secs": 17.8,
-      "outcome": "LOSS",
-      "slug": "btc-updown-5m-1781265900"
     }
   ],
   "backtest": {
