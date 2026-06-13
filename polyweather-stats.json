@@ -1,9 +1,9 @@
 {
-  "updated_at": "2026-06-13T06:16:36.687645+00:00",
+  "updated_at": "2026-06-13T06:26:36.725423+00:00",
   "live_wallet_usdc": 33.409393,
-  "live_wallet_at": "2026-06-13T06:16:36.094024+00:00",
-  "hit_rate": 0.1962,
-  "theoretical_pnl": -210.1235,
+  "live_wallet_at": "2026-06-13T06:26:36.073381+00:00",
+  "hit_rate": 0.1967,
+  "theoretical_pnl": -202.6391,
   "trade_count": 1568,
   "active_cities": 11,
   "daily_pnl": [
@@ -173,7 +173,7 @@
     },
     {
       "date": "2026-06-12",
-      "cumulative_pnl": -210.1235
+      "cumulative_pnl": -202.6391
     }
   ],
   "recent_trades": [
@@ -311,7 +311,7 @@
       "market_ask": 0.55,
       "edge": 0.2777118052694634,
       "kelly_size_usdc": 2.0,
-      "outcome": "PENDING",
+      "outcome": "LOSS",
       "resolution_date": "2026-06-12",
       "strategy": "no_between",
       "market_slug": "highest-temperature-in-austin-on-june-12-2026-94-95f",
@@ -468,7 +468,7 @@
       "market_ask": 0.31,
       "edge": -0.18435351691429375,
       "kelly_size_usdc": 2.0,
-      "outcome": "PENDING",
+      "outcome": "LOSS",
       "resolution_date": "2026-06-12",
       "strategy": "conviction_yes",
       "market_slug": "highest-temperature-in-chicago-on-june-12-2026-82-83f",
@@ -530,7 +530,7 @@
       "market_ask": 0.9,
       "edge": -0.06545332049981956,
       "kelly_size_usdc": 2.0,
-      "outcome": "PENDING",
+      "outcome": "LOSS",
       "resolution_date": "2026-06-12",
       "strategy": "conviction_no",
       "market_slug": "highest-temperature-in-austin-on-june-12-2026-94-95f",
@@ -812,7 +812,7 @@
       "market_ask": 0.17,
       "edge": -0.004546679500180478,
       "kelly_size_usdc": 2.0,
-      "outcome": "PENDING",
+      "outcome": "WIN",
       "resolution_date": "2026-06-12",
       "strategy": "conviction_yes",
       "market_slug": "highest-temperature-in-austin-on-june-12-2026-94-95f",
@@ -952,7 +952,7 @@
       "market_ask": 0.7,
       "edge": 0.2044817550954039,
       "kelly_size_usdc": 2.0,
-      "outcome": "PENDING",
+      "outcome": "WIN",
       "resolution_date": "2026-06-12",
       "strategy": "no_between",
       "market_slug": "highest-temperature-in-chicago-on-june-12-2026-82-83f",
@@ -10373,9 +10373,9 @@
     },
     "conviction_no": {
       "bets": 147,
-      "resolved": 146,
+      "resolved": 147,
       "wins": 124,
-      "pnl_usd": -12.3376,
+      "pnl_usd": -14.3376,
       "bankroll": {
         "start": 1000.0,
         "current": 1000.0,
@@ -10392,23 +10392,23 @@
         },
         "round": {
           "bets": 147,
-          "resolved": 146,
+          "resolved": 147,
           "wins": 124,
-          "pnl_usd": -12.3376
+          "pnl_usd": -14.3376
         }
       }
     },
     "conviction_yes": {
       "bets": 195,
-      "resolved": 193,
-      "wins": 23,
-      "pnl_usd": -87.4157,
+      "resolved": 195,
+      "wins": 24,
+      "pnl_usd": -79.9313,
       "bankroll": {
         "start": 1000.0,
-        "current": 912.5845,
-        "open_stake": 4.0,
-        "available": 908.5845,
-        "daily_loss": 21.0091
+        "current": 920.0688,
+        "open_stake": 0.0,
+        "available": 920.0688,
+        "daily_loss": 23.0134
       },
       "by_boundary": {
         "floor": {
@@ -10419,9 +10419,9 @@
         },
         "round": {
           "bets": 195,
-          "resolved": 193,
-          "wins": 23,
-          "pnl_usd": -87.4157
+          "resolved": 195,
+          "wins": 24,
+          "pnl_usd": -79.9313
         }
       }
     },
@@ -10508,14 +10508,14 @@
     },
     "no_between": {
       "bets": 313,
-      "resolved": 310,
-      "wins": 186,
-      "pnl_usd": -17.013,
+      "resolved": 312,
+      "wins": 187,
+      "pnl_usd": -18.1559,
       "bankroll": {
         "start": 1000.0,
-        "current": 982.987,
+        "current": 981.8441,
         "open_stake": 0.0,
-        "available": 982.987,
+        "available": 981.8441,
         "daily_loss": 0.0
       },
       "by_boundary": {
@@ -10527,9 +10527,9 @@
         },
         "round": {
           "bets": 313,
-          "resolved": 310,
-          "wins": 186,
-          "pnl_usd": -17.013
+          "resolved": 312,
+          "wins": 187,
+          "pnl_usd": -18.1559
         }
       }
     },
