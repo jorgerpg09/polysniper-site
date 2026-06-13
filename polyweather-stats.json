@@ -1,10 +1,10 @@
 {
-  "updated_at": "2026-06-13T17:06:36.861471+00:00",
+  "updated_at": "2026-06-13T17:16:36.583084+00:00",
   "live_wallet_usdc": 33.409393,
-  "live_wallet_at": "2026-06-13T17:06:36.080499+00:00",
+  "live_wallet_at": "2026-06-13T17:16:36.111227+00:00",
   "hit_rate": 0.1967,
   "theoretical_pnl": -202.6391,
-  "trade_count": 1579,
+  "trade_count": 1580,
   "active_cities": 11,
   "daily_pnl": [
     {
@@ -177,6 +177,37 @@
     }
   ],
   "recent_trades": [
+    {
+      "logged_at": "2026-06-13T17:13:09.619605+00:00",
+      "city": "Atlanta",
+      "bracket": "between 94 and 95",
+      "market_type": "high",
+      "model_prob": 0.8060106600305458,
+      "market_ask": 0.88,
+      "edge": -0.07398933996945423,
+      "kelly_size_usdc": 2.0,
+      "outcome": "PENDING",
+      "resolution_date": "2026-06-13",
+      "strategy": "conviction_no",
+      "market_slug": "highest-temperature-in-atlanta-on-june-13-2026-94-95f",
+      "boundary_convention": "round",
+      "bet_side": "NO"
+    },
+    {
+      "logged_at": "2026-06-13T17:13:08.645232+00:00",
+      "city": "Atlanta",
+      "bracket": "between 94 and 95",
+      "market_type": "high",
+      "model_prob": 0.19398933996945422,
+      "market_ask": 0.14,
+      "edge": 0.05398933996945421,
+      "kelly_size_usdc": 2.0,
+      "outcome": "PENDING",
+      "resolution_date": "2026-06-13",
+      "strategy": "conviction_yes",
+      "market_slug": "highest-temperature-in-atlanta-on-june-13-2026-94-95f",
+      "boundary_convention": "round"
+    },
     {
       "logged_at": "2026-06-13T17:03:09.424721+00:00",
       "city": "Toronto",
@@ -2409,21 +2440,6 @@
       "market_slug": "highest-temperature-in-austin-on-june-10-2026-92-93f",
       "boundary_convention": "round",
       "bet_side": "NO"
-    },
-    {
-      "logged_at": "2026-06-10T20:55:25.164381+00:00",
-      "city": "Austin",
-      "bracket": "between 92 and 93",
-      "market_type": "high",
-      "model_prob": 0.21570061480512975,
-      "market_ask": 0.19,
-      "edge": 0.02570061480512975,
-      "kelly_size_usdc": 2.0,
-      "outcome": "LOSS",
-      "resolution_date": "2026-06-10",
-      "strategy": "conviction_yes",
-      "market_slug": "highest-temperature-in-austin-on-june-10-2026-92-93f",
-      "boundary_convention": "round"
     },
     {
       "logged_at": "2026-06-10T19:51:24.544565+00:00",
@@ -5223,22 +5239,6 @@
       "resolution_date": "2026-06-05",
       "strategy": "conviction_no",
       "market_slug": "highest-temperature-in-madrid-on-june-5-2026-30c",
-      "boundary_convention": "round",
-      "bet_side": "NO"
-    },
-    {
-      "logged_at": "2026-06-05T14:05:29.270819+00:00",
-      "city": "Helsinki",
-      "bracket": "exact 20",
-      "market_type": "high",
-      "model_prob": 0.8441050388893698,
-      "market_ask": 0.9299999999999999,
-      "edge": -0.08589496111063011,
-      "kelly_size_usdc": 2.0,
-      "outcome": "WIN",
-      "resolution_date": "2026-06-05",
-      "strategy": "conviction_no",
-      "market_slug": "highest-temperature-in-helsinki-on-june-5-2026-20c",
       "boundary_convention": "round",
       "bet_side": "NO"
     },
@@ -10417,7 +10417,7 @@
       }
     },
     "conviction_no": {
-      "bets": 155,
+      "bets": 156,
       "resolved": 147,
       "wins": 124,
       "pnl_usd": -14.3376,
@@ -10436,7 +10436,7 @@
           "pnl_usd": 0.0
         },
         "round": {
-          "bets": 155,
+          "bets": 156,
           "resolved": 147,
           "wins": 124,
           "pnl_usd": -14.3376
@@ -10444,15 +10444,15 @@
       }
     },
     "conviction_yes": {
-      "bets": 203,
+      "bets": 204,
       "resolved": 195,
       "wins": 24,
       "pnl_usd": -79.9313,
       "bankroll": {
         "start": 1000.0,
         "current": 920.0688,
-        "open_stake": 16.0,
-        "available": 904.0688,
+        "open_stake": 18.0,
+        "available": 902.0688,
         "daily_loss": 23.0134
       },
       "by_boundary": {
@@ -10463,7 +10463,7 @@
           "pnl_usd": 0.0
         },
         "round": {
-          "bets": 203,
+          "bets": 204,
           "resolved": 195,
           "wins": 24,
           "pnl_usd": -79.9313
