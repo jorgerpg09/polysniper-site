@@ -1,9 +1,9 @@
 {
-  "updated_at": "2026-06-13T22:26:36.476548+00:00",
+  "updated_at": "2026-06-13T22:36:36.486038+00:00",
   "live_wallet_usdc": 33.409393,
-  "live_wallet_at": "2026-06-13T22:26:36.105519+00:00",
-  "hit_rate": 0.1967,
-  "theoretical_pnl": -202.6391,
+  "live_wallet_at": "2026-06-13T22:36:36.092966+00:00",
+  "hit_rate": 0.1962,
+  "theoretical_pnl": -208.8216,
   "trade_count": 1586,
   "active_cities": 11,
   "daily_pnl": [
@@ -174,6 +174,10 @@
     {
       "date": "2026-06-12",
       "cumulative_pnl": -202.6391
+    },
+    {
+      "date": "2026-06-13",
+      "cumulative_pnl": -208.8216
     }
   ],
   "recent_trades": [
@@ -482,7 +486,7 @@
       "market_ask": 0.911,
       "edge": -0.07521842256897482,
       "kelly_size_usdc": 2.0,
-      "outcome": "PENDING",
+      "outcome": "WIN",
       "resolution_date": "2026-06-13",
       "strategy": "conviction_no",
       "market_slug": "highest-temperature-in-paris-on-june-13-2026-28c",
@@ -498,7 +502,7 @@
       "market_ask": 0.147,
       "edge": 0.017218422568974795,
       "kelly_size_usdc": 2.0,
-      "outcome": "PENDING",
+      "outcome": "LOSS",
       "resolution_date": "2026-06-13",
       "strategy": "conviction_yes",
       "market_slug": "highest-temperature-in-paris-on-june-13-2026-28c",
@@ -669,7 +673,7 @@
       "market_ask": 0.8200000000000001,
       "edge": -0.1738494291820103,
       "kelly_size_usdc": 2.0,
-      "outcome": "PENDING",
+      "outcome": "WIN",
       "resolution_date": "2026-06-13",
       "strategy": "conviction_no",
       "market_slug": "highest-temperature-in-madrid-on-june-13-2026-35c",
@@ -716,7 +720,7 @@
       "market_ask": 0.117,
       "edge": 0.0017881344397307625,
       "kelly_size_usdc": 2.0,
-      "outcome": "PENDING",
+      "outcome": "LOSS",
       "resolution_date": "2026-06-13",
       "strategy": "conviction_yes",
       "market_slug": "highest-temperature-in-madrid-on-june-13-2026-33c",
@@ -731,7 +735,7 @@
       "market_ask": 0.2,
       "edge": 0.15384942918201022,
       "kelly_size_usdc": 2.0,
-      "outcome": "PENDING",
+      "outcome": "LOSS",
       "resolution_date": "2026-06-13",
       "strategy": "conviction_yes",
       "market_slug": "highest-temperature-in-madrid-on-june-13-2026-35c",
@@ -10418,9 +10422,9 @@
     },
     "conviction_no": {
       "bets": 163,
-      "resolved": 147,
-      "wins": 124,
-      "pnl_usd": -14.3376,
+      "resolved": 149,
+      "wins": 126,
+      "pnl_usd": -13.7032,
       "bankroll": {
         "start": 1000.0,
         "current": 1000.0,
@@ -10437,23 +10441,23 @@
         },
         "round": {
           "bets": 163,
-          "resolved": 147,
-          "wins": 124,
-          "pnl_usd": -14.3376
+          "resolved": 149,
+          "wins": 126,
+          "pnl_usd": -13.7032
         }
       }
     },
     "conviction_yes": {
       "bets": 210,
-      "resolved": 195,
+      "resolved": 198,
       "wins": 24,
-      "pnl_usd": -79.9313,
+      "pnl_usd": -86.1138,
       "bankroll": {
         "start": 1000.0,
-        "current": 920.0688,
-        "open_stake": 30.0,
-        "available": 890.0688,
-        "daily_loss": 23.0134
+        "current": 913.8864,
+        "open_stake": 24.0,
+        "available": 889.8864,
+        "daily_loss": 29.1959
       },
       "by_boundary": {
         "floor": {
@@ -10464,9 +10468,9 @@
         },
         "round": {
           "bets": 210,
-          "resolved": 195,
+          "resolved": 198,
           "wins": 24,
-          "pnl_usd": -79.9313
+          "pnl_usd": -86.1138
         }
       }
     },
