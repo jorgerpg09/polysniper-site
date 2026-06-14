@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-06-14T21:36:40.216511+00:00",
-  "now": "2026-06-14T21:36:40.216511+00:00",
+  "updated_at": "2026-06-14T21:46:40.317880+00:00",
+  "now": "2026-06-14T21:46:40.317880+00:00",
   "markets": [
     {
       "condition_id": "0x681518875b966a13c2dc10020eb48bcd27ab8c474e49f7552124c16431c8d844",
@@ -56670,10 +56670,10 @@
       "effective_close_time": "2026-06-15T00:00:00+00:00",
       "market_end_date": null,
       "market_slug": "highest-temperature-in-helsinki-on-june-14-2026-16c",
-      "resolved_at": null,
-      "outcome": null,
+      "resolved_at": "2026-06-14T21:44:36.804828+00:00",
+      "outcome": "win",
       "resolution_source": null,
-      "state": "after_last_placement",
+      "state": "resolved",
       "bets": [
         {
           "id": "sl-595817",
@@ -56684,8 +56684,8 @@
           "model_prob": 0.26561245340605816,
           "best_ask_at_placement": 0.36,
           "limit_price": null,
-          "outcome": null,
-          "realized_pnl_usd": null,
+          "outcome": "win",
+          "realized_pnl_usd": 3.5556,
           "fee_usd": null,
           "fill_quality": null,
           "strategy": "no_exact",
@@ -57298,6 +57298,22 @@
           "fill_quality": null,
           "strategy": "conviction_yes",
           "bet_side": "YES"
+        },
+        {
+          "id": "sl-608863",
+          "placed_at": "2026-06-14T21:41:06.882719+00:00",
+          "size_usd": 2.0,
+          "filled_shares": null,
+          "filled_vwap": null,
+          "model_prob": 0.16604758591866187,
+          "best_ask_at_placement": 0.623,
+          "limit_price": null,
+          "outcome": null,
+          "realized_pnl_usd": null,
+          "fee_usd": null,
+          "fill_quality": null,
+          "strategy": "no_between",
+          "bet_side": "NO"
         }
       ]
     },
