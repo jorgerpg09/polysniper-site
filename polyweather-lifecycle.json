@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-06-14T15:26:40.306564+00:00",
-  "now": "2026-06-14T15:26:40.306564+00:00",
+  "updated_at": "2026-06-14T15:36:40.083005+00:00",
+  "now": "2026-06-14T15:36:40.083005+00:00",
   "markets": [
     {
       "condition_id": "0x681518875b966a13c2dc10020eb48bcd27ab8c474e49f7552124c16431c8d844",
@@ -57074,6 +57074,41 @@
           "fee_usd": null,
           "fill_quality": null,
           "strategy": "conviction_yes",
+          "bet_side": "YES"
+        }
+      ]
+    },
+    {
+      "condition_id": "0xe4c10711edcd8f5a3defac56b6ff4b60938f65d00c610e8524b603496a0f9b7d",
+      "city": "London",
+      "market_type": "high",
+      "bracket": "exact 22",
+      "bracket_type": "exact",
+      "resolution_date": "2026-06-14",
+      "game_start_time": "2026-06-13T23:00:00+00:00",
+      "last_placement_time": "2026-06-15T08:00:00+00:00",
+      "effective_close_time": "2026-06-15T12:00:00+00:00",
+      "market_end_date": "2026-06-14T12:00:00+00:00",
+      "market_slug": null,
+      "resolved_at": null,
+      "outcome": null,
+      "resolution_source": null,
+      "state": "trading",
+      "bets": [
+        {
+          "id": 3270,
+          "placed_at": "2026-06-14T15:27:06.449774+00:00",
+          "size_usd": 2.0,
+          "filled_shares": 10.0,
+          "filled_vwap": 0.14,
+          "model_prob": 0.2723702247288983,
+          "best_ask_at_placement": 0.19,
+          "limit_price": 0.2,
+          "outcome": null,
+          "realized_pnl_usd": null,
+          "fee_usd": null,
+          "fill_quality": null,
+          "strategy": "modal_early",
           "bet_side": "YES"
         }
       ]
