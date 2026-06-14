@@ -1,10 +1,10 @@
 {
-  "updated_at": "2026-06-14T05:46:37.256571+00:00",
+  "updated_at": "2026-06-14T05:56:37.200073+00:00",
   "live_wallet_usdc": 33.409393,
-  "live_wallet_at": "2026-06-14T05:46:36.081422+00:00",
+  "live_wallet_at": "2026-06-14T05:56:36.078444+00:00",
   "hit_rate": 0.1944,
   "theoretical_pnl": -232.2788,
-  "trade_count": 1586,
+  "trade_count": 1585,
   "active_cities": 11,
   "daily_pnl": [
     {
@@ -315,27 +315,12 @@
       "market_ask": 0.94,
       "edge": -0.1267296590949577,
       "kelly_size_usdc": 2.0,
-      "outcome": "PENDING",
+      "outcome": "LOSS",
       "resolution_date": "2026-06-13",
       "strategy": "conviction_no",
       "market_slug": "highest-temperature-in-chicago-on-june-13-2026-82-83f",
       "boundary_convention": "round",
       "bet_side": "NO"
-    },
-    {
-      "logged_at": "2026-06-13T18:59:08.938639+00:00",
-      "city": "Chicago",
-      "bracket": "between 82 and 83",
-      "market_type": "high",
-      "model_prob": 0.18672965909495776,
-      "market_ask": 0.11,
-      "edge": 0.07672965909495776,
-      "kelly_size_usdc": 2.0,
-      "outcome": "PENDING",
-      "resolution_date": "2026-06-13",
-      "strategy": "conviction_yes",
-      "market_slug": "highest-temperature-in-chicago-on-june-13-2026-82-83f",
-      "boundary_convention": "round"
     },
     {
       "logged_at": "2026-06-13T18:49:08.757722+00:00",
@@ -2381,6 +2366,21 @@
       "market_slug": "highest-temperature-in-madrid-on-june-11-2026-32c",
       "boundary_convention": "round",
       "bet_side": "NO"
+    },
+    {
+      "logged_at": "2026-06-11T15:01:08.268637+00:00",
+      "city": "Madrid",
+      "bracket": "exact 32",
+      "market_type": "high",
+      "model_prob": 0.2936917498158895,
+      "market_ask": 0.3,
+      "edge": -0.006308250184110464,
+      "kelly_size_usdc": 2.0,
+      "outcome": "WIN",
+      "resolution_date": "2026-06-11",
+      "strategy": "conviction_yes",
+      "market_slug": "highest-temperature-in-madrid-on-june-11-2026-32c",
+      "boundary_convention": "round"
     },
     {
       "logged_at": "2026-06-11T14:34:07.570846+00:00",
@@ -10422,9 +10422,9 @@
     },
     "conviction_no": {
       "bets": 163,
-      "resolved": 160,
+      "resolved": 161,
       "wins": 137,
-      "pnl_usd": -10.5682,
+      "pnl_usd": -12.5682,
       "bankroll": {
         "start": 1000.0,
         "current": 1000.0,
@@ -10441,14 +10441,14 @@
         },
         "round": {
           "bets": 163,
-          "resolved": 160,
+          "resolved": 161,
           "wins": 137,
-          "pnl_usd": -10.5682
+          "pnl_usd": -12.5682
         }
       }
     },
     "conviction_yes": {
-      "bets": 210,
+      "bets": 209,
       "resolved": 207,
       "wins": 24,
       "pnl_usd": -104.2157,
@@ -10467,7 +10467,7 @@
           "pnl_usd": 0.0
         },
         "round": {
-          "bets": 210,
+          "bets": 209,
           "resolved": 207,
           "wins": 24,
           "pnl_usd": -104.2157
