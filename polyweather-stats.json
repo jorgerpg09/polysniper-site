@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-06-14T21:36:36.538792+00:00",
+  "updated_at": "2026-06-14T21:46:36.555686+00:00",
   "live_wallet_usdc": 33.409393,
-  "live_wallet_at": "2026-06-14T21:36:36.111844+00:00",
+  "live_wallet_at": "2026-06-14T21:46:36.093876+00:00",
   "hit_rate": 0.1941,
   "theoretical_pnl": -235.5203,
   "trade_count": 1600,
@@ -181,6 +181,22 @@
     }
   ],
   "recent_trades": [
+    {
+      "logged_at": "2026-06-14T21:41:06.882719+00:00",
+      "city": "Atlanta",
+      "bracket": "between 90 and 91",
+      "market_type": "high",
+      "model_prob": 0.8339524140813381,
+      "market_ask": 0.623,
+      "edge": 0.21095241408133814,
+      "kelly_size_usdc": 2.0,
+      "outcome": "PENDING",
+      "resolution_date": "2026-06-14",
+      "strategy": "no_between",
+      "market_slug": "highest-temperature-in-atlanta-on-june-14-2026-90-91f",
+      "boundary_convention": "round",
+      "bet_side": "NO"
+    },
     {
       "logged_at": "2026-06-14T18:53:07.427612+00:00",
       "city": "Chicago",
@@ -767,7 +783,7 @@
       "market_ask": 0.36,
       "edge": 0.3743875465939418,
       "kelly_size_usdc": 2.0,
-      "outcome": "PENDING",
+      "outcome": "WIN",
       "resolution_date": "2026-06-14",
       "strategy": "no_exact",
       "market_slug": "highest-temperature-in-helsinki-on-june-14-2026-16c",
@@ -5242,22 +5258,6 @@
       "resolution_date": "2026-06-06",
       "strategy": "conviction_no",
       "market_slug": "highest-temperature-in-paris-on-june-6-2026-22c",
-      "boundary_convention": "round",
-      "bet_side": "NO"
-    },
-    {
-      "logged_at": "2026-06-06T14:40:27.101539+00:00",
-      "city": "Sao Paulo",
-      "bracket": "exact 22",
-      "market_type": "high",
-      "model_prob": 0.8142427863971073,
-      "market_ask": 0.9,
-      "edge": -0.08575721360289268,
-      "kelly_size_usdc": 2.0,
-      "outcome": "WIN",
-      "resolution_date": "2026-06-06",
-      "strategy": "conviction_no",
-      "market_slug": "highest-temperature-in-sao-paulo-on-june-6-2026-22c",
       "boundary_convention": "round",
       "bet_side": "NO"
     },
@@ -10571,7 +10571,7 @@
       }
     },
     "no_between": {
-      "bets": 325,
+      "bets": 326,
       "resolved": 319,
       "wins": 192,
       "pnl_usd": -13.259,
@@ -10590,7 +10590,7 @@
           "pnl_usd": 0.0
         },
         "round": {
-          "bets": 325,
+          "bets": 326,
           "resolved": 319,
           "wins": 192,
           "pnl_usd": -13.259
@@ -10626,14 +10626,14 @@
     },
     "no_exact": {
       "bets": 204,
-      "resolved": 198,
-      "wins": 104,
-      "pnl_usd": -8.6359,
+      "resolved": 199,
+      "wins": 105,
+      "pnl_usd": -5.0803,
       "bankroll": {
         "start": 100.0,
-        "current": 91.3641,
+        "current": 94.9197,
         "open_stake": 0.0,
-        "available": 91.3641,
+        "available": 94.9197,
         "daily_loss": 0.0
       },
       "by_boundary": {
@@ -10645,9 +10645,9 @@
         },
         "round": {
           "bets": 204,
-          "resolved": 198,
-          "wins": 104,
-          "pnl_usd": -8.6359
+          "resolved": 199,
+          "wins": 105,
+          "pnl_usd": -5.0803
         }
       }
     },
