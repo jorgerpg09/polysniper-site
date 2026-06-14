@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-06-14T11:06:36.527634+00:00",
+  "updated_at": "2026-06-14T11:16:36.507339+00:00",
   "live_wallet_usdc": 33.409393,
-  "live_wallet_at": "2026-06-14T11:06:36.115947+00:00",
+  "live_wallet_at": "2026-06-14T11:16:36.094354+00:00",
   "hit_rate": 0.1941,
   "theoretical_pnl": -235.5203,
   "trade_count": 1585,
@@ -181,6 +181,38 @@
     }
   ],
   "recent_trades": [
+    {
+      "logged_at": "2026-06-14T11:09:14.542906+00:00",
+      "city": "New York City",
+      "bracket": "between 88 and 89",
+      "market_type": "high",
+      "model_prob": 0.8059384082256512,
+      "market_ask": 0.47,
+      "edge": 0.33593840822565124,
+      "kelly_size_usdc": 2.0,
+      "outcome": "PENDING",
+      "resolution_date": "2026-06-14",
+      "strategy": "no_between",
+      "market_slug": "highest-temperature-in-nyc-on-june-14-2026-88-89f",
+      "boundary_convention": "round",
+      "bet_side": "NO"
+    },
+    {
+      "logged_at": "2026-06-14T11:09:08.213772+00:00",
+      "city": "Helsinki",
+      "bracket": "exact 16",
+      "market_type": "high",
+      "model_prob": 0.7343875465939418,
+      "market_ask": 0.36,
+      "edge": 0.3743875465939418,
+      "kelly_size_usdc": 2.0,
+      "outcome": "PENDING",
+      "resolution_date": "2026-06-14",
+      "strategy": "no_exact",
+      "market_slug": "highest-temperature-in-helsinki-on-june-14-2026-16c",
+      "boundary_convention": "round",
+      "bet_side": "NO"
+    },
     {
       "logged_at": "2026-06-13T23:12:02.400829+00:00",
       "city": "Hong Kong",
@@ -5196,38 +5228,6 @@
       "resolution_date": "2026-06-05",
       "strategy": "conviction_no",
       "market_slug": "highest-temperature-in-atlanta-on-june-5-2026-86-87f",
-      "boundary_convention": "round",
-      "bet_side": "NO"
-    },
-    {
-      "logged_at": "2026-06-05T16:33:29.096350+00:00",
-      "city": "New York City",
-      "bracket": "between 90 and 91",
-      "market_type": "high",
-      "model_prob": 0.8086420892927364,
-      "market_ask": 0.41000000000000003,
-      "edge": 0.39864208929273637,
-      "kelly_size_usdc": 2.0,
-      "outcome": "LOSS",
-      "resolution_date": "2026-06-05",
-      "strategy": "no_between",
-      "market_slug": "highest-temperature-in-nyc-on-june-5-2026-90-91f",
-      "boundary_convention": "round",
-      "bet_side": "NO"
-    },
-    {
-      "logged_at": "2026-06-05T16:18:30.595896+00:00",
-      "city": "New York City",
-      "bracket": "between 88 and 89",
-      "market_type": "high",
-      "model_prob": 0.8587804952094702,
-      "market_ask": 0.92,
-      "edge": -0.061219504790529844,
-      "kelly_size_usdc": 2.0,
-      "outcome": "WIN",
-      "resolution_date": "2026-06-05",
-      "strategy": "conviction_no",
-      "market_slug": "highest-temperature-in-nyc-on-june-5-2026-88-89f",
       "boundary_convention": "round",
       "bet_side": "NO"
     },
@@ -10556,7 +10556,7 @@
       }
     },
     "no_between": {
-      "bets": 319,
+      "bets": 320,
       "resolved": 319,
       "wins": 192,
       "pnl_usd": -13.259,
@@ -10575,7 +10575,7 @@
           "pnl_usd": 0.0
         },
         "round": {
-          "bets": 319,
+          "bets": 320,
           "resolved": 319,
           "wins": 192,
           "pnl_usd": -13.259
@@ -10610,7 +10610,7 @@
       }
     },
     "no_exact": {
-      "bets": 200,
+      "bets": 201,
       "resolved": 198,
       "wins": 104,
       "pnl_usd": -8.6359,
@@ -10629,7 +10629,7 @@
           "pnl_usd": 0.0
         },
         "round": {
-          "bets": 200,
+          "bets": 201,
           "resolved": 198,
           "wins": 104,
           "pnl_usd": -8.6359
