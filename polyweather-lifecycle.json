@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-06-15T21:36:40.612470+00:00",
-  "now": "2026-06-15T21:36:40.612470+00:00",
+  "updated_at": "2026-06-15T21:46:40.276517+00:00",
+  "now": "2026-06-15T21:46:40.276517+00:00",
   "markets": [
     {
       "condition_id": "0x681518875b966a13c2dc10020eb48bcd27ab8c474e49f7552124c16431c8d844",
@@ -57555,10 +57555,10 @@
       "effective_close_time": "2026-06-16T00:00:00+00:00",
       "market_end_date": null,
       "market_slug": "highest-temperature-in-helsinki-on-june-15-2026-16c",
-      "resolved_at": null,
-      "outcome": null,
+      "resolved_at": "2026-06-15T21:40:37.963997+00:00",
+      "outcome": "win",
       "resolution_source": null,
-      "state": "after_last_placement",
+      "state": "resolved",
       "bets": [
         {
           "id": "sl-612319",
@@ -57569,8 +57569,8 @@
           "model_prob": 0.12262039232559804,
           "best_ask_at_placement": 0.5,
           "limit_price": null,
-          "outcome": null,
-          "realized_pnl_usd": null,
+          "outcome": "win",
+          "realized_pnl_usd": 2.0,
           "fee_usd": null,
           "fill_quality": null,
           "strategy": "no_exact",
@@ -58596,10 +58596,10 @@
       "effective_close_time": "2026-06-16T12:00:00+00:00",
       "market_end_date": "2026-06-15T12:00:00+00:00",
       "market_slug": "highest-temperature-in-helsinki-on-june-15-2026-18c",
-      "resolved_at": null,
-      "outcome": null,
-      "resolution_source": null,
-      "state": "trading",
+      "resolved_at": "2026-06-15T14:02:36.547857+00:00",
+      "outcome": "loss",
+      "resolution_source": "uma_resolved",
+      "state": "resolved",
       "bets": [
         {
           "id": 3288,
@@ -58610,9 +58610,9 @@
           "model_prob": 0.2585411375681751,
           "best_ask_at_placement": 0.13,
           "limit_price": 0.131,
-          "outcome": null,
-          "realized_pnl_usd": null,
-          "fee_usd": null,
+          "outcome": "loss",
+          "realized_pnl_usd": -1.9524,
+          "fee_usd": 0.0821,
           "fill_quality": null,
           "strategy": "conviction_yes",
           "bet_side": "YES"
