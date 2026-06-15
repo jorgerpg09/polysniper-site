@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-06-15T18:56:40.297735+00:00",
-  "now": "2026-06-15T18:56:40.297735+00:00",
+  "updated_at": "2026-06-15T19:06:40.615055+00:00",
+  "now": "2026-06-15T19:06:40.615055+00:00",
   "markets": [
     {
       "condition_id": "0x681518875b966a13c2dc10020eb48bcd27ab8c474e49f7552124c16431c8d844",
@@ -57523,7 +57523,7 @@
       "resolved_at": null,
       "outcome": null,
       "resolution_source": null,
-      "state": "after_last_placement",
+      "state": "closed",
       "bets": [
         {
           "id": "sl-609866",
@@ -57558,7 +57558,7 @@
       "resolved_at": null,
       "outcome": null,
       "resolution_source": null,
-      "state": "trading",
+      "state": "after_last_placement",
       "bets": [
         {
           "id": "sl-612319",
@@ -57593,7 +57593,7 @@
       "resolved_at": null,
       "outcome": null,
       "resolution_source": null,
-      "state": "trading",
+      "state": "after_last_placement",
       "bets": [
         {
           "id": "sl-612412",
@@ -58196,6 +58196,41 @@
           "model_prob": 0.22121282204281162,
           "best_ask_at_placement": 0.19,
           "limit_price": 0.2,
+          "outcome": null,
+          "realized_pnl_usd": null,
+          "fee_usd": null,
+          "fill_quality": null,
+          "strategy": "conviction_yes",
+          "bet_side": "YES"
+        }
+      ]
+    },
+    {
+      "condition_id": "0x701cb8fcce2de37cbe15a0250e40405b1614f9b40fe5ae89477b2c47829fc17e",
+      "city": "Austin",
+      "market_type": "high",
+      "bracket": "between 86 and 87",
+      "bracket_type": "between",
+      "resolution_date": "2026-06-15",
+      "game_start_time": "2026-06-15T05:00:00+00:00",
+      "last_placement_time": "2026-06-16T08:00:00+00:00",
+      "effective_close_time": "2026-06-16T12:00:00+00:00",
+      "market_end_date": "2026-06-15T12:00:00+00:00",
+      "market_slug": "highest-temperature-in-austin-on-june-15-2026-86-87f",
+      "resolved_at": null,
+      "outcome": null,
+      "resolution_source": null,
+      "state": "trading",
+      "bets": [
+        {
+          "id": 3299,
+          "placed_at": "2026-06-15T19:03:08.319582+00:00",
+          "size_usd": 1.9920499999999999,
+          "filled_shares": 6.93,
+          "filled_vwap": 0.071,
+          "model_prob": 0.18576214130689273,
+          "best_ask_at_placement": 0.071,
+          "limit_price": 0.072,
           "outcome": null,
           "realized_pnl_usd": null,
           "fee_usd": null,
