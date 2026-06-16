@@ -1,10 +1,10 @@
 {
-  "updated_at": "2026-06-16T20:46:36.535179+00:00",
+  "updated_at": "2026-06-16T20:56:36.530738+00:00",
   "live_wallet_usdc": 35.189891,
-  "live_wallet_at": "2026-06-16T20:46:36.109568+00:00",
+  "live_wallet_at": "2026-06-16T20:56:36.081416+00:00",
   "hit_rate": 0.1945,
   "theoretical_pnl": -145.1846,
-  "trade_count": 1646,
+  "trade_count": 1647,
   "active_cities": 11,
   "daily_pnl": [
     {
@@ -189,6 +189,21 @@
     }
   ],
   "recent_trades": [
+    {
+      "logged_at": "2026-06-16T20:50:07.767035+00:00",
+      "city": "Austin",
+      "bracket": "between 92 and 93",
+      "market_type": "high",
+      "model_prob": 0.11315196796586169,
+      "market_ask": 0.1,
+      "edge": 0.013151967965861683,
+      "kelly_size_usdc": 2.0,
+      "outcome": "PENDING",
+      "resolution_date": "2026-06-16",
+      "strategy": "conviction_yes",
+      "market_slug": "highest-temperature-in-austin-on-june-16-2026-92-93f",
+      "boundary_convention": "round"
+    },
     {
       "logged_at": "2026-06-16T19:51:06.513758+00:00",
       "city": "New York City",
@@ -2607,21 +2622,6 @@
       "market_slug": "highest-temperature-in-austin-on-june-13-2026-94-95f",
       "boundary_convention": "round",
       "bet_side": "NO"
-    },
-    {
-      "logged_at": "2026-06-13T21:50:07.993887+00:00",
-      "city": "Austin",
-      "bracket": "between 94 and 95",
-      "market_type": "high",
-      "model_prob": 0.1612207096126943,
-      "market_ask": 0.11,
-      "edge": 0.0512207096126943,
-      "kelly_size_usdc": 2.0,
-      "outcome": "LOSS",
-      "resolution_date": "2026-06-13",
-      "strategy": "conviction_yes",
-      "market_slug": "highest-temperature-in-austin-on-june-13-2026-94-95f",
-      "boundary_convention": "round"
     },
     {
       "logged_at": "2026-06-13T20:42:07.572289+00:00",
@@ -10471,15 +10471,15 @@
       }
     },
     "conviction_yes": {
-      "bets": 258,
+      "bets": 259,
       "resolved": 239,
       "wins": 31,
       "pnl_usd": -68.6825,
       "bankroll": {
         "start": 1000.0,
         "current": 931.3176,
-        "open_stake": 38.0,
-        "available": 893.3176,
+        "open_stake": 40.0,
+        "available": 891.3176,
         "daily_loss": 18.2601
       },
       "by_boundary": {
@@ -10490,7 +10490,7 @@
           "pnl_usd": 0.0
         },
         "round": {
-          "bets": 258,
+          "bets": 259,
           "resolved": 239,
           "wins": 31,
           "pnl_usd": -68.6825
