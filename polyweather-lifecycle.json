@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-06-16T14:16:40.687638+00:00",
-  "now": "2026-06-16T14:16:40.687638+00:00",
+  "updated_at": "2026-06-16T14:26:40.387416+00:00",
+  "now": "2026-06-16T14:26:40.387416+00:00",
   "markets": [
     {
       "condition_id": "0x681518875b966a13c2dc10020eb48bcd27ab8c474e49f7552124c16431c8d844",
@@ -59403,6 +59403,41 @@
       ]
     },
     {
+      "condition_id": "0xb362122801e0590b8188938436b80b30b8c7ca41a5b5eeee90d47d9bbc799c4d",
+      "city": "Austin",
+      "market_type": "high",
+      "bracket": "between 90 and 91",
+      "bracket_type": "between",
+      "resolution_date": "2026-06-16",
+      "game_start_time": "2026-06-16T05:00:00+00:00",
+      "last_placement_time": "2026-06-17T08:00:00+00:00",
+      "effective_close_time": "2026-06-17T12:00:00+00:00",
+      "market_end_date": "2026-06-16T12:00:00+00:00",
+      "market_slug": "highest-temperature-in-austin-on-june-16-2026-90-91f",
+      "resolved_at": null,
+      "outcome": null,
+      "resolution_source": null,
+      "state": "trading",
+      "bets": [
+        {
+          "id": 3312,
+          "placed_at": "2026-06-16T14:25:09.360282+00:00",
+          "size_usd": 2.0,
+          "filled_shares": 15.503875968992247,
+          "filled_vwap": 0.107,
+          "model_prob": 0.1887841361732021,
+          "best_ask_at_placement": 0.128,
+          "limit_price": 0.129,
+          "outcome": null,
+          "realized_pnl_usd": null,
+          "fee_usd": null,
+          "fill_quality": null,
+          "strategy": "conviction_yes",
+          "bet_side": "YES"
+        }
+      ]
+    },
+    {
       "condition_id": "0xb745cdb815f9a4402f563a6ff8653c213300eae27d50a7eb6bec303e2b1b7540",
       "city": "Austin",
       "market_type": "high",
@@ -59463,6 +59498,41 @@
           "model_prob": 0.18183309402912512,
           "best_ask_at_placement": 0.17,
           "limit_price": 0.18,
+          "outcome": null,
+          "realized_pnl_usd": null,
+          "fee_usd": null,
+          "fill_quality": null,
+          "strategy": "conviction_yes",
+          "bet_side": "YES"
+        }
+      ]
+    },
+    {
+      "condition_id": "0xe7e2a1c208e35182c39aa4fca46fa1be23034f348816137732f7a4f09e058c39",
+      "city": "Paris",
+      "market_type": "high",
+      "bracket": "exact 27",
+      "bracket_type": "exact",
+      "resolution_date": "2026-06-16",
+      "game_start_time": "2026-06-15T22:00:00+00:00",
+      "last_placement_time": "2026-06-17T08:00:00+00:00",
+      "effective_close_time": "2026-06-17T12:00:00+00:00",
+      "market_end_date": "2026-06-16T12:00:00+00:00",
+      "market_slug": "highest-temperature-in-paris-on-june-16-2026-27c",
+      "resolved_at": null,
+      "outcome": null,
+      "resolution_source": null,
+      "state": "trading",
+      "bets": [
+        {
+          "id": 3311,
+          "placed_at": "2026-06-16T14:22:09.238839+00:00",
+          "size_usd": 2.0,
+          "filled_shares": 11.235955056179776,
+          "filled_vwap": 0.15308,
+          "model_prob": 0.16734108360180533,
+          "best_ask_at_placement": 0.177,
+          "limit_price": 0.178,
           "outcome": null,
           "realized_pnl_usd": null,
           "fee_usd": null,
