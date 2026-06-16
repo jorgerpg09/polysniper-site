@@ -277,6 +277,12 @@
     <section class="stats-section">
         <div class="container">
             <h2>PolySniper 5m &mdash; Live Performance</h2>
+            <!-- Paper / Live data source toggle -->
+            <div class="pw-source-toggle" style="text-align:center;margin-bottom:1em;">
+                <button class="pw-source-btn cs-source-btn is-active" data-cs-source="paper">Paper (dry-run)</button>
+                <button class="pw-source-btn cs-source-btn" data-cs-source="live">Live</button>
+            </div>
+            <p class="tagline" style="text-align:center;margin-bottom:1.5em;" id="cs-source-tagline"></p>
             <div class="stats-grid" id="stats-grid">
                 <div class="stat-card">
                     <div class="stat-value" id="stat-bets">--</div>

@@ -1,10 +1,32 @@
-// PolySniper — Fetch stats.json and render live performance data
+// PolySniper — Fetch stats and render performance data
+// Paper/Live split: paper (dry-run, VPS) -> stats.json; live (Mac, real CLOB
+// orders) -> stats-live.json. Mirrors the PolyWeather paper/live toggle.
 
-const STATS_URL = 'stats.json';
+const CS_SOURCES = { paper: 'stats.json', live: 'stats-live.json' };
+const CS_SOURCE_KEY = 'cs_data_source';  // localStorage key
+
+function cryptoSource() {
+    return localStorage.getItem(CS_SOURCE_KEY) || 'paper';
+}
+
+function setCryptoSource(source) {
+    localStorage.setItem(CS_SOURCE_KEY, source);
+    document.querySelectorAll('.cs-source-btn').forEach(btn => {
+        btn.classList.toggle('is-active', btn.dataset.csSource === source);
+    });
+    const tag = document.getElementById('cs-source-tagline');
+    if (tag) {
+        tag.textContent = source === 'live'
+            ? 'LIVE — real CLOB orders from Mac, real P&L. Bets also visible on Polymarket.'
+            : 'Paper / dry-run — simulated fills, no real money.';
+    }
+    loadStats();
+}
 
 async function loadStats() {
+    const url = CS_SOURCES[cryptoSource()] || 'stats.json';
     try {
-        const resp = await fetch(STATS_URL);
+        const resp = await fetch(url, { cache: 'no-cache' });
         if (!resp.ok) throw new Error(`HTTP ${resp.status}`);
         const stats = await resp.json();
         renderStats(stats);
@@ -77,7 +99,10 @@ function renderSignals(signals) {
 }
 
 // Load on page load, refresh every 60 seconds
-loadStats();
+document.querySelectorAll('.cs-source-btn').forEach(btn => {
+    btn.addEventListener('click', () => setCryptoSource(btn.dataset.csSource));
+});
+setCryptoSource(cryptoSource());  // apply persisted source, sets button state + loads
 setInterval(loadStats, 60000);
 
 // ==========================================================================
