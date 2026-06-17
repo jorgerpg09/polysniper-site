@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-06-17T17:36:36.533362+00:00",
+  "updated_at": "2026-06-17T17:46:36.890578+00:00",
   "live_wallet_usdc": 35.189891,
-  "live_wallet_at": "2026-06-17T17:36:36.106896+00:00",
+  "live_wallet_at": "2026-06-17T17:46:36.121336+00:00",
   "hit_rate": 0.1948,
   "theoretical_pnl": -128.2011,
   "trade_count": 1664,
@@ -193,6 +193,38 @@
     }
   ],
   "recent_trades": [
+    {
+      "logged_at": "2026-06-17T17:41:07.530801+00:00",
+      "city": "Helsinki",
+      "bracket": "exact 17",
+      "market_type": "high",
+      "model_prob": 0.8949867010685462,
+      "market_ask": 0.5,
+      "edge": 0.39498670106854616,
+      "kelly_size_usdc": 2.0,
+      "outcome": "PENDING",
+      "resolution_date": "2026-06-17",
+      "strategy": "no_exact",
+      "market_slug": "highest-temperature-in-helsinki-on-june-17-2026-17c",
+      "boundary_convention": "round",
+      "bet_side": "NO"
+    },
+    {
+      "logged_at": "2026-06-17T17:40:08.406445+00:00",
+      "city": "Sao Paulo",
+      "bracket": "exact 21",
+      "market_type": "high",
+      "model_prob": 0.8316900787014937,
+      "market_ask": 0.48,
+      "edge": 0.3516900787014937,
+      "kelly_size_usdc": 2.0,
+      "outcome": "PENDING",
+      "resolution_date": "2026-06-17",
+      "strategy": "no_exact",
+      "market_slug": "highest-temperature-in-sao-paulo-on-june-17-2026-21c",
+      "boundary_convention": "round",
+      "bet_side": "NO"
+    },
     {
       "logged_at": "2026-06-17T17:34:09.217887+00:00",
       "city": "New York City",
@@ -5283,38 +5315,6 @@
       "resolution_date": "2026-06-09",
       "strategy": "no_below",
       "market_slug": "highest-temperature-in-toronto-on-june-9-2026-24corbelow",
-      "boundary_convention": "round",
-      "bet_side": "NO"
-    },
-    {
-      "logged_at": "2026-06-09T16:37:25.871662+00:00",
-      "city": "Sao Paulo",
-      "bracket": "exact 24",
-      "market_type": "high",
-      "model_prob": 0.7086015309319356,
-      "market_ask": 0.35,
-      "edge": 0.3586015309319356,
-      "kelly_size_usdc": 2.0,
-      "outcome": "LOSS",
-      "resolution_date": "2026-06-09",
-      "strategy": "no_exact",
-      "market_slug": "highest-temperature-in-sao-paulo-on-june-9-2026-24c",
-      "boundary_convention": "round",
-      "bet_side": "NO"
-    },
-    {
-      "logged_at": "2026-06-09T15:13:26.665141+00:00",
-      "city": "Sao Paulo",
-      "bracket": "exact 25",
-      "market_type": "high",
-      "model_prob": 0.7005746212239776,
-      "market_ask": 0.8200000000000001,
-      "edge": -0.11942537877602244,
-      "kelly_size_usdc": 2.0,
-      "outcome": "WIN",
-      "resolution_date": "2026-06-09",
-      "strategy": "conviction_no",
-      "market_slug": "highest-temperature-in-sao-paulo-on-june-9-2026-25c",
       "boundary_convention": "round",
       "bet_side": "NO"
     },
@@ -10637,7 +10637,7 @@
       }
     },
     "no_exact": {
-      "bets": 225,
+      "bets": 227,
       "resolved": 218,
       "wins": 112,
       "pnl_usd": -15.451,
@@ -10656,7 +10656,7 @@
           "pnl_usd": 0.0
         },
         "round": {
-          "bets": 225,
+          "bets": 227,
           "resolved": 218,
           "wins": 112,
           "pnl_usd": -15.451
