@@ -1,9 +1,9 @@
 {
-  "updated_at": "2026-06-17T03:26:36.432246+00:00",
+  "updated_at": "2026-06-17T03:36:36.778242+00:00",
   "live_wallet_usdc": 35.189891,
-  "live_wallet_at": "2026-06-17T03:26:36.059979+00:00",
-  "hit_rate": 0.1949,
-  "theoretical_pnl": -136.588,
+  "live_wallet_at": "2026-06-17T03:36:36.130919+00:00",
+  "hit_rate": 0.1947,
+  "theoretical_pnl": -138.6192,
   "trade_count": 1647,
   "active_cities": 11,
   "daily_pnl": [
@@ -189,7 +189,7 @@
     },
     {
       "date": "2026-06-16",
-      "cumulative_pnl": -136.588
+      "cumulative_pnl": -138.6192
     }
   ],
   "recent_trades": [
@@ -248,7 +248,7 @@
       "market_ask": 0.12,
       "edge": 0.0014748178286919655,
       "kelly_size_usdc": 2.0,
-      "outcome": "PENDING",
+      "outcome": "LOSS",
       "resolution_date": "2026-06-16",
       "strategy": "conviction_yes",
       "market_slug": "highest-temperature-in-sao-paulo-on-june-16-2026-20c",
@@ -371,7 +371,7 @@
       "market_ask": 0.5700000000000001,
       "edge": 0.3045279917381588,
       "kelly_size_usdc": 2.0,
-      "outcome": "PENDING",
+      "outcome": "WIN",
       "resolution_date": "2026-06-16",
       "strategy": "no_exact",
       "market_slug": "highest-temperature-in-sao-paulo-on-june-16-2026-20c",
@@ -10476,15 +10476,15 @@
     },
     "conviction_yes": {
       "bets": 259,
-      "resolved": 246,
+      "resolved": 247,
       "wins": 33,
-      "pnl_usd": -59.0364,
+      "pnl_usd": -61.0676,
       "bankroll": {
         "start": 1000.0,
-        "current": 940.9635,
-        "open_stake": 26.0,
-        "available": 914.9635,
-        "daily_loss": 0.9078
+        "current": 938.9323,
+        "open_stake": 24.0,
+        "available": 914.9323,
+        "daily_loss": 2.939
       },
       "by_boundary": {
         "floor": {
@@ -10495,9 +10495,9 @@
         },
         "round": {
           "bets": 259,
-          "resolved": 246,
+          "resolved": 247,
           "wins": 33,
-          "pnl_usd": -59.0364
+          "pnl_usd": -61.0676
         }
       }
     },
@@ -10638,14 +10638,14 @@
     },
     "no_exact": {
       "bets": 218,
-      "resolved": 215,
-      "wins": 110,
-      "pnl_usd": -16.806,
+      "resolved": 216,
+      "wins": 111,
+      "pnl_usd": -15.2972,
       "bankroll": {
         "start": 100.0,
-        "current": 83.194,
+        "current": 84.7028,
         "open_stake": 0.0,
-        "available": 83.194,
+        "available": 84.7028,
         "daily_loss": 0.0
       },
       "by_boundary": {
@@ -10657,9 +10657,9 @@
         },
         "round": {
           "bets": 218,
-          "resolved": 215,
-          "wins": 110,
-          "pnl_usd": -16.806
+          "resolved": 216,
+          "wins": 111,
+          "pnl_usd": -15.2972
         }
       }
     },
