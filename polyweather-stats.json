@@ -1,9 +1,9 @@
 {
-  "updated_at": "2026-06-17T22:26:36.486234+00:00",
+  "updated_at": "2026-06-17T22:36:36.601945+00:00",
   "live_wallet_usdc": 35.189891,
-  "live_wallet_at": "2026-06-17T22:26:36.104555+00:00",
-  "hit_rate": 0.1944,
-  "theoretical_pnl": -133.8546,
+  "live_wallet_at": "2026-06-17T22:36:36.115983+00:00",
+  "hit_rate": 0.1942,
+  "theoretical_pnl": -134.6074,
   "trade_count": 1671,
   "active_cities": 11,
   "daily_pnl": [
@@ -193,7 +193,7 @@
     },
     {
       "date": "2026-06-17",
-      "cumulative_pnl": -133.8546
+      "cumulative_pnl": -134.6074
     }
   ],
   "recent_trades": [
@@ -644,7 +644,7 @@
       "market_ask": 0.85,
       "edge": -0.2283567878369157,
       "kelly_size_usdc": 2.0,
-      "outcome": "PENDING",
+      "outcome": "WIN",
       "resolution_date": "2026-06-17",
       "strategy": "conviction_no",
       "market_slug": "highest-temperature-in-madrid-on-june-17-2026-36c",
@@ -660,7 +660,7 @@
       "market_ask": 0.24,
       "edge": 0.13835678783691574,
       "kelly_size_usdc": 2.0,
-      "outcome": "PENDING",
+      "outcome": "LOSS",
       "resolution_date": "2026-06-17",
       "strategy": "conviction_yes",
       "market_slug": "highest-temperature-in-madrid-on-june-17-2026-36c",
@@ -1126,7 +1126,7 @@
       "market_ask": 0.48,
       "edge": 0.35782680676790124,
       "kelly_size_usdc": 2.0,
-      "outcome": "PENDING",
+      "outcome": "WIN",
       "resolution_date": "2026-06-17",
       "strategy": "no_exact",
       "market_slug": "highest-temperature-in-madrid-on-june-17-2026-36c",
@@ -10453,9 +10453,9 @@
     },
     "conviction_no": {
       "bets": 230,
-      "resolved": 211,
-      "wins": 175,
-      "pnl_usd": -26.0273,
+      "resolved": 212,
+      "wins": 176,
+      "pnl_usd": -25.6744,
       "bankroll": {
         "start": 1000.0,
         "current": 1000.0,
@@ -10472,23 +10472,23 @@
         },
         "round": {
           "bets": 230,
-          "resolved": 211,
-          "wins": 175,
-          "pnl_usd": -26.0273
+          "resolved": 212,
+          "wins": 176,
+          "pnl_usd": -25.6744
         }
       }
     },
     "conviction_yes": {
       "bets": 281,
-      "resolved": 262,
+      "resolved": 263,
       "wins": 36,
-      "pnl_usd": -50.712,
+      "pnl_usd": -51.4648,
       "bankroll": {
         "start": 1000.0,
-        "current": 949.2878,
-        "open_stake": 38.0,
-        "available": 911.2878,
-        "daily_loss": 24.87
+        "current": 948.535,
+        "open_stake": 36.0,
+        "available": 912.535,
+        "daily_loss": 25.6227
       },
       "by_boundary": {
         "floor": {
@@ -10499,9 +10499,9 @@
         },
         "round": {
           "bets": 281,
-          "resolved": 262,
+          "resolved": 263,
           "wins": 36,
-          "pnl_usd": -50.712
+          "pnl_usd": -51.4648
         }
       }
     },
@@ -10642,14 +10642,14 @@
     },
     "no_exact": {
       "bets": 227,
-      "resolved": 221,
-      "wins": 114,
-      "pnl_usd": -14.4207,
+      "resolved": 222,
+      "wins": 115,
+      "pnl_usd": -12.254,
       "bankroll": {
         "start": 100.0,
-        "current": 85.5793,
+        "current": 87.746,
         "open_stake": 0.0,
-        "available": 85.5793,
+        "available": 87.746,
         "daily_loss": 0.0
       },
       "by_boundary": {
@@ -10661,9 +10661,9 @@
         },
         "round": {
           "bets": 227,
-          "resolved": 221,
-          "wins": 114,
-          "pnl_usd": -14.4207
+          "resolved": 222,
+          "wins": 115,
+          "pnl_usd": -12.254
         }
       }
     },
