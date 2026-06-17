@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-06-17T12:36:40.555061+00:00",
-  "now": "2026-06-17T12:36:40.555061+00:00",
+  "updated_at": "2026-06-17T12:46:41.327610+00:00",
+  "now": "2026-06-17T12:46:41.327610+00:00",
   "markets": [
     {
       "condition_id": "0x681518875b966a13c2dc10020eb48bcd27ab8c474e49f7552124c16431c8d844",
@@ -60160,6 +60160,41 @@
           "fill_quality": null,
           "strategy": "no_exact",
           "bet_side": "NO"
+        }
+      ]
+    },
+    {
+      "condition_id": "0xa13ff96f4389f5ca54dd6c478130bc58ad8344ffbfa1ca6c5ad4e353d0acfc06",
+      "city": "Sao Paulo",
+      "market_type": "high",
+      "bracket": "exact 19",
+      "bracket_type": "exact",
+      "resolution_date": "2026-06-17",
+      "game_start_time": "2026-06-17T03:00:00+00:00",
+      "last_placement_time": "2026-06-18T01:00:00+00:00",
+      "effective_close_time": "2026-06-18T06:00:00+00:00",
+      "market_end_date": "2026-06-17T12:00:00+00:00",
+      "market_slug": "highest-temperature-in-sao-paulo-on-june-17-2026-19c",
+      "resolved_at": null,
+      "outcome": null,
+      "resolution_source": null,
+      "state": "trading",
+      "bets": [
+        {
+          "id": 3326,
+          "placed_at": "2026-06-17T12:41:00.238062+00:00",
+          "size_usd": 2.0,
+          "filled_shares": 6.666666666666667,
+          "filled_vwap": 0.29,
+          "model_prob": 0.3519837619389621,
+          "best_ask_at_placement": 0.29,
+          "limit_price": 0.3,
+          "outcome": null,
+          "realized_pnl_usd": null,
+          "fee_usd": null,
+          "fill_quality": null,
+          "strategy": "modal_early",
+          "bet_side": "YES"
         }
       ]
     },
