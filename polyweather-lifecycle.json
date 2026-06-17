@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-06-17T18:06:40.424890+00:00",
-  "now": "2026-06-17T18:06:40.424890+00:00",
+  "updated_at": "2026-06-17T18:16:40.251736+00:00",
+  "now": "2026-06-17T18:16:40.251736+00:00",
   "markets": [
     {
       "condition_id": "0x681518875b966a13c2dc10020eb48bcd27ab8c474e49f7552124c16431c8d844",
@@ -60304,41 +60304,6 @@
       ]
     },
     {
-      "condition_id": "0xcad5022da44db79be175e989ef1296d237f6b83f4d47711e5a6f3b77977efdf7",
-      "city": "New York City",
-      "market_type": "high",
-      "bracket": "between 78 and 79",
-      "bracket_type": "between",
-      "resolution_date": "2026-06-17",
-      "game_start_time": "2026-06-17T04:00:00+00:00",
-      "last_placement_time": "2026-06-18T02:00:00+00:00",
-      "effective_close_time": "2026-06-18T07:00:00+00:00",
-      "market_end_date": null,
-      "market_slug": "highest-temperature-in-nyc-on-june-17-2026-78-79f",
-      "resolved_at": null,
-      "outcome": null,
-      "resolution_source": null,
-      "state": "trading",
-      "bets": [
-        {
-          "id": "sl-653305",
-          "placed_at": "2026-06-17T11:09:24.873680+00:00",
-          "size_usd": 2.0,
-          "filled_shares": null,
-          "filled_vwap": null,
-          "model_prob": 0.17839975545826625,
-          "best_ask_at_placement": 0.45,
-          "limit_price": null,
-          "outcome": null,
-          "realized_pnl_usd": null,
-          "fee_usd": null,
-          "fill_quality": null,
-          "strategy": "no_between",
-          "bet_side": "NO"
-        }
-      ]
-    },
-    {
       "condition_id": "0x316956125bc3c4549aed1e70bdc0a3f3f68d2152c53c7472ce1811f8d6d0b694",
       "city": "Toronto",
       "market_type": "high",
@@ -60838,6 +60803,92 @@
           "fill_quality": null,
           "strategy": "no_exact",
           "bet_side": "NO"
+        }
+      ]
+    },
+    {
+      "condition_id": "0xcad5022da44db79be175e989ef1296d237f6b83f4d47711e5a6f3b77977efdf7",
+      "city": "New York City",
+      "market_type": "high",
+      "bracket": "between 78 and 79",
+      "bracket_type": "between",
+      "resolution_date": "2026-06-17",
+      "game_start_time": "2026-06-17T04:00:00+00:00",
+      "last_placement_time": "2026-06-18T08:00:00+00:00",
+      "effective_close_time": "2026-06-18T12:00:00+00:00",
+      "market_end_date": "2026-06-17T12:00:00+00:00",
+      "market_slug": "highest-temperature-in-nyc-on-june-17-2026-78-79f",
+      "resolved_at": null,
+      "outcome": null,
+      "resolution_source": null,
+      "state": "trading",
+      "bets": [
+        {
+          "id": 3344,
+          "placed_at": "2026-06-17T18:11:09.480070+00:00",
+          "size_usd": 2.0,
+          "filled_shares": 12.5,
+          "filled_vwap": 0.15,
+          "model_prob": 0.17921773662650664,
+          "best_ask_at_placement": 0.15,
+          "limit_price": 0.16,
+          "outcome": null,
+          "realized_pnl_usd": null,
+          "fee_usd": null,
+          "fill_quality": null,
+          "strategy": "conviction_yes",
+          "bet_side": "YES"
+        },
+        {
+          "id": "sl-653305",
+          "placed_at": "2026-06-17T11:09:24.873680+00:00",
+          "size_usd": 2.0,
+          "filled_shares": null,
+          "filled_vwap": null,
+          "model_prob": 0.17839975545826625,
+          "best_ask_at_placement": 0.45,
+          "limit_price": null,
+          "outcome": null,
+          "realized_pnl_usd": null,
+          "fee_usd": null,
+          "fill_quality": null,
+          "strategy": "no_between",
+          "bet_side": "NO"
+        }
+      ]
+    },
+    {
+      "condition_id": "0xcb6cdbbe099dc9c0c457be2a553ce176a3c5fbed860f2c7d9ff6119a58b0191b",
+      "city": "Atlanta",
+      "market_type": "high",
+      "bracket": "between 88 and 89",
+      "bracket_type": "between",
+      "resolution_date": "2026-06-17",
+      "game_start_time": "2026-06-17T04:00:00+00:00",
+      "last_placement_time": "2026-06-18T08:00:00+00:00",
+      "effective_close_time": "2026-06-18T12:00:00+00:00",
+      "market_end_date": "2026-06-17T12:00:00+00:00",
+      "market_slug": "highest-temperature-in-atlanta-on-june-17-2026-88-89f",
+      "resolved_at": null,
+      "outcome": null,
+      "resolution_source": null,
+      "state": "trading",
+      "bets": [
+        {
+          "id": 3343,
+          "placed_at": "2026-06-17T18:10:08.680459+00:00",
+          "size_usd": 2.0,
+          "filled_shares": 19.801980198019802,
+          "filled_vwap": 0.1,
+          "model_prob": 0.15137350814325323,
+          "best_ask_at_placement": 0.1,
+          "limit_price": 0.101,
+          "outcome": null,
+          "realized_pnl_usd": null,
+          "fee_usd": null,
+          "fill_quality": null,
+          "strategy": "conviction_yes",
+          "bet_side": "YES"
         }
       ]
     },
