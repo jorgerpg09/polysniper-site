@@ -1,21 +1,21 @@
 {
-  "updated_at": "2026-06-18T12:40:02.390958+00:00",
-  "total_bets": 884,
+  "updated_at": "2026-06-18T12:41:04.859599+00:00",
+  "total_bets": 886,
   "wins": 571,
-  "losses": 312,
-  "pending": 1,
-  "win_rate": 64.7,
-  "pnl": 42.98,
-  "kelly_pnl": 62.3,
-  "current_streak": 6,
-  "streak_type": "W",
+  "losses": 313,
+  "pending": 2,
+  "win_rate": 64.6,
+  "pnl": 41.95,
+  "kelly_pnl": 60.69,
+  "current_streak": 1,
+  "streak_type": "L",
   "daily": [
     {
       "date": "2026-06-18",
-      "bets": 54,
+      "bets": 55,
       "wins": 35,
-      "losses": 19,
-      "wr": 64.8
+      "losses": 20,
+      "wr": 63.6
     },
     {
       "date": "2026-06-17",
@@ -69,12 +69,30 @@
   ],
   "recent_signals": [
     {
+      "timestamp": "2026-06-18T12:40:21.714792+00:00",
+      "coin": "ETH",
+      "direction": "UP",
+      "entry_price": 0.63,
+      "secs": 21.6,
+      "outcome": "PENDING",
+      "slug": "eth-updown-5m-1781786400"
+    },
+    {
+      "timestamp": "2026-06-18T12:40:12.520589+00:00",
+      "coin": "BTC",
+      "direction": "UP",
+      "entry_price": 0.62,
+      "secs": 11.1,
+      "outcome": "PENDING",
+      "slug": "btc-updown-5m-1781786400"
+    },
+    {
       "timestamp": "2026-06-18T12:35:30.087539+00:00",
       "coin": "ETH",
       "direction": "UP",
       "entry_price": 0.61,
       "secs": 30.0,
-      "outcome": "PENDING",
+      "outcome": "LOSS",
       "slug": "eth-updown-5m-1781786100"
     },
     {
@@ -229,24 +247,6 @@
       "secs": 13.0,
       "outcome": "LOSS",
       "slug": "eth-updown-5m-1781770800"
-    },
-    {
-      "timestamp": "2026-06-18T08:20:08.724964+00:00",
-      "coin": "BTC",
-      "direction": "UP",
-      "entry_price": 0.61,
-      "secs": 8.4,
-      "outcome": "LOSS",
-      "slug": "btc-updown-5m-1781770800"
-    },
-    {
-      "timestamp": "2026-06-18T08:15:12.415425+00:00",
-      "coin": "BTC",
-      "direction": "UP",
-      "entry_price": 0.57,
-      "secs": 11.7,
-      "outcome": "WIN",
-      "slug": "btc-updown-5m-1781770500"
     }
   ],
   "backtest": {
