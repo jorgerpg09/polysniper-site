@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-06-18T04:36:40.334162+00:00",
-  "now": "2026-06-18T04:36:40.334162+00:00",
+  "updated_at": "2026-06-18T04:46:40.280645+00:00",
+  "now": "2026-06-18T04:46:40.280645+00:00",
   "markets": [
     {
       "condition_id": "0x681518875b966a13c2dc10020eb48bcd27ab8c474e49f7552124c16431c8d844",
@@ -60245,10 +60245,10 @@
       "effective_close_time": "2026-06-18T06:00:00+00:00",
       "market_end_date": null,
       "market_slug": "highest-temperature-in-sao-paulo-on-june-17-2026-21c",
-      "resolved_at": null,
-      "outcome": null,
+      "resolved_at": "2026-06-18T04:38:38.319427+00:00",
+      "outcome": "loss",
       "resolution_source": null,
-      "state": "after_last_placement",
+      "state": "resolved",
       "bets": [
         {
           "id": "sl-665396",
@@ -60259,8 +60259,8 @@
           "model_prob": 0.1683099212985063,
           "best_ask_at_placement": 0.48,
           "limit_price": null,
-          "outcome": null,
-          "realized_pnl_usd": null,
+          "outcome": "loss",
+          "realized_pnl_usd": -2.0,
           "fee_usd": null,
           "fill_quality": null,
           "strategy": "no_exact",
@@ -60471,10 +60471,10 @@
       "effective_close_time": "2026-06-18T12:00:00+00:00",
       "market_end_date": "2026-06-17T12:00:00+00:00",
       "market_slug": "highest-temperature-in-toronto-on-june-17-2026-22c",
-      "resolved_at": null,
-      "outcome": null,
-      "resolution_source": null,
-      "state": "trading",
+      "resolved_at": "2026-06-17T14:00:36.457698+00:00",
+      "outcome": "win",
+      "resolution_source": "uma_resolved",
+      "state": "resolved",
       "bets": [
         {
           "id": 3328,
@@ -60485,9 +60485,9 @@
           "model_prob": 0.18451127312870041,
           "best_ask_at_placement": 0.18,
           "limit_price": 0.19,
-          "outcome": null,
-          "realized_pnl_usd": null,
-          "fee_usd": null,
+          "outcome": "win",
+          "realized_pnl_usd": 8.5539,
+          "fee_usd": 0.0777,
           "fill_quality": null,
           "strategy": "conviction_yes",
           "bet_side": "YES"
